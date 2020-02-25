@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Services\Contracts\GitHubClient as GitHubClientContract;
+use App\Services\Contracts\PackagistClient as PackagistClientContract;
+use App\Services\GitHubClient;
+use App\Services\PackagistClient;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,6 +17,7 @@ class AppServiceProvider extends ServiceProvider
 
     public function register(): void
     {
-        // Register any application services.
+        $this->app->bind(GitHubClientContract::class, GitHubClient::class);
+        $this->app->bind(PackagistClientContract::class, PackagistClient::class);
     }
 }

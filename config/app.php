@@ -56,4 +56,10 @@ return [
         App\Providers\AppServiceProvider::class,
     ],
 
+    'services' => [
+        'github' => env('GITHUB_API_URL', 'https://api.github.com/'),
+        'packagist' => env('PACKAGIST_API_URL', 'https://packagist.org/packages/'),
+    ],
+
+    'http_client_timeout' => (float) env('HTTP_CLIENT_TIMEOUT', 2),
 ];
