@@ -1,0 +1,31 @@
+includes:
+    - vendor/phpstan/phpstan-strict-rules/rules.neon
+    - phar://phpstan.phar/conf/bleedingEdge.neon
+    - vendor/phpstan/phpstan-strict-rules/phpstan-baseline.neon
+
+parameters:
+    ignoreErrors:
+        - '/^Construct empty\(\) is not allowed. Use more strict comparison.$/' # empty
+    reportUnmatchedIgnoredErrors: false
+    excludes_analyse:
+        - %rootDir%/../../../tests/*
+        - %rootDir%/../../../storage/*
+        - %rootDir%/../../../vendor/*
+        - %rootDir%/../../../.phpstorm.meta.php
+
+services:
+	scopeIsInClass:
+		class: PHPStan\Internal\ScopeIsInClassTypeSpecifyingExtension
+		arguments:
+			isInMethodName: isInClass
+			removeNullMethodName: getClassReflection
+		tags:
+			- phpstan.typeSpecifier.methodTypeSpecifyingExtension
+
+	scopeIsInTrait:
+		class: PHPStan\Internal\ScopeIsInClassTypeSpecifyingExtension
+		arguments:
+			isInMethodName: isInTrait
+			removeNullMethodName: getTraitReflection
+		tags:
+			- phpstan.typeSpecifier.methodTypeSpecifyingExtension
