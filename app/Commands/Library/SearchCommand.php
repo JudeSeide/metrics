@@ -4,8 +4,11 @@ namespace App\Commands\Library;
 
 use App\Services\Contracts\GitHubClient;
 use App\Services\Contracts\PackagistClient;
+use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Support\Collection;
 use LaravelZero\Framework\Commands\Command;
+
+//use Illuminate\Support\Facades\Storage;
 
 class SearchCommand extends Command
 {
@@ -21,15 +24,16 @@ class SearchCommand extends Command
     /** @var Collection - The associated repositories of the php libraries. */
     protected $repositories;
 
-    public function handle(PackagistClient $packagist, GitHubClient $github): void
+    /** @var Collection - The the php libraries selected for the analysis. */
+    protected $selected;
+
+    public function handle(PackagistClient $packagist, GitHubClient $github, Filesystem $filesystem): void
     {
         $this->fetchLibrariesFrom($packagist);
-        $this->fetchRepositoriesFrom($github); // fixme - loop over libraries to fetch githup repo
+        $this->fetchRepositoriesFrom($github);
 
-
-        $this->task('save repositories github metadata', function () {
-            return true;
-        });
+        $this->selectLibraries();
+        $this->saveSelectedLibraries($filesystem);
     }
 
     protected function fetchLibrariesFrom(PackagistClient $client): void
@@ -49,6 +53,27 @@ class SearchCommand extends Command
             $this->line("\n<info>Found {$this->repositories->count()} repositories</info>\n");
 
             return $this->repositories->isNotEmpty();
+        });
+    }
+
+    protected function selectLibraries(): void
+    {
+        $this->task('select libraries for the analysis', function () {
+            $this->selected = $this->repositories->filter(function (array $repository) {
+                return in_array(strtolower($repository['full_name']), $this->libraries->all(), true);
+            });
+
+            $this->line("\n<info>Selected {$this->selected->count()} repositories</info>\n");
+
+            return $this->selected->isNotEmpty();
+        });
+    }
+
+    public function saveSelectedLibraries(Filesystem $filesystem): void
+    {
+        $this->task('save selected libraries github metadata', function () use ($filesystem) {
+            $filesystem->put('libraries.json', json_encode($this->selected->all()));
+            return true;
         });
     }
 }

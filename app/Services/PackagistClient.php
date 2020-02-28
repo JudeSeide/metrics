@@ -18,7 +18,7 @@ class PackagistClient extends AbstractHttpClient implements PackagistClientContr
     protected function options(array $data = []): array
     {
         return array_merge($data, [
-            'base_uri' => config('app.services.packagist'),
+            'base_uri' => config('app.services.packagist.url'),
             'timeout' => config('app.http_client_timeout'),
             'headers' => [
                 'Accept' => 'application/json',
