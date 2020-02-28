@@ -8,8 +8,6 @@ use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Support\Collection;
 use LaravelZero\Framework\Commands\Command;
 
-//use Illuminate\Support\Facades\Storage;
-
 class SearchCommand extends Command
 {
     /** @var string - The signature of the command. */
@@ -72,7 +70,7 @@ class SearchCommand extends Command
     public function saveSelectedLibraries(Filesystem $filesystem): void
     {
         $this->task('save selected libraries github metadata', function () use ($filesystem) {
-            $filesystem->put('libraries.json', json_encode($this->selected->all()));
+            $filesystem->put(config('filesystems.resources.metadata'), json_encode($this->selected->all()));
             return true;
         });
     }
