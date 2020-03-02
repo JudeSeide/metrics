@@ -1,0 +1,422 @@
+{
+    "Doctrine\\Instantiator\\Exception\\ExceptionInterface": {
+        "name": "Doctrine\\Instantiator\\Exception\\ExceptionInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Throwable"
+        ],
+        "parents": [
+            "Throwable"
+        ],
+        "kanDefect": 0.15,
+        "package": "Doctrine\\Instantiator\\Exception\\",
+        "pageRank": 0.4,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Doctrine\\Instantiator\\Exception\\": {
+        "name": "Doctrine\\Instantiator\\Exception\\",
+        "classes": [
+            "Doctrine\\Instantiator\\Exception\\ExceptionInterface",
+            "Doctrine\\Instantiator\\Exception\\InvalidArgumentException",
+            "Doctrine\\Instantiator\\Exception\\UnexpectedValueException"
+        ],
+        "outgoing_class_dependencies": [
+            "Throwable",
+            "InvalidArgumentException",
+            "ReflectionClass",
+            "UnexpectedValueException",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "Doctrine\\Instantiator\\Instantiator"
+        ],
+        "incoming_package_dependencies": [
+            "Doctrine\\Instantiator\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.8333333333333334,
+        "dependent_instabilities": [],
+        "distance": 0.11785113019775796,
+        "normalized_distance": 0.16666666666666674,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Doctrine\\Instantiator\\Exception\\InvalidArgumentException": {
+        "name": "Doctrine\\Instantiator\\Exception\\InvalidArgumentException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "fromNonExistingClass",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fromAbstractClass",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "InvalidArgumentException",
+            "Doctrine\\Instantiator\\Exception\\ExceptionInterface",
+            "ReflectionClass"
+        ],
+        "parents": [
+            "InvalidArgumentException"
+        ],
+        "lcom": 2,
+        "length": 21,
+        "vocabulary": 11,
+        "volume": 72.65,
+        "difficulty": 3.71,
+        "effort": 269.84,
+        "level": 0.27,
+        "bugs": 0.02,
+        "time": 15,
+        "intelligentContent": 19.56,
+        "number_operators": 8,
+        "number_operands": 13,
+        "number_operators_unique": 4,
+        "number_operands_unique": 7,
+        "cloc": 3,
+        "loc": 21,
+        "lloc": 18,
+        "mi": 86.68,
+        "mIwoC": 59.05,
+        "commentWeight": 27.63,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.5,
+        "relativeSystemComplexity": 3.5,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 7,
+        "package": "Doctrine\\Instantiator\\Exception\\",
+        "pageRank": 0.17,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Instantiator\\Exception\\UnexpectedValueException": {
+        "name": "Doctrine\\Instantiator\\Exception\\UnexpectedValueException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "fromSerializationTriggeredException",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fromUncleanUnSerialization",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "UnexpectedValueException",
+            "Doctrine\\Instantiator\\Exception\\ExceptionInterface",
+            "ReflectionClass",
+            "Exception",
+            "ReflectionClass",
+            "Exception"
+        ],
+        "parents": [
+            "UnexpectedValueException"
+        ],
+        "lcom": 2,
+        "length": 22,
+        "vocabulary": 12,
+        "volume": 78.87,
+        "difficulty": 1.9,
+        "effort": 149.85,
+        "level": 0.53,
+        "bugs": 0.03,
+        "time": 8,
+        "intelligentContent": 41.51,
+        "number_operators": 3,
+        "number_operands": 19,
+        "number_operators_unique": 2,
+        "number_operands_unique": 10,
+        "cloc": 3,
+        "loc": 15,
+        "lloc": 12,
+        "mi": 94.98,
+        "mIwoC": 63.04,
+        "commentWeight": 31.94,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.75,
+        "relativeSystemComplexity": 3.75,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 5.5,
+        "totalSystemComplexity": 7.5,
+        "package": "Doctrine\\Instantiator\\Exception\\",
+        "pageRank": 0.17,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Instantiator\\InstantiatorInterface": {
+        "name": "Doctrine\\Instantiator\\InstantiatorInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "instantiate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Doctrine\\Instantiator\\",
+        "pageRank": 0.14,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Doctrine\\Instantiator\\": {
+        "name": "Doctrine\\Instantiator\\",
+        "classes": [
+            "Doctrine\\Instantiator\\InstantiatorInterface",
+            "Doctrine\\Instantiator\\Instantiator"
+        ],
+        "outgoing_class_dependencies": [
+            "ReflectionClass",
+            "Doctrine\\Instantiator\\Exception\\InvalidArgumentException",
+            "Doctrine\\Instantiator\\Exception\\UnexpectedValueException"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Doctrine\\Instantiator\\Exception\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Doctrine\\Instantiator\\Exception\\": 0.8333333333333334
+        },
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Doctrine\\Instantiator\\Instantiator": {
+        "name": "Doctrine\\Instantiator\\Instantiator",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "instantiate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildAndCacheFromFactory",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildFactory",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getReflectionClass",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkIfUnSerializationIsSupported",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attemptInstantiationViaUnSerialization",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isInstantiableViaReflection",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasInternalAncestors",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSafeToClone",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 8,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 23,
+        "ccn": 15,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Doctrine\\Instantiator\\InstantiatorInterface",
+            "ReflectionClass",
+            "ReflectionClass",
+            "Doctrine\\Instantiator\\Exception\\InvalidArgumentException",
+            "ReflectionClass",
+            "Doctrine\\Instantiator\\Exception\\InvalidArgumentException",
+            "ReflectionClass",
+            "Doctrine\\Instantiator\\Exception\\UnexpectedValueException",
+            "ReflectionClass",
+            "Doctrine\\Instantiator\\Exception\\UnexpectedValueException",
+            "ReflectionClass",
+            "ReflectionClass",
+            "ReflectionClass"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 123,
+        "vocabulary": 23,
+        "volume": 556.4,
+        "difficulty": 12.22,
+        "effort": 6800.42,
+        "level": 0.08,
+        "bugs": 0.19,
+        "time": 378,
+        "intelligentContent": 45.52,
+        "number_operators": 35,
+        "number_operands": 88,
+        "number_operators_unique": 5,
+        "number_operands_unique": 18,
+        "cloc": 52,
+        "loc": 144,
+        "lloc": 92,
+        "mi": 76.03,
+        "mIwoC": 35.92,
+        "commentWeight": 40.11,
+        "kanDefect": 0.94,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.79,
+        "relativeSystemComplexity": 289.79,
+        "totalStructuralComplexity": 2601,
+        "totalDataComplexity": 7.11,
+        "totalSystemComplexity": 2608.11,
+        "package": "Doctrine\\Instantiator\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.6,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.1",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

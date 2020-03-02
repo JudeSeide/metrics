@@ -1,0 +1,255 @@
+{
+    "Nicolaslopezj\\Searchable\\SearchableTrait": {
+        "name": "Nicolaslopezj\\Searchable\\SearchableTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "scopeSearch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeSearchRestricted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatabaseDriver",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumns",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getGroupBy",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTableColumns",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getJoins",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeJoins",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeGroupBy",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addSelectsToQuery",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterQueryWithRelevance",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSearchQueriesForColumn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSearchQuery",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCaseCompare",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mergeQueries",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRelevanceField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 16,
+        "nbMethods": 16,
+        "nbMethodsPrivate": 13,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 48,
+        "ccn": 33,
+        "ccnMethodMax": 13,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Support\\Facades\\Config",
+            "Illuminate\\Support\\Facades\\Config",
+            "Illuminate\\Support\\Facades\\Config",
+            "Illuminate\\Support\\Facades\\DB",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Support\\Facades\\DB",
+            "Illuminate\\Support\\Facades\\DB",
+            "Illuminate\\Support\\Facades\\DB"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 484,
+        "vocabulary": 102,
+        "volume": 3229.45,
+        "difficulty": 35.7,
+        "effort": 115291.5,
+        "level": 0.03,
+        "bugs": 1.08,
+        "time": 6405,
+        "intelligentContent": 90.46,
+        "number_operators": 127,
+        "number_operands": 357,
+        "number_operators_unique": 17,
+        "number_operands_unique": 85,
+        "cloc": 116,
+        "loc": 304,
+        "lloc": 188,
+        "mi": 62.25,
+        "mIwoC": 21.38,
+        "commentWeight": 40.87,
+        "kanDefect": 2.79,
+        "relativeStructuralComplexity": 1369,
+        "relativeDataComplexity": 0.48,
+        "relativeSystemComplexity": 1369.48,
+        "totalStructuralComplexity": 21904,
+        "totalDataComplexity": 7.63,
+        "totalSystemComplexity": 21911.63,
+        "package": "Nicolaslopezj\\Searchable\\",
+        "pageRank": 1,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nicolaslopezj\\Searchable\\": {
+        "name": "Nicolaslopezj\\Searchable\\",
+        "classes": [
+            "Nicolaslopezj\\Searchable\\SearchableTrait"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Support\\Facades\\Config",
+            "Illuminate\\Support\\Facades\\DB",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Str"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Database\\Eloquent\\",
+            "Illuminate\\Support\\Facades\\",
+            "Illuminate\\Support\\"
+        ],
+        "abstraction": 1,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0.7071067811865475,
+        "normalized_distance": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.4.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/database": {
+                "name": "illuminate\/database",
+                "required": "^4.2 | ^5.0 | ^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/database\/zipball\/2d24be92d25a5adf68ccea30b5682ed2990fa330"
+            },
+            "ext-mbstring": {
+                "name": "ext-mbstring",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

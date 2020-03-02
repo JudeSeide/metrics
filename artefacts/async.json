@@ -1,0 +1,1352 @@
+{
+    "Spatie\\Async\\PoolStatus": {
+        "name": "Spatie\\Async\\PoolStatus",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "lines",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "summaryToString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "failedToString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Spatie\\Async\\Pool"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 64,
+        "vocabulary": 22,
+        "volume": 285.4,
+        "difficulty": 4.67,
+        "effort": 1331.88,
+        "level": 0.21,
+        "bugs": 0.1,
+        "time": 74,
+        "intelligentContent": 61.16,
+        "number_operators": 22,
+        "number_operands": 42,
+        "number_operators_unique": 4,
+        "number_operands_unique": 18,
+        "cloc": 0,
+        "loc": 35,
+        "lloc": 35,
+        "mi": 48.86,
+        "mIwoC": 48.86,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 0.45,
+        "relativeSystemComplexity": 121.45,
+        "totalStructuralComplexity": 605,
+        "totalDataComplexity": 2.25,
+        "totalSystemComplexity": 607.25,
+        "package": "Spatie\\Async\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Async\\": {
+        "name": "Spatie\\Async\\",
+        "classes": [
+            "Spatie\\Async\\PoolStatus",
+            "Spatie\\Async\\Task",
+            "Spatie\\Async\\Pool"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\Async\\Runtime\\ParentRuntime"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\Async\\Runtime\\"
+        ],
+        "outgoing_class_dependencies": [
+            "ArrayAccess",
+            "static",
+            "Spatie\\Async\\Runtime\\ParentRuntime",
+            "Spatie\\Async\\Process\\Runnable",
+            "InvalidArgumentException"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Spatie\\Async\\Runtime\\",
+            "Spatie\\Async\\Process\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.8333333333333334,
+        "dependent_instabilities": {
+            "Spatie\\Async\\Runtime\\": 0.8571428571428571,
+            "Spatie\\Async\\Process\\": 0.6666666666666666
+        },
+        "distance": 0.11785113019775796,
+        "normalized_distance": 0.16666666666666674,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Async\\Task": {
+        "name": "Spatie\\Async\\Task",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "configure",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "run",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__invoke",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 3,
+        "vocabulary": 2,
+        "volume": 3,
+        "difficulty": 1,
+        "effort": 3,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 3,
+        "number_operators": 1,
+        "number_operands": 2,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 0,
+        "loc": 11,
+        "lloc": 11,
+        "mi": 73.81,
+        "mIwoC": 73.81,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 4.33,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 13,
+        "package": "Spatie\\Async\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Async\\Runtime\\ParentRuntime": {
+        "name": "Spatie\\Async\\Runtime\\ParentRuntime",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "init",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createProcess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "encodeTask",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "decodeTask",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getId",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 6,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Spatie\\Async\\Process\\Runnable",
+            "Spatie\\Async\\Pool",
+            "Spatie\\Async\\Process\\SynchronousProcess",
+            "Symfony\\Component\\Process\\Process",
+            "Spatie\\Async\\Process\\ParallelProcess",
+            "Opis\\Closure\\SerializableClosure"
+        ],
+        "parents": [],
+        "lcom": 5,
+        "length": 64,
+        "vocabulary": 22,
+        "volume": 285.4,
+        "difficulty": 6.94,
+        "effort": 1979.99,
+        "level": 0.14,
+        "bugs": 0.1,
+        "time": 110,
+        "intelligentContent": 41.14,
+        "number_operators": 27,
+        "number_operands": 37,
+        "number_operators_unique": 6,
+        "number_operands_unique": 16,
+        "cloc": 14,
+        "loc": 65,
+        "lloc": 51,
+        "mi": 77.68,
+        "mIwoC": 44.75,
+        "commentWeight": 32.93,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1.4,
+        "relativeSystemComplexity": 17.4,
+        "totalStructuralComplexity": 80,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 87,
+        "package": "Spatie\\Async\\Runtime\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Async\\Runtime\\": {
+        "name": "Spatie\\Async\\Runtime\\",
+        "classes": [
+            "Spatie\\Async\\Runtime\\ParentRuntime"
+        ],
+        "outgoing_class_dependencies": [
+            "Spatie\\Async\\Process\\Runnable",
+            "Spatie\\Async\\Pool",
+            "Spatie\\Async\\Process\\SynchronousProcess",
+            "Symfony\\Component\\Process\\Process",
+            "Spatie\\Async\\Process\\ParallelProcess",
+            "Opis\\Closure\\SerializableClosure"
+        ],
+        "outgoing_package_dependencies": [
+            "Spatie\\Async\\Process\\",
+            "Spatie\\Async\\",
+            "Symfony\\Component\\Process\\",
+            "Opis\\Closure\\"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\Async\\Pool"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\Async\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8571428571428571,
+        "dependent_instabilities": {
+            "Spatie\\Async\\Process\\": 0.6666666666666666,
+            "Spatie\\Async\\": 0.8333333333333334
+        },
+        "distance": 0.1010152544552211,
+        "normalized_distance": 0.1428571428571429,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Async\\Pool": {
+        "name": "Spatie\\Async\\Pool",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSupported",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "concurrency",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "timeout",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "autoload",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sleepTime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "notify",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wait",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "putInQueue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "putInProgress",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "markAsFinished",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "markAsTimedOut",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "markAsFailed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetGet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetSet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetUnset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQueue",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInProgress",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFinished",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFailed",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTimeouts",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "status",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerListener",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 27,
+        "nbMethods": 22,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 21,
+        "nbMethodsGetter": 5,
+        "nbMethodsSetters": 0,
+        "wmc": 48,
+        "ccn": 22,
+        "ccnMethodMax": 7,
+        "externals": [
+            "ArrayAccess",
+            "static",
+            "Spatie\\Async\\PoolStatus",
+            "static",
+            "Spatie\\Async\\Runtime\\ParentRuntime",
+            "Spatie\\Async\\Process\\Runnable",
+            "InvalidArgumentException",
+            "Spatie\\Async\\Runtime\\ParentRuntime",
+            "Spatie\\Async\\Process\\Runnable",
+            "Spatie\\Async\\Process\\Runnable",
+            "Spatie\\Async\\Process\\Runnable",
+            "Spatie\\Async\\Process\\Runnable",
+            "Spatie\\Async\\Process\\Runnable",
+            "Spatie\\Async\\PoolStatus"
+        ],
+        "parents": [],
+        "lcom": 7,
+        "length": 191,
+        "vocabulary": 33,
+        "volume": 963.48,
+        "difficulty": 33.25,
+        "effort": 32035.69,
+        "level": 0.03,
+        "bugs": 0.32,
+        "time": 1780,
+        "intelligentContent": 28.98,
+        "number_operators": 58,
+        "number_operands": 133,
+        "number_operators_unique": 11,
+        "number_operands_unique": 22,
+        "cloc": 32,
+        "loc": 228,
+        "lloc": 196,
+        "mi": 53.56,
+        "mIwoC": 26.14,
+        "commentWeight": 27.42,
+        "kanDefect": 1.82,
+        "relativeStructuralComplexity": 361,
+        "relativeDataComplexity": 0.93,
+        "relativeSystemComplexity": 361.93,
+        "totalStructuralComplexity": 9747,
+        "totalDataComplexity": 25.15,
+        "totalSystemComplexity": 9772.15,
+        "package": "Spatie\\Async\\",
+        "pageRank": 0.23,
+        "afferentCoupling": 2,
+        "efferentCoupling": 6,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "async": {
+        "name": "async",
+        "cloc": 5,
+        "loc": 10,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "await": {
+        "name": "await",
+        "cloc": 0,
+        "loc": 5,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Spatie\\Async\\Output\\ParallelError": {
+        "name": "Spatie\\Async\\Output\\ParallelError",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "fromException",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "outputTooLarge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Exception"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 2,
+        "length": 9,
+        "vocabulary": 6,
+        "volume": 23.26,
+        "difficulty": 0.7,
+        "effort": 16.29,
+        "level": 1.43,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 33.24,
+        "number_operators": 2,
+        "number_operands": 7,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 0,
+        "loc": 12,
+        "lloc": 12,
+        "mi": 66.76,
+        "mIwoC": 66.76,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 6,
+        "totalSystemComplexity": 6,
+        "package": "Spatie\\Async\\Output\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Async\\Output\\": {
+        "name": "Spatie\\Async\\Output\\",
+        "classes": [
+            "Spatie\\Async\\Output\\ParallelError",
+            "Spatie\\Async\\Output\\SerializableException"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception",
+            "Throwable",
+            "this"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\Async\\Process\\ParallelProcess"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\Async\\Process\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.75,
+        "dependent_instabilities": [],
+        "distance": 0.17677669529663687,
+        "normalized_distance": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Async\\Output\\SerializableException": {
+        "name": "Spatie\\Async\\Output\\SerializableException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "asThrowable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Throwable",
+            "Throwable",
+            "this"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 20,
+        "vocabulary": 7,
+        "volume": 56.15,
+        "difficulty": 4.88,
+        "effort": 273.72,
+        "level": 0.21,
+        "bugs": 0.02,
+        "time": 15,
+        "intelligentContent": 11.52,
+        "number_operators": 7,
+        "number_operands": 13,
+        "number_operators_unique": 3,
+        "number_operands_unique": 4,
+        "cloc": 4,
+        "loc": 22,
+        "lloc": 18,
+        "mi": 90.91,
+        "mIwoC": 60.23,
+        "commentWeight": 30.68,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 4.5,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 9,
+        "package": "Spatie\\Async\\Output\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Async\\Process\\SynchronousProcess": {
+        "name": "Spatie\\Async\\Process\\SynchronousProcess",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPid",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOutput",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getErrorOutput",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentExecutionTime",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resolveErrorOutput",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Spatie\\Async\\Process\\Runnable",
+            "Throwable"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 41,
+        "vocabulary": 9,
+        "volume": 129.97,
+        "difficulty": 10.4,
+        "effort": 1351.66,
+        "level": 0.1,
+        "bugs": 0.04,
+        "time": 75,
+        "intelligentContent": 12.5,
+        "number_operators": 15,
+        "number_operands": 26,
+        "number_operators_unique": 4,
+        "number_operands_unique": 5,
+        "cloc": 0,
+        "loc": 57,
+        "lloc": 57,
+        "mi": 46.49,
+        "mIwoC": 46.49,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.85,
+        "relativeSystemComplexity": 10.85,
+        "totalStructuralComplexity": 90,
+        "totalDataComplexity": 18.5,
+        "totalSystemComplexity": 108.5,
+        "package": "Spatie\\Async\\Process\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Async\\Process\\": {
+        "name": "Spatie\\Async\\Process\\",
+        "classes": [
+            "Spatie\\Async\\Process\\SynchronousProcess",
+            "Spatie\\Async\\Process\\ProcessCallbacks",
+            "Spatie\\Async\\Process\\ParallelProcess",
+            "Spatie\\Async\\Process\\Runnable"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\Async\\Runtime\\ParentRuntime",
+            "Spatie\\Async\\Pool"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\Async\\Runtime\\",
+            "Spatie\\Async\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Throwable",
+            "ReflectionFunction",
+            "Symfony\\Component\\Process\\Process",
+            "Spatie\\Async\\Output\\ParallelError"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Symfony\\Component\\Process\\",
+            "Spatie\\Async\\Output\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": {
+            "Spatie\\Async\\Output\\": 0.75
+        },
+        "distance": 0.11785113019775781,
+        "normalized_distance": 0.16666666666666652,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Async\\Process\\ProcessCallbacks": {
+        "name": "Spatie\\Async\\Process\\ProcessCallbacks",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "then",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "catch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "timeout",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "triggerSuccess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "triggerError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resolveErrorOutput",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "triggerTimeout",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isAllowedThrowableType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 11,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Throwable",
+            "Throwable",
+            "ReflectionFunction"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 78,
+        "vocabulary": 14,
+        "volume": 296.97,
+        "difficulty": 7.09,
+        "effort": 2105.81,
+        "level": 0.14,
+        "bugs": 0.1,
+        "time": 117,
+        "intelligentContent": 41.88,
+        "number_operators": 26,
+        "number_operands": 52,
+        "number_operators_unique": 3,
+        "number_operands_unique": 11,
+        "cloc": 0,
+        "loc": 75,
+        "lloc": 75,
+        "mi": 40.3,
+        "mIwoC": 40.3,
+        "commentWeight": 0,
+        "kanDefect": 1.33,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 1.18,
+        "relativeSystemComplexity": 65.18,
+        "totalStructuralComplexity": 512,
+        "totalDataComplexity": 9.44,
+        "totalSystemComplexity": 521.44,
+        "package": "Spatie\\Async\\Process\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Async\\Process\\ParallelProcess": {
+        "name": "Spatie\\Async\\Process\\ParallelProcess",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRunning",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSuccessful",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isTerminated",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOutput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getErrorOutput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPid",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentExecutionTime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resolveErrorOutput",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 13,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 7,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Spatie\\Async\\Process\\Runnable",
+            "Symfony\\Component\\Process\\Process",
+            "Symfony\\Component\\Process\\Process",
+            "Symfony\\Component\\Process\\Process",
+            "Throwable",
+            "Spatie\\Async\\Output\\ParallelError"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 85,
+        "vocabulary": 10,
+        "volume": 282.36,
+        "difficulty": 17.33,
+        "effort": 4894.31,
+        "level": 0.06,
+        "bugs": 0.09,
+        "time": 272,
+        "intelligentContent": 16.29,
+        "number_operators": 33,
+        "number_operands": 52,
+        "number_operators_unique": 4,
+        "number_operands_unique": 6,
+        "cloc": 0,
+        "loc": 93,
+        "lloc": 93,
+        "mi": 38.96,
+        "mIwoC": 38.96,
+        "commentWeight": 0,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 1.21,
+        "relativeSystemComplexity": 101.21,
+        "totalStructuralComplexity": 1400,
+        "totalDataComplexity": 16.91,
+        "totalSystemComplexity": 1416.91,
+        "package": "Spatie\\Async\\Process\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Async\\Process\\Runnable": {
+        "name": "Spatie\\Async\\Process\\Runnable",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPid",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "then",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "catch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "timeout",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOutput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getErrorOutput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "triggerSuccess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "triggerError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "triggerTimeout",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentExecutionTime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 13,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 13,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 13,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Spatie\\Async\\Process\\",
+        "pageRank": 0.32,
+        "afferentCoupling": 4,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.1",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "opis\/closure": {
+                "name": "opis\/closure",
+                "required": "^3.4.2",
+                "installed": null,
+                "latest": "3.5.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/opis.io\/closure",
+                "zip": "https:\/\/api.github.com\/repos\/opis\/closure\/zipball\/93ebc5712cdad8d5f489b500c59d122df2e53969"
+            },
+            "symfony\/process": {
+                "name": "symfony\/process",
+                "required": "^3.3 || ^4.0 || ^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/process\/zipball\/fd4a86dd7e36437f2fc080d8c42c7415d828a0a8"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

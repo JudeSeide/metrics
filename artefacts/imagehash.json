@@ -1,0 +1,763 @@
+{
+    "Jenssegers\\ImageHash\\Implementation": {
+        "name": "Jenssegers\\ImageHash\\Implementation",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "hash",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Jenssegers\\ImageHash\\Hash",
+            "Intervention\\Image\\Image"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Jenssegers\\ImageHash\\",
+        "pageRank": 0.12,
+        "afferentCoupling": 5,
+        "efferentCoupling": 2,
+        "instability": 0.29,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Jenssegers\\ImageHash\\": {
+        "name": "Jenssegers\\ImageHash\\",
+        "classes": [
+            "Jenssegers\\ImageHash\\Implementation",
+            "Jenssegers\\ImageHash\\Hash",
+            "Jenssegers\\ImageHash\\ImageHash"
+        ],
+        "outgoing_class_dependencies": [
+            "Intervention\\Image\\Image",
+            "JsonSerializable",
+            "phpseclib\\Math\\BigInteger",
+            "Intervention\\Image\\ImageManager",
+            "Jenssegers\\ImageHash\\Implementations\\DifferenceHash",
+            "RuntimeException"
+        ],
+        "outgoing_package_dependencies": [
+            "Intervention\\Image\\",
+            "\\",
+            "phpseclib\\Math\\",
+            "Jenssegers\\ImageHash\\Implementations\\"
+        ],
+        "incoming_class_dependencies": [
+            "Jenssegers\\ImageHash\\Implementations\\AverageHash",
+            "Jenssegers\\ImageHash\\Implementations\\BlockHash",
+            "Jenssegers\\ImageHash\\Implementations\\PerceptualHash",
+            "Jenssegers\\ImageHash\\Implementations\\DifferenceHash"
+        ],
+        "incoming_package_dependencies": [
+            "Jenssegers\\ImageHash\\Implementations\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.6,
+        "dependent_instabilities": {
+            "Jenssegers\\ImageHash\\Implementations\\": 0.8
+        },
+        "distance": 0.047140452079103154,
+        "normalized_distance": 0.06666666666666665,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Jenssegers\\ImageHash\\Implementations\\AverageHash": {
+        "name": "Jenssegers\\ImageHash\\Implementations\\AverageHash",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hash",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Jenssegers\\ImageHash\\Implementation",
+            "Jenssegers\\ImageHash\\Hash",
+            "Intervention\\Image\\Image",
+            "Jenssegers\\ImageHash\\Hash"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 68,
+        "vocabulary": 27,
+        "volume": 323.33,
+        "difficulty": 9.68,
+        "effort": 3131.22,
+        "level": 0.1,
+        "bugs": 0.11,
+        "time": 174,
+        "intelligentContent": 33.39,
+        "number_operators": 22,
+        "number_operands": 46,
+        "number_operators_unique": 8,
+        "number_operands_unique": 19,
+        "cloc": 7,
+        "loc": 32,
+        "lloc": 25,
+        "mi": 84.67,
+        "mIwoC": 51.53,
+        "commentWeight": 33.14,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.75,
+        "relativeSystemComplexity": 9.75,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 19.5,
+        "package": "Jenssegers\\ImageHash\\Implementations\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Jenssegers\\ImageHash\\Implementations\\": {
+        "name": "Jenssegers\\ImageHash\\Implementations\\",
+        "classes": [
+            "Jenssegers\\ImageHash\\Implementations\\AverageHash",
+            "Jenssegers\\ImageHash\\Implementations\\BlockHash",
+            "Jenssegers\\ImageHash\\Implementations\\PerceptualHash",
+            "Jenssegers\\ImageHash\\Implementations\\DifferenceHash"
+        ],
+        "outgoing_class_dependencies": [
+            "Jenssegers\\ImageHash\\Implementation",
+            "Jenssegers\\ImageHash\\Hash",
+            "Intervention\\Image\\Image",
+            "InvalidArgumentException"
+        ],
+        "outgoing_package_dependencies": [
+            "Jenssegers\\ImageHash\\",
+            "Intervention\\Image\\",
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "Jenssegers\\ImageHash\\ImageHash"
+        ],
+        "incoming_package_dependencies": [
+            "Jenssegers\\ImageHash\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8,
+        "dependent_instabilities": {
+            "Jenssegers\\ImageHash\\": 0.6
+        },
+        "distance": 0.14142135623730948,
+        "normalized_distance": 0.19999999999999996,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Jenssegers\\ImageHash\\Implementations\\BlockHash": {
+        "name": "Jenssegers\\ImageHash\\Implementations\\BlockHash",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hash",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "even",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "uneven",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "blocksToBits",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "median",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 29,
+        "ccn": 24,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Jenssegers\\ImageHash\\Implementation",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "Jenssegers\\ImageHash\\Hash",
+            "Intervention\\Image\\Image",
+            "Jenssegers\\ImageHash\\Hash",
+            "Intervention\\Image\\Image",
+            "Jenssegers\\ImageHash\\Hash",
+            "Intervention\\Image\\Image",
+            "Jenssegers\\ImageHash\\Hash",
+            "Jenssegers\\ImageHash\\Hash"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 514,
+        "vocabulary": 75,
+        "volume": 3201.61,
+        "difficulty": 47.92,
+        "effort": 153429.01,
+        "level": 0.02,
+        "bugs": 1.07,
+        "time": 8524,
+        "intelligentContent": 66.81,
+        "number_operators": 187,
+        "number_operands": 327,
+        "number_operators_unique": 17,
+        "number_operands_unique": 58,
+        "cloc": 27,
+        "loc": 162,
+        "lloc": 135,
+        "mi": 55.31,
+        "mIwoC": 25.76,
+        "commentWeight": 29.56,
+        "kanDefect": 0.71,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.93,
+        "relativeSystemComplexity": 64.93,
+        "totalStructuralComplexity": 384,
+        "totalDataComplexity": 5.56,
+        "totalSystemComplexity": 389.56,
+        "package": "Jenssegers\\ImageHash\\Implementations\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Jenssegers\\ImageHash\\Implementations\\PerceptualHash": {
+        "name": "Jenssegers\\ImageHash\\Implementations\\PerceptualHash",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hash",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateDCT",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "median",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "average",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 14,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Jenssegers\\ImageHash\\Implementation",
+            "InvalidArgumentException",
+            "Jenssegers\\ImageHash\\Hash",
+            "Intervention\\Image\\Image",
+            "Jenssegers\\ImageHash\\Hash"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 245,
+        "vocabulary": 49,
+        "volume": 1375.6,
+        "difficulty": 35.29,
+        "effort": 48550.73,
+        "level": 0.03,
+        "bugs": 0.46,
+        "time": 2697,
+        "intelligentContent": 38.98,
+        "number_operators": 85,
+        "number_operands": 160,
+        "number_operators_unique": 15,
+        "number_operands_unique": 34,
+        "cloc": 25,
+        "loc": 108,
+        "lloc": 83,
+        "mi": 68.19,
+        "mIwoC": 34.28,
+        "commentWeight": 33.91,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.89,
+        "relativeSystemComplexity": 36.89,
+        "totalStructuralComplexity": 180,
+        "totalDataComplexity": 4.43,
+        "totalSystemComplexity": 184.43,
+        "package": "Jenssegers\\ImageHash\\Implementations\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Jenssegers\\ImageHash\\Implementations\\DifferenceHash": {
+        "name": "Jenssegers\\ImageHash\\Implementations\\DifferenceHash",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hash",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Jenssegers\\ImageHash\\Implementation",
+            "Jenssegers\\ImageHash\\Hash",
+            "Intervention\\Image\\Image",
+            "Jenssegers\\ImageHash\\Hash"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 92,
+        "vocabulary": 27,
+        "volume": 437.45,
+        "difficulty": 10.85,
+        "effort": 4746.33,
+        "level": 0.09,
+        "bugs": 0.15,
+        "time": 264,
+        "intelligentContent": 40.32,
+        "number_operators": 30,
+        "number_operands": 62,
+        "number_operators_unique": 7,
+        "number_operands_unique": 20,
+        "cloc": 10,
+        "loc": 37,
+        "lloc": 27,
+        "mi": 85.94,
+        "mIwoC": 49.88,
+        "commentWeight": 36.05,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 9.5,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 19,
+        "package": "Jenssegers\\ImageHash\\Implementations\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Jenssegers\\ImageHash\\Hash": {
+        "name": "Jenssegers\\ImageHash\\Hash",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fromHex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fromBits",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fromInt",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toHex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toBytes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toBits",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toInt",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "distance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "equals",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "jsonSerialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 11,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "JsonSerializable",
+            "phpseclib\\Math\\BigInteger",
+            "phpseclib\\Math\\BigInteger",
+            "phpseclib\\Math\\BigInteger",
+            "phpseclib\\Math\\BigInteger",
+            "Jenssegers\\ImageHash\\Hash",
+            "Jenssegers\\ImageHash\\Hash"
+        ],
+        "parents": [],
+        "lcom": 5,
+        "length": 73,
+        "vocabulary": 22,
+        "volume": 325.54,
+        "difficulty": 7.21,
+        "effort": 2345.79,
+        "level": 0.14,
+        "bugs": 0.11,
+        "time": 130,
+        "intelligentContent": 45.18,
+        "number_operators": 24,
+        "number_operands": 49,
+        "number_operators_unique": 5,
+        "number_operands_unique": 17,
+        "cloc": 8,
+        "loc": 72,
+        "lloc": 64,
+        "mi": 67.29,
+        "mIwoC": 42.6,
+        "commentWeight": 24.69,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 3.13,
+        "relativeSystemComplexity": 12.13,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 37.5,
+        "totalSystemComplexity": 145.5,
+        "package": "Jenssegers\\ImageHash\\",
+        "pageRank": 0.65,
+        "afferentCoupling": 8,
+        "efferentCoupling": 4,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Jenssegers\\ImageHash\\ImageHash": {
+        "name": "Jenssegers\\ImageHash\\ImageHash",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hash",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compare",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "distance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createResource",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultImplementation",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultDriver",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 5,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Jenssegers\\ImageHash\\Implementation",
+            "Intervention\\Image\\ImageManager",
+            "Jenssegers\\ImageHash\\Hash",
+            "Jenssegers\\ImageHash\\Hash",
+            "Jenssegers\\ImageHash\\Hash",
+            "Intervention\\Image\\Image",
+            "Jenssegers\\ImageHash\\Implementation",
+            "Jenssegers\\ImageHash\\Implementations\\DifferenceHash",
+            "Intervention\\Image\\ImageManager",
+            "Intervention\\Image\\ImageManager",
+            "Intervention\\Image\\ImageManager",
+            "RuntimeException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 53,
+        "vocabulary": 15,
+        "volume": 207.07,
+        "difficulty": 4.88,
+        "effort": 1009.44,
+        "level": 0.21,
+        "bugs": 0.07,
+        "time": 56,
+        "intelligentContent": 42.47,
+        "number_operators": 14,
+        "number_operands": 39,
+        "number_operators_unique": 3,
+        "number_operands_unique": 12,
+        "cloc": 17,
+        "loc": 61,
+        "lloc": 44,
+        "mi": 83.74,
+        "mIwoC": 47.26,
+        "commentWeight": 36.48,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 1.36,
+        "relativeSystemComplexity": 26.36,
+        "totalStructuralComplexity": 175,
+        "totalDataComplexity": 9.5,
+        "totalSystemComplexity": 184.5,
+        "package": "Jenssegers\\ImageHash\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "intervention\/image": {
+                "name": "intervention\/image",
+                "required": "^2.4",
+                "installed": null,
+                "latest": "2.5.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/image.intervention.io\/",
+                "zip": "https:\/\/api.github.com\/repos\/Intervention\/image\/zipball\/abbf18d5ab8367f96b3205ca3c89fb2fa598c69e"
+            },
+            "phpseclib\/phpseclib": {
+                "name": "phpseclib\/phpseclib",
+                "required": "^2.0",
+                "installed": null,
+                "latest": "2.0.25",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/phpseclib.sourceforge.net",
+                "zip": "https:\/\/api.github.com\/repos\/phpseclib\/phpseclib\/zipball\/c18159618ed7cd7ff721ac1a8fec7860a475d2f0"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

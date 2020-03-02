@@ -1,0 +1,33 @@
+{
+    "getallheaders": {
+        "name": "getallheaders",
+        "cloc": 5,
+        "loc": 33,
+        "lloc": 28,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.6",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

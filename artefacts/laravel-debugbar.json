@@ -1,0 +1,4223 @@
+{
+    "Barryvdh\\Debugbar\\DataCollector\\RouteCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\RouteCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRouteInformation",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMiddleware",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "displayRoutes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 19,
+        "ccn": 13,
+        "ccnMethodMax": 12,
+        "externals": [
+            "DebugBar\\DataCollector\\DataCollector",
+            "DebugBar\\DataCollector\\Renderable",
+            "Illuminate\\Routing\\Router",
+            "ReflectionMethod",
+            "ReflectionFunction",
+            "Illuminate\\Support\\Facades\\Config"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\DataCollector"
+        ],
+        "lcom": 3,
+        "length": 145,
+        "vocabulary": 41,
+        "volume": 776.85,
+        "difficulty": 9.09,
+        "effort": 7058.19,
+        "level": 0.11,
+        "bugs": 0.26,
+        "time": 392,
+        "intelligentContent": 85.5,
+        "number_operators": 39,
+        "number_operands": 106,
+        "number_operators_unique": 6,
+        "number_operands_unique": 35,
+        "cloc": 37,
+        "loc": 100,
+        "lloc": 63,
+        "mi": 79.21,
+        "mIwoC": 38.76,
+        "commentWeight": 40.45,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 256,
+        "relativeDataComplexity": 0.39,
+        "relativeSystemComplexity": 256.39,
+        "totalStructuralComplexity": 1792,
+        "totalDataComplexity": 2.71,
+        "totalSystemComplexity": 1794.71,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\",
+        "classes": [
+            "Barryvdh\\Debugbar\\DataCollector\\RouteCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\GateCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\LogsCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\EventCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\ModelsCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\RequestCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\CacheCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\SessionCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\LaravelCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\FilesCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\QueryCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\ViewCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\MultiAuthCollector"
+        ],
+        "outgoing_class_dependencies": [
+            "DebugBar\\DataCollector\\DataCollector",
+            "DebugBar\\DataCollector\\Renderable",
+            "Illuminate\\Routing\\Router",
+            "ReflectionMethod",
+            "ReflectionFunction",
+            "Illuminate\\Support\\Facades\\Config",
+            "DebugBar\\DataCollector\\MessagesCollector",
+            "Illuminate\\Contracts\\Auth\\Access\\Gate",
+            "Barryvdh\\Debugbar\\DataFormatter\\SimpleFormatter",
+            "Illuminate\\Support\\Str",
+            "Psr\\Log\\LogLevel",
+            "ReflectionClass",
+            "DebugBar\\DataCollector\\TimeDataCollector",
+            "Illuminate\\Events\\Dispatcher",
+            "Illuminate\\Contracts\\Events\\Dispatcher",
+            "DebugBar\\DataCollector\\DataCollectorInterface",
+            "Laravel\\Telescope\\IncomingEntry",
+            "InvalidArgumentException",
+            "DateTimeZone",
+            "DateTime",
+            "Illuminate\\Cache\\Events\\CacheEvent",
+            "Illuminate\\Foundation\\Application",
+            "Illuminate\\Container\\Container",
+            "DebugBar\\DataCollector\\PDO\\PDOCollector",
+            "DebugBar\\Bridge\\Twig\\TwigCollector",
+            "Illuminate\\View\\View",
+            "Illuminate\\Contracts\\Auth\\Guard"
+        ],
+        "outgoing_package_dependencies": [
+            "DebugBar\\DataCollector\\",
+            "Illuminate\\Routing\\",
+            "\\",
+            "Illuminate\\Support\\Facades\\",
+            "Illuminate\\Contracts\\Auth\\Access\\",
+            "Barryvdh\\Debugbar\\DataFormatter\\",
+            "Illuminate\\Support\\",
+            "Psr\\Log\\",
+            "Illuminate\\Events\\",
+            "Illuminate\\Contracts\\Events\\",
+            "Laravel\\Telescope\\",
+            "Illuminate\\Cache\\Events\\",
+            "Illuminate\\Foundation\\",
+            "Illuminate\\Container\\",
+            "DebugBar\\DataCollector\\PDO\\",
+            "DebugBar\\Bridge\\Twig\\",
+            "Illuminate\\View\\",
+            "Illuminate\\Contracts\\Auth\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\Debugbar\\LaravelDebugbar"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\Debugbar\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.9642857142857143,
+        "dependent_instabilities": {
+            "Barryvdh\\Debugbar\\DataFormatter\\": 0.375
+        },
+        "distance": 0.025253813613805257,
+        "normalized_distance": 0.0357142857142857,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\GateCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\GateCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCheck",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "DebugBar\\DataCollector\\MessagesCollector",
+            "Illuminate\\Contracts\\Auth\\Access\\Gate",
+            "Barryvdh\\Debugbar\\DataFormatter\\SimpleFormatter",
+            "Illuminate\\Support\\Str"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\MessagesCollector"
+        ],
+        "lcom": 1,
+        "length": 48,
+        "vocabulary": 13,
+        "volume": 177.62,
+        "difficulty": 3.82,
+        "effort": 678.19,
+        "level": 0.26,
+        "bugs": 0.06,
+        "time": 38,
+        "intelligentContent": 46.52,
+        "number_operators": 6,
+        "number_operands": 42,
+        "number_operators_unique": 2,
+        "number_operands_unique": 11,
+        "cloc": 6,
+        "loc": 29,
+        "lloc": 23,
+        "mi": 86.4,
+        "mIwoC": 54.01,
+        "commentWeight": 32.39,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 81.25,
+        "totalStructuralComplexity": 162,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 162.5,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\LogsCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\LogsCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLogsFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStorageLogs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "tailFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLogs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLevels",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 19,
+        "ccn": 14,
+        "ccnMethodMax": 6,
+        "externals": [
+            "DebugBar\\DataCollector\\MessagesCollector",
+            "Psr\\Log\\LogLevel",
+            "ReflectionClass"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\MessagesCollector"
+        ],
+        "lcom": 1,
+        "length": 159,
+        "vocabulary": 50,
+        "volume": 897.37,
+        "difficulty": 15.65,
+        "effort": 14047.34,
+        "level": 0.06,
+        "bugs": 0.3,
+        "time": 780,
+        "intelligentContent": 57.33,
+        "number_operators": 48,
+        "number_operands": 111,
+        "number_operators_unique": 11,
+        "number_operands_unique": 39,
+        "cloc": 38,
+        "loc": 120,
+        "lloc": 82,
+        "mi": 73.97,
+        "mIwoC": 35.69,
+        "commentWeight": 38.27,
+        "kanDefect": 1.72,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 64.67,
+        "totalStructuralComplexity": 384,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 388,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\EventCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\EventCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onWildcardEvent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "subscribe",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareParams",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 17,
+        "ccn": 11,
+        "ccnMethodMax": 8,
+        "externals": [
+            "DebugBar\\DataCollector\\TimeDataCollector",
+            "Barryvdh\\Debugbar\\DataFormatter\\SimpleFormatter",
+            "ReflectionFunction",
+            "Illuminate\\Events\\Dispatcher",
+            "Illuminate\\Support\\Str"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\TimeDataCollector"
+        ],
+        "lcom": 5,
+        "length": 139,
+        "vocabulary": 49,
+        "volume": 780.44,
+        "difficulty": 8.42,
+        "effort": 6568.74,
+        "level": 0.12,
+        "bugs": 0.26,
+        "time": 365,
+        "intelligentContent": 92.73,
+        "number_operators": 38,
+        "number_operands": 101,
+        "number_operators_unique": 7,
+        "number_operands_unique": 42,
+        "cloc": 9,
+        "loc": 74,
+        "lloc": 65,
+        "mi": 64.44,
+        "mIwoC": 38.72,
+        "commentWeight": 25.72,
+        "kanDefect": 0.89,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.31,
+        "relativeSystemComplexity": 196.31,
+        "totalStructuralComplexity": 1372,
+        "totalDataComplexity": 2.2,
+        "totalSystemComplexity": 1374.2,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\ModelsCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\ModelsCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 5,
+        "ccnMethodMax": 4,
+        "externals": [
+            "DebugBar\\DataCollector\\MessagesCollector",
+            "Illuminate\\Contracts\\Events\\Dispatcher",
+            "Barryvdh\\Debugbar\\DataFormatter\\SimpleFormatter",
+            "Illuminate\\Support\\Str"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\MessagesCollector"
+        ],
+        "lcom": 2,
+        "length": 44,
+        "vocabulary": 21,
+        "volume": 193.26,
+        "difficulty": 5.47,
+        "effort": 1056.9,
+        "level": 0.18,
+        "bugs": 0.06,
+        "time": 59,
+        "intelligentContent": 35.34,
+        "number_operators": 9,
+        "number_operands": 35,
+        "number_operators_unique": 5,
+        "number_operands_unique": 16,
+        "cloc": 6,
+        "loc": 37,
+        "lloc": 31,
+        "mi": 80,
+        "mIwoC": 50.79,
+        "commentWeight": 29.21,
+        "kanDefect": 0.68,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 36.33,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 109,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\RequestCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\RequestCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCookieHeader",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 29,
+        "ccn": 25,
+        "ccnMethodMax": 17,
+        "externals": [
+            "DebugBar\\DataCollector\\DataCollector",
+            "DebugBar\\DataCollector\\DataCollectorInterface",
+            "DebugBar\\DataCollector\\Renderable",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "DebugBar\\DataCollector\\DataCollector",
+            "Laravel\\Telescope\\IncomingEntry",
+            "InvalidArgumentException",
+            "DateTimeZone",
+            "DateTime"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\DataCollector"
+        ],
+        "lcom": 3,
+        "length": 259,
+        "vocabulary": 84,
+        "volume": 1655.61,
+        "difficulty": 14.62,
+        "effort": 24199.12,
+        "level": 0.07,
+        "bugs": 0.55,
+        "time": 1344,
+        "intelligentContent": 113.27,
+        "number_operators": 65,
+        "number_operands": 194,
+        "number_operators_unique": 11,
+        "number_operands_unique": 73,
+        "cloc": 25,
+        "loc": 124,
+        "lloc": 99,
+        "mi": 62.61,
+        "mIwoC": 30.57,
+        "commentWeight": 32.04,
+        "kanDefect": 1.98,
+        "relativeStructuralComplexity": 484,
+        "relativeDataComplexity": 0.27,
+        "relativeSystemComplexity": 484.27,
+        "totalStructuralComplexity": 2420,
+        "totalDataComplexity": 1.35,
+        "totalSystemComplexity": 2421.35,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 8,
+        "instability": 0.89,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\CacheCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\CacheCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onCacheEvent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "subscribe",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 7,
+        "ccnMethodMax": 6,
+        "externals": [
+            "DebugBar\\DataCollector\\TimeDataCollector",
+            "Illuminate\\Cache\\Events\\CacheEvent",
+            "Illuminate\\Events\\Dispatcher"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\TimeDataCollector"
+        ],
+        "lcom": 4,
+        "length": 97,
+        "vocabulary": 42,
+        "volume": 523.05,
+        "difficulty": 5.34,
+        "effort": 2791.98,
+        "level": 0.19,
+        "bugs": 0.17,
+        "time": 155,
+        "intelligentContent": 97.99,
+        "number_operators": 18,
+        "number_operands": 79,
+        "number_operators_unique": 5,
+        "number_operands_unique": 37,
+        "cloc": 2,
+        "loc": 51,
+        "lloc": 49,
+        "mi": 58.25,
+        "mIwoC": 43.15,
+        "commentWeight": 15.1,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.61,
+        "relativeSystemComplexity": 25.61,
+        "totalStructuralComplexity": 150,
+        "totalDataComplexity": 3.67,
+        "totalSystemComplexity": 153.67,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\SessionCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\SessionCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 6,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "DebugBar\\DataCollector\\DataCollector",
+            "DebugBar\\DataCollector\\DataCollectorInterface",
+            "DebugBar\\DataCollector\\Renderable"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\DataCollector"
+        ],
+        "lcom": 3,
+        "length": 30,
+        "vocabulary": 14,
+        "volume": 114.22,
+        "difficulty": 2,
+        "effort": 228.44,
+        "level": 0.5,
+        "bugs": 0.04,
+        "time": 13,
+        "intelligentContent": 57.11,
+        "number_operators": 6,
+        "number_operands": 24,
+        "number_operators_unique": 2,
+        "number_operands_unique": 12,
+        "cloc": 15,
+        "loc": 40,
+        "lloc": 25,
+        "mi": 95.33,
+        "mIwoC": 54.69,
+        "commentWeight": 40.63,
+        "kanDefect": 0.38,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.08,
+        "relativeSystemComplexity": 5.08,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 4.33,
+        "totalSystemComplexity": 20.33,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\LaravelCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\LaravelCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "DebugBar\\DataCollector\\DataCollector",
+            "DebugBar\\DataCollector\\Renderable",
+            "Illuminate\\Foundation\\Application"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\DataCollector"
+        ],
+        "lcom": 3,
+        "length": 44,
+        "vocabulary": 22,
+        "volume": 196.21,
+        "difficulty": 1.95,
+        "effort": 382.62,
+        "level": 0.51,
+        "bugs": 0.07,
+        "time": 21,
+        "intelligentContent": 100.62,
+        "number_operators": 5,
+        "number_operands": 39,
+        "number_operators_unique": 2,
+        "number_operands_unique": 20,
+        "cloc": 14,
+        "loc": 36,
+        "lloc": 22,
+        "mi": 95.53,
+        "mIwoC": 54.39,
+        "commentWeight": 41.13,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.08,
+        "relativeSystemComplexity": 5.08,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 4.33,
+        "totalSystemComplexity": 20.33,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\FilesCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\FilesCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIncludedFiles",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCompiledFiles",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stripBasePath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 8,
+        "ccnMethodMax": 5,
+        "externals": [
+            "DebugBar\\DataCollector\\DataCollector",
+            "DebugBar\\DataCollector\\Renderable",
+            "Illuminate\\Container\\Container",
+            "ReflectionClass"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\DataCollector"
+        ],
+        "lcom": 2,
+        "length": 117,
+        "vocabulary": 45,
+        "volume": 642.55,
+        "difficulty": 7.74,
+        "effort": 4971.28,
+        "level": 0.13,
+        "bugs": 0.21,
+        "time": 276,
+        "intelligentContent": 83.05,
+        "number_operators": 33,
+        "number_operands": 84,
+        "number_operators_unique": 7,
+        "number_operands_unique": 38,
+        "cloc": 34,
+        "loc": 99,
+        "lloc": 65,
+        "mi": 79.13,
+        "mIwoC": 39.72,
+        "commentWeight": 39.41,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 1.21,
+        "relativeSystemComplexity": 26.21,
+        "totalStructuralComplexity": 175,
+        "totalDataComplexity": 8.5,
+        "totalSystemComplexity": 183.5,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\QueryCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\QueryCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRenderSqlWithParams",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setShowHints",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFindSource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setExplainSource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "performQueryAnalysis",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findSource",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseTrace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fileIsInExcludedPath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findMiddlewareFromFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findViewFromHash",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTwigInfo",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "normalizeFilename",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collectTransactionEvent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 19,
+        "nbMethods": 19,
+        "nbMethodsPrivate": 8,
+        "nbMethodsPublic": 11,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 69,
+        "ccn": 51,
+        "ccnMethodMax": 13,
+        "externals": [
+            "DebugBar\\DataCollector\\PDO\\PDOCollector",
+            "DebugBar\\DataCollector\\TimeDataCollector",
+            "ReflectionClass"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\PDO\\PDOCollector"
+        ],
+        "lcom": 3,
+        "length": 566,
+        "vocabulary": 139,
+        "volume": 4029.32,
+        "difficulty": 25.28,
+        "effort": 101870.32,
+        "level": 0.04,
+        "bugs": 1.34,
+        "time": 5659,
+        "intelligentContent": 159.37,
+        "number_operators": 148,
+        "number_operands": 418,
+        "number_operators_unique": 15,
+        "number_operands_unique": 124,
+        "cloc": 120,
+        "loc": 354,
+        "lloc": 235,
+        "mi": 55.4,
+        "mIwoC": 16.17,
+        "commentWeight": 39.23,
+        "kanDefect": 3.67,
+        "relativeStructuralComplexity": 784,
+        "relativeDataComplexity": 0.66,
+        "relativeSystemComplexity": 784.66,
+        "totalStructuralComplexity": 14896,
+        "totalDataComplexity": 12.55,
+        "totalSystemComplexity": 14908.55,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\ViewCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\ViewCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 8,
+        "ccnMethodMax": 8,
+        "externals": [
+            "DebugBar\\Bridge\\Twig\\TwigCollector",
+            "Barryvdh\\Debugbar\\DataFormatter\\SimpleFormatter",
+            "Illuminate\\View\\View"
+        ],
+        "parents": [
+            "DebugBar\\Bridge\\Twig\\TwigCollector"
+        ],
+        "lcom": 3,
+        "length": 111,
+        "vocabulary": 36,
+        "volume": 573.86,
+        "difficulty": 5.25,
+        "effort": 3012.77,
+        "level": 0.19,
+        "bugs": 0.19,
+        "time": 167,
+        "intelligentContent": 109.31,
+        "number_operators": 27,
+        "number_operands": 84,
+        "number_operators_unique": 4,
+        "number_operands_unique": 32,
+        "cloc": 10,
+        "loc": 68,
+        "lloc": 58,
+        "mi": 69.13,
+        "mIwoC": 41.14,
+        "commentWeight": 27.99,
+        "kanDefect": 0.73,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.43,
+        "relativeSystemComplexity": 49.43,
+        "totalStructuralComplexity": 245,
+        "totalDataComplexity": 2.13,
+        "totalSystemComplexity": 247.13,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataCollector\\MultiAuthCollector": {
+        "name": "Barryvdh\\Debugbar\\DataCollector\\MultiAuthCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setShowName",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasUser",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUserInformation",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 23,
+        "ccn": 17,
+        "ccnMethodMax": 8,
+        "externals": [
+            "DebugBar\\DataCollector\\DataCollector",
+            "DebugBar\\DataCollector\\Renderable",
+            "Illuminate\\Contracts\\Auth\\Guard"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\DataCollector"
+        ],
+        "lcom": 2,
+        "length": 152,
+        "vocabulary": 42,
+        "volume": 819.63,
+        "difficulty": 9.42,
+        "effort": 7718.2,
+        "level": 0.11,
+        "bugs": 0.27,
+        "time": 429,
+        "intelligentContent": 87.04,
+        "number_operators": 39,
+        "number_operands": 113,
+        "number_operators_unique": 6,
+        "number_operands_unique": 36,
+        "cloc": 32,
+        "loc": 116,
+        "lloc": 84,
+        "mi": 71.68,
+        "mIwoC": 35.34,
+        "commentWeight": 36.34,
+        "kanDefect": 1.24,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.97,
+        "relativeSystemComplexity": 64.97,
+        "totalStructuralComplexity": 448,
+        "totalDataComplexity": 6.78,
+        "totalSystemComplexity": 454.78,
+        "package": "Barryvdh\\Debugbar\\DataCollector\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\LumenServiceProvider": {
+        "name": "Barryvdh\\Debugbar\\LumenServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRouter",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigPath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerMiddleware",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Barryvdh\\Debugbar\\ServiceProvider"
+        ],
+        "parents": [
+            "Barryvdh\\Debugbar\\ServiceProvider"
+        ],
+        "lcom": 3,
+        "length": 10,
+        "vocabulary": 6,
+        "volume": 25.85,
+        "difficulty": 0.7,
+        "effort": 18.09,
+        "level": 1.43,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 36.93,
+        "number_operators": 3,
+        "number_operands": 7,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 21,
+        "loc": 42,
+        "lloc": 21,
+        "mi": 105.59,
+        "mIwoC": 61.13,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.63,
+        "relativeSystemComplexity": 2.63,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 6.5,
+        "totalSystemComplexity": 10.5,
+        "package": "Barryvdh\\Debugbar\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\": {
+        "name": "Barryvdh\\Debugbar\\",
+        "classes": [
+            "Barryvdh\\Debugbar\\LumenServiceProvider",
+            "Barryvdh\\Debugbar\\LaravelDebugbar",
+            "Barryvdh\\Debugbar\\ServiceProvider",
+            "Barryvdh\\Debugbar\\SymfonyHttpDriver",
+            "Barryvdh\\Debugbar\\JavascriptRenderer",
+            "Barryvdh\\Debugbar\\Facade"
+        ],
+        "outgoing_class_dependencies": [
+            "DebugBar\\DebugBar",
+            "Illuminate\\Support\\Str",
+            "DebugBar\\DataCollector\\PhpInfoCollector",
+            "DebugBar\\DataCollector\\MessagesCollector",
+            "DebugBar\\DataCollector\\TimeDataCollector",
+            "DebugBar\\DataCollector\\MemoryCollector",
+            "DebugBar\\DataCollector\\ExceptionsCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\LaravelCollector",
+            "DebugBar\\DataCollector\\RequestDataCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\EventCollector",
+            "Exception",
+            "Barryvdh\\Debugbar\\DataCollector\\ViewCollector",
+            "DebugBar\\Bridge\\MonologCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\QueryCollector",
+            "Barryvdh\\Debugbar\\DataFormatter\\QueryFormatter",
+            "DebugBar\\Bridge\\SwiftMailer\\SwiftMailCollector",
+            "DebugBar\\Bridge\\SwiftMailer\\SwiftLogCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\LogsCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\FilesCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\MultiAuthCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\CacheCollector",
+            "DebugBar\\DataCollector\\DataCollectorInterface",
+            "ErrorException",
+            "Symfony\\Component\\HttpFoundation\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "DebugBar\\DataCollector\\ConfigCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\SessionCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\RequestCollector",
+            "Barryvdh\\Debugbar\\Support\\Clockwork\\ClockworkCollector",
+            "Closure",
+            "DebugBar\\Storage\\PdoStorage",
+            "DebugBar\\Storage\\RedisStorage",
+            "Barryvdh\\Debugbar\\Storage\\FilesystemStorage",
+            "Illuminate\\Support\\ServiceProvider",
+            "Barryvdh\\Debugbar\\Console\\ClearCommand",
+            "DebugBar\\HttpDriverInterface",
+            "DebugBar\\JavascriptRenderer",
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "outgoing_package_dependencies": [
+            "DebugBar\\",
+            "Illuminate\\Support\\",
+            "DebugBar\\DataCollector\\",
+            "Barryvdh\\Debugbar\\DataCollector\\",
+            "\\",
+            "DebugBar\\Bridge\\",
+            "Barryvdh\\Debugbar\\DataFormatter\\",
+            "DebugBar\\Bridge\\SwiftMailer\\",
+            "Symfony\\Component\\HttpFoundation\\",
+            "Barryvdh\\Debugbar\\Support\\Clockwork\\",
+            "DebugBar\\Storage\\",
+            "Barryvdh\\Debugbar\\Storage\\",
+            "Barryvdh\\Debugbar\\Console\\",
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\Debugbar\\Controllers\\BaseController",
+            "Barryvdh\\Debugbar\\Middleware\\DebugbarEnabled",
+            "Barryvdh\\Debugbar\\Middleware\\InjectDebugbar"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\Debugbar\\Controllers\\",
+            "Barryvdh\\Debugbar\\Middleware\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.926829268292683,
+        "dependent_instabilities": {
+            "Barryvdh\\Debugbar\\DataCollector\\": 0.9642857142857143,
+            "Barryvdh\\Debugbar\\DataFormatter\\": 0.375,
+            "Barryvdh\\Debugbar\\Support\\Clockwork\\": 0.6,
+            "Barryvdh\\Debugbar\\Storage\\": 0.75,
+            "Barryvdh\\Debugbar\\Console\\": 0.8
+        },
+        "distance": 0.05173952057462539,
+        "normalized_distance": 0.07317073170731703,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Debugbar\\LaravelDebugbar": {
+        "name": "Barryvdh\\Debugbar\\LaravelDebugbar",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldCollect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCollector",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "startMeasure",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stopMeasure",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addException",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addThrowable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getJavascriptRenderer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "modifyResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEnabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDebugbarRequest",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isJsonRequest",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "injectDebugbar",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addMeasure",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "measure",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collectConsole",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addMessage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkVersion",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isLumen",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectStorage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addClockworkHeaders",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addServerTimingHeaders",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 28,
+        "nbMethods": 27,
+        "nbMethodsPrivate": 6,
+        "nbMethodsPublic": 21,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 161,
+        "ccn": 134,
+        "ccnMethodMax": 64,
+        "externals": [
+            "DebugBar\\DebugBar",
+            "Illuminate\\Support\\Str",
+            "DebugBar\\DataCollector\\PhpInfoCollector",
+            "DebugBar\\DataCollector\\MessagesCollector",
+            "DebugBar\\DataCollector\\TimeDataCollector",
+            "DebugBar\\DataCollector\\MemoryCollector",
+            "DebugBar\\DataCollector\\ExceptionsCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\LaravelCollector",
+            "DebugBar\\DataCollector\\RequestDataCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\EventCollector",
+            "Exception",
+            "Barryvdh\\Debugbar\\DataCollector\\ViewCollector",
+            "Exception",
+            "Exception",
+            "DebugBar\\DataCollector\\MessagesCollector",
+            "DebugBar\\Bridge\\MonologCollector",
+            "Exception",
+            "Barryvdh\\Debugbar\\DataCollector\\QueryCollector",
+            "Barryvdh\\Debugbar\\DataFormatter\\QueryFormatter",
+            "Exception",
+            "Exception",
+            "DebugBar\\Bridge\\SwiftMailer\\SwiftMailCollector",
+            "DebugBar\\Bridge\\SwiftMailer\\SwiftLogCollector",
+            "Exception",
+            "Barryvdh\\Debugbar\\DataCollector\\LogsCollector",
+            "Exception",
+            "Barryvdh\\Debugbar\\DataCollector\\FilesCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\MultiAuthCollector",
+            "Exception",
+            "Barryvdh\\Debugbar\\DataCollector\\CacheCollector",
+            "Exception",
+            "DebugBar\\DataCollector\\DataCollectorInterface",
+            "ErrorException",
+            "Exception",
+            "Barryvdh\\Debugbar\\JavascriptRenderer",
+            "Symfony\\Component\\HttpFoundation\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "DebugBar\\DataCollector\\ConfigCollector",
+            "Exception",
+            "Barryvdh\\Debugbar\\SymfonyHttpDriver",
+            "Barryvdh\\Debugbar\\DataCollector\\SessionCollector",
+            "Exception",
+            "Barryvdh\\Debugbar\\DataCollector\\RequestCollector",
+            "Exception",
+            "Barryvdh\\Debugbar\\Support\\Clockwork\\ClockworkCollector",
+            "Exception",
+            "Symfony\\Component\\HttpFoundation\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Closure",
+            "DebugBar\\DebugBar",
+            "DebugBar\\Storage\\PdoStorage",
+            "DebugBar\\Storage\\RedisStorage",
+            "Barryvdh\\Debugbar\\Storage\\FilesystemStorage",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Symfony\\Component\\HttpFoundation\\Response"
+        ],
+        "parents": [
+            "DebugBar\\DebugBar"
+        ],
+        "lcom": 1,
+        "length": 1203,
+        "vocabulary": 228,
+        "volume": 9422.97,
+        "difficulty": 30.16,
+        "effort": 284186.11,
+        "level": 0.03,
+        "bugs": 3.14,
+        "time": 15788,
+        "intelligentContent": 312.44,
+        "number_operators": 281,
+        "number_operands": 922,
+        "number_operators_unique": 14,
+        "number_operands_unique": 214,
+        "cloc": 211,
+        "loc": 782,
+        "lloc": 571,
+        "mi": 36.03,
+        "mIwoC": 0,
+        "commentWeight": 36.03,
+        "kanDefect": 6.33,
+        "relativeStructuralComplexity": 7056,
+        "relativeDataComplexity": 0.21,
+        "relativeSystemComplexity": 7056.21,
+        "totalStructuralComplexity": 197568,
+        "totalDataComplexity": 6,
+        "totalSystemComplexity": 197574,
+        "package": "Barryvdh\\Debugbar\\",
+        "pageRank": 0.17,
+        "afferentCoupling": 4,
+        "efferentCoupling": 35,
+        "instability": 0.9,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataFormatter\\QueryFormatter": {
+        "name": "Barryvdh\\Debugbar\\DataFormatter\\QueryFormatter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "formatSql",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkBindings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "escapeBindings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatSource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 7,
+        "ccnMethodMax": 4,
+        "externals": [
+            "DebugBar\\DataFormatter\\DataFormatter"
+        ],
+        "parents": [
+            "DebugBar\\DataFormatter\\DataFormatter"
+        ],
+        "lcom": 4,
+        "length": 54,
+        "vocabulary": 20,
+        "volume": 233.38,
+        "difficulty": 6.17,
+        "effort": 1439.2,
+        "level": 0.16,
+        "bugs": 0.08,
+        "time": 80,
+        "intelligentContent": 37.85,
+        "number_operators": 17,
+        "number_operands": 37,
+        "number_operators_unique": 5,
+        "number_operands_unique": 15,
+        "cloc": 24,
+        "loc": 61,
+        "lloc": 37,
+        "mi": 89.56,
+        "mIwoC": 48.27,
+        "commentWeight": 41.29,
+        "kanDefect": 0.82,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 6,
+        "relativeSystemComplexity": 6,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 24,
+        "totalSystemComplexity": 24,
+        "package": "Barryvdh\\Debugbar\\DataFormatter\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\DataFormatter\\": {
+        "name": "Barryvdh\\Debugbar\\DataFormatter\\",
+        "classes": [
+            "Barryvdh\\Debugbar\\DataFormatter\\QueryFormatter",
+            "Barryvdh\\Debugbar\\DataFormatter\\SimpleFormatter"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\Debugbar\\DataCollector\\GateCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\EventCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\ModelsCollector",
+            "Barryvdh\\Debugbar\\DataCollector\\ViewCollector",
+            "Barryvdh\\Debugbar\\LaravelDebugbar"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\Debugbar\\DataCollector\\",
+            "Barryvdh\\Debugbar\\"
+        ],
+        "outgoing_class_dependencies": [
+            "DebugBar\\DataFormatter\\DataFormatter",
+            "__PHP_Incomplete_Class",
+            "ArrayObject"
+        ],
+        "outgoing_package_dependencies": [
+            "DebugBar\\DataFormatter\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.375,
+        "dependent_instabilities": [],
+        "distance": 0.44194173824159216,
+        "normalized_distance": 0.625,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Debugbar\\DataFormatter\\SimpleFormatter": {
+        "name": "Barryvdh\\Debugbar\\DataFormatter\\SimpleFormatter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "formatVar",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "exportValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getClassNameFromIncomplete",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 16,
+        "ccn": 14,
+        "ccnMethodMax": 14,
+        "externals": [
+            "DebugBar\\DataFormatter\\DataFormatter",
+            "__PHP_Incomplete_Class",
+            "ArrayObject"
+        ],
+        "parents": [
+            "DebugBar\\DataFormatter\\DataFormatter"
+        ],
+        "lcom": 1,
+        "length": 114,
+        "vocabulary": 38,
+        "volume": 598.26,
+        "difficulty": 8.58,
+        "effort": 5133.49,
+        "level": 0.12,
+        "bugs": 0.2,
+        "time": 285,
+        "intelligentContent": 69.72,
+        "number_operators": 38,
+        "number_operands": 76,
+        "number_operators_unique": 7,
+        "number_operands_unique": 31,
+        "cloc": 24,
+        "loc": 83,
+        "lloc": 59,
+        "mi": 77.04,
+        "mIwoC": 40.04,
+        "commentWeight": 37,
+        "kanDefect": 1.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 3.92,
+        "relativeSystemComplexity": 12.92,
+        "totalStructuralComplexity": 27,
+        "totalDataComplexity": 11.75,
+        "totalSystemComplexity": 38.75,
+        "package": "Barryvdh\\Debugbar\\DataFormatter\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 4,
+        "efferentCoupling": 3,
+        "instability": 0.43,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Console\\ClearCommand": {
+        "name": "Barryvdh\\Debugbar\\Console\\ClearCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "DebugBar\\DebugBar"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 23,
+        "vocabulary": 13,
+        "volume": 85.11,
+        "difficulty": 3.78,
+        "effort": 321.53,
+        "level": 0.26,
+        "bugs": 0.03,
+        "time": 18,
+        "intelligentContent": 22.53,
+        "number_operators": 6,
+        "number_operands": 17,
+        "number_operators_unique": 4,
+        "number_operands_unique": 9,
+        "cloc": 1,
+        "loc": 29,
+        "lloc": 28,
+        "mi": 68.57,
+        "mIwoC": 54.38,
+        "commentWeight": 14.19,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.06,
+        "relativeSystemComplexity": 49.06,
+        "totalStructuralComplexity": 98,
+        "totalDataComplexity": 0.13,
+        "totalSystemComplexity": 98.13,
+        "package": "Barryvdh\\Debugbar\\Console\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Console\\": {
+        "name": "Barryvdh\\Debugbar\\Console\\",
+        "classes": [
+            "Barryvdh\\Debugbar\\Console\\ClearCommand",
+            "CreatePhpdebugbarStorageTable"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Console\\Command",
+            "DebugBar\\DebugBar",
+            "Illuminate\\Database\\Migrations\\Migration",
+            "Illuminate\\Support\\Facades\\Schema"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Console\\",
+            "DebugBar\\",
+            "Illuminate\\Database\\Migrations\\",
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\Debugbar\\ServiceProvider"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\Debugbar\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8,
+        "dependent_instabilities": [],
+        "distance": 0.14142135623730948,
+        "normalized_distance": 0.19999999999999996,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "CreatePhpdebugbarStorageTable": {
+        "name": "CreatePhpdebugbarStorageTable",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "up",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "down",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Database\\Migrations\\Migration",
+            "Illuminate\\Support\\Facades\\Schema",
+            "Illuminate\\Support\\Facades\\Schema"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Migrations\\Migration"
+        ],
+        "lcom": 2,
+        "length": 29,
+        "vocabulary": 9,
+        "volume": 91.93,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0.62,
+        "bugs": 0.03,
+        "time": 0,
+        "intelligentContent": 57.06,
+        "number_operators": 0,
+        "number_operands": 29,
+        "number_operators_unique": 0,
+        "number_operands_unique": 9,
+        "cloc": 10,
+        "loc": 36,
+        "lloc": 26,
+        "mi": 91.69,
+        "mIwoC": 55.25,
+        "commentWeight": 36.44,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 36,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 72,
+        "package": "Barryvdh\\Debugbar\\Console\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Support\\Clockwork\\ClockworkCollector": {
+        "name": "Barryvdh\\Debugbar\\Support\\Clockwork\\ClockworkCollector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "DebugBar\\DataCollector\\DataCollector",
+            "DebugBar\\DataCollector\\DataCollectorInterface",
+            "DebugBar\\DataCollector\\Renderable"
+        ],
+        "parents": [
+            "DebugBar\\DataCollector\\DataCollector"
+        ],
+        "lcom": 3,
+        "length": 72,
+        "vocabulary": 23,
+        "volume": 325.7,
+        "difficulty": 4.13,
+        "effort": 1343.5,
+        "level": 0.24,
+        "bugs": 0.11,
+        "time": 75,
+        "intelligentContent": 78.96,
+        "number_operators": 17,
+        "number_operands": 55,
+        "number_operators_unique": 3,
+        "number_operands_unique": 20,
+        "cloc": 24,
+        "loc": 65,
+        "lloc": 41,
+        "mi": 86.97,
+        "mIwoC": 46.55,
+        "commentWeight": 40.42,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.75,
+        "relativeSystemComplexity": 16.75,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 67,
+        "package": "Barryvdh\\Debugbar\\Support\\Clockwork\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Support\\Clockwork\\": {
+        "name": "Barryvdh\\Debugbar\\Support\\Clockwork\\",
+        "classes": [
+            "Barryvdh\\Debugbar\\Support\\Clockwork\\ClockworkCollector",
+            "Barryvdh\\Debugbar\\Support\\Clockwork\\Converter"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\Debugbar\\LaravelDebugbar",
+            "Barryvdh\\Debugbar\\Controllers\\OpenHandlerController"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\Debugbar\\",
+            "Barryvdh\\Debugbar\\Controllers\\"
+        ],
+        "outgoing_class_dependencies": [
+            "DebugBar\\DataCollector\\DataCollector",
+            "DebugBar\\DataCollector\\DataCollectorInterface",
+            "DebugBar\\DataCollector\\Renderable"
+        ],
+        "outgoing_package_dependencies": [
+            "DebugBar\\DataCollector\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6,
+        "dependent_instabilities": [],
+        "distance": 0.282842712474619,
+        "normalized_distance": 0.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Debugbar\\Support\\Clockwork\\Converter": {
+        "name": "Barryvdh\\Debugbar\\Support\\Clockwork\\Converter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "convert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 20,
+        "ccnMethodMax": 20,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 257,
+        "vocabulary": 75,
+        "volume": 1600.81,
+        "difficulty": 9.57,
+        "effort": 15312.06,
+        "level": 0.1,
+        "bugs": 0.53,
+        "time": 851,
+        "intelligentContent": 167.36,
+        "number_operators": 37,
+        "number_operands": 220,
+        "number_operators_unique": 6,
+        "number_operands_unique": 69,
+        "cloc": 7,
+        "loc": 66,
+        "lloc": 59,
+        "mi": 60.41,
+        "mIwoC": 36.24,
+        "commentWeight": 24.17,
+        "kanDefect": 1.93,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Barryvdh\\Debugbar\\Support\\Clockwork\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Controllers\\BaseController": {
+        "name": "Barryvdh\\Debugbar\\Controllers\\BaseController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Http\\Request",
+            "Barryvdh\\Debugbar\\LaravelDebugbar"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 5,
+        "volume": 18.58,
+        "difficulty": 2,
+        "effort": 37.15,
+        "level": 0.5,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 9.29,
+        "number_operators": 2,
+        "number_operands": 6,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 0,
+        "loc": 12,
+        "lloc": 12,
+        "mi": 67.3,
+        "mIwoC": 67.3,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 9.5,
+        "totalStructuralComplexity": 9,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 9.5,
+        "package": "Barryvdh\\Debugbar\\Controllers\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 4,
+        "efferentCoupling": 2,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Controllers\\": {
+        "name": "Barryvdh\\Debugbar\\Controllers\\",
+        "classes": [
+            "Barryvdh\\Debugbar\\Controllers\\BaseController",
+            "Barryvdh\\Debugbar\\Controllers\\BaseController",
+            "Barryvdh\\Debugbar\\Controllers\\TelescopeController",
+            "Barryvdh\\Debugbar\\Controllers\\AssetController",
+            "Barryvdh\\Debugbar\\Controllers\\CacheController",
+            "Barryvdh\\Debugbar\\Controllers\\OpenHandlerController"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Http\\Request",
+            "Barryvdh\\Debugbar\\LaravelDebugbar",
+            "Laravel\\Telescope\\Contracts\\EntriesRepository",
+            "Laravel\\Telescope\\Storage\\EntryQueryOptions",
+            "Illuminate\\Http\\Response",
+            "DateTime",
+            "DebugBar\\OpenHandler",
+            "Barryvdh\\Debugbar\\Support\\Clockwork\\Converter"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Http\\",
+            "Barryvdh\\Debugbar\\",
+            "Laravel\\Telescope\\Contracts\\",
+            "Laravel\\Telescope\\Storage\\",
+            "\\",
+            "DebugBar\\",
+            "Barryvdh\\Debugbar\\Support\\Clockwork\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Barryvdh\\Debugbar\\": 0.926829268292683,
+            "Barryvdh\\Debugbar\\Support\\Clockwork\\": 0.6
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Debugbar\\Controllers\\TelescopeController": {
+        "name": "Barryvdh\\Debugbar\\Controllers\\TelescopeController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "show",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Barryvdh\\Debugbar\\Controllers\\BaseController",
+            "Laravel\\Telescope\\Contracts\\EntriesRepository",
+            "Laravel\\Telescope\\Storage\\EntryQueryOptions"
+        ],
+        "parents": [
+            "Barryvdh\\Debugbar\\Controllers\\BaseController"
+        ],
+        "lcom": 1,
+        "length": 17,
+        "vocabulary": 10,
+        "volume": 56.47,
+        "difficulty": 2.57,
+        "effort": 145.22,
+        "level": 0.39,
+        "bugs": 0.02,
+        "time": 8,
+        "intelligentContent": 21.96,
+        "number_operators": 5,
+        "number_operands": 12,
+        "number_operators_unique": 3,
+        "number_operands_unique": 7,
+        "cloc": 0,
+        "loc": 10,
+        "lloc": 10,
+        "mi": 65.79,
+        "mIwoC": 65.79,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 16.6,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 0.6,
+        "totalSystemComplexity": 16.6,
+        "package": "Barryvdh\\Debugbar\\Controllers\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Controllers\\AssetController": {
+        "name": "Barryvdh\\Debugbar\\Controllers\\AssetController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "js",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "css",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cacheResponse",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Barryvdh\\Debugbar\\Controllers\\BaseController",
+            "Illuminate\\Http\\Response",
+            "Illuminate\\Http\\Response",
+            "Illuminate\\Http\\Response",
+            "DateTime"
+        ],
+        "parents": [
+            "Barryvdh\\Debugbar\\Controllers\\BaseController"
+        ],
+        "lcom": 1,
+        "length": 41,
+        "vocabulary": 14,
+        "volume": 156.1,
+        "difficulty": 2.67,
+        "effort": 416.27,
+        "level": 0.38,
+        "bugs": 0.05,
+        "time": 23,
+        "intelligentContent": 58.54,
+        "number_operators": 9,
+        "number_operands": 32,
+        "number_operators_unique": 2,
+        "number_operands_unique": 12,
+        "cloc": 13,
+        "loc": 38,
+        "lloc": 25,
+        "mi": 93.37,
+        "mIwoC": 54.01,
+        "commentWeight": 39.36,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.48,
+        "relativeSystemComplexity": 36.48,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 1.43,
+        "totalSystemComplexity": 109.43,
+        "package": "Barryvdh\\Debugbar\\Controllers\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Controllers\\CacheController": {
+        "name": "Barryvdh\\Debugbar\\Controllers\\CacheController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Barryvdh\\Debugbar\\Controllers\\BaseController"
+        ],
+        "parents": [
+            "Barryvdh\\Debugbar\\Controllers\\BaseController"
+        ],
+        "lcom": 1,
+        "length": 22,
+        "vocabulary": 8,
+        "volume": 66,
+        "difficulty": 4.8,
+        "effort": 316.8,
+        "level": 0.21,
+        "bugs": 0.02,
+        "time": 18,
+        "intelligentContent": 13.75,
+        "number_operators": 6,
+        "number_operands": 16,
+        "number_operators_unique": 3,
+        "number_operands_unique": 5,
+        "cloc": 4,
+        "loc": 20,
+        "lloc": 16,
+        "mi": 92.66,
+        "mIwoC": 60.72,
+        "commentWeight": 31.94,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.75,
+        "relativeSystemComplexity": 9.75,
+        "totalStructuralComplexity": 9,
+        "totalDataComplexity": 0.75,
+        "totalSystemComplexity": 9.75,
+        "package": "Barryvdh\\Debugbar\\Controllers\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Controllers\\OpenHandlerController": {
+        "name": "Barryvdh\\Debugbar\\Controllers\\OpenHandlerController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clockwork",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Barryvdh\\Debugbar\\Controllers\\BaseController",
+            "DebugBar\\OpenHandler",
+            "Illuminate\\Http\\Response",
+            "DebugBar\\OpenHandler",
+            "Barryvdh\\Debugbar\\Support\\Clockwork\\Converter"
+        ],
+        "parents": [
+            "Barryvdh\\Debugbar\\Controllers\\BaseController"
+        ],
+        "lcom": 1,
+        "length": 33,
+        "vocabulary": 14,
+        "volume": 125.64,
+        "difficulty": 2,
+        "effort": 251.29,
+        "level": 0.5,
+        "bugs": 0.04,
+        "time": 14,
+        "intelligentContent": 62.82,
+        "number_operators": 9,
+        "number_operands": 24,
+        "number_operators_unique": 2,
+        "number_operands_unique": 12,
+        "cloc": 8,
+        "loc": 27,
+        "lloc": 19,
+        "mi": 94.61,
+        "mIwoC": 57.27,
+        "commentWeight": 37.34,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.63,
+        "relativeSystemComplexity": 9.63,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 1.25,
+        "totalSystemComplexity": 19.25,
+        "package": "Barryvdh\\Debugbar\\Controllers\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Storage\\FilesystemStorage": {
+        "name": "Barryvdh\\Debugbar\\Storage\\FilesystemStorage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeFilename",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "garbageCollect",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "find",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 22,
+        "ccn": 15,
+        "ccnMethodMax": 6,
+        "externals": [
+            "DebugBar\\Storage\\StorageInterface",
+            "Exception",
+            "Symfony\\Component\\Finder\\Finder",
+            "Symfony\\Component\\Finder\\Finder",
+            "Symfony\\Component\\Finder\\Finder"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 137,
+        "vocabulary": 47,
+        "volume": 760.98,
+        "difficulty": 17.31,
+        "effort": 13175.8,
+        "level": 0.06,
+        "bugs": 0.25,
+        "time": 732,
+        "intelligentContent": 43.95,
+        "number_operators": 36,
+        "number_operands": 101,
+        "number_operators_unique": 12,
+        "number_operands_unique": 35,
+        "cloc": 41,
+        "loc": 124,
+        "lloc": 83,
+        "mi": 74.82,
+        "mIwoC": 35.94,
+        "commentWeight": 38.88,
+        "kanDefect": 1.56,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.41,
+        "relativeSystemComplexity": 289.41,
+        "totalStructuralComplexity": 2312,
+        "totalDataComplexity": 3.28,
+        "totalSystemComplexity": 2315.28,
+        "package": "Barryvdh\\Debugbar\\Storage\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Storage\\": {
+        "name": "Barryvdh\\Debugbar\\Storage\\",
+        "classes": [
+            "Barryvdh\\Debugbar\\Storage\\FilesystemStorage"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\Debugbar\\LaravelDebugbar"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\Debugbar\\"
+        ],
+        "outgoing_class_dependencies": [
+            "DebugBar\\Storage\\StorageInterface",
+            "Exception",
+            "Symfony\\Component\\Finder\\Finder"
+        ],
+        "outgoing_package_dependencies": [
+            "DebugBar\\Storage\\",
+            "\\",
+            "Symfony\\Component\\Finder\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.75,
+        "dependent_instabilities": [],
+        "distance": 0.17677669529663687,
+        "normalized_distance": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Debugbar\\ServiceProvider": {
+        "name": "Barryvdh\\Debugbar\\ServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRouter",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigPath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "publishConfig",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerMiddleware",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Barryvdh\\Debugbar\\LaravelDebugbar",
+            "Barryvdh\\Debugbar\\SymfonyHttpDriver",
+            "Barryvdh\\Debugbar\\Console\\ClearCommand"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 116,
+        "vocabulary": 45,
+        "volume": 637.05,
+        "difficulty": 4.93,
+        "effort": 3138.66,
+        "level": 0.2,
+        "bugs": 0.21,
+        "time": 174,
+        "intelligentContent": 129.3,
+        "number_operators": 15,
+        "number_operands": 101,
+        "number_operators_unique": 4,
+        "number_operands_unique": 41,
+        "cloc": 40,
+        "loc": 101,
+        "lloc": 61,
+        "mi": 82.53,
+        "mIwoC": 41.15,
+        "commentWeight": 41.38,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 225.33,
+        "totalStructuralComplexity": 1575,
+        "totalDataComplexity": 2.31,
+        "totalSystemComplexity": 1577.31,
+        "package": "Barryvdh\\Debugbar\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\SymfonyHttpDriver": {
+        "name": "Barryvdh\\Debugbar\\SymfonyHttpDriver",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHeaders",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSessionStarted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setSessionValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasSessionValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSessionValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteSessionValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "DebugBar\\HttpDriverInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 34,
+        "vocabulary": 9,
+        "volume": 107.78,
+        "difficulty": 6.75,
+        "effort": 727.5,
+        "level": 0.15,
+        "bugs": 0.04,
+        "time": 40,
+        "intelligentContent": 15.97,
+        "number_operators": 7,
+        "number_operands": 27,
+        "number_operators_unique": 3,
+        "number_operands_unique": 6,
+        "cloc": 23,
+        "loc": 63,
+        "lloc": 40,
+        "mi": 90.68,
+        "mIwoC": 50.42,
+        "commentWeight": 40.26,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.52,
+        "relativeSystemComplexity": 49.52,
+        "totalStructuralComplexity": 343,
+        "totalDataComplexity": 3.63,
+        "totalSystemComplexity": 346.63,
+        "package": "Barryvdh\\Debugbar\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\JavascriptRenderer": {
+        "name": "Barryvdh\\Debugbar\\JavascriptRenderer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUrlGenerator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "renderHead",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInlineHtml",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getModifiedTime",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "dumpAssetsToString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeUriRelativeTo",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 12,
+        "ccnMethodMax": 6,
+        "externals": [
+            "DebugBar\\JavascriptRenderer",
+            "DebugBar\\DebugBar"
+        ],
+        "parents": [
+            "DebugBar\\JavascriptRenderer"
+        ],
+        "lcom": 4,
+        "length": 172,
+        "vocabulary": 57,
+        "volume": 1003.26,
+        "difficulty": 10.12,
+        "effort": 10155.42,
+        "level": 0.1,
+        "bugs": 0.33,
+        "time": 564,
+        "intelligentContent": 99.11,
+        "number_operators": 48,
+        "number_operands": 124,
+        "number_operators_unique": 8,
+        "number_operands_unique": 49,
+        "cloc": 32,
+        "loc": 111,
+        "lloc": 79,
+        "mi": 72.93,
+        "mIwoC": 35.98,
+        "commentWeight": 36.96,
+        "kanDefect": 1.65,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 1.31,
+        "relativeSystemComplexity": 37.31,
+        "totalStructuralComplexity": 252,
+        "totalDataComplexity": 9.14,
+        "totalSystemComplexity": 261.14,
+        "package": "Barryvdh\\Debugbar\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "debugbar": {
+        "name": "debugbar",
+        "cloc": 5,
+        "loc": 10,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "debug": {
+        "name": "debug",
+        "cloc": 6,
+        "loc": 14,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "start_measure": {
+        "name": "start_measure",
+        "cloc": 6,
+        "loc": 11,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "stop_measure": {
+        "name": "stop_measure",
+        "cloc": 5,
+        "loc": 10,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "add_measure": {
+        "name": "add_measure",
+        "cloc": 7,
+        "loc": 12,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "measure": {
+        "name": "measure",
+        "cloc": 6,
+        "loc": 11,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Barryvdh\\Debugbar\\Middleware\\DebugbarEnabled": {
+        "name": "Barryvdh\\Debugbar\\Middleware\\DebugbarEnabled",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Barryvdh\\Debugbar\\LaravelDebugbar",
+            "Closure"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 12,
+        "vocabulary": 8,
+        "volume": 36,
+        "difficulty": 2.7,
+        "effort": 97.2,
+        "level": 0.37,
+        "bugs": 0.01,
+        "time": 5,
+        "intelligentContent": 13.33,
+        "number_operators": 3,
+        "number_operands": 9,
+        "number_operators_unique": 3,
+        "number_operands_unique": 5,
+        "cloc": 17,
+        "loc": 33,
+        "lloc": 16,
+        "mi": 107.39,
+        "mIwoC": 62.57,
+        "commentWeight": 44.83,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 2.25,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 2.5,
+        "totalSystemComplexity": 4.5,
+        "package": "Barryvdh\\Debugbar\\Middleware\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Middleware\\": {
+        "name": "Barryvdh\\Debugbar\\Middleware\\",
+        "classes": [
+            "Barryvdh\\Debugbar\\Middleware\\DebugbarEnabled",
+            "Barryvdh\\Debugbar\\Middleware\\InjectDebugbar"
+        ],
+        "outgoing_class_dependencies": [
+            "Barryvdh\\Debugbar\\LaravelDebugbar",
+            "Closure",
+            "Illuminate\\Contracts\\Container\\Container",
+            "Symfony\\Component\\Debug\\Exception\\FatalThrowableError",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "Barryvdh\\Debugbar\\",
+            "\\",
+            "Illuminate\\Contracts\\Container\\",
+            "Symfony\\Component\\Debug\\Exception\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Barryvdh\\Debugbar\\": 0.926829268292683
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Debugbar\\Middleware\\InjectDebugbar": {
+        "name": "Barryvdh\\Debugbar\\Middleware\\InjectDebugbar",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleException",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inExceptArray",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 11,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Illuminate\\Contracts\\Container\\Container",
+            "Barryvdh\\Debugbar\\LaravelDebugbar",
+            "Closure",
+            "Symfony\\Component\\Debug\\Exception\\FatalThrowableError",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 80,
+        "vocabulary": 19,
+        "volume": 339.83,
+        "difficulty": 13.15,
+        "effort": 4470.13,
+        "level": 0.08,
+        "bugs": 0.11,
+        "time": 248,
+        "intelligentContent": 25.84,
+        "number_operators": 23,
+        "number_operands": 57,
+        "number_operators_unique": 6,
+        "number_operands_unique": 13,
+        "cloc": 46,
+        "loc": 97,
+        "lloc": 51,
+        "mi": 87.33,
+        "mIwoC": 43.55,
+        "commentWeight": 43.78,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.61,
+        "relativeSystemComplexity": 100.61,
+        "totalStructuralComplexity": 400,
+        "totalDataComplexity": 2.45,
+        "totalSystemComplexity": 402.45,
+        "package": "Barryvdh\\Debugbar\\Middleware\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Facade": {
+        "name": "Barryvdh\\Debugbar\\Facade",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 20,
+        "loc": 28,
+        "lloc": 8,
+        "mi": 219.3,
+        "mIwoC": 171,
+        "commentWeight": 48.3,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Barryvdh\\Debugbar\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Twig\\Node\\StopwatchNode": {
+        "name": "Barryvdh\\Debugbar\\Twig\\Node\\StopwatchNode",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Twig_Node",
+            "Twig_NodeInterface",
+            "Twig_Node_Expression_AssignName",
+            "Twig_Compiler"
+        ],
+        "parents": [
+            "Twig_Node"
+        ],
+        "lcom": 2,
+        "length": 34,
+        "vocabulary": 14,
+        "volume": 129.45,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0.82,
+        "bugs": 0.04,
+        "time": 0,
+        "intelligentContent": 106.61,
+        "number_operators": 0,
+        "number_operands": 34,
+        "number_operators_unique": 0,
+        "number_operands_unique": 14,
+        "cloc": 5,
+        "loc": 17,
+        "lloc": 12,
+        "mi": 98.77,
+        "mIwoC": 61.54,
+        "commentWeight": 37.24,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.43,
+        "relativeSystemComplexity": 36.43,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 0.86,
+        "totalSystemComplexity": 72.86,
+        "package": "Barryvdh\\Debugbar\\Twig\\Node\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Twig\\Node\\": {
+        "name": "Barryvdh\\Debugbar\\Twig\\Node\\",
+        "classes": [
+            "Barryvdh\\Debugbar\\Twig\\Node\\StopwatchNode"
+        ],
+        "outgoing_class_dependencies": [
+            "Twig_Node",
+            "Twig_NodeInterface",
+            "Twig_Node_Expression_AssignName",
+            "Twig_Compiler"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\Debugbar\\Twig\\TokenParser\\StopwatchTokenParser"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\Debugbar\\Twig\\TokenParser\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8,
+        "dependent_instabilities": [],
+        "distance": 0.14142135623730948,
+        "normalized_distance": 0.19999999999999996,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Debugbar\\Twig\\TokenParser\\StopwatchTokenParser": {
+        "name": "Barryvdh\\Debugbar\\Twig\\TokenParser\\StopwatchTokenParser",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTag",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "decideStopwatchEnd",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Twig_TokenParser",
+            "Twig_Token",
+            "Twig_Node_Expression_AssignName",
+            "Barryvdh\\Debugbar\\Twig\\Node\\StopwatchNode",
+            "Twig_Token"
+        ],
+        "parents": [
+            "Twig_TokenParser"
+        ],
+        "lcom": 2,
+        "length": 38,
+        "vocabulary": 13,
+        "volume": 140.62,
+        "difficulty": 4.2,
+        "effort": 590.59,
+        "level": 0.24,
+        "bugs": 0.05,
+        "time": 33,
+        "intelligentContent": 33.48,
+        "number_operators": 10,
+        "number_operands": 28,
+        "number_operators_unique": 3,
+        "number_operands_unique": 10,
+        "cloc": 7,
+        "loc": 37,
+        "lloc": 30,
+        "mi": 83.67,
+        "mIwoC": 52.47,
+        "commentWeight": 31.2,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.48,
+        "relativeSystemComplexity": 81.48,
+        "totalStructuralComplexity": 324,
+        "totalDataComplexity": 1.9,
+        "totalSystemComplexity": 325.9,
+        "package": "Barryvdh\\Debugbar\\Twig\\TokenParser\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Twig\\TokenParser\\": {
+        "name": "Barryvdh\\Debugbar\\Twig\\TokenParser\\",
+        "classes": [
+            "Barryvdh\\Debugbar\\Twig\\TokenParser\\StopwatchTokenParser"
+        ],
+        "outgoing_class_dependencies": [
+            "Twig_TokenParser",
+            "Twig_Token",
+            "Twig_Node_Expression_AssignName",
+            "Barryvdh\\Debugbar\\Twig\\Node\\StopwatchNode"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Barryvdh\\Debugbar\\Twig\\Node\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\Debugbar\\Twig\\Extension\\Stopwatch"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\Debugbar\\Twig\\Extension\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8,
+        "dependent_instabilities": {
+            "Barryvdh\\Debugbar\\Twig\\Node\\": 0.8
+        },
+        "distance": 0.14142135623730948,
+        "normalized_distance": 0.19999999999999996,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Debugbar\\Twig\\Extension\\Stopwatch": {
+        "name": "Barryvdh\\Debugbar\\Twig\\Extension\\Stopwatch",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTokenParsers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDebugbar",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Twig_Extension",
+            "Illuminate\\Foundation\\Application",
+            "Barryvdh\\Debugbar\\Twig\\TokenParser\\StopwatchTokenParser"
+        ],
+        "parents": [
+            "Twig_Extension"
+        ],
+        "lcom": 2,
+        "length": 17,
+        "vocabulary": 8,
+        "volume": 51,
+        "difficulty": 5,
+        "effort": 255,
+        "level": 0.2,
+        "bugs": 0.02,
+        "time": 14,
+        "intelligentContent": 10.2,
+        "number_operators": 7,
+        "number_operands": 10,
+        "number_operators_unique": 4,
+        "number_operands_unique": 4,
+        "cloc": 20,
+        "loc": 47,
+        "lloc": 27,
+        "mi": 98.91,
+        "mIwoC": 56.55,
+        "commentWeight": 42.36,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.63,
+        "relativeSystemComplexity": 2.63,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 6.5,
+        "totalSystemComplexity": 10.5,
+        "package": "Barryvdh\\Debugbar\\Twig\\Extension\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Twig\\Extension\\": {
+        "name": "Barryvdh\\Debugbar\\Twig\\Extension\\",
+        "classes": [
+            "Barryvdh\\Debugbar\\Twig\\Extension\\Stopwatch",
+            "Barryvdh\\Debugbar\\Twig\\Extension\\Debug",
+            "Barryvdh\\Debugbar\\Twig\\Extension\\Dump"
+        ],
+        "outgoing_class_dependencies": [
+            "Twig_Extension",
+            "Illuminate\\Foundation\\Application",
+            "Barryvdh\\Debugbar\\Twig\\TokenParser\\StopwatchTokenParser",
+            "Twig_SimpleFunction",
+            "Twig_Environment",
+            "DebugBar\\DataFormatter\\DataFormatterInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Illuminate\\Foundation\\",
+            "Barryvdh\\Debugbar\\Twig\\TokenParser\\",
+            "DebugBar\\DataFormatter\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Barryvdh\\Debugbar\\Twig\\TokenParser\\": 0.8
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Debugbar\\Twig\\Extension\\Debug": {
+        "name": "Barryvdh\\Debugbar\\Twig\\Extension\\Debug",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFunctions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "debug",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 9,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Twig_Extension",
+            "Illuminate\\Foundation\\Application",
+            "Twig_SimpleFunction",
+            "Twig_Environment"
+        ],
+        "parents": [
+            "Twig_Extension"
+        ],
+        "lcom": 3,
+        "length": 70,
+        "vocabulary": 26,
+        "volume": 329.03,
+        "difficulty": 10.44,
+        "effort": 3436.54,
+        "level": 0.1,
+        "bugs": 0.11,
+        "time": 191,
+        "intelligentContent": 31.5,
+        "number_operators": 23,
+        "number_operands": 47,
+        "number_operators_unique": 8,
+        "number_operands_unique": 18,
+        "cloc": 24,
+        "loc": 72,
+        "lloc": 48,
+        "mi": 83.48,
+        "mIwoC": 44.49,
+        "commentWeight": 38.99,
+        "kanDefect": 0.73,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.95,
+        "relativeSystemComplexity": 16.95,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 3.8,
+        "totalSystemComplexity": 67.8,
+        "package": "Barryvdh\\Debugbar\\Twig\\Extension\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Debugbar\\Twig\\Extension\\Dump": {
+        "name": "Barryvdh\\Debugbar\\Twig\\Extension\\Dump",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFunctions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "dump",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 6,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Twig_Extension",
+            "DebugBar\\DataFormatter\\DataFormatterInterface",
+            "Twig_SimpleFunction",
+            "Twig_Environment"
+        ],
+        "parents": [
+            "Twig_Extension"
+        ],
+        "lcom": 3,
+        "length": 73,
+        "vocabulary": 31,
+        "volume": 361.66,
+        "difficulty": 8.7,
+        "effort": 3144.84,
+        "level": 0.12,
+        "bugs": 0.12,
+        "time": 175,
+        "intelligentContent": 41.59,
+        "number_operators": 23,
+        "number_operands": 50,
+        "number_operators_unique": 8,
+        "number_operands_unique": 23,
+        "cloc": 26,
+        "loc": 68,
+        "lloc": 42,
+        "mi": 86.77,
+        "mIwoC": 45.87,
+        "commentWeight": 40.9,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 5.25,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 21,
+        "package": "Barryvdh\\Debugbar\\Twig\\Extension\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.81,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "maximebf\/debugbar": {
+                "name": "maximebf\/debugbar",
+                "required": "^1.15.1",
+                "installed": null,
+                "latest": "1.16.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/maximebf\/php-debugbar",
+                "zip": "https:\/\/api.github.com\/repos\/maximebf\/php-debugbar\/zipball\/58998b818c6567fac01e35b8a4b70c1a64530556"
+            },
+            "illuminate\/routing": {
+                "name": "illuminate\/routing",
+                "required": "^5.5|^6|^7",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/routing\/zipball\/64184358f456695b4000f274868a43899830d402"
+            },
+            "illuminate\/session": {
+                "name": "illuminate\/session",
+                "required": "^5.5|^6|^7",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/session\/zipball\/62704d18c37138e979c581c96f443b85d7e7ff8d"
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "^5.5|^6|^7",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "symfony\/debug": {
+                "name": "symfony\/debug",
+                "required": "^3|^4|^5",
+                "installed": null,
+                "latest": "4.4.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/debug\/zipball\/a980d87a659648980d89193fd8b7a7ca89d97d21"
+            },
+            "symfony\/finder": {
+                "name": "symfony\/finder",
+                "required": "^3|^4|^5",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/finder\/zipball\/6251f201187ca9d66f6b099d3de65d279e971138"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

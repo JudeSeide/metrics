@@ -1,0 +1,860 @@
+{
+    "Laravolt\\Avatar\\LumenServiceProvider": {
+        "name": "Laravolt\\Avatar\\LumenServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerConfigurations",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "packagePath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Laravolt\\Avatar\\Avatar",
+            "class"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 3,
+        "length": 53,
+        "vocabulary": 18,
+        "volume": 221.01,
+        "difficulty": 2.75,
+        "effort": 607.77,
+        "level": 0.36,
+        "bugs": 0.07,
+        "time": 34,
+        "intelligentContent": 80.37,
+        "number_operators": 9,
+        "number_operands": 44,
+        "number_operators_unique": 2,
+        "number_operands_unique": 16,
+        "cloc": 26,
+        "loc": 63,
+        "lloc": 37,
+        "mi": 91.19,
+        "mIwoC": 49.24,
+        "commentWeight": 41.94,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.47,
+        "relativeSystemComplexity": 64.47,
+        "totalStructuralComplexity": 320,
+        "totalDataComplexity": 2.33,
+        "totalSystemComplexity": 322.33,
+        "package": "Laravolt\\Avatar\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Laravolt\\Avatar\\": {
+        "name": "Laravolt\\Avatar\\",
+        "classes": [
+            "Laravolt\\Avatar\\LumenServiceProvider",
+            "Laravolt\\Avatar\\ServiceProvider",
+            "Laravolt\\Avatar\\Avatar",
+            "Laravolt\\Avatar\\Facade"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider",
+            "class",
+            "Illuminate\\Contracts\\Cache\\Repository",
+            "Illuminate\\Cache\\ArrayStore",
+            "Laravolt\\Avatar\\Generator\\GeneratorInterface",
+            "Intervention\\Image\\ImageManager",
+            "InvalidArgumentException",
+            "Laravolt\\Avatar\\Generator\\DefaultGenerator",
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "\\",
+            "Illuminate\\Contracts\\Cache\\",
+            "Illuminate\\Cache\\",
+            "Laravolt\\Avatar\\Generator\\",
+            "Intervention\\Image\\",
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Laravolt\\Avatar\\Generator\\": 0.75
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Laravolt\\Avatar\\ServiceProvider": {
+        "name": "Laravolt\\Avatar\\ServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerConfigurations",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "packagePath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Laravolt\\Avatar\\Avatar",
+            "class"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 3,
+        "length": 53,
+        "vocabulary": 18,
+        "volume": 221.01,
+        "difficulty": 2.75,
+        "effort": 607.77,
+        "level": 0.36,
+        "bugs": 0.07,
+        "time": 34,
+        "intelligentContent": 80.37,
+        "number_operators": 9,
+        "number_operands": 44,
+        "number_operators_unique": 2,
+        "number_operands_unique": 16,
+        "cloc": 26,
+        "loc": 63,
+        "lloc": 37,
+        "mi": 91.19,
+        "mIwoC": 49.24,
+        "commentWeight": 41.94,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.47,
+        "relativeSystemComplexity": 64.47,
+        "totalStructuralComplexity": 320,
+        "totalDataComplexity": 2.33,
+        "totalSystemComplexity": 322.33,
+        "package": "Laravolt\\Avatar\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Laravolt\\Avatar\\Concerns\\AttributeSetter": {
+        "name": "Laravolt\\Avatar\\Concerns\\AttributeSetter",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "setTheme",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBackground",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setForeground",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDimension",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFontSize",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFontFamily",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBorder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBorderRadius",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setShape",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setChars",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFont",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 7,
+        "wmc": 16,
+        "ccn": 6,
+        "ccnMethodMax": 4,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 96,
+        "vocabulary": 16,
+        "volume": 384,
+        "difficulty": 10.67,
+        "effort": 4096,
+        "level": 0.09,
+        "bugs": 0.13,
+        "time": 228,
+        "intelligentContent": 36,
+        "number_operators": 32,
+        "number_operands": 64,
+        "number_operators_unique": 4,
+        "number_operands_unique": 12,
+        "cloc": 0,
+        "loc": 73,
+        "lloc": 73,
+        "mi": 40.45,
+        "mIwoC": 40.45,
+        "commentWeight": 0,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 6.64,
+        "relativeSystemComplexity": 7.64,
+        "totalStructuralComplexity": 11,
+        "totalDataComplexity": 73,
+        "totalSystemComplexity": 84,
+        "package": "Laravolt\\Avatar\\Concerns\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Laravolt\\Avatar\\Concerns\\": {
+        "name": "Laravolt\\Avatar\\Concerns\\",
+        "classes": [
+            "Laravolt\\Avatar\\Concerns\\AttributeSetter"
+        ],
+        "abstraction": 1,
+        "dependent_instabilities": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Laravolt\\Avatar\\Avatar": {
+        "name": "Laravolt\\Avatar\\Avatar",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setGenerator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "applyTheme",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addTheme",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRandomTheme",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resolveTheme",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toBase64",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toSvg",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toGravatar",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInitial",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getImageObject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRandomBackground",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRandomForeground",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRandomFont",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBorderColor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildAvatar",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createShape",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createCircleShape",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createSquareShape",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cacheKey",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRandomElement",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildInitial",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateConfig",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initTheme",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 27,
+        "nbMethods": 26,
+        "nbMethodsPrivate": 14,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 55,
+        "ccn": 29,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Illuminate\\Contracts\\Cache\\Repository",
+            "Illuminate\\Cache\\ArrayStore",
+            "Laravolt\\Avatar\\Generator\\GeneratorInterface",
+            "Intervention\\Image\\ImageManager",
+            "InvalidArgumentException",
+            "Laravolt\\Avatar\\Generator\\DefaultGenerator"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 676,
+        "vocabulary": 124,
+        "volume": 4701.04,
+        "difficulty": 32.75,
+        "effort": 153969.73,
+        "level": 0.03,
+        "bugs": 1.57,
+        "time": 8554,
+        "intelligentContent": 143.53,
+        "number_operators": 200,
+        "number_operands": 476,
+        "number_operators_unique": 15,
+        "number_operands_unique": 109,
+        "cloc": 17,
+        "loc": 310,
+        "lloc": 293,
+        "mi": 34.32,
+        "mIwoC": 16.57,
+        "commentWeight": 17.74,
+        "kanDefect": 2.58,
+        "relativeStructuralComplexity": 1369,
+        "relativeDataComplexity": 0.62,
+        "relativeSystemComplexity": 1369.62,
+        "totalStructuralComplexity": 36963,
+        "totalDataComplexity": 16.74,
+        "totalSystemComplexity": 36979.74,
+        "package": "Laravolt\\Avatar\\",
+        "pageRank": 0.23,
+        "afferentCoupling": 2,
+        "efferentCoupling": 6,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Laravolt\\Avatar\\Facade": {
+        "name": "Laravolt\\Avatar\\Facade",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 3,
+        "loc": 11,
+        "lloc": 8,
+        "mi": 114.24,
+        "mIwoC": 78.06,
+        "commentWeight": 36.18,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Laravolt\\Avatar\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Laravolt\\Avatar\\Generator\\GeneratorInterface": {
+        "name": "Laravolt\\Avatar\\Generator\\GeneratorInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "make",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Laravolt\\Avatar\\Generator\\",
+        "pageRank": 0.26,
+        "afferentCoupling": 2,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Laravolt\\Avatar\\Generator\\": {
+        "name": "Laravolt\\Avatar\\Generator\\",
+        "classes": [
+            "Laravolt\\Avatar\\Generator\\GeneratorInterface",
+            "Laravolt\\Avatar\\Generator\\DefaultGenerator"
+        ],
+        "incoming_class_dependencies": [
+            "Laravolt\\Avatar\\Avatar"
+        ],
+        "incoming_package_dependencies": [
+            "Laravolt\\Avatar\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Str",
+            "InvalidArgumentException"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.75,
+        "dependent_instabilities": [],
+        "distance": 0.17677669529663687,
+        "normalized_distance": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Laravolt\\Avatar\\Generator\\DefaultGenerator": {
+        "name": "Laravolt\\Avatar\\Generator\\DefaultGenerator",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "make",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 9,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Laravolt\\Avatar\\Generator\\GeneratorInterface",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Str",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 77,
+        "vocabulary": 26,
+        "volume": 361.93,
+        "difficulty": 8.7,
+        "effort": 3148.82,
+        "level": 0.11,
+        "bugs": 0.12,
+        "time": 175,
+        "intelligentContent": 41.6,
+        "number_operators": 19,
+        "number_operands": 58,
+        "number_operators_unique": 6,
+        "number_operands_unique": 20,
+        "cloc": 3,
+        "loc": 43,
+        "lloc": 40,
+        "mi": 65.82,
+        "mIwoC": 45.93,
+        "commentWeight": 19.89,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.44,
+        "relativeSystemComplexity": 64.44,
+        "totalStructuralComplexity": 128,
+        "totalDataComplexity": 0.89,
+        "totalSystemComplexity": 128.89,
+        "package": "Laravolt\\Avatar\\Generator\\",
+        "pageRank": 0.2,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.1.3",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "~5.6 | 6.*",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "illuminate\/cache": {
+                "name": "illuminate\/cache",
+                "required": "~5.6 | 6.*",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/cache\/zipball\/a019756db6104d3fab41213f8f7c2a3fd1d8dfae"
+            },
+            "intervention\/image": {
+                "name": "intervention\/image",
+                "required": "^2.5",
+                "installed": null,
+                "latest": "2.5.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/image.intervention.io\/",
+                "zip": "https:\/\/api.github.com\/repos\/Intervention\/image\/zipball\/abbf18d5ab8367f96b3205ca3c89fb2fa598c69e"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

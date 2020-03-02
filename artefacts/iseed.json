@@ -1,0 +1,582 @@
+{
+    "Orangehill\\Iseed\\IseedCommand": {
+        "name": "Orangehill\\Iseed\\IseedCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fire",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "printResult",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateFileName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 19,
+        "ccn": 13,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "File",
+            "Config",
+            "Schema",
+            "Orangehill\\Iseed\\TableNotFoundException"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 4,
+        "length": 232,
+        "vocabulary": 69,
+        "volume": 1417.18,
+        "difficulty": 8.76,
+        "effort": 12417.18,
+        "level": 0.11,
+        "bugs": 0.47,
+        "time": 690,
+        "intelligentContent": 161.74,
+        "number_operators": 48,
+        "number_operands": 184,
+        "number_operators_unique": 6,
+        "number_operands_unique": 63,
+        "cloc": 53,
+        "loc": 138,
+        "lloc": 85,
+        "mi": 75.06,
+        "mIwoC": 34.1,
+        "commentWeight": 40.96,
+        "kanDefect": 1.01,
+        "relativeStructuralComplexity": 256,
+        "relativeDataComplexity": 0.39,
+        "relativeSystemComplexity": 256.39,
+        "totalStructuralComplexity": 1792,
+        "totalDataComplexity": 2.76,
+        "totalSystemComplexity": 1794.76,
+        "package": "Orangehill\\Iseed\\",
+        "pageRank": 0.21,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Orangehill\\Iseed\\": {
+        "name": "Orangehill\\Iseed\\",
+        "classes": [
+            "Orangehill\\Iseed\\IseedCommand",
+            "Orangehill\\Iseed\\TableNotFoundException",
+            "Orangehill\\Iseed\\Iseed",
+            "Orangehill\\Iseed\\IseedServiceProvider"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Console\\Command",
+            "File",
+            "Config",
+            "Schema",
+            "RuntimeException",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Illuminate\\Support\\Composer",
+            "DB",
+            "Illuminate\\Support\\ServiceProvider",
+            "Illuminate\\Foundation\\AliasLoader"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Console\\",
+            "\\",
+            "Illuminate\\Filesystem\\",
+            "Illuminate\\Support\\",
+            "Illuminate\\Foundation\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Orangehill\\Iseed\\TableNotFoundException": {
+        "name": "Orangehill\\Iseed\\TableNotFoundException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "RuntimeException"
+        ],
+        "parents": [
+            "RuntimeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Orangehill\\Iseed\\",
+        "pageRank": 0.34,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Orangehill\\Iseed\\Iseed": {
+        "name": "Orangehill\\Iseed\\Iseed",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "readStubFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateSeed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSeedPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "repackSeedData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasTable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateClassName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStubPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "populateStub",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prettifyArray",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addNewLines",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addIndent",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cleanSection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateDatabaseSeederRunMethod",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 16,
+        "nbMethods": 16,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 13,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 51,
+        "ccn": 36,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Illuminate\\Filesystem\\Filesystem",
+            "Illuminate\\Support\\Composer",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Illuminate\\Support\\Composer",
+            "Orangehill\\Iseed\\TableNotFoundException",
+            "DB",
+            "DB",
+            "Schema"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 541,
+        "vocabulary": 117,
+        "volume": 3716.87,
+        "difficulty": 25.5,
+        "effort": 94780.12,
+        "level": 0.04,
+        "bugs": 1.24,
+        "time": 5266,
+        "intelligentContent": 145.76,
+        "number_operators": 133,
+        "number_operands": 408,
+        "number_operators_unique": 13,
+        "number_operands_unique": 104,
+        "cloc": 118,
+        "loc": 330,
+        "lloc": 213,
+        "mi": 59.34,
+        "mIwoC": 19.37,
+        "commentWeight": 39.97,
+        "kanDefect": 2.79,
+        "relativeStructuralComplexity": 625,
+        "relativeDataComplexity": 0.64,
+        "relativeSystemComplexity": 625.64,
+        "totalStructuralComplexity": 10000,
+        "totalDataComplexity": 10.27,
+        "totalSystemComplexity": 10010.27,
+        "package": "Orangehill\\Iseed\\",
+        "pageRank": 0.21,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Orangehill\\Iseed\\IseedServiceProvider": {
+        "name": "Orangehill\\Iseed\\IseedServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerResources",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Orangehill\\Iseed\\Iseed",
+            "Illuminate\\Foundation\\AliasLoader",
+            "Orangehill\\Iseed\\IseedCommand"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 3,
+        "length": 50,
+        "vocabulary": 21,
+        "volume": 219.62,
+        "difficulty": 4.35,
+        "effort": 955.97,
+        "level": 0.23,
+        "bugs": 0.07,
+        "time": 53,
+        "intelligentContent": 50.45,
+        "number_operators": 13,
+        "number_operands": 37,
+        "number_operators_unique": 4,
+        "number_operands_unique": 17,
+        "cloc": 25,
+        "loc": 64,
+        "lloc": 39,
+        "mi": 89.82,
+        "mIwoC": 48.63,
+        "commentWeight": 41.19,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.3,
+        "relativeSystemComplexity": 81.3,
+        "totalStructuralComplexity": 324,
+        "totalDataComplexity": 1.2,
+        "totalSystemComplexity": 325.2,
+        "package": "Orangehill\\Iseed\\",
+        "pageRank": 0.12,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Orangehill\\Iseed\\Facades\\Iseed": {
+        "name": "Orangehill\\Iseed\\Facades\\Iseed",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 5,
+        "loc": 13,
+        "lloc": 8,
+        "mi": 119.04,
+        "mIwoC": 78.06,
+        "commentWeight": 40.98,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Orangehill\\Iseed\\Facades\\",
+        "pageRank": 0.12,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Orangehill\\Iseed\\Facades\\": {
+        "name": "Orangehill\\Iseed\\Facades\\",
+        "classes": [
+            "Orangehill\\Iseed\\Facades\\Iseed"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

@@ -1,0 +1,704 @@
+{
+    "Zttp\\Zttp": {
+        "name": "Zttp\\Zttp",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__callStatic",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Zttp\\PendingZttpRequest"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 3,
+        "volume": 7.92,
+        "difficulty": 1,
+        "effort": 7.92,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 7.92,
+        "number_operators": 1,
+        "number_operands": 4,
+        "number_operators_unique": 1,
+        "number_operands_unique": 2,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 73.87,
+        "mIwoC": 73.87,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 5,
+        "package": "Zttp\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Zttp\\": {
+        "name": "Zttp\\",
+        "classes": [
+            "Zttp\\Zttp",
+            "Zttp\\PendingZttpRequest",
+            "Zttp\\ZttpRequest",
+            "Zttp\\ZttpResponse",
+            "Zttp\\ConnectionException"
+        ],
+        "outgoing_class_dependencies": [
+            "GuzzleHttp\\Client",
+            "GuzzleHttp\\HandlerStack",
+            "static",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "GuzzleHttp\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Zttp\\PendingZttpRequest": {
+        "name": "Zttp\\PendingZttpRequest",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "new",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withoutRedirecting",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withoutVerifying",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "asJson",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "asFormParams",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "asMultipart",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "bodyFormat",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "contentType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "accept",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withHeaders",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withBasicAuth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withDigestAuth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withCookies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "timeout",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "beforeSending",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "post",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "patch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "put",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "send",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildHandlerStack",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildBeforeSendingHandler",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "runBeforeSendingCallbacks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mergeOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseQueryParams",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 29,
+        "nbMethods": 29,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 29,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 30,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Zttp\\ZttpResponse",
+            "Zttp\\ConnectionException",
+            "GuzzleHttp\\Client",
+            "GuzzleHttp\\HandlerStack",
+            "Zttp\\ZttpRequest"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 246,
+        "vocabulary": 46,
+        "volume": 1358.8,
+        "difficulty": 6.66,
+        "effort": 9053.37,
+        "level": 0.15,
+        "bugs": 0.45,
+        "time": 503,
+        "intelligentContent": 203.94,
+        "number_operators": 55,
+        "number_operands": 191,
+        "number_operators_unique": 3,
+        "number_operands_unique": 43,
+        "cloc": 0,
+        "loc": 163,
+        "lloc": 163,
+        "mi": 29.54,
+        "mIwoC": 29.54,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 2.38,
+        "relativeSystemComplexity": 227.38,
+        "totalStructuralComplexity": 6525,
+        "totalDataComplexity": 68.94,
+        "totalSystemComplexity": 6593.94,
+        "package": "Zttp\\",
+        "pageRank": 0.28,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Zttp\\ZttpRequest": {
+        "name": "Zttp\\ZttpRequest",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "url",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "method",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "body",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "headers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 20,
+        "vocabulary": 8,
+        "volume": 60,
+        "difficulty": 2.33,
+        "effort": 140,
+        "level": 0.43,
+        "bugs": 0.02,
+        "time": 8,
+        "intelligentContent": 25.71,
+        "number_operators": 6,
+        "number_operands": 14,
+        "number_operators_unique": 2,
+        "number_operands_unique": 6,
+        "cloc": 0,
+        "loc": 26,
+        "lloc": 26,
+        "mi": 56.55,
+        "mIwoC": 56.55,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.74,
+        "relativeSystemComplexity": 36.74,
+        "totalStructuralComplexity": 180,
+        "totalDataComplexity": 3.71,
+        "totalSystemComplexity": 183.71,
+        "package": "Zttp\\",
+        "pageRank": 0.21,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Zttp\\ZttpResponse": {
+        "name": "Zttp\\ZttpResponse",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "body",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "json",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "header",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "headers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "status",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "effectiveUri",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSuccess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isOk",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRedirect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isClientError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isServerError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cookies",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 15,
+        "nbMethods": 13,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 13,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 19,
+        "ccn": 5,
+        "ccnMethodMax": 2,
+        "externals": [
+            "static"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 71,
+        "vocabulary": 19,
+        "volume": 301.6,
+        "difficulty": 9.92,
+        "effort": 2992.83,
+        "level": 0.1,
+        "bugs": 0.1,
+        "time": 166,
+        "intelligentContent": 30.39,
+        "number_operators": 28,
+        "number_operands": 43,
+        "number_operators_unique": 6,
+        "number_operands_unique": 13,
+        "cloc": 0,
+        "loc": 72,
+        "lloc": 72,
+        "mi": 41.45,
+        "mIwoC": 41.45,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 1.16,
+        "relativeSystemComplexity": 170.16,
+        "totalStructuralComplexity": 2535,
+        "totalDataComplexity": 17.43,
+        "totalSystemComplexity": 2552.43,
+        "package": "Zttp\\",
+        "pageRank": 0.21,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Zttp\\ConnectionException": {
+        "name": "Zttp\\ConnectionException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Exception"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Zttp\\",
+        "pageRank": 0.21,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tap": {
+        "name": "tap",
+        "cloc": 0,
+        "loc": 6,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.2,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "guzzlehttp\/guzzle": {
+                "name": "guzzlehttp\/guzzle",
+                "required": "^6.0",
+                "installed": null,
+                "latest": "6.5.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/guzzlephp.org\/",
+                "zip": "https:\/\/api.github.com\/repos\/guzzle\/guzzle\/zipball\/43ece0e75098b7ecd8d13918293029e555a50f82"
+            },
+            "tightenco\/collect": {
+                "name": "tightenco\/collect",
+                "required": "^5.4",
+                "installed": null,
+                "latest": "6.17.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/tightenco\/collect\/zipball\/bc554bfb79fc02b4e6e1dd463a7fa8470119e9ab"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

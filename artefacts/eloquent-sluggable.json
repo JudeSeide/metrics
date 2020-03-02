@@ -1,0 +1,676 @@
+{
+    "Cviebrock\\EloquentSluggable\\SluggableObserver": {
+        "name": "Cviebrock\\EloquentSluggable\\SluggableObserver",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "saving",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateSlug",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fireSluggingEvent",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fireSluggedEvent",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Cviebrock\\EloquentSluggable\\Services\\SlugService",
+            "Illuminate\\Contracts\\Events\\Dispatcher",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 45,
+        "vocabulary": 15,
+        "volume": 175.81,
+        "difficulty": 8.75,
+        "effort": 1538.34,
+        "level": 0.11,
+        "bugs": 0.06,
+        "time": 85,
+        "intelligentContent": 20.09,
+        "number_operators": 10,
+        "number_operands": 35,
+        "number_operators_unique": 5,
+        "number_operands_unique": 10,
+        "cloc": 40,
+        "loc": 71,
+        "lloc": 31,
+        "mi": 97.37,
+        "mIwoC": 51.48,
+        "commentWeight": 45.9,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.69,
+        "relativeSystemComplexity": 36.69,
+        "totalStructuralComplexity": 180,
+        "totalDataComplexity": 3.43,
+        "totalSystemComplexity": 183.43,
+        "package": "Cviebrock\\EloquentSluggable\\",
+        "pageRank": 0.24,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Cviebrock\\EloquentSluggable\\": {
+        "name": "Cviebrock\\EloquentSluggable\\",
+        "classes": [
+            "Cviebrock\\EloquentSluggable\\SluggableObserver",
+            "Cviebrock\\EloquentSluggable\\Sluggable",
+            "Cviebrock\\EloquentSluggable\\ServiceProvider",
+            "Cviebrock\\EloquentSluggable\\SluggableScopeHelpers"
+        ],
+        "outgoing_class_dependencies": [
+            "Cviebrock\\EloquentSluggable\\Services\\SlugService",
+            "Illuminate\\Contracts\\Events\\Dispatcher",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "static",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "outgoing_package_dependencies": [
+            "Cviebrock\\EloquentSluggable\\Services\\",
+            "Illuminate\\Contracts\\Events\\",
+            "Illuminate\\Database\\Eloquent\\",
+            "\\",
+            "Illuminate\\Support\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Cviebrock\\EloquentSluggable\\Services\\": 0.7272727272727273
+        },
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Cviebrock\\EloquentSluggable\\Services\\SlugService": {
+        "name": "Cviebrock\\EloquentSluggable\\Services\\SlugService",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "slug",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildSlug",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "needsSlugging",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSlugSource",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateSlug",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSlugEngine",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateSlug",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeSlugUnique",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateSuffix",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExistingSlugs",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "usesSoftDeleting",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createSlug",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setModel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 9,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 58,
+        "ccn": 45,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Model",
+            "UnexpectedValueException",
+            "Cocur\\Slugify\\Slugify",
+            "Cocur\\Slugify\\Slugify",
+            "UnexpectedValueException",
+            "UnexpectedValueException",
+            "UnexpectedValueException",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Collection",
+            "model",
+            "static",
+            "Illuminate\\Support\\Arr",
+            "InvalidArgumentException",
+            "UnexpectedValueException",
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 535,
+        "vocabulary": 70,
+        "volume": 3279.17,
+        "difficulty": 34.68,
+        "effort": 113714.82,
+        "level": 0.03,
+        "bugs": 1.09,
+        "time": 6317,
+        "intelligentContent": 94.56,
+        "number_operators": 163,
+        "number_operands": 372,
+        "number_operators_unique": 11,
+        "number_operands_unique": 59,
+        "cloc": 144,
+        "loc": 356,
+        "lloc": 212,
+        "mi": 60.25,
+        "mIwoC": 18.58,
+        "commentWeight": 41.67,
+        "kanDefect": 2.41,
+        "relativeStructuralComplexity": 1444,
+        "relativeDataComplexity": 0.7,
+        "relativeSystemComplexity": 1444.7,
+        "totalStructuralComplexity": 20216,
+        "totalDataComplexity": 9.74,
+        "totalSystemComplexity": 20225.74,
+        "package": "Cviebrock\\EloquentSluggable\\Services\\",
+        "pageRank": 0.42,
+        "afferentCoupling": 3,
+        "efferentCoupling": 8,
+        "instability": 0.73,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Cviebrock\\EloquentSluggable\\Services\\": {
+        "name": "Cviebrock\\EloquentSluggable\\Services\\",
+        "classes": [
+            "Cviebrock\\EloquentSluggable\\Services\\SlugService"
+        ],
+        "incoming_class_dependencies": [
+            "Cviebrock\\EloquentSluggable\\SluggableObserver",
+            "Cviebrock\\EloquentSluggable\\Sluggable",
+            "Cviebrock\\EloquentSluggable\\ServiceProvider"
+        ],
+        "incoming_package_dependencies": [
+            "Cviebrock\\EloquentSluggable\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Database\\Eloquent\\Model",
+            "UnexpectedValueException",
+            "Cocur\\Slugify\\Slugify",
+            "Illuminate\\Support\\Collection",
+            "model",
+            "static",
+            "Illuminate\\Support\\Arr",
+            "InvalidArgumentException"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Database\\Eloquent\\",
+            "\\",
+            "Cocur\\Slugify\\",
+            "Illuminate\\Support\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.7272727272727273,
+        "dependent_instabilities": [],
+        "distance": 0.1928473039599675,
+        "normalized_distance": 0.2727272727272727,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Cviebrock\\EloquentSluggable\\Sluggable": {
+        "name": "Cviebrock\\EloquentSluggable\\Sluggable",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "bootSluggable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "slugging",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "slugged",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replicate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeFindSimilarSlugs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sluggable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "static",
+            "static",
+            "static",
+            "Cviebrock\\EloquentSluggable\\Services\\SlugService",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder"
+        ],
+        "parents": [],
+        "lcom": 6,
+        "length": 38,
+        "vocabulary": 17,
+        "volume": 155.32,
+        "difficulty": 3.43,
+        "effort": 532.54,
+        "level": 0.29,
+        "bugs": 0.05,
+        "time": 30,
+        "intelligentContent": 45.3,
+        "number_operators": 6,
+        "number_operands": 32,
+        "number_operators_unique": 3,
+        "number_operands_unique": 14,
+        "cloc": 39,
+        "loc": 69,
+        "lloc": 30,
+        "mi": 98.23,
+        "mIwoC": 52.3,
+        "commentWeight": 45.93,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.53,
+        "relativeSystemComplexity": 25.53,
+        "totalStructuralComplexity": 150,
+        "totalDataComplexity": 3.17,
+        "totalSystemComplexity": 153.17,
+        "package": "Cviebrock\\EloquentSluggable\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Cviebrock\\EloquentSluggable\\ServiceProvider": {
+        "name": "Cviebrock\\EloquentSluggable\\ServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUpConfig",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Cviebrock\\EloquentSluggable\\Services\\SlugService",
+            "Cviebrock\\EloquentSluggable\\SluggableObserver"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 1,
+        "length": 23,
+        "vocabulary": 13,
+        "volume": 85.11,
+        "difficulty": 4.22,
+        "effort": 359.35,
+        "level": 0.24,
+        "bugs": 0.03,
+        "time": 20,
+        "intelligentContent": 20.16,
+        "number_operators": 4,
+        "number_operands": 19,
+        "number_operators_unique": 4,
+        "number_operands_unique": 9,
+        "cloc": 11,
+        "loc": 35,
+        "lloc": 24,
+        "mi": 94.14,
+        "mIwoC": 55.97,
+        "commentWeight": 38.17,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.17,
+        "relativeSystemComplexity": 25.17,
+        "totalStructuralComplexity": 75,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 75.5,
+        "package": "Cviebrock\\EloquentSluggable\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Cviebrock\\EloquentSluggable\\SluggableScopeHelpers": {
+        "name": "Cviebrock\\EloquentSluggable\\SluggableScopeHelpers",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "getSlugKeyName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSlugKey",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeWhereSlug",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findBySlug",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findBySlugOrFail",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "static",
+            "static"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 43,
+        "vocabulary": 14,
+        "volume": 163.72,
+        "difficulty": 6,
+        "effort": 982.3,
+        "level": 0.17,
+        "bugs": 0.05,
+        "time": 55,
+        "intelligentContent": 27.29,
+        "number_operators": 13,
+        "number_operands": 30,
+        "number_operators_unique": 4,
+        "number_operands_unique": 10,
+        "cloc": 42,
+        "loc": 75,
+        "lloc": 33,
+        "mi": 96.79,
+        "mIwoC": 50.97,
+        "commentWeight": 45.83,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 1.03,
+        "relativeSystemComplexity": 50.03,
+        "totalStructuralComplexity": 245,
+        "totalDataComplexity": 5.13,
+        "totalSystemComplexity": 250.13,
+        "package": "Cviebrock\\EloquentSluggable\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.2,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "cocur\/slugify": {
+                "name": "cocur\/slugify",
+                "required": "^4.0",
+                "installed": null,
+                "latest": "4.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/cocur\/slugify\/zipball\/3f1ffc300f164f23abe8b64ffb3f92d35cec8307"
+            },
+            "illuminate\/config": {
+                "name": "illuminate\/config",
+                "required": "^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/config\/zipball\/918eb93b9328480ec977ebc69ff1761394ae033f"
+            },
+            "illuminate\/database": {
+                "name": "illuminate\/database",
+                "required": "^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/database\/zipball\/2d24be92d25a5adf68ccea30b5682ed2990fa330"
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

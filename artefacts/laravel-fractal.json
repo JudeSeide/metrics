@@ -1,0 +1,514 @@
+{
+    "Spatie\\Fractal\\FractalServiceProvider": {
+        "name": "Spatie\\Fractal\\FractalServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setupConfig",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setupMacro",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Illuminate\\Support\\Collection"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 1,
+        "length": 34,
+        "vocabulary": 14,
+        "volume": 129.45,
+        "difficulty": 5.6,
+        "effort": 724.92,
+        "level": 0.18,
+        "bugs": 0.04,
+        "time": 40,
+        "intelligentContent": 23.12,
+        "number_operators": 6,
+        "number_operands": 28,
+        "number_operators_unique": 4,
+        "number_operands_unique": 10,
+        "cloc": 9,
+        "loc": 44,
+        "lloc": 35,
+        "mi": 83.23,
+        "mIwoC": 50.99,
+        "commentWeight": 32.24,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.18,
+        "relativeSystemComplexity": 100.18,
+        "totalStructuralComplexity": 400,
+        "totalDataComplexity": 0.73,
+        "totalSystemComplexity": 400.73,
+        "package": "Spatie\\Fractal\\",
+        "pageRank": 0.2,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Fractal\\": {
+        "name": "Spatie\\Fractal\\",
+        "classes": [
+            "Spatie\\Fractal\\FractalServiceProvider",
+            "Spatie\\Fractal\\Fractal",
+            "Spatie\\Fractal\\FractalFacade"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Illuminate\\Support\\Collection",
+            "Spatie\\Fractalistic\\Fractal",
+            "League\\Fractal\\Manager",
+            "paginator",
+            "serializer",
+            "Illuminate\\Http\\JsonResponse",
+            "static",
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "Spatie\\Fractalistic\\",
+            "League\\Fractal\\",
+            "\\",
+            "Illuminate\\Http\\",
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Fractal\\Fractal": {
+        "name": "Spatie\\Fractal\\Fractal",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "respond",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 17,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Spatie\\Fractalistic\\Fractal",
+            "League\\Fractal\\Manager",
+            "paginator",
+            "serializer",
+            "serializer",
+            "Illuminate\\Http\\JsonResponse",
+            "static"
+        ],
+        "parents": [
+            "Spatie\\Fractalistic\\Fractal"
+        ],
+        "lcom": 4,
+        "length": 128,
+        "vocabulary": 28,
+        "volume": 615.34,
+        "difficulty": 7.42,
+        "effort": 4563.78,
+        "level": 0.13,
+        "bugs": 0.21,
+        "time": 254,
+        "intelligentContent": 82.97,
+        "number_operators": 39,
+        "number_operands": 89,
+        "number_operators_unique": 4,
+        "number_operands_unique": 24,
+        "cloc": 17,
+        "loc": 100,
+        "lloc": 83,
+        "mi": 66.13,
+        "mIwoC": 36.32,
+        "commentWeight": 29.81,
+        "kanDefect": 1.27,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.95,
+        "relativeSystemComplexity": 169.95,
+        "totalStructuralComplexity": 676,
+        "totalDataComplexity": 3.79,
+        "totalSystemComplexity": 679.79,
+        "package": "Spatie\\Fractal\\",
+        "pageRank": 0.2,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Fractal\\Console\\Commands\\TransformerMakeCommand": {
+        "name": "Spatie\\Fractal\\Console\\Commands\\TransformerMakeCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getStub",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultNamespace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Console\\GeneratorCommand"
+        ],
+        "parents": [
+            "Illuminate\\Console\\GeneratorCommand"
+        ],
+        "lcom": 2,
+        "length": 12,
+        "vocabulary": 9,
+        "volume": 38.04,
+        "difficulty": 1.14,
+        "effort": 43.47,
+        "level": 0.88,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 33.28,
+        "number_operators": 4,
+        "number_operands": 8,
+        "number_operators_unique": 2,
+        "number_operands_unique": 7,
+        "cloc": 26,
+        "loc": 41,
+        "lloc": 15,
+        "mi": 110.33,
+        "mIwoC": 63.15,
+        "commentWeight": 47.19,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 5,
+        "package": "Spatie\\Fractal\\Console\\Commands\\",
+        "pageRank": 0.2,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Fractal\\Console\\Commands\\": {
+        "name": "Spatie\\Fractal\\Console\\Commands\\",
+        "classes": [
+            "Spatie\\Fractal\\Console\\Commands\\TransformerMakeCommand"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Console\\GeneratorCommand"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Console\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "fractal": {
+        "name": "fractal",
+        "cloc": 7,
+        "loc": 13,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Spatie\\Fractal\\Facades\\Fractal": {
+        "name": "Spatie\\Fractal\\Facades\\Fractal",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 8,
+        "loc": 16,
+        "lloc": 8,
+        "mi": 122.51,
+        "mIwoC": 78.06,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Spatie\\Fractal\\Facades\\",
+        "pageRank": 0.2,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Fractal\\Facades\\": {
+        "name": "Spatie\\Fractal\\Facades\\",
+        "classes": [
+            "Spatie\\Fractal\\Facades\\Fractal"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Fractal\\FractalFacade": {
+        "name": "Spatie\\Fractal\\FractalFacade",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 8,
+        "loc": 16,
+        "lloc": 8,
+        "mi": 122.51,
+        "mIwoC": 78.06,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Spatie\\Fractal\\",
+        "pageRank": 0.2,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 2,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/contracts": {
+                "name": "illuminate\/contracts",
+                "required": "~5.8.0|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/contracts\/zipball\/a6c7ef89684ce0e724b42c6bfe4b1107aee28a1d"
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "~5.8.0|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "spatie\/fractalistic": {
+                "name": "spatie\/fractalistic",
+                "required": "^2.5",
+                "installed": null,
+                "latest": "2.9.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/spatie\/fractalistic",
+                "zip": "https:\/\/api.github.com\/repos\/spatie\/fractalistic\/zipball\/9d7594c4e9ed2657eb017db93ab6dbb58f56e049"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

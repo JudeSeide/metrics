@@ -1,0 +1,1088 @@
+{
+    "Maknz\\Slack\\Client": {
+        "name": "Maknz\\Slack\\Client",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEndpoint",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEndpoint",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultChannel",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDefaultChannel",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultUsername",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDefaultUsername",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultIcon",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDefaultIcon",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLinkNames",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLinkNames",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUnfurlLinks",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUnfurlLinks",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUnfurlMedia",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUnfurlMedia",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllowMarkdown",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAllowMarkdown",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMarkdownInAttachments",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMarkdownInAttachments",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createMessage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendMessage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preparePayload",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAttachmentsAsArrays",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 24,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 9,
+        "nbMethodsSetters": 9,
+        "wmc": 37,
+        "ccn": 14,
+        "ccnMethodMax": 10,
+        "externals": [
+            "GuzzleHttp\\Client",
+            "GuzzleHttp\\Client",
+            "Maknz\\Slack\\Message",
+            "Maknz\\Slack\\Message",
+            "RuntimeException",
+            "Maknz\\Slack\\Message",
+            "Maknz\\Slack\\Message"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 196,
+        "vocabulary": 32,
+        "volume": 980,
+        "difficulty": 10.86,
+        "effort": 10640,
+        "level": 0.09,
+        "bugs": 0.33,
+        "time": 591,
+        "intelligentContent": 90.26,
+        "number_operators": 44,
+        "number_operands": 152,
+        "number_operators_unique": 4,
+        "number_operands_unique": 28,
+        "cloc": 196,
+        "loc": 351,
+        "lloc": 155,
+        "mi": 75.19,
+        "mIwoC": 29.39,
+        "commentWeight": 45.79,
+        "kanDefect": 1.08,
+        "relativeStructuralComplexity": 900,
+        "relativeDataComplexity": 0.44,
+        "relativeSystemComplexity": 900.44,
+        "totalStructuralComplexity": 21600,
+        "totalDataComplexity": 10.61,
+        "totalSystemComplexity": 21610.61,
+        "package": "Maknz\\Slack\\",
+        "pageRank": 0.18,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Maknz\\Slack\\": {
+        "name": "Maknz\\Slack\\",
+        "classes": [
+            "Maknz\\Slack\\Client",
+            "Maknz\\Slack\\Message",
+            "Maknz\\Slack\\AttachmentAction",
+            "Maknz\\Slack\\ActionConfirmation",
+            "Maknz\\Slack\\AttachmentField",
+            "Maknz\\Slack\\Attachment"
+        ],
+        "outgoing_class_dependencies": [
+            "GuzzleHttp\\Client",
+            "RuntimeException",
+            "InvalidArgumentException"
+        ],
+        "outgoing_package_dependencies": [
+            "GuzzleHttp\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Maknz\\Slack\\Message": {
+        "name": "Maknz\\Slack\\Message",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getText",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setText",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getChannel",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setChannel",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUsername",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUsername",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIcon",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIcon",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIconType",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllowMarkdown",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAllowMarkdown",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enableMarkdown",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disableMarkdown",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMarkdownInAttachments",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMarkdownInAttachments",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "from",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "to",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withIcon",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attach",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAttachments",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAttachments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clearAttachments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "send",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 24,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 11,
+        "nbMethodsGetter": 8,
+        "nbMethodsSetters": 5,
+        "wmc": 32,
+        "ccn": 9,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Maknz\\Slack\\Client",
+            "Maknz\\Slack\\Attachment",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 150,
+        "vocabulary": 25,
+        "volume": 696.58,
+        "difficulty": 15.79,
+        "effort": 10998.61,
+        "level": 0.06,
+        "bugs": 0.23,
+        "time": 611,
+        "intelligentContent": 44.12,
+        "number_operators": 50,
+        "number_operands": 100,
+        "number_operators_unique": 6,
+        "number_operands_unique": 19,
+        "cloc": 191,
+        "loc": 342,
+        "lloc": 151,
+        "mi": 77.15,
+        "mIwoC": 31.35,
+        "commentWeight": 45.79,
+        "kanDefect": 0.73,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 2.32,
+        "relativeSystemComplexity": 102.32,
+        "totalStructuralComplexity": 2400,
+        "totalDataComplexity": 55.73,
+        "totalSystemComplexity": 2455.73,
+        "package": "Maknz\\Slack\\",
+        "pageRank": 0.23,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Maknz\\Slack\\AttachmentAction": {
+        "name": "Maknz\\Slack\\AttachmentAction",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setName",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getText",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setText",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStyle",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setStyle",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getType",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setType",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfirm",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConfirm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 6,
+        "nbMethodsSetters": 5,
+        "wmc": 22,
+        "ccn": 9,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Maknz\\Slack\\ActionConfirmation",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 111,
+        "vocabulary": 16,
+        "volume": 444,
+        "difficulty": 9.58,
+        "effort": 4252.15,
+        "level": 0.1,
+        "bugs": 0.15,
+        "time": 236,
+        "intelligentContent": 46.36,
+        "number_operators": 28,
+        "number_operands": 83,
+        "number_operators_unique": 3,
+        "number_operands_unique": 13,
+        "cloc": 83,
+        "loc": 182,
+        "lloc": 99,
+        "mi": 80,
+        "mIwoC": 36.72,
+        "commentWeight": 43.28,
+        "kanDefect": 0.64,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 1.04,
+        "relativeSystemComplexity": 170.04,
+        "totalStructuralComplexity": 2366,
+        "totalDataComplexity": 14.5,
+        "totalSystemComplexity": 2380.5,
+        "package": "Maknz\\Slack\\",
+        "pageRank": 0.13,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Maknz\\Slack\\ActionConfirmation": {
+        "name": "Maknz\\Slack\\ActionConfirmation",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTitle",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTitle",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getText",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setText",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOkText",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOkText",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDismissText",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDismissText",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 4,
+        "wmc": 14,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 66,
+        "vocabulary": 11,
+        "volume": 228.32,
+        "difficulty": 9.19,
+        "effort": 2097.71,
+        "level": 0.11,
+        "bugs": 0.08,
+        "time": 117,
+        "intelligentContent": 24.85,
+        "number_operators": 17,
+        "number_operands": 49,
+        "number_operators_unique": 3,
+        "number_operands_unique": 8,
+        "cloc": 59,
+        "loc": 122,
+        "lloc": 63,
+        "mi": 87.6,
+        "mIwoC": 43.56,
+        "commentWeight": 44.03,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 1.06,
+        "relativeSystemComplexity": 65.06,
+        "totalStructuralComplexity": 640,
+        "totalDataComplexity": 10.56,
+        "totalSystemComplexity": 650.56,
+        "package": "Maknz\\Slack\\",
+        "pageRank": 0.16,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Maknz\\Slack\\AttachmentField": {
+        "name": "Maknz\\Slack\\AttachmentField",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTitle",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTitle",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getShort",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setShort",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 3,
+        "wmc": 11,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 51,
+        "vocabulary": 9,
+        "volume": 161.67,
+        "difficulty": 9.5,
+        "effort": 1535.83,
+        "level": 0.11,
+        "bugs": 0.05,
+        "time": 85,
+        "intelligentContent": 17.02,
+        "number_operators": 13,
+        "number_operands": 38,
+        "number_operators_unique": 3,
+        "number_operands_unique": 6,
+        "cloc": 62,
+        "loc": 112,
+        "lloc": 50,
+        "mi": 92.63,
+        "mIwoC": 46.94,
+        "commentWeight": 45.69,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 1.07,
+        "relativeSystemComplexity": 37.07,
+        "totalStructuralComplexity": 288,
+        "totalDataComplexity": 8.57,
+        "totalSystemComplexity": 296.57,
+        "package": "Maknz\\Slack\\",
+        "pageRank": 0.13,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Maknz\\Slack\\Attachment": {
+        "name": "Maknz\\Slack\\Attachment",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFallback",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFallback",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getText",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setText",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getImageUrl",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setImageUrl",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getThumbUrl",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setThumbUrl",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPretext",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPretext",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColor",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setColor",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFooter",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFooter",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFooterIcon",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFooterIcon",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTimestamp",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTimestamp",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTitle",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTitle",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTitleLink",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTitleLink",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAuthorName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAuthorName",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAuthorLink",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAuthorLink",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAuthorIcon",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAuthorIcon",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFields",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clearFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clearActions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMarkdownFields",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMarkdownFields",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getActions",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setActions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addAction",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldsAsArrays",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getActionsAsArrays",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 42,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 17,
+        "nbMethodsSetters": 15,
+        "wmc": 68,
+        "ccn": 27,
+        "ccnMethodMax": 18,
+        "externals": [
+            "Maknz\\Slack\\AttachmentField",
+            "InvalidArgumentException",
+            "Maknz\\Slack\\AttachmentAction",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 343,
+        "vocabulary": 30,
+        "volume": 1683.06,
+        "difficulty": 14.06,
+        "effort": 23656.39,
+        "level": 0.07,
+        "bugs": 0.56,
+        "time": 1314,
+        "intelligentContent": 119.74,
+        "number_operators": 90,
+        "number_operands": 253,
+        "number_operators_unique": 3,
+        "number_operands_unique": 27,
+        "cloc": 321,
+        "loc": 610,
+        "lloc": 289,
+        "mi": 65.19,
+        "mIwoC": 20.1,
+        "commentWeight": 45.09,
+        "kanDefect": 2.4,
+        "relativeStructuralComplexity": 1681,
+        "relativeDataComplexity": 1.04,
+        "relativeSystemComplexity": 1682.04,
+        "totalStructuralComplexity": 70602,
+        "totalDataComplexity": 43.48,
+        "totalSystemComplexity": 70645.48,
+        "package": "Maknz\\Slack\\",
+        "pageRank": 0.18,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.5.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "guzzlehttp\/guzzle": {
+                "name": "guzzlehttp\/guzzle",
+                "required": "~6.0|~5.0|~4.0",
+                "installed": null,
+                "latest": "6.5.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/guzzlephp.org\/",
+                "zip": "https:\/\/api.github.com\/repos\/guzzle\/guzzle\/zipball\/43ece0e75098b7ecd8d13918293029e555a50f82"
+            },
+            "ext-mbstring": {
+                "name": "ext-mbstring",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

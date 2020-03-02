@@ -2,13 +2,14 @@
 
 namespace App\Commands\Library;
 
-use Exception;
+use App\Commands\Traits\HasProgressBar;
 use Illuminate\Support\Collection;
 use LaravelZero\Framework\Commands\Command;
-use Symfony\Component\Console\Helper\ProgressBar;
 
 class DownloadCommand extends Command
 {
+    use HasProgressBar;
+
     /** @var string - The signature of the command. */
     protected $signature = 'library:download';
 
@@ -31,24 +32,5 @@ class DownloadCommand extends Command
     {
         $content = (string) file_get_contents(config('filesystems.resources.metadata'));
         return collect(json_decode($content, true));
-    }
-
-    protected function process(Collection $collection, callable $callback): void
-    {
-        /** @var ProgressBar $bar */
-        $bar = $this->output->createProgressBar($collection->count());
-        $bar->start();
-
-        foreach ($collection as $item) {
-            try {
-                $callback($item);
-                $bar->advance();
-            } catch (Exception $exception) {
-                $bar->advance(); // ignore failure to clone libraries already downloaded
-            }
-        }
-
-        $bar->finish();
-        $this->line('');
     }
 }

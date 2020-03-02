@@ -1,0 +1,471 @@
+{
+    "DrewM\\MailChimp\\Batch": {
+        "name": "DrewM\\MailChimp\\Batch",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "patch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "post",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "put",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "execute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "check_status",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_operations",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "queueOperation",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 16,
+        "ccn": 7,
+        "ccnMethodMax": 3,
+        "externals": [
+            "DrewM\\MailChimp\\MailChimp"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 120,
+        "vocabulary": 32,
+        "volume": 600,
+        "difficulty": 13.44,
+        "effort": 8064,
+        "level": 0.07,
+        "bugs": 0.2,
+        "time": 448,
+        "intelligentContent": 44.64,
+        "number_operators": 24,
+        "number_operands": 96,
+        "number_operators_unique": 7,
+        "number_operands_unique": 25,
+        "cloc": 80,
+        "loc": 146,
+        "lloc": 66,
+        "mi": 85.49,
+        "mIwoC": 39.91,
+        "commentWeight": 45.57,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.3,
+        "relativeSystemComplexity": 10.3,
+        "totalStructuralComplexity": 90,
+        "totalDataComplexity": 13,
+        "totalSystemComplexity": 103,
+        "package": "DrewM\\MailChimp\\",
+        "pageRank": 0.35,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "DrewM\\MailChimp\\": {
+        "name": "DrewM\\MailChimp\\",
+        "classes": [
+            "DrewM\\MailChimp\\Batch",
+            "DrewM\\MailChimp\\Webhook",
+            "DrewM\\MailChimp\\MailChimp"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "DrewM\\MailChimp\\Webhook": {
+        "name": "DrewM\\MailChimp\\Webhook",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "subscribe",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "receive",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processWebhook",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "dispatchWebhookEvent",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 13,
+        "ccn": 10,
+        "ccnMethodMax": 5,
+        "externals": [],
+        "parents": [],
+        "lcom": 4,
+        "length": 55,
+        "vocabulary": 14,
+        "volume": 209.4,
+        "difficulty": 13.13,
+        "effort": 2748.43,
+        "level": 0.08,
+        "bugs": 0.07,
+        "time": 153,
+        "intelligentContent": 15.95,
+        "number_operators": 20,
+        "number_operands": 35,
+        "number_operators_unique": 6,
+        "number_operands_unique": 8,
+        "cloc": 37,
+        "loc": 84,
+        "lloc": 47,
+        "mi": 88.75,
+        "mIwoC": 45.93,
+        "commentWeight": 42.82,
+        "kanDefect": 0.8,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.75,
+        "relativeSystemComplexity": 3.75,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 11,
+        "totalSystemComplexity": 15,
+        "package": "DrewM\\MailChimp\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "DrewM\\MailChimp\\MailChimp": {
+        "name": "DrewM\\MailChimp\\MailChimp",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "new_batch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getApiEndpoint",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "subscriberHash",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "success",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLastError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLastResponse",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLastRequest",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "patch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "post",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "put",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeRequest",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareStateForRequest",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHeadersAsArray",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLinkHeaderAsArray",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attachRequestPayload",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatResponse",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setResponseState",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "determineSuccess",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findHTTPStatus",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 22,
+        "nbMethods": 18,
+        "nbMethodsPrivate": 9,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 0,
+        "wmc": 54,
+        "ccn": 33,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Exception",
+            "Exception",
+            "DrewM\\MailChimp\\Batch"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 447,
+        "vocabulary": 96,
+        "volume": 2943.48,
+        "difficulty": 24.29,
+        "effort": 71484.47,
+        "level": 0.04,
+        "bugs": 0.98,
+        "time": 3971,
+        "intelligentContent": 121.2,
+        "number_operators": 107,
+        "number_operands": 340,
+        "number_operators_unique": 12,
+        "number_operands_unique": 84,
+        "cloc": 187,
+        "loc": 412,
+        "lloc": 225,
+        "mi": 63.18,
+        "mIwoC": 19.96,
+        "commentWeight": 43.21,
+        "kanDefect": 2.02,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 2.78,
+        "relativeSystemComplexity": 83.78,
+        "totalStructuralComplexity": 1782,
+        "totalDataComplexity": 61.2,
+        "totalSystemComplexity": 1843.2,
+        "package": "DrewM\\MailChimp\\",
+        "pageRank": 0.57,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.3",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-curl": {
+                "name": "ext-curl",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-json": {
+                "name": "ext-json",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

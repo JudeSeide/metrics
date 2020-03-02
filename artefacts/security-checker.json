@@ -1,0 +1,657 @@
+{
+    "SensioLabs\\Security\\Exception\\RuntimeException": {
+        "name": "SensioLabs\\Security\\Exception\\RuntimeException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "RuntimeException",
+            "SensioLabs\\Security\\Exception\\ExceptionInterface"
+        ],
+        "parents": [
+            "RuntimeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "SensioLabs\\Security\\Exception\\",
+        "pageRank": 0.29,
+        "afferentCoupling": 3,
+        "efferentCoupling": 2,
+        "instability": 0.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "SensioLabs\\Security\\Exception\\": {
+        "name": "SensioLabs\\Security\\Exception\\",
+        "classes": [
+            "SensioLabs\\Security\\Exception\\RuntimeException",
+            "SensioLabs\\Security\\Exception\\ExceptionInterface",
+            "SensioLabs\\Security\\Exception\\HttpException"
+        ],
+        "outgoing_class_dependencies": [
+            "RuntimeException"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "SensioLabs\\Security\\SecurityChecker",
+            "SensioLabs\\Security\\Crawler"
+        ],
+        "incoming_package_dependencies": [
+            "SensioLabs\\Security\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.3333333333333333,
+        "dependent_instabilities": [],
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "SensioLabs\\Security\\Exception\\ExceptionInterface": {
+        "name": "SensioLabs\\Security\\Exception\\ExceptionInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "SensioLabs\\Security\\Exception\\",
+        "pageRank": 0.32,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "SensioLabs\\Security\\Exception\\HttpException": {
+        "name": "SensioLabs\\Security\\Exception\\HttpException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "SensioLabs\\Security\\Exception\\RuntimeException"
+        ],
+        "parents": [
+            "SensioLabs\\Security\\Exception\\RuntimeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "SensioLabs\\Security\\Exception\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "SensioLabs\\Security\\SecurityChecker": {
+        "name": "SensioLabs\\Security\\SecurityChecker",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "check",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCrawler",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 7,
+        "ccnMethodMax": 6,
+        "externals": [
+            "SensioLabs\\Security\\Crawler",
+            "SensioLabs\\Security\\Crawler",
+            "SensioLabs\\Security\\Exception\\RuntimeException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 44,
+        "vocabulary": 21,
+        "volume": 193.26,
+        "difficulty": 7.75,
+        "effort": 1497.78,
+        "level": 0.13,
+        "bugs": 0.06,
+        "time": 83,
+        "intelligentContent": 24.94,
+        "number_operators": 13,
+        "number_operands": 31,
+        "number_operators_unique": 7,
+        "number_operands_unique": 14,
+        "cloc": 17,
+        "loc": 45,
+        "lloc": 28,
+        "mi": 92.22,
+        "mIwoC": 51.48,
+        "commentWeight": 40.73,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.67,
+        "relativeSystemComplexity": 2.67,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 8,
+        "package": "SensioLabs\\Security\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "SensioLabs\\Security\\": {
+        "name": "SensioLabs\\Security\\",
+        "classes": [
+            "SensioLabs\\Security\\SecurityChecker",
+            "SensioLabs\\Security\\Result",
+            "SensioLabs\\Security\\Crawler"
+        ],
+        "outgoing_class_dependencies": [
+            "SensioLabs\\Security\\Exception\\RuntimeException",
+            "Countable",
+            "Symfony\\Contracts\\HttpClient\\ResponseInterface",
+            "Symfony\\Component\\HttpClient\\HttpClient",
+            "Symfony\\Component\\Mime\\Part\\DataPart",
+            "Symfony\\Component\\Mime\\Part\\Multipart\\FormDataPart",
+            "SensioLabs\\Security\\Exception\\HttpException"
+        ],
+        "outgoing_package_dependencies": [
+            "SensioLabs\\Security\\Exception\\",
+            "\\",
+            "Symfony\\Contracts\\HttpClient\\",
+            "Symfony\\Component\\HttpClient\\",
+            "Symfony\\Component\\Mime\\Part\\",
+            "Symfony\\Component\\Mime\\Part\\Multipart\\"
+        ],
+        "incoming_class_dependencies": [
+            "SensioLabs\\Security\\Command\\SecurityCheckerCommand"
+        ],
+        "incoming_package_dependencies": [
+            "SensioLabs\\Security\\Command\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.875,
+        "dependent_instabilities": {
+            "SensioLabs\\Security\\Exception\\": 0.3333333333333333
+        },
+        "distance": 0.08838834764831843,
+        "normalized_distance": 0.125,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "SensioLabs\\Security\\Command\\SecurityCheckerCommand": {
+        "name": "SensioLabs\\Security\\Command\\SecurityCheckerCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "configure",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "execute",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 8,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Symfony\\Component\\Console\\Command\\Command",
+            "SensioLabs\\Security\\SecurityChecker",
+            "Symfony\\Component\\Console\\Input\\InputArgument",
+            "Symfony\\Component\\Console\\Input\\InputOption",
+            "Symfony\\Component\\Console\\Input\\InputOption",
+            "Symfony\\Component\\Console\\Input\\InputOption",
+            "Symfony\\Component\\Console\\Input\\InputOption",
+            "Symfony\\Component\\Console\\Input\\InputInterface",
+            "Symfony\\Component\\Console\\Output\\OutputInterface"
+        ],
+        "parents": [
+            "Symfony\\Component\\Console\\Command\\Command"
+        ],
+        "lcom": 2,
+        "length": 89,
+        "vocabulary": 37,
+        "volume": 463.64,
+        "difficulty": 8.17,
+        "effort": 3786.4,
+        "level": 0.12,
+        "bugs": 0.15,
+        "time": 210,
+        "intelligentContent": 56.77,
+        "number_operators": 19,
+        "number_operands": 70,
+        "number_operators_unique": 7,
+        "number_operands_unique": 30,
+        "cloc": 7,
+        "loc": 64,
+        "lloc": 52,
+        "mi": 67.33,
+        "mIwoC": 42.82,
+        "commentWeight": 24.51,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.22,
+        "relativeSystemComplexity": 289.22,
+        "totalStructuralComplexity": 867,
+        "totalDataComplexity": 0.67,
+        "totalSystemComplexity": 867.67,
+        "package": "SensioLabs\\Security\\Command\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "SensioLabs\\Security\\Command\\": {
+        "name": "SensioLabs\\Security\\Command\\",
+        "classes": [
+            "SensioLabs\\Security\\Command\\SecurityCheckerCommand"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\Console\\Command\\Command",
+            "SensioLabs\\Security\\SecurityChecker",
+            "Symfony\\Component\\Console\\Input\\InputArgument",
+            "Symfony\\Component\\Console\\Input\\InputOption",
+            "Symfony\\Component\\Console\\Input\\InputInterface",
+            "Symfony\\Component\\Console\\Output\\OutputInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\Console\\Command\\",
+            "SensioLabs\\Security\\",
+            "Symfony\\Component\\Console\\Input\\",
+            "Symfony\\Component\\Console\\Output\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "SensioLabs\\Security\\": 0.875
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "SensioLabs\\Security\\Result": {
+        "name": "SensioLabs\\Security\\Result",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormat",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "count",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Countable"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 18,
+        "vocabulary": 6,
+        "volume": 46.53,
+        "difficulty": 3,
+        "effort": 139.59,
+        "level": 0.33,
+        "bugs": 0.02,
+        "time": 8,
+        "intelligentContent": 15.51,
+        "number_operators": 6,
+        "number_operands": 12,
+        "number_operators_unique": 2,
+        "number_operands_unique": 4,
+        "cloc": 0,
+        "loc": 25,
+        "lloc": 25,
+        "mi": 57.69,
+        "mIwoC": 57.69,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3.75,
+        "relativeSystemComplexity": 3.75,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 15,
+        "totalSystemComplexity": 15,
+        "package": "SensioLabs\\Security\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "SensioLabs\\Security\\Crawler": {
+        "name": "SensioLabs\\Security\\Crawler",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setTimeout",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEndPoint",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setToken",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addHeader",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "check",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doCheck",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getContentType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLockContents",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 2,
+        "wmc": 22,
+        "ccn": 15,
+        "ccnMethodMax": 8,
+        "externals": [
+            "SensioLabs\\Security\\Exception\\RuntimeException",
+            "SensioLabs\\Security\\Result",
+            "Symfony\\Contracts\\HttpClient\\ResponseInterface",
+            "Symfony\\Component\\HttpClient\\HttpClient",
+            "Symfony\\Component\\Mime\\Part\\DataPart",
+            "Symfony\\Component\\Mime\\Part\\Multipart\\FormDataPart",
+            "SensioLabs\\Security\\Exception\\HttpException",
+            "SensioLabs\\Security\\Exception\\HttpException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 194,
+        "vocabulary": 67,
+        "volume": 1176.82,
+        "difficulty": 12.03,
+        "effort": 14152.29,
+        "level": 0.08,
+        "bugs": 0.39,
+        "time": 786,
+        "intelligentContent": 97.86,
+        "number_operators": 39,
+        "number_operands": 155,
+        "number_operators_unique": 9,
+        "number_operands_unique": 58,
+        "cloc": 18,
+        "loc": 92,
+        "lloc": 74,
+        "mi": 67.35,
+        "mIwoC": 35.71,
+        "commentWeight": 31.64,
+        "kanDefect": 1.03,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.43,
+        "relativeSystemComplexity": 144.43,
+        "totalStructuralComplexity": 1152,
+        "totalDataComplexity": 3.46,
+        "totalSystemComplexity": 1155.46,
+        "package": "SensioLabs\\Security\\",
+        "pageRank": 0.12,
+        "afferentCoupling": 1,
+        "efferentCoupling": 7,
+        "instability": 0.88,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.1.3",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "symfony\/console": {
+                "name": "symfony\/console",
+                "required": "^2.8|^3.4|^4.2|^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/console\/zipball\/d29e2d36941de13600c399e393a60b8cfe59ac49"
+            },
+            "symfony\/http-client": {
+                "name": "symfony\/http-client",
+                "required": "^4.3|^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/http-client\/zipball\/2edd40250649944775aad5d6b4cc8e164c1e9d72"
+            },
+            "symfony\/mime": {
+                "name": "symfony\/mime",
+                "required": "^4.3|^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/mime\/zipball\/9b3e5b5e58c56bbd76628c952d2b78556d305f3c"
+            },
+            "symfony\/polyfill-ctype": {
+                "name": "symfony\/polyfill-ctype",
+                "required": "^1.11",
+                "installed": null,
+                "latest": "1.14.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/polyfill-ctype\/zipball\/fbdeaec0df06cf3d51c93de80c7eb76e271f5a38"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

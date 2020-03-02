@@ -1,0 +1,1094 @@
+{
+    "Spatie\\ImageOptimizer\\OptimizerChainFactory": {
+        "name": "Spatie\\ImageOptimizer\\OptimizerChainFactory",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Spatie\\ImageOptimizer\\OptimizerChain",
+            "Spatie\\ImageOptimizer\\OptimizerChain",
+            "Spatie\\ImageOptimizer\\Optimizers\\Jpegoptim",
+            "Spatie\\ImageOptimizer\\Optimizers\\Pngquant",
+            "Spatie\\ImageOptimizer\\Optimizers\\Optipng",
+            "Spatie\\ImageOptimizer\\Optimizers\\Svgo",
+            "Spatie\\ImageOptimizer\\Optimizers\\Gifsicle",
+            "Spatie\\ImageOptimizer\\Optimizers\\Cwebp"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 38,
+        "vocabulary": 25,
+        "volume": 176.47,
+        "difficulty": 2.86,
+        "effort": 504.19,
+        "level": 0.35,
+        "bugs": 0.06,
+        "time": 28,
+        "intelligentContent": 61.76,
+        "number_operators": 8,
+        "number_operands": 30,
+        "number_operators_unique": 4,
+        "number_operands_unique": 21,
+        "cloc": 0,
+        "loc": 14,
+        "lloc": 14,
+        "mi": 59,
+        "mIwoC": 59,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 2,
+        "package": "Spatie\\ImageOptimizer\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ImageOptimizer\\": {
+        "name": "Spatie\\ImageOptimizer\\",
+        "classes": [
+            "Spatie\\ImageOptimizer\\OptimizerChainFactory",
+            "Spatie\\ImageOptimizer\\Image",
+            "Spatie\\ImageOptimizer\\Optimizer",
+            "Spatie\\ImageOptimizer\\DummyLogger",
+            "Spatie\\ImageOptimizer\\OptimizerChain"
+        ],
+        "outgoing_class_dependencies": [
+            "Spatie\\ImageOptimizer\\Optimizers\\Jpegoptim",
+            "Spatie\\ImageOptimizer\\Optimizers\\Pngquant",
+            "Spatie\\ImageOptimizer\\Optimizers\\Optipng",
+            "Spatie\\ImageOptimizer\\Optimizers\\Svgo",
+            "Spatie\\ImageOptimizer\\Optimizers\\Gifsicle",
+            "Spatie\\ImageOptimizer\\Optimizers\\Cwebp",
+            "InvalidArgumentException",
+            "Psr\\Log\\LoggerInterface",
+            "Symfony\\Component\\Process\\Process"
+        ],
+        "outgoing_package_dependencies": [
+            "Spatie\\ImageOptimizer\\Optimizers\\",
+            "\\",
+            "Psr\\Log\\",
+            "Symfony\\Component\\Process\\"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\ImageOptimizer\\Optimizers\\Cwebp",
+            "Spatie\\ImageOptimizer\\Optimizers\\Optipng",
+            "Spatie\\ImageOptimizer\\Optimizers\\Pngquant",
+            "Spatie\\ImageOptimizer\\Optimizers\\Gifsicle",
+            "Spatie\\ImageOptimizer\\Optimizers\\Svgo",
+            "Spatie\\ImageOptimizer\\Optimizers\\Jpegoptim",
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\ImageOptimizer\\Optimizers\\"
+        ],
+        "abstraction": 0.2,
+        "instability": 0.5625,
+        "dependent_instabilities": {
+            "Spatie\\ImageOptimizer\\Optimizers\\": 0.6666666666666666
+        },
+        "distance": 0.16793786053180507,
+        "normalized_distance": 0.23750000000000004,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ImageOptimizer\\Image": {
+        "name": "Spatie\\ImageOptimizer\\Image",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "path",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extension",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 20,
+        "vocabulary": 10,
+        "volume": 66.44,
+        "difficulty": 3,
+        "effort": 199.32,
+        "level": 0.33,
+        "bugs": 0.02,
+        "time": 11,
+        "intelligentContent": 22.15,
+        "number_operators": 6,
+        "number_operands": 14,
+        "number_operators_unique": 3,
+        "number_operands_unique": 7,
+        "cloc": 0,
+        "loc": 25,
+        "lloc": 25,
+        "mi": 56.48,
+        "mIwoC": 56.48,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3.25,
+        "relativeSystemComplexity": 3.25,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 13,
+        "totalSystemComplexity": 13,
+        "package": "Spatie\\ImageOptimizer\\",
+        "pageRank": 0.44,
+        "afferentCoupling": 8,
+        "efferentCoupling": 1,
+        "instability": 0.11,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ImageOptimizer\\Optimizer": {
+        "name": "Spatie\\ImageOptimizer\\Optimizer",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "binaryName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "canHandle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setImagePath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Spatie\\ImageOptimizer\\Image"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Spatie\\ImageOptimizer\\",
+        "pageRank": 0.21,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Spatie\\ImageOptimizer\\Optimizers\\Cwebp": {
+        "name": "Spatie\\ImageOptimizer\\Optimizers\\Cwebp",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "canHandle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer",
+            "Spatie\\ImageOptimizer\\Image"
+        ],
+        "parents": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer"
+        ],
+        "lcom": 2,
+        "length": 25,
+        "vocabulary": 14,
+        "volume": 95.18,
+        "difficulty": 3.4,
+        "effort": 323.63,
+        "level": 0.29,
+        "bugs": 0.03,
+        "time": 18,
+        "intelligentContent": 28,
+        "number_operators": 8,
+        "number_operands": 17,
+        "number_operators_unique": 4,
+        "number_operands_unique": 10,
+        "cloc": 0,
+        "loc": 14,
+        "lloc": 14,
+        "mi": 61.01,
+        "mIwoC": 61.01,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 2.25,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 2.5,
+        "totalSystemComplexity": 4.5,
+        "package": "Spatie\\ImageOptimizer\\Optimizers\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ImageOptimizer\\Optimizers\\": {
+        "name": "Spatie\\ImageOptimizer\\Optimizers\\",
+        "classes": [
+            "Spatie\\ImageOptimizer\\Optimizers\\Cwebp",
+            "Spatie\\ImageOptimizer\\Optimizers\\Optipng",
+            "Spatie\\ImageOptimizer\\Optimizers\\Pngquant",
+            "Spatie\\ImageOptimizer\\Optimizers\\Gifsicle",
+            "Spatie\\ImageOptimizer\\Optimizers\\Svgo",
+            "Spatie\\ImageOptimizer\\Optimizers\\Jpegoptim",
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\ImageOptimizer\\OptimizerChainFactory"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\ImageOptimizer\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Spatie\\ImageOptimizer\\Image",
+            "Spatie\\ImageOptimizer\\Optimizer"
+        ],
+        "outgoing_package_dependencies": [
+            "Spatie\\ImageOptimizer\\"
+        ],
+        "abstraction": 0.14285714285714285,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": {
+            "Spatie\\ImageOptimizer\\": 0.5625
+        },
+        "distance": 0.13468700594029476,
+        "normalized_distance": 0.19047619047619047,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ImageOptimizer\\Optimizers\\Optipng": {
+        "name": "Spatie\\ImageOptimizer\\Optimizers\\Optipng",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "canHandle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer",
+            "Spatie\\ImageOptimizer\\Image"
+        ],
+        "parents": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 5,
+        "volume": 13.93,
+        "difficulty": 1.33,
+        "effort": 18.58,
+        "level": 0.75,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 10.45,
+        "number_operators": 2,
+        "number_operands": 4,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 0,
+        "loc": 9,
+        "lloc": 9,
+        "mi": 71.04,
+        "mIwoC": 71.04,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 2,
+        "package": "Spatie\\ImageOptimizer\\Optimizers\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ImageOptimizer\\Optimizers\\Pngquant": {
+        "name": "Spatie\\ImageOptimizer\\Optimizers\\Pngquant",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "canHandle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer",
+            "Spatie\\ImageOptimizer\\Image"
+        ],
+        "parents": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer"
+        ],
+        "lcom": 2,
+        "length": 25,
+        "vocabulary": 14,
+        "volume": 95.18,
+        "difficulty": 3.4,
+        "effort": 323.63,
+        "level": 0.29,
+        "bugs": 0.03,
+        "time": 18,
+        "intelligentContent": 28,
+        "number_operators": 8,
+        "number_operands": 17,
+        "number_operators_unique": 4,
+        "number_operands_unique": 10,
+        "cloc": 0,
+        "loc": 14,
+        "lloc": 14,
+        "mi": 61.01,
+        "mIwoC": 61.01,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 2.25,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 2.5,
+        "totalSystemComplexity": 4.5,
+        "package": "Spatie\\ImageOptimizer\\Optimizers\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ImageOptimizer\\Optimizers\\Gifsicle": {
+        "name": "Spatie\\ImageOptimizer\\Optimizers\\Gifsicle",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "canHandle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer",
+            "Spatie\\ImageOptimizer\\Image"
+        ],
+        "parents": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 5,
+        "volume": 13.93,
+        "difficulty": 1.33,
+        "effort": 18.58,
+        "level": 0.75,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 10.45,
+        "number_operators": 2,
+        "number_operands": 4,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 0,
+        "loc": 9,
+        "lloc": 9,
+        "mi": 71.04,
+        "mIwoC": 71.04,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 2,
+        "package": "Spatie\\ImageOptimizer\\Optimizers\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ImageOptimizer\\Optimizers\\Svgo": {
+        "name": "Spatie\\ImageOptimizer\\Optimizers\\Svgo",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "canHandle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer",
+            "Spatie\\ImageOptimizer\\Image"
+        ],
+        "parents": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer"
+        ],
+        "lcom": 2,
+        "length": 32,
+        "vocabulary": 20,
+        "volume": 138.3,
+        "difficulty": 3.67,
+        "effort": 507.11,
+        "level": 0.27,
+        "bugs": 0.05,
+        "time": 28,
+        "intelligentContent": 37.72,
+        "number_operators": 10,
+        "number_operands": 22,
+        "number_operators_unique": 5,
+        "number_operands_unique": 15,
+        "cloc": 0,
+        "loc": 17,
+        "lloc": 17,
+        "mi": 57.9,
+        "mIwoC": 57.9,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.17,
+        "relativeSystemComplexity": 5.17,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 2.33,
+        "totalSystemComplexity": 10.33,
+        "package": "Spatie\\ImageOptimizer\\Optimizers\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ImageOptimizer\\Optimizers\\Jpegoptim": {
+        "name": "Spatie\\ImageOptimizer\\Optimizers\\Jpegoptim",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "canHandle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer",
+            "Spatie\\ImageOptimizer\\Image"
+        ],
+        "parents": [
+            "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 5,
+        "volume": 13.93,
+        "difficulty": 1.33,
+        "effort": 18.58,
+        "level": 0.75,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 10.45,
+        "number_operators": 2,
+        "number_operands": 4,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 0,
+        "loc": 9,
+        "lloc": 9,
+        "mi": 71.04,
+        "mIwoC": 71.04,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 2,
+        "package": "Spatie\\ImageOptimizer\\Optimizers\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer": {
+        "name": "Spatie\\ImageOptimizer\\Optimizers\\BaseOptimizer",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "binaryName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBinaryPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setImagePath",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 7,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Spatie\\ImageOptimizer\\Optimizer"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 47,
+        "vocabulary": 16,
+        "volume": 188,
+        "difficulty": 7.5,
+        "effort": 1410,
+        "level": 0.13,
+        "bugs": 0.06,
+        "time": 78,
+        "intelligentContent": 25.07,
+        "number_operators": 14,
+        "number_operands": 33,
+        "number_operators_unique": 5,
+        "number_operands_unique": 11,
+        "cloc": 0,
+        "loc": 38,
+        "lloc": 38,
+        "mi": 49.35,
+        "mIwoC": 49.35,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.83,
+        "relativeSystemComplexity": 3.83,
+        "totalStructuralComplexity": 6,
+        "totalDataComplexity": 17,
+        "totalSystemComplexity": 23,
+        "package": "Spatie\\ImageOptimizer\\Optimizers\\",
+        "pageRank": 0.13,
+        "afferentCoupling": 6,
+        "efferentCoupling": 1,
+        "instability": 0.14,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ImageOptimizer\\DummyLogger": {
+        "name": "Spatie\\ImageOptimizer\\DummyLogger",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "emergency",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "critical",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "error",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "warning",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "notice",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "info",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "debug",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "log",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Psr\\Log\\LoggerInterface"
+        ],
+        "parents": [],
+        "lcom": 9,
+        "length": 19,
+        "vocabulary": 3,
+        "volume": 30.11,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0.32,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 9.51,
+        "number_operators": 0,
+        "number_operands": 19,
+        "number_operators_unique": 0,
+        "number_operands_unique": 3,
+        "cloc": 0,
+        "loc": 31,
+        "lloc": 31,
+        "mi": 56.98,
+        "mIwoC": 56.98,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2.11,
+        "relativeSystemComplexity": 2.11,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 19,
+        "totalSystemComplexity": 19,
+        "package": "Spatie\\ImageOptimizer\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ImageOptimizer\\OptimizerChain": {
+        "name": "Spatie\\ImageOptimizer\\OptimizerChain",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptimizers",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addOptimizer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOptimizers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTimeout",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "useLogger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "optimize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "applyOptimizer",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "logResult",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 14,
+        "ccn": 6,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Spatie\\ImageOptimizer\\DummyLogger",
+            "Spatie\\ImageOptimizer\\Optimizer",
+            "Psr\\Log\\LoggerInterface",
+            "Spatie\\ImageOptimizer\\Image",
+            "Spatie\\ImageOptimizer\\Optimizer",
+            "Spatie\\ImageOptimizer\\Image",
+            "Symfony\\Component\\Process\\Process",
+            "Symfony\\Component\\Process\\Process"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 97,
+        "vocabulary": 22,
+        "volume": 432.56,
+        "difficulty": 6.16,
+        "effort": 2663.69,
+        "level": 0.16,
+        "bugs": 0.14,
+        "time": 148,
+        "intelligentContent": 70.25,
+        "number_operators": 19,
+        "number_operands": 78,
+        "number_operators_unique": 3,
+        "number_operands_unique": 19,
+        "cloc": 6,
+        "loc": 78,
+        "lloc": 72,
+        "mi": 61.05,
+        "mIwoC": 40.22,
+        "commentWeight": 20.83,
+        "kanDefect": 0.82,
+        "relativeStructuralComplexity": 256,
+        "relativeDataComplexity": 0.47,
+        "relativeSystemComplexity": 256.47,
+        "totalStructuralComplexity": 2304,
+        "totalDataComplexity": 4.24,
+        "totalSystemComplexity": 2308.24,
+        "package": "Spatie\\ImageOptimizer\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.17,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-fileinfo": {
+                "name": "ext-fileinfo",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "psr\/log": {
+                "name": "psr\/log",
+                "required": "^1.0",
+                "installed": null,
+                "latest": "1.1.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/php-fig\/log",
+                "zip": "https:\/\/api.github.com\/repos\/php-fig\/log\/zipball\/446d54b4cb6bf489fc9d75f55843658e6f25d801"
+            },
+            "symfony\/process": {
+                "name": "symfony\/process",
+                "required": "^4.2|^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/process\/zipball\/fd4a86dd7e36437f2fc080d8c42c7415d828a0a8"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

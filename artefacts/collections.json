@@ -1,0 +1,1784 @@
+{
+    "Doctrine\\Common\\Collections\\Criteria": {
+        "name": "Doctrine\\Common\\Collections\\Criteria",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expr",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "where",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "andWhere",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orWhere",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWhereExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOrderings",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orderBy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFirstResult",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFirstResult",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMaxResults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMaxResults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 6,
+        "ccnMethodMax": 2,
+        "externals": [
+            "static",
+            "Doctrine\\Common\\Collections\\ExpressionBuilder",
+            "Doctrine\\Common\\Collections\\ExpressionBuilder",
+            "Doctrine\\Common\\Collections\\Expr\\Expression",
+            "Doctrine\\Common\\Collections\\Expr\\Expression",
+            "Doctrine\\Common\\Collections\\Expr\\CompositeExpression",
+            "Doctrine\\Common\\Collections\\Expr\\Expression",
+            "Doctrine\\Common\\Collections\\Expr\\CompositeExpression"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 86,
+        "vocabulary": 12,
+        "volume": 308.31,
+        "difficulty": 13.25,
+        "effort": 4085.06,
+        "level": 0.08,
+        "bugs": 0.1,
+        "time": 227,
+        "intelligentContent": 23.27,
+        "number_operators": 33,
+        "number_operands": 53,
+        "number_operators_unique": 4,
+        "number_operands_unique": 8,
+        "cloc": 78,
+        "loc": 164,
+        "lloc": 86,
+        "mi": 83.39,
+        "mIwoC": 39.57,
+        "commentWeight": 43.82,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 3.35,
+        "relativeSystemComplexity": 19.35,
+        "totalStructuralComplexity": 208,
+        "totalDataComplexity": 43.6,
+        "totalSystemComplexity": 251.6,
+        "package": "Doctrine\\Common\\Collections\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 2,
+        "efferentCoupling": 4,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\Collections\\": {
+        "name": "Doctrine\\Common\\Collections\\",
+        "classes": [
+            "Doctrine\\Common\\Collections\\Criteria",
+            "Doctrine\\Common\\Collections\\ArrayCollection",
+            "Doctrine\\Common\\Collections\\Selectable",
+            "Doctrine\\Common\\Collections\\Collection",
+            "Doctrine\\Common\\Collections\\ExpressionBuilder",
+            "Doctrine\\Common\\Collections\\AbstractLazyCollection"
+        ],
+        "outgoing_class_dependencies": [
+            "static",
+            "Doctrine\\Common\\Collections\\Expr\\Expression",
+            "Doctrine\\Common\\Collections\\Expr\\CompositeExpression",
+            "Closure",
+            "Traversable",
+            "ArrayIterator",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Countable",
+            "IteratorAggregate",
+            "ArrayAccess",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Doctrine\\Common\\Collections\\Expr\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Doctrine\\Common\\Collections\\Expr\\": 0.4
+        },
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Doctrine\\Common\\Collections\\ArrayCollection": {
+        "name": "Doctrine\\Common\\Collections\\ArrayCollection",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "first",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createFrom",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "last",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "key",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "next",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "current",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "remove",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetGet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetSet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetUnset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "containsKey",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "contains",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "exists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexOf",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getKeys",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "count",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEmpty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIterator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "map",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "forAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "partition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "slice",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "matching",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 34,
+        "nbMethods": 33,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 32,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 52,
+        "ccn": 19,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Doctrine\\Common\\Collections\\Collection",
+            "Doctrine\\Common\\Collections\\Selectable",
+            "static",
+            "Closure",
+            "Traversable",
+            "ArrayIterator",
+            "Doctrine\\Common\\Collections\\Collection",
+            "Closure",
+            "Doctrine\\Common\\Collections\\Collection",
+            "Closure",
+            "Closure",
+            "Closure",
+            "Doctrine\\Common\\Collections\\Collection",
+            "Doctrine\\Common\\Collections\\Criteria",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 237,
+        "vocabulary": 32,
+        "volume": 1185,
+        "difficulty": 27.33,
+        "effort": 32390,
+        "level": 0.04,
+        "bugs": 0.4,
+        "time": 1799,
+        "intelligentContent": 43.35,
+        "number_operators": 73,
+        "number_operands": 164,
+        "number_operators_unique": 8,
+        "number_operands_unique": 24,
+        "cloc": 162,
+        "loc": 357,
+        "lloc": 195,
+        "mi": 69.18,
+        "mIwoC": 25.97,
+        "commentWeight": 43.21,
+        "kanDefect": 1.7,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 2.67,
+        "relativeSystemComplexity": 146.67,
+        "totalStructuralComplexity": 4896,
+        "totalDataComplexity": 90.77,
+        "totalSystemComplexity": 4986.77,
+        "package": "Doctrine\\Common\\Collections\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\Collections\\Selectable": {
+        "name": "Doctrine\\Common\\Collections\\Selectable",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "matching",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Doctrine\\Common\\Collections\\Collection",
+            "Doctrine\\Common\\Collections\\Criteria"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Doctrine\\Common\\Collections\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Doctrine\\Common\\Collections\\Collection": {
+        "name": "Doctrine\\Common\\Collections\\Collection",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "contains",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEmpty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "remove",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "containsKey",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getKeys",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "first",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "last",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "key",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "current",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "next",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "exists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "forAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "map",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "partition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexOf",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "slice",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 24,
+        "nbMethods": 24,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 24,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 24,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Countable",
+            "IteratorAggregate",
+            "ArrayAccess",
+            "Closure",
+            "Closure",
+            "Closure",
+            "Closure",
+            "Closure"
+        ],
+        "parents": [
+            "Countable",
+            "IteratorAggregate",
+            "ArrayAccess"
+        ],
+        "kanDefect": 0.15,
+        "package": "Doctrine\\Common\\Collections\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 3,
+        "efferentCoupling": 4,
+        "instability": 0.57,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Doctrine\\Common\\Collections\\ExpressionBuilder": {
+        "name": "Doctrine\\Common\\Collections\\ExpressionBuilder",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "andX",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orX",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "eq",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "gt",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "lt",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "gte",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "lte",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "neq",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isNull",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "in",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "notIn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "contains",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "memberOf",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "startsWith",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "endsWith",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 15,
+        "nbMethods": 15,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 15,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 15,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Doctrine\\Common\\Collections\\Expr\\CompositeExpression",
+            "Doctrine\\Common\\Collections\\Expr\\Expression",
+            "Doctrine\\Common\\Collections\\Expr\\CompositeExpression",
+            "Doctrine\\Common\\Collections\\Expr\\CompositeExpression",
+            "Doctrine\\Common\\Collections\\Expr\\Expression",
+            "Doctrine\\Common\\Collections\\Expr\\CompositeExpression",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison"
+        ],
+        "parents": [],
+        "lcom": 15,
+        "length": 69,
+        "vocabulary": 5,
+        "volume": 160.21,
+        "difficulty": 6.75,
+        "effort": 1081.44,
+        "level": 0.15,
+        "bugs": 0.05,
+        "time": 60,
+        "intelligentContent": 23.74,
+        "number_operators": 15,
+        "number_operands": 54,
+        "number_operators_unique": 1,
+        "number_operands_unique": 4,
+        "cloc": 43,
+        "loc": 107,
+        "lloc": 64,
+        "mi": 86.61,
+        "mIwoC": 45.03,
+        "commentWeight": 41.58,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 16.8,
+        "relativeSystemComplexity": 16.8,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 252,
+        "totalSystemComplexity": 252,
+        "package": "Doctrine\\Common\\Collections\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\Collections\\Expr\\Value": {
+        "name": "Doctrine\\Common\\Collections\\Expr\\Value",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "visit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Doctrine\\Common\\Collections\\Expr\\Expression",
+            "Doctrine\\Common\\Collections\\Expr\\ExpressionVisitor"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 10,
+        "vocabulary": 5,
+        "volume": 23.22,
+        "difficulty": 2.33,
+        "effort": 54.18,
+        "level": 0.43,
+        "bugs": 0.01,
+        "time": 3,
+        "intelligentContent": 9.95,
+        "number_operators": 3,
+        "number_operands": 7,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 10,
+        "loc": 27,
+        "lloc": 17,
+        "mi": 103.92,
+        "mIwoC": 63.46,
+        "commentWeight": 40.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.33,
+        "relativeSystemComplexity": 2.33,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 7,
+        "package": "Doctrine\\Common\\Collections\\Expr\\",
+        "pageRank": 0.13,
+        "afferentCoupling": 4,
+        "efferentCoupling": 2,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\Collections\\Expr\\": {
+        "name": "Doctrine\\Common\\Collections\\Expr\\",
+        "classes": [
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Expression",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\ExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\CompositeExpression"
+        ],
+        "incoming_class_dependencies": [
+            "Doctrine\\Common\\Collections\\Criteria",
+            "Doctrine\\Common\\Collections\\ArrayCollection",
+            "Doctrine\\Common\\Collections\\ExpressionBuilder"
+        ],
+        "incoming_package_dependencies": [
+            "Doctrine\\Common\\Collections\\"
+        ],
+        "outgoing_class_dependencies": [
+            "RuntimeException",
+            "Closure"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.4,
+        "dependent_instabilities": [],
+        "distance": 0.18856180831641262,
+        "normalized_distance": 0.2666666666666666,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Doctrine\\Common\\Collections\\Expr\\Expression": {
+        "name": "Doctrine\\Common\\Collections\\Expr\\Expression",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "visit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Doctrine\\Common\\Collections\\Expr\\ExpressionVisitor"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Doctrine\\Common\\Collections\\Expr\\",
+        "pageRank": 0.2,
+        "afferentCoupling": 6,
+        "efferentCoupling": 1,
+        "instability": 0.14,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Doctrine\\Common\\Collections\\Expr\\Comparison": {
+        "name": "Doctrine\\Common\\Collections\\Expr\\Comparison",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getField",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOperator",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "visit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Doctrine\\Common\\Collections\\Expr\\Expression",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\ExpressionVisitor"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 40,
+        "vocabulary": 20,
+        "volume": 172.88,
+        "difficulty": 2.74,
+        "effort": 472.87,
+        "level": 0.37,
+        "bugs": 0.06,
+        "time": 26,
+        "intelligentContent": 63.2,
+        "number_operators": 9,
+        "number_operands": 31,
+        "number_operators_unique": 3,
+        "number_operands_unique": 17,
+        "cloc": 13,
+        "loc": 58,
+        "lloc": 45,
+        "mi": 81.47,
+        "mIwoC": 48,
+        "commentWeight": 33.47,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.4,
+        "relativeSystemComplexity": 3.4,
+        "totalStructuralComplexity": 5,
+        "totalDataComplexity": 12,
+        "totalSystemComplexity": 17,
+        "package": "Doctrine\\Common\\Collections\\Expr\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 3,
+        "efferentCoupling": 3,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\Collections\\Expr\\ExpressionVisitor": {
+        "name": "Doctrine\\Common\\Collections\\Expr\\ExpressionVisitor",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "walkComparison",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "walkValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "walkCompositeExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "dispatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\CompositeExpression",
+            "Doctrine\\Common\\Collections\\Expr\\Expression",
+            "RuntimeException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 20,
+        "vocabulary": 8,
+        "volume": 60,
+        "difficulty": 4.5,
+        "effort": 270,
+        "level": 0.22,
+        "bugs": 0.02,
+        "time": 15,
+        "intelligentContent": 13.33,
+        "number_operators": 5,
+        "number_operands": 15,
+        "number_operators_unique": 3,
+        "number_operands_unique": 5,
+        "cloc": 26,
+        "loc": 46,
+        "lloc": 20,
+        "mi": 104.56,
+        "mIwoC": 58.63,
+        "commentWeight": 45.93,
+        "kanDefect": 0.37,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 10,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 40,
+        "package": "Doctrine\\Common\\Collections\\Expr\\",
+        "pageRank": 0.32,
+        "afferentCoupling": 5,
+        "efferentCoupling": 5,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor": {
+        "name": "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getObjectFieldValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sortByField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "walkComparison",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "walkValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "walkCompositeExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "andExpressions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orExpressions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 40,
+        "ccn": 34,
+        "ccnMethodMax": 14,
+        "externals": [
+            "Doctrine\\Common\\Collections\\Expr\\ExpressionVisitor",
+            "Closure",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\Comparison",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "Doctrine\\Common\\Collections\\Expr\\ClosureExpressionVisitor",
+            "RuntimeException",
+            "Doctrine\\Common\\Collections\\Expr\\Value",
+            "Doctrine\\Common\\Collections\\Expr\\CompositeExpression",
+            "RuntimeException"
+        ],
+        "parents": [
+            "Doctrine\\Common\\Collections\\Expr\\ExpressionVisitor"
+        ],
+        "lcom": 5,
+        "length": 290,
+        "vocabulary": 45,
+        "volume": 1592.64,
+        "difficulty": 44.94,
+        "effort": 71565.93,
+        "level": 0.02,
+        "bugs": 0.53,
+        "time": 3976,
+        "intelligentContent": 35.44,
+        "number_operators": 91,
+        "number_operands": 199,
+        "number_operators_unique": 14,
+        "number_operands_unique": 31,
+        "cloc": 36,
+        "loc": 194,
+        "lloc": 158,
+        "mi": 55.99,
+        "mIwoC": 25.04,
+        "commentWeight": 30.95,
+        "kanDefect": 2.58,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 3.95,
+        "relativeSystemComplexity": 124.95,
+        "totalStructuralComplexity": 847,
+        "totalDataComplexity": 27.67,
+        "totalSystemComplexity": 874.67,
+        "package": "Doctrine\\Common\\Collections\\Expr\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 3,
+        "efferentCoupling": 8,
+        "instability": 0.73,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\Collections\\Expr\\CompositeExpression": {
+        "name": "Doctrine\\Common\\Collections\\Expr\\CompositeExpression",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExpressionList",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getType",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "visit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Doctrine\\Common\\Collections\\Expr\\Expression",
+            "RuntimeException",
+            "RuntimeException",
+            "Doctrine\\Common\\Collections\\Expr\\ExpressionVisitor"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 26,
+        "vocabulary": 12,
+        "volume": 93.21,
+        "difficulty": 3.17,
+        "effort": 295.16,
+        "level": 0.32,
+        "bugs": 0.03,
+        "time": 16,
+        "intelligentContent": 29.43,
+        "number_operators": 7,
+        "number_operands": 19,
+        "number_operators_unique": 3,
+        "number_operands_unique": 9,
+        "cloc": 18,
+        "loc": 51,
+        "lloc": 33,
+        "mi": 92.34,
+        "mIwoC": 52.55,
+        "commentWeight": 39.79,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.88,
+        "relativeSystemComplexity": 2.88,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 7.5,
+        "totalSystemComplexity": 11.5,
+        "package": "Doctrine\\Common\\Collections\\Expr\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 4,
+        "efferentCoupling": 3,
+        "instability": 0.43,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\Collections\\AbstractLazyCollection": {
+        "name": "Doctrine\\Common\\Collections\\AbstractLazyCollection",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "count",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "contains",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEmpty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "remove",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "containsKey",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getKeys",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "first",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "last",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "key",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "current",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "next",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "exists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "forAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "map",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "partition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexOf",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "slice",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIterator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetGet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetSet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetUnset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isInitialized",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initialize",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doInitialize",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 33,
+        "nbMethods": 32,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 30,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 34,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Doctrine\\Common\\Collections\\Collection",
+            "Closure",
+            "Doctrine\\Common\\Collections\\Collection",
+            "Closure",
+            "Closure",
+            "Doctrine\\Common\\Collections\\Collection",
+            "Closure",
+            "Closure",
+            "Traversable"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 136,
+        "vocabulary": 11,
+        "volume": 470.48,
+        "difficulty": 19.88,
+        "effort": 9350.84,
+        "level": 0.05,
+        "bugs": 0.16,
+        "time": 519,
+        "intelligentContent": 23.67,
+        "number_operators": 30,
+        "number_operands": 106,
+        "number_operators_unique": 3,
+        "number_operands_unique": 8,
+        "cloc": 124,
+        "loc": 293,
+        "lloc": 169,
+        "mi": 74.7,
+        "mIwoC": 32.42,
+        "commentWeight": 42.28,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1024,
+        "relativeDataComplexity": 0.87,
+        "relativeSystemComplexity": 1024.87,
+        "totalStructuralComplexity": 33792,
+        "totalDataComplexity": 28.64,
+        "totalSystemComplexity": 33820.64,
+        "package": "Doctrine\\Common\\Collections\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.31,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

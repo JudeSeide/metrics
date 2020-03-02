@@ -1,0 +1,1252 @@
+{
+    "PicoTwigExtension": {
+        "name": "PicoTwigExtension",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPico",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFilters",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFunctions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "markdownFilter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mapFilter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sortByFilter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getKeyOfVar",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "urlParamFunction",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formParamFunction",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "pagesFunction",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 11,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 80,
+        "ccn": 69,
+        "ccnMethodMax": 24,
+        "externals": [
+            "Twig_Extension",
+            "Pico",
+            "Twig_SimpleFilter",
+            "Twig_SimpleFilter",
+            "Twig_SimpleFilter",
+            "Twig_SimpleFilter",
+            "Twig_SimpleFilter",
+            "Twig_SimpleFunction",
+            "Twig_SimpleFunction",
+            "Twig_SimpleFunction",
+            "Twig_Error_Runtime",
+            "Twig_Error_Runtime",
+            "Twig_Error_Runtime",
+            "Twig_Error_Runtime"
+        ],
+        "parents": [
+            "Twig_Extension"
+        ],
+        "lcom": 5,
+        "length": 499,
+        "vocabulary": 97,
+        "volume": 3293.36,
+        "difficulty": 42.99,
+        "effort": 141593.22,
+        "level": 0.02,
+        "bugs": 1.1,
+        "time": 7866,
+        "intelligentContent": 76.6,
+        "number_operators": 146,
+        "number_operands": 353,
+        "number_operators_unique": 19,
+        "number_operands_unique": 78,
+        "cloc": 238,
+        "loc": 425,
+        "lloc": 187,
+        "mi": 62.36,
+        "mIwoC": 16.53,
+        "commentWeight": 45.83,
+        "kanDefect": 2.45,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 3.1,
+        "relativeSystemComplexity": 67.1,
+        "totalStructuralComplexity": 768,
+        "totalDataComplexity": 37.22,
+        "totalSystemComplexity": 805.22,
+        "package": "\\",
+        "pageRank": 0.16,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "\\": {
+        "name": "\\",
+        "classes": [
+            "PicoTwigExtension",
+            "Pico",
+            "AbstractPicoPlugin",
+            "PicoPluginInterface",
+            "DummyPlugin"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\Yaml\\Parser"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\Yaml\\"
+        ],
+        "abstraction": 0.4,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0.28284271247461895,
+        "normalized_distance": 0.3999999999999999,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Pico": {
+        "name": "Pico",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRootDir",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getVendorDir",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigDir",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPluginsDir",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getThemesDir",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "run",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadPlugins",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadComposerPlugins",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadLocalPlugins",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadPlugin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sortPlugins",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPlugin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPlugins",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadConfig",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadTheme",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTheme",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getThemeApiVersion",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "evaluateRequestUrl",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRequestUrl",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resolveFilePath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRequestFile",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadFileContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "load404Content",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRawContent",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "is404Content",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMetaHeaders",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getYamlParser",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseFileMeta",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFileMeta",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParsedown",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareFileContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "substituteFileContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseFileContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFileContent",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "readPages",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sortPages",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "discoverPageSiblings",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPages",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "discoverCurrentPage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentPage",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPreviousPage",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNextPage",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildPageTree",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPageTree",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTwig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTwigVariables",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTwigTemplate",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBaseUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isUrlRewritingEnabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDebugModeEnabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPageUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPageId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "substituteUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBaseThemeUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUrlFromPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUrlParameter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormParameter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterVariable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFiles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFilesGlob",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAbsolutePath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNormalizedPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAbsoluteUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "triggerEvent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 67,
+        "nbMethods": 48,
+        "nbMethodsPrivate": 15,
+        "nbMethodsPublic": 33,
+        "nbMethodsGetter": 19,
+        "nbMethodsSetters": 0,
+        "wmc": 361,
+        "ccn": 295,
+        "ccnMethodMax": 26,
+        "externals": [
+            "LogicException",
+            "RuntimeException",
+            "RuntimeException",
+            "className",
+            "RuntimeException",
+            "RuntimeException",
+            "RuntimeException",
+            "className",
+            "RuntimeException",
+            "className",
+            "RuntimeException",
+            "RuntimeException",
+            "RuntimeException",
+            "LogicException",
+            "RuntimeException",
+            "Symfony\\Component\\Yaml\\Parser",
+            "className",
+            "Twig_Loader_Filesystem",
+            "Twig_Environment",
+            "PicoTwigExtension",
+            "Twig_Extension_Debug",
+            "Twig_SimpleFilter",
+            "Twig_Markup",
+            "InvalidArgumentException",
+            "UnexpectedValueException"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 3069,
+        "vocabulary": 418,
+        "volume": 26722.89,
+        "difficulty": 58.45,
+        "effort": 1561976.2,
+        "level": 0.02,
+        "bugs": 8.91,
+        "time": 86776,
+        "intelligentContent": 457.19,
+        "number_operators": 859,
+        "number_operands": 2210,
+        "number_operators_unique": 21,
+        "number_operands_unique": 397,
+        "cloc": 1276,
+        "loc": 2361,
+        "lloc": 1086,
+        "mi": 45.41,
+        "mIwoC": 0,
+        "commentWeight": 45.41,
+        "kanDefect": 14.9,
+        "relativeStructuralComplexity": 3364,
+        "relativeDataComplexity": 1.4,
+        "relativeSystemComplexity": 3365.4,
+        "totalStructuralComplexity": 225388,
+        "totalDataComplexity": 94.08,
+        "totalSystemComplexity": 225482.08,
+        "package": "\\",
+        "pageRank": 0.26,
+        "afferentCoupling": 2,
+        "efferentCoupling": 12,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "AbstractPicoPlugin": {
+        "name": "AbstractPicoPlugin",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleEvent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "configEnabled",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEnabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEnabled",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isStatusChanged",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPico",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPluginConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkDependencies",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDependencies",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkDependants",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDependants",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkCompatibility",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 0,
+        "wmc": 49,
+        "ccn": 36,
+        "ccnMethodMax": 7,
+        "externals": [
+            "PicoPluginInterface",
+            "Pico",
+            "BadMethodCallException",
+            "RuntimeException",
+            "RuntimeException",
+            "RuntimeException",
+            "RuntimeException",
+            "RuntimeException",
+            "RuntimeException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 278,
+        "vocabulary": 61,
+        "volume": 1648.74,
+        "difficulty": 16.96,
+        "effort": 27964.01,
+        "level": 0.06,
+        "bugs": 0.55,
+        "time": 1554,
+        "intelligentContent": 97.21,
+        "number_operators": 105,
+        "number_operands": 173,
+        "number_operators_unique": 10,
+        "number_operands_unique": 51,
+        "cloc": 152,
+        "loc": 307,
+        "lloc": 155,
+        "mi": 69.18,
+        "mIwoC": 24.85,
+        "commentWeight": 44.33,
+        "kanDefect": 2.24,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.59,
+        "relativeSystemComplexity": 196.59,
+        "totalStructuralComplexity": 2744,
+        "totalDataComplexity": 8.27,
+        "totalSystemComplexity": 2752.27,
+        "package": "\\",
+        "pageRank": 0.24,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "PicoPluginInterface": {
+        "name": "PicoPluginInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "handleEvent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEnabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEnabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isStatusChanged",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDependants",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPico",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "\\",
+        "pageRank": 0.22,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "DummyPlugin": {
+        "name": "DummyPlugin",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "onPluginsLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onPluginManuallyLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onConfigLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onThemeLoading",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onThemeLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onRequestUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onRequestFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onContentLoading",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "on404ContentLoading",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "on404ContentLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onContentLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onMetaParsing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onMetaParsed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onContentParsing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onContentPrepared",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onContentParsed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onPagesLoading",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onSinglePageLoading",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onSinglePageContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onSinglePageLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onPagesDiscovered",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onPagesLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onCurrentPageDiscovered",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onPageTreeBuilt",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onPageRendering",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onPageRendered",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onMetaHeaders",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onYamlParserRegistered",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onParsedownRegistered",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onTwigRegistered",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 30,
+        "nbMethods": 30,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 30,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 30,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "AbstractPicoPlugin",
+            "Symfony\\Component\\Yaml\\Parser",
+            "Parsedown",
+            "Twig_Environment"
+        ],
+        "parents": [
+            "AbstractPicoPlugin"
+        ],
+        "lcom": 30,
+        "length": 33,
+        "vocabulary": 28,
+        "volume": 158.64,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.7,
+        "bugs": 0.05,
+        "time": 0,
+        "intelligentContent": 269.21,
+        "number_operators": 0,
+        "number_operands": 33,
+        "number_operators_unique": 0,
+        "number_operands_unique": 28,
+        "cloc": 371,
+        "loc": 468,
+        "lloc": 97,
+        "mi": 90.21,
+        "mIwoC": 41.12,
+        "commentWeight": 49.09,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.07,
+        "relativeSystemComplexity": 1.07,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 32,
+        "totalSystemComplexity": 32,
+        "package": "\\",
+        "pageRank": 0.13,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.3.6",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "twig\/twig": {
+                "name": "twig\/twig",
+                "required": "^1.36",
+                "installed": null,
+                "latest": "3.0.3",
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "homepage": "https:\/\/twig.symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/twigphp\/Twig\/zipball\/3b88ccd180a6b61ebb517aea3b1a8906762a1dc2"
+            },
+            "symfony\/yaml": {
+                "name": "symfony\/yaml",
+                "required": "^2.8",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/yaml\/zipball\/a4b613d7e44f62941adff5a802cff70adee57d3f"
+            },
+            "erusev\/parsedown": {
+                "name": "erusev\/parsedown",
+                "required": "1.8.0-beta-7",
+                "installed": null,
+                "latest": "1.7.4",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/parsedown.org",
+                "zip": "https:\/\/api.github.com\/repos\/erusev\/parsedown\/zipball\/cb17b6477dfff935958ba01325f2e8a2bfa6dab3"
+            },
+            "erusev\/parsedown-extra": {
+                "name": "erusev\/parsedown-extra",
+                "required": "0.8.0-beta-1",
+                "installed": null,
+                "latest": "0.8.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/erusev\/parsedown-extra",
+                "zip": "https:\/\/api.github.com\/repos\/erusev\/parsedown-extra\/zipball\/91ac3ff98f0cea243bdccc688df43810f044dcef"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

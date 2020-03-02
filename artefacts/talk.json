@@ -1,0 +1,1743 @@
+{
+    "CreateConversationsTable": {
+        "name": "CreateConversationsTable",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "up",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "down",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Database\\Migrations\\Migration",
+            "Illuminate\\Support\\Facades\\Schema",
+            "Illuminate\\Support\\Facades\\Schema"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Migrations\\Migration"
+        ],
+        "lcom": 2,
+        "length": 12,
+        "vocabulary": 6,
+        "volume": 31.02,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 31.02,
+        "number_operators": 0,
+        "number_operands": 12,
+        "number_operators_unique": 0,
+        "number_operands_unique": 6,
+        "cloc": 10,
+        "loc": 28,
+        "lloc": 18,
+        "mi": 101.99,
+        "mIwoC": 62.04,
+        "commentWeight": 39.96,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 25,
+        "totalStructuralComplexity": 50,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 50,
+        "package": "\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "\\": {
+        "name": "\\",
+        "classes": [
+            "CreateConversationsTable",
+            "CreateMessagesTable"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Database\\Migrations\\Migration",
+            "Illuminate\\Support\\Facades\\Schema"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Database\\Migrations\\",
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "incoming_class_dependencies": [
+            "Nahid\\Talk\\Middleware\\TalkMiddleware",
+            "Nahid\\Talk\\Talk"
+        ],
+        "incoming_package_dependencies": [
+            "Nahid\\Talk\\Middleware\\",
+            "Nahid\\Talk\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.5,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "CreateMessagesTable": {
+        "name": "CreateMessagesTable",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "up",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "down",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Database\\Migrations\\Migration",
+            "Illuminate\\Support\\Facades\\Schema",
+            "Illuminate\\Support\\Facades\\Schema"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Migrations\\Migration"
+        ],
+        "lcom": 2,
+        "length": 21,
+        "vocabulary": 10,
+        "volume": 69.76,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0.95,
+        "bugs": 0.02,
+        "time": 0,
+        "intelligentContent": 66.44,
+        "number_operators": 0,
+        "number_operands": 21,
+        "number_operators_unique": 0,
+        "number_operands_unique": 10,
+        "cloc": 10,
+        "loc": 31,
+        "lloc": 21,
+        "mi": 96.65,
+        "mIwoC": 58.11,
+        "commentWeight": 38.53,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 49,
+        "totalStructuralComplexity": 98,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 98,
+        "package": "\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "talk_live": {
+        "name": "talk_live",
+        "cloc": 0,
+        "loc": 14,
+        "lloc": 14,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Nahid\\Talk\\Embera\\Adapter": {
+        "name": "Nahid\\Talk\\Embera\\Adapter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateUrl",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Embera\\Adapters\\Service"
+        ],
+        "parents": [
+            "Embera\\Adapters\\Service"
+        ],
+        "lcom": 1,
+        "length": 21,
+        "vocabulary": 13,
+        "volume": 77.71,
+        "difficulty": 2.4,
+        "effort": 186.5,
+        "level": 0.42,
+        "bugs": 0.03,
+        "time": 10,
+        "intelligentContent": 32.38,
+        "number_operators": 5,
+        "number_operands": 16,
+        "number_operators_unique": 3,
+        "number_operands_unique": 10,
+        "cloc": 22,
+        "loc": 37,
+        "lloc": 15,
+        "mi": 107.48,
+        "mIwoC": 60.97,
+        "commentWeight": 46.5,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 2.25,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 2.5,
+        "totalSystemComplexity": 4.5,
+        "package": "Nahid\\Talk\\Embera\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nahid\\Talk\\Embera\\": {
+        "name": "Nahid\\Talk\\Embera\\",
+        "classes": [
+            "Nahid\\Talk\\Embera\\Adapter"
+        ],
+        "outgoing_class_dependencies": [
+            "Embera\\Adapters\\Service"
+        ],
+        "outgoing_package_dependencies": [
+            "Embera\\Adapters\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Nahid\\Talk\\Html\\HtmlString": {
+        "name": "Nahid\\Talk\\Html\\HtmlString",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toHtml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getString",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setString",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDriver",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDriver",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 2,
+        "wmc": 7,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Contracts\\Support\\Htmlable",
+            "Embera\\Embera"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 34,
+        "vocabulary": 13,
+        "volume": 125.81,
+        "difficulty": 3.9,
+        "effort": 490.68,
+        "level": 0.26,
+        "bugs": 0.04,
+        "time": 27,
+        "intelligentContent": 32.26,
+        "number_operators": 8,
+        "number_operands": 26,
+        "number_operators_unique": 3,
+        "number_operands_unique": 10,
+        "cloc": 28,
+        "loc": 64,
+        "lloc": 36,
+        "mi": 93.81,
+        "mIwoC": 51.08,
+        "commentWeight": 42.73,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.73,
+        "relativeSystemComplexity": 16.73,
+        "totalStructuralComplexity": 96,
+        "totalDataComplexity": 4.4,
+        "totalSystemComplexity": 100.4,
+        "package": "Nahid\\Talk\\Html\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nahid\\Talk\\Html\\": {
+        "name": "Nahid\\Talk\\Html\\",
+        "classes": [
+            "Nahid\\Talk\\Html\\HtmlString",
+            "Nahid\\Talk\\Html\\HtmlStringInterface"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Contracts\\Support\\Htmlable",
+            "Embera\\Embera"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Contracts\\Support\\",
+            "Embera\\"
+        ],
+        "incoming_class_dependencies": [
+            "Nahid\\Talk\\Messages\\Message"
+        ],
+        "incoming_package_dependencies": [
+            "Nahid\\Talk\\Messages\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": [],
+        "distance": 0.11785113019775781,
+        "normalized_distance": 0.16666666666666652,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Nahid\\Talk\\Html\\HtmlStringInterface": {
+        "name": "Nahid\\Talk\\Html\\HtmlStringInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "toHtmlString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Nahid\\Talk\\Html\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Nahid\\Talk\\TalkServiceProvider": {
+        "name": "Nahid\\Talk\\TalkServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setupConfig",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setupMigrations",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerTalk",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerBroadcast",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Nahid\\Talk\\Talk",
+            "Nahid\\Talk\\Live\\Broadcast"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 57,
+        "vocabulary": 17,
+        "volume": 232.99,
+        "difficulty": 9.79,
+        "effort": 2281.32,
+        "level": 0.1,
+        "bugs": 0.08,
+        "time": 127,
+        "intelligentContent": 23.79,
+        "number_operators": 10,
+        "number_operands": 47,
+        "number_operators_unique": 5,
+        "number_operands_unique": 12,
+        "cloc": 24,
+        "loc": 72,
+        "lloc": 48,
+        "mi": 85.2,
+        "mIwoC": 46.21,
+        "commentWeight": 38.99,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 121.25,
+        "totalStructuralComplexity": 847,
+        "totalDataComplexity": 1.75,
+        "totalSystemComplexity": 848.75,
+        "package": "Nahid\\Talk\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nahid\\Talk\\": {
+        "name": "Nahid\\Talk\\",
+        "classes": [
+            "Nahid\\Talk\\TalkServiceProvider",
+            "Nahid\\Talk\\Talk"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Nahid\\Talk\\Live\\Broadcast",
+            "Illuminate\\Contracts\\Config\\Repository",
+            "Nahid\\Talk\\Conversations\\ConversationRepository",
+            "Nahid\\Talk\\Messages\\MessageRepository",
+            "userModel"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "Nahid\\Talk\\Live\\",
+            "Illuminate\\Contracts\\Config\\",
+            "Nahid\\Talk\\Conversations\\",
+            "Nahid\\Talk\\Messages\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Nahid\\Talk\\Live\\": 0.6666666666666666,
+            "Nahid\\Talk\\Conversations\\": 0.6666666666666666,
+            "Nahid\\Talk\\Messages\\": 0.7142857142857143,
+            "\\": 0.5
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Nahid\\Talk\\Messages\\MessageRepository": {
+        "name": "Nahid\\Talk\\Messages\\MessageRepository",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "takeModel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteMessages",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "softDeleteMessage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "SebastianBerc\\Repositories\\Repository",
+            "Nahid\\Talk\\Messages\\Message"
+        ],
+        "parents": [
+            "SebastianBerc\\Repositories\\Repository"
+        ],
+        "lcom": 3,
+        "length": 38,
+        "vocabulary": 16,
+        "volume": 152,
+        "difficulty": 4.67,
+        "effort": 709.33,
+        "level": 0.21,
+        "bugs": 0.05,
+        "time": 39,
+        "intelligentContent": 32.57,
+        "number_operators": 10,
+        "number_operands": 28,
+        "number_operators_unique": 4,
+        "number_operands_unique": 12,
+        "cloc": 0,
+        "loc": 28,
+        "lloc": 28,
+        "mi": 52.75,
+        "mIwoC": 52.75,
+        "commentWeight": 0,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.63,
+        "relativeSystemComplexity": 49.63,
+        "totalStructuralComplexity": 147,
+        "totalDataComplexity": 1.88,
+        "totalSystemComplexity": 148.88,
+        "package": "Nahid\\Talk\\Messages\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nahid\\Talk\\Messages\\": {
+        "name": "Nahid\\Talk\\Messages\\",
+        "classes": [
+            "Nahid\\Talk\\Messages\\MessageRepository",
+            "Nahid\\Talk\\Messages\\Message"
+        ],
+        "outgoing_class_dependencies": [
+            "SebastianBerc\\Repositories\\Repository",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Nahid\\Talk\\Html\\HtmlStringInterface",
+            "Embera\\Embera",
+            "Nahid\\Talk\\Html\\HtmlString"
+        ],
+        "outgoing_package_dependencies": [
+            "SebastianBerc\\Repositories\\",
+            "Illuminate\\Database\\Eloquent\\",
+            "Nahid\\Talk\\Html\\",
+            "Embera\\"
+        ],
+        "incoming_class_dependencies": [
+            "Nahid\\Talk\\Live\\Broadcast",
+            "Nahid\\Talk\\Talk"
+        ],
+        "incoming_package_dependencies": [
+            "Nahid\\Talk\\Live\\",
+            "Nahid\\Talk\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.7142857142857143,
+        "dependent_instabilities": {
+            "Nahid\\Talk\\Html\\": 0.6666666666666666
+        },
+        "distance": 0.20203050891044214,
+        "normalized_distance": 0.2857142857142857,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Nahid\\Talk\\Messages\\Message": {
+        "name": "Nahid\\Talk\\Messages\\Message",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getHumansTimeAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "conversation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "user",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toHtmlString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Nahid\\Talk\\Html\\HtmlStringInterface",
+            "Embera\\Embera",
+            "Nahid\\Talk\\Html\\HtmlString"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "lcom": 2,
+        "length": 35,
+        "vocabulary": 21,
+        "volume": 153.73,
+        "difficulty": 1.42,
+        "effort": 218.46,
+        "level": 0.7,
+        "bugs": 0.05,
+        "time": 12,
+        "intelligentContent": 108.18,
+        "number_operators": 8,
+        "number_operands": 27,
+        "number_operators_unique": 2,
+        "number_operands_unique": 19,
+        "cloc": 23,
+        "loc": 54,
+        "lloc": 31,
+        "mi": 94.39,
+        "mIwoC": 52.02,
+        "commentWeight": 42.37,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 17,
+        "totalStructuralComplexity": 80,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 85,
+        "package": "Nahid\\Talk\\Messages\\",
+        "pageRank": 0.15,
+        "afferentCoupling": 2,
+        "efferentCoupling": 4,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nahid\\Talk\\Live\\Webcast": {
+        "name": "Nahid\\Talk\\Live\\Webcast",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Illuminate\\Contracts\\Queue\\ShouldQueue",
+            "Nahid\\Talk\\Live\\Broadcast"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 52,
+        "vocabulary": 21,
+        "volume": 228.4,
+        "difficulty": 3.42,
+        "effort": 780.37,
+        "level": 0.29,
+        "bugs": 0.08,
+        "time": 43,
+        "intelligentContent": 66.85,
+        "number_operators": 11,
+        "number_operands": 41,
+        "number_operators_unique": 3,
+        "number_operands_unique": 18,
+        "cloc": 19,
+        "loc": 39,
+        "lloc": 20,
+        "mi": 98.83,
+        "mIwoC": 54.7,
+        "commentWeight": 44.13,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 4.33,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 0.67,
+        "totalSystemComplexity": 8.67,
+        "package": "Nahid\\Talk\\Live\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nahid\\Talk\\Live\\": {
+        "name": "Nahid\\Talk\\Live\\",
+        "classes": [
+            "Nahid\\Talk\\Live\\Webcast",
+            "Nahid\\Talk\\Live\\Broadcast"
+        ],
+        "incoming_class_dependencies": [
+            "Nahid\\Talk\\TalkServiceProvider",
+            "Nahid\\Talk\\Talk"
+        ],
+        "incoming_package_dependencies": [
+            "Nahid\\Talk\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Contracts\\Queue\\ShouldQueue",
+            "Illuminate\\Contracts\\Config\\Repository",
+            "Pusher\\Pusher",
+            "Nahid\\Talk\\Messages\\Message"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Contracts\\Queue\\",
+            "Illuminate\\Contracts\\Config\\",
+            "Pusher\\",
+            "Nahid\\Talk\\Messages\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": {
+            "Nahid\\Talk\\Messages\\": 0.7142857142857143
+        },
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Nahid\\Talk\\Live\\Broadcast": {
+        "name": "Nahid\\Talk\\Live\\Broadcast",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "connectPusher",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "transmission",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Contracts\\Config\\Repository",
+            "Pusher\\Pusher",
+            "Nahid\\Talk\\Messages\\Message",
+            "Nahid\\Talk\\Live\\Webcast"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 64,
+        "vocabulary": 24,
+        "volume": 293.44,
+        "difficulty": 4.5,
+        "effort": 1320.47,
+        "level": 0.22,
+        "bugs": 0.1,
+        "time": 73,
+        "intelligentContent": 65.21,
+        "number_operators": 19,
+        "number_operands": 45,
+        "number_operators_unique": 4,
+        "number_operands_unique": 20,
+        "cloc": 39,
+        "loc": 79,
+        "lloc": 40,
+        "mi": 91.67,
+        "mIwoC": 47.37,
+        "commentWeight": 44.3,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 25.83,
+        "totalStructuralComplexity": 100,
+        "totalDataComplexity": 3.33,
+        "totalSystemComplexity": 103.33,
+        "package": "Nahid\\Talk\\Live\\",
+        "pageRank": 0.17,
+        "afferentCoupling": 3,
+        "efferentCoupling": 4,
+        "instability": 0.57,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nahid\\Talk\\Conversations\\ConversationRepository": {
+        "name": "Nahid\\Talk\\Conversations\\ConversationRepository",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "takeModel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "existsById",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isExistsAmongTwoUsers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isUserExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "threads",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "threadsAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMessagesById",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMessagesAllById",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 7,
+        "ccnMethodMax": 3,
+        "externals": [
+            "SebastianBerc\\Repositories\\Repository",
+            "Nahid\\Talk\\Conversations\\Conversation",
+            "Nahid\\Talk\\Conversations\\Conversation",
+            "Nahid\\Talk\\Conversations\\Conversation",
+            "Nahid\\Talk\\Conversations\\Conversation",
+            "Nahid\\Talk\\Conversations\\Conversation"
+        ],
+        "parents": [
+            "SebastianBerc\\Repositories\\Repository"
+        ],
+        "lcom": 8,
+        "length": 212,
+        "vocabulary": 40,
+        "volume": 1128.25,
+        "difficulty": 9.83,
+        "effort": 11094.45,
+        "level": 0.1,
+        "bugs": 0.38,
+        "time": 616,
+        "intelligentContent": 114.74,
+        "number_operators": 35,
+        "number_operands": 177,
+        "number_operators_unique": 4,
+        "number_operands_unique": 36,
+        "cloc": 59,
+        "loc": 149,
+        "lloc": 90,
+        "mi": 76.44,
+        "mIwoC": 35.06,
+        "commentWeight": 41.38,
+        "kanDefect": 0.75,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 1.18,
+        "relativeSystemComplexity": 145.18,
+        "totalStructuralComplexity": 1152,
+        "totalDataComplexity": 9.46,
+        "totalSystemComplexity": 1161.46,
+        "package": "Nahid\\Talk\\Conversations\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nahid\\Talk\\Conversations\\": {
+        "name": "Nahid\\Talk\\Conversations\\",
+        "classes": [
+            "Nahid\\Talk\\Conversations\\ConversationRepository",
+            "Nahid\\Talk\\Conversations\\Conversation"
+        ],
+        "outgoing_class_dependencies": [
+            "SebastianBerc\\Repositories\\Repository",
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "outgoing_package_dependencies": [
+            "SebastianBerc\\Repositories\\",
+            "Illuminate\\Database\\Eloquent\\"
+        ],
+        "incoming_class_dependencies": [
+            "Nahid\\Talk\\Talk"
+        ],
+        "incoming_package_dependencies": [
+            "Nahid\\Talk\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": [],
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Nahid\\Talk\\Conversations\\Conversation": {
+        "name": "Nahid\\Talk\\Conversations\\Conversation",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "messages",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "userone",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "usertwo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "lcom": 2,
+        "length": 21,
+        "vocabulary": 12,
+        "volume": 75.28,
+        "difficulty": 0.82,
+        "effort": 61.6,
+        "level": 1.22,
+        "bugs": 0.03,
+        "time": 3,
+        "intelligentContent": 92.01,
+        "number_operators": 3,
+        "number_operands": 18,
+        "number_operators_unique": 1,
+        "number_operands_unique": 11,
+        "cloc": 15,
+        "loc": 34,
+        "lloc": 19,
+        "mi": 101.67,
+        "mIwoC": 58.83,
+        "commentWeight": 42.84,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.75,
+        "relativeSystemComplexity": 9.75,
+        "totalStructuralComplexity": 27,
+        "totalDataComplexity": 2.25,
+        "totalSystemComplexity": 29.25,
+        "package": "Nahid\\Talk\\Conversations\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nahid\\Talk\\Facades\\Talk": {
+        "name": "Nahid\\Talk\\Facades\\Talk",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 5,
+        "loc": 13,
+        "lloc": 8,
+        "mi": 119.04,
+        "mIwoC": 78.06,
+        "commentWeight": 40.98,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Nahid\\Talk\\Facades\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nahid\\Talk\\Facades\\": {
+        "name": "Nahid\\Talk\\Facades\\",
+        "classes": [
+            "Nahid\\Talk\\Facades\\Talk"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "incoming_class_dependencies": [
+            "Nahid\\Talk\\Middleware\\TalkMiddleware"
+        ],
+        "incoming_package_dependencies": [
+            "Nahid\\Talk\\Middleware\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.5,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Nahid\\Talk\\Middleware\\TalkMiddleware": {
+        "name": "Nahid\\Talk\\Middleware\\TalkMiddleware",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Closure",
+            "Illuminate\\Support\\Facades\\Auth",
+            "Illuminate\\Support\\Facades\\Auth",
+            "Nahid\\Talk\\Facades\\Talk"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 9,
+        "vocabulary": 5,
+        "volume": 20.9,
+        "difficulty": 2.33,
+        "effort": 48.76,
+        "level": 0.43,
+        "bugs": 0.01,
+        "time": 3,
+        "intelligentContent": 8.96,
+        "number_operators": 2,
+        "number_operands": 7,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 7,
+        "loc": 18,
+        "lloc": 11,
+        "mi": 108.9,
+        "mIwoC": 67.77,
+        "commentWeight": 41.13,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.8,
+        "relativeSystemComplexity": 16.8,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 0.8,
+        "totalSystemComplexity": 16.8,
+        "package": "Nahid\\Talk\\Middleware\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Nahid\\Talk\\Middleware\\": {
+        "name": "Nahid\\Talk\\Middleware\\",
+        "classes": [
+            "Nahid\\Talk\\Middleware\\TalkMiddleware"
+        ],
+        "outgoing_class_dependencies": [
+            "Closure",
+            "Illuminate\\Support\\Facades\\Auth",
+            "Nahid\\Talk\\Facades\\Talk"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Illuminate\\Support\\Facades\\",
+            "Nahid\\Talk\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "\\": 0.5,
+            "Nahid\\Talk\\Facades\\": 0.5
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Nahid\\Talk\\Talk": {
+        "name": "Nahid\\Talk\\Talk",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSerializeUser",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeMessage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeMessageCollection",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "newConversation",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAuthUserId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "user",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isConversationExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isAuthenticUser",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendMessage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendMessageByUserId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInbox",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInboxAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "threads",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "threadsAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConversationsById",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConversationsAllById",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConversationsByUserId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConversationsAllByUserId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMessages",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMessagesAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMessagesByUserId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMessagesAllByUserId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "readMessage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeSeen",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getReceiverInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteMessage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteForever",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteConversations",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteThread",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 30,
+        "nbMethods": 30,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 26,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 56,
+        "ccn": 27,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Illuminate\\Contracts\\Config\\Repository",
+            "Nahid\\Talk\\Live\\Broadcast",
+            "Nahid\\Talk\\Conversations\\ConversationRepository",
+            "Nahid\\Talk\\Messages\\MessageRepository",
+            "userModel"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 439,
+        "vocabulary": 51,
+        "volume": 2490.19,
+        "difficulty": 30.42,
+        "effort": 75748.25,
+        "level": 0.03,
+        "bugs": 0.83,
+        "time": 4208,
+        "intelligentContent": 81.86,
+        "number_operators": 112,
+        "number_operands": 327,
+        "number_operators_unique": 8,
+        "number_operands_unique": 43,
+        "cloc": 253,
+        "loc": 471,
+        "lloc": 218,
+        "mi": 66.91,
+        "mIwoC": 21.58,
+        "commentWeight": 45.34,
+        "kanDefect": 1.48,
+        "relativeStructuralComplexity": 900,
+        "relativeDataComplexity": 1.49,
+        "relativeSystemComplexity": 901.49,
+        "totalStructuralComplexity": 27000,
+        "totalDataComplexity": 44.58,
+        "totalSystemComplexity": 27044.58,
+        "package": "Nahid\\Talk\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^5.6 || ^7.0 || ^7.1 || ^7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/contracts": {
+                "name": "illuminate\/contracts",
+                "required": ">=5.1.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/contracts\/zipball\/a6c7ef89684ce0e724b42c6bfe4b1107aee28a1d"
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": ">=5.1.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "sebastian-berc\/repositories": {
+                "name": "sebastian-berc\/repositories",
+                "required": "^1.0",
+                "installed": null,
+                "latest": "1.0.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/SebastianBerc\/Repositories",
+                "zip": "https:\/\/api.github.com\/repos\/SebastianBerc\/Repositories\/zipball\/45173138a010cc9d5534d69f82f7048c761f5a2f"
+            },
+            "nesbot\/carbon": {
+                "name": "nesbot\/carbon",
+                "required": "^2.22",
+                "installed": null,
+                "latest": "2.30.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/carbon.nesbot.com",
+                "zip": "https:\/\/api.github.com\/repos\/briannesbitt\/Carbon\/zipball\/912dff66d2690ca66abddb9b291a1df5f371d3b4"
+            },
+            "pusher\/pusher-php-server": {
+                "name": "pusher\/pusher-php-server",
+                "required": "^3.0",
+                "installed": null,
+                "latest": "4.1.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/pusher\/pusher-http-php\/zipball\/3c05ef64839845b6114396ff8406712cba052750"
+            },
+            "predis\/predis": {
+                "name": "predis\/predis",
+                "required": "~1.1.1",
+                "installed": null,
+                "latest": "1.1.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/github.com\/nrk\/predis",
+                "zip": "https:\/\/api.github.com\/repos\/nrk\/predis\/zipball\/f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "mpratt\/embera": {
+                "name": "mpratt\/embera",
+                "required": "^1.9",
+                "installed": null,
+                "latest": "2.0.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/mpratt\/Embera",
+                "zip": "https:\/\/api.github.com\/repos\/mpratt\/Embera\/zipball\/d98f4e30ac6630e42baded014fb5db32cdd02cad"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

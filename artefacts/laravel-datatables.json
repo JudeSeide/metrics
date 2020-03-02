@@ -1,0 +1,2570 @@
+{
+    "Yajra\\DataTables\\DataTableAbstract": {
+        "name": "Yajra\\DataTables\\DataTableAbstract",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "canCreate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addColumn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addIndexColumn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "editColumn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeColumn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "only",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "escapeColumns",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeHidden",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeVisible",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rawColumns",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRowClass",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRowId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRowData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addRowData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRowAttr",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addRowAttr",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "with",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "order",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "blacklist",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "whitelist",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "smart",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "startsWithSearch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTotalRecords",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFilteredRecords",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "skipPaging",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "pushToBlacklist",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isBlacklisted",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumnsDefinition",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "ordering",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resolveCallbackParameter",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultOrdering",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toJson",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filteredCount",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterRecords",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filtering",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "smartGlobalSearch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "globalSearch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "paginate",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "transform",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processResults",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attachAppends",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "showDebugger",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "errorResponse",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLogger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLogger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setupKeyword",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumnName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumnNameByIndex",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrimaryKeyName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 54,
+        "nbMethods": 51,
+        "nbMethodsPrivate": 19,
+        "nbMethodsPublic": 32,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 3,
+        "wmc": 87,
+        "ccn": 34,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Yajra\\DataTables\\Contracts\\DataTable",
+            "Illuminate\\Contracts\\Support\\Arrayable",
+            "Illuminate\\Contracts\\Support\\Jsonable",
+            "static",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Yajra\\DataTables\\Utilities\\Helper",
+            "Yajra\\DataTables\\Processors\\DataProcessor",
+            "Illuminate\\Http\\JsonResponse",
+            "Exception",
+            "Yajra\\DataTables\\Exceptions\\Exception",
+            "Illuminate\\Http\\JsonResponse",
+            "Psr\\Log\\LoggerInterface",
+            "Yajra\\DataTables\\Utilities\\Helper",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Yajra\\DataTables\\Utilities\\Helper"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 541,
+        "vocabulary": 85,
+        "volume": 3467.48,
+        "difficulty": 23.68,
+        "effort": 82124.54,
+        "level": 0.04,
+        "bugs": 1.16,
+        "time": 4562,
+        "intelligentContent": 146.4,
+        "number_operators": 141,
+        "number_operands": 400,
+        "number_operators_unique": 9,
+        "number_operands_unique": 76,
+        "cloc": 406,
+        "loc": 744,
+        "lloc": 338,
+        "mi": 61,
+        "mIwoC": 15.47,
+        "commentWeight": 45.52,
+        "kanDefect": 1.41,
+        "relativeStructuralComplexity": 1521,
+        "relativeDataComplexity": 1.37,
+        "relativeSystemComplexity": 1522.37,
+        "totalStructuralComplexity": 82134,
+        "totalDataComplexity": 74.2,
+        "totalSystemComplexity": 82208.2,
+        "package": "Yajra\\DataTables\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 2,
+        "efferentCoupling": 12,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\": {
+        "name": "Yajra\\DataTables\\",
+        "classes": [
+            "Yajra\\DataTables\\DataTableAbstract",
+            "Yajra\\DataTables\\EloquentDataTable",
+            "Yajra\\DataTables\\DataTables",
+            "Yajra\\DataTables\\CollectionDataTable",
+            "Yajra\\DataTables\\QueryDataTable",
+            "Yajra\\DataTables\\ApiResourceDataTable",
+            "Yajra\\DataTables\\DataTablesServiceProvider"
+        ],
+        "outgoing_class_dependencies": [
+            "Yajra\\DataTables\\Contracts\\DataTable",
+            "Illuminate\\Contracts\\Support\\Arrayable",
+            "Illuminate\\Contracts\\Support\\Jsonable",
+            "static",
+            "Illuminate\\Support\\Arr",
+            "Yajra\\DataTables\\Utilities\\Helper",
+            "Yajra\\DataTables\\Processors\\DataProcessor",
+            "Illuminate\\Http\\JsonResponse",
+            "Exception",
+            "Yajra\\DataTables\\Exceptions\\Exception",
+            "Psr\\Log\\LoggerInterface",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Database\\Query\\Builder",
+            "Illuminate\\Http\\Resources\\Json\\AnonymousResourceCollection",
+            "Illuminate\\Support\\ServiceProvider",
+            "Yajra\\DataTables\\Utilities\\Request",
+            "InvalidArgumentException"
+        ],
+        "outgoing_package_dependencies": [
+            "Yajra\\DataTables\\Contracts\\",
+            "Illuminate\\Contracts\\Support\\",
+            "\\",
+            "Illuminate\\Support\\",
+            "Yajra\\DataTables\\Utilities\\",
+            "Yajra\\DataTables\\Processors\\",
+            "Illuminate\\Http\\",
+            "Yajra\\DataTables\\Exceptions\\",
+            "Psr\\Log\\",
+            "Illuminate\\Database\\Query\\",
+            "Illuminate\\Http\\Resources\\Json\\"
+        ],
+        "abstraction": 0.14285714285714285,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Yajra\\DataTables\\Contracts\\": 0,
+            "Yajra\\DataTables\\Utilities\\": 0.4444444444444444,
+            "Yajra\\DataTables\\Processors\\": 0.6666666666666666,
+            "Yajra\\DataTables\\Exceptions\\": 0.3333333333333333
+        },
+        "distance": 0.10101525445522103,
+        "normalized_distance": 0.1428571428571428,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Yajra\\DataTables\\Utilities\\Request": {
+        "name": "Yajra\\DataTables\\Utilities\\Request",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "columns",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSearchable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRegex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orderableColumns",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isOrderable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isColumnOrderable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "searchableColumnIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isColumnSearchable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "columnKeyword",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareKeyword",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "keyword",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "columnName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isPaginationable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 16,
+        "nbMethods": 16,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 15,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 33,
+        "ccn": 18,
+        "ccnMethodMax": 5,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 220,
+        "vocabulary": 50,
+        "volume": 1241.65,
+        "difficulty": 22.42,
+        "effort": 27841.58,
+        "level": 0.04,
+        "bugs": 0.41,
+        "time": 1547,
+        "intelligentContent": 55.37,
+        "number_operators": 61,
+        "number_operands": 159,
+        "number_operators_unique": 11,
+        "number_operands_unique": 39,
+        "cloc": 101,
+        "loc": 198,
+        "lloc": 97,
+        "mi": 77.28,
+        "mIwoC": 32.58,
+        "commentWeight": 44.71,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 2.33,
+        "relativeSystemComplexity": 51.33,
+        "totalStructuralComplexity": 784,
+        "totalDataComplexity": 37.25,
+        "totalSystemComplexity": 821.25,
+        "package": "Yajra\\DataTables\\Utilities\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\Utilities\\": {
+        "name": "Yajra\\DataTables\\Utilities\\",
+        "classes": [
+            "Yajra\\DataTables\\Utilities\\Request",
+            "Yajra\\DataTables\\Utilities\\Helper",
+            "Yajra\\DataTables\\Utilities\\Config"
+        ],
+        "incoming_class_dependencies": [
+            "Yajra\\DataTables\\DataTableAbstract",
+            "Yajra\\DataTables\\QueryDataTable",
+            "Yajra\\DataTables\\DataTablesServiceProvider",
+            "Yajra\\DataTables\\Processors\\RowProcessor",
+            "Yajra\\DataTables\\Processors\\DataProcessor"
+        ],
+        "incoming_package_dependencies": [
+            "Yajra\\DataTables\\",
+            "Yajra\\DataTables\\Processors\\"
+        ],
+        "outgoing_class_dependencies": [
+            "static",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Contracts\\Config\\Repository"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Illuminate\\Support\\",
+            "Illuminate\\Contracts\\Config\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.4444444444444444,
+        "dependent_instabilities": [],
+        "distance": 0.3928371006591931,
+        "normalized_distance": 0.5555555555555556,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Yajra\\DataTables\\Utilities\\Helper": {
+        "name": "Yajra\\DataTables\\Utilities\\Helper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "includeInArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isItemOrderInvalid",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compileContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compileBlade",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMixedValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "castToArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOrMethod",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertToArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "transform",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "transformRow",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildParameters",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replacePatternWithKeyword",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractColumnName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wildcardLikeString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wildcardString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 15,
+        "nbMethods": 15,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 13,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 48,
+        "ccn": 34,
+        "ccnMethodMax": 7,
+        "externals": [
+            "static",
+            "static",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Str",
+            "static",
+            "Illuminate\\Support\\Str"
+        ],
+        "parents": [],
+        "lcom": 15,
+        "length": 303,
+        "vocabulary": 59,
+        "volume": 1782.44,
+        "difficulty": 25.21,
+        "effort": 44932.36,
+        "level": 0.04,
+        "bugs": 0.59,
+        "time": 2496,
+        "intelligentContent": 70.71,
+        "number_operators": 83,
+        "number_operands": 220,
+        "number_operators_unique": 11,
+        "number_operands_unique": 48,
+        "cloc": 102,
+        "loc": 269,
+        "lloc": 167,
+        "mi": 64.96,
+        "mIwoC": 24.18,
+        "commentWeight": 40.79,
+        "kanDefect": 3.18,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 2.32,
+        "relativeSystemComplexity": 123.32,
+        "totalStructuralComplexity": 1815,
+        "totalDataComplexity": 34.83,
+        "totalSystemComplexity": 1849.83,
+        "package": "Yajra\\DataTables\\Utilities\\",
+        "pageRank": 0.18,
+        "afferentCoupling": 4,
+        "efferentCoupling": 3,
+        "instability": 0.43,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\Utilities\\Config": {
+        "name": "Yajra\\DataTables\\Utilities\\Config",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isWildcard",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSmartSearch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isCaseInsensitive",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDebugging",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isMultiTerm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isStartsWithSearch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Contracts\\Config\\Repository"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 33,
+        "vocabulary": 13,
+        "volume": 122.11,
+        "difficulty": 2.27,
+        "effort": 277.53,
+        "level": 0.44,
+        "bugs": 0.04,
+        "time": 15,
+        "intelligentContent": 53.73,
+        "number_operators": 8,
+        "number_operands": 25,
+        "number_operators_unique": 2,
+        "number_operands_unique": 11,
+        "cloc": 52,
+        "loc": 93,
+        "lloc": 41,
+        "mi": 95.88,
+        "mIwoC": 50.07,
+        "commentWeight": 45.81,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 2.52,
+        "relativeSystemComplexity": 6.52,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 22.67,
+        "totalSystemComplexity": 58.67,
+        "package": "Yajra\\DataTables\\Utilities\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\EloquentDataTable": {
+        "name": "Yajra\\DataTables\\EloquentDataTable",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "canCreate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addColumns",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrimaryKeyName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compileQuerySearch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resolveRelationColumn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isNotEagerLoaded",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "joinEagerLoadedColumn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "performJoin",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 6,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 24,
+        "ccn": 16,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Yajra\\DataTables\\QueryDataTable",
+            "Yajra\\DataTables\\Exceptions\\Exception"
+        ],
+        "parents": [
+            "Yajra\\DataTables\\QueryDataTable"
+        ],
+        "lcom": 3,
+        "length": 226,
+        "vocabulary": 46,
+        "volume": 1248.33,
+        "difficulty": 15.26,
+        "effort": 19044.96,
+        "level": 0.07,
+        "bugs": 0.42,
+        "time": 1058,
+        "intelligentContent": 81.82,
+        "number_operators": 56,
+        "number_operands": 170,
+        "number_operators_unique": 7,
+        "number_operands_unique": 39,
+        "cloc": 62,
+        "loc": 167,
+        "lloc": 105,
+        "mi": 72.57,
+        "mIwoC": 32.08,
+        "commentWeight": 40.49,
+        "kanDefect": 1.34,
+        "relativeStructuralComplexity": 529,
+        "relativeDataComplexity": 0.45,
+        "relativeSystemComplexity": 529.45,
+        "totalStructuralComplexity": 4761,
+        "totalDataComplexity": 4.04,
+        "totalSystemComplexity": 4765.04,
+        "package": "Yajra\\DataTables\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\DataTables": {
+        "name": "Yajra\\DataTables\\DataTables",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "of",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "make",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "queryBuilder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "eloquent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHtmlBuilder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 16,
+        "ccn": 7,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Exception",
+            "Yajra\\DataTables\\QueryDataTable",
+            "Yajra\\DataTables\\EloquentDataTable",
+            "Yajra\\DataTables\\CollectionDataTable",
+            "Yajra\\DataTables\\ApiResourceDataTable",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 9,
+        "length": 67,
+        "vocabulary": 24,
+        "volume": 307.19,
+        "difficulty": 4.8,
+        "effort": 1474.52,
+        "level": 0.21,
+        "bugs": 0.1,
+        "time": 82,
+        "intelligentContent": 64,
+        "number_operators": 19,
+        "number_operands": 48,
+        "number_operators_unique": 4,
+        "number_operands_unique": 20,
+        "cloc": 70,
+        "loc": 133,
+        "lloc": 63,
+        "mi": 87.48,
+        "mIwoC": 42.39,
+        "commentWeight": 45.09,
+        "kanDefect": 0.82,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 1.67,
+        "relativeSystemComplexity": 37.67,
+        "totalStructuralComplexity": 360,
+        "totalDataComplexity": 16.71,
+        "totalSystemComplexity": 376.71,
+        "package": "Yajra\\DataTables\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\Exceptions\\Exception": {
+        "name": "Yajra\\DataTables\\Exceptions\\Exception",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Exception"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Yajra\\DataTables\\Exceptions\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\Exceptions\\": {
+        "name": "Yajra\\DataTables\\Exceptions\\",
+        "classes": [
+            "Yajra\\DataTables\\Exceptions\\Exception"
+        ],
+        "incoming_class_dependencies": [
+            "Yajra\\DataTables\\DataTableAbstract",
+            "Yajra\\DataTables\\EloquentDataTable"
+        ],
+        "incoming_package_dependencies": [
+            "Yajra\\DataTables\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.3333333333333333,
+        "dependent_instabilities": [],
+        "distance": 0.4714045207910317,
+        "normalized_distance": 0.6666666666666667,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Yajra\\DataTables\\CollectionDataTable": {
+        "name": "Yajra\\DataTables\\CollectionDataTable",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "canCreate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "serialize",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "count",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "columnSearch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "paging",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "make",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "totalCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "results",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "revertIndexColumn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "globalSearch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultOrdering",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSorter",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resolveCallbackParameter",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOffset",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 16,
+        "nbMethods": 15,
+        "nbMethodsPrivate": 6,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 45,
+        "ccn": 30,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Yajra\\DataTables\\DataTableAbstract",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr"
+        ],
+        "parents": [
+            "Yajra\\DataTables\\DataTableAbstract"
+        ],
+        "lcom": 4,
+        "length": 345,
+        "vocabulary": 58,
+        "volume": 2021,
+        "difficulty": 38.82,
+        "effort": 78451.68,
+        "level": 0.03,
+        "bugs": 0.67,
+        "time": 4358,
+        "intelligentContent": 52.06,
+        "number_operators": 101,
+        "number_operands": 244,
+        "number_operators_unique": 14,
+        "number_operands_unique": 44,
+        "cloc": 102,
+        "loc": 279,
+        "lloc": 177,
+        "mi": 64.06,
+        "mIwoC": 23.78,
+        "commentWeight": 40.28,
+        "kanDefect": 1.82,
+        "relativeStructuralComplexity": 1156,
+        "relativeDataComplexity": 0.64,
+        "relativeSystemComplexity": 1156.64,
+        "totalStructuralComplexity": 18496,
+        "totalDataComplexity": 10.31,
+        "totalSystemComplexity": 18506.31,
+        "package": "Yajra\\DataTables\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 2,
+        "efferentCoupling": 4,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\QueryDataTable": {
+        "name": "Yajra\\DataTables\\QueryDataTable",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "canCreate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "make",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareQuery",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "skipTotalRecords",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "keepSelectBindings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "totalCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filteredCount",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "count",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareCountQuery",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isComplexQuery",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wrap",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "results",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFilteredQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuery",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "columnSearch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasFilterColumn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumnSearchKeyword",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "applyFilterColumn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBaseQueryBuilder",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resolveRelationColumn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compileColumnSearch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "regexColumnSearch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "castColumn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compileQuerySearch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addTablePrefix",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareKeyword",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterColumn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orderColumns",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orderColumn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orderByNullsLast",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "limit",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "paging",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addColumn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resolveCallbackParameter",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultOrdering",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasOrderColumn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "applyOrderColumn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNullsLastSql",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "globalSearch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "showDebugger",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attachAppends",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 42,
+        "nbMethods": 39,
+        "nbMethodsPrivate": 22,
+        "nbMethodsPublic": 17,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 89,
+        "ccn": 48,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Yajra\\DataTables\\DataTableAbstract",
+            "Illuminate\\Database\\Query\\Builder",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Yajra\\DataTables\\Utilities\\Helper"
+        ],
+        "parents": [
+            "Yajra\\DataTables\\DataTableAbstract"
+        ],
+        "lcom": 3,
+        "length": 676,
+        "vocabulary": 99,
+        "volume": 4481.45,
+        "difficulty": 28.43,
+        "effort": 127393.89,
+        "level": 0.04,
+        "bugs": 1.49,
+        "time": 7077,
+        "intelligentContent": 157.65,
+        "number_operators": 170,
+        "number_operands": 506,
+        "number_operators_unique": 10,
+        "number_operands_unique": 89,
+        "cloc": 284,
+        "loc": 652,
+        "lloc": 368,
+        "mi": 54.67,
+        "mIwoC": 12.01,
+        "commentWeight": 42.67,
+        "kanDefect": 3.1,
+        "relativeStructuralComplexity": 5776,
+        "relativeDataComplexity": 0.56,
+        "relativeSystemComplexity": 5776.56,
+        "totalStructuralComplexity": 242592,
+        "totalDataComplexity": 23.52,
+        "totalSystemComplexity": 242615.52,
+        "package": "Yajra\\DataTables\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 2,
+        "efferentCoupling": 4,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\ApiResourceDataTable": {
+        "name": "Yajra\\DataTables\\ApiResourceDataTable",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "canCreate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Yajra\\DataTables\\CollectionDataTable",
+            "Illuminate\\Http\\Resources\\Json\\AnonymousResourceCollection"
+        ],
+        "parents": [
+            "Yajra\\DataTables\\CollectionDataTable"
+        ],
+        "lcom": 3,
+        "length": 29,
+        "vocabulary": 8,
+        "volume": 87,
+        "difficulty": 6,
+        "effort": 522,
+        "level": 0.17,
+        "bugs": 0.03,
+        "time": 29,
+        "intelligentContent": 14.5,
+        "number_operators": 9,
+        "number_operands": 20,
+        "number_operators_unique": 3,
+        "number_operands_unique": 5,
+        "cloc": 27,
+        "loc": 52,
+        "lloc": 25,
+        "mi": 100.58,
+        "mIwoC": 55.66,
+        "commentWeight": 44.92,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 16.6,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 1.8,
+        "totalSystemComplexity": 49.8,
+        "package": "Yajra\\DataTables\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\Contracts\\DataTable": {
+        "name": "Yajra\\DataTables\\Contracts\\DataTable",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "results",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "count",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "totalCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filtering",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "columnSearch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "paging",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "ordering",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "make",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Yajra\\DataTables\\Contracts\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Yajra\\DataTables\\Contracts\\": {
+        "name": "Yajra\\DataTables\\Contracts\\",
+        "classes": [
+            "Yajra\\DataTables\\Contracts\\DataTable"
+        ],
+        "incoming_class_dependencies": [
+            "Yajra\\DataTables\\DataTableAbstract"
+        ],
+        "incoming_package_dependencies": [
+            "Yajra\\DataTables\\"
+        ],
+        "abstraction": 1,
+        "instability": 0,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Yajra\\DataTables\\DataTablesServiceProvider": {
+        "name": "Yajra\\DataTables\\DataTablesServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setupAssets",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isLumen",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 7,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Yajra\\DataTables\\DataTables",
+            "Yajra\\DataTables\\Utilities\\Request",
+            "Illuminate\\Support\\Str",
+            "Yajra\\DataTables\\DataTables",
+            "InvalidArgumentException",
+            "Yajra\\DataTables\\DataTables",
+            "Illuminate\\Support\\Str"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 52,
+        "vocabulary": 22,
+        "volume": 231.89,
+        "difficulty": 5.74,
+        "effort": 1329.96,
+        "level": 0.17,
+        "bugs": 0.08,
+        "time": 74,
+        "intelligentContent": 40.43,
+        "number_operators": 13,
+        "number_operands": 39,
+        "number_operators_unique": 5,
+        "number_operands_unique": 17,
+        "cloc": 20,
+        "loc": 65,
+        "lloc": 45,
+        "mi": 84.3,
+        "mIwoC": 46.43,
+        "commentWeight": 37.87,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.36,
+        "relativeSystemComplexity": 100.36,
+        "totalStructuralComplexity": 400,
+        "totalDataComplexity": 1.45,
+        "totalSystemComplexity": 401.45,
+        "package": "Yajra\\DataTables\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\Facades\\DataTables": {
+        "name": "Yajra\\DataTables\\Facades\\DataTables",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 13,
+        "loc": 21,
+        "lloc": 8,
+        "mi": 124.99,
+        "mIwoC": 78.06,
+        "commentWeight": 46.94,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Yajra\\DataTables\\Facades\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\Facades\\": {
+        "name": "Yajra\\DataTables\\Facades\\",
+        "classes": [
+            "Yajra\\DataTables\\Facades\\DataTables"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "config_path": {
+        "name": "config_path",
+        "cloc": 6,
+        "loc": 11,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "public_path": {
+        "name": "public_path",
+        "cloc": 6,
+        "loc": 11,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "datatables": {
+        "name": "datatables",
+        "cloc": 7,
+        "loc": 15,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Yajra\\DataTables\\Processors\\RowProcessor": {
+        "name": "Yajra\\DataTables\\Processors\\RowProcessor",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rowValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rowData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getData",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 6,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Yajra\\DataTables\\Utilities\\Helper",
+            "Yajra\\DataTables\\Utilities\\Helper"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 51,
+        "vocabulary": 11,
+        "volume": 176.43,
+        "difficulty": 10.86,
+        "effort": 1915.54,
+        "level": 0.09,
+        "bugs": 0.06,
+        "time": 106,
+        "intelligentContent": 16.25,
+        "number_operators": 13,
+        "number_operands": 38,
+        "number_operators_unique": 4,
+        "number_operands_unique": 7,
+        "cloc": 27,
+        "loc": 63,
+        "lloc": 36,
+        "mi": 91.97,
+        "mIwoC": 49.51,
+        "commentWeight": 42.45,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 5.5,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 6,
+        "totalSystemComplexity": 22,
+        "package": "Yajra\\DataTables\\Processors\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Yajra\\DataTables\\Processors\\": {
+        "name": "Yajra\\DataTables\\Processors\\",
+        "classes": [
+            "Yajra\\DataTables\\Processors\\RowProcessor",
+            "Yajra\\DataTables\\Processors\\DataProcessor"
+        ],
+        "incoming_class_dependencies": [
+            "Yajra\\DataTables\\DataTableAbstract"
+        ],
+        "incoming_package_dependencies": [
+            "Yajra\\DataTables\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\Arr",
+            "Yajra\\DataTables\\Utilities\\Helper"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "Yajra\\DataTables\\Utilities\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": {
+            "Yajra\\DataTables\\Utilities\\": 0.4444444444444444
+        },
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Yajra\\DataTables\\Processors\\DataProcessor": {
+        "name": "Yajra\\DataTables\\Processors\\DataProcessor",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addColumns",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "editColumns",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setupRowVariables",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectOnlyNeededColumns",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeExcessColumns",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flatten",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "escapeColumns",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "escapeRow",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 7,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 28,
+        "ccn": 19,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Yajra\\DataTables\\Utilities\\Helper",
+            "Yajra\\DataTables\\Utilities\\Helper",
+            "Yajra\\DataTables\\Utilities\\Helper",
+            "Yajra\\DataTables\\Utilities\\Helper",
+            "Illuminate\\Support\\Arr",
+            "Yajra\\DataTables\\Processors\\RowProcessor",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 261,
+        "vocabulary": 42,
+        "volume": 1407.39,
+        "difficulty": 10.95,
+        "effort": 15407.27,
+        "level": 0.09,
+        "bugs": 0.47,
+        "time": 856,
+        "intelligentContent": 128.56,
+        "number_operators": 53,
+        "number_operands": 208,
+        "number_operators_unique": 4,
+        "number_operands_unique": 38,
+        "cloc": 100,
+        "loc": 232,
+        "lloc": 132,
+        "mi": 71.67,
+        "mIwoC": 29.14,
+        "commentWeight": 42.53,
+        "kanDefect": 2.87,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.9,
+        "relativeSystemComplexity": 169.9,
+        "totalStructuralComplexity": 1690,
+        "totalDataComplexity": 9,
+        "totalSystemComplexity": 1699,
+        "package": "Yajra\\DataTables\\Processors\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.45,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.1.3",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/database": {
+                "name": "illuminate\/database",
+                "required": "5.8.*|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/database\/zipball\/2d24be92d25a5adf68ccea30b5682ed2990fa330"
+            },
+            "illuminate\/filesystem": {
+                "name": "illuminate\/filesystem",
+                "required": "5.8.*|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/filesystem\/zipball\/799a3af9435458d56e9f3647e09e11ffc9ace896"
+            },
+            "illuminate\/http": {
+                "name": "illuminate\/http",
+                "required": "5.8.*|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/http\/zipball\/68462f731338ce845b69497e135a0f6db6e109cc"
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "5.8.*|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "illuminate\/view": {
+                "name": "illuminate\/view",
+                "required": "5.8.*|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/view\/zipball\/1b691e94f8fe8c2e3f05d14a2f63e98cdb332ea4"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

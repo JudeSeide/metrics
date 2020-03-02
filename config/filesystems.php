@@ -1,7 +1,5 @@
 <?php declare(strict_types=1);
 
-$path = getcwd().DIRECTORY_SEPARATOR.'resources';
-
 return [
     'default' => 'local',
     'disks' => [
@@ -11,7 +9,8 @@ return [
         ],
     ],
     'resources' => [
-        'directory' => $path,
+        'directory' => getcwd().DIRECTORY_SEPARATOR.'resources',
+        'artefacts' => getcwd().DIRECTORY_SEPARATOR.'artefacts',
         'metadata' => 'resources'.DIRECTORY_SEPARATOR.'libraries.json',
     ]
 ];

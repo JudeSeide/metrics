@@ -1,0 +1,4460 @@
+{
+    "Amp\\Http\\Server\\DefaultErrorHandler": {
+        "name": "Amp\\Http\\Server\\DefaultErrorHandler",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "handleError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Amp\\Http\\Server\\ErrorHandler",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Status",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Success"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 36,
+        "vocabulary": 18,
+        "volume": 150.12,
+        "difficulty": 5.38,
+        "effort": 808.32,
+        "level": 0.19,
+        "bugs": 0.05,
+        "time": 45,
+        "intelligentContent": 27.88,
+        "number_operators": 8,
+        "number_operands": 28,
+        "number_operators_unique": 5,
+        "number_operands_unique": 13,
+        "cloc": 6,
+        "loc": 28,
+        "lloc": 22,
+        "mi": 87.93,
+        "mIwoC": 55.07,
+        "commentWeight": 32.86,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.33,
+        "relativeSystemComplexity": 5.33,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 1.33,
+        "totalSystemComplexity": 5.33,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 6,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\": {
+        "name": "Amp\\Http\\Server\\",
+        "classes": [
+            "Amp\\Http\\Server\\DefaultErrorHandler",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\RequestBody",
+            "Amp\\Http\\Server\\ServerObserver",
+            "Amp\\Http\\Server\\Options",
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Http\\Server\\Push",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Http\\Server\\HttpServer",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\Middleware",
+            "anonymous@000000003d11f3df0000000029a14b41",
+            "Amp\\Http\\Server\\Trailers",
+            "Amp\\Http\\Server\\MissingAttributeError",
+            "Amp\\Http\\Server\\ErrorHandler"
+        ],
+        "outgoing_class_dependencies": [
+            "Amp\\Promise",
+            "Amp\\Http\\Status",
+            "Amp\\Success",
+            "Amp\\Http\\Message",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Psr\\Http\\Message\\UriInterface",
+            "Error",
+            "Amp\\ByteStream\\InMemoryStream",
+            "TypeError",
+            "Amp\\Http\\Cookie\\RequestCookie",
+            "Amp\\ByteStream\\Payload",
+            "Amp\\ByteStream\\InputStream",
+            "Amp\\Http\\Cookie\\ResponseCookie",
+            "League\\Uri\\Http",
+            "Psr\\Log\\LoggerInterface",
+            "Amp\\Http\\Server\\Driver\\DefaultClientFactory",
+            "Amp\\Http\\Server\\Driver\\TimeoutCache",
+            "Amp\\Http\\Server\\Middleware\\CompressionMiddleware",
+            "Closure",
+            "Amp\\Loop",
+            "SplObjectStorage",
+            "Amp\\Http\\Server\\Internal\\PerformanceRecommender",
+            "Amp\\Http\\Server\\Driver\\DefaultHttpDriverFactory",
+            "Amp\\Http\\Server\\Driver\\HttpDriverFactory",
+            "Amp\\Http\\Server\\Driver\\ClientFactory",
+            "Amp\\Coroutine",
+            "Amp\\Failure",
+            "Generator",
+            "Amp\\MultiReasonException",
+            "Exception",
+            "Throwable",
+            "Amp\\Http\\InvalidHeaderException",
+            ""
+        ],
+        "outgoing_package_dependencies": [
+            "Amp\\",
+            "Amp\\Http\\",
+            "Amp\\Http\\Server\\Driver\\",
+            "Psr\\Http\\Message\\",
+            "\\",
+            "Amp\\ByteStream\\",
+            "Amp\\Http\\Cookie\\",
+            "League\\Uri\\",
+            "Psr\\Log\\",
+            "Amp\\Http\\Server\\Middleware\\",
+            "Amp\\Http\\Server\\Internal\\"
+        ],
+        "incoming_class_dependencies": [
+            "Amp\\Http\\Server\\RequestHandler\\CallableRequestHandler",
+            "Amp\\Http\\Server\\RequestHandler\\RedirectHandler",
+            "Amp\\Http\\Server\\RequestHandler\\MovedResourceHandler",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Amp\\Http\\Server\\Driver\\ClientFactory",
+            "Amp\\Http\\Server\\Driver\\DefaultHttpDriverFactory",
+            "Amp\\Http\\Server\\Driver\\HttpDriverFactory",
+            "Amp\\Http\\Server\\Driver\\Http2Driver",
+            "Amp\\Http\\Server\\Driver\\DefaultClientFactory",
+            "Amp\\Http\\Server\\Driver\\HttpDriver",
+            "Amp\\Http\\Server\\Driver\\RemoteClient",
+            "Amp\\Http\\Server\\Driver\\Http1Driver",
+            "Amp\\Http\\Server\\Middleware\\ExceptionMiddleware",
+            "Amp\\Http\\Server\\Middleware\\CompressionMiddleware",
+            "Amp\\Http\\Server\\Middleware\\Internal\\MiddlewareRequestHandler",
+            "Amp\\Http\\Server\\Internal\\PerformanceRecommender"
+        ],
+        "incoming_package_dependencies": [
+            "Amp\\Http\\Server\\RequestHandler\\",
+            "Amp\\Http\\Server\\Driver\\",
+            "Amp\\Http\\Server\\Middleware\\",
+            "Amp\\Http\\Server\\Middleware\\Internal\\",
+            "Amp\\Http\\Server\\Internal\\"
+        ],
+        "abstraction": 0.26666666666666666,
+        "instability": 0.673469387755102,
+        "dependent_instabilities": {
+            "Amp\\Http\\Server\\Driver\\": 0.9230769230769231,
+            "Amp\\Http\\Server\\Middleware\\": 0.9375,
+            "Amp\\Http\\Server\\Internal\\": 0.8
+        },
+        "distance": 0.04233020186694977,
+        "normalized_distance": 0.05986394557823127,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Amp\\Http\\Server\\RequestHandler\\CallableRequestHandler": {
+        "name": "Amp\\Http\\Server\\RequestHandler\\CallableRequestHandler",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 5,
+        "volume": 18.58,
+        "difficulty": 2,
+        "effort": 37.15,
+        "level": 0.5,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 9.29,
+        "number_operators": 2,
+        "number_operands": 6,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 8,
+        "loc": 21,
+        "lloc": 13,
+        "mi": 107.53,
+        "mIwoC": 66.68,
+        "commentWeight": 40.85,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 4,
+        "package": "Amp\\Http\\Server\\RequestHandler\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\RequestHandler\\": {
+        "name": "Amp\\Http\\Server\\RequestHandler\\",
+        "classes": [
+            "Amp\\Http\\Server\\RequestHandler\\CallableRequestHandler",
+            "Amp\\Http\\Server\\RequestHandler\\RedirectHandler",
+            "Amp\\Http\\Server\\RequestHandler\\MovedResourceHandler"
+        ],
+        "outgoing_class_dependencies": [
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Psr\\Http\\Message\\UriInterface",
+            "Error",
+            "Amp\\Success"
+        ],
+        "outgoing_package_dependencies": [
+            "Amp\\Http\\Server\\",
+            "Amp\\",
+            "Psr\\Http\\Message\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Amp\\Http\\Server\\": 0.673469387755102
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Amp\\Http\\Server\\RequestHandler\\RedirectHandler": {
+        "name": "Amp\\Http\\Server\\RequestHandler\\RedirectHandler",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 6,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Amp\\Http\\Server\\RequestHandler",
+            "Psr\\Http\\Message\\UriInterface",
+            "Error",
+            "Error",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Success"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 48,
+        "vocabulary": 23,
+        "volume": 217.13,
+        "difficulty": 9.96,
+        "effort": 2163.56,
+        "level": 0.1,
+        "bugs": 0.07,
+        "time": 120,
+        "intelligentContent": 21.79,
+        "number_operators": 17,
+        "number_operands": 31,
+        "number_operators_unique": 9,
+        "number_operands_unique": 14,
+        "cloc": 8,
+        "loc": 35,
+        "lloc": 27,
+        "mi": 85.35,
+        "mIwoC": 51.61,
+        "commentWeight": 33.74,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 16.5,
+        "totalStructuralComplexity": 32,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 33,
+        "package": "Amp\\Http\\Server\\RequestHandler\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\RequestHandler\\MovedResourceHandler": {
+        "name": "Amp\\Http\\Server\\RequestHandler\\MovedResourceHandler",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 5,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Amp\\Http\\Server\\RequestHandler",
+            "Psr\\Http\\Message\\UriInterface",
+            "Error",
+            "Error",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Success"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 45,
+        "vocabulary": 22,
+        "volume": 200.67,
+        "difficulty": 12.08,
+        "effort": 2424.82,
+        "level": 0.08,
+        "bugs": 0.07,
+        "time": 135,
+        "intelligentContent": 16.61,
+        "number_operators": 16,
+        "number_operands": 29,
+        "number_operators_unique": 10,
+        "number_operands_unique": 12,
+        "cloc": 8,
+        "loc": 35,
+        "lloc": 27,
+        "mi": 85.72,
+        "mIwoC": 51.98,
+        "commentWeight": 33.74,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 16.5,
+        "totalStructuralComplexity": 32,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 33,
+        "package": "Amp\\Http\\Server\\RequestHandler\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "anonymous@000000003d11ef6b0000000029a14b41": {
+        "name": "anonymous@000000003d11ef6b0000000029a14b41",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 6,
+        "lloc": 6,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\": {
+        "name": "Amp\\Http\\Server\\Driver\\",
+        "classes": [
+            "anonymous@000000003d11ef6b0000000029a14b41",
+            "Amp\\Http\\Server\\Driver\\TimeoutCache",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Amp\\Http\\Server\\Driver\\ClientFactory",
+            "Amp\\Http\\Server\\Driver\\DefaultHttpDriverFactory",
+            "Amp\\Http\\Server\\Driver\\HttpDriverFactory",
+            "Amp\\Http\\Server\\Driver\\Http2Driver",
+            "Amp\\Http\\Server\\Driver\\DefaultClientFactory",
+            "Amp\\Http\\Server\\Driver\\HttpDriver",
+            "Amp\\Http\\Server\\Driver\\UpgradedSocket",
+            "Amp\\Http\\Server\\Driver\\RemoteClient",
+            "Amp\\Http\\Server\\Driver\\Http1Driver"
+        ],
+        "outgoing_class_dependencies": [
+            "",
+            "Amp\\Http\\Server\\Options",
+            "Amp\\Socket\\SocketAddress",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Http\\Server\\ErrorHandler",
+            "Psr\\Log\\LoggerInterface",
+            "Amp\\Http\\Http2\\Http2Processor",
+            "Amp\\Http\\HPack",
+            "Generator",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Success",
+            "Amp\\Coroutine",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\Push",
+            "Amp\\Http\\Server\\Driver\\Internal\\Http2Stream",
+            "Amp\\Deferred",
+            "Amp\\Http\\Http2\\Http2Parser",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Closure",
+            "Amp\\Loop",
+            "League\\Uri\\Http",
+            "Amp\\Emitter",
+            "Amp\\ByteStream\\IteratorStream",
+            "Amp\\Http\\Server\\RequestBody",
+            "Amp\\Http\\Server\\Trailers",
+            "Amp\\Socket\\EncryptableSocket",
+            "Amp\\Socket\\ResourceSocket",
+            "Amp\\Http\\Server\\DefaultErrorHandler",
+            "Error",
+            "Amp\\Socket\\TlsInfo",
+            "Amp\\Failure",
+            "Throwable",
+            "Amp\\Http\\Rfc7230"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Amp\\Http\\Server\\",
+            "Amp\\Socket\\",
+            "Amp\\",
+            "Psr\\Log\\",
+            "Amp\\Http\\Http2\\",
+            "Amp\\Http\\",
+            "Amp\\Http\\Server\\Driver\\Internal\\",
+            "League\\Uri\\",
+            "Amp\\ByteStream\\"
+        ],
+        "incoming_class_dependencies": [
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\HttpServer",
+            "Amp\\Http\\Server\\ClientException"
+        ],
+        "incoming_package_dependencies": [
+            "Amp\\Http\\Server\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.9230769230769231,
+        "dependent_instabilities": {
+            "Amp\\Http\\Server\\": 0.673469387755102,
+            "Amp\\Http\\Server\\Driver\\Internal\\": 0
+        },
+        "distance": 0.1813094310734737,
+        "normalized_distance": 0.2564102564102564,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\TimeoutCache": {
+        "name": "Amp\\Http\\Server\\Driver\\TimeoutCache",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "getExpirationTime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "update",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extract",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rebuild",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 16,
+        "ccnMethodMax": 8,
+        "externals": [
+            ""
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 217,
+        "vocabulary": 31,
+        "volume": 1075.06,
+        "difficulty": 59.71,
+        "effort": 64187.44,
+        "level": 0.02,
+        "bugs": 0.36,
+        "time": 3566,
+        "intelligentContent": 18.01,
+        "number_operators": 72,
+        "number_operands": 145,
+        "number_operators_unique": 14,
+        "number_operands_unique": 17,
+        "cloc": 33,
+        "loc": 119,
+        "lloc": 86,
+        "mi": 70.84,
+        "mIwoC": 34.42,
+        "commentWeight": 36.41,
+        "kanDefect": 1.1,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 4.7,
+        "relativeSystemComplexity": 5.7,
+        "totalStructuralComplexity": 5,
+        "totalDataComplexity": 23.5,
+        "totalSystemComplexity": 28.5,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 4,
+        "efferentCoupling": 1,
+        "instability": 0.2,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\Client": {
+        "name": "Amp\\Http\\Server\\Driver\\Client",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPendingRequestCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPendingResponseCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isWaitingOnResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRemoteAddress",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLocalAddress",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isUnix",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEncrypted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTlsInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isExported",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStatus",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExpirationTime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateExpirationTime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onClose",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "close",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 18,
+        "nbMethods": 18,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 18,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Amp\\Http\\Server\\Driver\\HttpDriverFactory",
+            "Amp\\Http\\Server\\Options",
+            "Amp\\Socket\\SocketAddress",
+            "Amp\\Socket\\SocketAddress",
+            "Amp\\Promise"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 11,
+        "efferentCoupling": 4,
+        "instability": 0.27,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\ClientFactory": {
+        "name": "Amp\\Http\\Server\\Driver\\ClientFactory",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "createClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Http\\Server\\ErrorHandler",
+            "Psr\\Log\\LoggerInterface",
+            "Amp\\Http\\Server\\Options",
+            "Amp\\Http\\Server\\Driver\\TimeoutCache"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 6,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\DefaultHttpDriverFactory": {
+        "name": "Amp\\Http\\Server\\Driver\\DefaultHttpDriverFactory",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "selectDriver",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getApplicationLayerProtocols",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Amp\\Http\\Server\\Driver\\HttpDriverFactory",
+            "Amp\\Http\\Server\\Driver\\HttpDriver",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Amp\\Http\\Server\\ErrorHandler",
+            "Psr\\Log\\LoggerInterface",
+            "Amp\\Http\\Server\\Options",
+            "Amp\\Http\\Server\\Driver\\Http2Driver",
+            "Amp\\Http\\Server\\Driver\\Http1Driver"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 20,
+        "vocabulary": 10,
+        "volume": 66.44,
+        "difficulty": 4.67,
+        "effort": 310.05,
+        "level": 0.21,
+        "bugs": 0.02,
+        "time": 17,
+        "intelligentContent": 14.24,
+        "number_operators": 6,
+        "number_operands": 14,
+        "number_operators_unique": 4,
+        "number_operands_unique": 6,
+        "cloc": 2,
+        "loc": 17,
+        "lloc": 15,
+        "mi": 86.52,
+        "mIwoC": 61.18,
+        "commentWeight": 25.34,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 10.25,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 2.5,
+        "totalSystemComplexity": 20.5,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 8,
+        "instability": 0.89,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\HttpDriverFactory": {
+        "name": "Amp\\Http\\Server\\Driver\\HttpDriverFactory",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "selectDriver",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getApplicationLayerProtocols",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Amp\\Http\\Server\\Driver\\HttpDriver",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Amp\\Http\\Server\\ErrorHandler",
+            "Psr\\Log\\LoggerInterface",
+            "Amp\\Http\\Server\\Options"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 4,
+        "efferentCoupling": 5,
+        "instability": 0.56,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\Http2Driver": {
+        "name": "Amp\\Http\\Server\\Driver\\Http2Driver",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPendingRequestCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "send",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shutdown",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendPushPromise",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "ping",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeFrame",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeBufferedData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "releaseStream",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parser",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "readPreface",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendBufferedData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "encodeHeaders",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handlePong",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handlePing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleShutdown",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleStreamWindowIncrement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleConnectionWindowIncrement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleHeaders",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleStreamEnd",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handlePushPromise",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handlePriority",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleStreamReset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleStreamException",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleConnectionException",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 31,
+        "nbMethods": 31,
+        "nbMethodsPrivate": 12,
+        "nbMethodsPublic": 19,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 186,
+        "ccn": 156,
+        "ccnMethodMax": 34,
+        "externals": [
+            "Amp\\Http\\Server\\Driver\\HttpDriver",
+            "Amp\\Http\\Http2\\Http2Processor",
+            "Amp\\Http\\Server\\Options",
+            "Psr\\Log\\LoggerInterface",
+            "Amp\\Http\\HPack",
+            "Generator",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Success",
+            "Amp\\Coroutine",
+            "Amp\\Promise",
+            "Generator",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\Push",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\Driver\\Internal\\Http2Stream",
+            "Amp\\Promise",
+            "Amp\\Promise",
+            "Amp\\Promise",
+            "Amp\\Promise",
+            "Amp\\Deferred",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Generator",
+            "Amp\\Http\\Http2\\Http2Parser",
+            "Generator",
+            "Amp\\Http\\Server\\Driver\\Internal\\Http2Stream",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Closure",
+            "Amp\\Loop",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Closure",
+            "Amp\\Loop",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Server\\Driver\\Internal\\Http2Stream",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "League\\Uri\\Http",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Deferred",
+            "Amp\\Emitter",
+            "Amp\\ByteStream\\IteratorStream",
+            "Amp\\Http\\Server\\RequestBody",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Server\\Trailers",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Server\\Driver\\Internal\\Http2Stream",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Closure",
+            "Amp\\Loop",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Http2\\Http2StreamException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Http2\\Http2ConnectionException",
+            "Amp\\Http\\Server\\ClientException"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 1584,
+        "vocabulary": 202,
+        "volume": 12130.61,
+        "difficulty": 87.63,
+        "effort": 1063057.08,
+        "level": 0.01,
+        "bugs": 4.04,
+        "time": 59059,
+        "intelligentContent": 138.42,
+        "number_operators": 448,
+        "number_operands": 1136,
+        "number_operators_unique": 27,
+        "number_operands_unique": 175,
+        "cloc": 80,
+        "loc": 803,
+        "lloc": 723,
+        "mi": 23.49,
+        "mIwoC": 0,
+        "commentWeight": 23.49,
+        "kanDefect": 10.63,
+        "relativeStructuralComplexity": 3600,
+        "relativeDataComplexity": 0.59,
+        "relativeSystemComplexity": 3600.59,
+        "totalStructuralComplexity": 111600,
+        "totalDataComplexity": 18.16,
+        "totalSystemComplexity": 111618.16,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 26,
+        "instability": 0.93,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\DefaultClientFactory": {
+        "name": "Amp\\Http\\Server\\Driver\\DefaultClientFactory",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "createClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Amp\\Http\\Server\\Driver\\ClientFactory",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Http\\Server\\ErrorHandler",
+            "Psr\\Log\\LoggerInterface",
+            "Amp\\Http\\Server\\Options",
+            "Amp\\Http\\Server\\Driver\\TimeoutCache",
+            "Amp\\Http\\Server\\Driver\\RemoteClient"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 13,
+        "vocabulary": 7,
+        "volume": 36.5,
+        "difficulty": 1,
+        "effort": 36.5,
+        "level": 1,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 36.5,
+        "number_operators": 1,
+        "number_operands": 12,
+        "number_operators_unique": 1,
+        "number_operands_unique": 6,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 69.23,
+        "mIwoC": 69.23,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 7,
+        "relativeSystemComplexity": 7,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 7,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 8,
+        "instability": 0.89,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\HttpDriver": {
+        "name": "Amp\\Http\\Server\\Driver\\HttpDriver",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "setup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPendingRequestCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Generator",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Promise"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 5,
+        "efferentCoupling": 5,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\UpgradedSocket": {
+        "name": "Amp\\Http\\Server\\Driver\\UpgradedSocket",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "close",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "end",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reference",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unreference",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isClosed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLocalAddress",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRemoteAddress",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getResource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setupTls",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shutdownTls",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTlsState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTlsInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 16,
+        "nbMethods": 16,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 16,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Amp\\Socket\\EncryptableSocket",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Amp\\Socket\\ResourceSocket",
+            "Amp\\Promise",
+            "Amp\\Success",
+            "Amp\\Promise",
+            "Amp\\Promise",
+            "Amp\\Socket\\SocketAddress",
+            "Amp\\Socket\\SocketAddress",
+            "Amp\\Promise",
+            "Amp\\Promise"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 60,
+        "vocabulary": 12,
+        "volume": 215.1,
+        "difficulty": 10,
+        "effort": 2150.98,
+        "level": 0.1,
+        "bugs": 0.07,
+        "time": 119,
+        "intelligentContent": 21.51,
+        "number_operators": 20,
+        "number_operands": 40,
+        "number_operators_unique": 4,
+        "number_operands_unique": 8,
+        "cloc": 8,
+        "loc": 87,
+        "lloc": 79,
+        "mi": 64.5,
+        "mIwoC": 41.87,
+        "commentWeight": 22.63,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 196.83,
+        "totalStructuralComplexity": 3136,
+        "totalDataComplexity": 13.27,
+        "totalSystemComplexity": 3149.27,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\RemoteClient": {
+        "name": "Amp\\Http\\Server\\Driver\\RemoteClient",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPendingResponseCount",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPendingRequestCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isWaitingOnResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRemoteAddress",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLocalAddress",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isUnix",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEncrypted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTlsInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isExported",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStatus",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExpirationTime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateExpirationTime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "close",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onClose",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setup",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onReadable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "negotiateCrypto",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onWritable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onMessage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resume",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "respond",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeMethodErrorResponse",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeOptionsResponse",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeExceptionResponse",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "export",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cleanTlsErrorMessage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 34,
+        "nbMethods": 30,
+        "nbMethodsPrivate": 15,
+        "nbMethodsPublic": 15,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 0,
+        "wmc": 94,
+        "ccn": 61,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Http\\Server\\ErrorHandler",
+            "Psr\\Log\\LoggerInterface",
+            "Amp\\Http\\Server\\Options",
+            "Amp\\Http\\Server\\Driver\\TimeoutCache",
+            "Amp\\Http\\Server\\DefaultErrorHandler",
+            "Amp\\Socket\\SocketAddress",
+            "Amp\\Socket\\SocketAddress",
+            "Closure",
+            "Amp\\Http\\Server\\Driver\\HttpDriverFactory",
+            "Error",
+            "Closure",
+            "Amp\\Loop",
+            "Amp\\Loop",
+            "Closure",
+            "Amp\\Loop",
+            "Closure",
+            "Amp\\Loop",
+            "Amp\\Http\\Server\\Options",
+            "Amp\\Socket\\SocketAddress",
+            "Amp\\Socket\\SocketAddress",
+            "Amp\\Promise",
+            "Amp\\Success",
+            "Amp\\Http\\Server\\Driver\\HttpDriver",
+            "Closure",
+            "Closure",
+            "Amp\\Loop",
+            "Amp\\Loop",
+            "Amp\\Loop",
+            "Amp\\Http\\Server\\Driver\\HttpDriverFactory",
+            "Amp\\Loop",
+            "Amp\\Socket\\TlsInfo",
+            "Closure",
+            "Amp\\Loop",
+            "Amp\\Loop",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Failure",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Failure",
+            "Amp\\Success",
+            "Amp\\Deferred",
+            "Amp\\Loop",
+            "Amp\\Loop",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Coroutine",
+            "Throwable",
+            "Amp\\Loop",
+            "Generator",
+            "Amp\\Http\\Server\\Request",
+            "Error",
+            "Generator",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Http\\Server\\Response",
+            "Generator",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Socket\\ResourceSocket",
+            "Amp\\Http\\Server\\Driver\\UpgradedSocket"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 592,
+        "vocabulary": 75,
+        "volume": 3687.46,
+        "difficulty": 46.82,
+        "effort": 172645.7,
+        "level": 0.02,
+        "bugs": 1.23,
+        "time": 9591,
+        "intelligentContent": 78.76,
+        "number_operators": 184,
+        "number_operands": 408,
+        "number_operators_unique": 14,
+        "number_operands_unique": 61,
+        "cloc": 132,
+        "loc": 513,
+        "lloc": 381,
+        "mi": 45.89,
+        "mIwoC": 10.52,
+        "commentWeight": 35.37,
+        "kanDefect": 2.83,
+        "relativeStructuralComplexity": 2304,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 2304.83,
+        "totalStructuralComplexity": 78336,
+        "totalDataComplexity": 28.35,
+        "totalSystemComplexity": 78364.35,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 26,
+        "instability": 0.96,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\Http1Driver": {
+        "name": "Amp\\Http\\Server\\Driver\\Http1Driver",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPendingRequestCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateTimeout",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "send",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parser",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendErrorResponse",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 151,
+        "ccn": 142,
+        "ccnMethodMax": 99,
+        "externals": [
+            "Amp\\Http\\Server\\Driver\\HttpDriver",
+            "Amp\\Http\\Server\\Options",
+            "Amp\\Http\\Server\\ErrorHandler",
+            "Psr\\Log\\LoggerInterface",
+            "Generator",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Coroutine",
+            "Amp\\Promise",
+            "Generator",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Rfc7230",
+            "Amp\\Http\\Rfc7230",
+            "Generator",
+            "Amp\\Deferred",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\Driver\\Http2Driver",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Rfc7230",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "League\\Uri\\Http",
+            "League\\Uri\\Http",
+            "League\\Uri\\Http",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "League\\Uri\\Http",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Http\\Server\\Driver\\Http2Driver",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Emitter",
+            "Amp\\Deferred",
+            "Amp\\ByteStream\\IteratorStream",
+            "Amp\\Http\\Server\\RequestBody",
+            "Amp\\Http\\Server\\Trailers",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Rfc7230",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Coroutine",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\ClientException",
+            "Generator",
+            "Amp\\Http\\Server\\ClientException",
+            "Amp\\Http\\Server\\Response"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 1223,
+        "vocabulary": 166,
+        "volume": 9019.67,
+        "difficulty": 58.22,
+        "effort": 525117.96,
+        "level": 0.02,
+        "bugs": 3.01,
+        "time": 29173,
+        "intelligentContent": 154.93,
+        "number_operators": 373,
+        "number_operands": 850,
+        "number_operators_unique": 20,
+        "number_operands_unique": 146,
+        "cloc": 81,
+        "loc": 604,
+        "lloc": 523,
+        "mi": 26.87,
+        "mIwoC": 0,
+        "commentWeight": 26.87,
+        "kanDefect": 9.67,
+        "relativeStructuralComplexity": 2304,
+        "relativeDataComplexity": 0.29,
+        "relativeSystemComplexity": 2304.29,
+        "totalStructuralComplexity": 23040,
+        "totalDataComplexity": 2.94,
+        "totalSystemComplexity": 23042.94,
+        "package": "Amp\\Http\\Server\\Driver\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 19,
+        "instability": 0.95,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\Internal\\Http2Stream": {
+        "name": "Amp\\Http\\Server\\Driver\\Internal\\Http2Stream",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 24,
+        "vocabulary": 11,
+        "volume": 83.03,
+        "difficulty": 1,
+        "effort": 83.03,
+        "level": 1,
+        "bugs": 0.03,
+        "time": 5,
+        "intelligentContent": 83.03,
+        "number_operators": 4,
+        "number_operands": 20,
+        "number_operators_unique": 1,
+        "number_operands_unique": 10,
+        "cloc": 17,
+        "loc": 46,
+        "lloc": 29,
+        "mi": 94.96,
+        "mIwoC": 54.53,
+        "commentWeight": 40.43,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Amp\\Http\\Server\\Driver\\Internal\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Driver\\Internal\\": {
+        "name": "Amp\\Http\\Server\\Driver\\Internal\\",
+        "classes": [
+            "Amp\\Http\\Server\\Driver\\Internal\\Http2Stream"
+        ],
+        "incoming_class_dependencies": [
+            "Amp\\Http\\Server\\Driver\\Http2Driver"
+        ],
+        "incoming_package_dependencies": [
+            "Amp\\Http\\Server\\Driver\\"
+        ],
+        "abstraction": 0,
+        "instability": 0,
+        "dependent_instabilities": [],
+        "distance": 0.7071067811865475,
+        "normalized_distance": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Amp\\Http\\Server\\Request": {
+        "name": "Amp\\Http\\Server\\Request",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMethod",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMethod",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUri",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUri",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProtocolVersion",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setProtocolVersion",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHeaders",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHeader",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addHeader",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeHeader",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBody",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBody",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBodyFromString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCookies",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCookie",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCookie",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeCookie",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCookiesFromHeaders",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHeadersFromCookies",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAttributes",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeAttributes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTrailers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTrailers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeTrailers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 30,
+        "nbMethods": 24,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 21,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 2,
+        "wmc": 55,
+        "ccn": 26,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Amp\\Http\\Message",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Psr\\Http\\Message\\UriInterface",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Psr\\Http\\Message\\UriInterface",
+            "Psr\\Http\\Message\\UriInterface",
+            "Error",
+            "Error",
+            "Amp\\Http\\Server\\RequestBody",
+            "Amp\\ByteStream\\InMemoryStream",
+            "Amp\\Http\\Server\\RequestBody",
+            "Amp\\Http\\Server\\RequestBody",
+            "TypeError",
+            "Amp\\ByteStream\\InMemoryStream",
+            "Amp\\Http\\Server\\RequestBody",
+            "Amp\\Http\\Cookie\\RequestCookie",
+            "Amp\\Http\\Cookie\\RequestCookie",
+            "Amp\\Http\\Server\\MissingAttributeError",
+            "Amp\\Http\\Server\\MissingAttributeError",
+            "Amp\\Http\\Server\\Trailers"
+        ],
+        "parents": [
+            "Amp\\Http\\Message"
+        ],
+        "lcom": 1,
+        "length": 254,
+        "vocabulary": 40,
+        "volume": 1351.77,
+        "difficulty": 19.73,
+        "effort": 26666.73,
+        "level": 0.05,
+        "bugs": 0.45,
+        "time": 1481,
+        "intelligentContent": 68.52,
+        "number_operators": 68,
+        "number_operands": 186,
+        "number_operators_unique": 7,
+        "number_operands_unique": 33,
+        "cloc": 182,
+        "loc": 392,
+        "lloc": 210,
+        "mi": 67.43,
+        "mIwoC": 23.92,
+        "commentWeight": 43.51,
+        "kanDefect": 1.89,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.99,
+        "relativeSystemComplexity": 169.99,
+        "totalStructuralComplexity": 5070,
+        "totalDataComplexity": 29.79,
+        "totalSystemComplexity": 5099.79,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.15,
+        "afferentCoupling": 14,
+        "efferentCoupling": 10,
+        "instability": 0.42,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\RequestBody": {
+        "name": "Amp\\Http\\Server\\RequestBody",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "increaseSizeLimit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Amp\\ByteStream\\Payload",
+            "Amp\\ByteStream\\InputStream"
+        ],
+        "parents": [
+            "Amp\\ByteStream\\Payload"
+        ],
+        "lcom": 1,
+        "length": 12,
+        "vocabulary": 7,
+        "volume": 33.69,
+        "difficulty": 3.38,
+        "effort": 113.7,
+        "level": 0.3,
+        "bugs": 0.01,
+        "time": 6,
+        "intelligentContent": 9.98,
+        "number_operators": 3,
+        "number_operands": 9,
+        "number_operators_unique": 3,
+        "number_operands_unique": 4,
+        "cloc": 15,
+        "loc": 32,
+        "lloc": 17,
+        "mi": 105.83,
+        "mIwoC": 62.19,
+        "commentWeight": 43.63,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 2.25,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 2.5,
+        "totalSystemComplexity": 4.5,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 3,
+        "efferentCoupling": 2,
+        "instability": 0.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\ServerObserver": {
+        "name": "Amp\\Http\\Server\\ServerObserver",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "onStart",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onStop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\HttpServer",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\HttpServer"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 4,
+        "efferentCoupling": 2,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Amp\\Http\\Server\\Options": {
+        "name": "Amp\\Http\\Server\\Options",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "isInDebugMode",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withDebugMode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withoutDebugMode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConnectionLimit",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withConnectionLimit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConnectionsPerIpLimit",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withConnectionsPerIpLimit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHttp1Timeout",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withHttp1Timeout",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHttp2Timeout",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withHttp2Timeout",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTlsSetupTimeout",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withTlsSetupTimeout",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBodySizeLimit",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withBodySizeLimit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHeaderSizeLimit",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withHeaderSizeLimit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConcurrentStreamLimit",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withConcurrentStreamLimit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getChunkSize",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withChunkSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStreamThreshold",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withStreamThreshold",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllowedMethods",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withAllowedMethods",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isHttp2UpgradeAllowed",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withHttp2Upgrade",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withoutHttp2Upgrade",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isPushEnabled",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withPush",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withoutPush",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isCompressionEnabled",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withCompression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withoutCompression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 34,
+        "nbMethods": 19,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 19,
+        "nbMethodsGetter": 15,
+        "nbMethodsSetters": 0,
+        "wmc": 50,
+        "ccn": 17,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Error",
+            "Error",
+            "Error",
+            "Error",
+            "Error",
+            "Error",
+            "Error",
+            "Error",
+            "Error",
+            "Error",
+            "Error",
+            "Error",
+            "Error",
+            "Error"
+        ],
+        "parents": [],
+        "lcom": 20,
+        "length": 281,
+        "vocabulary": 49,
+        "volume": 1577.73,
+        "difficulty": 10.4,
+        "effort": 16404.84,
+        "level": 0.1,
+        "bugs": 0.53,
+        "time": 911,
+        "intelligentContent": 151.74,
+        "number_operators": 98,
+        "number_operands": 183,
+        "number_operators_unique": 5,
+        "number_operands_unique": 44,
+        "cloc": 175,
+        "loc": 413,
+        "lloc": 238,
+        "mi": 65.78,
+        "mIwoC": 23.48,
+        "commentWeight": 42.3,
+        "kanDefect": 1.36,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 34.32,
+        "relativeSystemComplexity": 34.32,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1167,
+        "totalSystemComplexity": 1167,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 9,
+        "efferentCoupling": 1,
+        "instability": 0.1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\RequestHandler": {
+        "name": "Amp\\Http\\Server\\RequestHandler",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "handleRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 11,
+        "efferentCoupling": 2,
+        "instability": 0.15,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Amp\\Http\\Server\\Push": {
+        "name": "Amp\\Http\\Server\\Push",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHeader",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUri",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Amp\\Http\\Message",
+            "Psr\\Http\\Message\\UriInterface",
+            "Error",
+            "Psr\\Http\\Message\\UriInterface"
+        ],
+        "parents": [
+            "Amp\\Http\\Message"
+        ],
+        "lcom": 2,
+        "length": 25,
+        "vocabulary": 16,
+        "volume": 100,
+        "difficulty": 5.7,
+        "effort": 570,
+        "level": 0.18,
+        "bugs": 0.03,
+        "time": 32,
+        "intelligentContent": 17.54,
+        "number_operators": 6,
+        "number_operands": 19,
+        "number_operators_unique": 6,
+        "number_operands_unique": 10,
+        "cloc": 8,
+        "loc": 29,
+        "lloc": 21,
+        "mi": 92.96,
+        "mIwoC": 56.62,
+        "commentWeight": 36.34,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.78,
+        "relativeSystemComplexity": 4.78,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 2.33,
+        "totalSystemComplexity": 14.33,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 3,
+        "instability": 0.6,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Response": {
+        "name": "Amp\\Http\\Server\\Response",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBody",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBody",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBodyFromString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHeaders",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHeader",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addHeader",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeHeader",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStatus",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getReason",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setStatus",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCookies",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCookie",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCookie",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeCookie",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateStatusCode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCookiesFromHeaders",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHeadersFromCookies",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTrailers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTrailers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeTrailers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPushes",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "push",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isUpgraded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "upgrade",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUpgradeHandler",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onDispose",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 28,
+        "nbMethods": 24,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 20,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 0,
+        "wmc": 52,
+        "ccn": 25,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Amp\\Http\\Message",
+            "Amp\\Http\\Status",
+            "Amp\\ByteStream\\InputStream",
+            "TypeError",
+            "Amp\\ByteStream\\InMemoryStream",
+            "Error",
+            "Error",
+            "Amp\\Http\\Status",
+            "Amp\\Http\\Cookie\\ResponseCookie",
+            "Error",
+            "Amp\\Http\\Cookie\\ResponseCookie",
+            "Amp\\Http\\Server\\Trailers",
+            "League\\Uri\\Http",
+            "Error",
+            "Amp\\Http\\Server\\Push",
+            "Amp\\Http\\Status"
+        ],
+        "parents": [
+            "Amp\\Http\\Message"
+        ],
+        "lcom": 1,
+        "length": 234,
+        "vocabulary": 44,
+        "volume": 1277.51,
+        "difficulty": 30.94,
+        "effort": 39522.87,
+        "level": 0.03,
+        "bugs": 0.43,
+        "time": 2196,
+        "intelligentContent": 41.29,
+        "number_operators": 69,
+        "number_operands": 165,
+        "number_operators_unique": 12,
+        "number_operands_unique": 32,
+        "cloc": 151,
+        "loc": 344,
+        "lloc": 193,
+        "mi": 67.8,
+        "mIwoC": 25.03,
+        "commentWeight": 42.77,
+        "kanDefect": 1.61,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.66,
+        "relativeSystemComplexity": 289.66,
+        "totalStructuralComplexity": 8092,
+        "totalDataComplexity": 18.39,
+        "totalSystemComplexity": 8110.39,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 6,
+        "efferentCoupling": 10,
+        "instability": 0.63,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "redirectTo": {
+        "name": "redirectTo",
+        "cloc": 0,
+        "loc": 5,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Amp\\Http\\Server\\HttpServer": {
+        "name": "Amp\\Http\\Server\\HttpServer",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDriverFactory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setClientFactory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setErrorHandler",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getErrorHandler",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLogger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attach",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doStart",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onAcceptable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doStop",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkClientTimeouts",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__debugInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 17,
+        "nbMethods": 16,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 66,
+        "ccn": 50,
+        "ccnMethodMax": 15,
+        "externals": [
+            "Amp\\Http\\Server\\RequestHandler",
+            "Psr\\Log\\LoggerInterface",
+            "Amp\\Http\\Server\\Options",
+            "TypeError",
+            "Error",
+            "Amp\\Http\\Server\\Options",
+            "Amp\\Http\\Server\\Driver\\DefaultClientFactory",
+            "Amp\\Http\\Server\\Driver\\TimeoutCache",
+            "Amp\\Http\\Server\\Middleware\\CompressionMiddleware",
+            "Closure",
+            "Amp\\Loop",
+            "Amp\\Loop",
+            "SplObjectStorage",
+            "Amp\\Http\\Server\\Internal\\PerformanceRecommender",
+            "Amp\\Http\\Server\\DefaultErrorHandler",
+            "Amp\\Http\\Server\\Driver\\DefaultHttpDriverFactory",
+            "Amp\\Loop",
+            "Amp\\Http\\Server\\Driver\\HttpDriverFactory",
+            "Error",
+            "Amp\\Http\\Server\\Driver\\ClientFactory",
+            "Error",
+            "Amp\\Http\\Server\\ErrorHandler",
+            "Error",
+            "Amp\\Http\\Server\\Options",
+            "Amp\\Http\\Server\\ErrorHandler",
+            "Psr\\Log\\LoggerInterface",
+            "Amp\\Http\\Server\\ServerObserver",
+            "Error",
+            "Amp\\Promise",
+            "Amp\\Coroutine",
+            "Error",
+            "Amp\\Failure",
+            "Amp\\Failure",
+            "Generator",
+            "Amp\\MultiReasonException",
+            "Closure",
+            "Amp\\Loop",
+            "Amp\\Loop",
+            "Amp\\Promise",
+            "Amp\\Coroutine",
+            "Amp\\Success",
+            "Error",
+            "Amp\\Failure",
+            "Generator",
+            "Amp\\Loop",
+            "Amp\\MultiReasonException",
+            "Amp\\Loop"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 413,
+        "vocabulary": 99,
+        "volume": 2737.92,
+        "difficulty": 24.46,
+        "effort": 66966.41,
+        "level": 0.04,
+        "bugs": 0.91,
+        "time": 3720,
+        "intelligentContent": 111.94,
+        "number_operators": 116,
+        "number_operands": 297,
+        "number_operators_unique": 14,
+        "number_operands_unique": 85,
+        "cloc": 88,
+        "loc": 348,
+        "lloc": 260,
+        "mi": 51.66,
+        "mIwoC": 16.53,
+        "commentWeight": 35.13,
+        "kanDefect": 3.8,
+        "relativeStructuralComplexity": 961,
+        "relativeDataComplexity": 0.49,
+        "relativeSystemComplexity": 961.49,
+        "totalStructuralComplexity": 16337,
+        "totalDataComplexity": 8.34,
+        "totalSystemComplexity": 16345.34,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 4,
+        "efferentCoupling": 24,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\ClientException": {
+        "name": "Amp\\Http\\Server\\ClientException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Exception",
+            "Amp\\Http\\Server\\Driver\\Client",
+            "Throwable",
+            "Amp\\Http\\Server\\Driver\\Client"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 1,
+        "length": 13,
+        "vocabulary": 8,
+        "volume": 39,
+        "difficulty": 1.83,
+        "effort": 71.5,
+        "level": 0.55,
+        "bugs": 0.01,
+        "time": 4,
+        "intelligentContent": 21.27,
+        "number_operators": 2,
+        "number_operands": 11,
+        "number_operators_unique": 2,
+        "number_operands_unique": 6,
+        "cloc": 16,
+        "loc": 30,
+        "lloc": 14,
+        "mi": 108.97,
+        "mIwoC": 63.72,
+        "commentWeight": 45.25,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 5,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 3,
+        "efferentCoupling": 3,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "stack": {
+        "name": "stack",
+        "cloc": 8,
+        "loc": 16,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Amp\\Http\\Server\\Middleware\\ExceptionMiddleware": {
+        "name": "Amp\\Http\\Server\\Middleware\\ExceptionMiddleware",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "handleRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onStart",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onStop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Amp\\Http\\Server\\Middleware",
+            "Amp\\Http\\Server\\ServerObserver",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\HttpServer",
+            "Amp\\Success",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\HttpServer",
+            "Amp\\Success"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 68,
+        "vocabulary": 26,
+        "volume": 319.63,
+        "difficulty": 7.5,
+        "effort": 2397.22,
+        "level": 0.13,
+        "bugs": 0.11,
+        "time": 133,
+        "intelligentContent": 42.62,
+        "number_operators": 18,
+        "number_operands": 50,
+        "number_operators_unique": 6,
+        "number_operands_unique": 20,
+        "cloc": 5,
+        "loc": 45,
+        "lloc": 40,
+        "mi": 71.53,
+        "mIwoC": 46.84,
+        "commentWeight": 24.69,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.56,
+        "relativeSystemComplexity": 144.56,
+        "totalStructuralComplexity": 432,
+        "totalDataComplexity": 1.69,
+        "totalSystemComplexity": 433.69,
+        "package": "Amp\\Http\\Server\\Middleware\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Middleware\\": {
+        "name": "Amp\\Http\\Server\\Middleware\\",
+        "classes": [
+            "Amp\\Http\\Server\\Middleware\\ExceptionMiddleware",
+            "Amp\\Http\\Server\\Middleware\\CompressionMiddleware"
+        ],
+        "incoming_class_dependencies": [
+            "Amp\\Http\\Server\\HttpServer"
+        ],
+        "incoming_package_dependencies": [
+            "Amp\\Http\\Server\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Amp\\Http\\Server\\Middleware",
+            "Amp\\Http\\Server\\ServerObserver",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Http\\Server\\Response",
+            "Amp\\Http\\Server\\HttpServer",
+            "Amp\\Success",
+            "Error",
+            "cash\\LRUCache",
+            "Amp\\Coroutine",
+            "Generator",
+            "RuntimeException",
+            "Amp\\Producer",
+            "Amp\\ByteStream\\IteratorStream"
+        ],
+        "outgoing_package_dependencies": [
+            "Amp\\Http\\Server\\",
+            "Amp\\",
+            "\\",
+            "cash\\",
+            "Amp\\ByteStream\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.9375,
+        "dependent_instabilities": {
+            "Amp\\Http\\Server\\": 0.673469387755102
+        },
+        "distance": 0.044194173824159216,
+        "normalized_distance": 0.0625,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Amp\\Http\\Server\\Middleware\\CompressionMiddleware": {
+        "name": "Amp\\Http\\Server\\Middleware\\CompressionMiddleware",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deflate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 32,
+        "ccn": 30,
+        "ccnMethodMax": 27,
+        "externals": [
+            "Amp\\Http\\Server\\Middleware",
+            "Error",
+            "Error",
+            "Error",
+            "cash\\LRUCache",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Coroutine",
+            "Generator",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\RequestHandler",
+            "RuntimeException",
+            "RuntimeException",
+            "RuntimeException",
+            "RuntimeException",
+            "Amp\\Producer",
+            "Amp\\ByteStream\\IteratorStream"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 233,
+        "vocabulary": 67,
+        "volume": 1413.4,
+        "difficulty": 17.35,
+        "effort": 24516.04,
+        "level": 0.06,
+        "bugs": 0.47,
+        "time": 1362,
+        "intelligentContent": 81.49,
+        "number_operators": 74,
+        "number_operands": 159,
+        "number_operators_unique": 12,
+        "number_operands_unique": 55,
+        "cloc": 14,
+        "loc": 139,
+        "lloc": 125,
+        "mi": 51.77,
+        "mIwoC": 28.16,
+        "commentWeight": 23.6,
+        "kanDefect": 2.69,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.74,
+        "relativeSystemComplexity": 169.74,
+        "totalStructuralComplexity": 507,
+        "totalDataComplexity": 2.21,
+        "totalSystemComplexity": 509.21,
+        "package": "Amp\\Http\\Server\\Middleware\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 11,
+        "instability": 0.92,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Middleware\\Internal\\MiddlewareRequestHandler": {
+        "name": "Amp\\Http\\Server\\Middleware\\Internal\\MiddlewareRequestHandler",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onStart",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onStop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 5,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Http\\Server\\ServerObserver",
+            "Amp\\Http\\Server\\Middleware",
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\HttpServer",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\HttpServer"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 47,
+        "vocabulary": 9,
+        "volume": 148.99,
+        "difficulty": 8,
+        "effort": 1191.89,
+        "level": 0.13,
+        "bugs": 0.05,
+        "time": 66,
+        "intelligentContent": 18.62,
+        "number_operators": 15,
+        "number_operands": 32,
+        "number_operators_unique": 3,
+        "number_operands_unique": 6,
+        "cloc": 11,
+        "loc": 48,
+        "lloc": 37,
+        "mi": 83.68,
+        "mIwoC": 49.9,
+        "commentWeight": 33.77,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.06,
+        "relativeSystemComplexity": 10.06,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 4.25,
+        "totalSystemComplexity": 40.25,
+        "package": "Amp\\Http\\Server\\Middleware\\Internal\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Middleware\\Internal\\": {
+        "name": "Amp\\Http\\Server\\Middleware\\Internal\\",
+        "classes": [
+            "Amp\\Http\\Server\\Middleware\\Internal\\MiddlewareRequestHandler"
+        ],
+        "outgoing_class_dependencies": [
+            "Amp\\Http\\Server\\RequestHandler",
+            "Amp\\Http\\Server\\ServerObserver",
+            "Amp\\Http\\Server\\Middleware",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\HttpServer"
+        ],
+        "outgoing_package_dependencies": [
+            "Amp\\Http\\Server\\",
+            "Amp\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Amp\\Http\\Server\\": 0.673469387755102
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Amp\\Http\\Server\\Internal\\PerformanceRecommender": {
+        "name": "Amp\\Http\\Server\\Internal\\PerformanceRecommender",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "onStart",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onStop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Amp\\Http\\Server\\ServerObserver",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\HttpServer",
+            "Amp\\Success",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\HttpServer",
+            "Amp\\Success"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 33,
+        "vocabulary": 18,
+        "volume": 137.61,
+        "difficulty": 5,
+        "effort": 688.04,
+        "level": 0.2,
+        "bugs": 0.05,
+        "time": 38,
+        "intelligentContent": 27.52,
+        "number_operators": 13,
+        "number_operands": 20,
+        "number_operators_unique": 6,
+        "number_operands_unique": 12,
+        "cloc": 2,
+        "loc": 27,
+        "lloc": 25,
+        "mi": 74.32,
+        "mIwoC": 53.86,
+        "commentWeight": 20.46,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 16.6,
+        "totalStructuralComplexity": 32,
+        "totalDataComplexity": 1.2,
+        "totalSystemComplexity": 33.2,
+        "package": "Amp\\Http\\Server\\Internal\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Internal\\": {
+        "name": "Amp\\Http\\Server\\Internal\\",
+        "classes": [
+            "Amp\\Http\\Server\\Internal\\PerformanceRecommender"
+        ],
+        "incoming_class_dependencies": [
+            "Amp\\Http\\Server\\HttpServer"
+        ],
+        "incoming_package_dependencies": [
+            "Amp\\Http\\Server\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Amp\\Http\\Server\\ServerObserver",
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\HttpServer",
+            "Amp\\Success"
+        ],
+        "outgoing_package_dependencies": [
+            "Amp\\Http\\Server\\",
+            "Amp\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8,
+        "dependent_instabilities": {
+            "Amp\\Http\\Server\\": 0.673469387755102
+        },
+        "distance": 0.14142135623730948,
+        "normalized_distance": 0.19999999999999996,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Amp\\Http\\Server\\Middleware": {
+        "name": "Amp\\Http\\Server\\Middleware",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "handleRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request",
+            "Amp\\Http\\Server\\RequestHandler"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 3,
+        "efferentCoupling": 3,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "anonymous@000000003d11f3df0000000029a14b41": {
+        "name": "anonymous@000000003d11f3df0000000029a14b41",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Amp\\Http\\Message",
+            "Amp\\Http\\InvalidHeaderException",
+            "Amp\\Http\\InvalidHeaderException"
+        ],
+        "parents": [
+            "Amp\\Http\\Message"
+        ],
+        "lcom": 1,
+        "length": 20,
+        "vocabulary": 10,
+        "volume": 66.44,
+        "difficulty": 3.21,
+        "effort": 213.55,
+        "level": 0.31,
+        "bugs": 0.02,
+        "time": 12,
+        "intelligentContent": 20.67,
+        "number_operators": 5,
+        "number_operands": 15,
+        "number_operators_unique": 3,
+        "number_operands_unique": 7,
+        "cloc": 3,
+        "loc": 23,
+        "lloc": 20,
+        "mi": 84.72,
+        "mIwoC": 58.19,
+        "commentWeight": 26.54,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 5,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\Trailers": {
+        "name": "Amp\\Http\\Server\\Trailers",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFields",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "await",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 8,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Amp\\Promise",
+            "Amp\\Http\\InvalidHeaderException",
+            "Amp\\Http\\InvalidHeaderException",
+            "Amp\\Http\\InvalidHeaderException",
+            "",
+            "Amp\\Promise"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 63,
+        "vocabulary": 28,
+        "volume": 302.86,
+        "difficulty": 3,
+        "effort": 908.59,
+        "level": 0.33,
+        "bugs": 0.1,
+        "time": 50,
+        "intelligentContent": 100.95,
+        "number_operators": 13,
+        "number_operands": 50,
+        "number_operators_unique": 3,
+        "number_operands_unique": 25,
+        "cloc": 19,
+        "loc": 66,
+        "lloc": 47,
+        "mi": 82.01,
+        "mIwoC": 45.08,
+        "commentWeight": 36.94,
+        "kanDefect": 0.96,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.56,
+        "relativeSystemComplexity": 5.56,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 4.67,
+        "totalSystemComplexity": 16.67,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 4,
+        "efferentCoupling": 3,
+        "instability": 0.43,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\MissingAttributeError": {
+        "name": "Amp\\Http\\Server\\MissingAttributeError",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Error"
+        ],
+        "parents": [
+            "Error"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 1,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 2,
+        "number_operators_unique": 0,
+        "number_operands_unique": 1,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 1.5,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Amp\\Http\\Server\\ErrorHandler": {
+        "name": "Amp\\Http\\Server\\ErrorHandler",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "handleError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Amp\\Promise",
+            "Amp\\Http\\Server\\Request"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Amp\\Http\\Server\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 8,
+        "efferentCoupling": 2,
+        "instability": 0.2,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.13,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "amphp\/amp": {
+                "name": "amphp\/amp",
+                "required": "^2",
+                "installed": null,
+                "latest": "2.4.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/amphp.org\/amp",
+                "zip": "https:\/\/api.github.com\/repos\/amphp\/amp\/zipball\/2ac3b550c4997f2ec304faa63c8b2885079a2dc4"
+            },
+            "amphp\/byte-stream": {
+                "name": "amphp\/byte-stream",
+                "required": "^1.3",
+                "installed": null,
+                "latest": "1.7.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/amphp.org\/byte-stream",
+                "zip": "https:\/\/api.github.com\/repos\/amphp\/byte-stream\/zipball\/1e52f1752b2e20e2a7e464476ef887a2388e3832"
+            },
+            "amphp\/hpack": {
+                "name": "amphp\/hpack",
+                "required": "^3",
+                "installed": null,
+                "latest": "3.1.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/amphp\/hpack",
+                "zip": "https:\/\/api.github.com\/repos\/amphp\/hpack\/zipball\/0dcd35f9a8d9fc04d5fb8af0aeb109d4474cfad8"
+            },
+            "amphp\/http": {
+                "name": "amphp\/http",
+                "required": "^1.6",
+                "installed": null,
+                "latest": "1.6.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/amphp\/http\/zipball\/8a1a1d6a78e6f432618aea02c6351602cf735cef"
+            },
+            "amphp\/socket": {
+                "name": "amphp\/socket",
+                "required": "^1",
+                "installed": null,
+                "latest": "1.1.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/amphp\/socket",
+                "zip": "https:\/\/api.github.com\/repos\/amphp\/socket\/zipball\/020b65271596f84f4b3127d2eab81ad2790f9fb6"
+            },
+            "league\/uri": {
+                "name": "league\/uri",
+                "required": "^6",
+                "installed": null,
+                "latest": "6.2.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/uri.thephpleague.com",
+                "zip": "https:\/\/api.github.com\/repos\/thephpleague\/uri\/zipball\/7b29ca33b287b4277d5ce7c26bc1be5d4118b484"
+            },
+            "psr\/http-message": {
+                "name": "psr\/http-message",
+                "required": "^1",
+                "installed": null,
+                "latest": "1.0.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/php-fig\/http-message",
+                "zip": "https:\/\/api.github.com\/repos\/php-fig\/http-message\/zipball\/f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "psr\/log": {
+                "name": "psr\/log",
+                "required": "^1",
+                "installed": null,
+                "latest": "1.1.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/php-fig\/log",
+                "zip": "https:\/\/api.github.com\/repos\/php-fig\/log\/zipball\/446d54b4cb6bf489fc9d75f55843658e6f25d801"
+            },
+            "cash\/lrucache": {
+                "name": "cash\/lrucache",
+                "required": "^1",
+                "installed": null,
+                "latest": "1.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/cash\/LRUCache",
+                "zip": "https:\/\/api.github.com\/repos\/cash\/LRUCache\/zipball\/4fa4c6834cec59690b43526c4da41d6153026289"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

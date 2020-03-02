@@ -1,0 +1,155 @@
+{
+    "XdgBaseDir\\Xdg": {
+        "name": "XdgBaseDir\\Xdg",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getHomeDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHomeConfigDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHomeDataDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigDirs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataDirs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHomeCacheDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRuntimeDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUid",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 23,
+        "ccn": 16,
+        "ccnMethodMax": 8,
+        "externals": [
+            "RuntimeException"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 132,
+        "vocabulary": 47,
+        "volume": 733.21,
+        "difficulty": 9.36,
+        "effort": 6859.33,
+        "level": 0.11,
+        "bugs": 0.24,
+        "time": 381,
+        "intelligentContent": 78.37,
+        "number_operators": 53,
+        "number_operands": 79,
+        "number_operators_unique": 9,
+        "number_operands_unique": 38,
+        "cloc": 27,
+        "loc": 103,
+        "lloc": 76,
+        "mi": 72.39,
+        "mIwoC": 36.76,
+        "commentWeight": 35.63,
+        "kanDefect": 0.64,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 2.23,
+        "relativeSystemComplexity": 18.23,
+        "totalStructuralComplexity": 128,
+        "totalDataComplexity": 17.8,
+        "totalSystemComplexity": 145.8,
+        "package": "XdgBaseDir\\",
+        "pageRank": 1,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "XdgBaseDir\\": {
+        "name": "XdgBaseDir\\",
+        "classes": [
+            "XdgBaseDir\\Xdg"
+        ],
+        "outgoing_class_dependencies": [
+            "RuntimeException"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.3.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

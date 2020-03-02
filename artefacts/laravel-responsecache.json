@@ -1,0 +1,1868 @@
+{
+    "Spatie\\ResponseCache\\Middlewares\\DoNotCacheResponse": {
+        "name": "Spatie\\ResponseCache\\Middlewares\\DoNotCacheResponse",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Http\\Request",
+            "Closure"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 7,
+        "vocabulary": 4,
+        "volume": 14,
+        "difficulty": 1,
+        "effort": 14,
+        "level": 1,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 14,
+        "number_operators": 1,
+        "number_operands": 6,
+        "number_operators_unique": 1,
+        "number_operands_unique": 3,
+        "cloc": 0,
+        "loc": 9,
+        "lloc": 9,
+        "mi": 71.02,
+        "mIwoC": 71.02,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 2.5,
+        "package": "Spatie\\ResponseCache\\Middlewares\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Middlewares\\": {
+        "name": "Spatie\\ResponseCache\\Middlewares\\",
+        "classes": [
+            "Spatie\\ResponseCache\\Middlewares\\DoNotCacheResponse",
+            "Spatie\\ResponseCache\\Middlewares\\CacheResponse"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Http\\Request",
+            "Closure",
+            "Spatie\\ResponseCache\\ResponseCache",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Spatie\\ResponseCache\\Events\\ResponseCacheHit",
+            "Spatie\\ResponseCache\\Events\\CacheMissed",
+            "Illuminate\\Support\\Collection"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Http\\",
+            "\\",
+            "Spatie\\ResponseCache\\",
+            "Symfony\\Component\\HttpFoundation\\",
+            "Spatie\\ResponseCache\\Events\\",
+            "Illuminate\\Support\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Spatie\\ResponseCache\\": 0.7777777777777778,
+            "Spatie\\ResponseCache\\Events\\": 0.3333333333333333
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ResponseCache\\Middlewares\\CacheResponse": {
+        "name": "Spatie\\ResponseCache\\Middlewares\\CacheResponse",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeReplacementsAndCacheResponse",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getReplacers",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLifetime",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTags",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 9,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Spatie\\ResponseCache\\ResponseCache",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Illuminate\\Http\\Request",
+            "Closure",
+            "Spatie\\ResponseCache\\Events\\ResponseCacheHit",
+            "Spatie\\ResponseCache\\Events\\CacheMissed",
+            "Illuminate\\Http\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Illuminate\\Support\\Collection"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 106,
+        "vocabulary": 20,
+        "volume": 458.12,
+        "difficulty": 13.5,
+        "effort": 6184.68,
+        "level": 0.07,
+        "bugs": 0.15,
+        "time": 344,
+        "intelligentContent": 33.94,
+        "number_operators": 25,
+        "number_operands": 81,
+        "number_operators_unique": 5,
+        "number_operands_unique": 15,
+        "cloc": 0,
+        "loc": 61,
+        "lloc": 61,
+        "mi": 41.21,
+        "mIwoC": 41.21,
+        "commentWeight": 0,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.62,
+        "relativeSystemComplexity": 169.62,
+        "totalStructuralComplexity": 1014,
+        "totalDataComplexity": 3.71,
+        "totalSystemComplexity": 1017.71,
+        "package": "Spatie\\ResponseCache\\Middlewares\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Events\\CacheMissed": {
+        "name": "Spatie\\ResponseCache\\Events\\CacheMissed",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Http\\Request"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 4,
+        "vocabulary": 3,
+        "volume": 6.34,
+        "difficulty": 0.75,
+        "effort": 4.75,
+        "level": 1.33,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 8.45,
+        "number_operators": 1,
+        "number_operands": 3,
+        "number_operators_unique": 1,
+        "number_operands_unique": 2,
+        "cloc": 0,
+        "loc": 9,
+        "lloc": 9,
+        "mi": 73.43,
+        "mIwoC": 73.43,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Spatie\\ResponseCache\\Events\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Events\\": {
+        "name": "Spatie\\ResponseCache\\Events\\",
+        "classes": [
+            "Spatie\\ResponseCache\\Events\\CacheMissed",
+            "Spatie\\ResponseCache\\Events\\ResponseCacheHit",
+            "Spatie\\ResponseCache\\Events\\ClearedResponseCache",
+            "Spatie\\ResponseCache\\Events\\ClearingResponseCache"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\ResponseCache\\Middlewares\\CacheResponse",
+            "Spatie\\ResponseCache\\Commands\\ClearCommand"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\ResponseCache\\Middlewares\\",
+            "Spatie\\ResponseCache\\Commands\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Http\\Request"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Http\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.3333333333333333,
+        "dependent_instabilities": [],
+        "distance": 0.4714045207910317,
+        "normalized_distance": 0.6666666666666667,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ResponseCache\\Events\\ResponseCacheHit": {
+        "name": "Spatie\\ResponseCache\\Events\\ResponseCacheHit",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Http\\Request"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 4,
+        "vocabulary": 3,
+        "volume": 6.34,
+        "difficulty": 0.75,
+        "effort": 4.75,
+        "level": 1.33,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 8.45,
+        "number_operators": 1,
+        "number_operands": 3,
+        "number_operators_unique": 1,
+        "number_operands_unique": 2,
+        "cloc": 0,
+        "loc": 9,
+        "lloc": 9,
+        "mi": 73.43,
+        "mIwoC": 73.43,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Spatie\\ResponseCache\\Events\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Events\\ClearedResponseCache": {
+        "name": "Spatie\\ResponseCache\\Events\\ClearedResponseCache",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Spatie\\ResponseCache\\Events\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Events\\ClearingResponseCache": {
+        "name": "Spatie\\ResponseCache\\Events\\ClearingResponseCache",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Spatie\\ResponseCache\\Events\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Exceptions\\CouldNotUnserialize": {
+        "name": "Spatie\\ResponseCache\\Exceptions\\CouldNotUnserialize",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "serializedResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Exception",
+            "static"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 5,
+        "volume": 13.93,
+        "difficulty": 0.63,
+        "effort": 8.71,
+        "level": 1.6,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 22.29,
+        "number_operators": 1,
+        "number_operands": 5,
+        "number_operators_unique": 1,
+        "number_operands_unique": 4,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 72.16,
+        "mIwoC": 72.16,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Spatie\\ResponseCache\\Exceptions\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Exceptions\\": {
+        "name": "Spatie\\ResponseCache\\Exceptions\\",
+        "classes": [
+            "Spatie\\ResponseCache\\Exceptions\\CouldNotUnserialize"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\ResponseCache\\Serializers\\DefaultSerializer"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\ResponseCache\\Serializers\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": [],
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ResponseCache\\Hasher\\DefaultHasher": {
+        "name": "Spatie\\ResponseCache\\Hasher\\DefaultHasher",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHashFor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Spatie\\ResponseCache\\Hasher\\RequestHasher",
+            "Spatie\\ResponseCache\\CacheProfiles\\CacheProfile",
+            "Illuminate\\Http\\Request"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 18,
+        "vocabulary": 10,
+        "volume": 59.79,
+        "difficulty": 3,
+        "effort": 179.38,
+        "level": 0.33,
+        "bugs": 0.02,
+        "time": 10,
+        "intelligentContent": 19.93,
+        "number_operators": 4,
+        "number_operands": 14,
+        "number_operators_unique": 3,
+        "number_operands_unique": 7,
+        "cloc": 0,
+        "loc": 13,
+        "lloc": 13,
+        "mi": 63.13,
+        "mIwoC": 63.13,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 16.4,
+        "totalStructuralComplexity": 32,
+        "totalDataComplexity": 0.8,
+        "totalSystemComplexity": 32.8,
+        "package": "Spatie\\ResponseCache\\Hasher\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Hasher\\": {
+        "name": "Spatie\\ResponseCache\\Hasher\\",
+        "classes": [
+            "Spatie\\ResponseCache\\Hasher\\DefaultHasher",
+            "Spatie\\ResponseCache\\Hasher\\RequestHasher"
+        ],
+        "outgoing_class_dependencies": [
+            "Spatie\\ResponseCache\\CacheProfiles\\CacheProfile",
+            "Illuminate\\Http\\Request"
+        ],
+        "outgoing_package_dependencies": [
+            "Spatie\\ResponseCache\\CacheProfiles\\",
+            "Illuminate\\Http\\"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\ResponseCache\\ResponseCache"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\ResponseCache\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": {
+            "Spatie\\ResponseCache\\CacheProfiles\\": 0.75
+        },
+        "distance": 0.11785113019775781,
+        "normalized_distance": 0.16666666666666652,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ResponseCache\\Hasher\\RequestHasher": {
+        "name": "Spatie\\ResponseCache\\Hasher\\RequestHasher",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getHashFor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Http\\Request"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Spatie\\ResponseCache\\Hasher\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Spatie\\ResponseCache\\ResponseCacheServiceProvider": {
+        "name": "Spatie\\ResponseCache\\ResponseCacheServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 44,
+        "vocabulary": 18,
+        "volume": 183.48,
+        "difficulty": 4.86,
+        "effort": 891.17,
+        "level": 0.21,
+        "bugs": 0.06,
+        "time": 50,
+        "intelligentContent": 37.77,
+        "number_operators": 10,
+        "number_operands": 34,
+        "number_operators_unique": 4,
+        "number_operands_unique": 14,
+        "cloc": 0,
+        "loc": 32,
+        "lloc": 32,
+        "mi": 50.91,
+        "mIwoC": 50.91,
+        "commentWeight": 0,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 144.38,
+        "totalStructuralComplexity": 288,
+        "totalDataComplexity": 0.77,
+        "totalSystemComplexity": 288.77,
+        "package": "Spatie\\ResponseCache\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\": {
+        "name": "Spatie\\ResponseCache\\",
+        "classes": [
+            "Spatie\\ResponseCache\\ResponseCacheServiceProvider",
+            "Spatie\\ResponseCache\\ResponseCacheRepository",
+            "Spatie\\ResponseCache\\ResponseCache"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\ResponseCache\\Middlewares\\CacheResponse",
+            "Spatie\\ResponseCache\\Commands\\ClearCommand"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\ResponseCache\\Middlewares\\",
+            "Spatie\\ResponseCache\\Commands\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Spatie\\ResponseCache\\Serializers\\Serializer",
+            "Illuminate\\Cache\\Repository",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Spatie\\ResponseCache\\Hasher\\RequestHasher",
+            "Spatie\\ResponseCache\\CacheProfiles\\CacheProfile",
+            "Illuminate\\Http\\Request"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "Spatie\\ResponseCache\\Serializers\\",
+            "Illuminate\\Cache\\",
+            "Symfony\\Component\\HttpFoundation\\",
+            "Spatie\\ResponseCache\\Hasher\\",
+            "Spatie\\ResponseCache\\CacheProfiles\\",
+            "Illuminate\\Http\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.7777777777777778,
+        "dependent_instabilities": {
+            "Spatie\\ResponseCache\\Serializers\\": 0.8,
+            "Spatie\\ResponseCache\\Hasher\\": 0.6666666666666666,
+            "Spatie\\ResponseCache\\CacheProfiles\\": 0.75
+        },
+        "distance": 0.15713484026367722,
+        "normalized_distance": 0.2222222222222222,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ResponseCache\\Commands\\ClearCommand": {
+        "name": "Spatie\\ResponseCache\\Commands\\ClearCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Spatie\\ResponseCache\\ResponseCacheRepository",
+            "Spatie\\ResponseCache\\Events\\ClearingResponseCache",
+            "Spatie\\ResponseCache\\Events\\ClearedResponseCache"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 5,
+        "volume": 13.93,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.67,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 23.22,
+        "number_operators": 0,
+        "number_operands": 6,
+        "number_operators_unique": 0,
+        "number_operands_unique": 5,
+        "cloc": 0,
+        "loc": 13,
+        "lloc": 13,
+        "mi": 67.56,
+        "mIwoC": 67.56,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 4.33,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0.33,
+        "totalSystemComplexity": 4.33,
+        "package": "Spatie\\ResponseCache\\Commands\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Commands\\": {
+        "name": "Spatie\\ResponseCache\\Commands\\",
+        "classes": [
+            "Spatie\\ResponseCache\\Commands\\ClearCommand"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Console\\Command",
+            "Spatie\\ResponseCache\\ResponseCacheRepository",
+            "Spatie\\ResponseCache\\Events\\ClearingResponseCache",
+            "Spatie\\ResponseCache\\Events\\ClearedResponseCache"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Console\\",
+            "Spatie\\ResponseCache\\",
+            "Spatie\\ResponseCache\\Events\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Spatie\\ResponseCache\\": 0.7777777777777778,
+            "Spatie\\ResponseCache\\Events\\": 0.3333333333333333
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ResponseCache\\CacheProfiles\\CacheProfile": {
+        "name": "Spatie\\ResponseCache\\CacheProfiles\\CacheProfile",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "enabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldCacheRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldCacheResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cacheRequestUntil",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "useCacheNameSuffix",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Http\\Request",
+            "Illuminate\\Http\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "DateTime",
+            "Illuminate\\Http\\Request",
+            "Illuminate\\Http\\Request"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Spatie\\ResponseCache\\CacheProfiles\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 3,
+        "efferentCoupling": 3,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Spatie\\ResponseCache\\CacheProfiles\\": {
+        "name": "Spatie\\ResponseCache\\CacheProfiles\\",
+        "classes": [
+            "Spatie\\ResponseCache\\CacheProfiles\\CacheProfile",
+            "Spatie\\ResponseCache\\CacheProfiles\\CacheAllSuccessfulGetRequests",
+            "Spatie\\ResponseCache\\CacheProfiles\\BaseCacheProfile"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\ResponseCache\\Hasher\\DefaultHasher",
+            "Spatie\\ResponseCache\\ResponseCache"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\ResponseCache\\Hasher\\",
+            "Spatie\\ResponseCache\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Http\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "DateTime",
+            "Illuminate\\Support\\Str",
+            "Carbon\\Carbon",
+            "Illuminate\\Support\\Facades\\Auth"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Http\\",
+            "Symfony\\Component\\HttpFoundation\\",
+            "\\",
+            "Illuminate\\Support\\",
+            "Carbon\\",
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "abstraction": 0.6666666666666666,
+        "instability": 0.75,
+        "dependent_instabilities": [],
+        "distance": 0.2946278254943947,
+        "normalized_distance": 0.4166666666666665,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ResponseCache\\CacheProfiles\\CacheAllSuccessfulGetRequests": {
+        "name": "Spatie\\ResponseCache\\CacheProfiles\\CacheAllSuccessfulGetRequests",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "shouldCacheRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldCacheResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasCacheableResponseCode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasCacheableContentType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 9,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Spatie\\ResponseCache\\CacheProfiles\\BaseCacheProfile",
+            "Illuminate\\Http\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str"
+        ],
+        "parents": [
+            "Spatie\\ResponseCache\\CacheProfiles\\BaseCacheProfile"
+        ],
+        "lcom": 2,
+        "length": 43,
+        "vocabulary": 12,
+        "volume": 154.15,
+        "difficulty": 3.67,
+        "effort": 565.23,
+        "level": 0.27,
+        "bugs": 0.05,
+        "time": 31,
+        "intelligentContent": 42.04,
+        "number_operators": 21,
+        "number_operands": 22,
+        "number_operators_unique": 3,
+        "number_operands_unique": 9,
+        "cloc": 0,
+        "loc": 45,
+        "lloc": 45,
+        "mi": 47.41,
+        "mIwoC": 47.41,
+        "commentWeight": 0,
+        "kanDefect": 0.71,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 1.3,
+        "relativeSystemComplexity": 82.3,
+        "totalStructuralComplexity": 324,
+        "totalDataComplexity": 5.2,
+        "totalSystemComplexity": 329.2,
+        "package": "Spatie\\ResponseCache\\CacheProfiles\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\CacheProfiles\\BaseCacheProfile": {
+        "name": "Spatie\\ResponseCache\\CacheProfiles\\BaseCacheProfile",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "enabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cacheRequestUntil",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "useCacheNameSuffix",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRunningInConsole",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Spatie\\ResponseCache\\CacheProfiles\\CacheProfile",
+            "Illuminate\\Http\\Request",
+            "DateTime",
+            "Illuminate\\Http\\Request",
+            "Carbon\\Carbon",
+            "Illuminate\\Http\\Request",
+            "Illuminate\\Support\\Facades\\Auth",
+            "Illuminate\\Support\\Facades\\Auth"
+        ],
+        "parents": [],
+        "lcom": 4,
+        "length": 13,
+        "vocabulary": 7,
+        "volume": 36.5,
+        "difficulty": 1.4,
+        "effort": 51.09,
+        "level": 0.71,
+        "bugs": 0.01,
+        "time": 3,
+        "intelligentContent": 26.07,
+        "number_operators": 6,
+        "number_operands": 7,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 0,
+        "loc": 23,
+        "lloc": 23,
+        "mi": 58.95,
+        "mIwoC": 58.95,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.96,
+        "relativeSystemComplexity": 25.96,
+        "totalStructuralComplexity": 100,
+        "totalDataComplexity": 3.83,
+        "totalSystemComplexity": 103.83,
+        "package": "Spatie\\ResponseCache\\CacheProfiles\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Facades\\ResponseCache": {
+        "name": "Spatie\\ResponseCache\\Facades\\ResponseCache",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 78.06,
+        "mIwoC": 78.06,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Spatie\\ResponseCache\\Facades\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Facades\\": {
+        "name": "Spatie\\ResponseCache\\Facades\\",
+        "classes": [
+            "Spatie\\ResponseCache\\Facades\\ResponseCache"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ResponseCache\\Replacers\\CsrfTokenReplacer": {
+        "name": "Spatie\\ResponseCache\\Replacers\\CsrfTokenReplacer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "prepareResponseToCache",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceInCachedResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Spatie\\ResponseCache\\Replacers\\Replacer",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Symfony\\Component\\HttpFoundation\\Response"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 15,
+        "vocabulary": 5,
+        "volume": 34.83,
+        "difficulty": 3.67,
+        "effort": 127.71,
+        "level": 0.27,
+        "bugs": 0.01,
+        "time": 7,
+        "intelligentContent": 9.5,
+        "number_operators": 4,
+        "number_operands": 11,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 0,
+        "loc": 19,
+        "lloc": 19,
+        "mi": 60.91,
+        "mIwoC": 60.91,
+        "commentWeight": 0,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 10,
+        "package": "Spatie\\ResponseCache\\Replacers\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\Replacers\\": {
+        "name": "Spatie\\ResponseCache\\Replacers\\",
+        "classes": [
+            "Spatie\\ResponseCache\\Replacers\\CsrfTokenReplacer",
+            "Spatie\\ResponseCache\\Replacers\\Replacer"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\HttpFoundation\\Response"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\HttpFoundation\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ResponseCache\\Replacers\\Replacer": {
+        "name": "Spatie\\ResponseCache\\Replacers\\Replacer",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "prepareResponseToCache",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceInCachedResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Symfony\\Component\\HttpFoundation\\Response"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Spatie\\ResponseCache\\Replacers\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Spatie\\ResponseCache\\Serializers\\Serializer": {
+        "name": "Spatie\\ResponseCache\\Serializers\\Serializer",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "serialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unserialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Symfony\\Component\\HttpFoundation\\Response"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Spatie\\ResponseCache\\Serializers\\",
+        "pageRank": 0.13,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Spatie\\ResponseCache\\Serializers\\": {
+        "name": "Spatie\\ResponseCache\\Serializers\\",
+        "classes": [
+            "Spatie\\ResponseCache\\Serializers\\Serializer",
+            "Spatie\\ResponseCache\\Serializers\\DefaultSerializer"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Spatie\\ResponseCache\\Exceptions\\CouldNotUnserialize",
+            "Symfony\\Component\\HttpFoundation\\BinaryFileResponse",
+            "Illuminate\\Http\\Response"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\HttpFoundation\\",
+            "Spatie\\ResponseCache\\Exceptions\\",
+            "Illuminate\\Http\\"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\ResponseCache\\ResponseCacheRepository"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\ResponseCache\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.8,
+        "dependent_instabilities": {
+            "Spatie\\ResponseCache\\Exceptions\\": 0.6666666666666666
+        },
+        "distance": 0.21213203435596428,
+        "normalized_distance": 0.30000000000000004,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\ResponseCache\\Serializers\\DefaultSerializer": {
+        "name": "Spatie\\ResponseCache\\Serializers\\DefaultSerializer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "serialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unserialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getResponseData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "containsValidResponseProperties",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildResponse",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 7,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Spatie\\ResponseCache\\Serializers\\Serializer",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Spatie\\ResponseCache\\Exceptions\\CouldNotUnserialize",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Symfony\\Component\\HttpFoundation\\BinaryFileResponse",
+            "Illuminate\\Http\\Response"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 83,
+        "vocabulary": 16,
+        "volume": 332,
+        "difficulty": 12.95,
+        "effort": 4300.91,
+        "level": 0.08,
+        "bugs": 0.11,
+        "time": 239,
+        "intelligentContent": 25.63,
+        "number_operators": 26,
+        "number_operands": 57,
+        "number_operators_unique": 5,
+        "number_operands_unique": 11,
+        "cloc": 0,
+        "loc": 51,
+        "lloc": 51,
+        "mi": 44.16,
+        "mIwoC": 44.16,
+        "commentWeight": 0,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 1.11,
+        "relativeSystemComplexity": 65.11,
+        "totalStructuralComplexity": 320,
+        "totalDataComplexity": 5.56,
+        "totalSystemComplexity": 325.56,
+        "package": "Spatie\\ResponseCache\\Serializers\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\ResponseCacheRepository": {
+        "name": "Spatie\\ResponseCache\\ResponseCacheRepository",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "put",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "forget",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "tags",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Spatie\\ResponseCache\\Serializers\\Serializer",
+            "Illuminate\\Cache\\Repository",
+            "Symfony\\Component\\HttpFoundation\\Response"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 37,
+        "vocabulary": 9,
+        "volume": 117.29,
+        "difficulty": 4.43,
+        "effort": 519.41,
+        "level": 0.23,
+        "bugs": 0.04,
+        "time": 29,
+        "intelligentContent": 26.48,
+        "number_operators": 6,
+        "number_operands": 31,
+        "number_operators_unique": 2,
+        "number_operands_unique": 7,
+        "cloc": 5,
+        "loc": 40,
+        "lloc": 35,
+        "mi": 77.6,
+        "mIwoC": 51.56,
+        "commentWeight": 26.04,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.53,
+        "relativeSystemComplexity": 81.53,
+        "totalStructuralComplexity": 567,
+        "totalDataComplexity": 3.7,
+        "totalSystemComplexity": 570.7,
+        "package": "Spatie\\ResponseCache\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 2,
+        "efferentCoupling": 3,
+        "instability": 0.6,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\ResponseCache\\ResponseCache": {
+        "name": "Spatie\\ResponseCache\\ResponseCache",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldCache",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cacheResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasBeenCached",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCachedResponseFor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCachedHeader",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "forget",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "taggedCache",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 9,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Spatie\\ResponseCache\\ResponseCacheRepository",
+            "Spatie\\ResponseCache\\Hasher\\RequestHasher",
+            "Spatie\\ResponseCache\\CacheProfiles\\CacheProfile",
+            "Illuminate\\Http\\Request",
+            "Illuminate\\Http\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Illuminate\\Http\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Illuminate\\Http\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Illuminate\\Http\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Illuminate\\Http\\Request",
+            "Spatie\\ResponseCache\\ResponseCacheRepository"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 109,
+        "vocabulary": 20,
+        "volume": 471.09,
+        "difficulty": 10.5,
+        "effort": 4946.45,
+        "level": 0.1,
+        "bugs": 0.16,
+        "time": 275,
+        "intelligentContent": 44.87,
+        "number_operators": 25,
+        "number_operands": 84,
+        "number_operators_unique": 4,
+        "number_operands_unique": 16,
+        "cloc": 6,
+        "loc": 78,
+        "lloc": 72,
+        "mi": 60.39,
+        "mIwoC": 39.56,
+        "commentWeight": 20.83,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.72,
+        "relativeSystemComplexity": 289.72,
+        "totalStructuralComplexity": 2890,
+        "totalDataComplexity": 7.17,
+        "totalSystemComplexity": 2897.17,
+        "package": "Spatie\\ResponseCache\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.4",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "laravel\/framework": {
+                "name": "laravel\/framework",
+                "required": "^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/laravel\/framework\/zipball\/32d1ed55dd46dcd706ff2e45bb7965be7320b87d"
+            },
+            "nesbot\/carbon": {
+                "name": "nesbot\/carbon",
+                "required": "^2.0",
+                "installed": null,
+                "latest": "2.30.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/carbon.nesbot.com",
+                "zip": "https:\/\/api.github.com\/repos\/briannesbitt\/Carbon\/zipball\/912dff66d2690ca66abddb9b291a1df5f371d3b4"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

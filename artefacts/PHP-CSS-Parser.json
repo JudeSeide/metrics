@@ -1,0 +1,4648 @@
+{
+    "Sabberworm\\CSS\\CSSList\\AtRuleBlockList": {
+        "name": "Sabberworm\\CSS\\CSSList\\AtRuleBlockList",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleArgs",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRootList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Sabberworm\\CSS\\CSSList\\CSSBlockList",
+            "Sabberworm\\CSS\\Property\\AtRule",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\CSSList\\CSSBlockList"
+        ],
+        "lcom": 2,
+        "length": 52,
+        "vocabulary": 18,
+        "volume": 216.84,
+        "difficulty": 6.92,
+        "effort": 1501.17,
+        "level": 0.14,
+        "bugs": 0.07,
+        "time": 83,
+        "intelligentContent": 31.32,
+        "number_operators": 16,
+        "number_operands": 36,
+        "number_operators_unique": 5,
+        "number_operands_unique": 13,
+        "cloc": 3,
+        "loc": 44,
+        "lloc": 41,
+        "mi": 67.87,
+        "mIwoC": 48.19,
+        "commentWeight": 19.68,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.42,
+        "relativeSystemComplexity": 10.42,
+        "totalStructuralComplexity": 54,
+        "totalDataComplexity": 8.5,
+        "totalSystemComplexity": 62.5,
+        "package": "Sabberworm\\CSS\\CSSList\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\CSSList\\": {
+        "name": "Sabberworm\\CSS\\CSSList\\",
+        "classes": [
+            "Sabberworm\\CSS\\CSSList\\AtRuleBlockList",
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\CSSList\\KeyFrame",
+            "Sabberworm\\CSS\\CSSList\\Document",
+            "Sabberworm\\CSS\\CSSList\\CSSBlockList"
+        ],
+        "outgoing_class_dependencies": [
+            "Sabberworm\\CSS\\Property\\AtRule",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Comment\\Commentable",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Parsing\\SourceException",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\RuleSet\\DeclarationBlock",
+            "Sabberworm\\CSS\\Value\\URL",
+            "Sabberworm\\CSS\\Property\\Import",
+            "Sabberworm\\CSS\\Value\\CSSString",
+            "Sabberworm\\CSS\\Property\\Charset",
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\Property\\CSSNamespace",
+            "Sabberworm\\CSS\\RuleSet\\AtRuleSet",
+            "Sabberworm\\CSS\\RuleSet\\RuleSet",
+            "Sabberworm\\CSS\\Property\\Selector"
+        ],
+        "outgoing_package_dependencies": [
+            "Sabberworm\\CSS\\Property\\",
+            "Sabberworm\\CSS\\",
+            "Sabberworm\\CSS\\Comment\\",
+            "Sabberworm\\CSS\\Parsing\\",
+            "Sabberworm\\CSS\\RuleSet\\",
+            "Sabberworm\\CSS\\Value\\"
+        ],
+        "incoming_class_dependencies": [
+            "Sabberworm\\CSS\\Parser"
+        ],
+        "incoming_package_dependencies": [
+            "Sabberworm\\CSS\\"
+        ],
+        "abstraction": 0.4,
+        "instability": 0.9444444444444444,
+        "dependent_instabilities": {
+            "Sabberworm\\CSS\\Property\\": 0.4444444444444444,
+            "Sabberworm\\CSS\\": 0.11538461538461539,
+            "Sabberworm\\CSS\\Comment\\": 0.2857142857142857,
+            "Sabberworm\\CSS\\Parsing\\": 0.1875,
+            "Sabberworm\\CSS\\RuleSet\\": 0.9230769230769231,
+            "Sabberworm\\CSS\\Value\\": 0.5555555555555556
+        },
+        "distance": 0.24355900240869977,
+        "normalized_distance": 0.34444444444444455,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Sabberworm\\CSS\\CSSList\\CSSList": {
+        "name": "Sabberworm\\CSS\\CSSList\\CSSList",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseListItem",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseAtRule",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "identifierIs",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLineNo",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepend",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "append",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "splice",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "remove",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replace",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setContents",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeDeclarationBlockBySelector",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRootList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getContents",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addComments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getComments",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setComments",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 20,
+        "nbMethods": 16,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 13,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 1,
+        "wmc": 73,
+        "ccn": 54,
+        "ccnMethodMax": 19,
+        "externals": [
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Comment\\Commentable",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Parsing\\SourceException",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\RuleSet\\DeclarationBlock",
+            "Sabberworm\\CSS\\Parsing\\SourceException",
+            "Sabberworm\\CSS\\RuleSet\\DeclarationBlock",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\URL",
+            "Sabberworm\\CSS\\Property\\Import",
+            "Sabberworm\\CSS\\Value\\CSSString",
+            "Sabberworm\\CSS\\Property\\Charset",
+            "Sabberworm\\CSS\\CSSList\\KeyFrame",
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Property\\CSSNamespace",
+            "Sabberworm\\CSS\\Parsing\\SourceException",
+            "Sabberworm\\CSS\\RuleSet\\AtRuleSet",
+            "Sabberworm\\CSS\\RuleSet\\RuleSet",
+            "Sabberworm\\CSS\\CSSList\\AtRuleBlockList",
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\Property\\Selector",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Property\\Selector",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [],
+        "lcom": 5,
+        "length": 442,
+        "vocabulary": 87,
+        "volume": 2847.78,
+        "difficulty": 29.73,
+        "effort": 84653.22,
+        "level": 0.03,
+        "bugs": 0.95,
+        "time": 4703,
+        "intelligentContent": 95.8,
+        "number_operators": 132,
+        "number_operands": 310,
+        "number_operators_unique": 14,
+        "number_operands_unique": 73,
+        "cloc": 60,
+        "loc": 345,
+        "lloc": 285,
+        "mi": 45.1,
+        "mIwoC": 15,
+        "commentWeight": 30.1,
+        "kanDefect": 4.4,
+        "relativeStructuralComplexity": 1024,
+        "relativeDataComplexity": 0.73,
+        "relativeSystemComplexity": 1024.73,
+        "totalStructuralComplexity": 20480,
+        "totalDataComplexity": 14.61,
+        "totalSystemComplexity": 20494.61,
+        "package": "Sabberworm\\CSS\\CSSList\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 5,
+        "efferentCoupling": 20,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\CSSList\\KeyFrame": {
+        "name": "Sabberworm\\CSS\\CSSList\\KeyFrame",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setVendorKeyFrame",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getVendorKeyFrame",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAnimationName",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAnimationName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRootList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleArgs",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 2,
+        "wmc": 10,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\Property\\AtRule",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\CSSList\\CSSList"
+        ],
+        "lcom": 2,
+        "length": 44,
+        "vocabulary": 15,
+        "volume": 171.9,
+        "difficulty": 3.75,
+        "effort": 644.64,
+        "level": 0.27,
+        "bugs": 0.06,
+        "time": 36,
+        "intelligentContent": 45.84,
+        "number_operators": 14,
+        "number_operands": 30,
+        "number_operators_unique": 3,
+        "number_operands_unique": 12,
+        "cloc": 0,
+        "loc": 51,
+        "lloc": 51,
+        "mi": 46.97,
+        "mIwoC": 46.97,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.85,
+        "relativeSystemComplexity": 10.85,
+        "totalStructuralComplexity": 90,
+        "totalDataComplexity": 18.5,
+        "totalSystemComplexity": 108.5,
+        "package": "Sabberworm\\CSS\\CSSList\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\CSSList\\Document": {
+        "name": "Sabberworm\\CSS\\CSSList\\Document",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllDeclarationBlocks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllSelectors",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllRuleSets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSelectorsBySpecificity",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expandShorthands",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createShorthands",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRootList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 11,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 8,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Sabberworm\\CSS\\CSSList\\CSSBlockList",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\CSSList\\Document",
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\CSSList\\CSSBlockList"
+        ],
+        "lcom": 8,
+        "length": 85,
+        "vocabulary": 19,
+        "volume": 361.07,
+        "difficulty": 10.54,
+        "effort": 3804.17,
+        "level": 0.09,
+        "bugs": 0.12,
+        "time": 211,
+        "intelligentContent": 34.27,
+        "number_operators": 26,
+        "number_operands": 59,
+        "number_operators_unique": 5,
+        "number_operands_unique": 14,
+        "cloc": 34,
+        "loc": 111,
+        "lloc": 77,
+        "mi": 77.67,
+        "mIwoC": 39.86,
+        "commentWeight": 37.81,
+        "kanDefect": 0.89,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.78,
+        "relativeSystemComplexity": 100.78,
+        "totalStructuralComplexity": 1100,
+        "totalDataComplexity": 8.55,
+        "totalSystemComplexity": 1108.55,
+        "package": "Sabberworm\\CSS\\CSSList\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 3,
+        "efferentCoupling": 6,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\CSSList\\CSSBlockList": {
+        "name": "Sabberworm\\CSS\\CSSList\\CSSBlockList",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "allDeclarationBlocks",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "allRuleSets",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "allValues",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "allSelectors",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 24,
+        "ccn": 20,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Sabberworm\\CSS\\CSSList\\CSSList"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\CSSList\\CSSList"
+        ],
+        "lcom": 3,
+        "length": 103,
+        "vocabulary": 25,
+        "volume": 478.32,
+        "difficulty": 7.9,
+        "effort": 3780.98,
+        "level": 0.13,
+        "bugs": 0.16,
+        "time": 210,
+        "intelligentContent": 60.51,
+        "number_operators": 20,
+        "number_operands": 83,
+        "number_operators_unique": 4,
+        "number_operands_unique": 21,
+        "cloc": 5,
+        "loc": 83,
+        "lloc": 78,
+        "mi": 55.83,
+        "mIwoC": 37.27,
+        "commentWeight": 18.56,
+        "kanDefect": 2.53,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.16,
+        "relativeSystemComplexity": 100.16,
+        "totalStructuralComplexity": 500,
+        "totalDataComplexity": 0.82,
+        "totalSystemComplexity": 500.82,
+        "package": "Sabberworm\\CSS\\CSSList\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Parser": {
+        "name": "Sabberworm\\CSS\\Parser",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCharset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCharset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Sabberworm\\CSS\\Settings",
+            "Sabberworm\\CSS\\Settings",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\CSSList\\Document"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 20,
+        "vocabulary": 10,
+        "volume": 66.44,
+        "difficulty": 5,
+        "effort": 332.19,
+        "level": 0.2,
+        "bugs": 0.02,
+        "time": 18,
+        "intelligentContent": 13.29,
+        "number_operators": 5,
+        "number_operands": 15,
+        "number_operators_unique": 4,
+        "number_operands_unique": 6,
+        "cloc": 11,
+        "loc": 35,
+        "lloc": 24,
+        "mi": 95.03,
+        "mIwoC": 56.86,
+        "commentWeight": 38.17,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 16.4,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 1.6,
+        "totalSystemComplexity": 65.6,
+        "package": "Sabberworm\\CSS\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\": {
+        "name": "Sabberworm\\CSS\\",
+        "classes": [
+            "Sabberworm\\CSS\\Parser",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormatter",
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Settings"
+        ],
+        "incoming_class_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\AtRuleBlockList",
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\CSSList\\KeyFrame",
+            "Sabberworm\\CSS\\CSSList\\Document",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\LineName",
+            "Sabberworm\\CSS\\Value\\ValueList",
+            "Sabberworm\\CSS\\Value\\Color",
+            "Sabberworm\\CSS\\Value\\CSSString",
+            "Sabberworm\\CSS\\Value\\URL",
+            "Sabberworm\\CSS\\Value\\CalcRuleValueList",
+            "Sabberworm\\CSS\\Value\\CSSFunction",
+            "Sabberworm\\CSS\\Property\\Import",
+            "Sabberworm\\CSS\\Property\\AtRule",
+            "Sabberworm\\CSS\\Property\\CSSNamespace",
+            "Sabberworm\\CSS\\Property\\Charset",
+            "Sabberworm\\CSS\\RuleSet\\DeclarationBlock",
+            "Sabberworm\\CSS\\RuleSet\\AtRuleSet",
+            "Sabberworm\\CSS\\RuleSet\\RuleSet",
+            "Sabberworm\\CSS\\Comment\\Comment"
+        ],
+        "incoming_package_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\",
+            "Sabberworm\\CSS\\Rule\\",
+            "Sabberworm\\CSS\\Parsing\\",
+            "Sabberworm\\CSS\\Value\\",
+            "Sabberworm\\CSS\\Property\\",
+            "Sabberworm\\CSS\\RuleSet\\",
+            "Sabberworm\\CSS\\Comment\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\CSSList\\Document",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "Sabberworm\\CSS\\Parsing\\",
+            "Sabberworm\\CSS\\CSSList\\",
+            "\\"
+        ],
+        "abstraction": 0.2,
+        "instability": 0.11538461538461539,
+        "dependent_instabilities": {
+            "Sabberworm\\CSS\\Parsing\\": 0.1875,
+            "Sabberworm\\CSS\\CSSList\\": 0.9444444444444444
+        },
+        "distance": 0.4840961809661748,
+        "normalized_distance": 0.6846153846153846,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Sabberworm\\CSS\\Rule\\Rule": {
+        "name": "Sabberworm\\CSS\\Rule\\Rule",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "listDelimiterForRule",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLineNo",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRule",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRule",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addIeHack",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIeHack",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIeHack",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIsImportant",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIsImportant",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addComments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getComments",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setComments",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 21,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 6,
+        "nbMethodsSetters": 5,
+        "wmc": 50,
+        "ccn": 30,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Comment\\Commentable",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\Value\\RuleValueList",
+            "Sabberworm\\CSS\\Value\\RuleValueList",
+            "Sabberworm\\CSS\\Value\\RuleValueList",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 281,
+        "vocabulary": 47,
+        "volume": 1560.84,
+        "difficulty": 33.43,
+        "effort": 52176.63,
+        "level": 0.03,
+        "bugs": 0.52,
+        "time": 2899,
+        "intelligentContent": 46.69,
+        "number_operators": 86,
+        "number_operands": 195,
+        "number_operators_unique": 12,
+        "number_operands_unique": 35,
+        "cloc": 26,
+        "loc": 226,
+        "lloc": 200,
+        "mi": 48.49,
+        "mIwoC": 23.41,
+        "commentWeight": 25.08,
+        "kanDefect": 3.02,
+        "relativeStructuralComplexity": 361,
+        "relativeDataComplexity": 0.89,
+        "relativeSystemComplexity": 361.89,
+        "totalStructuralComplexity": 7581,
+        "totalDataComplexity": 18.6,
+        "totalSystemComplexity": 7599.6,
+        "package": "Sabberworm\\CSS\\Rule\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 4,
+        "efferentCoupling": 8,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Rule\\": {
+        "name": "Sabberworm\\CSS\\Rule\\",
+        "classes": [
+            "Sabberworm\\CSS\\Rule\\Rule"
+        ],
+        "outgoing_class_dependencies": [
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Comment\\Commentable",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\Value\\RuleValueList",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "outgoing_package_dependencies": [
+            "Sabberworm\\CSS\\",
+            "Sabberworm\\CSS\\Comment\\",
+            "Sabberworm\\CSS\\Parsing\\",
+            "Sabberworm\\CSS\\Value\\"
+        ],
+        "incoming_class_dependencies": [
+            "Sabberworm\\CSS\\RuleSet\\DeclarationBlock",
+            "Sabberworm\\CSS\\RuleSet\\RuleSet"
+        ],
+        "incoming_package_dependencies": [
+            "Sabberworm\\CSS\\RuleSet\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.75,
+        "dependent_instabilities": {
+            "Sabberworm\\CSS\\": 0.11538461538461539,
+            "Sabberworm\\CSS\\Comment\\": 0.2857142857142857,
+            "Sabberworm\\CSS\\Parsing\\": 0.1875,
+            "Sabberworm\\CSS\\Value\\": 0.5555555555555556
+        },
+        "distance": 0.17677669529663687,
+        "normalized_distance": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Sabberworm\\CSS\\OutputFormat": {
+        "name": "Sabberworm\\CSS\\OutputFormat",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indentWithTabs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indentWithSpaces",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "nextLevel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "beLenient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormatter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "level",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createCompact",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createPretty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 27,
+        "ccn": 15,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Exception",
+            "Sabberworm\\CSS\\OutputFormatter",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [],
+        "lcom": 6,
+        "length": 199,
+        "vocabulary": 50,
+        "volume": 1123.13,
+        "difficulty": 12.21,
+        "effort": 13712.6,
+        "level": 0.08,
+        "bugs": 0.37,
+        "time": 762,
+        "intelligentContent": 91.99,
+        "number_operators": 49,
+        "number_operands": 150,
+        "number_operators_unique": 7,
+        "number_operands_unique": 43,
+        "cloc": 47,
+        "loc": 179,
+        "lloc": 132,
+        "mi": 66.02,
+        "mIwoC": 30.37,
+        "commentWeight": 35.65,
+        "kanDefect": 1.54,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 1.55,
+        "relativeSystemComplexity": 82.55,
+        "totalStructuralComplexity": 1053,
+        "totalDataComplexity": 20.2,
+        "totalSystemComplexity": 1073.2,
+        "package": "Sabberworm\\CSS\\",
+        "pageRank": 0.24,
+        "afferentCoupling": 24,
+        "efferentCoupling": 4,
+        "instability": 0.14,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\OutputFormatter": {
+        "name": "Sabberworm\\CSS\\OutputFormatter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "space",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceAfterRuleName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceBeforeRules",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceAfterRules",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceBetweenRules",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceBeforeBlocks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceAfterBlocks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceBetweenBlocks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceBeforeSelectorSeparator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceAfterSelectorSeparator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceBeforeListArgumentSeparator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceAfterListArgumentSeparator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "spaceBeforeOpeningBrace",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "safely",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "implode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeLastSemicolon",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareSpace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indent",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 19,
+        "nbMethods": 19,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 17,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 30,
+        "ccn": 12,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 157,
+        "vocabulary": 46,
+        "volume": 867.2,
+        "difficulty": 12.89,
+        "effort": 11179.84,
+        "level": 0.08,
+        "bugs": 0.29,
+        "time": 621,
+        "intelligentContent": 67.27,
+        "number_operators": 51,
+        "number_operands": 106,
+        "number_operators_unique": 9,
+        "number_operands_unique": 37,
+        "cloc": 10,
+        "loc": 135,
+        "lloc": 125,
+        "mi": 52.53,
+        "mIwoC": 32.07,
+        "commentWeight": 20.46,
+        "kanDefect": 0.94,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 2.82,
+        "relativeSystemComplexity": 51.82,
+        "totalStructuralComplexity": 931,
+        "totalDataComplexity": 53.63,
+        "totalSystemComplexity": 984.63,
+        "package": "Sabberworm\\CSS\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Parsing\\OutputException": {
+        "name": "Sabberworm\\CSS\\Parsing\\OutputException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Sabberworm\\CSS\\Parsing\\SourceException"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Parsing\\SourceException"
+        ],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 3,
+        "volume": 7.92,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 9.51,
+        "number_operators": 0,
+        "number_operands": 5,
+        "number_operators_unique": 0,
+        "number_operands_unique": 3,
+        "cloc": 3,
+        "loc": 11,
+        "lloc": 8,
+        "mi": 110.05,
+        "mIwoC": 73.87,
+        "commentWeight": 36.18,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 2,
+        "package": "Sabberworm\\CSS\\Parsing\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Parsing\\": {
+        "name": "Sabberworm\\CSS\\Parsing\\",
+        "classes": [
+            "Sabberworm\\CSS\\Parsing\\OutputException",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedEOFException",
+            "Sabberworm\\CSS\\Parsing\\SourceException",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException"
+        ],
+        "incoming_class_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\CSSList\\Document",
+            "Sabberworm\\CSS\\Parser",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\LineName",
+            "Sabberworm\\CSS\\Value\\Color",
+            "Sabberworm\\CSS\\Value\\CSSString",
+            "Sabberworm\\CSS\\Value\\CalcFunction",
+            "Sabberworm\\CSS\\Value\\URL",
+            "Sabberworm\\CSS\\RuleSet\\DeclarationBlock",
+            "Sabberworm\\CSS\\RuleSet\\RuleSet"
+        ],
+        "incoming_package_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\",
+            "Sabberworm\\CSS\\",
+            "Sabberworm\\CSS\\Rule\\",
+            "Sabberworm\\CSS\\Value\\",
+            "Sabberworm\\CSS\\RuleSet\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception",
+            "Sabberworm\\CSS\\Settings",
+            "Sabberworm\\CSS\\Comment\\Comment"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Sabberworm\\CSS\\",
+            "Sabberworm\\CSS\\Comment\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.1875,
+        "dependent_instabilities": {
+            "Sabberworm\\CSS\\": 0.11538461538461539,
+            "Sabberworm\\CSS\\Comment\\": 0.2857142857142857
+        },
+        "distance": 0.5745242597140698,
+        "normalized_distance": 0.8125,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Sabberworm\\CSS\\Parsing\\UnexpectedEOFException": {
+        "name": "Sabberworm\\CSS\\Parsing\\UnexpectedEOFException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 4,
+        "loc": 8,
+        "lloc": 4,
+        "mi": 215.46,
+        "mIwoC": 171,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Sabberworm\\CSS\\Parsing\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Parsing\\SourceException": {
+        "name": "Sabberworm\\CSS\\Parsing\\SourceException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLineNo",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Exception"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 1,
+        "length": 17,
+        "vocabulary": 11,
+        "volume": 58.81,
+        "difficulty": 3.71,
+        "effort": 218.44,
+        "level": 0.27,
+        "bugs": 0.02,
+        "time": 12,
+        "intelligentContent": 15.83,
+        "number_operators": 4,
+        "number_operands": 13,
+        "number_operators_unique": 4,
+        "number_operands_unique": 7,
+        "cloc": 0,
+        "loc": 17,
+        "lloc": 17,
+        "mi": 60.5,
+        "mIwoC": 60.5,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 4,
+        "package": "Sabberworm\\CSS\\Parsing\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 4,
+        "efferentCoupling": 1,
+        "instability": 0.2,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Parsing\\ParserState": {
+        "name": "Sabberworm\\CSS\\Parsing\\ParserState",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCharset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCharset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "currentLine",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSettings",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseIdentifier",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseCharacter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "consumeWhiteSpace",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "comes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "peek",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "consume",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "consumeExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "consumeComment",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEnd",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "consumeUntil",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inputLeft",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "streql",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "backtrack",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "strlen",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "substr",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "strtolower",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "strsplit",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "strpos",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 23,
+        "nbMethods": 21,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 16,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 83,
+        "ccn": 61,
+        "ccnMethodMax": 23,
+        "externals": [
+            "Sabberworm\\CSS\\Settings",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedEOFException",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Comment\\Comment",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedEOFException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 585,
+        "vocabulary": 106,
+        "volume": 3935.83,
+        "difficulty": 54.04,
+        "effort": 212677.27,
+        "level": 0.02,
+        "bugs": 1.31,
+        "time": 11815,
+        "intelligentContent": 72.84,
+        "number_operators": 195,
+        "number_operands": 390,
+        "number_operators_unique": 23,
+        "number_operands_unique": 83,
+        "cloc": 14,
+        "loc": 298,
+        "lloc": 285,
+        "mi": 29.55,
+        "mIwoC": 13.07,
+        "commentWeight": 16.48,
+        "kanDefect": 3.98,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 2.45,
+        "relativeSystemComplexity": 227.45,
+        "totalStructuralComplexity": 5175,
+        "totalDataComplexity": 56.44,
+        "totalSystemComplexity": 5231.44,
+        "package": "Sabberworm\\CSS\\Parsing\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 13,
+        "efferentCoupling": 4,
+        "instability": 0.24,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException": {
+        "name": "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Sabberworm\\CSS\\Parsing\\SourceException"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Parsing\\SourceException"
+        ],
+        "lcom": 1,
+        "length": 71,
+        "vocabulary": 27,
+        "volume": 337.6,
+        "difficulty": 3.44,
+        "effort": 1160.49,
+        "level": 0.29,
+        "bugs": 0.11,
+        "time": 64,
+        "intelligentContent": 98.21,
+        "number_operators": 16,
+        "number_operands": 55,
+        "number_operators_unique": 3,
+        "number_operands_unique": 24,
+        "cloc": 4,
+        "loc": 34,
+        "lloc": 30,
+        "mi": 74.74,
+        "mIwoC": 49.4,
+        "commentWeight": 25.34,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 3,
+        "package": "Sabberworm\\CSS\\Parsing\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 6,
+        "efferentCoupling": 1,
+        "instability": 0.14,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\Value": {
+        "name": "Sabberworm\\CSS\\Value\\Value",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseIdentifierOrFunction",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parsePrimitiveValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseMicrosoftFilter",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseUnicodeRangeValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLineNo",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 46,
+        "ccn": 40,
+        "ccnMethodMax": 20,
+        "externals": [
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\RuleValueList",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\Value\\CSSFunction",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\Color",
+            "Sabberworm\\CSS\\Value\\URL",
+            "Sabberworm\\CSS\\Value\\CalcFunction",
+            "Sabberworm\\CSS\\Value\\CSSString",
+            "Sabberworm\\CSS\\Value\\LineName",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\Value\\CSSFunction",
+            "Sabberworm\\CSS\\Parsing\\ParserState"
+        ],
+        "parents": [],
+        "lcom": 6,
+        "length": 304,
+        "vocabulary": 68,
+        "volume": 1850.59,
+        "difficulty": 35.67,
+        "effort": 66004.33,
+        "level": 0.03,
+        "bugs": 0.62,
+        "time": 3667,
+        "intelligentContent": 51.89,
+        "number_operators": 90,
+        "number_operands": 214,
+        "number_operators_unique": 17,
+        "number_operands_unique": 51,
+        "cloc": 12,
+        "loc": 141,
+        "lloc": 129,
+        "mi": 47.54,
+        "mIwoC": 25.7,
+        "commentWeight": 21.84,
+        "kanDefect": 2.42,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.45,
+        "relativeSystemComplexity": 289.45,
+        "totalStructuralComplexity": 2023,
+        "totalDataComplexity": 3.17,
+        "totalSystemComplexity": 2026.17,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 7,
+        "efferentCoupling": 13,
+        "instability": 0.65,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\": {
+        "name": "Sabberworm\\CSS\\Value\\",
+        "classes": [
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\PrimitiveValue",
+            "Sabberworm\\CSS\\Value\\LineName",
+            "Sabberworm\\CSS\\Value\\ValueList",
+            "Sabberworm\\CSS\\Value\\Color",
+            "Sabberworm\\CSS\\Value\\RuleValueList",
+            "Sabberworm\\CSS\\Value\\CSSString",
+            "Sabberworm\\CSS\\Value\\CalcFunction",
+            "Sabberworm\\CSS\\Value\\URL",
+            "Sabberworm\\CSS\\Value\\CalcRuleValueList",
+            "Sabberworm\\CSS\\Value\\CSSFunction"
+        ],
+        "incoming_class_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Property\\Import",
+            "Sabberworm\\CSS\\RuleSet\\DeclarationBlock"
+        ],
+        "incoming_package_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\",
+            "Sabberworm\\CSS\\Rule\\",
+            "Sabberworm\\CSS\\Property\\",
+            "Sabberworm\\CSS\\RuleSet\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\Parsing\\SourceException"
+        ],
+        "outgoing_package_dependencies": [
+            "Sabberworm\\CSS\\",
+            "Sabberworm\\CSS\\Parsing\\"
+        ],
+        "abstraction": 0.25,
+        "instability": 0.5555555555555556,
+        "dependent_instabilities": {
+            "Sabberworm\\CSS\\": 0.11538461538461539,
+            "Sabberworm\\CSS\\Parsing\\": 0.1875
+        },
+        "distance": 0.13749298523071754,
+        "normalized_distance": 0.19444444444444442,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Sabberworm\\CSS\\Value\\Size": {
+        "name": "Sabberworm\\CSS\\Value\\Size",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSizeUnits",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUnit",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUnit",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSize",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isColorComponent",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRelative",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 1,
+        "wmc": 28,
+        "ccn": 17,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Sabberworm\\CSS\\Value\\PrimitiveValue",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Value\\PrimitiveValue"
+        ],
+        "lcom": 3,
+        "length": 166,
+        "vocabulary": 44,
+        "volume": 906.27,
+        "difficulty": 18.67,
+        "effort": 16916.96,
+        "level": 0.05,
+        "bugs": 0.3,
+        "time": 940,
+        "intelligentContent": 48.55,
+        "number_operators": 54,
+        "number_operands": 112,
+        "number_operators_unique": 11,
+        "number_operands_unique": 33,
+        "cloc": 5,
+        "loc": 112,
+        "lloc": 107,
+        "mi": 48.81,
+        "mIwoC": 32.74,
+        "commentWeight": 16.08,
+        "kanDefect": 1.47,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 1.42,
+        "relativeSystemComplexity": 65.42,
+        "totalStructuralComplexity": 768,
+        "totalDataComplexity": 17,
+        "totalSystemComplexity": 785,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 5,
+        "efferentCoupling": 5,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\PrimitiveValue": {
+        "name": "Sabberworm\\CSS\\Value\\PrimitiveValue",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Sabberworm\\CSS\\Value\\Value"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Value\\Value"
+        ],
+        "lcom": 1,
+        "length": 3,
+        "vocabulary": 2,
+        "volume": 3,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.33,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 0,
+        "number_operands": 3,
+        "number_operators_unique": 0,
+        "number_operands_unique": 2,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 76.82,
+        "mIwoC": 76.82,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 1.5,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 3,
+        "efferentCoupling": 1,
+        "instability": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\LineName": {
+        "name": "Sabberworm\\CSS\\Value\\LineName",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Sabberworm\\CSS\\Value\\ValueList",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\LineName",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Value\\ValueList"
+        ],
+        "lcom": 3,
+        "length": 38,
+        "vocabulary": 16,
+        "volume": 152,
+        "difficulty": 6.36,
+        "effort": 967.27,
+        "level": 0.16,
+        "bugs": 0.05,
+        "time": 54,
+        "intelligentContent": 23.89,
+        "number_operators": 10,
+        "number_operands": 28,
+        "number_operators_unique": 5,
+        "number_operands_unique": 11,
+        "cloc": 0,
+        "loc": 35,
+        "lloc": 35,
+        "mi": 50.5,
+        "mIwoC": 50.5,
+        "commentWeight": 0,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 81.4,
+        "totalStructuralComplexity": 324,
+        "totalDataComplexity": 1.6,
+        "totalSystemComplexity": 325.6,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 3,
+        "efferentCoupling": 5,
+        "instability": 0.63,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\ValueList": {
+        "name": "Sabberworm\\CSS\\Value\\ValueList",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addListComponent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getListComponents",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setListComponents",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getListSeparator",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setListSeparator",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 2,
+        "wmc": 9,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Value\\Value"
+        ],
+        "lcom": 1,
+        "length": 46,
+        "vocabulary": 12,
+        "volume": 164.91,
+        "difficulty": 8.25,
+        "effort": 1360.49,
+        "level": 0.12,
+        "bugs": 0.05,
+        "time": 76,
+        "intelligentContent": 19.99,
+        "number_operators": 13,
+        "number_operands": 33,
+        "number_operators_unique": 4,
+        "number_operands_unique": 8,
+        "cloc": 0,
+        "loc": 43,
+        "lloc": 43,
+        "mi": 48.57,
+        "mIwoC": 48.57,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.81,
+        "relativeSystemComplexity": 25.81,
+        "totalStructuralComplexity": 200,
+        "totalDataComplexity": 6.5,
+        "totalSystemComplexity": 206.5,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 3,
+        "efferentCoupling": 2,
+        "instability": 0.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\Color": {
+        "name": "Sabberworm\\CSS\\Value\\Color",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mapRange",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColor",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColorDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 19,
+        "ccn": 12,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Sabberworm\\CSS\\Value\\CSSFunction",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\Color",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Value\\CSSFunction"
+        ],
+        "lcom": 5,
+        "length": 273,
+        "vocabulary": 55,
+        "volume": 1578.31,
+        "difficulty": 31.57,
+        "effort": 49829.54,
+        "level": 0.03,
+        "bugs": 0.53,
+        "time": 2768,
+        "intelligentContent": 49.99,
+        "number_operators": 69,
+        "number_operands": 204,
+        "number_operators_unique": 13,
+        "number_operands_unique": 42,
+        "cloc": 1,
+        "loc": 78,
+        "lloc": 77,
+        "mi": 43.57,
+        "mIwoC": 34.84,
+        "commentWeight": 8.73,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.55,
+        "relativeSystemComplexity": 196.55,
+        "totalStructuralComplexity": 1568,
+        "totalDataComplexity": 4.4,
+        "totalSystemComplexity": 1572.4,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 3,
+        "efferentCoupling": 6,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\RuleValueList": {
+        "name": "Sabberworm\\CSS\\Value\\RuleValueList",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Sabberworm\\CSS\\Value\\ValueList"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Value\\ValueList"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 4,
+        "volume": 12,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.33,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 16,
+        "number_operators": 0,
+        "number_operands": 6,
+        "number_operators_unique": 0,
+        "number_operands_unique": 4,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 72.61,
+        "mIwoC": 72.61,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 2,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 5,
+        "efferentCoupling": 1,
+        "instability": 0.17,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\CSSString": {
+        "name": "Sabberworm\\CSS\\Value\\CSSString",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setString",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getString",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 13,
+        "ccn": 8,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Sabberworm\\CSS\\Value\\PrimitiveValue",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Parsing\\SourceException",
+            "Sabberworm\\CSS\\Value\\CSSString",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Value\\PrimitiveValue"
+        ],
+        "lcom": 2,
+        "length": 91,
+        "vocabulary": 27,
+        "volume": 432.69,
+        "difficulty": 12.63,
+        "effort": 5465.62,
+        "level": 0.08,
+        "bugs": 0.14,
+        "time": 304,
+        "intelligentContent": 34.26,
+        "number_operators": 31,
+        "number_operands": 60,
+        "number_operators_unique": 8,
+        "number_operands_unique": 19,
+        "cloc": 1,
+        "loc": 61,
+        "lloc": 60,
+        "mi": 51.53,
+        "mIwoC": 41.68,
+        "commentWeight": 9.85,
+        "kanDefect": 0.96,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.54,
+        "relativeSystemComplexity": 64.54,
+        "totalStructuralComplexity": 384,
+        "totalDataComplexity": 3.22,
+        "totalSystemComplexity": 387.22,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 5,
+        "efferentCoupling": 6,
+        "instability": 0.55,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\CalcFunction": {
+        "name": "Sabberworm\\CSS\\Value\\CalcFunction",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "parse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 12,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Sabberworm\\CSS\\Value\\CSSFunction",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\CalcRuleValueList",
+            "Sabberworm\\CSS\\Value\\RuleValueList",
+            "Sabberworm\\CSS\\Value\\Value",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Value\\CalcFunction"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Value\\CSSFunction"
+        ],
+        "lcom": 1,
+        "length": 114,
+        "vocabulary": 35,
+        "volume": 584.74,
+        "difficulty": 13.19,
+        "effort": 7709.88,
+        "level": 0.08,
+        "bugs": 0.19,
+        "time": 428,
+        "intelligentContent": 44.35,
+        "number_operators": 25,
+        "number_operands": 89,
+        "number_operators_unique": 8,
+        "number_operands_unique": 27,
+        "cloc": 0,
+        "loc": 52,
+        "lloc": 52,
+        "mi": 41.58,
+        "mIwoC": 41.58,
+        "commentWeight": 0,
+        "kanDefect": 0.8,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.22,
+        "relativeSystemComplexity": 64.22,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 0.22,
+        "totalSystemComplexity": 64.22,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 3,
+        "efferentCoupling": 8,
+        "instability": 0.73,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\URL": {
+        "name": "Sabberworm\\CSS\\Value\\URL",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setURL",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getURL",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Sabberworm\\CSS\\Value\\PrimitiveValue",
+            "Sabberworm\\CSS\\Value\\CSSString",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Value\\CSSString",
+            "Sabberworm\\CSS\\Value\\URL",
+            "Sabberworm\\CSS\\Value\\CSSString",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Value\\PrimitiveValue"
+        ],
+        "lcom": 2,
+        "length": 46,
+        "vocabulary": 16,
+        "volume": 184,
+        "difficulty": 4.15,
+        "effort": 764.31,
+        "level": 0.24,
+        "bugs": 0.06,
+        "time": 42,
+        "intelligentContent": 44.3,
+        "number_operators": 10,
+        "number_operands": 36,
+        "number_operators_unique": 3,
+        "number_operands_unique": 13,
+        "cloc": 0,
+        "loc": 42,
+        "lloc": 42,
+        "mi": 48.33,
+        "mIwoC": 48.33,
+        "commentWeight": 0,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 49.6,
+        "totalStructuralComplexity": 294,
+        "totalDataComplexity": 3.63,
+        "totalSystemComplexity": 297.63,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 5,
+        "efferentCoupling": 6,
+        "instability": 0.55,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\CalcRuleValueList": {
+        "name": "Sabberworm\\CSS\\Value\\CalcRuleValueList",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Sabberworm\\CSS\\Value\\RuleValueList",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Value\\RuleValueList"
+        ],
+        "lcom": 2,
+        "length": 9,
+        "vocabulary": 7,
+        "volume": 25.27,
+        "difficulty": 0.67,
+        "effort": 16.84,
+        "level": 1.5,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 37.9,
+        "number_operators": 1,
+        "number_operands": 8,
+        "number_operators_unique": 1,
+        "number_operands_unique": 6,
+        "cloc": 0,
+        "loc": 12,
+        "lloc": 12,
+        "mi": 66.5,
+        "mIwoC": 66.5,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 4.67,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 1.33,
+        "totalSystemComplexity": 9.33,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Value\\CSSFunction": {
+        "name": "Sabberworm\\CSS\\Value\\CSSFunction",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setName",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getArguments",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 7,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Sabberworm\\CSS\\Value\\ValueList",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Value\\ValueList"
+        ],
+        "lcom": 1,
+        "length": 43,
+        "vocabulary": 14,
+        "volume": 163.72,
+        "difficulty": 4.36,
+        "effort": 714.4,
+        "level": 0.23,
+        "bugs": 0.05,
+        "time": 40,
+        "intelligentContent": 37.52,
+        "number_operators": 11,
+        "number_operands": 32,
+        "number_operators_unique": 3,
+        "number_operands_unique": 11,
+        "cloc": 0,
+        "loc": 36,
+        "lloc": 36,
+        "mi": 50.28,
+        "mIwoC": 50.28,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 17,
+        "totalStructuralComplexity": 96,
+        "totalDataComplexity": 6,
+        "totalSystemComplexity": 102,
+        "package": "Sabberworm\\CSS\\Value\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 3,
+        "efferentCoupling": 2,
+        "instability": 0.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Renderable": {
+        "name": "Sabberworm\\CSS\\Renderable",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLineNo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Sabberworm\\CSS\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 6,
+        "efferentCoupling": 1,
+        "instability": 0.14,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Sabberworm\\CSS\\Property\\Import": {
+        "name": "Sabberworm\\CSS\\Property\\Import",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLineNo",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLocation",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLocation",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleArgs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addComments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getComments",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setComments",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 2,
+        "wmc": 13,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Sabberworm\\CSS\\Property\\AtRule",
+            "Sabberworm\\CSS\\Value\\URL",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 62,
+        "vocabulary": 18,
+        "volume": 258.54,
+        "difficulty": 7.88,
+        "effort": 2038.45,
+        "level": 0.13,
+        "bugs": 0.09,
+        "time": 113,
+        "intelligentContent": 32.79,
+        "number_operators": 21,
+        "number_operands": 41,
+        "number_operators_unique": 5,
+        "number_operands_unique": 13,
+        "cloc": 6,
+        "loc": 65,
+        "lloc": 59,
+        "mi": 66.75,
+        "mIwoC": 44.07,
+        "commentWeight": 22.67,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 3.82,
+        "relativeSystemComplexity": 4.82,
+        "totalStructuralComplexity": 11,
+        "totalDataComplexity": 42,
+        "totalSystemComplexity": 53,
+        "package": "Sabberworm\\CSS\\Property\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Property\\": {
+        "name": "Sabberworm\\CSS\\Property\\",
+        "classes": [
+            "Sabberworm\\CSS\\Property\\Import",
+            "Sabberworm\\CSS\\Property\\KeyframeSelector",
+            "Sabberworm\\CSS\\Property\\Selector",
+            "Sabberworm\\CSS\\Property\\AtRule",
+            "Sabberworm\\CSS\\Property\\CSSNamespace",
+            "Sabberworm\\CSS\\Property\\Charset"
+        ],
+        "incoming_class_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\AtRuleBlockList",
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\CSSList\\KeyFrame",
+            "Sabberworm\\CSS\\RuleSet\\DeclarationBlock",
+            "Sabberworm\\CSS\\RuleSet\\AtRuleSet"
+        ],
+        "incoming_package_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\",
+            "Sabberworm\\CSS\\RuleSet\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Sabberworm\\CSS\\Value\\URL",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Comment\\Commentable"
+        ],
+        "outgoing_package_dependencies": [
+            "Sabberworm\\CSS\\Value\\",
+            "Sabberworm\\CSS\\",
+            "Sabberworm\\CSS\\Comment\\"
+        ],
+        "abstraction": 0.16666666666666666,
+        "instability": 0.4444444444444444,
+        "dependent_instabilities": {
+            "Sabberworm\\CSS\\Value\\": 0.5555555555555556,
+            "Sabberworm\\CSS\\": 0.11538461538461539,
+            "Sabberworm\\CSS\\Comment\\": 0.2857142857142857
+        },
+        "distance": 0.2749859704614352,
+        "normalized_distance": 0.38888888888888895,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Sabberworm\\CSS\\Property\\KeyframeSelector": {
+        "name": "Sabberworm\\CSS\\Property\\KeyframeSelector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Sabberworm\\CSS\\Property\\Selector"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Property\\Selector"
+        ],
+        "lcom": 0,
+        "length": 1,
+        "vocabulary": 1,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 1,
+        "number_operators_unique": 0,
+        "number_operands_unique": 1,
+        "cloc": 3,
+        "loc": 16,
+        "lloc": 15,
+        "mi": 202.08,
+        "mIwoC": 171,
+        "commentWeight": 31.08,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Sabberworm\\CSS\\Property\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Property\\Selector": {
+        "name": "Sabberworm\\CSS\\Property\\Selector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "isValid",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSelector",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setSelector",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSpecificity",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [],
+        "parents": [],
+        "lcom": 2,
+        "length": 60,
+        "vocabulary": 22,
+        "volume": 267.57,
+        "difficulty": 7.31,
+        "effort": 1956.58,
+        "level": 0.14,
+        "bugs": 0.09,
+        "time": 109,
+        "intelligentContent": 36.59,
+        "number_operators": 21,
+        "number_operands": 39,
+        "number_operators_unique": 6,
+        "number_operands_unique": 16,
+        "cloc": 7,
+        "loc": 81,
+        "lloc": 76,
+        "mi": 63.56,
+        "mIwoC": 41.57,
+        "commentWeight": 21.99,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.17,
+        "relativeSystemComplexity": 10.17,
+        "totalStructuralComplexity": 54,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 61,
+        "package": "Sabberworm\\CSS\\Property\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 3,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Property\\AtRule": {
+        "name": "Sabberworm\\CSS\\Property\\AtRule",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "atRuleName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleArgs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Comment\\Commentable"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Comment\\Commentable"
+        ],
+        "kanDefect": 0.15,
+        "package": "Sabberworm\\CSS\\Property\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 6,
+        "efferentCoupling": 2,
+        "instability": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Sabberworm\\CSS\\Property\\CSSNamespace": {
+        "name": "Sabberworm\\CSS\\Property\\CSSNamespace",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLineNo",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUrl",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrefix",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUrl",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrefix",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleArgs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addComments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getComments",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setComments",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 3,
+        "wmc": 15,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Sabberworm\\CSS\\Property\\AtRule",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 68,
+        "vocabulary": 18,
+        "volume": 283.55,
+        "difficulty": 8.65,
+        "effort": 2453.84,
+        "level": 0.12,
+        "bugs": 0.09,
+        "time": 136,
+        "intelligentContent": 32.77,
+        "number_operators": 23,
+        "number_operands": 45,
+        "number_operators_unique": 5,
+        "number_operands_unique": 13,
+        "cloc": 6,
+        "loc": 73,
+        "lloc": 67,
+        "mi": 64.07,
+        "mIwoC": 42.59,
+        "commentWeight": 21.48,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 4.31,
+        "relativeSystemComplexity": 5.31,
+        "totalStructuralComplexity": 13,
+        "totalDataComplexity": 56,
+        "totalSystemComplexity": 69,
+        "package": "Sabberworm\\CSS\\Property\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Property\\Charset": {
+        "name": "Sabberworm\\CSS\\Property\\Charset",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLineNo",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCharset",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCharset",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleArgs",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addComments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getComments",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setComments",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 2,
+        "wmc": 11,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Sabberworm\\CSS\\Property\\AtRule",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 43,
+        "vocabulary": 12,
+        "volume": 154.15,
+        "difficulty": 3,
+        "effort": 462.46,
+        "level": 0.33,
+        "bugs": 0.05,
+        "time": 26,
+        "intelligentContent": 51.38,
+        "number_operators": 13,
+        "number_operands": 30,
+        "number_operators_unique": 2,
+        "number_operands_unique": 10,
+        "cloc": 10,
+        "loc": 63,
+        "lloc": 53,
+        "mi": 75.87,
+        "mIwoC": 46.93,
+        "commentWeight": 28.94,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 3.77,
+        "relativeSystemComplexity": 4.77,
+        "totalStructuralComplexity": 11,
+        "totalDataComplexity": 41.5,
+        "totalSystemComplexity": 52.5,
+        "package": "Sabberworm\\CSS\\Property\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\RuleSet\\DeclarationBlock": {
+        "name": "Sabberworm\\CSS\\RuleSet\\DeclarationBlock",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setSelectors",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeSelector",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSelector",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setSelector",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSelectors",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expandShorthands",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createShorthands",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expandBorderShorthand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expandDimensionsShorthand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expandFontShorthand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expandBackgroundShorthand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expandListStyleShorthand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createShorthandProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createBackgroundShorthand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createListStyleShorthand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createBorderShorthand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createDimensionsShorthand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createFontShorthand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 22,
+        "nbMethods": 21,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 21,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 132,
+        "ccn": 111,
+        "ccnMethodMax": 18,
+        "externals": [
+            "Sabberworm\\CSS\\RuleSet\\RuleSet",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\RuleSet\\DeclarationBlock",
+            "Sabberworm\\CSS\\RuleSet\\RuleSet",
+            "Sabberworm\\CSS\\Property\\Selector",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Property\\Selector",
+            "Sabberworm\\CSS\\Property\\KeyframeSelector",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Property\\KeyframeSelector",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Value\\RuleValueList",
+            "Sabberworm\\CSS\\Value\\RuleValueList",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\Parsing\\OutputException"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\RuleSet\\RuleSet"
+        ],
+        "lcom": 2,
+        "length": 1181,
+        "vocabulary": 166,
+        "volume": 8709.92,
+        "difficulty": 37.73,
+        "effort": 328586.06,
+        "level": 0.03,
+        "bugs": 2.9,
+        "time": 18255,
+        "intelligentContent": 230.88,
+        "number_operators": 293,
+        "number_operands": 888,
+        "number_operators_unique": 13,
+        "number_operands_unique": 153,
+        "cloc": 57,
+        "loc": 627,
+        "lloc": 570,
+        "mi": 22.51,
+        "mIwoC": 0,
+        "commentWeight": 22.51,
+        "kanDefect": 11.11,
+        "relativeStructuralComplexity": 1936,
+        "relativeDataComplexity": 0.32,
+        "relativeSystemComplexity": 1936.32,
+        "totalStructuralComplexity": 42592,
+        "totalDataComplexity": 7.09,
+        "totalSystemComplexity": 42599.09,
+        "package": "Sabberworm\\CSS\\RuleSet\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 3,
+        "efferentCoupling": 12,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\RuleSet\\": {
+        "name": "Sabberworm\\CSS\\RuleSet\\",
+        "classes": [
+            "Sabberworm\\CSS\\RuleSet\\DeclarationBlock",
+            "Sabberworm\\CSS\\RuleSet\\AtRuleSet",
+            "Sabberworm\\CSS\\RuleSet\\RuleSet"
+        ],
+        "incoming_class_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\CSSList"
+        ],
+        "incoming_package_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Property\\Selector",
+            "Sabberworm\\CSS\\Parsing\\UnexpectedTokenException",
+            "Sabberworm\\CSS\\Property\\KeyframeSelector",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Value\\Size",
+            "Sabberworm\\CSS\\Value\\RuleValueList",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\Parsing\\OutputException",
+            "Sabberworm\\CSS\\Property\\AtRule",
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Comment\\Commentable"
+        ],
+        "outgoing_package_dependencies": [
+            "Sabberworm\\CSS\\Parsing\\",
+            "Sabberworm\\CSS\\Property\\",
+            "Sabberworm\\CSS\\Rule\\",
+            "Sabberworm\\CSS\\Value\\",
+            "Sabberworm\\CSS\\",
+            "Sabberworm\\CSS\\Comment\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.9230769230769231,
+        "dependent_instabilities": {
+            "Sabberworm\\CSS\\Parsing\\": 0.1875,
+            "Sabberworm\\CSS\\Property\\": 0.4444444444444444,
+            "Sabberworm\\CSS\\Rule\\": 0.75,
+            "Sabberworm\\CSS\\Value\\": 0.5555555555555556,
+            "Sabberworm\\CSS\\": 0.11538461538461539,
+            "Sabberworm\\CSS\\Comment\\": 0.2857142857142857
+        },
+        "distance": 0.1813094310734737,
+        "normalized_distance": 0.2564102564102564,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Sabberworm\\CSS\\RuleSet\\AtRuleSet": {
+        "name": "Sabberworm\\CSS\\RuleSet\\AtRuleSet",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "atRuleArgs",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Sabberworm\\CSS\\RuleSet\\RuleSet",
+            "Sabberworm\\CSS\\Property\\AtRule",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [
+            "Sabberworm\\CSS\\RuleSet\\RuleSet"
+        ],
+        "lcom": 1,
+        "length": 45,
+        "vocabulary": 18,
+        "volume": 187.65,
+        "difficulty": 6.15,
+        "effort": 1154.75,
+        "level": 0.16,
+        "bugs": 0.06,
+        "time": 64,
+        "intelligentContent": 30.49,
+        "number_operators": 13,
+        "number_operands": 32,
+        "number_operators_unique": 5,
+        "number_operands_unique": 13,
+        "cloc": 3,
+        "loc": 38,
+        "lloc": 35,
+        "mi": 71.21,
+        "mIwoC": 50.13,
+        "commentWeight": 21.08,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.2,
+        "relativeSystemComplexity": 10.2,
+        "totalStructuralComplexity": 45,
+        "totalDataComplexity": 6,
+        "totalSystemComplexity": 51,
+        "package": "Sabberworm\\CSS\\RuleSet\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\RuleSet\\RuleSet": {
+        "name": "Sabberworm\\CSS\\RuleSet\\RuleSet",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseRuleSet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLineNo",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addRule",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRules",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRules",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRulesAssoc",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeRule",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addComments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getComments",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setComments",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 48,
+        "ccn": 36,
+        "ccnMethodMax": 11,
+        "externals": [
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\Comment\\Commentable",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\RuleSet\\RuleSet",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 259,
+        "vocabulary": 40,
+        "volume": 1378.38,
+        "difficulty": 33.95,
+        "effort": 46793.6,
+        "level": 0.03,
+        "bugs": 0.46,
+        "time": 2600,
+        "intelligentContent": 40.6,
+        "number_operators": 80,
+        "number_operands": 179,
+        "number_operators_unique": 11,
+        "number_operands_unique": 29,
+        "cloc": 42,
+        "loc": 197,
+        "lloc": 155,
+        "mi": 58.19,
+        "mIwoC": 25.4,
+        "commentWeight": 32.79,
+        "kanDefect": 3.5,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.55,
+        "relativeSystemComplexity": 289.55,
+        "totalStructuralComplexity": 3757,
+        "totalDataComplexity": 7.17,
+        "totalSystemComplexity": 3764.17,
+        "package": "Sabberworm\\CSS\\RuleSet\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 5,
+        "efferentCoupling": 7,
+        "instability": 0.58,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Comment\\Commentable": {
+        "name": "Sabberworm\\CSS\\Comment\\Commentable",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "addComments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getComments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setComments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Sabberworm\\CSS\\Comment\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 4,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Sabberworm\\CSS\\Comment\\": {
+        "name": "Sabberworm\\CSS\\Comment\\",
+        "classes": [
+            "Sabberworm\\CSS\\Comment\\Commentable",
+            "Sabberworm\\CSS\\Comment\\Comment"
+        ],
+        "incoming_class_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\CSSList",
+            "Sabberworm\\CSS\\Rule\\Rule",
+            "Sabberworm\\CSS\\Parsing\\ParserState",
+            "Sabberworm\\CSS\\Property\\AtRule",
+            "Sabberworm\\CSS\\RuleSet\\RuleSet"
+        ],
+        "incoming_package_dependencies": [
+            "Sabberworm\\CSS\\CSSList\\",
+            "Sabberworm\\CSS\\Rule\\",
+            "Sabberworm\\CSS\\Parsing\\",
+            "Sabberworm\\CSS\\Property\\",
+            "Sabberworm\\CSS\\RuleSet\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "outgoing_package_dependencies": [
+            "Sabberworm\\CSS\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.2857142857142857,
+        "dependent_instabilities": {
+            "Sabberworm\\CSS\\": 0.11538461538461539
+        },
+        "distance": 0.15152288168283162,
+        "normalized_distance": 0.2142857142857143,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Sabberworm\\CSS\\Comment\\Comment": {
+        "name": "Sabberworm\\CSS\\Comment\\Comment",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getComment",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLineNo",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setComment",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 6,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Sabberworm\\CSS\\Renderable",
+            "Sabberworm\\CSS\\OutputFormat",
+            "Sabberworm\\CSS\\OutputFormat"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 27,
+        "vocabulary": 11,
+        "volume": 93.4,
+        "difficulty": 3.38,
+        "effort": 315.24,
+        "level": 0.3,
+        "bugs": 0.03,
+        "time": 18,
+        "intelligentContent": 27.68,
+        "number_operators": 9,
+        "number_operands": 18,
+        "number_operators_unique": 3,
+        "number_operands_unique": 8,
+        "cloc": 16,
+        "loc": 46,
+        "lloc": 31,
+        "mi": 93.12,
+        "mIwoC": 53.54,
+        "commentWeight": 39.59,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.33,
+        "relativeSystemComplexity": 3.33,
+        "totalStructuralComplexity": 6,
+        "totalDataComplexity": 14,
+        "totalSystemComplexity": 20,
+        "package": "Sabberworm\\CSS\\Comment\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Sabberworm\\CSS\\Settings": {
+        "name": "Sabberworm\\CSS\\Settings",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withMultibyteSupport",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withDefaultCharset",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withLenientParsing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "beStrict",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 6,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Sabberworm\\CSS\\Settings"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 25,
+        "vocabulary": 8,
+        "volume": 75,
+        "difficulty": 2.67,
+        "effort": 200,
+        "level": 0.38,
+        "bugs": 0.03,
+        "time": 11,
+        "intelligentContent": 28.13,
+        "number_operators": 9,
+        "number_operands": 16,
+        "number_operators_unique": 2,
+        "number_operands_unique": 6,
+        "cloc": 14,
+        "loc": 48,
+        "lloc": 34,
+        "mi": 90.45,
+        "mIwoC": 53.33,
+        "commentWeight": 37.12,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.75,
+        "relativeSystemComplexity": 3.75,
+        "totalStructuralComplexity": 6,
+        "totalDataComplexity": 16.5,
+        "totalSystemComplexity": 22.5,
+        "package": "Sabberworm\\CSS\\",
+        "pageRank": 0.3,
+        "afferentCoupling": 4,
+        "efferentCoupling": 2,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.71,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.3.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

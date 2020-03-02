@@ -1,0 +1,283 @@
+{
+    "Behat\\Transliterator\\SyncTool": {
+        "name": "Behat\\Transliterator\\SyncTool",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUpDefinition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "performAction",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removePhpCharTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "pushItem",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "tokenizePerlTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parsePerlTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPerlTablesUrlList",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 25,
+        "ccn": 18,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Yaoi\\Command",
+            "Yaoi\\String\\Lexer\\Parser",
+            "Yaoi\\String\\Lexer\\Renderer",
+            "Yaoi\\Command\\Definition",
+            "RollingCurl\\RollingCurl",
+            "Yaoi\\String\\StringValue",
+            "Yaoi\\String\\Parser",
+            "Exception",
+            "Yaoi\\Http\\Client",
+            "Yaoi\\String\\Parser"
+        ],
+        "parents": [
+            "Yaoi\\Command"
+        ],
+        "lcom": 2,
+        "length": 311,
+        "vocabulary": 93,
+        "volume": 2033.68,
+        "difficulty": 12.11,
+        "effort": 24622.03,
+        "level": 0.08,
+        "bugs": 0.68,
+        "time": 1368,
+        "intelligentContent": 167.97,
+        "number_operators": 85,
+        "number_operands": 226,
+        "number_operators_unique": 9,
+        "number_operands_unique": 84,
+        "cloc": 8,
+        "loc": 156,
+        "lloc": 147,
+        "mi": 44.32,
+        "mIwoC": 27.14,
+        "commentWeight": 17.18,
+        "kanDefect": 1.75,
+        "relativeStructuralComplexity": 841,
+        "relativeDataComplexity": 0.13,
+        "relativeSystemComplexity": 841.13,
+        "totalStructuralComplexity": 6728,
+        "totalDataComplexity": 1.03,
+        "totalSystemComplexity": 6729.03,
+        "package": "Behat\\Transliterator\\",
+        "pageRank": 0.5,
+        "afferentCoupling": 0,
+        "efferentCoupling": 9,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Behat\\Transliterator\\": {
+        "name": "Behat\\Transliterator\\",
+        "classes": [
+            "Behat\\Transliterator\\SyncTool",
+            "Behat\\Transliterator\\Transliterator"
+        ],
+        "outgoing_class_dependencies": [
+            "Yaoi\\Command",
+            "Yaoi\\String\\Lexer\\Parser",
+            "Yaoi\\String\\Lexer\\Renderer",
+            "Yaoi\\Command\\Definition",
+            "RollingCurl\\RollingCurl",
+            "Yaoi\\String\\StringValue",
+            "Yaoi\\String\\Parser",
+            "Exception",
+            "Yaoi\\Http\\Client"
+        ],
+        "outgoing_package_dependencies": [
+            "Yaoi\\",
+            "Yaoi\\String\\Lexer\\",
+            "Yaoi\\Command\\",
+            "RollingCurl\\",
+            "Yaoi\\String\\",
+            "\\",
+            "Yaoi\\Http\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Behat\\Transliterator\\Transliterator": {
+        "name": "Behat\\Transliterator\\Transliterator",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "seemsUtf8",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unaccent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "utf8ToAscii",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "urlize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "transliterate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validUtf8",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postProcessText",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 60,
+        "ccn": 54,
+        "ccnMethodMax": 20,
+        "externals": [],
+        "parents": [],
+        "lcom": 7,
+        "length": 1603,
+        "vocabulary": 287,
+        "volume": 13088.35,
+        "difficulty": 43.34,
+        "effort": 567276.46,
+        "level": 0.02,
+        "bugs": 4.36,
+        "time": 31515,
+        "intelligentContent": 301.98,
+        "number_operators": 505,
+        "number_operands": 1098,
+        "number_operators_unique": 21,
+        "number_operands_unique": 266,
+        "cloc": 155,
+        "loc": 540,
+        "lloc": 385,
+        "mi": 44.41,
+        "mIwoC": 7.51,
+        "commentWeight": 36.9,
+        "kanDefect": 1.92,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 7.79,
+        "relativeSystemComplexity": 8.79,
+        "totalStructuralComplexity": 7,
+        "totalDataComplexity": 54.5,
+        "totalSystemComplexity": 61.5,
+        "package": "Behat\\Transliterator\\",
+        "pageRank": 0.5,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.3.3",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

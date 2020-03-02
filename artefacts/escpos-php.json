@@ -1,0 +1,3239 @@
+{
+    "item": {
+        "name": "item",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAsString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 58,
+        "vocabulary": 24,
+        "volume": 265.93,
+        "difficulty": 6.83,
+        "effort": 1817.17,
+        "level": 0.15,
+        "bugs": 0.09,
+        "time": 101,
+        "intelligentContent": 38.92,
+        "number_operators": 17,
+        "number_operands": 41,
+        "number_operators_unique": 6,
+        "number_operands_unique": 18,
+        "cloc": 1,
+        "loc": 30,
+        "lloc": 29,
+        "mi": 64.67,
+        "mIwoC": 50.72,
+        "commentWeight": 13.95,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.67,
+        "relativeSystemComplexity": 2.67,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 8,
+        "package": "\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "\\": {
+        "name": "\\",
+        "classes": [
+            "item",
+            "item"
+        ],
+        "incoming_class_dependencies": [
+            "Mike42\\Escpos\\CapabilityProfile",
+            "Mike42\\Escpos\\PrintBuffers\\ImagePrintBuffer",
+            "Mike42\\Escpos\\PrintBuffers\\EscposPrintBuffer",
+            "Mike42\\Escpos\\ImagickEscposImage",
+            "Mike42\\Escpos\\Experimental\\Unifont\\UnifontPrintBuffer",
+            "Mike42\\Escpos\\Experimental\\Unifont\\FontMap",
+            "Mike42\\Escpos\\CodePage",
+            "Mike42\\Escpos\\Printer",
+            "Mike42\\Escpos\\GdEscposImage",
+            "Mike42\\Escpos\\EscposImage",
+            "Mike42\\Escpos\\PrintConnectors\\WindowsPrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\FilePrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\CupsPrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\UriPrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\NetworkPrintConnector"
+        ],
+        "incoming_package_dependencies": [
+            "Mike42\\Escpos\\",
+            "Mike42\\Escpos\\PrintBuffers\\",
+            "Mike42\\Escpos\\Experimental\\Unifont\\",
+            "Mike42\\Escpos\\PrintConnectors\\"
+        ],
+        "abstraction": 0,
+        "instability": 0,
+        "dependent_instabilities": [],
+        "distance": 0.7071067811865475,
+        "normalized_distance": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "title": {
+        "name": "title",
+        "cloc": 0,
+        "loc": 7,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "compactCharTable": {
+        "name": "compactCharTable",
+        "cloc": 1,
+        "loc": 20,
+        "lloc": 19,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Mike42\\Escpos\\CapabilityProfile": {
+        "name": "Mike42\\Escpos\\CapabilityProfile",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCodePageCacheKey",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCodePages",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFeature",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportsBarcodeB",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportsBitImageRaster",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportsGraphics",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportsPdf417Code",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportsQrCode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportsStarCommands",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getVendor",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "suggestFeatureName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProfileNames",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadCapabilitiesDataFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "suggestNearest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "suggestProfileName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 19,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 5,
+        "nbMethodsSetters": 0,
+        "wmc": 26,
+        "ccn": 8,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Mike42\\Escpos\\CodePage",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "Mike42\\Escpos\\CapabilityProfile"
+        ],
+        "parents": [],
+        "lcom": 6,
+        "length": 185,
+        "vocabulary": 55,
+        "volume": 1069.55,
+        "difficulty": 6.55,
+        "effort": 7005.56,
+        "level": 0.15,
+        "bugs": 0.36,
+        "time": 389,
+        "intelligentContent": 163.29,
+        "number_operators": 54,
+        "number_operands": 131,
+        "number_operators_unique": 5,
+        "number_operands_unique": 50,
+        "cloc": 163,
+        "loc": 297,
+        "lloc": 134,
+        "mi": 76.9,
+        "mIwoC": 31.31,
+        "commentWeight": 45.59,
+        "kanDefect": 1.12,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 4.37,
+        "relativeSystemComplexity": 13.37,
+        "totalStructuralComplexity": 171,
+        "totalDataComplexity": 83,
+        "totalSystemComplexity": 254,
+        "package": "Mike42\\Escpos\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 3,
+        "efferentCoupling": 4,
+        "instability": 0.57,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\": {
+        "name": "Mike42\\Escpos\\",
+        "classes": [
+            "Mike42\\Escpos\\CapabilityProfile",
+            "Mike42\\Escpos\\ImagickEscposImage",
+            "Mike42\\Escpos\\CodePage",
+            "Mike42\\Escpos\\Printer",
+            "Mike42\\Escpos\\NativeEscposImage",
+            "Mike42\\Escpos\\GdEscposImage",
+            "Mike42\\Escpos\\EscposImage"
+        ],
+        "outgoing_class_dependencies": [
+            "InvalidArgumentException",
+            "Imagick",
+            "Exception",
+            "UConverter",
+            "IntlChar",
+            "IntlBreakIterator",
+            "Mike42\\Escpos\\PrintConnectors\\PrintConnector",
+            "Mike42\\Escpos\\PrintBuffers\\EscposPrintBuffer",
+            "Mike42\\Escpos\\PrintBuffers\\PrintBuffer",
+            "Mike42\\GfxPhp\\Image"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Mike42\\Escpos\\PrintConnectors\\",
+            "Mike42\\Escpos\\PrintBuffers\\",
+            "Mike42\\GfxPhp\\"
+        ],
+        "incoming_class_dependencies": [
+            "Mike42\\Escpos\\PrintBuffers\\PrintBuffer",
+            "Mike42\\Escpos\\PrintBuffers\\ImagePrintBuffer",
+            "Mike42\\Escpos\\PrintBuffers\\EscposPrintBuffer",
+            "Mike42\\Escpos\\Experimental\\Unifont\\UnifontPrintBuffer",
+            "Mike42\\Escpos\\Experimental\\Unifont\\FontMap",
+            "Mike42\\Escpos\\Devices\\AuresCustomerDisplay"
+        ],
+        "incoming_package_dependencies": [
+            "Mike42\\Escpos\\PrintBuffers\\",
+            "Mike42\\Escpos\\Experimental\\Unifont\\",
+            "Mike42\\Escpos\\Devices\\"
+        ],
+        "abstraction": 0.14285714285714285,
+        "instability": 0.625,
+        "dependent_instabilities": {
+            "\\": 0,
+            "Mike42\\Escpos\\PrintConnectors\\": 0.75,
+            "Mike42\\Escpos\\PrintBuffers\\": 0.8333333333333334
+        },
+        "distance": 0.16414978848973427,
+        "normalized_distance": 0.2321428571428572,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Mike42\\Escpos\\PrintBuffers\\PrintBuffer": {
+        "name": "Mike42\\Escpos\\PrintBuffers\\PrintBuffer",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "flush",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrinter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrinter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeTextRaw",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Mike42\\Escpos\\Printer"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Mike42\\Escpos\\PrintBuffers\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 4,
+        "efferentCoupling": 1,
+        "instability": 0.2,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Mike42\\Escpos\\PrintBuffers\\": {
+        "name": "Mike42\\Escpos\\PrintBuffers\\",
+        "classes": [
+            "Mike42\\Escpos\\PrintBuffers\\PrintBuffer",
+            "Mike42\\Escpos\\PrintBuffers\\ImagePrintBuffer",
+            "Mike42\\Escpos\\PrintBuffers\\EscposPrintBuffer"
+        ],
+        "outgoing_class_dependencies": [
+            "Mike42\\Escpos\\Printer",
+            "Mike42\\Escpos\\EscposImage",
+            "Exception",
+            "LogicException",
+            "Imagick",
+            "ImagickDraw",
+            "ImagickPixel",
+            "Mike42\\Escpos\\ImagickEscposImage",
+            "Normalizer",
+            "IntlBreakIterator"
+        ],
+        "outgoing_package_dependencies": [
+            "Mike42\\Escpos\\",
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "Mike42\\Escpos\\Experimental\\Unifont\\UnifontPrintBuffer",
+            "Mike42\\Escpos\\Printer"
+        ],
+        "incoming_package_dependencies": [
+            "Mike42\\Escpos\\Experimental\\Unifont\\",
+            "Mike42\\Escpos\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.8333333333333334,
+        "dependent_instabilities": {
+            "Mike42\\Escpos\\": 0.625,
+            "\\": 0
+        },
+        "distance": 0.11785113019775796,
+        "normalized_distance": 0.16666666666666674,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Mike42\\Escpos\\PrintBuffers\\ImagePrintBuffer": {
+        "name": "Mike42\\Escpos\\PrintBuffers\\ImagePrintBuffer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flush",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrinter",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrinter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeTextRaw",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFont",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFontSize",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 2,
+        "wmc": 14,
+        "ccn": 7,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Mike42\\Escpos\\PrintBuffers\\PrintBuffer",
+            "Mike42\\Escpos\\EscposImage",
+            "Exception",
+            "LogicException",
+            "Mike42\\Escpos\\Printer",
+            "LogicException",
+            "Imagick",
+            "ImagickDraw",
+            "ImagickPixel",
+            "ImagickPixel",
+            "Mike42\\Escpos\\ImagickEscposImage",
+            "LogicException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 95,
+        "vocabulary": 28,
+        "volume": 456.7,
+        "difficulty": 7.5,
+        "effort": 3425.24,
+        "level": 0.13,
+        "bugs": 0.15,
+        "time": 190,
+        "intelligentContent": 60.89,
+        "number_operators": 26,
+        "number_operands": 69,
+        "number_operators_unique": 5,
+        "number_operands_unique": 23,
+        "cloc": 29,
+        "loc": 103,
+        "lloc": 74,
+        "mi": 76.29,
+        "mIwoC": 39.66,
+        "commentWeight": 36.63,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 0.16,
+        "relativeSystemComplexity": 225.16,
+        "totalStructuralComplexity": 1800,
+        "totalDataComplexity": 1.31,
+        "totalSystemComplexity": 1801.31,
+        "package": "Mike42\\Escpos\\PrintBuffers\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 9,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\PrintBuffers\\EscposPrintBuffer": {
+        "name": "Mike42\\Escpos\\PrintBuffers\\EscposPrintBuffer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flush",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrinter",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrinter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeTextRaw",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "identifyText",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadAvailableCharacters",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeTextUsingEncoding",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "asciiCheck",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 52,
+        "ccn": 42,
+        "ccnMethodMax": 15,
+        "externals": [
+            "Mike42\\Escpos\\PrintBuffers\\PrintBuffer",
+            "LogicException",
+            "Mike42\\Escpos\\Printer",
+            "LogicException",
+            "Normalizer",
+            "Exception",
+            "IntlBreakIterator",
+            "LogicException"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 365,
+        "vocabulary": 69,
+        "volume": 2229.61,
+        "difficulty": 32.92,
+        "effort": 73391.38,
+        "level": 0.03,
+        "bugs": 0.74,
+        "time": 4077,
+        "intelligentContent": 67.74,
+        "number_operators": 128,
+        "number_operands": 237,
+        "number_operators_unique": 15,
+        "number_operands_unique": 54,
+        "cloc": 79,
+        "loc": 262,
+        "lloc": 183,
+        "mi": 59.14,
+        "mIwoC": 21.55,
+        "commentWeight": 37.59,
+        "kanDefect": 2.29,
+        "relativeStructuralComplexity": 361,
+        "relativeDataComplexity": 0.54,
+        "relativeSystemComplexity": 361.54,
+        "totalStructuralComplexity": 3971,
+        "totalDataComplexity": 5.95,
+        "totalSystemComplexity": 3976.95,
+        "package": "Mike42\\Escpos\\PrintBuffers\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\ImagickEscposImage": {
+        "name": "Mike42\\Escpos\\ImagickEscposImage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "readImageFromImagick",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumnFormatFromFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadImageData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumnFormatFromImage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getImageFromFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRasterBlobFromImage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRasterFormatFromFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadPdf",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alphaRemove",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 7,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 23,
+        "ccn": 15,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Mike42\\Escpos\\EscposImage",
+            "Imagick",
+            "Imagick",
+            "Imagick",
+            "Exception",
+            "Imagick",
+            "Mike42\\Escpos\\EscposImage",
+            "Exception",
+            "Imagick",
+            "Mike42\\Escpos\\ImagickEscposImage",
+            "Exception",
+            "Imagick",
+            "Imagick"
+        ],
+        "parents": [
+            "Mike42\\Escpos\\EscposImage"
+        ],
+        "lcom": 3,
+        "length": 360,
+        "vocabulary": 77,
+        "volume": 2256.04,
+        "difficulty": 34.1,
+        "effort": 76927.37,
+        "level": 0.03,
+        "bugs": 0.75,
+        "time": 4274,
+        "intelligentContent": 66.16,
+        "number_operators": 100,
+        "number_operands": 260,
+        "number_operators_unique": 16,
+        "number_operands_unique": 61,
+        "cloc": 109,
+        "loc": 252,
+        "lloc": 143,
+        "mi": 70.06,
+        "mIwoC": 27.49,
+        "commentWeight": 42.58,
+        "kanDefect": 0.73,
+        "relativeStructuralComplexity": 1156,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 1156.38,
+        "totalStructuralComplexity": 10404,
+        "totalDataComplexity": 3.43,
+        "totalSystemComplexity": 10407.43,
+        "package": "Mike42\\Escpos\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 4,
+        "efferentCoupling": 5,
+        "instability": 0.56,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\Experimental\\Unifont\\UnifontPrintBuffer": {
+        "name": "Mike42\\Escpos\\Experimental\\Unifont\\UnifontPrintBuffer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeChar",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flush",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrinter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeTextRaw",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrinter",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 7,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Mike42\\Escpos\\PrintBuffers\\PrintBuffer",
+            "Exception",
+            "Mike42\\Escpos\\Experimental\\Unifont\\UnifontGlyphFactory",
+            "Normalizer",
+            "Exception",
+            "IntlBreakIterator",
+            "Mike42\\Escpos\\Printer",
+            "Mike42\\Escpos\\Experimental\\Unifont\\FontMap"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 82,
+        "vocabulary": 27,
+        "volume": 389.9,
+        "difficulty": 13.75,
+        "effort": 5361.14,
+        "level": 0.07,
+        "bugs": 0.13,
+        "time": 298,
+        "intelligentContent": 28.36,
+        "number_operators": 27,
+        "number_operands": 55,
+        "number_operators_unique": 9,
+        "number_operands_unique": 18,
+        "cloc": 11,
+        "loc": 77,
+        "lloc": 66,
+        "mi": 68.86,
+        "mIwoC": 41.23,
+        "commentWeight": 27.63,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.18,
+        "relativeSystemComplexity": 81.18,
+        "totalStructuralComplexity": 648,
+        "totalDataComplexity": 1.4,
+        "totalSystemComplexity": 649.4,
+        "package": "Mike42\\Escpos\\Experimental\\Unifont\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\Experimental\\Unifont\\": {
+        "name": "Mike42\\Escpos\\Experimental\\Unifont\\",
+        "classes": [
+            "Mike42\\Escpos\\Experimental\\Unifont\\UnifontPrintBuffer",
+            "Mike42\\Escpos\\Experimental\\Unifont\\ColumnFormatGlyphFactory",
+            "Mike42\\Escpos\\Experimental\\Unifont\\ColumnFormatGlyph",
+            "Mike42\\Escpos\\Experimental\\Unifont\\UnifontGlyphFactory",
+            "Mike42\\Escpos\\Experimental\\Unifont\\FontMap"
+        ],
+        "outgoing_class_dependencies": [
+            "Mike42\\Escpos\\PrintBuffers\\PrintBuffer",
+            "Exception",
+            "Normalizer",
+            "IntlBreakIterator",
+            "Mike42\\Escpos\\Printer",
+            "InvalidArgumentException"
+        ],
+        "outgoing_package_dependencies": [
+            "Mike42\\Escpos\\PrintBuffers\\",
+            "\\",
+            "Mike42\\Escpos\\"
+        ],
+        "abstraction": 0.2,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Mike42\\Escpos\\PrintBuffers\\": 0.8333333333333334,
+            "\\": 0,
+            "Mike42\\Escpos\\": 0.625
+        },
+        "distance": 0.14142135623730948,
+        "normalized_distance": 0.19999999999999996,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Mike42\\Escpos\\Experimental\\Unifont\\ColumnFormatGlyphFactory": {
+        "name": "Mike42\\Escpos\\Experimental\\Unifont\\ColumnFormatGlyphFactory",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getGlyph",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Mike42\\Escpos\\Experimental\\Unifont\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Mike42\\Escpos\\Experimental\\Unifont\\ColumnFormatGlyph": {
+        "name": "Mike42\\Escpos\\Experimental\\Unifont\\ColumnFormatGlyph",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "segment",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Mike42\\Escpos\\Experimental\\Unifont\\ColumnFormatGlyph"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 32,
+        "vocabulary": 13,
+        "volume": 118.41,
+        "difficulty": 8.57,
+        "effort": 1014.98,
+        "level": 0.12,
+        "bugs": 0.04,
+        "time": 56,
+        "intelligentContent": 13.81,
+        "number_operators": 12,
+        "number_operands": 20,
+        "number_operators_unique": 6,
+        "number_operands_unique": 7,
+        "cloc": 0,
+        "loc": 21,
+        "lloc": 21,
+        "mi": 56.24,
+        "mIwoC": 56.24,
+        "commentWeight": 0,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Mike42\\Escpos\\Experimental\\Unifont\\",
+        "pageRank": 0.71,
+        "afferentCoupling": 3,
+        "efferentCoupling": 2,
+        "instability": 0.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\Experimental\\Unifont\\UnifontGlyphFactory": {
+        "name": "Mike42\\Escpos\\Experimental\\Unifont\\UnifontGlyphFactory",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "colFormat16",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "colFormat8",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getGlyph",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 9,
+        "ccn": 6,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Mike42\\Escpos\\Experimental\\Unifont\\ColumnFormatGlyphFactory",
+            "Mike42\\Escpos\\Experimental\\Unifont\\UnifontGlyphFactory",
+            "Mike42\\Escpos\\Experimental\\Unifont\\UnifontGlyphFactory",
+            "Mike42\\Escpos\\Experimental\\Unifont\\UnifontGlyphFactory",
+            "Mike42\\Escpos\\Experimental\\Unifont\\UnifontGlyphFactory",
+            "Mike42\\Escpos\\Experimental\\Unifont\\ColumnFormatGlyph"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 1486,
+        "vocabulary": 57,
+        "volume": 8667.67,
+        "difficulty": 178.29,
+        "effort": 1545338.03,
+        "level": 0.01,
+        "bugs": 2.89,
+        "time": 85852,
+        "intelligentContent": 48.62,
+        "number_operators": 647,
+        "number_operands": 839,
+        "number_operators_unique": 17,
+        "number_operands_unique": 40,
+        "cloc": 6,
+        "loc": 56,
+        "lloc": 50,
+        "mi": 58.84,
+        "mIwoC": 34.56,
+        "commentWeight": 24.28,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.25,
+        "relativeSystemComplexity": 3.25,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 9,
+        "totalSystemComplexity": 13,
+        "package": "Mike42\\Escpos\\Experimental\\Unifont\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 3,
+        "efferentCoupling": 4,
+        "instability": 0.57,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\Experimental\\Unifont\\FontMap": {
+        "name": "Mike42\\Escpos\\Experimental\\Unifont\\FontMap",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cacheChars",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeChar",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "occupied",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "evict",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addChar",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitCharsToPrinterFont",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 15,
+        "ccn": 8,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Mike42\\Escpos\\Experimental\\Unifont\\ColumnFormatGlyphFactory",
+            "Mike42\\Escpos\\Printer",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 154,
+        "vocabulary": 38,
+        "volume": 808.18,
+        "difficulty": 18.93,
+        "effort": 15297.71,
+        "level": 0.05,
+        "bugs": 0.27,
+        "time": 850,
+        "intelligentContent": 42.7,
+        "number_operators": 48,
+        "number_operands": 106,
+        "number_operators_unique": 10,
+        "number_operands_unique": 28,
+        "cloc": 11,
+        "loc": 96,
+        "lloc": 85,
+        "mi": 61.51,
+        "mIwoC": 36.48,
+        "commentWeight": 25.03,
+        "kanDefect": 0.73,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.71,
+        "relativeSystemComplexity": 81.71,
+        "totalStructuralComplexity": 648,
+        "totalDataComplexity": 5.7,
+        "totalSystemComplexity": 653.7,
+        "package": "Mike42\\Escpos\\Experimental\\Unifont\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\CodePage": {
+        "name": "Mike42\\Escpos\\CodePage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIconv",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNotes",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEncodable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateEncodingArray",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "encodingArrayFromData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 0,
+        "wmc": 21,
+        "ccn": 13,
+        "ccnMethodMax": 5,
+        "externals": [
+            "InvalidArgumentException",
+            "UConverter",
+            "IntlChar",
+            "IntlBreakIterator"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 147,
+        "vocabulary": 40,
+        "volume": 782.32,
+        "difficulty": 23.59,
+        "effort": 18457.04,
+        "level": 0.04,
+        "bugs": 0.26,
+        "time": 1025,
+        "intelligentContent": 33.16,
+        "number_operators": 49,
+        "number_operands": 98,
+        "number_operators_unique": 13,
+        "number_operands_unique": 27,
+        "cloc": 86,
+        "loc": 169,
+        "lloc": 83,
+        "mi": 80.81,
+        "mIwoC": 36.13,
+        "commentWeight": 44.68,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 1.05,
+        "relativeSystemComplexity": 65.05,
+        "totalStructuralComplexity": 576,
+        "totalDataComplexity": 9.44,
+        "totalSystemComplexity": 585.44,
+        "package": "Mike42\\Escpos\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\Printer": {
+        "name": "Mike42\\Escpos\\Printer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "barcode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "bitImage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "bitImageColumnFormat",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "close",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cut",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "feed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "feedForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "release",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "feedReverse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCharacterTable",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrintBuffer",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrintConnector",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrinterCapabilityProfile",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "graphics",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "pdf417Code",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "pulse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "qrCode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectCharacterTable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectPrintMode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectUserDefinedCharacterSet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBarcodeHeight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBarcodeWidth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBarcodeTextPosition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDoubleStrike",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEmphasis",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFont",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setJustification",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLineSpacing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrintLeftMargin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrintWidth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrintBuffer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setReverseColors",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTextSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUnderline",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUpsideDown",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "text",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "textChinese",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "textRaw",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wrapperSend2dCodeData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wrapperSendGraphicsData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "dataHeader",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "intLowHigh",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateBoolean",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateFloat",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateInteger",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateIntegerMulti",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateStringRegex",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 50,
+        "nbMethods": 46,
+        "nbMethodsPrivate": 9,
+        "nbMethodsPublic": 37,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 0,
+        "wmc": 106,
+        "ccn": 57,
+        "ccnMethodMax": 11,
+        "externals": [
+            "Mike42\\Escpos\\PrintConnectors\\PrintConnector",
+            "Mike42\\Escpos\\CapabilityProfile",
+            "Mike42\\Escpos\\CapabilityProfile",
+            "Mike42\\Escpos\\PrintBuffers\\EscposPrintBuffer",
+            "Mike42\\Escpos\\EscposImage",
+            "Mike42\\Escpos\\Printer",
+            "Mike42\\Escpos\\EscposImage",
+            "Mike42\\Escpos\\Printer",
+            "Mike42\\Escpos\\EscposImage",
+            "Mike42\\Escpos\\Printer",
+            "Exception",
+            "Exception",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "Mike42\\Escpos\\PrintBuffers\\PrintBuffer",
+            "InvalidArgumentException",
+            "UConverter",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "Mike42\\Escpos\\Printer",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 7,
+        "length": 1129,
+        "vocabulary": 236,
+        "volume": 8899.5,
+        "difficulty": 54.72,
+        "effort": 487014.76,
+        "level": 0.02,
+        "bugs": 2.97,
+        "time": 27056,
+        "intelligentContent": 162.63,
+        "number_operators": 245,
+        "number_operands": 884,
+        "number_operators_unique": 26,
+        "number_operands_unique": 210,
+        "cloc": 589,
+        "loc": 1075,
+        "lloc": 486,
+        "mi": 51.64,
+        "mIwoC": 6.07,
+        "commentWeight": 45.57,
+        "kanDefect": 2.74,
+        "relativeStructuralComplexity": 729,
+        "relativeDataComplexity": 0.49,
+        "relativeSystemComplexity": 729.49,
+        "totalStructuralComplexity": 36450,
+        "totalDataComplexity": 24.32,
+        "totalSystemComplexity": 36474.32,
+        "package": "Mike42\\Escpos\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 8,
+        "efferentCoupling": 10,
+        "instability": 0.56,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\Devices\\AuresCustomerDisplay": {
+        "name": "Mike42\\Escpos\\Devices\\AuresCustomerDisplay",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "initialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectEscposMode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectTextScrollMode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "showFirmwareVersion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selfTest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "showLogo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "text",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "feed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Mike42\\Escpos\\Printer"
+        ],
+        "parents": [
+            "Mike42\\Escpos\\Printer"
+        ],
+        "lcom": 1,
+        "length": 53,
+        "vocabulary": 27,
+        "volume": 252.01,
+        "difficulty": 6.71,
+        "effort": 1692.06,
+        "level": 0.15,
+        "bugs": 0.08,
+        "time": 94,
+        "intelligentContent": 37.53,
+        "number_operators": 6,
+        "number_operands": 47,
+        "number_operators_unique": 6,
+        "number_operands_unique": 21,
+        "cloc": 67,
+        "loc": 122,
+        "lloc": 55,
+        "mi": 90.28,
+        "mIwoC": 44.68,
+        "commentWeight": 45.6,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.04,
+        "relativeSystemComplexity": 49.04,
+        "totalStructuralComplexity": 441,
+        "totalDataComplexity": 0.38,
+        "totalSystemComplexity": 441.38,
+        "package": "Mike42\\Escpos\\Devices\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\Devices\\": {
+        "name": "Mike42\\Escpos\\Devices\\",
+        "classes": [
+            "Mike42\\Escpos\\Devices\\AuresCustomerDisplay"
+        ],
+        "outgoing_class_dependencies": [
+            "Mike42\\Escpos\\Printer"
+        ],
+        "outgoing_package_dependencies": [
+            "Mike42\\Escpos\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Mike42\\Escpos\\": 0.625
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Mike42\\Escpos\\NativeEscposImage": {
+        "name": "Mike42\\Escpos\\NativeEscposImage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "loadImageData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Mike42\\Escpos\\EscposImage",
+            "Mike42\\GfxPhp\\Image"
+        ],
+        "parents": [
+            "Mike42\\Escpos\\EscposImage"
+        ],
+        "lcom": 1,
+        "length": 52,
+        "vocabulary": 17,
+        "volume": 212.55,
+        "difficulty": 10.09,
+        "effort": 2144.8,
+        "level": 0.1,
+        "bugs": 0.07,
+        "time": 119,
+        "intelligentContent": 21.06,
+        "number_operators": 15,
+        "number_operands": 37,
+        "number_operators_unique": 6,
+        "number_operands_unique": 11,
+        "cloc": 3,
+        "loc": 22,
+        "lloc": 19,
+        "mi": 82.34,
+        "mIwoC": 55.27,
+        "commentWeight": 27.07,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.1,
+        "relativeSystemComplexity": 81.1,
+        "totalStructuralComplexity": 81,
+        "totalDataComplexity": 0.1,
+        "totalSystemComplexity": 81.1,
+        "package": "Mike42\\Escpos\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\GdEscposImage": {
+        "name": "Mike42\\Escpos\\GdEscposImage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "loadImageData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "readImageFromGdResource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 9,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Mike42\\Escpos\\EscposImage",
+            "Exception",
+            "Exception",
+            "Mike42\\Escpos\\EscposImage",
+            "Exception"
+        ],
+        "parents": [
+            "Mike42\\Escpos\\EscposImage"
+        ],
+        "lcom": 1,
+        "length": 106,
+        "vocabulary": 43,
+        "volume": 575.18,
+        "difficulty": 15.82,
+        "effort": 9097.49,
+        "level": 0.06,
+        "bugs": 0.19,
+        "time": 505,
+        "intelligentContent": 36.37,
+        "number_operators": 33,
+        "number_operands": 73,
+        "number_operators_unique": 13,
+        "number_operands_unique": 30,
+        "cloc": 21,
+        "loc": 68,
+        "lloc": 47,
+        "mi": 80.91,
+        "mIwoC": 42.99,
+        "commentWeight": 37.92,
+        "kanDefect": 0.51,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.29,
+        "relativeSystemComplexity": 36.29,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 0.57,
+        "totalSystemComplexity": 72.57,
+        "package": "Mike42\\Escpos\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\EscposImage": {
+        "name": "Mike42\\Escpos\\EscposImage",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHeight",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHeightBytes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidth",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidthBytes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toRasterFormat",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toColumnFormat",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadImageData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setImgData",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setImgWidth",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setImgHeight",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRasterFormatFromFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumnFormatFromFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRasterFormat",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumnFormat",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumnFormatLine",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isGdLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isImagickLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 19,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 6,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 3,
+        "wmc": 53,
+        "ccn": 35,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Exception",
+            "Exception",
+            "Exception",
+            "Mike42\\Escpos\\ImagickEscposImage",
+            "Mike42\\Escpos\\GdEscposImage",
+            "Mike42\\Escpos\\NativeEscposImage",
+            "InvalidArgumentException",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 4,
+        "length": 423,
+        "vocabulary": 75,
+        "volume": 2634.79,
+        "difficulty": 43.58,
+        "effort": 114821.39,
+        "level": 0.02,
+        "bugs": 0.88,
+        "time": 6379,
+        "intelligentContent": 60.46,
+        "number_operators": 147,
+        "number_operands": 276,
+        "number_operators_unique": 18,
+        "number_operands_unique": 57,
+        "cloc": 197,
+        "loc": 416,
+        "lloc": 219,
+        "mi": 64.05,
+        "mIwoC": 20.29,
+        "commentWeight": 43.77,
+        "kanDefect": 2.82,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 1.46,
+        "relativeSystemComplexity": 197.46,
+        "totalStructuralComplexity": 3724,
+        "totalDataComplexity": 27.67,
+        "totalSystemComplexity": 3751.67,
+        "package": "Mike42\\Escpos\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 5,
+        "efferentCoupling": 5,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\PrintConnectors\\WindowsPrintConnector": {
+        "name": "Mike42\\Escpos\\PrintConnectors\\WindowsPrintConnector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finalize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finalizeLinux",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finalizeMac",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finalizeWin",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentPlatform",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "runCommand",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "runCopy",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "runWrite",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 7,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 39,
+        "ccn": 28,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Mike42\\Escpos\\PrintConnectors\\PrintConnector",
+            "BadMethodCallException",
+            "BadMethodCallException",
+            "Exception",
+            "Exception",
+            "Exception",
+            "Exception",
+            "Exception",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 385,
+        "vocabulary": 74,
+        "volume": 2390.64,
+        "difficulty": 15.94,
+        "effort": 38105.35,
+        "level": 0.06,
+        "bugs": 0.8,
+        "time": 2117,
+        "intelligentContent": 149.98,
+        "number_operators": 122,
+        "number_operands": 263,
+        "number_operators_unique": 8,
+        "number_operands_unique": 66,
+        "cloc": 127,
+        "loc": 310,
+        "lloc": 183,
+        "mi": 65.07,
+        "mIwoC": 23.22,
+        "commentWeight": 41.84,
+        "kanDefect": 1.69,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 1.15,
+        "relativeSystemComplexity": 50.15,
+        "totalStructuralComplexity": 588,
+        "totalDataComplexity": 13.75,
+        "totalSystemComplexity": 601.75,
+        "package": "Mike42\\Escpos\\PrintConnectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\PrintConnectors\\": {
+        "name": "Mike42\\Escpos\\PrintConnectors\\",
+        "classes": [
+            "Mike42\\Escpos\\PrintConnectors\\WindowsPrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\FilePrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\MultiplePrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\DummyPrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\RawbtPrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\CupsPrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\UriPrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\PrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\NetworkPrintConnector"
+        ],
+        "incoming_class_dependencies": [
+            "Mike42\\Escpos\\Printer"
+        ],
+        "incoming_package_dependencies": [
+            "Mike42\\Escpos\\"
+        ],
+        "outgoing_class_dependencies": [
+            "BadMethodCallException",
+            "Exception",
+            "InvalidArgumentException"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0.1111111111111111,
+        "instability": 0.75,
+        "dependent_instabilities": {
+            "\\": 0
+        },
+        "distance": 0.09820927516479823,
+        "normalized_distance": 0.13888888888888884,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Mike42\\Escpos\\PrintConnectors\\FilePrintConnector": {
+        "name": "Mike42\\Escpos\\PrintConnectors\\FilePrintConnector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finalize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 6,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Mike42\\Escpos\\PrintConnectors\\PrintConnector",
+            "Exception",
+            "Exception",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 34,
+        "vocabulary": 14,
+        "volume": 129.45,
+        "difficulty": 5.83,
+        "effort": 755.13,
+        "level": 0.17,
+        "bugs": 0.04,
+        "time": 42,
+        "intelligentContent": 22.19,
+        "number_operators": 13,
+        "number_operands": 21,
+        "number_operators_unique": 5,
+        "number_operands_unique": 9,
+        "cloc": 23,
+        "loc": 62,
+        "lloc": 39,
+        "mi": 90.18,
+        "mIwoC": 49.7,
+        "commentWeight": 40.48,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.6,
+        "relativeSystemComplexity": 1.6,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 8,
+        "totalSystemComplexity": 8,
+        "package": "Mike42\\Escpos\\PrintConnectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\PrintConnectors\\MultiplePrintConnector": {
+        "name": "Mike42\\Escpos\\PrintConnectors\\MultiplePrintConnector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finalize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Mike42\\Escpos\\PrintConnectors\\PrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\PrintConnector"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 14,
+        "vocabulary": 7,
+        "volume": 39.3,
+        "difficulty": 2.4,
+        "effort": 94.33,
+        "level": 0.42,
+        "bugs": 0.01,
+        "time": 5,
+        "intelligentContent": 16.38,
+        "number_operators": 2,
+        "number_operands": 12,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 5,
+        "loc": 33,
+        "lloc": 28,
+        "mi": 85.22,
+        "mIwoC": 56.86,
+        "commentWeight": 28.36,
+        "kanDefect": 0.61,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.53,
+        "relativeSystemComplexity": 4.53,
+        "totalStructuralComplexity": 20,
+        "totalDataComplexity": 2.67,
+        "totalSystemComplexity": 22.67,
+        "package": "Mike42\\Escpos\\PrintConnectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\PrintConnectors\\DummyPrintConnector": {
+        "name": "Mike42\\Escpos\\PrintConnectors\\DummyPrintConnector",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finalize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Mike42\\Escpos\\PrintConnectors\\PrintConnector"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 25,
+        "vocabulary": 10,
+        "volume": 83.05,
+        "difficulty": 8,
+        "effort": 664.39,
+        "level": 0.13,
+        "bugs": 0.03,
+        "time": 37,
+        "intelligentContent": 10.38,
+        "number_operators": 9,
+        "number_operands": 16,
+        "number_operators_unique": 5,
+        "number_operands_unique": 5,
+        "cloc": 21,
+        "loc": 57,
+        "lloc": 36,
+        "mi": 92.6,
+        "mIwoC": 52.21,
+        "commentWeight": 40.39,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2.29,
+        "relativeSystemComplexity": 2.29,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 16,
+        "totalSystemComplexity": 16,
+        "package": "Mike42\\Escpos\\PrintConnectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\PrintConnectors\\RawbtPrintConnector": {
+        "name": "Mike42\\Escpos\\PrintConnectors\\RawbtPrintConnector",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finalize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Mike42\\Escpos\\PrintConnectors\\PrintConnector"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 30,
+        "vocabulary": 13,
+        "volume": 111.01,
+        "difficulty": 8.14,
+        "effort": 903.96,
+        "level": 0.12,
+        "bugs": 0.04,
+        "time": 50,
+        "intelligentContent": 13.63,
+        "number_operators": 11,
+        "number_operands": 19,
+        "number_operators_unique": 6,
+        "number_operands_unique": 7,
+        "cloc": 21,
+        "loc": 60,
+        "lloc": 39,
+        "mi": 90.24,
+        "mIwoC": 50.57,
+        "commentWeight": 39.67,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.14,
+        "relativeSystemComplexity": 2.14,
+        "totalStructuralComplexity": 7,
+        "totalDataComplexity": 8,
+        "totalSystemComplexity": 15,
+        "package": "Mike42\\Escpos\\PrintConnectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\PrintConnectors\\CupsPrintConnector": {
+        "name": "Mike42\\Escpos\\PrintConnectors\\CupsPrintConnector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finalize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCmdOutput",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLocalPrinters",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "chopLpstatLine",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 17,
+        "ccn": 10,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Mike42\\Escpos\\PrintConnectors\\PrintConnector",
+            "BadMethodCallException",
+            "BadMethodCallException",
+            "Exception",
+            "Exception",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 142,
+        "vocabulary": 52,
+        "volume": 809.46,
+        "difficulty": 10.67,
+        "effort": 8640.54,
+        "level": 0.09,
+        "bugs": 0.27,
+        "time": 480,
+        "intelligentContent": 75.83,
+        "number_operators": 40,
+        "number_operands": 102,
+        "number_operators_unique": 9,
+        "number_operands_unique": 43,
+        "cloc": 58,
+        "loc": 142,
+        "lloc": 84,
+        "mi": 78.12,
+        "mIwoC": 36.32,
+        "commentWeight": 41.8,
+        "kanDefect": 0.87,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.41,
+        "relativeSystemComplexity": 10.41,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 11.25,
+        "totalSystemComplexity": 83.25,
+        "package": "Mike42\\Escpos\\PrintConnectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\PrintConnectors\\UriPrintConnector": {
+        "name": "Mike42\\Escpos\\PrintConnectors\\UriPrintConnector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 6,
+        "ccnMethodMax": 6,
+        "externals": [
+            "InvalidArgumentException",
+            "Mike42\\Escpos\\PrintConnectors\\FilePrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\NetworkPrintConnector",
+            "Mike42\\Escpos\\PrintConnectors\\WindowsPrintConnector",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 44,
+        "vocabulary": 23,
+        "volume": 199.04,
+        "difficulty": 4.72,
+        "effort": 939.9,
+        "level": 0.21,
+        "bugs": 0.07,
+        "time": 52,
+        "intelligentContent": 42.15,
+        "number_operators": 10,
+        "number_operands": 34,
+        "number_operators_unique": 5,
+        "number_operands_unique": 18,
+        "cloc": 4,
+        "loc": 28,
+        "lloc": 24,
+        "mi": 80.62,
+        "mIwoC": 52.99,
+        "commentWeight": 27.63,
+        "kanDefect": 0.44,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 4,
+        "relativeSystemComplexity": 4,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 4,
+        "package": "Mike42\\Escpos\\PrintConnectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Mike42\\Escpos\\PrintConnectors\\PrintConnector": {
+        "name": "Mike42\\Escpos\\PrintConnectors\\PrintConnector",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finalize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Mike42\\Escpos\\PrintConnectors\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 7,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Mike42\\Escpos\\PrintConnectors\\NetworkPrintConnector": {
+        "name": "Mike42\\Escpos\\PrintConnectors\\NetworkPrintConnector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Mike42\\Escpos\\PrintConnectors\\FilePrintConnector",
+            "Exception"
+        ],
+        "parents": [
+            "Mike42\\Escpos\\PrintConnectors\\FilePrintConnector"
+        ],
+        "lcom": 1,
+        "length": 25,
+        "vocabulary": 15,
+        "volume": 97.67,
+        "difficulty": 3.45,
+        "effort": 337.41,
+        "level": 0.29,
+        "bugs": 0.03,
+        "time": 19,
+        "intelligentContent": 28.27,
+        "number_operators": 6,
+        "number_operands": 19,
+        "number_operators_unique": 4,
+        "number_operands_unique": 11,
+        "cloc": 12,
+        "loc": 25,
+        "lloc": 13,
+        "mi": 105.17,
+        "mIwoC": 61.23,
+        "commentWeight": 43.94,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Mike42\\Escpos\\PrintConnectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.14,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.0.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-json": {
+                "name": "ext-json",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-intl": {
+                "name": "ext-intl",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-zlib": {
+                "name": "ext-zlib",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "mike42\/gfx-php": {
+                "name": "mike42\/gfx-php",
+                "required": "^0.6",
+                "installed": "0.6",
+                "latest": "0.6",
+                "license": [
+                    "LGPL-2.1-or-later"
+                ],
+                "homepage": "https:\/\/github.com\/mike42\/gfx-php",
+                "zip": "https:\/\/api.github.com\/repos\/mike42\/gfx-php\/zipball\/ed9ded2a9298e4084a9c557ab74a89b71e43dbdb"
+            }
+        },
+        "packages-installed": {
+            "mike42\/gfx-php": "0.6"
+        },
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

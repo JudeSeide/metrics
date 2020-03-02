@@ -1,0 +1,1587 @@
+{
+    "Joli\\JoliNotif\\NotifierFactory": {
+        "name": "Joli\\JoliNotif\\NotifierFactory",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createOrThrowException",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultNotifiers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUnixNotifiers",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWindowsNotifiers",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "chooseBestNotifier",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 16,
+        "ccn": 11,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Joli\\JoliNotif\\Notifier",
+            "static",
+            "Joli\\JoliNotif\\Notifier\\NullNotifier",
+            "Joli\\JoliNotif\\Notifier",
+            "static",
+            "Joli\\JoliNotif\\Exception\\NoSupportedNotifierException",
+            "Joli\\JoliNotif\\Util\\OsHelper",
+            "Joli\\JoliNotif\\Util\\OsHelper",
+            "Joli\\JoliNotif\\Notifier\\GrowlNotifyNotifier",
+            "Joli\\JoliNotif\\Notifier\\TerminalNotifierNotifier",
+            "Joli\\JoliNotif\\Notifier\\AppleScriptNotifier",
+            "Joli\\JoliNotif\\Notifier\\NotifySendNotifier",
+            "Joli\\JoliNotif\\Notifier\\ToasterNotifier",
+            "Joli\\JoliNotif\\Notifier\\NotifuNotifier"
+        ],
+        "parents": [],
+        "lcom": 6,
+        "length": 53,
+        "vocabulary": 10,
+        "volume": 176.06,
+        "difficulty": 30.33,
+        "effort": 5340.55,
+        "level": 0.03,
+        "bugs": 0.06,
+        "time": 297,
+        "intelligentContent": 5.8,
+        "number_operators": 27,
+        "number_operands": 26,
+        "number_operators_unique": 7,
+        "number_operands_unique": 3,
+        "cloc": 23,
+        "loc": 78,
+        "lloc": 55,
+        "mi": 82.11,
+        "mIwoC": 44.83,
+        "commentWeight": 37.27,
+        "kanDefect": 0.87,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 26.25,
+        "totalStructuralComplexity": 150,
+        "totalDataComplexity": 7.5,
+        "totalSystemComplexity": 157.5,
+        "package": "Joli\\JoliNotif\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 11,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\": {
+        "name": "Joli\\JoliNotif\\",
+        "classes": [
+            "Joli\\JoliNotif\\NotifierFactory",
+            "Joli\\JoliNotif\\Notifier",
+            "Joli\\JoliNotif\\Notification"
+        ],
+        "outgoing_class_dependencies": [
+            "static",
+            "Joli\\JoliNotif\\Notifier\\NullNotifier",
+            "Joli\\JoliNotif\\Exception\\NoSupportedNotifierException",
+            "Joli\\JoliNotif\\Util\\OsHelper",
+            "Joli\\JoliNotif\\Notifier\\GrowlNotifyNotifier",
+            "Joli\\JoliNotif\\Notifier\\TerminalNotifierNotifier",
+            "Joli\\JoliNotif\\Notifier\\AppleScriptNotifier",
+            "Joli\\JoliNotif\\Notifier\\NotifySendNotifier",
+            "Joli\\JoliNotif\\Notifier\\ToasterNotifier",
+            "Joli\\JoliNotif\\Notifier\\NotifuNotifier",
+            "Joli\\JoliNotif\\Util\\PharExtractor"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Joli\\JoliNotif\\Notifier\\",
+            "Joli\\JoliNotif\\Exception\\",
+            "Joli\\JoliNotif\\Util\\"
+        ],
+        "incoming_class_dependencies": [
+            "Joli\\JoliNotif\\Exception\\InvalidNotificationException",
+            "Joli\\JoliNotif\\Notifier\\GrowlNotifyNotifier",
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier",
+            "Joli\\JoliNotif\\Notifier\\NotifuNotifier",
+            "Joli\\JoliNotif\\Notifier\\TerminalNotifierNotifier",
+            "Joli\\JoliNotif\\Notifier\\ToasterNotifier",
+            "Joli\\JoliNotif\\Notifier\\AppleScriptNotifier",
+            "Joli\\JoliNotif\\Notifier\\NullNotifier",
+            "Joli\\JoliNotif\\Notifier\\NotifySendNotifier"
+        ],
+        "incoming_package_dependencies": [
+            "Joli\\JoliNotif\\Exception\\",
+            "Joli\\JoliNotif\\Notifier\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.55,
+        "dependent_instabilities": {
+            "Joli\\JoliNotif\\Notifier\\": 0.8571428571428571,
+            "Joli\\JoliNotif\\Exception\\": 0.6,
+            "Joli\\JoliNotif\\Util\\": 0.2222222222222222
+        },
+        "distance": 0.08249579113843056,
+        "normalized_distance": 0.1166666666666667,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Joli\\JoliNotif\\Exception\\Exception": {
+        "name": "Joli\\JoliNotif\\Exception\\Exception",
+        "interface": true,
+        "abstract": true,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Joli\\JoliNotif\\Exception\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 2,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Joli\\JoliNotif\\Exception\\": {
+        "name": "Joli\\JoliNotif\\Exception\\",
+        "classes": [
+            "Joli\\JoliNotif\\Exception\\Exception",
+            "Joli\\JoliNotif\\Exception\\NoSupportedNotifierException",
+            "Joli\\JoliNotif\\Exception\\InvalidNotificationException"
+        ],
+        "incoming_class_dependencies": [
+            "Joli\\JoliNotif\\NotifierFactory",
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier"
+        ],
+        "incoming_package_dependencies": [
+            "Joli\\JoliNotif\\",
+            "Joli\\JoliNotif\\Notifier\\"
+        ],
+        "outgoing_class_dependencies": [
+            "RuntimeException",
+            "LogicException",
+            "Joli\\JoliNotif\\Notification"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Joli\\JoliNotif\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.6,
+        "dependent_instabilities": {
+            "Joli\\JoliNotif\\": 0.55
+        },
+        "distance": 0.047140452079103154,
+        "normalized_distance": 0.06666666666666665,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Joli\\JoliNotif\\Exception\\NoSupportedNotifierException": {
+        "name": "Joli\\JoliNotif\\Exception\\NoSupportedNotifierException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "RuntimeException",
+            "Joli\\JoliNotif\\Exception\\Exception",
+            "Joli\\JoliNotif\\Exception\\Exception"
+        ],
+        "parents": [
+            "RuntimeException"
+        ],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 5,
+        "volume": 18.58,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.25,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 23.22,
+        "number_operators": 0,
+        "number_operands": 8,
+        "number_operators_unique": 0,
+        "number_operands_unique": 5,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 71.28,
+        "mIwoC": 71.28,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 2.5,
+        "package": "Joli\\JoliNotif\\Exception\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Exception\\InvalidNotificationException": {
+        "name": "Joli\\JoliNotif\\Exception\\InvalidNotificationException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNotification",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "LogicException",
+            "Joli\\JoliNotif\\Exception\\Exception",
+            "Joli\\JoliNotif\\Notification",
+            "Joli\\JoliNotif\\Exception\\Exception",
+            "Joli\\JoliNotif\\Notification"
+        ],
+        "parents": [
+            "LogicException"
+        ],
+        "lcom": 1,
+        "length": 14,
+        "vocabulary": 9,
+        "volume": 44.38,
+        "difficulty": 1.71,
+        "effort": 76.08,
+        "level": 0.58,
+        "bugs": 0.01,
+        "time": 4,
+        "intelligentContent": 25.89,
+        "number_operators": 2,
+        "number_operands": 12,
+        "number_operators_unique": 2,
+        "number_operands_unique": 7,
+        "cloc": 3,
+        "loc": 17,
+        "lloc": 14,
+        "mi": 93.62,
+        "mIwoC": 63.33,
+        "commentWeight": 30.29,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 5,
+        "package": "Joli\\JoliNotif\\Exception\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Notifier": {
+        "name": "Joli\\JoliNotif\\Notifier",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "isSupported",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPriority",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "send",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Joli\\JoliNotif\\Notification"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Joli\\JoliNotif\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 3,
+        "efferentCoupling": 1,
+        "instability": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Joli\\JoliNotif\\Util\\PharExtractor": {
+        "name": "Joli\\JoliNotif\\Util\\PharExtractor",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "isLocatedInsideAPhar",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Phar",
+            "Phar"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 47,
+        "vocabulary": 20,
+        "volume": 203.13,
+        "difficulty": 8.08,
+        "effort": 1640.67,
+        "level": 0.12,
+        "bugs": 0.07,
+        "time": 91,
+        "intelligentContent": 25.15,
+        "number_operators": 17,
+        "number_operands": 30,
+        "number_operators_unique": 7,
+        "number_operands_unique": 13,
+        "cloc": 8,
+        "loc": 31,
+        "lloc": 23,
+        "mi": 89.01,
+        "mIwoC": 53.6,
+        "commentWeight": 35.41,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 5.5,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 11,
+        "package": "Joli\\JoliNotif\\Util\\",
+        "pageRank": 0.25,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Util\\": {
+        "name": "Joli\\JoliNotif\\Util\\",
+        "classes": [
+            "Joli\\JoliNotif\\Util\\PharExtractor",
+            "Joli\\JoliNotif\\Util\\OsHelper"
+        ],
+        "incoming_class_dependencies": [
+            "Joli\\JoliNotif\\NotifierFactory",
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier",
+            "Joli\\JoliNotif\\Notifier\\NotifuNotifier",
+            "Joli\\JoliNotif\\Notifier\\TerminalNotifierNotifier",
+            "Joli\\JoliNotif\\Notifier\\ToasterNotifier",
+            "Joli\\JoliNotif\\Notifier\\AppleScriptNotifier",
+            "Joli\\JoliNotif\\Notification"
+        ],
+        "incoming_package_dependencies": [
+            "Joli\\JoliNotif\\",
+            "Joli\\JoliNotif\\Notifier\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Phar",
+            "Symfony\\Component\\Process\\Process"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Symfony\\Component\\Process\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.2222222222222222,
+        "dependent_instabilities": [],
+        "distance": 0.5499719409228703,
+        "normalized_distance": 0.7777777777777778,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Joli\\JoliNotif\\Util\\OsHelper": {
+        "name": "Joli\\JoliNotif\\Util\\OsHelper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "isUnix",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isWindowsSubsystemForLinux",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isWindows",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isWindowsSeven",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isWindowsEightOrHigher",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isMacOS",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMacOSVersion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 6,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Symfony\\Component\\Process\\Process"
+        ],
+        "parents": [],
+        "lcom": 7,
+        "length": 42,
+        "vocabulary": 19,
+        "volume": 178.41,
+        "difficulty": 3.69,
+        "effort": 658.76,
+        "level": 0.27,
+        "bugs": 0.06,
+        "time": 37,
+        "intelligentContent": 48.32,
+        "number_operators": 26,
+        "number_operands": 16,
+        "number_operators_unique": 6,
+        "number_operands_unique": 13,
+        "cloc": 9,
+        "loc": 58,
+        "lloc": 49,
+        "mi": 75.21,
+        "mIwoC": 46.56,
+        "commentWeight": 28.65,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.75,
+        "relativeSystemComplexity": 10.75,
+        "totalStructuralComplexity": 63,
+        "totalDataComplexity": 12.25,
+        "totalSystemComplexity": 75.25,
+        "package": "Joli\\JoliNotif\\Util\\",
+        "pageRank": 0.18,
+        "afferentCoupling": 7,
+        "efferentCoupling": 1,
+        "instability": 0.13,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Notifier\\GrowlNotifyNotifier": {
+        "name": "Joli\\JoliNotif\\Notifier\\GrowlNotifyNotifier",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getBinary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPriority",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommandLineArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier",
+            "Joli\\JoliNotif\\Notification"
+        ],
+        "parents": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier"
+        ],
+        "lcom": 3,
+        "length": 26,
+        "vocabulary": 9,
+        "volume": 82.42,
+        "difficulty": 4,
+        "effort": 329.67,
+        "level": 0.25,
+        "bugs": 0.03,
+        "time": 18,
+        "intelligentContent": 20.6,
+        "number_operators": 10,
+        "number_operands": 16,
+        "number_operators_unique": 3,
+        "number_operands_unique": 6,
+        "cloc": 12,
+        "loc": 37,
+        "lloc": 25,
+        "mi": 94.29,
+        "mIwoC": 55.69,
+        "commentWeight": 38.61,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 9.83,
+        "totalStructuralComplexity": 27,
+        "totalDataComplexity": 2.5,
+        "totalSystemComplexity": 29.5,
+        "package": "Joli\\JoliNotif\\Notifier\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Notifier\\": {
+        "name": "Joli\\JoliNotif\\Notifier\\",
+        "classes": [
+            "Joli\\JoliNotif\\Notifier\\GrowlNotifyNotifier",
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier",
+            "Joli\\JoliNotif\\Notifier\\NotifuNotifier",
+            "Joli\\JoliNotif\\Notifier\\TerminalNotifierNotifier",
+            "Joli\\JoliNotif\\Notifier\\ToasterNotifier",
+            "Joli\\JoliNotif\\Notifier\\BinaryProvider",
+            "Joli\\JoliNotif\\Notifier\\AppleScriptNotifier",
+            "Joli\\JoliNotif\\Notifier\\NullNotifier",
+            "Joli\\JoliNotif\\Notifier\\NotifySendNotifier"
+        ],
+        "incoming_class_dependencies": [
+            "Joli\\JoliNotif\\NotifierFactory"
+        ],
+        "incoming_package_dependencies": [
+            "Joli\\JoliNotif\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Joli\\JoliNotif\\Notification",
+            "Joli\\JoliNotif\\Notifier",
+            "Joli\\JoliNotif\\Exception\\InvalidNotificationException",
+            "Joli\\JoliNotif\\Util\\PharExtractor",
+            "Symfony\\Component\\Process\\Process",
+            "Joli\\JoliNotif\\Util\\OsHelper"
+        ],
+        "outgoing_package_dependencies": [
+            "Joli\\JoliNotif\\",
+            "Joli\\JoliNotif\\Exception\\",
+            "Joli\\JoliNotif\\Util\\",
+            "Symfony\\Component\\Process\\"
+        ],
+        "abstraction": 0.2222222222222222,
+        "instability": 0.8571428571428571,
+        "dependent_instabilities": {
+            "Joli\\JoliNotif\\": 0.55,
+            "Joli\\JoliNotif\\Exception\\": 0.6,
+            "Joli\\JoliNotif\\Util\\": 0.2222222222222222
+        },
+        "distance": 0.05611958580845611,
+        "normalized_distance": 0.0793650793650793,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Joli\\JoliNotif\\Notifier\\CliBasedNotifier": {
+        "name": "Joli\\JoliNotif\\Notifier\\CliBasedNotifier",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "isSupported",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "send",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommandLineArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBinary",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isBinaryAvailable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 15,
+        "ccn": 11,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Joli\\JoliNotif\\Notifier",
+            "Joli\\JoliNotif\\Notification",
+            "Joli\\JoliNotif\\Exception\\InvalidNotificationException",
+            "Joli\\JoliNotif\\Util\\PharExtractor",
+            "Joli\\JoliNotif\\Util\\PharExtractor",
+            "Joli\\JoliNotif\\Util\\PharExtractor",
+            "Symfony\\Component\\Process\\Process",
+            "Joli\\JoliNotif\\Notification",
+            "Joli\\JoliNotif\\Util\\OsHelper",
+            "Symfony\\Component\\Process\\Process",
+            "Symfony\\Component\\Process\\Process"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 88,
+        "vocabulary": 24,
+        "volume": 403.48,
+        "difficulty": 11.32,
+        "effort": 4568.78,
+        "level": 0.09,
+        "bugs": 0.13,
+        "time": 254,
+        "intelligentContent": 35.63,
+        "number_operators": 33,
+        "number_operands": 55,
+        "number_operators_unique": 7,
+        "number_operands_unique": 17,
+        "cloc": 21,
+        "loc": 81,
+        "lloc": 60,
+        "mi": 76.96,
+        "mIwoC": 41.49,
+        "commentWeight": 35.48,
+        "kanDefect": 0.87,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.49,
+        "relativeSystemComplexity": 144.49,
+        "totalStructuralComplexity": 720,
+        "totalDataComplexity": 2.46,
+        "totalSystemComplexity": 722.46,
+        "package": "Joli\\JoliNotif\\Notifier\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 6,
+        "efferentCoupling": 6,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Notifier\\NotifuNotifier": {
+        "name": "Joli\\JoliNotif\\Notifier\\NotifuNotifier",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getBinary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPriority",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "canBeUsed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRootDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEmbeddedBinary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExtraFiles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommandLineArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier",
+            "Joli\\JoliNotif\\Notifier\\BinaryProvider",
+            "Joli\\JoliNotif\\Util\\OsHelper",
+            "Joli\\JoliNotif\\Util\\OsHelper",
+            "Joli\\JoliNotif\\Notification"
+        ],
+        "parents": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier"
+        ],
+        "lcom": 7,
+        "length": 35,
+        "vocabulary": 14,
+        "volume": 133.26,
+        "difficulty": 5.28,
+        "effort": 703.3,
+        "level": 0.19,
+        "bugs": 0.04,
+        "time": 39,
+        "intelligentContent": 25.25,
+        "number_operators": 16,
+        "number_operands": 19,
+        "number_operators_unique": 5,
+        "number_operands_unique": 9,
+        "cloc": 25,
+        "loc": 66,
+        "lloc": 41,
+        "mi": 90.17,
+        "mIwoC": 49.4,
+        "commentWeight": 40.77,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1.43,
+        "relativeSystemComplexity": 17.43,
+        "totalStructuralComplexity": 112,
+        "totalDataComplexity": 10,
+        "totalSystemComplexity": 122,
+        "package": "Joli\\JoliNotif\\Notifier\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Notifier\\TerminalNotifierNotifier": {
+        "name": "Joli\\JoliNotif\\Notifier\\TerminalNotifierNotifier",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getBinary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPriority",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommandLineArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier",
+            "Joli\\JoliNotif\\Notification",
+            "Joli\\JoliNotif\\Util\\OsHelper"
+        ],
+        "parents": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier"
+        ],
+        "lcom": 3,
+        "length": 39,
+        "vocabulary": 14,
+        "volume": 148.49,
+        "difficulty": 5,
+        "effort": 742.43,
+        "level": 0.2,
+        "bugs": 0.05,
+        "time": 41,
+        "intelligentContent": 29.7,
+        "number_operators": 14,
+        "number_operands": 25,
+        "number_operators_unique": 4,
+        "number_operands_unique": 10,
+        "cloc": 13,
+        "loc": 42,
+        "lloc": 29,
+        "mi": 90.17,
+        "mIwoC": 52.22,
+        "commentWeight": 37.95,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.56,
+        "relativeSystemComplexity": 25.56,
+        "totalStructuralComplexity": 75,
+        "totalDataComplexity": 1.67,
+        "totalSystemComplexity": 76.67,
+        "package": "Joli\\JoliNotif\\Notifier\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Notifier\\ToasterNotifier": {
+        "name": "Joli\\JoliNotif\\Notifier\\ToasterNotifier",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getBinary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPriority",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "canBeUsed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRootDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEmbeddedBinary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExtraFiles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommandLineArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 5,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier",
+            "Joli\\JoliNotif\\Notifier\\BinaryProvider",
+            "Joli\\JoliNotif\\Util\\OsHelper",
+            "Joli\\JoliNotif\\Util\\OsHelper",
+            "Joli\\JoliNotif\\Util\\OsHelper",
+            "Joli\\JoliNotif\\Notification"
+        ],
+        "parents": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier"
+        ],
+        "lcom": 7,
+        "length": 38,
+        "vocabulary": 17,
+        "volume": 155.32,
+        "difficulty": 5.73,
+        "effort": 889.58,
+        "level": 0.17,
+        "bugs": 0.05,
+        "time": 49,
+        "intelligentContent": 27.12,
+        "number_operators": 17,
+        "number_operands": 21,
+        "number_operators_unique": 6,
+        "number_operands_unique": 11,
+        "cloc": 25,
+        "loc": 66,
+        "lloc": 41,
+        "mi": 89.57,
+        "mIwoC": 48.8,
+        "commentWeight": 40.77,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1.43,
+        "relativeSystemComplexity": 17.43,
+        "totalStructuralComplexity": 112,
+        "totalDataComplexity": 10,
+        "totalSystemComplexity": 122,
+        "package": "Joli\\JoliNotif\\Notifier\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Notifier\\BinaryProvider": {
+        "name": "Joli\\JoliNotif\\Notifier\\BinaryProvider",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "canBeUsed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRootDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEmbeddedBinary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExtraFiles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Joli\\JoliNotif\\Notifier\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 2,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Joli\\JoliNotif\\Notifier\\AppleScriptNotifier": {
+        "name": "Joli\\JoliNotif\\Notifier\\AppleScriptNotifier",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "isSupported",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBinary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPriority",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommandLineArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 6,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier",
+            "Joli\\JoliNotif\\Util\\OsHelper",
+            "Joli\\JoliNotif\\Util\\OsHelper",
+            "Joli\\JoliNotif\\Notification"
+        ],
+        "parents": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier"
+        ],
+        "lcom": 4,
+        "length": 59,
+        "vocabulary": 20,
+        "volume": 254.99,
+        "difficulty": 7.93,
+        "effort": 2021.74,
+        "level": 0.13,
+        "bugs": 0.08,
+        "time": 112,
+        "intelligentContent": 32.16,
+        "number_operators": 22,
+        "number_operands": 37,
+        "number_operators_unique": 6,
+        "number_operands_unique": 14,
+        "cloc": 15,
+        "loc": 48,
+        "lloc": 33,
+        "mi": 87.31,
+        "mIwoC": 49.22,
+        "commentWeight": 38.09,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.88,
+        "relativeSystemComplexity": 25.88,
+        "totalStructuralComplexity": 100,
+        "totalDataComplexity": 3.5,
+        "totalSystemComplexity": 103.5,
+        "package": "Joli\\JoliNotif\\Notifier\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Notifier\\NullNotifier": {
+        "name": "Joli\\JoliNotif\\Notifier\\NullNotifier",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "isSupported",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPriority",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "send",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Joli\\JoliNotif\\Notifier",
+            "Joli\\JoliNotif\\Notification"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 4,
+        "vocabulary": 2,
+        "volume": 4,
+        "difficulty": 0.5,
+        "effort": 2,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 8,
+        "number_operators": 3,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 9,
+        "loc": 25,
+        "lloc": 16,
+        "mi": 109.45,
+        "mIwoC": 69.38,
+        "commentWeight": 40.07,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3.33,
+        "relativeSystemComplexity": 3.33,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 10,
+        "totalSystemComplexity": 10,
+        "package": "Joli\\JoliNotif\\Notifier\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Notifier\\NotifySendNotifier": {
+        "name": "Joli\\JoliNotif\\Notifier\\NotifySendNotifier",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getBinary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPriority",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommandLineArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier",
+            "Joli\\JoliNotif\\Notification"
+        ],
+        "parents": [
+            "Joli\\JoliNotif\\Notifier\\CliBasedNotifier"
+        ],
+        "lcom": 3,
+        "length": 24,
+        "vocabulary": 7,
+        "volume": 67.38,
+        "difficulty": 5.25,
+        "effort": 353.73,
+        "level": 0.19,
+        "bugs": 0.02,
+        "time": 20,
+        "intelligentContent": 12.83,
+        "number_operators": 10,
+        "number_operands": 14,
+        "number_operators_unique": 3,
+        "number_operands_unique": 4,
+        "cloc": 13,
+        "loc": 38,
+        "lloc": 25,
+        "mi": 95.65,
+        "mIwoC": 56.3,
+        "commentWeight": 39.36,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 9.83,
+        "totalStructuralComplexity": 27,
+        "totalDataComplexity": 2.5,
+        "totalSystemComplexity": 29.5,
+        "package": "Joli\\JoliNotif\\Notifier\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Joli\\JoliNotif\\Notification": {
+        "name": "Joli\\JoliNotif\\Notification",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getTitle",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBody",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBody",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIcon",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIcon",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Joli\\JoliNotif\\Util\\PharExtractor",
+            "Joli\\JoliNotif\\Util\\PharExtractor",
+            "Joli\\JoliNotif\\Util\\OsHelper"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 52,
+        "vocabulary": 12,
+        "volume": 186.42,
+        "difficulty": 5.83,
+        "effort": 1087.44,
+        "level": 0.17,
+        "bugs": 0.06,
+        "time": 60,
+        "intelligentContent": 31.96,
+        "number_operators": 17,
+        "number_operands": 35,
+        "number_operators_unique": 3,
+        "number_operands_unique": 9,
+        "cloc": 26,
+        "loc": 78,
+        "lloc": 52,
+        "mi": 85.12,
+        "mIwoC": 46.13,
+        "commentWeight": 38.99,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 3.25,
+        "relativeSystemComplexity": 7.25,
+        "totalStructuralComplexity": 32,
+        "totalDataComplexity": 26,
+        "totalSystemComplexity": 58,
+        "package": "Joli\\JoliNotif\\",
+        "pageRank": 0.19,
+        "afferentCoupling": 10,
+        "efferentCoupling": 2,
+        "instability": 0.17,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.27,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "symfony\/process": {
+                "name": "symfony\/process",
+                "required": "^3.3|^4.0|^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/process\/zipball\/fd4a86dd7e36437f2fc080d8c42c7415d828a0a8"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

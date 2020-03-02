@@ -1,0 +1,294 @@
+{
+    "Fruitcake\\Cors\\HandleCors": {
+        "name": "Fruitcake\\Cors\\HandleCors",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldRun",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isMatchingPath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addHeaders",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 10,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Asm89\\Stack\\CorsService",
+            "Illuminate\\Contracts\\Container\\Container",
+            "Closure",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Illuminate\\Http\\Request",
+            "Illuminate\\Http\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Illuminate\\Http\\Request",
+            "Symfony\\Component\\HttpFoundation\\Response"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 80,
+        "vocabulary": 19,
+        "volume": 339.83,
+        "difficulty": 10,
+        "effort": 3398.34,
+        "level": 0.1,
+        "bugs": 0.11,
+        "time": 189,
+        "intelligentContent": 33.98,
+        "number_operators": 24,
+        "number_operands": 56,
+        "number_operators_unique": 5,
+        "number_operands_unique": 14,
+        "cloc": 35,
+        "loc": 87,
+        "lloc": 52,
+        "mi": 85.1,
+        "mIwoC": 43.5,
+        "commentWeight": 41.6,
+        "kanDefect": 0.87,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.82,
+        "relativeSystemComplexity": 144.82,
+        "totalStructuralComplexity": 720,
+        "totalDataComplexity": 4.08,
+        "totalSystemComplexity": 724.08,
+        "package": "Fruitcake\\Cors\\",
+        "pageRank": 0.5,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Fruitcake\\Cors\\": {
+        "name": "Fruitcake\\Cors\\",
+        "classes": [
+            "Fruitcake\\Cors\\HandleCors",
+            "Fruitcake\\Cors\\CorsServiceProvider"
+        ],
+        "outgoing_class_dependencies": [
+            "Asm89\\Stack\\CorsService",
+            "Illuminate\\Contracts\\Container\\Container",
+            "Closure",
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Illuminate\\Http\\Request",
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "outgoing_package_dependencies": [
+            "Asm89\\Stack\\",
+            "Illuminate\\Contracts\\Container\\",
+            "\\",
+            "Symfony\\Component\\HttpFoundation\\",
+            "Illuminate\\Http\\",
+            "Illuminate\\Support\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Fruitcake\\Cors\\CorsServiceProvider": {
+        "name": "Fruitcake\\Cors\\CorsServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "configPath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertWildcardToPattern",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 6,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Asm89\\Stack\\CorsService"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 1,
+        "length": 79,
+        "vocabulary": 36,
+        "volume": 408.42,
+        "difficulty": 6.4,
+        "effort": 2613.91,
+        "level": 0.16,
+        "bugs": 0.14,
+        "time": 145,
+        "intelligentContent": 63.82,
+        "number_operators": 15,
+        "number_operands": 64,
+        "number_operators_unique": 6,
+        "number_operands_unique": 30,
+        "cloc": 26,
+        "loc": 62,
+        "lloc": 36,
+        "mi": 89.12,
+        "mIwoC": 46.96,
+        "commentWeight": 42.16,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.36,
+        "relativeSystemComplexity": 64.36,
+        "totalStructuralComplexity": 256,
+        "totalDataComplexity": 1.44,
+        "totalSystemComplexity": 257.44,
+        "package": "Fruitcake\\Cors\\",
+        "pageRank": 0.5,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "^5.5|^6.0|^7.0|^8.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "illuminate\/contracts": {
+                "name": "illuminate\/contracts",
+                "required": "^5.5|^6.0|^7.0|^8.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/contracts\/zipball\/a6c7ef89684ce0e724b42c6bfe4b1107aee28a1d"
+            },
+            "symfony\/http-foundation": {
+                "name": "symfony\/http-foundation",
+                "required": "^3.3|^4.0|^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/http-foundation\/zipball\/6f9c2ba72f4295d7ce6cf9f79dbb18036291d335"
+            },
+            "symfony\/http-kernel": {
+                "name": "symfony\/http-kernel",
+                "required": "^3.3|^4.0|^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/http-kernel\/zipball\/021d7d54e080405678f2d8c54cb31d0bb03b4520"
+            },
+            "asm89\/stack-cors": {
+                "name": "asm89\/stack-cors",
+                "required": "^1.3",
+                "installed": null,
+                "latest": "1.3.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/asm89\/stack-cors",
+                "zip": "https:\/\/api.github.com\/repos\/asm89\/stack-cors\/zipball\/b9c31def6a83f84b4d4a40d35996d375755f0e08"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

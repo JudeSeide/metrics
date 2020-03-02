@@ -1,0 +1,1220 @@
+{
+    "TGM_Plugin_Activation": {
+        "name": "TGM_Plugin_Activation",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "init",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "load_textdomain",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "correct_plugin_mofile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "overload_textdomain_mofile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "add_plugin_action_link_filters",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter_plugin_action_links_activate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter_plugin_action_links_deactivate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter_plugin_action_links_update",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "admin_init",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "thickbox",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "admin_menu",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "add_admin_menu",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "install_plugins_page",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "do_plugin_install",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inject_update_info",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "maybe_adjust_source_dir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "activate_single_plugin",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "notices",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create_user_action_links_for_notice",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_admin_notice_class",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "display_settings_errors",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "dismiss",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_plugin_source_type",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sanitize_key",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "config",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "actions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flush_plugins_cache",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "populate_file_path",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "_get_plugin_basename_from_slug",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "_get_plugin_data_from_name",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_download_url",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_wp_repo_download_url",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_plugins_api",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_info_link",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "is_tgmpa_page",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "is_core_update_page",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_tgmpa_url",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_tgmpa_status_url",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "is_tgmpa_complete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "is_plugin_installed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "is_plugin_active",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "can_plugin_update",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "is_plugin_updatetable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "can_plugin_activate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_installed_version",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "does_plugin_require_update",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "does_plugin_have_update",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_upgrade_notice",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_plugins",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "update_dismiss",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "force_activation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "force_deactivation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "show_tgmpa_version",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "admin_css",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_instance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 59,
+        "nbMethods": 59,
+        "nbMethodsPrivate": 12,
+        "nbMethodsPublic": 47,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 265,
+        "ccn": 207,
+        "ccnMethodMax": 34,
+        "externals": [
+            "TGMPA_List_Table",
+            "Plugin_Upgrader_Skin",
+            "Plugin_Installer_Skin",
+            "Plugin_Upgrader",
+            "stdClass",
+            "stdClass",
+            "WP_Error",
+            "WP_Error",
+            "TGMPA_Utils",
+            "TGMPA_Utils",
+            "TGMPA_Utils"
+        ],
+        "parents": [],
+        "lcom": 11,
+        "length": 1953,
+        "vocabulary": 351,
+        "volume": 16513.25,
+        "difficulty": 25.58,
+        "effort": 422330.13,
+        "level": 0.04,
+        "bugs": 5.5,
+        "time": 23463,
+        "intelligentContent": 645.67,
+        "number_operators": 508,
+        "number_operands": 1445,
+        "number_operators_unique": 12,
+        "number_operands_unique": 339,
+        "cloc": 914,
+        "loc": 1806,
+        "lloc": 890,
+        "mi": 44.61,
+        "mIwoC": 0,
+        "commentWeight": 44.61,
+        "kanDefect": 11.71,
+        "relativeStructuralComplexity": 1764,
+        "relativeDataComplexity": 2.09,
+        "relativeSystemComplexity": 1766.09,
+        "totalStructuralComplexity": 104076,
+        "totalDataComplexity": 123.21,
+        "totalSystemComplexity": 104199.21,
+        "package": "TGM-Plugin-Activation\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TGM-Plugin-Activation\\": {
+        "name": "TGM-Plugin-Activation\\",
+        "classes": [
+            "TGM_Plugin_Activation",
+            "TGMPA_List_Table",
+            "TGMPA_Bulk_Installer",
+            "TGMPA_Bulk_Installer_Skin",
+            "TGMPA_Utils"
+        ],
+        "outgoing_class_dependencies": [
+            "Plugin_Upgrader_Skin",
+            "Plugin_Installer_Skin",
+            "Plugin_Upgrader",
+            "stdClass",
+            "WP_Error",
+            "WP_List_Table",
+            "Bulk_Upgrader_Skin"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "\\": 0
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "load_tgm_plugin_activation": {
+        "name": "load_tgm_plugin_activation",
+        "cloc": 5,
+        "loc": 10,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "tgmpa": {
+        "name": "tgmpa",
+        "cloc": 10,
+        "loc": 33,
+        "lloc": 23,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "TGMPA_List_Table": {
+        "name": "TGMPA_List_Table",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_table_classes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "_gather_plugin_data",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "categorize_plugins_to_views",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "set_view_totals",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_plugin_advise_type_text",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_plugin_source_type_text",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_plugin_status_text",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sort_table_items",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_views",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "column_default",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "column_cb",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "column_plugin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "column_version",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "no_items",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_columns",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_default_primary_column_name",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_primary_column_name",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_row_actions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "single_row",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wp_plugin_update_row",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extra_tablenav",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get_bulk_actions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process_bulk_actions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepare_items",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "_get_plugin_data_from_name",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 26,
+        "nbMethods": 26,
+        "nbMethodsPrivate": 10,
+        "nbMethodsPublic": 16,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 119,
+        "ccn": 94,
+        "ccnMethodMax": 34,
+        "externals": [
+            "WP_List_Table",
+            "TGMPA_Bulk_Installer_Skin",
+            "TGMPA_Bulk_Installer"
+        ],
+        "parents": [
+            "WP_List_Table"
+        ],
+        "lcom": 5,
+        "length": 1092,
+        "vocabulary": 219,
+        "volume": 8490.07,
+        "difficulty": 19.47,
+        "effort": 165332.89,
+        "level": 0.05,
+        "bugs": 2.83,
+        "time": 9185,
+        "intelligentContent": 435.98,
+        "number_operators": 278,
+        "number_operands": 814,
+        "number_operators_unique": 10,
+        "number_operands_unique": 209,
+        "cloc": 319,
+        "loc": 789,
+        "lloc": 470,
+        "mi": 43.22,
+        "mIwoC": 1.56,
+        "commentWeight": 41.67,
+        "kanDefect": 6.89,
+        "relativeStructuralComplexity": 1369,
+        "relativeDataComplexity": 0.89,
+        "relativeSystemComplexity": 1369.89,
+        "totalStructuralComplexity": 35594,
+        "totalDataComplexity": 23.03,
+        "totalSystemComplexity": 35617.03,
+        "package": "TGM-Plugin-Activation\\",
+        "pageRank": 0.12,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TGM_Bulk_Installer": {
+        "name": "TGM_Bulk_Installer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 8,
+        "loc": 12,
+        "lloc": 4,
+        "mi": 218.68,
+        "mIwoC": 171,
+        "commentWeight": 47.68,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "\\": {
+        "name": "\\",
+        "classes": [
+            "TGM_Bulk_Installer",
+            "TGM_Bulk_Installer_Skin"
+        ],
+        "incoming_class_dependencies": [
+            "TGM_Plugin_Activation",
+            "TGMPA_List_Table",
+            "TGMPA_Bulk_Installer",
+            "TGMPA_Bulk_Installer_Skin"
+        ],
+        "incoming_package_dependencies": [
+            "TGM-Plugin-Activation\\"
+        ],
+        "abstraction": 0,
+        "instability": 0,
+        "dependent_instabilities": [],
+        "distance": 0.7071067811865475,
+        "normalized_distance": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "TGM_Bulk_Installer_Skin": {
+        "name": "TGM_Bulk_Installer_Skin",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 8,
+        "loc": 12,
+        "lloc": 4,
+        "mi": 218.68,
+        "mIwoC": 171,
+        "commentWeight": 47.68,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TGMPA_Bulk_Installer": {
+        "name": "TGMPA_Bulk_Installer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "activate_strings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "run",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "bulk_install",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "bulk_upgrade",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "auto_activate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 19,
+        "ccn": 14,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Plugin_Upgrader"
+        ],
+        "parents": [
+            "Plugin_Upgrader"
+        ],
+        "lcom": 2,
+        "length": 181,
+        "vocabulary": 50,
+        "volume": 1021.54,
+        "difficulty": 11.31,
+        "effort": 11557.63,
+        "level": 0.09,
+        "bugs": 0.34,
+        "time": 642,
+        "intelligentContent": 90.29,
+        "number_operators": 42,
+        "number_operands": 139,
+        "number_operators_unique": 7,
+        "number_operands_unique": 43,
+        "cloc": 172,
+        "loc": 288,
+        "lloc": 116,
+        "mi": 78.56,
+        "mIwoC": 32.01,
+        "commentWeight": 46.55,
+        "kanDefect": 1.08,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.41,
+        "relativeSystemComplexity": 196.41,
+        "totalStructuralComplexity": 1176,
+        "totalDataComplexity": 2.47,
+        "totalSystemComplexity": 1178.47,
+        "package": "TGM-Plugin-Activation\\",
+        "pageRank": 0.22,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TGMPA_Bulk_Installer_Skin": {
+        "name": "TGMPA_Bulk_Installer_Skin",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "add_strings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "before",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "after",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "bulk_footer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "before_flush_output",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "after_flush_output",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 8,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Bulk_Upgrader_Skin"
+        ],
+        "parents": [
+            "Bulk_Upgrader_Skin"
+        ],
+        "lcom": 1,
+        "length": 177,
+        "vocabulary": 60,
+        "volume": 1045.52,
+        "difficulty": 6.14,
+        "effort": 6415.69,
+        "level": 0.16,
+        "bugs": 0.35,
+        "time": 356,
+        "intelligentContent": 170.38,
+        "number_operators": 42,
+        "number_operands": 135,
+        "number_operators_unique": 5,
+        "number_operands_unique": 55,
+        "cloc": 125,
+        "loc": 208,
+        "lloc": 83,
+        "mi": 82.54,
+        "mIwoC": 35.92,
+        "commentWeight": 46.62,
+        "kanDefect": 0.64,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.06,
+        "relativeSystemComplexity": 36.06,
+        "totalStructuralComplexity": 252,
+        "totalDataComplexity": 0.43,
+        "totalSystemComplexity": 252.43,
+        "package": "TGM-Plugin-Activation\\",
+        "pageRank": 0.22,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tgmpa_load_bulk_installer": {
+        "name": "tgmpa_load_bulk_installer",
+        "cloc": 302,
+        "loc": 516,
+        "lloc": 214,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "TGMPA_Utils": {
+        "name": "TGMPA_Utils",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "wrap_in_em",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wrap_in_strong",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validate_bool",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "emulate_filter_bool",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 17,
+        "ccn": 14,
+        "ccnMethodMax": 12,
+        "externals": [],
+        "parents": [],
+        "lcom": 4,
+        "length": 95,
+        "vocabulary": 42,
+        "volume": 512.27,
+        "difficulty": 6.5,
+        "effort": 3329.76,
+        "level": 0.15,
+        "bugs": 0.17,
+        "time": 185,
+        "intelligentContent": 78.81,
+        "number_operators": 30,
+        "number_operands": 65,
+        "number_operators_unique": 7,
+        "number_operands_unique": 35,
+        "cloc": 65,
+        "loc": 111,
+        "lloc": 46,
+        "mi": 89.21,
+        "mIwoC": 42.87,
+        "commentWeight": 46.33,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 6,
+        "relativeSystemComplexity": 7,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 24,
+        "totalSystemComplexity": 28,
+        "package": "TGM-Plugin-Activation\\",
+        "pageRank": 0.17,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "my_theme_register_required_plugins": {
+        "name": "my_theme_register_required_plugins",
+        "cloc": 63,
+        "loc": 103,
+        "lloc": 40,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.43,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

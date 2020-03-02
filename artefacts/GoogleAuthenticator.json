@@ -1,0 +1,145 @@
+{
+    "PHPGangsta_GoogleAuthenticator": {
+        "name": "PHPGangsta_GoogleAuthenticator",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "createSecret",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQRCodeGoogleUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "verifyCode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCodeLength",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "_base32Decode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "_getBase32LookupTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "timingSafeEquals",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 42,
+        "ccn": 35,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Exception",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 444,
+        "vocabulary": 132,
+        "volume": 3127.71,
+        "difficulty": 29.32,
+        "effort": 91718.01,
+        "level": 0.03,
+        "bugs": 1.04,
+        "time": 5095,
+        "intelligentContent": 106.66,
+        "number_operators": 134,
+        "number_operands": 310,
+        "number_operators_unique": 21,
+        "number_operands_unique": 111,
+        "cloc": 85,
+        "loc": 254,
+        "lloc": 169,
+        "mi": 61.27,
+        "mIwoC": 22.22,
+        "commentWeight": 39.05,
+        "kanDefect": 1.2,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 3.58,
+        "relativeSystemComplexity": 19.58,
+        "totalStructuralComplexity": 128,
+        "totalDataComplexity": 28.6,
+        "totalSystemComplexity": 156.6,
+        "package": "\\",
+        "pageRank": 1,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "\\": {
+        "name": "\\",
+        "classes": [
+            "PHPGangsta_GoogleAuthenticator"
+        ],
+        "abstraction": 0,
+        "dependent_instabilities": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.3",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

@@ -1,0 +1,183 @@
+{
+    "Composer\\CaBundle\\CaBundle": {
+        "name": "Composer\\CaBundle\\CaBundle",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getSystemCaRootBundlePath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBundledCaBundlePath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateCaFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isOpensslParseSafe",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEnvVariable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "caFileUsable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "caDirUsable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 50,
+        "ccn": 43,
+        "ccnMethodMax": 21,
+        "externals": [
+            "Psr\\Log\\LoggerInterface",
+            "static",
+            "Psr\\Log\\LoggerInterface",
+            "static",
+            "Symfony\\Component\\Process\\PhpProcess",
+            "Psr\\Log\\LoggerInterface",
+            "static"
+        ],
+        "parents": [],
+        "lcom": 8,
+        "length": 293,
+        "vocabulary": 97,
+        "volume": 1933.77,
+        "difficulty": 10.55,
+        "effort": 20405.82,
+        "level": 0.09,
+        "bugs": 0.64,
+        "time": 1134,
+        "intelligentContent": 183.26,
+        "number_operators": 128,
+        "number_operands": 165,
+        "number_operators_unique": 11,
+        "number_operands_unique": 86,
+        "cloc": 106,
+        "loc": 257,
+        "lloc": 149,
+        "mi": 65.74,
+        "mIwoC": 23.8,
+        "commentWeight": 41.94,
+        "kanDefect": 1.87,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 2.98,
+        "relativeSystemComplexity": 51.98,
+        "totalStructuralComplexity": 392,
+        "totalDataComplexity": 23.88,
+        "totalSystemComplexity": 415.88,
+        "package": "Composer\\CaBundle\\",
+        "pageRank": 1,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Composer\\CaBundle\\": {
+        "name": "Composer\\CaBundle\\",
+        "classes": [
+            "Composer\\CaBundle\\CaBundle"
+        ],
+        "outgoing_class_dependencies": [
+            "Psr\\Log\\LoggerInterface",
+            "static",
+            "Symfony\\Component\\Process\\PhpProcess"
+        ],
+        "outgoing_package_dependencies": [
+            "Psr\\Log\\",
+            "\\",
+            "Symfony\\Component\\Process\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "ext-openssl": {
+                "name": "ext-openssl",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-pcre": {
+                "name": "ext-pcre",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "php": {
+                "name": "php",
+                "required": "^5.3.2 || ^7.0 || ^8.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

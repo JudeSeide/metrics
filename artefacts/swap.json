@@ -1,0 +1,483 @@
+{
+    "Swap\\Builder": {
+        "name": "Swap\\Builder",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "useHttpClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "useRequestFactory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "useSimpleCache",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "build",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "LogicException",
+            "Psr\\Http\\Message\\RequestFactoryInterface",
+            "Psr\\SimpleCache\\CacheInterface",
+            "Swap\\Swap",
+            "Swap\\Service\\Factory",
+            "Exchanger\\Service\\Chain",
+            "Exchanger\\Exchanger",
+            "Swap\\Swap"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 59,
+        "vocabulary": 16,
+        "volume": 236,
+        "difficulty": 7,
+        "effort": 1652,
+        "level": 0.14,
+        "bugs": 0.08,
+        "time": 92,
+        "intelligentContent": 33.71,
+        "number_operators": 17,
+        "number_operands": 42,
+        "number_operators_unique": 4,
+        "number_operands_unique": 12,
+        "cloc": 69,
+        "loc": 116,
+        "lloc": 47,
+        "mi": 92.88,
+        "mIwoC": 46.37,
+        "commentWeight": 46.51,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 4,
+        "totalStructuralComplexity": 6,
+        "totalDataComplexity": 18,
+        "totalSystemComplexity": 24,
+        "package": "Swap\\",
+        "pageRank": 0.17,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Swap\\": {
+        "name": "Swap\\",
+        "classes": [
+            "Swap\\Builder",
+            "Swap\\Swap"
+        ],
+        "outgoing_class_dependencies": [
+            "LogicException",
+            "Psr\\Http\\Message\\RequestFactoryInterface",
+            "Psr\\SimpleCache\\CacheInterface",
+            "Swap\\Service\\Factory",
+            "Exchanger\\Service\\Chain",
+            "Exchanger\\Exchanger",
+            "Exchanger\\Contract\\ExchangeRateProvider",
+            "Exchanger\\Contract\\ExchangeRate",
+            "DateTimeInterface",
+            "Exchanger\\ExchangeRateQueryBuilder"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Psr\\Http\\Message\\",
+            "Psr\\SimpleCache\\",
+            "Swap\\Service\\",
+            "Exchanger\\Service\\",
+            "Exchanger\\",
+            "Exchanger\\Contract\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Swap\\Service\\": 0.875
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Swap\\Swap": {
+        "name": "Swap\\Swap",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "latest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "historical",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "quote",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Exchanger\\Contract\\ExchangeRateProvider",
+            "Exchanger\\Contract\\ExchangeRate",
+            "Exchanger\\Contract\\ExchangeRate",
+            "DateTimeInterface",
+            "Exchanger\\Contract\\ExchangeRate",
+            "DateTimeInterface",
+            "Exchanger\\ExchangeRateQueryBuilder"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 41,
+        "vocabulary": 13,
+        "volume": 151.72,
+        "difficulty": 7.33,
+        "effort": 1112.6,
+        "level": 0.14,
+        "bugs": 0.05,
+        "time": 62,
+        "intelligentContent": 20.69,
+        "number_operators": 8,
+        "number_operands": 33,
+        "number_operators_unique": 4,
+        "number_operands_unique": 9,
+        "cloc": 41,
+        "loc": 70,
+        "lloc": 29,
+        "mi": 98.76,
+        "mIwoC": 52.42,
+        "commentWeight": 46.34,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.88,
+        "relativeSystemComplexity": 25.88,
+        "totalStructuralComplexity": 100,
+        "totalDataComplexity": 3.5,
+        "totalSystemComplexity": 103.5,
+        "package": "Swap\\",
+        "pageRank": 0.33,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Swap\\Service\\Registry": {
+        "name": "Swap\\Service\\Registry",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerServices",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Exchanger\\Service\\Registry"
+        ],
+        "parents": [],
+        "lcom": 4,
+        "length": 20,
+        "vocabulary": 7,
+        "volume": 56.15,
+        "difficulty": 3.2,
+        "effort": 179.67,
+        "level": 0.31,
+        "bugs": 0.02,
+        "time": 10,
+        "intelligentContent": 17.55,
+        "number_operators": 4,
+        "number_operands": 16,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 38,
+        "loc": 66,
+        "lloc": 28,
+        "mi": 101.92,
+        "mIwoC": 55.78,
+        "commentWeight": 46.14,
+        "kanDefect": 0.38,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.7,
+        "relativeSystemComplexity": 9.7,
+        "totalStructuralComplexity": 45,
+        "totalDataComplexity": 3.5,
+        "totalSystemComplexity": 48.5,
+        "package": "Swap\\Service\\",
+        "pageRank": 0.26,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Swap\\Service\\": {
+        "name": "Swap\\Service\\",
+        "classes": [
+            "Swap\\Service\\Registry",
+            "Swap\\Service\\Factory"
+        ],
+        "incoming_class_dependencies": [
+            "Swap\\Builder"
+        ],
+        "incoming_package_dependencies": [
+            "Swap\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Exchanger\\Service\\Registry",
+            "Psr\\Http\\Message\\RequestFactoryInterface",
+            "Http\\Discovery\\HttpClientDiscovery",
+            "LogicException",
+            "Http\\Discovery\\Psr17FactoryDiscovery",
+            "classOrCallable",
+            "ReflectionClass"
+        ],
+        "outgoing_package_dependencies": [
+            "Exchanger\\Service\\",
+            "Psr\\Http\\Message\\",
+            "Http\\Discovery\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.875,
+        "dependent_instabilities": [],
+        "distance": 0.08838834764831843,
+        "normalized_distance": 0.125,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Swap\\Service\\Factory": {
+        "name": "Swap\\Service\\Factory",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHttpClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRequestFactory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 13,
+        "ccn": 10,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Psr\\Http\\Message\\RequestFactoryInterface",
+            "Http\\Discovery\\HttpClientDiscovery",
+            "LogicException",
+            "Http\\Discovery\\Psr17FactoryDiscovery",
+            "Swap\\Service\\Registry",
+            "LogicException",
+            "Psr\\Http\\Message\\RequestFactoryInterface",
+            "LogicException",
+            "classOrCallable",
+            "ReflectionClass"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 61,
+        "vocabulary": 14,
+        "volume": 232.25,
+        "difficulty": 11.39,
+        "effort": 2645.05,
+        "level": 0.09,
+        "bugs": 0.08,
+        "time": 147,
+        "intelligentContent": 20.39,
+        "number_operators": 20,
+        "number_operands": 41,
+        "number_operators_unique": 5,
+        "number_operands_unique": 9,
+        "cloc": 42,
+        "loc": 88,
+        "lloc": 46,
+        "mi": 89.68,
+        "mIwoC": 45.82,
+        "commentWeight": 43.87,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.75,
+        "relativeSystemComplexity": 25.75,
+        "totalStructuralComplexity": 100,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 103,
+        "package": "Swap\\Service\\",
+        "pageRank": 0.25,
+        "afferentCoupling": 1,
+        "efferentCoupling": 7,
+        "instability": 0.88,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.1.3",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "florianv\/exchanger": {
+                "name": "florianv\/exchanger",
+                "required": "^2.0",
+                "installed": null,
+                "latest": "2.3.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/florianv\/exchanger",
+                "zip": "https:\/\/api.github.com\/repos\/florianv\/exchanger\/zipball\/b5253a34c661aa4f316f7c81bff2615de5709e86"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

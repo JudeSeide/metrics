@@ -1,0 +1,387 @@
+{
+    "Http\\Adapter\\Guzzle6\\Client": {
+        "name": "Http\\Adapter\\Guzzle6\\Client",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createWithConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendAsyncRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildClient",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Http\\Client\\HttpClient",
+            "Http\\Client\\HttpAsyncClient",
+            "Http\\Adapter\\Guzzle6\\Client",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Psr\\Http\\Message\\RequestInterface",
+            "Psr\\Http\\Message\\RequestInterface",
+            "Http\\Adapter\\Guzzle6\\Promise",
+            "GuzzleHttp\\Client",
+            "GuzzleHttp\\HandlerStack",
+            "GuzzleHttp\\Middleware",
+            "GuzzleHttp\\Client"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 38,
+        "vocabulary": 11,
+        "volume": 131.46,
+        "difficulty": 5.06,
+        "effort": 665.51,
+        "level": 0.2,
+        "bugs": 0.04,
+        "time": 37,
+        "intelligentContent": 25.97,
+        "number_operators": 11,
+        "number_operands": 27,
+        "number_operators_unique": 3,
+        "number_operands_unique": 8,
+        "cloc": 25,
+        "loc": 58,
+        "lloc": 33,
+        "mi": 94.3,
+        "mIwoC": 51.77,
+        "commentWeight": 42.53,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.71,
+        "relativeSystemComplexity": 36.71,
+        "totalStructuralComplexity": 180,
+        "totalDataComplexity": 3.57,
+        "totalSystemComplexity": 183.57,
+        "package": "Http\\Adapter\\Guzzle6\\",
+        "pageRank": 0.34,
+        "afferentCoupling": 2,
+        "efferentCoupling": 10,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Http\\Adapter\\Guzzle6\\": {
+        "name": "Http\\Adapter\\Guzzle6\\",
+        "classes": [
+            "Http\\Adapter\\Guzzle6\\Client",
+            "Http\\Adapter\\Guzzle6\\Promise"
+        ],
+        "outgoing_class_dependencies": [
+            "Http\\Client\\HttpClient",
+            "Http\\Client\\HttpAsyncClient",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Psr\\Http\\Message\\RequestInterface",
+            "GuzzleHttp\\Client",
+            "GuzzleHttp\\HandlerStack",
+            "GuzzleHttp\\Middleware",
+            "Http\\Promise\\Promise",
+            "GuzzleHttp\\Promise\\PromiseInterface",
+            "Http\\Client\\Exception\\TransferException",
+            "Http\\Adapter\\Guzzle6\\Exception\\UnexpectedValueException",
+            "static",
+            "GuzzleHttp\\Exception\\GuzzleException",
+            "Http\\Client\\Exception\\RequestException",
+            "Http\\Client\\Exception\\NetworkException",
+            "Http\\Client\\Exception\\HttpException"
+        ],
+        "outgoing_package_dependencies": [
+            "Http\\Client\\",
+            "Psr\\Http\\Message\\",
+            "GuzzleHttp\\",
+            "Http\\Promise\\",
+            "GuzzleHttp\\Promise\\",
+            "Http\\Client\\Exception\\",
+            "Http\\Adapter\\Guzzle6\\Exception\\",
+            "\\",
+            "GuzzleHttp\\Exception\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Http\\Adapter\\Guzzle6\\Exception\\": 0.6666666666666666
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Http\\Adapter\\Guzzle6\\Exception\\UnexpectedValueException": {
+        "name": "Http\\Adapter\\Guzzle6\\Exception\\UnexpectedValueException",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "UnexpectedValueException",
+            "Http\\Client\\Exception"
+        ],
+        "parents": [
+            "UnexpectedValueException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Http\\Adapter\\Guzzle6\\Exception\\",
+        "pageRank": 0.32,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Http\\Adapter\\Guzzle6\\Exception\\": {
+        "name": "Http\\Adapter\\Guzzle6\\Exception\\",
+        "classes": [
+            "Http\\Adapter\\Guzzle6\\Exception\\UnexpectedValueException"
+        ],
+        "outgoing_class_dependencies": [
+            "UnexpectedValueException",
+            "Http\\Client\\Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Http\\Client\\"
+        ],
+        "incoming_class_dependencies": [
+            "Http\\Adapter\\Guzzle6\\Promise"
+        ],
+        "incoming_package_dependencies": [
+            "Http\\Adapter\\Guzzle6\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": [],
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Http\\Adapter\\Guzzle6\\Promise": {
+        "name": "Http\\Adapter\\Guzzle6\\Promise",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "then",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wait",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleException",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 10,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Http\\Promise\\Promise",
+            "GuzzleHttp\\Promise\\PromiseInterface",
+            "Psr\\Http\\Message\\RequestInterface",
+            "Http\\Client\\Exception\\TransferException",
+            "Http\\Adapter\\Guzzle6\\Exception\\UnexpectedValueException",
+            "static",
+            "GuzzleHttp\\Exception\\GuzzleException",
+            "Psr\\Http\\Message\\RequestInterface",
+            "Http\\Client\\Exception\\RequestException",
+            "Http\\Client\\Exception\\NetworkException",
+            "Http\\Client\\Exception\\HttpException",
+            "Http\\Client\\Exception\\RequestException",
+            "Http\\Client\\Exception\\TransferException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 93,
+        "vocabulary": 16,
+        "volume": 372,
+        "difficulty": 11,
+        "effort": 4092,
+        "level": 0.09,
+        "bugs": 0.12,
+        "time": 227,
+        "intelligentContent": 33.82,
+        "number_operators": 27,
+        "number_operands": 66,
+        "number_operators_unique": 4,
+        "number_operands_unique": 12,
+        "cloc": 42,
+        "loc": 107,
+        "lloc": 65,
+        "mi": 82.37,
+        "mIwoC": 41.11,
+        "commentWeight": 41.26,
+        "kanDefect": 0.64,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 1.16,
+        "relativeSystemComplexity": 65.16,
+        "totalStructuralComplexity": 320,
+        "totalDataComplexity": 5.78,
+        "totalSystemComplexity": 325.78,
+        "package": "Http\\Adapter\\Guzzle6\\",
+        "pageRank": 0.34,
+        "afferentCoupling": 1,
+        "efferentCoupling": 10,
+        "instability": 0.91,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.1",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "php-http\/httplug": {
+                "name": "php-http\/httplug",
+                "required": "^2.0",
+                "installed": null,
+                "latest": "2.1.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/httplug.io",
+                "zip": "https:\/\/api.github.com\/repos\/php-http\/httplug\/zipball\/72d2b129a48f0490d55b7f89be0d6aa0597ffb06"
+            },
+            "psr\/http-client": {
+                "name": "psr\/http-client",
+                "required": "^1.0",
+                "installed": null,
+                "latest": "1.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/php-fig\/http-client",
+                "zip": "https:\/\/api.github.com\/repos\/php-fig\/http-client\/zipball\/496a823ef742b632934724bf769560c2a5c7c44e"
+            },
+            "guzzlehttp\/guzzle": {
+                "name": "guzzlehttp\/guzzle",
+                "required": "^6.0",
+                "installed": null,
+                "latest": "6.5.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/guzzlephp.org\/",
+                "zip": "https:\/\/api.github.com\/repos\/guzzle\/guzzle\/zipball\/43ece0e75098b7ecd8d13918293029e555a50f82"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

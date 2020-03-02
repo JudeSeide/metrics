@@ -1,0 +1,3977 @@
+{
+    "Finite\\Factory\\PimpleFactory": {
+        "name": "Finite\\Factory\\PimpleFactory",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createStateMachine",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\Factory\\AbstractFactory",
+            "Pimple"
+        ],
+        "parents": [
+            "Finite\\Factory\\AbstractFactory"
+        ],
+        "lcom": 1,
+        "length": 11,
+        "vocabulary": 5,
+        "volume": 25.54,
+        "difficulty": 2.67,
+        "effort": 68.11,
+        "level": 0.38,
+        "bugs": 0.01,
+        "time": 4,
+        "intelligentContent": 9.58,
+        "number_operators": 3,
+        "number_operands": 8,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 18,
+        "loc": 33,
+        "lloc": 15,
+        "mi": 109.87,
+        "mIwoC": 64.36,
+        "commentWeight": 45.52,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 4,
+        "package": "Finite\\Factory\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Factory\\": {
+        "name": "Finite\\Factory\\",
+        "classes": [
+            "Finite\\Factory\\PimpleFactory",
+            "Finite\\Factory\\FactoryInterface",
+            "Finite\\Factory\\SymfonyDependencyInjectionFactory",
+            "Finite\\Factory\\AbstractFactory"
+        ],
+        "outgoing_class_dependencies": [
+            "Pimple",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Finite\\Exception\\FactoryException",
+            "Finite\\Loader\\LoaderInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "Finite\\Exception\\",
+            "Finite\\Loader\\"
+        ],
+        "incoming_class_dependencies": [
+            "Finite\\Context"
+        ],
+        "incoming_package_dependencies": [
+            "Finite\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.8,
+        "dependent_instabilities": {
+            "Finite\\Exception\\": 0.2,
+            "Finite\\Loader\\": 0.9
+        },
+        "distance": 0.21213203435596428,
+        "normalized_distance": 0.30000000000000004,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\Factory\\FactoryInterface": {
+        "name": "Finite\\Factory\\FactoryInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Finite\\Factory\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 2,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Finite\\Factory\\SymfonyDependencyInjectionFactory": {
+        "name": "Finite\\Factory\\SymfonyDependencyInjectionFactory",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createStateMachine",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Finite\\Factory\\AbstractFactory",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Finite\\Exception\\FactoryException"
+        ],
+        "parents": [
+            "Finite\\Factory\\AbstractFactory"
+        ],
+        "lcom": 1,
+        "length": 16,
+        "vocabulary": 7,
+        "volume": 44.92,
+        "difficulty": 4.5,
+        "effort": 202.13,
+        "level": 0.22,
+        "bugs": 0.01,
+        "time": 11,
+        "intelligentContent": 9.98,
+        "number_operators": 4,
+        "number_operands": 12,
+        "number_operators_unique": 3,
+        "number_operands_unique": 4,
+        "cloc": 18,
+        "loc": 36,
+        "lloc": 18,
+        "mi": 105.23,
+        "mIwoC": 60.78,
+        "commentWeight": 44.46,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 4.67,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 1.33,
+        "totalSystemComplexity": 9.33,
+        "package": "Finite\\Factory\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Factory\\AbstractFactory": {
+        "name": "Finite\\Factory\\AbstractFactory",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addLoader",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLoader",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createStateMachine",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 5,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Finite\\Factory\\FactoryInterface",
+            "Finite\\Loader\\LoaderInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 50,
+        "vocabulary": 13,
+        "volume": 185.02,
+        "difficulty": 11.25,
+        "effort": 2081.5,
+        "level": 0.09,
+        "bugs": 0.06,
+        "time": 116,
+        "intelligentContent": 16.45,
+        "number_operators": 14,
+        "number_operands": 36,
+        "number_operators_unique": 5,
+        "number_operands_unique": 8,
+        "cloc": 28,
+        "loc": 62,
+        "lloc": 34,
+        "mi": 93.19,
+        "mIwoC": 50.04,
+        "commentWeight": 43.15,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.61,
+        "relativeSystemComplexity": 36.61,
+        "totalStructuralComplexity": 144,
+        "totalDataComplexity": 2.43,
+        "totalSystemComplexity": 146.43,
+        "package": "Finite\\Factory\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Exception\\StateException": {
+        "name": "Finite\\Exception\\StateException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Finite\\Exception\\Exception"
+        ],
+        "parents": [
+            "Finite\\Exception\\Exception"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 5,
+        "loc": 9,
+        "lloc": 4,
+        "mi": 216.73,
+        "mIwoC": 171,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Finite\\Exception\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Exception\\": {
+        "name": "Finite\\Exception\\",
+        "classes": [
+            "Finite\\Exception\\StateException",
+            "Finite\\Exception\\ObjectException",
+            "Finite\\Exception\\TransitionException",
+            "Finite\\Exception\\FactoryException",
+            "Finite\\Exception\\Exception",
+            "Finite\\Exception\\NoSuchPropertyException"
+        ],
+        "incoming_class_dependencies": [
+            "Finite\\Factory\\SymfonyDependencyInjectionFactory",
+            "Finite\\StateMachine\\StateMachine",
+            "Finite\\State\\Accessor\\PropertyPathStateAccessor",
+            "Finite\\Transition\\Transition"
+        ],
+        "incoming_package_dependencies": [
+            "Finite\\Factory\\",
+            "Finite\\StateMachine\\",
+            "Finite\\State\\Accessor\\",
+            "Finite\\Transition\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0.16666666666666666,
+        "instability": 0.2,
+        "dependent_instabilities": [],
+        "distance": 0.44783429475148007,
+        "normalized_distance": 0.6333333333333333,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\Exception\\ObjectException": {
+        "name": "Finite\\Exception\\ObjectException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Finite\\Exception\\Exception"
+        ],
+        "parents": [
+            "Finite\\Exception\\Exception"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 5,
+        "loc": 9,
+        "lloc": 4,
+        "mi": 216.73,
+        "mIwoC": 171,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Finite\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Exception\\TransitionException": {
+        "name": "Finite\\Exception\\TransitionException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Finite\\Exception\\Exception"
+        ],
+        "parents": [
+            "Finite\\Exception\\Exception"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 5,
+        "loc": 9,
+        "lloc": 4,
+        "mi": 216.73,
+        "mIwoC": 171,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Finite\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Exception\\FactoryException": {
+        "name": "Finite\\Exception\\FactoryException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Finite\\Exception\\Exception"
+        ],
+        "parents": [
+            "Finite\\Exception\\Exception"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 5,
+        "loc": 9,
+        "lloc": 4,
+        "mi": 216.73,
+        "mIwoC": 171,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Finite\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Exception\\Exception": {
+        "name": "Finite\\Exception\\Exception",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Exception"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 5,
+        "loc": 9,
+        "lloc": 4,
+        "mi": 216.73,
+        "mIwoC": 171,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Finite\\Exception\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 5,
+        "efferentCoupling": 1,
+        "instability": 0.17,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Exception\\NoSuchPropertyException": {
+        "name": "Finite\\Exception\\NoSuchPropertyException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Finite\\Exception\\Exception"
+        ],
+        "parents": [
+            "Finite\\Exception\\Exception"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 5,
+        "loc": 9,
+        "lloc": 4,
+        "mi": 216.73,
+        "mIwoC": 171,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Finite\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\StatefulInterface": {
+        "name": "Finite\\StatefulInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getFiniteState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFiniteState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Finite\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Finite\\": {
+        "name": "Finite\\",
+        "classes": [
+            "Finite\\StatefulInterface",
+            "Finite\\Context",
+            "Finite\\PropertiesAwareInterface"
+        ],
+        "outgoing_class_dependencies": [
+            "Finite\\Factory\\FactoryInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Finite\\Factory\\"
+        ],
+        "incoming_class_dependencies": [
+            "Finite\\State\\StateInterface",
+            "Finite\\Extension\\Twig\\FiniteExtension",
+            "Finite\\Transition\\PropertiesAwareTransitionInterface",
+            "Document"
+        ],
+        "incoming_package_dependencies": [
+            "Finite\\State\\",
+            "Finite\\Extension\\Twig\\",
+            "Finite\\Transition\\"
+        ],
+        "abstraction": 0.6666666666666666,
+        "instability": 0.2,
+        "dependent_instabilities": {
+            "Finite\\Factory\\": 0.8
+        },
+        "distance": 0.09428090415820631,
+        "normalized_distance": 0.1333333333333333,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\Context": {
+        "name": "Finite\\Context",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTransitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStateMachine",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFactory",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Finite\\Factory\\FactoryInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 58,
+        "vocabulary": 12,
+        "volume": 207.93,
+        "difficulty": 7.83,
+        "effort": 1628.77,
+        "level": 0.13,
+        "bugs": 0.07,
+        "time": 90,
+        "intelligentContent": 26.54,
+        "number_operators": 11,
+        "number_operands": 47,
+        "number_operators_unique": 3,
+        "number_operands_unique": 9,
+        "cloc": 47,
+        "loc": 86,
+        "lloc": 39,
+        "mi": 94.33,
+        "mIwoC": 48.79,
+        "commentWeight": 45.54,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.99,
+        "relativeSystemComplexity": 81.99,
+        "totalStructuralComplexity": 567,
+        "totalDataComplexity": 6.9,
+        "totalSystemComplexity": 573.9,
+        "package": "Finite\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Event\\FiniteEvents": {
+        "name": "Finite\\Event\\FiniteEvents",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "lcom": 0,
+        "length": 5,
+        "vocabulary": 5,
+        "volume": 11.61,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 23.22,
+        "number_operators": 0,
+        "number_operands": 5,
+        "number_operators_unique": 0,
+        "number_operands_unique": 5,
+        "cloc": 5,
+        "loc": 10,
+        "lloc": 5,
+        "mi": 121.62,
+        "mIwoC": 77.16,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Finite\\Event\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Event\\": {
+        "name": "Finite\\Event\\",
+        "classes": [
+            "Finite\\Event\\FiniteEvents",
+            "Finite\\Event\\CallbackHandler",
+            "Finite\\Event\\StateMachineEvent",
+            "Finite\\Event\\TransitionEvent"
+        ],
+        "incoming_class_dependencies": [
+            "Finite\\Event\\Callback\\CallbackSpecification",
+            "Finite\\Event\\Callback\\Callback",
+            "Finite\\Event\\Callback\\CallbackSpecificationInterface",
+            "Finite\\Event\\Callback\\CallbackInterface",
+            "Finite\\StateMachine\\StateMachine",
+            "Finite\\Loader\\ArrayLoader"
+        ],
+        "incoming_package_dependencies": [
+            "Finite\\Event\\Callback\\",
+            "Finite\\StateMachine\\",
+            "Finite\\Loader\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+            "Finite\\Event\\Callback\\CallbackBuilder",
+            "Symfony\\Component\\EventDispatcher\\Event",
+            "Finite\\StateMachine\\StateMachine",
+            "Finite\\State\\StateInterface",
+            "Finite\\Transition\\TransitionInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\EventDispatcher\\",
+            "Symfony\\Component\\OptionsResolver\\",
+            "Finite\\Event\\Callback\\",
+            "Finite\\StateMachine\\",
+            "Finite\\State\\",
+            "Finite\\Transition\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.5384615384615384,
+        "dependent_instabilities": {
+            "Finite\\Event\\Callback\\": 0.5,
+            "Finite\\StateMachine\\": 0.5833333333333334,
+            "Finite\\State\\": 0.25,
+            "Finite\\Transition\\": 0.6666666666666666
+        },
+        "distance": 0.3263569759322527,
+        "normalized_distance": 0.46153846153846156,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\Event\\Callback\\CallbackBuilderFactory": {
+        "name": "Finite\\Event\\Callback\\CallbackBuilderFactory",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "createBuilder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\Event\\Callback\\CallbackBuilderFactoryInterface",
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Finite\\Event\\Callback\\CallbackBuilder"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 3,
+        "vocabulary": 2,
+        "volume": 3,
+        "difficulty": 1,
+        "effort": 3,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 3,
+        "number_operators": 1,
+        "number_operands": 2,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 8,
+        "loc": 16,
+        "lloc": 8,
+        "mi": 121.28,
+        "mIwoC": 76.82,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 2,
+        "package": "Finite\\Event\\Callback\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Event\\Callback\\": {
+        "name": "Finite\\Event\\Callback\\",
+        "classes": [
+            "Finite\\Event\\Callback\\CallbackBuilderFactory",
+            "Finite\\Event\\Callback\\CallbackBuilderFactoryInterface",
+            "Finite\\Event\\Callback\\CallbackBuilder",
+            "Finite\\Event\\Callback\\CallbackSpecification",
+            "Finite\\Event\\Callback\\Callback",
+            "Finite\\Event\\Callback\\CallbackSpecificationInterface",
+            "Finite\\Event\\Callback\\CallbackInterface"
+        ],
+        "outgoing_class_dependencies": [
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Finite\\Event\\TransitionEvent"
+        ],
+        "outgoing_package_dependencies": [
+            "Finite\\StateMachine\\",
+            "Finite\\Event\\"
+        ],
+        "incoming_class_dependencies": [
+            "Finite\\Event\\CallbackHandler",
+            "Finite\\Loader\\ArrayLoader"
+        ],
+        "incoming_package_dependencies": [
+            "Finite\\Event\\",
+            "Finite\\Loader\\"
+        ],
+        "abstraction": 0.42857142857142855,
+        "instability": 0.5,
+        "dependent_instabilities": {
+            "Finite\\StateMachine\\": 0.5833333333333334,
+            "Finite\\Event\\": 0.5384615384615384
+        },
+        "distance": 0.05050762722761051,
+        "normalized_distance": 0.0714285714285714,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\Event\\Callback\\CallbackBuilderFactoryInterface": {
+        "name": "Finite\\Event\\Callback\\CallbackBuilderFactoryInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "createBuilder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\StateMachine\\StateMachineInterface"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Finite\\Event\\Callback\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Finite\\Event\\Callback\\CallbackBuilder": {
+        "name": "Finite\\Event\\Callback\\CallbackBuilder",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFrom",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTo",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOn",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCallable",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFrom",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addOn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCallback",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 4,
+        "wmc": 10,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Finite\\Event\\Callback\\CallbackSpecification",
+            "Finite\\Event\\Callback\\Callback",
+            "Finite\\StateMachine\\StateMachineInterface"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 79,
+        "vocabulary": 8,
+        "volume": 237,
+        "difficulty": 9.67,
+        "effort": 2291,
+        "level": 0.1,
+        "bugs": 0.08,
+        "time": 127,
+        "intelligentContent": 24.52,
+        "number_operators": 21,
+        "number_operands": 58,
+        "number_operators_unique": 2,
+        "number_operands_unique": 6,
+        "cloc": 74,
+        "loc": 134,
+        "lloc": 60,
+        "mi": 90.11,
+        "mIwoC": 44.45,
+        "commentWeight": 45.66,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 10.7,
+        "relativeSystemComplexity": 10.7,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 107,
+        "totalSystemComplexity": 107,
+        "package": "Finite\\Event\\Callback\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 3,
+        "instability": 0.6,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Event\\Callback\\CallbackSpecification": {
+        "name": "Finite\\Event\\Callback\\CallbackSpecification",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSatisfiedBy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsClause",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 9,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Finite\\Event\\Callback\\CallbackSpecificationInterface",
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Finite\\Event\\TransitionEvent"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 97,
+        "vocabulary": 25,
+        "volume": 450.45,
+        "difficulty": 13.81,
+        "effort": 6218.77,
+        "level": 0.07,
+        "bugs": 0.15,
+        "time": 345,
+        "intelligentContent": 32.63,
+        "number_operators": 26,
+        "number_operands": 71,
+        "number_operators_unique": 7,
+        "number_operands_unique": 18,
+        "cloc": 28,
+        "loc": 62,
+        "lloc": 34,
+        "mi": 89.95,
+        "mIwoC": 46.8,
+        "commentWeight": 43.15,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.9,
+        "relativeSystemComplexity": 36.9,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 2.71,
+        "totalSystemComplexity": 110.71,
+        "package": "Finite\\Event\\Callback\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Event\\Callback\\Callback": {
+        "name": "Finite\\Event\\Callback\\Callback",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSpecification",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__invoke",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "call",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Finite\\Event\\Callback\\CallbackInterface",
+            "Finite\\Event\\Callback\\CallbackSpecificationInterface",
+            "Finite\\Event\\TransitionEvent",
+            "Finite\\Event\\TransitionEvent"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 23,
+        "vocabulary": 8,
+        "volume": 69,
+        "difficulty": 5.4,
+        "effort": 372.6,
+        "level": 0.19,
+        "bugs": 0.02,
+        "time": 21,
+        "intelligentContent": 12.78,
+        "number_operators": 5,
+        "number_operands": 18,
+        "number_operators_unique": 3,
+        "number_operands_unique": 5,
+        "cloc": 22,
+        "loc": 47,
+        "lloc": 25,
+        "mi": 99.98,
+        "mIwoC": 56.36,
+        "commentWeight": 43.62,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.65,
+        "relativeSystemComplexity": 16.65,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 2.6,
+        "totalSystemComplexity": 66.6,
+        "package": "Finite\\Event\\Callback\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Event\\Callback\\CallbackSpecificationInterface": {
+        "name": "Finite\\Event\\Callback\\CallbackSpecificationInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "isSatisfiedBy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\Event\\TransitionEvent"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Finite\\Event\\Callback\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Finite\\Event\\Callback\\CallbackInterface": {
+        "name": "Finite\\Event\\Callback\\CallbackInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "__invoke",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\Event\\TransitionEvent"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Finite\\Event\\Callback\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Finite\\Event\\CallbackHandler": {
+        "name": "Finite\\Event\\CallbackHandler",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addBefore",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addAfter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "add",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+            "Finite\\Event\\Callback\\CallbackBuilder"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 88,
+        "vocabulary": 22,
+        "volume": 392.43,
+        "difficulty": 6.08,
+        "effort": 2385.56,
+        "level": 0.16,
+        "bugs": 0.13,
+        "time": 133,
+        "intelligentContent": 64.56,
+        "number_operators": 11,
+        "number_operands": 77,
+        "number_operators_unique": 3,
+        "number_operands_unique": 19,
+        "cloc": 39,
+        "loc": 83,
+        "lloc": 44,
+        "mi": 89.38,
+        "mIwoC": 45.72,
+        "commentWeight": 43.67,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.86,
+        "relativeSystemComplexity": 64.86,
+        "totalStructuralComplexity": 256,
+        "totalDataComplexity": 3.44,
+        "totalSystemComplexity": 259.44,
+        "package": "Finite\\Event\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Event\\StateMachineEvent": {
+        "name": "Finite\\Event\\StateMachineEvent",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStateMachine",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Symfony\\Component\\EventDispatcher\\Event",
+            "Finite\\StateMachine\\StateMachine"
+        ],
+        "parents": [
+            "Symfony\\Component\\EventDispatcher\\Event"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 4,
+        "volume": 12,
+        "difficulty": 2,
+        "effort": 24,
+        "level": 0.5,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 6,
+        "number_operators": 2,
+        "number_operands": 4,
+        "number_operators_unique": 2,
+        "number_operands_unique": 2,
+        "cloc": 14,
+        "loc": 27,
+        "lloc": 13,
+        "mi": 112.92,
+        "mIwoC": 68.01,
+        "commentWeight": 44.91,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Finite\\Event\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Event\\TransitionEvent": {
+        "name": "Finite\\Event\\TransitionEvent",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTransition",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRejected",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInitialState",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProperties",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Finite\\Event\\StateMachineEvent",
+            "Finite\\State\\StateInterface",
+            "Finite\\Transition\\TransitionInterface",
+            "Finite\\StateMachine\\StateMachine"
+        ],
+        "parents": [
+            "Finite\\Event\\StateMachineEvent"
+        ],
+        "lcom": 1,
+        "length": 42,
+        "vocabulary": 10,
+        "volume": 139.52,
+        "difficulty": 6.43,
+        "effort": 896.92,
+        "level": 0.16,
+        "bugs": 0.05,
+        "time": 50,
+        "intelligentContent": 21.7,
+        "number_operators": 12,
+        "number_operands": 30,
+        "number_operators_unique": 3,
+        "number_operands_unique": 7,
+        "cloc": 46,
+        "loc": 92,
+        "lloc": 46,
+        "mi": 92.76,
+        "mIwoC": 48.31,
+        "commentWeight": 44.46,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.72,
+        "relativeSystemComplexity": 10.72,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 13.75,
+        "totalSystemComplexity": 85.75,
+        "package": "Finite\\Event\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 5,
+        "efferentCoupling": 4,
+        "instability": 0.44,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\StateMachine\\ListenableStateMachine": {
+        "name": "Finite\\StateMachine\\ListenableStateMachine",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Finite\\StateMachine\\StateMachine"
+        ],
+        "parents": [
+            "Finite\\StateMachine\\StateMachine"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 9,
+        "loc": 13,
+        "lloc": 4,
+        "mi": 219.03,
+        "mIwoC": 171,
+        "commentWeight": 48.03,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Finite\\StateMachine\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\StateMachine\\": {
+        "name": "Finite\\StateMachine\\",
+        "classes": [
+            "Finite\\StateMachine\\ListenableStateMachine",
+            "Finite\\StateMachine\\SecurityAwareStateMachine",
+            "Finite\\StateMachine\\StateMachine",
+            "Finite\\StateMachine\\StateMachineInterface"
+        ],
+        "incoming_class_dependencies": [
+            "Finite\\Event\\Callback\\CallbackBuilderFactory",
+            "Finite\\Event\\Callback\\CallbackBuilderFactoryInterface",
+            "Finite\\Event\\Callback\\CallbackBuilder",
+            "Finite\\Event\\Callback\\CallbackSpecification",
+            "Finite\\Event\\StateMachineEvent",
+            "Finite\\Event\\TransitionEvent",
+            "Finite\\Loader\\LoaderInterface",
+            "Finite\\Loader\\ArrayLoader",
+            "Finite\\Transition\\TransitionInterface",
+            "Finite\\Transition\\Transition"
+        ],
+        "incoming_package_dependencies": [
+            "Finite\\Event\\Callback\\",
+            "Finite\\Event\\",
+            "Finite\\Loader\\",
+            "Finite\\Transition\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\Security\\Core\\Authorization\\AuthorizationCheckerInterface",
+            "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface",
+            "Finite\\State\\Accessor\\StateAccessorInterface",
+            "Symfony\\Component\\EventDispatcher\\EventDispatcher",
+            "Finite\\State\\Accessor\\PropertyPathStateAccessor",
+            "Finite\\Exception\\ObjectException",
+            "Finite\\Event\\StateMachineEvent",
+            "Finite\\Event\\TransitionEvent",
+            "Finite\\Exception\\StateException",
+            "Finite\\State\\State",
+            "InvalidArgumentException",
+            "Finite\\Transition\\Transition",
+            "Finite\\Exception\\TransitionException",
+            "Finite\\Transition\\TransitionInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\Security\\Core\\Authorization\\",
+            "Symfony\\Component\\EventDispatcher\\",
+            "Finite\\State\\Accessor\\",
+            "Finite\\Exception\\",
+            "Finite\\Event\\",
+            "Finite\\State\\",
+            "\\",
+            "Finite\\Transition\\"
+        ],
+        "abstraction": 0.25,
+        "instability": 0.5833333333333334,
+        "dependent_instabilities": {
+            "Finite\\State\\Accessor\\": 0.5,
+            "Finite\\Exception\\": 0.2,
+            "Finite\\Event\\": 0.5384615384615384,
+            "Finite\\State\\": 0.25,
+            "Finite\\Transition\\": 0.6666666666666666
+        },
+        "distance": 0.11785113019775789,
+        "normalized_distance": 0.16666666666666663,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\StateMachine\\SecurityAwareStateMachine": {
+        "name": "Finite\\StateMachine\\SecurityAwareStateMachine",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setSecurityContext",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "can",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Finite\\StateMachine\\StateMachine",
+            "Symfony\\Component\\Security\\Core\\Authorization\\AuthorizationCheckerInterface"
+        ],
+        "parents": [
+            "Finite\\StateMachine\\StateMachine"
+        ],
+        "lcom": 1,
+        "length": 20,
+        "vocabulary": 7,
+        "volume": 56.15,
+        "difficulty": 5.63,
+        "effort": 315.83,
+        "level": 0.18,
+        "bugs": 0.02,
+        "time": 18,
+        "intelligentContent": 9.98,
+        "number_operators": 5,
+        "number_operands": 15,
+        "number_operators_unique": 3,
+        "number_operands_unique": 4,
+        "cloc": 17,
+        "loc": 34,
+        "lloc": 17,
+        "mi": 104.96,
+        "mIwoC": 60.51,
+        "commentWeight": 44.46,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.58,
+        "relativeSystemComplexity": 25.58,
+        "totalStructuralComplexity": 50,
+        "totalDataComplexity": 1.17,
+        "totalSystemComplexity": 51.17,
+        "package": "Finite\\StateMachine\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\StateMachine\\StateMachine": {
+        "name": "Finite\\StateMachine\\StateMachine",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "apply",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "can",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addTransition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTransition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTransitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStates",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setObject",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getObject",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentState",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findInitialState",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDispatcher",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDispatcher",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setStateAccessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasStateAccessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setGraph",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getGraph",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findStateWithProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "dispatchTransitionEvent",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 22,
+        "nbMethods": 16,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 14,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 2,
+        "wmc": 50,
+        "ccn": 29,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface",
+            "Finite\\State\\Accessor\\StateAccessorInterface",
+            "Symfony\\Component\\EventDispatcher\\EventDispatcher",
+            "Finite\\State\\Accessor\\PropertyPathStateAccessor",
+            "Finite\\Exception\\ObjectException",
+            "Finite\\Exception\\ObjectException",
+            "Finite\\Event\\StateMachineEvent",
+            "Finite\\Event\\StateMachineEvent",
+            "Finite\\Event\\TransitionEvent",
+            "Finite\\Exception\\StateException",
+            "Finite\\Event\\TransitionEvent",
+            "Finite\\State\\State",
+            "InvalidArgumentException",
+            "Finite\\Transition\\Transition",
+            "Finite\\Exception\\TransitionException",
+            "Finite\\Exception\\StateException",
+            "Finite\\Exception\\StateException",
+            "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface",
+            "Finite\\State\\Accessor\\StateAccessorInterface",
+            "Finite\\Transition\\TransitionInterface",
+            "Finite\\Event\\TransitionEvent"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 294,
+        "vocabulary": 37,
+        "volume": 1531.58,
+        "difficulty": 34.07,
+        "effort": 52183.09,
+        "level": 0.03,
+        "bugs": 0.51,
+        "time": 2899,
+        "intelligentContent": 44.95,
+        "number_operators": 82,
+        "number_operands": 212,
+        "number_operators_unique": 9,
+        "number_operands_unique": 28,
+        "cloc": 113,
+        "loc": 303,
+        "lloc": 190,
+        "mi": 64.64,
+        "mIwoC": 24.09,
+        "commentWeight": 40.56,
+        "kanDefect": 1.66,
+        "relativeStructuralComplexity": 484,
+        "relativeDataComplexity": 0.87,
+        "relativeSystemComplexity": 484.87,
+        "totalStructuralComplexity": 10648,
+        "totalDataComplexity": 19.13,
+        "totalSystemComplexity": 10667.13,
+        "package": "Finite\\StateMachine\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 4,
+        "efferentCoupling": 14,
+        "instability": 0.78,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\StateMachine\\StateMachineInterface": {
+        "name": "Finite\\StateMachine\\StateMachineInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "initialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "apply",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "can",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addTransition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTransition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTransitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStates",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setObject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getObject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDispatcher",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setStateAccessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasStateAccessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setGraph",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getGraph",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findStateWithProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 18,
+        "nbMethods": 18,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 18,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\State\\Accessor\\StateAccessorInterface"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Finite\\StateMachine\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 9,
+        "efferentCoupling": 1,
+        "instability": 0.1,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Configuration": {
+        "name": "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Configuration",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getConfigTreeBuilder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addStateSection",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addTransitionSection",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCallbackSection",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addSubCallbackSection",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Symfony\\Component\\Config\\Definition\\ConfigurationInterface",
+            "Symfony\\Component\\Config\\Definition\\Builder\\TreeBuilder",
+            "Symfony\\Component\\Config\\Definition\\Builder\\NodeBuilder",
+            "Symfony\\Component\\Config\\Definition\\Builder\\NodeBuilder",
+            "Symfony\\Component\\Config\\Definition\\Builder\\NodeBuilder",
+            "Symfony\\Component\\Config\\Definition\\Builder\\NodeBuilder"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 70,
+        "vocabulary": 28,
+        "volume": 336.51,
+        "difficulty": 2.5,
+        "effort": 841.29,
+        "level": 0.4,
+        "bugs": 0.11,
+        "time": 47,
+        "intelligentContent": 134.61,
+        "number_operators": 5,
+        "number_operands": 65,
+        "number_operators_unique": 2,
+        "number_operands_unique": 26,
+        "cloc": 21,
+        "loc": 56,
+        "lloc": 35,
+        "mi": 89.12,
+        "mIwoC": 48.49,
+        "commentWeight": 40.63,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.13,
+        "relativeSystemComplexity": 196.13,
+        "totalStructuralComplexity": 980,
+        "totalDataComplexity": 0.67,
+        "totalSystemComplexity": 980.67,
+        "package": "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\": {
+        "name": "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\",
+        "classes": [
+            "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Configuration",
+            "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\FiniteFiniteExtension"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\Config\\Definition\\ConfigurationInterface",
+            "Symfony\\Component\\Config\\Definition\\Builder\\TreeBuilder",
+            "Symfony\\Component\\Config\\Definition\\Builder\\NodeBuilder",
+            "Symfony\\Component\\HttpKernel\\DependencyInjection\\Extension",
+            "Symfony\\Component\\DependencyInjection\\ContainerBuilder",
+            "Symfony\\Component\\Config\\FileLocator",
+            "Symfony\\Component\\DependencyInjection\\Loader\\XmlFileLoader",
+            "Symfony\\Component\\DependencyInjection\\Reference"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\Config\\Definition\\",
+            "Symfony\\Component\\Config\\Definition\\Builder\\",
+            "Symfony\\Component\\HttpKernel\\DependencyInjection\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "Symfony\\Component\\Config\\",
+            "Symfony\\Component\\DependencyInjection\\Loader\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\FiniteFiniteExtension": {
+        "name": "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\FiniteFiniteExtension",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeDisabledCallbacks",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 8,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Symfony\\Component\\HttpKernel\\DependencyInjection\\Extension",
+            "Symfony\\Component\\DependencyInjection\\ContainerBuilder",
+            "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Configuration",
+            "Symfony\\Component\\Config\\FileLocator",
+            "Symfony\\Component\\DependencyInjection\\Loader\\XmlFileLoader",
+            "Symfony\\Component\\DependencyInjection\\Reference"
+        ],
+        "parents": [
+            "Symfony\\Component\\HttpKernel\\DependencyInjection\\Extension"
+        ],
+        "lcom": 1,
+        "length": 92,
+        "vocabulary": 36,
+        "volume": 475.63,
+        "difficulty": 4.75,
+        "effort": 2259.26,
+        "level": 0.21,
+        "bugs": 0.16,
+        "time": 126,
+        "intelligentContent": 100.13,
+        "number_operators": 16,
+        "number_operands": 76,
+        "number_operators_unique": 4,
+        "number_operands_unique": 32,
+        "cloc": 16,
+        "loc": 62,
+        "lloc": 46,
+        "mi": 79.32,
+        "mIwoC": 43.91,
+        "commentWeight": 35.41,
+        "kanDefect": 1.12,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.27,
+        "relativeSystemComplexity": 144.27,
+        "totalStructuralComplexity": 288,
+        "totalDataComplexity": 0.54,
+        "totalSystemComplexity": 288.54,
+        "package": "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Compiler\\ContainerCallbackPass": {
+        "name": "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Compiler\\ContainerCallbackPass",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 8,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Symfony\\Component\\DependencyInjection\\Compiler\\CompilerPassInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerBuilder",
+            "Symfony\\Component\\DependencyInjection\\Reference"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 53,
+        "vocabulary": 20,
+        "volume": 229.06,
+        "difficulty": 5.5,
+        "effort": 1259.84,
+        "level": 0.18,
+        "bugs": 0.08,
+        "time": 70,
+        "intelligentContent": 41.65,
+        "number_operators": 9,
+        "number_operands": 44,
+        "number_operators_unique": 4,
+        "number_operands_unique": 16,
+        "cloc": 8,
+        "loc": 30,
+        "lloc": 22,
+        "mi": 88.98,
+        "mIwoC": 53.12,
+        "commentWeight": 35.87,
+        "kanDefect": 0.98,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.17,
+        "relativeSystemComplexity": 25.17,
+        "totalStructuralComplexity": 25,
+        "totalDataComplexity": 0.17,
+        "totalSystemComplexity": 25.17,
+        "package": "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Compiler\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Compiler\\": {
+        "name": "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Compiler\\",
+        "classes": [
+            "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Compiler\\ContainerCallbackPass"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\DependencyInjection\\Compiler\\CompilerPassInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerBuilder",
+            "Symfony\\Component\\DependencyInjection\\Reference"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\DependencyInjection\\Compiler\\",
+            "Symfony\\Component\\DependencyInjection\\"
+        ],
+        "incoming_class_dependencies": [
+            "Finite\\Bundle\\FiniteBundle\\FiniteFiniteBundle"
+        ],
+        "incoming_package_dependencies": [
+            "Finite\\Bundle\\FiniteBundle\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.75,
+        "dependent_instabilities": [],
+        "distance": 0.17677669529663687,
+        "normalized_distance": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\Bundle\\FiniteBundle\\FiniteFiniteBundle": {
+        "name": "Finite\\Bundle\\FiniteBundle\\FiniteFiniteBundle",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "build",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Symfony\\Component\\HttpKernel\\Bundle\\Bundle",
+            "Symfony\\Component\\DependencyInjection\\ContainerBuilder",
+            "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Compiler\\ContainerCallbackPass"
+        ],
+        "parents": [
+            "Symfony\\Component\\HttpKernel\\Bundle\\Bundle"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 1,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 2,
+        "number_operators_unique": 0,
+        "number_operands_unique": 1,
+        "cloc": 3,
+        "loc": 11,
+        "lloc": 8,
+        "mi": 207.18,
+        "mIwoC": 171,
+        "commentWeight": 36.18,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 1.5,
+        "package": "Finite\\Bundle\\FiniteBundle\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Bundle\\FiniteBundle\\": {
+        "name": "Finite\\Bundle\\FiniteBundle\\",
+        "classes": [
+            "Finite\\Bundle\\FiniteBundle\\FiniteFiniteBundle"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\HttpKernel\\Bundle\\Bundle",
+            "Symfony\\Component\\DependencyInjection\\ContainerBuilder",
+            "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Compiler\\ContainerCallbackPass"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\HttpKernel\\Bundle\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Compiler\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Finite\\Bundle\\FiniteBundle\\DependencyInjection\\Compiler\\": 0.75
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\State\\StateInterface": {
+        "name": "Finite\\State\\StateInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isInitial",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isFinal",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isNormal",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTransitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "can",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\PropertiesAwareInterface"
+        ],
+        "parents": [
+            "Finite\\PropertiesAwareInterface"
+        ],
+        "kanDefect": 0.15,
+        "package": "Finite\\State\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Finite\\State\\": {
+        "name": "Finite\\State\\",
+        "classes": [
+            "Finite\\State\\StateInterface",
+            "Finite\\State\\State"
+        ],
+        "incoming_class_dependencies": [
+            "Finite\\Event\\TransitionEvent",
+            "Finite\\StateMachine\\StateMachine",
+            "Finite\\Loader\\ArrayLoader"
+        ],
+        "incoming_package_dependencies": [
+            "Finite\\Event\\",
+            "Finite\\StateMachine\\",
+            "Finite\\Loader\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Finite\\PropertiesAwareInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Finite\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.25,
+        "dependent_instabilities": {
+            "Finite\\": 0.2
+        },
+        "distance": 0.17677669529663687,
+        "normalized_distance": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\State\\State": {
+        "name": "Finite\\State\\State",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isInitial",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isFinal",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isNormal",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getType",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addTransition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTransitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTransitions",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "can",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProperties",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setProperties",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 15,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 1,
+        "wmc": 19,
+        "ccn": 5,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Finite\\State\\StateInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 74,
+        "vocabulary": 12,
+        "volume": 265.29,
+        "difficulty": 12.5,
+        "effort": 3316.09,
+        "level": 0.08,
+        "bugs": 0.09,
+        "time": 184,
+        "intelligentContent": 21.22,
+        "number_operators": 24,
+        "number_operands": 50,
+        "number_operators_unique": 4,
+        "number_operands_unique": 8,
+        "cloc": 69,
+        "loc": 148,
+        "lloc": 79,
+        "mi": 84.53,
+        "mIwoC": 40.96,
+        "commentWeight": 43.56,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 2.93,
+        "relativeSystemComplexity": 11.93,
+        "totalStructuralComplexity": 135,
+        "totalDataComplexity": 44,
+        "totalSystemComplexity": 179,
+        "package": "Finite\\State\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\State\\Accessor\\PropertyPathStateAccessor": {
+        "name": "Finite\\State\\Accessor\\PropertyPathStateAccessor",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Finite\\State\\Accessor\\StateAccessorInterface",
+            "Symfony\\Component\\PropertyAccess\\PropertyAccessorInterface",
+            "Symfony\\Component\\PropertyAccess\\PropertyAccess",
+            "Finite\\Exception\\NoSuchPropertyException",
+            "Finite\\Exception\\NoSuchPropertyException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 34,
+        "vocabulary": 11,
+        "volume": 117.62,
+        "difficulty": 5.44,
+        "effort": 639.56,
+        "level": 0.18,
+        "bugs": 0.04,
+        "time": 36,
+        "intelligentContent": 21.63,
+        "number_operators": 5,
+        "number_operands": 29,
+        "number_operators_unique": 3,
+        "number_operands_unique": 8,
+        "cloc": 21,
+        "loc": 48,
+        "lloc": 27,
+        "mi": 96.47,
+        "mIwoC": 53.74,
+        "commentWeight": 42.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.53,
+        "relativeSystemComplexity": 16.53,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 1.6,
+        "totalSystemComplexity": 49.6,
+        "package": "Finite\\State\\Accessor\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 4,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\State\\Accessor\\": {
+        "name": "Finite\\State\\Accessor\\",
+        "classes": [
+            "Finite\\State\\Accessor\\PropertyPathStateAccessor",
+            "Finite\\State\\Accessor\\StateAccessorInterface"
+        ],
+        "incoming_class_dependencies": [
+            "Finite\\StateMachine\\StateMachine",
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Finite\\Loader\\ArrayLoader"
+        ],
+        "incoming_package_dependencies": [
+            "Finite\\StateMachine\\",
+            "Finite\\Loader\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\PropertyAccess\\PropertyAccessorInterface",
+            "Symfony\\Component\\PropertyAccess\\PropertyAccess",
+            "Finite\\Exception\\NoSuchPropertyException"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\PropertyAccess\\",
+            "Finite\\Exception\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.5,
+        "dependent_instabilities": {
+            "Finite\\Exception\\": 0.2
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\State\\Accessor\\StateAccessorInterface": {
+        "name": "Finite\\State\\Accessor\\StateAccessorInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Finite\\State\\Accessor\\",
+        "pageRank": 0.17,
+        "afferentCoupling": 3,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Finite\\PropertiesAwareInterface": {
+        "name": "Finite\\PropertiesAwareInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Finite\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 2,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Finite\\Extension\\Twig\\FiniteExtension": {
+        "name": "Finite\\Extension\\Twig\\FiniteExtension",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFunctions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFiniteState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFiniteTransitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFiniteProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasFiniteProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "canFiniteTransition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Twig_Extension",
+            "Finite\\Context",
+            "Twig_SimpleFunction",
+            "Twig_SimpleFunction",
+            "Twig_SimpleFunction",
+            "Twig_SimpleFunction",
+            "Twig_SimpleFunction"
+        ],
+        "parents": [
+            "Twig_Extension"
+        ],
+        "lcom": 3,
+        "length": 63,
+        "vocabulary": 21,
+        "volume": 276.72,
+        "difficulty": 2.89,
+        "effort": 801.02,
+        "level": 0.35,
+        "bugs": 0.09,
+        "time": 45,
+        "intelligentContent": 95.59,
+        "number_operators": 8,
+        "number_operands": 55,
+        "number_operators_unique": 2,
+        "number_operands_unique": 19,
+        "cloc": 50,
+        "loc": 87,
+        "lloc": 37,
+        "mi": 94.68,
+        "mIwoC": 48.56,
+        "commentWeight": 46.12,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 37.25,
+        "totalStructuralComplexity": 288,
+        "totalDataComplexity": 10,
+        "totalSystemComplexity": 298,
+        "package": "Finite\\Extension\\Twig\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Extension\\Twig\\": {
+        "name": "Finite\\Extension\\Twig\\",
+        "classes": [
+            "Finite\\Extension\\Twig\\FiniteExtension"
+        ],
+        "outgoing_class_dependencies": [
+            "Twig_Extension",
+            "Finite\\Context",
+            "Twig_SimpleFunction"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Finite\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Finite\\": 0.2
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\Loader\\LoaderInterface": {
+        "name": "Finite\\Loader\\LoaderInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supports",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\StateMachine\\StateMachineInterface"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Finite\\Loader\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Finite\\Loader\\": {
+        "name": "Finite\\Loader\\",
+        "classes": [
+            "Finite\\Loader\\LoaderInterface",
+            "Finite\\Loader\\ArrayLoader"
+        ],
+        "incoming_class_dependencies": [
+            "Finite\\Factory\\AbstractFactory"
+        ],
+        "incoming_package_dependencies": [
+            "Finite\\Factory\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Finite\\Event\\CallbackHandler",
+            "Finite\\Event\\Callback\\CallbackBuilderFactoryInterface",
+            "Finite\\Event\\Callback\\CallbackBuilderFactory",
+            "Finite\\State\\Accessor\\PropertyPathStateAccessor",
+            "ReflectionClass",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+            "Finite\\State\\State",
+            "Finite\\Transition\\Transition"
+        ],
+        "outgoing_package_dependencies": [
+            "Finite\\StateMachine\\",
+            "Finite\\Event\\",
+            "Finite\\Event\\Callback\\",
+            "Finite\\State\\Accessor\\",
+            "\\",
+            "Symfony\\Component\\OptionsResolver\\",
+            "Finite\\State\\",
+            "Finite\\Transition\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.9,
+        "dependent_instabilities": {
+            "Finite\\StateMachine\\": 0.5833333333333334,
+            "Finite\\Event\\": 0.5384615384615384,
+            "Finite\\Event\\Callback\\": 0.5,
+            "Finite\\State\\Accessor\\": 0.5,
+            "Finite\\State\\": 0.25,
+            "Finite\\Transition\\": 0.6666666666666666
+        },
+        "distance": 0.28284271247461895,
+        "normalized_distance": 0.3999999999999999,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\Loader\\ArrayLoader": {
+        "name": "Finite\\Loader\\ArrayLoader",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supports",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadStates",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadTransitions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadCallbacks",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadCallbacksFor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCallbacksResolver",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 13,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Finite\\Loader\\LoaderInterface",
+            "Finite\\Event\\CallbackHandler",
+            "Finite\\Event\\Callback\\CallbackBuilderFactoryInterface",
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Finite\\Event\\CallbackHandler",
+            "Finite\\Event\\Callback\\CallbackBuilderFactory",
+            "Finite\\State\\Accessor\\PropertyPathStateAccessor",
+            "ReflectionClass",
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+            "Finite\\State\\State",
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+            "Finite\\Transition\\Transition",
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 231,
+        "vocabulary": 49,
+        "volume": 1297,
+        "difficulty": 13.6,
+        "effort": 17645.2,
+        "level": 0.07,
+        "bugs": 0.43,
+        "time": 980,
+        "intelligentContent": 95.33,
+        "number_operators": 36,
+        "number_operands": 195,
+        "number_operators_unique": 6,
+        "number_operands_unique": 43,
+        "cloc": 34,
+        "loc": 141,
+        "lloc": 107,
+        "mi": 66.66,
+        "mIwoC": 32.19,
+        "commentWeight": 34.47,
+        "kanDefect": 1.49,
+        "relativeStructuralComplexity": 625,
+        "relativeDataComplexity": 0.36,
+        "relativeSystemComplexity": 625.36,
+        "totalStructuralComplexity": 5000,
+        "totalDataComplexity": 2.88,
+        "totalSystemComplexity": 5002.88,
+        "package": "Finite\\Loader\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 10,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Transition\\TransitionInterface": {
+        "name": "Finite\\Transition\\TransitionInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getInitialStates",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getGuard",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\StateMachine\\StateMachineInterface"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Finite\\Transition\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 3,
+        "efferentCoupling": 1,
+        "instability": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Finite\\Transition\\": {
+        "name": "Finite\\Transition\\",
+        "classes": [
+            "Finite\\Transition\\TransitionInterface",
+            "Finite\\Transition\\Transition",
+            "Finite\\Transition\\PropertiesAwareTransitionInterface",
+            "Document",
+            "Order",
+            "Document",
+            "Document",
+            "Document",
+            "Order"
+        ],
+        "incoming_class_dependencies": [
+            "Finite\\Event\\TransitionEvent",
+            "Finite\\StateMachine\\StateMachine",
+            "Finite\\Loader\\ArrayLoader"
+        ],
+        "incoming_package_dependencies": [
+            "Finite\\Event\\",
+            "Finite\\StateMachine\\",
+            "Finite\\Loader\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+            "InvalidArgumentException",
+            "Finite\\Exception\\TransitionException",
+            "Finite\\PropertiesAwareInterface",
+            "Finite\\StatefulInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Finite\\StateMachine\\",
+            "Symfony\\Component\\OptionsResolver\\",
+            "\\",
+            "Finite\\Exception\\",
+            "Finite\\"
+        ],
+        "abstraction": 0.2222222222222222,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": {
+            "Finite\\StateMachine\\": 0.5833333333333334,
+            "Finite\\Exception\\": 0.2,
+            "Finite\\": 0.2
+        },
+        "distance": 0.07856742013183865,
+        "normalized_distance": 0.11111111111111116,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Finite\\Transition\\Transition": {
+        "name": "Finite\\Transition\\Transition",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addInitialState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInitialStates",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getGuard",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resolveProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 9,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Finite\\Transition\\PropertiesAwareTransitionInterface",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+            "InvalidArgumentException",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+            "Finite\\StateMachine\\StateMachineInterface",
+            "Finite\\Exception\\TransitionException",
+            "Finite\\Exception\\TransitionException"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 95,
+        "vocabulary": 25,
+        "volume": 441.17,
+        "difficulty": 13.03,
+        "effort": 5747.42,
+        "level": 0.08,
+        "bugs": 0.15,
+        "time": 319,
+        "intelligentContent": 33.86,
+        "number_operators": 28,
+        "number_operands": 67,
+        "number_operators_unique": 7,
+        "number_operands_unique": 18,
+        "cloc": 62,
+        "loc": 140,
+        "lloc": 78,
+        "mi": 81.89,
+        "mIwoC": 39,
+        "commentWeight": 42.89,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 1.56,
+        "relativeSystemComplexity": 37.56,
+        "totalStructuralComplexity": 432,
+        "totalDataComplexity": 18.71,
+        "totalSystemComplexity": 450.71,
+        "package": "Finite\\Transition\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 5,
+        "instability": 0.71,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Finite\\Transition\\PropertiesAwareTransitionInterface": {
+        "name": "Finite\\Transition\\PropertiesAwareTransitionInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "resolveProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\Transition\\TransitionInterface",
+            "Finite\\PropertiesAwareInterface"
+        ],
+        "parents": [
+            "Finite\\Transition\\TransitionInterface",
+            "Finite\\PropertiesAwareInterface"
+        ],
+        "kanDefect": 0.15,
+        "package": "Finite\\Transition\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Document": {
+        "name": "Document",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFiniteState",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFiniteState",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Finite\\StatefulInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 4,
+        "volume": 12,
+        "difficulty": 2,
+        "effort": 24,
+        "level": 0.5,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 6,
+        "number_operators": 2,
+        "number_operands": 4,
+        "number_operators_unique": 2,
+        "number_operands_unique": 2,
+        "cloc": 1,
+        "loc": 14,
+        "lloc": 13,
+        "mi": 88.13,
+        "mIwoC": 68.01,
+        "commentWeight": 20.12,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Finite\\Transition\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Order": {
+        "name": "Order",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setPaymentStatus",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPaymentStatus",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setShippingStatus",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getShippingStatus",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 2,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 18,
+        "vocabulary": 10,
+        "volume": 59.79,
+        "difficulty": 1.75,
+        "effort": 104.64,
+        "level": 0.57,
+        "bugs": 0.02,
+        "time": 6,
+        "intelligentContent": 34.17,
+        "number_operators": 4,
+        "number_operands": 14,
+        "number_operators_unique": 2,
+        "number_operands_unique": 8,
+        "cloc": 2,
+        "loc": 30,
+        "lloc": 28,
+        "mi": 75.33,
+        "mIwoC": 55.86,
+        "commentWeight": 19.47,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 10,
+        "totalSystemComplexity": 10,
+        "package": "Finite\\Transition\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "pass_guard": {
+        "name": "pass_guard",
+        "cloc": 0,
+        "loc": 6,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "fail_guard": {
+        "name": "fail_guard",
+        "cloc": 0,
+        "loc": 6,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.34,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.5",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "symfony\/options-resolver": {
+                "name": "symfony\/options-resolver",
+                "required": "^2.6|^3.0|^4.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/options-resolver\/zipball\/b1ab86ce52b0c0abe031367a173005a025e30e04"
+            },
+            "symfony\/event-dispatcher": {
+                "name": "symfony\/event-dispatcher",
+                "required": "^2.6|^3.0|^4.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/event-dispatcher\/zipball\/b45ad88b253c5a9702ce218e201d89c85d148cea"
+            },
+            "symfony\/property-access": {
+                "name": "symfony\/property-access",
+                "required": "^2.6|^3.0|^4.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/property-access\/zipball\/18617a8c26b97a262f816c78765eb3cd91630e19"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

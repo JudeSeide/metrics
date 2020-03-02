@@ -1,0 +1,260 @@
+{
+    "Http\\Promise\\FulfilledPromise": {
+        "name": "Http\\Promise\\FulfilledPromise",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "then",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wait",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Http\\Promise\\Promise",
+            "Http\\Promise\\RejectedPromise"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 24,
+        "vocabulary": 11,
+        "volume": 83.03,
+        "difficulty": 5.83,
+        "effort": 484.32,
+        "level": 0.17,
+        "bugs": 0.03,
+        "time": 27,
+        "intelligentContent": 14.23,
+        "number_operators": 10,
+        "number_operands": 14,
+        "number_operators_unique": 5,
+        "number_operands_unique": 6,
+        "cloc": 20,
+        "loc": 50,
+        "lloc": 30,
+        "mi": 95.32,
+        "mIwoC": 53.8,
+        "commentWeight": 41.52,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 6,
+        "relativeSystemComplexity": 6,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 24,
+        "totalSystemComplexity": 24,
+        "package": "Http\\Promise\\",
+        "pageRank": 0.25,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Http\\Promise\\": {
+        "name": "Http\\Promise\\",
+        "classes": [
+            "Http\\Promise\\FulfilledPromise",
+            "Http\\Promise\\Promise",
+            "Http\\Promise\\RejectedPromise"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0.23570226039551578,
+        "normalized_distance": 0.33333333333333326,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Http\\Promise\\Promise": {
+        "name": "Http\\Promise\\Promise",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "then",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wait",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Http\\Promise\\",
+        "pageRank": 0.45,
+        "afferentCoupling": 2,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Http\\Promise\\RejectedPromise": {
+        "name": "Http\\Promise\\RejectedPromise",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "then",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wait",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Http\\Promise\\Promise",
+            "Exception",
+            "Http\\Promise\\FulfilledPromise"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 23,
+        "vocabulary": 11,
+        "volume": 79.57,
+        "difficulty": 5.83,
+        "effort": 464.14,
+        "level": 0.17,
+        "bugs": 0.03,
+        "time": 26,
+        "intelligentContent": 13.64,
+        "number_operators": 9,
+        "number_operands": 14,
+        "number_operators_unique": 5,
+        "number_operands_unique": 6,
+        "cloc": 20,
+        "loc": 50,
+        "lloc": 30,
+        "mi": 95.45,
+        "mIwoC": 53.93,
+        "commentWeight": 41.52,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 5,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 20,
+        "totalSystemComplexity": 20,
+        "package": "Http\\Promise\\",
+        "pageRank": 0.3,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.1",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

@@ -1,0 +1,178 @@
+{
+    "TwitterAPIExchange": {
+        "name": "TwitterAPIExchange",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPostfields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setGetfield",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getGetfield",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPostfields",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOauth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "performRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildBaseString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildAuthorizationHeader",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "request",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHttpStatusCode",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 0,
+        "wmc": 41,
+        "ccn": 31,
+        "ccnMethodMax": 8,
+        "externals": [
+            "RuntimeException",
+            "InvalidArgumentException",
+            "Exception",
+            "Exception",
+            "Exception",
+            "Exception",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 364,
+        "vocabulary": 83,
+        "volume": 2320.51,
+        "difficulty": 18.22,
+        "effort": 42277.86,
+        "level": 0.05,
+        "bugs": 0.77,
+        "time": 2349,
+        "intelligentContent": 127.37,
+        "number_operators": 98,
+        "number_operands": 266,
+        "number_operators_unique": 10,
+        "number_operands_unique": 73,
+        "cloc": 139,
+        "loc": 308,
+        "lloc": 169,
+        "mi": 66.8,
+        "mIwoC": 23.67,
+        "commentWeight": 43.14,
+        "kanDefect": 2.86,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 1.26,
+        "relativeSystemComplexity": 65.26,
+        "totalStructuralComplexity": 704,
+        "totalDataComplexity": 13.89,
+        "totalSystemComplexity": 717.89,
+        "package": " Twitter-API-PHP\\",
+        "pageRank": 1,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    " Twitter-API-PHP\\": {
+        "name": " Twitter-API-PHP\\",
+        "classes": [
+            "TwitterAPIExchange"
+        ],
+        "outgoing_class_dependencies": [
+            "RuntimeException",
+            "InvalidArgumentException",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "ext-curl": {
+                "name": "ext-curl",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

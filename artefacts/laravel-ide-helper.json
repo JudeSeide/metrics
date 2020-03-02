@@ -1,0 +1,1581 @@
+{
+    "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider": {
+        "name": "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createLocalViewFactory",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Barryvdh\\LaravelIdeHelper\\Console\\GeneratorCommand",
+            "Barryvdh\\LaravelIdeHelper\\Console\\ModelsCommand",
+            "Barryvdh\\LaravelIdeHelper\\Console\\MetaCommand",
+            "Barryvdh\\LaravelIdeHelper\\Console\\EloquentCommand",
+            "Illuminate\\View\\Engines\\EngineResolver",
+            "Illuminate\\View\\Engines\\PhpEngine",
+            "Illuminate\\View\\FileViewFinder",
+            "Illuminate\\View\\Factory"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 103,
+        "vocabulary": 29,
+        "volume": 500.37,
+        "difficulty": 6.48,
+        "effort": 3242.41,
+        "level": 0.15,
+        "bugs": 0.17,
+        "time": 180,
+        "intelligentContent": 77.22,
+        "number_operators": 22,
+        "number_operands": 81,
+        "number_operators_unique": 4,
+        "number_operands_unique": 25,
+        "cloc": 23,
+        "loc": 76,
+        "lloc": 53,
+        "mi": 80.72,
+        "mIwoC": 43.08,
+        "commentWeight": 37.64,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.7,
+        "relativeSystemComplexity": 81.7,
+        "totalStructuralComplexity": 324,
+        "totalDataComplexity": 2.8,
+        "totalSystemComplexity": 326.8,
+        "package": "Barryvdh\\LaravelIdeHelper\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 0,
+        "efferentCoupling": 9,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\": {
+        "name": "Barryvdh\\LaravelIdeHelper\\",
+        "classes": [
+            "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider",
+            "Barryvdh\\LaravelIdeHelper\\Macro",
+            "Barryvdh\\LaravelIdeHelper\\Alias",
+            "Barryvdh\\LaravelIdeHelper\\Method",
+            "Barryvdh\\LaravelIdeHelper\\Eloquent",
+            "Barryvdh\\LaravelIdeHelper\\Factories",
+            "Barryvdh\\LaravelIdeHelper\\Generator"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Barryvdh\\LaravelIdeHelper\\Console\\GeneratorCommand",
+            "Barryvdh\\LaravelIdeHelper\\Console\\ModelsCommand",
+            "Barryvdh\\LaravelIdeHelper\\Console\\MetaCommand",
+            "Barryvdh\\LaravelIdeHelper\\Console\\EloquentCommand",
+            "Illuminate\\View\\Engines\\EngineResolver",
+            "Illuminate\\View\\Engines\\PhpEngine",
+            "Illuminate\\View\\FileViewFinder",
+            "Illuminate\\View\\Factory",
+            "Barryvdh\\Reflection\\DocBlock",
+            "ReflectionClass",
+            "Barryvdh\\Reflection\\DocBlock\\Context",
+            "facade",
+            "ReflectionMethod",
+            "ReflectionFunction",
+            "Barryvdh\\Reflection\\DocBlock\\Serializer",
+            "Barryvdh\\Reflection\\DocBlock\\Tag",
+            "Illuminate\\Console\\Command",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Symfony\\Component\\Console\\Output\\OutputInterface",
+            "Auth",
+            "DB",
+            "Cache",
+            "Queue",
+            "SSH",
+            "Storage",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Foundation\\AliasLoader"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "Barryvdh\\LaravelIdeHelper\\Console\\",
+            "Illuminate\\View\\Engines\\",
+            "Illuminate\\View\\",
+            "Barryvdh\\Reflection\\",
+            "\\",
+            "Barryvdh\\Reflection\\DocBlock\\",
+            "Illuminate\\Console\\",
+            "Illuminate\\Filesystem\\",
+            "Symfony\\Component\\Console\\Output\\",
+            "Illuminate\\Foundation\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\LaravelIdeHelper\\Console\\MetaCommand",
+            "Barryvdh\\LaravelIdeHelper\\Console\\GeneratorCommand",
+            "Barryvdh\\LaravelIdeHelper\\Console\\EloquentCommand"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\LaravelIdeHelper\\Console\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.9032258064516129,
+        "dependent_instabilities": {
+            "Barryvdh\\LaravelIdeHelper\\Console\\": 0.95
+        },
+        "distance": 0.06842968850192396,
+        "normalized_distance": 0.09677419354838712,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\Macro": {
+        "name": "Barryvdh\\LaravelIdeHelper\\Macro",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initPhpDoc",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initClassDefinedProperties",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Barryvdh\\LaravelIdeHelper\\Method",
+            "Barryvdh\\Reflection\\DocBlock",
+            "ReflectionClass"
+        ],
+        "parents": [
+            "Barryvdh\\LaravelIdeHelper\\Method"
+        ],
+        "lcom": 2,
+        "length": 25,
+        "vocabulary": 9,
+        "volume": 79.25,
+        "difficulty": 3,
+        "effort": 237.74,
+        "level": 0.33,
+        "bugs": 0.03,
+        "time": 13,
+        "intelligentContent": 26.42,
+        "number_operators": 4,
+        "number_operands": 21,
+        "number_operators_unique": 2,
+        "number_operands_unique": 7,
+        "cloc": 16,
+        "loc": 33,
+        "lloc": 17,
+        "mi": 103.8,
+        "mIwoC": 59.73,
+        "commentWeight": 44.07,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.89,
+        "relativeSystemComplexity": 4.89,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 2.67,
+        "totalSystemComplexity": 14.67,
+        "package": "Barryvdh\\LaravelIdeHelper\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\Console\\MetaCommand": {
+        "name": "Barryvdh\\LaravelIdeHelper\\Console\\MetaCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAbstracts",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerClassAutoloadExceptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 13,
+        "ccn": 9,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Barryvdh\\LaravelIdeHelper\\Factories",
+            "ReflectionClass",
+            "ReflectionException"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 115,
+        "vocabulary": 49,
+        "volume": 645.69,
+        "difficulty": 8.78,
+        "effort": 5669.49,
+        "level": 0.11,
+        "bugs": 0.22,
+        "time": 315,
+        "intelligentContent": 73.54,
+        "number_operators": 25,
+        "number_operands": 90,
+        "number_operators_unique": 8,
+        "number_operands_unique": 41,
+        "cloc": 45,
+        "loc": 110,
+        "lloc": 65,
+        "mi": 81.39,
+        "mIwoC": 39.57,
+        "commentWeight": 41.83,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 256,
+        "relativeDataComplexity": 0.15,
+        "relativeSystemComplexity": 256.15,
+        "totalStructuralComplexity": 1280,
+        "totalDataComplexity": 0.76,
+        "totalSystemComplexity": 1280.76,
+        "package": "Barryvdh\\LaravelIdeHelper\\Console\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\Console\\": {
+        "name": "Barryvdh\\LaravelIdeHelper\\Console\\",
+        "classes": [
+            "Barryvdh\\LaravelIdeHelper\\Console\\MetaCommand",
+            "Barryvdh\\LaravelIdeHelper\\Console\\GeneratorCommand",
+            "Barryvdh\\LaravelIdeHelper\\Console\\ModelsCommand",
+            "Barryvdh\\LaravelIdeHelper\\Console\\EloquentCommand"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\LaravelIdeHelper\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Console\\Command",
+            "Barryvdh\\LaravelIdeHelper\\Factories",
+            "ReflectionClass",
+            "ReflectionException",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Barryvdh\\LaravelIdeHelper\\Generator",
+            "Barryvdh\\LaravelIdeHelper\\Eloquent",
+            "Illuminate\\Support\\Facades\\Date",
+            "Composer\\Autoload\\ClassMapGenerator",
+            "Illuminate\\Support\\Str",
+            "ReflectionMethod",
+            "SplFileObject",
+            "Illuminate\\Database\\Eloquent\\Relations\\Relation",
+            "ReflectionObject",
+            "Barryvdh\\Reflection\\DocBlock\\Context",
+            "Barryvdh\\Reflection\\DocBlock",
+            "Barryvdh\\Reflection\\DocBlock\\Tag",
+            "Barryvdh\\Reflection\\DocBlock\\Serializer",
+            "className"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Console\\",
+            "Barryvdh\\LaravelIdeHelper\\",
+            "\\",
+            "Illuminate\\Filesystem\\",
+            "Illuminate\\Support\\Facades\\",
+            "Composer\\Autoload\\",
+            "Illuminate\\Support\\",
+            "Illuminate\\Database\\Eloquent\\Relations\\",
+            "Barryvdh\\Reflection\\DocBlock\\",
+            "Barryvdh\\Reflection\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.95,
+        "dependent_instabilities": {
+            "Barryvdh\\LaravelIdeHelper\\": 0.9032258064516129
+        },
+        "distance": 0.035355339059327404,
+        "normalized_distance": 0.050000000000000044,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\Console\\GeneratorCommand": {
+        "name": "Barryvdh\\LaravelIdeHelper\\Console\\GeneratorCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "useMemoryDriver",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 16,
+        "ccn": 12,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Barryvdh\\LaravelIdeHelper\\Generator",
+            "Barryvdh\\LaravelIdeHelper\\Eloquent"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 151,
+        "vocabulary": 61,
+        "volume": 895.54,
+        "difficulty": 8.83,
+        "effort": 7907.8,
+        "level": 0.11,
+        "bugs": 0.3,
+        "time": 439,
+        "intelligentContent": 101.42,
+        "number_operators": 34,
+        "number_operands": 117,
+        "number_operators_unique": 8,
+        "number_operands_unique": 53,
+        "cloc": 41,
+        "loc": 111,
+        "lloc": 70,
+        "mi": 77.89,
+        "mIwoC": 37.47,
+        "commentWeight": 40.42,
+        "kanDefect": 0.87,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.2,
+        "relativeSystemComplexity": 144.2,
+        "totalStructuralComplexity": 720,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 721,
+        "package": "Barryvdh\\LaravelIdeHelper\\Console\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\Console\\ModelsCommand": {
+        "name": "Barryvdh\\LaravelIdeHelper\\Console\\ModelsCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateDocs",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadModels",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "castPropertiesType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTypeOverride",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertiesFromTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertiesFromMethods",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRelationForeignKeyNullable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setProperty",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMethod",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createPhpDocs",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParameters",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCollectionClass",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasCamelCaseModelProperties",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getReturnTypeFromDocBlock",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSoftDeleteMethods",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getClassKeyword",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 20,
+        "nbMethods": 20,
+        "nbMethodsPrivate": 17,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 155,
+        "ccn": 136,
+        "ccnMethodMax": 27,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Illuminate\\Support\\Facades\\Date",
+            "ReflectionClass",
+            "Composer\\Autoload\\ClassMapGenerator",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "ReflectionMethod",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "ReflectionMethod",
+            "ReflectionClass",
+            "Illuminate\\Support\\Str",
+            "ReflectionMethod",
+            "SplFileObject",
+            "ReflectionMethod",
+            "Illuminate\\Database\\Eloquent\\Relations\\Relation",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Database\\Eloquent\\Relations\\Relation",
+            "ReflectionObject",
+            "ReflectionClass",
+            "Barryvdh\\Reflection\\DocBlock\\Context",
+            "Barryvdh\\Reflection\\DocBlock",
+            "Barryvdh\\Reflection\\DocBlock\\Context",
+            "Barryvdh\\Reflection\\DocBlock",
+            "Barryvdh\\Reflection\\DocBlock\\Context",
+            "Barryvdh\\Reflection\\DocBlock",
+            "Illuminate\\Support\\Str",
+            "Barryvdh\\Reflection\\DocBlock\\Tag",
+            "Barryvdh\\Reflection\\DocBlock\\Tag",
+            "Barryvdh\\Reflection\\DocBlock\\Tag",
+            "Barryvdh\\Reflection\\DocBlock\\Serializer",
+            "className",
+            "ReflectionMethod",
+            "Barryvdh\\Reflection\\DocBlock",
+            "ReflectionClass"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 2,
+        "length": 1184,
+        "vocabulary": 263,
+        "volume": 9518.08,
+        "difficulty": 32.4,
+        "effort": 308385.79,
+        "level": 0.03,
+        "bugs": 3.17,
+        "time": 17133,
+        "intelligentContent": 293.77,
+        "number_operators": 302,
+        "number_operands": 882,
+        "number_operators_unique": 18,
+        "number_operands_unique": 245,
+        "cloc": 128,
+        "loc": 655,
+        "lloc": 528,
+        "mi": 31.63,
+        "mIwoC": 0,
+        "commentWeight": 31.63,
+        "kanDefect": 8.16,
+        "relativeStructuralComplexity": 6889,
+        "relativeDataComplexity": 0.19,
+        "relativeSystemComplexity": 6889.19,
+        "totalStructuralComplexity": 137780,
+        "totalDataComplexity": 3.85,
+        "totalSystemComplexity": 137783.85,
+        "package": "Barryvdh\\LaravelIdeHelper\\Console\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 1,
+        "efferentCoupling": 15,
+        "instability": 0.94,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\Console\\EloquentCommand": {
+        "name": "Barryvdh\\LaravelIdeHelper\\Console\\EloquentCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Barryvdh\\LaravelIdeHelper\\Eloquent"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 5,
+        "volume": 18.58,
+        "difficulty": 0.88,
+        "effort": 16.25,
+        "level": 1.14,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 21.23,
+        "number_operators": 1,
+        "number_operands": 7,
+        "number_operators_unique": 1,
+        "number_operands_unique": 4,
+        "cloc": 26,
+        "loc": 42,
+        "lloc": 16,
+        "mi": 111.65,
+        "mIwoC": 64.71,
+        "commentWeight": 46.94,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.17,
+        "relativeSystemComplexity": 4.17,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 0.33,
+        "totalSystemComplexity": 8.33,
+        "package": "Barryvdh\\LaravelIdeHelper\\Console\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\Alias": {
+        "name": "Barryvdh\\LaravelIdeHelper\\Alias",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addClass",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isValid",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getClasstype",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExtends",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExtendsClass",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExtendsNamespace",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAlias",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getShortName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNamespace",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMethods",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "detectFake",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "detectNamespace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "detectExtendsNamespace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "detectClassType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "detectRoot",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isTrait",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addMagicMethods",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "detectMethods",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMacroFunction",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDocComment",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeDuplicateMethodsFromPhpDoc",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "error",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 23,
+        "nbMethods": 15,
+        "nbMethodsPrivate": 11,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 8,
+        "nbMethodsSetters": 0,
+        "wmc": 71,
+        "ccn": 49,
+        "ccnMethodMax": 11,
+        "externals": [
+            "ReflectionClass",
+            "Barryvdh\\Reflection\\DocBlock\\Context",
+            "Barryvdh\\Reflection\\DocBlock",
+            "facade",
+            "facade",
+            "facade",
+            "facade",
+            "facade",
+            "ReflectionMethod",
+            "ReflectionClass",
+            "Barryvdh\\LaravelIdeHelper\\Method",
+            "ReflectionClass",
+            "Barryvdh\\LaravelIdeHelper\\Method",
+            "Barryvdh\\LaravelIdeHelper\\Macro",
+            "ReflectionMethod",
+            "ReflectionMethod",
+            "ReflectionFunction",
+            "Barryvdh\\Reflection\\DocBlock\\Serializer",
+            "ReflectionClass",
+            "Barryvdh\\Reflection\\DocBlock"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 393,
+        "vocabulary": 67,
+        "volume": 2383.97,
+        "difficulty": 23.6,
+        "effort": 56253.4,
+        "level": 0.04,
+        "bugs": 0.79,
+        "time": 3125,
+        "intelligentContent": 101.03,
+        "number_operators": 124,
+        "number_operands": 269,
+        "number_operators_unique": 10,
+        "number_operands_unique": 57,
+        "cloc": 123,
+        "loc": 380,
+        "lloc": 257,
+        "mi": 55.77,
+        "mIwoC": 17.19,
+        "commentWeight": 38.58,
+        "kanDefect": 3.49,
+        "relativeStructuralComplexity": 576,
+        "relativeDataComplexity": 0.86,
+        "relativeSystemComplexity": 576.86,
+        "totalStructuralComplexity": 13248,
+        "totalDataComplexity": 19.68,
+        "totalSystemComplexity": 13267.68,
+        "package": "Barryvdh\\LaravelIdeHelper\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 1,
+        "efferentCoupling": 9,
+        "instability": 0.9,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\Method": {
+        "name": "Barryvdh\\LaravelIdeHelper\\Method",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initPhpDoc",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initClassDefinedProperties",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDeclaringClass",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRoot",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isInstanceCall",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRootMethodCall",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDocComment",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRealName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParams",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParamsWithDefault",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "normalizeDescription",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "normalizeParams",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "normalizeReturn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertKeywords",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldReturn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParameters",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInheritDoc",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 19,
+        "nbMethods": 15,
+        "nbMethodsPrivate": 7,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 0,
+        "wmc": 50,
+        "ccn": 32,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Barryvdh\\Reflection\\DocBlock\\Tag",
+            "Barryvdh\\Reflection\\DocBlock\\Context",
+            "Barryvdh\\Reflection\\DocBlock",
+            "ReflectionClass",
+            "Barryvdh\\Reflection\\DocBlock\\Serializer",
+            "Barryvdh\\Reflection\\DocBlock",
+            "Barryvdh\\Reflection\\DocBlock",
+            "Barryvdh\\Reflection\\DocBlock",
+            "Barryvdh\\Reflection\\DocBlock\\Context",
+            "Barryvdh\\Reflection\\DocBlock"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 340,
+        "vocabulary": 71,
+        "volume": 2090.91,
+        "difficulty": 20.25,
+        "effort": 42332.44,
+        "level": 0.05,
+        "bugs": 0.7,
+        "time": 2352,
+        "intelligentContent": 103.28,
+        "number_operators": 93,
+        "number_operands": 247,
+        "number_operators_unique": 10,
+        "number_operands_unique": 61,
+        "cloc": 119,
+        "loc": 312,
+        "lloc": 193,
+        "mi": 63.46,
+        "mIwoC": 22.59,
+        "commentWeight": 40.87,
+        "kanDefect": 1.91,
+        "relativeStructuralComplexity": 1444,
+        "relativeDataComplexity": 0.41,
+        "relativeSystemComplexity": 1444.41,
+        "totalStructuralComplexity": 27436,
+        "totalDataComplexity": 7.74,
+        "totalSystemComplexity": 27443.74,
+        "package": "Barryvdh\\LaravelIdeHelper\\",
+        "pageRank": 0.14,
+        "afferentCoupling": 2,
+        "efferentCoupling": 5,
+        "instability": 0.71,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\Eloquent": {
+        "name": "Barryvdh\\LaravelIdeHelper\\Eloquent",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "writeEloquentModelHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 12,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Illuminate\\Filesystem\\Filesystem",
+            "ReflectionClass",
+            "Barryvdh\\Reflection\\DocBlock\\Context",
+            "Barryvdh\\Reflection\\DocBlock",
+            "Barryvdh\\Reflection\\DocBlock\\Tag",
+            "Barryvdh\\Reflection\\DocBlock\\Serializer"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 134,
+        "vocabulary": 42,
+        "volume": 722.57,
+        "difficulty": 9.3,
+        "effort": 6719.91,
+        "level": 0.11,
+        "bugs": 0.24,
+        "time": 373,
+        "intelligentContent": 77.7,
+        "number_operators": 41,
+        "number_operands": 93,
+        "number_operators_unique": 7,
+        "number_operands_unique": 35,
+        "cloc": 14,
+        "loc": 76,
+        "lloc": 62,
+        "mi": 70.12,
+        "mIwoC": 39.27,
+        "commentWeight": 30.85,
+        "kanDefect": 1.24,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 121.25,
+        "totalStructuralComplexity": 121,
+        "totalDataComplexity": 0.25,
+        "totalSystemComplexity": 121.25,
+        "package": "Barryvdh\\LaravelIdeHelper\\",
+        "pageRank": 0.18,
+        "afferentCoupling": 2,
+        "efferentCoupling": 7,
+        "instability": 0.78,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\Factories": {
+        "name": "Barryvdh\\LaravelIdeHelper\\Factories",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "all",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "ReflectionClass",
+            "ReflectionClass"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 19,
+        "vocabulary": 9,
+        "volume": 60.23,
+        "difficulty": 3.25,
+        "effort": 195.74,
+        "level": 0.31,
+        "bugs": 0.02,
+        "time": 11,
+        "intelligentContent": 18.53,
+        "number_operators": 6,
+        "number_operands": 13,
+        "number_operators_unique": 3,
+        "number_operands_unique": 6,
+        "cloc": 0,
+        "loc": 18,
+        "lloc": 18,
+        "mi": 59.75,
+        "mIwoC": 59.75,
+        "commentWeight": 0,
+        "kanDefect": 0.38,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 9.25,
+        "totalStructuralComplexity": 9,
+        "totalDataComplexity": 0.25,
+        "totalSystemComplexity": 9.25,
+        "package": "Barryvdh\\LaravelIdeHelper\\",
+        "pageRank": 0.12,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\LaravelIdeHelper\\Generator": {
+        "name": "Barryvdh\\LaravelIdeHelper\\Generator",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generatePhpHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateJsonHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "detectDrivers",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValidAliases",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAliasesByExtendsNamespace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAliasesByAliasNamespace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAliases",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDriver",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "error",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 6,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 54,
+        "ccn": 44,
+        "ccnMethodMax": 23,
+        "externals": [
+            "Symfony\\Component\\Console\\Output\\OutputInterface",
+            "Barryvdh\\LaravelIdeHelper\\Factories",
+            "ReflectionClass",
+            "Auth",
+            "DB",
+            "Cache",
+            "Cache",
+            "Queue",
+            "SSH",
+            "Storage",
+            "Illuminate\\Support\\Collection",
+            "Barryvdh\\LaravelIdeHelper\\Alias",
+            "Illuminate\\Foundation\\AliasLoader",
+            "Auth",
+            "DB",
+            "Cache",
+            "Cache",
+            "Queue"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 401,
+        "vocabulary": 127,
+        "volume": 2802.46,
+        "difficulty": 11.06,
+        "effort": 30993.34,
+        "level": 0.09,
+        "bugs": 0.93,
+        "time": 1722,
+        "intelligentContent": 253.4,
+        "number_operators": 111,
+        "number_operands": 290,
+        "number_operators_unique": 9,
+        "number_operands_unique": 118,
+        "cloc": 50,
+        "loc": 237,
+        "lloc": 187,
+        "mi": 53.04,
+        "mIwoC": 20.38,
+        "commentWeight": 32.65,
+        "kanDefect": 2.35,
+        "relativeStructuralComplexity": 1024,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 1024.5,
+        "totalStructuralComplexity": 11264,
+        "totalDataComplexity": 5.55,
+        "totalSystemComplexity": 11269.55,
+        "package": "Barryvdh\\LaravelIdeHelper\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 1,
+        "efferentCoupling": 12,
+        "instability": 0.92,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.43,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "^5.5|^6|^7",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "illuminate\/console": {
+                "name": "illuminate\/console",
+                "required": "^5.5|^6|^7",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/console\/zipball\/f78d0bb182611303187346e59bf8ea4ff5de8396"
+            },
+            "illuminate\/filesystem": {
+                "name": "illuminate\/filesystem",
+                "required": "^5.5|^6|^7",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/filesystem\/zipball\/799a3af9435458d56e9f3647e09e11ffc9ace896"
+            },
+            "barryvdh\/reflection-docblock": {
+                "name": "barryvdh\/reflection-docblock",
+                "required": "^2.0.6",
+                "installed": null,
+                "latest": "2.0.6",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/barryvdh\/ReflectionDocBlock\/zipball\/6b69015d83d3daf9004a71a89f26e27d27ef6a16"
+            },
+            "composer\/composer": {
+                "name": "composer\/composer",
+                "required": "^1.6",
+                "installed": null,
+                "latest": "1.9.3",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/getcomposer.org\/",
+                "zip": "https:\/\/api.github.com\/repos\/composer\/composer\/zipball\/1291a16ce3f48bfdeca39d64fca4875098af4d7b"
+            },
+            "doctrine\/dbal": {
+                "name": "doctrine\/dbal",
+                "required": "~2.3",
+                "installed": null,
+                "latest": "2.10.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/dbal.html",
+                "zip": "https:\/\/api.github.com\/repos\/doctrine\/dbal\/zipball\/c2b8e6e82732a64ecde1cddf9e1e06cb8556e3d8"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

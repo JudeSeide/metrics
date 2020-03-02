@@ -1,0 +1,3810 @@
+{
+    "stringEndsWith": {
+        "name": "stringEndsWith",
+        "cloc": 1,
+        "loc": 6,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "fuzzyMatch": {
+        "name": "fuzzyMatch",
+        "cloc": 0,
+        "loc": 6,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "fuzzyMatchFromFile": {
+        "name": "fuzzyMatchFromFile",
+        "cloc": 0,
+        "loc": 6,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "TeamTNT\\TNTSearch\\Connectors\\PostgresConnector": {
+        "name": "TeamTNT\\TNTSearch\\Connectors\\PostgresConnector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "connect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDsn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatSchema",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 9,
+        "ccnMethodMax": 5,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Connectors\\Connector",
+            "TeamTNT\\TNTSearch\\Connectors\\ConnectorInterface"
+        ],
+        "parents": [
+            "TeamTNT\\TNTSearch\\Connectors\\Connector"
+        ],
+        "lcom": 1,
+        "length": 119,
+        "vocabulary": 35,
+        "volume": 610.38,
+        "difficulty": 7.67,
+        "effort": 4679.62,
+        "level": 0.13,
+        "bugs": 0.2,
+        "time": 260,
+        "intelligentContent": 79.62,
+        "number_operators": 27,
+        "number_operands": 92,
+        "number_operators_unique": 5,
+        "number_operands_unique": 30,
+        "cloc": 41,
+        "loc": 91,
+        "lloc": 50,
+        "mi": 85.34,
+        "mIwoC": 42.22,
+        "commentWeight": 43.12,
+        "kanDefect": 0.64,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.71,
+        "relativeSystemComplexity": 36.71,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 2.14,
+        "totalSystemComplexity": 110.14,
+        "package": "TeamTNT\\TNTSearch\\Connectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Connectors\\": {
+        "name": "TeamTNT\\TNTSearch\\Connectors\\",
+        "classes": [
+            "TeamTNT\\TNTSearch\\Connectors\\PostgresConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\SqlServerConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\SQLiteConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\Connector",
+            "TeamTNT\\TNTSearch\\Connectors\\ConnectorInterface",
+            "TeamTNT\\TNTSearch\\Connectors\\MySqlConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\FileSystemConnector"
+        ],
+        "outgoing_class_dependencies": [
+            "PDO",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer"
+        ],
+        "incoming_package_dependencies": [
+            "TeamTNT\\TNTSearch\\Indexer\\"
+        ],
+        "abstraction": 0.14285714285714285,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": [],
+        "distance": 0.13468700594029476,
+        "normalized_distance": 0.19047619047619047,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "TeamTNT\\TNTSearch\\Connectors\\SqlServerConnector": {
+        "name": "TeamTNT\\TNTSearch\\Connectors\\SqlServerConnector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "connect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDsn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAvailableDrivers",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Connectors\\Connector",
+            "TeamTNT\\TNTSearch\\Connectors\\ConnectorInterface",
+            "PDO"
+        ],
+        "parents": [
+            "TeamTNT\\TNTSearch\\Connectors\\Connector"
+        ],
+        "lcom": 1,
+        "length": 47,
+        "vocabulary": 20,
+        "volume": 203.13,
+        "difficulty": 6.17,
+        "effort": 1252.64,
+        "level": 0.16,
+        "bugs": 0.07,
+        "time": 70,
+        "intelligentContent": 32.94,
+        "number_operators": 10,
+        "number_operands": 37,
+        "number_operators_unique": 5,
+        "number_operands_unique": 15,
+        "cloc": 25,
+        "loc": 50,
+        "lloc": 25,
+        "mi": 97.26,
+        "mIwoC": 52.81,
+        "commentWeight": 44.46,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.78,
+        "relativeSystemComplexity": 25.78,
+        "totalStructuralComplexity": 75,
+        "totalDataComplexity": 2.33,
+        "totalSystemComplexity": 77.33,
+        "package": "TeamTNT\\TNTSearch\\Connectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Connectors\\SQLiteConnector": {
+        "name": "TeamTNT\\TNTSearch\\Connectors\\SQLiteConnector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "connect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Connectors\\Connector",
+            "TeamTNT\\TNTSearch\\Connectors\\ConnectorInterface",
+            "Exception"
+        ],
+        "parents": [
+            "TeamTNT\\TNTSearch\\Connectors\\Connector"
+        ],
+        "lcom": 1,
+        "length": 34,
+        "vocabulary": 16,
+        "volume": 136,
+        "difficulty": 5.91,
+        "effort": 803.64,
+        "level": 0.17,
+        "bugs": 0.05,
+        "time": 45,
+        "intelligentContent": 23.02,
+        "number_operators": 8,
+        "number_operands": 26,
+        "number_operators_unique": 5,
+        "number_operands_unique": 11,
+        "cloc": 14,
+        "loc": 31,
+        "lloc": 17,
+        "mi": 100.96,
+        "mIwoC": 57.82,
+        "commentWeight": 43.15,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 5,
+        "package": "TeamTNT\\TNTSearch\\Connectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Connectors\\Connector": {
+        "name": "TeamTNT\\TNTSearch\\Connectors\\Connector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createConnection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultOptions",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDefaultOptions",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 6,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "PDO"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 28,
+        "vocabulary": 9,
+        "volume": 88.76,
+        "difficulty": 5,
+        "effort": 443.79,
+        "level": 0.2,
+        "bugs": 0.03,
+        "time": 25,
+        "intelligentContent": 17.75,
+        "number_operators": 8,
+        "number_operands": 20,
+        "number_operators_unique": 3,
+        "number_operands_unique": 6,
+        "cloc": 30,
+        "loc": 58,
+        "lloc": 28,
+        "mi": 99.26,
+        "mIwoC": 54.39,
+        "commentWeight": 44.88,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 4.25,
+        "relativeSystemComplexity": 4.25,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 17,
+        "totalSystemComplexity": 17,
+        "package": "TeamTNT\\TNTSearch\\Connectors\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 5,
+        "efferentCoupling": 1,
+        "instability": 0.17,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Connectors\\ConnectorInterface": {
+        "name": "TeamTNT\\TNTSearch\\Connectors\\ConnectorInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "connect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "TeamTNT\\TNTSearch\\Connectors\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 5,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "TeamTNT\\TNTSearch\\Connectors\\MySqlConnector": {
+        "name": "TeamTNT\\TNTSearch\\Connectors\\MySqlConnector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "connect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDsn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "configHasSocket",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSocketDsn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHostDsn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setModes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 17,
+        "ccn": 12,
+        "ccnMethodMax": 6,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Connectors\\Connector",
+            "TeamTNT\\TNTSearch\\Connectors\\ConnectorInterface",
+            "PDO"
+        ],
+        "parents": [
+            "TeamTNT\\TNTSearch\\Connectors\\Connector"
+        ],
+        "lcom": 1,
+        "length": 135,
+        "vocabulary": 38,
+        "volume": 708.47,
+        "difficulty": 8.48,
+        "effort": 6011.26,
+        "level": 0.12,
+        "bugs": 0.24,
+        "time": 334,
+        "intelligentContent": 83.5,
+        "number_operators": 23,
+        "number_operands": 112,
+        "number_operators_unique": 5,
+        "number_operands_unique": 33,
+        "cloc": 48,
+        "loc": 105,
+        "lloc": 57,
+        "mi": 83.43,
+        "mIwoC": 40.13,
+        "commentWeight": 43.31,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.56,
+        "relativeSystemComplexity": 100.56,
+        "totalStructuralComplexity": 600,
+        "totalDataComplexity": 3.36,
+        "totalSystemComplexity": 603.36,
+        "package": "TeamTNT\\TNTSearch\\Connectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Connectors\\FileSystemConnector": {
+        "name": "TeamTNT\\TNTSearch\\Connectors\\FileSystemConnector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "connect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Connectors\\Connector",
+            "TeamTNT\\TNTSearch\\Connectors\\ConnectorInterface"
+        ],
+        "parents": [
+            "TeamTNT\\TNTSearch\\Connectors\\Connector"
+        ],
+        "lcom": 1,
+        "length": 1,
+        "vocabulary": 1,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 1,
+        "number_operators_unique": 0,
+        "number_operands_unique": 1,
+        "cloc": 8,
+        "loc": 15,
+        "lloc": 7,
+        "mi": 216.25,
+        "mIwoC": 171,
+        "commentWeight": 45.25,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "TeamTNT\\TNTSearch\\Connectors\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\TNTGeoSearch": {
+        "name": "TeamTNT\\TNTSearch\\TNTGeoSearch",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "findNearest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "TeamTNT\\TNTSearch\\TNTSearch",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "TeamTNT\\TNTSearch\\Indexer\\TNTGeoIndexer"
+        ],
+        "parents": [
+            "TeamTNT\\TNTSearch\\TNTSearch"
+        ],
+        "lcom": 1,
+        "length": 132,
+        "vocabulary": 48,
+        "volume": 737.22,
+        "difficulty": 9.8,
+        "effort": 7224.71,
+        "level": 0.1,
+        "bugs": 0.25,
+        "time": 401,
+        "intelligentContent": 75.23,
+        "number_operators": 34,
+        "number_operands": 98,
+        "number_operators_unique": 8,
+        "number_operands_unique": 40,
+        "cloc": 3,
+        "loc": 50,
+        "lloc": 47,
+        "mi": 61.7,
+        "mIwoC": 43.18,
+        "commentWeight": 18.52,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 81.6,
+        "totalStructuralComplexity": 243,
+        "totalDataComplexity": 1.8,
+        "totalSystemComplexity": 244.8,
+        "package": "TeamTNT\\TNTSearch\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\": {
+        "name": "TeamTNT\\TNTSearch\\",
+        "classes": [
+            "TeamTNT\\TNTSearch\\TNTGeoSearch",
+            "TeamTNT\\TNTSearch\\TNTFuzzyMatch",
+            "TeamTNT\\TNTSearch\\TNTSearch"
+        ],
+        "outgoing_class_dependencies": [
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "TeamTNT\\TNTSearch\\Indexer\\TNTGeoIndexer",
+            "TeamTNT\\TNTSearch\\Support\\Tokenizer",
+            "PDO",
+            "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer",
+            "TeamTNT\\TNTSearch\\Exceptions\\IndexNotFoundException",
+            "TeamTNT\\TNTSearch\\Support\\Expression",
+            "stemmer",
+            "this",
+            "TeamTNT\\TNTSearch\\Stemmer\\PorterStemmer",
+            "tokenizer",
+            "TeamTNT\\TNTSearch\\Support\\Highlighter"
+        ],
+        "outgoing_package_dependencies": [
+            "TeamTNT\\TNTSearch\\Support\\",
+            "TeamTNT\\TNTSearch\\Indexer\\",
+            "\\",
+            "TeamTNT\\TNTSearch\\Exceptions\\",
+            "TeamTNT\\TNTSearch\\Stemmer\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "TeamTNT\\TNTSearch\\Support\\": 0.5,
+            "TeamTNT\\TNTSearch\\Indexer\\": 0.8947368421052632,
+            "TeamTNT\\TNTSearch\\Exceptions\\": 0.5,
+            "TeamTNT\\TNTSearch\\Stemmer\\": 0.4
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "TeamTNT\\TNTSearch\\Exceptions\\IndexNotFoundException": {
+        "name": "TeamTNT\\TNTSearch\\Exceptions\\IndexNotFoundException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Exception"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "TeamTNT\\TNTSearch\\Exceptions\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Exceptions\\": {
+        "name": "TeamTNT\\TNTSearch\\Exceptions\\",
+        "classes": [
+            "TeamTNT\\TNTSearch\\Exceptions\\IndexNotFoundException"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "TeamTNT\\TNTSearch\\TNTSearch"
+        ],
+        "incoming_package_dependencies": [
+            "TeamTNT\\TNTSearch\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.5,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "TeamTNT\\TNTSearch\\Classifier\\TNTClassifier": {
+        "name": "TeamTNT\\TNTSearch\\Classifier\\TNTClassifier",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "predict",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "learn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "p",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "pTotal",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "vocabularyCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 21,
+        "ccn": 14,
+        "ccnMethodMax": 5,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Support\\Tokenizer",
+            "TeamTNT\\TNTSearch\\Stemmer\\PorterStemmer"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 187,
+        "vocabulary": 27,
+        "volume": 889.16,
+        "difficulty": 23.8,
+        "effort": 21162.1,
+        "level": 0.04,
+        "bugs": 0.3,
+        "time": 1176,
+        "intelligentContent": 37.36,
+        "number_operators": 51,
+        "number_operands": 136,
+        "number_operators_unique": 7,
+        "number_operands_unique": 20,
+        "cloc": 4,
+        "loc": 108,
+        "lloc": 104,
+        "mi": 48.16,
+        "mIwoC": 33.47,
+        "commentWeight": 14.69,
+        "kanDefect": 1.86,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 1.17,
+        "relativeSystemComplexity": 26.17,
+        "totalStructuralComplexity": 200,
+        "totalDataComplexity": 9.33,
+        "totalSystemComplexity": 209.33,
+        "package": "TeamTNT\\TNTSearch\\Classifier\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Classifier\\": {
+        "name": "TeamTNT\\TNTSearch\\Classifier\\",
+        "classes": [
+            "TeamTNT\\TNTSearch\\Classifier\\TNTClassifier"
+        ],
+        "outgoing_class_dependencies": [
+            "TeamTNT\\TNTSearch\\Support\\Tokenizer",
+            "TeamTNT\\TNTSearch\\Stemmer\\PorterStemmer"
+        ],
+        "outgoing_package_dependencies": [
+            "TeamTNT\\TNTSearch\\Support\\",
+            "TeamTNT\\TNTSearch\\Stemmer\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "TeamTNT\\TNTSearch\\Support\\": 0.5,
+            "TeamTNT\\TNTSearch\\Stemmer\\": 0.4
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "TeamTNT\\TNTSearch\\Support\\Expression": {
+        "name": "TeamTNT\\TNTSearch\\Support\\Expression",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "toPostfix",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isOperand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isOperator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "priority",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "lex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 27,
+        "ccn": 23,
+        "ccnMethodMax": 9,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 174,
+        "vocabulary": 40,
+        "volume": 926.02,
+        "difficulty": 18.17,
+        "effort": 16822.61,
+        "level": 0.06,
+        "bugs": 0.31,
+        "time": 935,
+        "intelligentContent": 50.97,
+        "number_operators": 65,
+        "number_operands": 109,
+        "number_operators_unique": 10,
+        "number_operands_unique": 30,
+        "cloc": 0,
+        "loc": 84,
+        "lloc": 84,
+        "mi": 34.16,
+        "mIwoC": 34.16,
+        "commentWeight": 0,
+        "kanDefect": 2,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1.4,
+        "relativeSystemComplexity": 17.4,
+        "totalStructuralComplexity": 80,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 87,
+        "package": "TeamTNT\\TNTSearch\\Support\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Support\\": {
+        "name": "TeamTNT\\TNTSearch\\Support\\",
+        "classes": [
+            "TeamTNT\\TNTSearch\\Support\\Expression",
+            "TeamTNT\\TNTSearch\\Support\\ProductTokenizer",
+            "TeamTNT\\TNTSearch\\Support\\Highlighter",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "TeamTNT\\TNTSearch\\Support\\Tokenizer",
+            "TeamTNT\\TNTSearch\\Support\\TokenizerInterface"
+        ],
+        "incoming_class_dependencies": [
+            "TeamTNT\\TNTSearch\\TNTGeoSearch",
+            "TeamTNT\\TNTSearch\\Classifier\\TNTClassifier",
+            "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer",
+            "TeamTNT\\TNTSearch\\TNTSearch"
+        ],
+        "incoming_package_dependencies": [
+            "TeamTNT\\TNTSearch\\",
+            "TeamTNT\\TNTSearch\\Classifier\\",
+            "TeamTNT\\TNTSearch\\Indexer\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Countable",
+            "IteratorAggregate",
+            "static",
+            "ArrayIterator"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0.16666666666666666,
+        "instability": 0.5,
+        "dependent_instabilities": [],
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "TeamTNT\\TNTSearch\\Support\\ProductTokenizer": {
+        "name": "TeamTNT\\TNTSearch\\Support\\ProductTokenizer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "tokenize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Support\\TokenizerInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 13,
+        "vocabulary": 7,
+        "volume": 36.5,
+        "difficulty": 2,
+        "effort": 72.99,
+        "level": 0.5,
+        "bugs": 0.01,
+        "time": 4,
+        "intelligentContent": 18.25,
+        "number_operators": 3,
+        "number_operands": 10,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 0,
+        "loc": 10,
+        "lloc": 10,
+        "mi": 67.11,
+        "mIwoC": 67.11,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "TeamTNT\\TNTSearch\\Support\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Support\\Highlighter": {
+        "name": "TeamTNT\\TNTSearch\\Support\\Highlighter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "highlight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "_extractLocations",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "_determineSnipLocation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractRelevant",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 23,
+        "ccn": 20,
+        "ccnMethodMax": 8,
+        "externals": [],
+        "parents": [],
+        "lcom": 2,
+        "length": 312,
+        "vocabulary": 73,
+        "volume": 1931.23,
+        "difficulty": 29.75,
+        "effort": 57462.42,
+        "level": 0.03,
+        "bugs": 0.64,
+        "time": 3192,
+        "intelligentContent": 64.91,
+        "number_operators": 100,
+        "number_operands": 212,
+        "number_operators_unique": 16,
+        "number_operands_unique": 57,
+        "cloc": 57,
+        "loc": 161,
+        "lloc": 104,
+        "mi": 70.14,
+        "mIwoC": 30.3,
+        "commentWeight": 39.83,
+        "kanDefect": 1.98,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 3.08,
+        "relativeSystemComplexity": 7.08,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 12.33,
+        "totalSystemComplexity": 28.33,
+        "package": "TeamTNT\\TNTSearch\\Support\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Support\\Collection": {
+        "name": "TeamTNT\\TNTSearch\\Support\\Collection",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "forget",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "each",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEmpty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "map",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reduce",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "pluck",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "implode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "count",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "slice",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "take",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIterator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 15,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 14,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 6,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Countable",
+            "IteratorAggregate",
+            "static",
+            "static",
+            "static",
+            "static",
+            "ArrayIterator"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 89,
+        "vocabulary": 18,
+        "volume": 371.12,
+        "difficulty": 9.43,
+        "effort": 3499.16,
+        "level": 0.11,
+        "bugs": 0.12,
+        "time": 194,
+        "intelligentContent": 39.36,
+        "number_operators": 23,
+        "number_operands": 66,
+        "number_operators_unique": 4,
+        "number_operands_unique": 14,
+        "cloc": 54,
+        "loc": 135,
+        "lloc": 81,
+        "mi": 81.09,
+        "mIwoC": 39.57,
+        "commentWeight": 41.52,
+        "kanDefect": 0.82,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 7.47,
+        "relativeSystemComplexity": 8.47,
+        "totalStructuralComplexity": 15,
+        "totalDataComplexity": 112,
+        "totalSystemComplexity": 127,
+        "package": "TeamTNT\\TNTSearch\\Support\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 3,
+        "efferentCoupling": 4,
+        "instability": 0.57,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Support\\Tokenizer": {
+        "name": "TeamTNT\\TNTSearch\\Support\\Tokenizer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "tokenize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Support\\TokenizerInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 13,
+        "vocabulary": 7,
+        "volume": 36.5,
+        "difficulty": 2,
+        "effort": 72.99,
+        "level": 0.5,
+        "bugs": 0.01,
+        "time": 4,
+        "intelligentContent": 18.25,
+        "number_operators": 3,
+        "number_operands": 10,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 0,
+        "loc": 10,
+        "lloc": 10,
+        "mi": 67.11,
+        "mIwoC": 67.11,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "TeamTNT\\TNTSearch\\Support\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 3,
+        "efferentCoupling": 1,
+        "instability": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Support\\TokenizerInterface": {
+        "name": "TeamTNT\\TNTSearch\\Support\\TokenizerInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "tokenize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "TeamTNT\\TNTSearch\\Support\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 3,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer": {
+        "name": "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTokenizer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setStopWords",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStoragePath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStemmer",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrimaryKey",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrimaryKey",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "excludePrimaryKey",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "includePrimaryKey",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setStemmer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCroatianStemmer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLanguage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIndex",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFileReader",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareStatementsForIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexBeginTransaction",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexEndTransaction",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createConnector",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDatabaseHandle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "run",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "readDocumentsFromFileSystem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processDocument",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "insert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "update",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateInfoTable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stemText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "breakIntoTokens",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "decodeHtmlEntities",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "saveToIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "saveWordlist",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "saveDoclist",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "saveHitList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWordFromWordList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "countWordInWordList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "countDocHitsInWordList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildDictionary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "totalDocumentsInCollection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildTrigrams",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareAndExecuteStatement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "info",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 44,
+        "nbMethods": 38,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 38,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 5,
+        "wmc": 98,
+        "ccn": 55,
+        "ccnMethodMax": 11,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Stemmer\\PorterStemmer",
+            "TeamTNT\\TNTSearch\\Support\\Tokenizer",
+            "TeamTNT\\TNTSearch\\FileReaders\\TextFileReader",
+            "TeamTNT\\TNTSearch\\Support\\TokenizerInterface",
+            "this",
+            "TeamTNT\\TNTSearch\\Stemmer\\CroatianStemmer",
+            "class",
+            "PDO",
+            "Exception",
+            "TeamTNT\\TNTSearch\\Connectors\\MySqlConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\PostgresConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\SQLiteConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\SqlServerConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\FileSystemConnector",
+            "Exception",
+            "PDO",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "RecursiveDirectoryIterator",
+            "RecursiveIteratorIterator",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "TeamTNT\\TNTSearch\\Support\\Collection"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 859,
+        "vocabulary": 172,
+        "volume": 6379.16,
+        "difficulty": 36.74,
+        "effort": 234382.74,
+        "level": 0.03,
+        "bugs": 2.13,
+        "time": 13021,
+        "intelligentContent": 173.62,
+        "number_operators": 189,
+        "number_operands": 670,
+        "number_operators_unique": 17,
+        "number_operands_unique": 155,
+        "cloc": 60,
+        "loc": 527,
+        "lloc": 467,
+        "mi": 32.7,
+        "mIwoC": 7.73,
+        "commentWeight": 24.96,
+        "kanDefect": 5,
+        "relativeStructuralComplexity": 2025,
+        "relativeDataComplexity": 0.54,
+        "relativeSystemComplexity": 2025.54,
+        "totalStructuralComplexity": 89100,
+        "totalDataComplexity": 23.85,
+        "totalSystemComplexity": 89123.85,
+        "package": "TeamTNT\\TNTSearch\\Indexer\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 2,
+        "efferentCoupling": 17,
+        "instability": 0.89,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Indexer\\": {
+        "name": "TeamTNT\\TNTSearch\\Indexer\\",
+        "classes": [
+            "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer",
+            "TeamTNT\\TNTSearch\\Indexer\\TNTGeoIndexer"
+        ],
+        "incoming_class_dependencies": [
+            "TeamTNT\\TNTSearch\\TNTGeoSearch",
+            "TeamTNT\\TNTSearch\\TNTSearch"
+        ],
+        "incoming_package_dependencies": [
+            "TeamTNT\\TNTSearch\\"
+        ],
+        "outgoing_class_dependencies": [
+            "TeamTNT\\TNTSearch\\Stemmer\\PorterStemmer",
+            "TeamTNT\\TNTSearch\\Support\\Tokenizer",
+            "TeamTNT\\TNTSearch\\FileReaders\\TextFileReader",
+            "TeamTNT\\TNTSearch\\Support\\TokenizerInterface",
+            "this",
+            "TeamTNT\\TNTSearch\\Stemmer\\CroatianStemmer",
+            "class",
+            "PDO",
+            "Exception",
+            "TeamTNT\\TNTSearch\\Connectors\\MySqlConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\PostgresConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\SQLiteConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\SqlServerConnector",
+            "TeamTNT\\TNTSearch\\Connectors\\FileSystemConnector",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "RecursiveDirectoryIterator",
+            "RecursiveIteratorIterator"
+        ],
+        "outgoing_package_dependencies": [
+            "TeamTNT\\TNTSearch\\Stemmer\\",
+            "TeamTNT\\TNTSearch\\Support\\",
+            "TeamTNT\\TNTSearch\\FileReaders\\",
+            "\\",
+            "TeamTNT\\TNTSearch\\Connectors\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8947368421052632,
+        "dependent_instabilities": {
+            "TeamTNT\\TNTSearch\\Stemmer\\": 0.4,
+            "TeamTNT\\TNTSearch\\Support\\": 0.5,
+            "TeamTNT\\TNTSearch\\FileReaders\\": 0.5,
+            "TeamTNT\\TNTSearch\\Connectors\\": 0.6666666666666666
+        },
+        "distance": 0.07443229275647868,
+        "normalized_distance": 0.10526315789473684,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "TeamTNT\\TNTSearch\\Indexer\\TNTGeoIndexer": {
+        "name": "TeamTNT\\TNTSearch\\Indexer\\TNTGeoIndexer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "createIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processDocument",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareInsertStatement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer",
+            "PDO"
+        ],
+        "parents": [
+            "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer"
+        ],
+        "lcom": 1,
+        "length": 108,
+        "vocabulary": 31,
+        "volume": 535.05,
+        "difficulty": 9.48,
+        "effort": 5072.3,
+        "level": 0.11,
+        "bugs": 0.18,
+        "time": 282,
+        "intelligentContent": 56.44,
+        "number_operators": 29,
+        "number_operands": 79,
+        "number_operators_unique": 6,
+        "number_operands_unique": 25,
+        "cloc": 0,
+        "loc": 47,
+        "lloc": 47,
+        "mi": 43.88,
+        "mIwoC": 43.88,
+        "commentWeight": 0,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.24,
+        "relativeSystemComplexity": 100.24,
+        "totalStructuralComplexity": 300,
+        "totalDataComplexity": 0.73,
+        "totalSystemComplexity": 300.73,
+        "package": "TeamTNT\\TNTSearch\\Indexer\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\TNTFuzzyMatch": {
+        "name": "TeamTNT\\TNTSearch\\TNTFuzzyMatch",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "norm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "dot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wordToVector",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "angleBetweenVectors",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasCommonSubsequence",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeVectorSameLength",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fuzzyMatchFromFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fuzzyMatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 29,
+        "ccn": 22,
+        "ccnMethodMax": 6,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 288,
+        "vocabulary": 52,
+        "volume": 1641.73,
+        "difficulty": 33,
+        "effort": 54176.98,
+        "level": 0.03,
+        "bugs": 0.55,
+        "time": 3010,
+        "intelligentContent": 49.75,
+        "number_operators": 90,
+        "number_operands": 198,
+        "number_operators_unique": 13,
+        "number_operands_unique": 39,
+        "cloc": 0,
+        "loc": 120,
+        "lloc": 120,
+        "mi": 29.17,
+        "mIwoC": 29.17,
+        "commentWeight": 0,
+        "kanDefect": 1.86,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 1.54,
+        "relativeSystemComplexity": 37.54,
+        "totalStructuralComplexity": 288,
+        "totalDataComplexity": 12.29,
+        "totalSystemComplexity": 300.29,
+        "package": "TeamTNT\\TNTSearch\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\TNTSearch": {
+        "name": "TeamTNT\\TNTSearch\\TNTSearch",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "loadConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDatabaseHandle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "search",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "searchBoolean",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllDocumentsForKeyword",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllDocumentsForWhereKeywordNot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "totalMatchingDocuments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWordlistByKeyword",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fuzzySearch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "totalDocumentsInCollection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStemmer",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setStemmer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTokenizer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isFileSystemIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValueFromInfoTable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filesystemMapIdsToPaths",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "info",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "breakIntoTokens",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "highlight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "snippet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllDocumentsForFuzzyKeyword",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllDocumentsForStrictKeyword",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 26,
+        "nbMethods": 25,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 23,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 69,
+        "ccn": 44,
+        "ccnMethodMax": 17,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Support\\Tokenizer",
+            "PDO",
+            "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer",
+            "TeamTNT\\TNTSearch\\Exceptions\\IndexNotFoundException",
+            "PDO",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "TeamTNT\\TNTSearch\\Support\\Expression",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "stemmer",
+            "this",
+            "TeamTNT\\TNTSearch\\Stemmer\\PorterStemmer",
+            "tokenizer",
+            "this",
+            "TeamTNT\\TNTSearch\\Support\\Tokenizer",
+            "TeamTNT\\TNTSearch\\Support\\Highlighter",
+            "TeamTNT\\TNTSearch\\Support\\Highlighter",
+            "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer",
+            "TeamTNT\\TNTSearch\\Support\\Collection",
+            "TeamTNT\\TNTSearch\\Support\\Collection"
+        ],
+        "parents": [],
+        "lcom": 4,
+        "length": 736,
+        "vocabulary": 139,
+        "volume": 5239.54,
+        "difficulty": 25.09,
+        "effort": 131442.33,
+        "level": 0.04,
+        "bugs": 1.75,
+        "time": 7302,
+        "intelligentContent": 208.86,
+        "number_operators": 205,
+        "number_operands": 531,
+        "number_operators_unique": 12,
+        "number_operands_unique": 127,
+        "cloc": 88,
+        "loc": 425,
+        "lloc": 337,
+        "mi": 45.3,
+        "mIwoC": 12.9,
+        "commentWeight": 32.4,
+        "kanDefect": 3.93,
+        "relativeStructuralComplexity": 1296,
+        "relativeDataComplexity": 0.85,
+        "relativeSystemComplexity": 1296.85,
+        "totalStructuralComplexity": 33696,
+        "totalDataComplexity": 22.05,
+        "totalSystemComplexity": 33718.05,
+        "package": "TeamTNT\\TNTSearch\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 11,
+        "instability": 0.92,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Stemmer\\ArabicStemmer": {
+        "name": "TeamTNT\\TNTSearch\\Stemmer\\ArabicStemmer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "roughStem",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 12,
+        "ccnMethodMax": 11,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Stemmer\\Stemmer"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 172,
+        "vocabulary": 37,
+        "volume": 896.03,
+        "difficulty": 27.6,
+        "effort": 24730.32,
+        "level": 0.04,
+        "bugs": 0.3,
+        "time": 1374,
+        "intelligentContent": 32.46,
+        "number_operators": 57,
+        "number_operands": 115,
+        "number_operators_unique": 12,
+        "number_operands_unique": 25,
+        "cloc": 27,
+        "loc": 100,
+        "lloc": 73,
+        "mi": 73.11,
+        "mIwoC": 37.07,
+        "commentWeight": 36.04,
+        "kanDefect": 0.71,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.33,
+        "relativeSystemComplexity": 3.33,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 10,
+        "package": "TeamTNT\\TNTSearch\\Stemmer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Stemmer\\": {
+        "name": "TeamTNT\\TNTSearch\\Stemmer\\",
+        "classes": [
+            "TeamTNT\\TNTSearch\\Stemmer\\ArabicStemmer",
+            "TeamTNT\\TNTSearch\\Stemmer\\Stemmer",
+            "TeamTNT\\TNTSearch\\Stemmer\\GermanStemmer",
+            "TeamTNT\\TNTSearch\\Stemmer\\ItalianStemmer",
+            "TeamTNT\\TNTSearch\\Stemmer\\PortugueseStemmer",
+            "TeamTNT\\TNTSearch\\Stemmer\\NoStemmer",
+            "TeamTNT\\TNTSearch\\Stemmer\\CroatianStemmer",
+            "TeamTNT\\TNTSearch\\Stemmer\\UkrainianStemmer",
+            "TeamTNT\\TNTSearch\\Stemmer\\PorterStemmer",
+            "TeamTNT\\TNTSearch\\Stemmer\\RussianStemmer"
+        ],
+        "incoming_class_dependencies": [
+            "TeamTNT\\TNTSearch\\Classifier\\TNTClassifier",
+            "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer",
+            "TeamTNT\\TNTSearch\\TNTSearch"
+        ],
+        "incoming_package_dependencies": [
+            "TeamTNT\\TNTSearch\\Classifier\\",
+            "TeamTNT\\TNTSearch\\Indexer\\",
+            "TeamTNT\\TNTSearch\\"
+        ],
+        "outgoing_class_dependencies": [
+            "InvalidArgumentException",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0.1,
+        "instability": 0.4,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "TeamTNT\\TNTSearch\\Stemmer\\Stemmer": {
+        "name": "TeamTNT\\TNTSearch\\Stemmer\\Stemmer",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "stem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "TeamTNT\\TNTSearch\\Stemmer\\",
+        "pageRank": 0.24,
+        "afferentCoupling": 9,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "TeamTNT\\TNTSearch\\Stemmer\\GermanStemmer": {
+        "name": "TeamTNT\\TNTSearch\\Stemmer\\GermanStemmer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "stem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStem",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step0a",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step0b",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step1",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step2",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step3",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getR",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 7,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 32,
+        "ccn": 25,
+        "ccnMethodMax": 13,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Stemmer\\Stemmer",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 8,
+        "length": 476,
+        "vocabulary": 91,
+        "volume": 3097.71,
+        "difficulty": 13.92,
+        "effort": 43109.8,
+        "level": 0.07,
+        "bugs": 1.03,
+        "time": 2395,
+        "intelligentContent": 222.59,
+        "number_operators": 142,
+        "number_operands": 334,
+        "number_operators_unique": 7,
+        "number_operands_unique": 84,
+        "cloc": 60,
+        "loc": 210,
+        "lloc": 150,
+        "mi": 61.56,
+        "mIwoC": 24.72,
+        "commentWeight": 36.83,
+        "kanDefect": 2.95,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 4,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 32,
+        "totalSystemComplexity": 40,
+        "package": "TeamTNT\\TNTSearch\\Stemmer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Stemmer\\ItalianStemmer": {
+        "name": "TeamTNT\\TNTSearch\\Stemmer\\ItalianStemmer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStem",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trim",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toLower",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceAccAcuti",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "putUAfterQToUpper",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "IUBetweenVowToUpper",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "returnRV",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "returnR1",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "returnR2",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step0",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteStuff",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step1",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step2",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step3a",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step3b",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step4",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 18,
+        "nbMethods": 18,
+        "nbMethodsPrivate": 16,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 69,
+        "ccn": 52,
+        "ccnMethodMax": 17,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Stemmer\\Stemmer",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 18,
+        "length": 820,
+        "vocabulary": 285,
+        "volume": 6686.95,
+        "difficulty": 13.54,
+        "effort": 90531.03,
+        "level": 0.07,
+        "bugs": 2.23,
+        "time": 5030,
+        "intelligentContent": 493.92,
+        "number_operators": 204,
+        "number_operands": 616,
+        "number_operators_unique": 12,
+        "number_operands_unique": 273,
+        "cloc": 78,
+        "loc": 355,
+        "lloc": 277,
+        "mi": 46.14,
+        "mIwoC": 12.94,
+        "commentWeight": 33.2,
+        "kanDefect": 3.82,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 23.11,
+        "relativeSystemComplexity": 24.11,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 416,
+        "totalSystemComplexity": 434,
+        "package": "TeamTNT\\TNTSearch\\Stemmer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Stemmer\\PortugueseStemmer": {
+        "name": "TeamTNT\\TNTSearch\\Stemmer\\PortugueseStemmer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "stem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "r1",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "r2",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rx",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rv",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inRv",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inR1",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inR2",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "searchIfInRv",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "searchIfInR2",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "search",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step1",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step2",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step3",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step4",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step5",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finish",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "check",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "strlen",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "substr",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "str_replace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "strtolower",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "utf8_to_unicode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unicode_to_utf8",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "strrpos",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "explode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 26,
+        "nbMethods": 26,
+        "nbMethodsPrivate": 25,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 114,
+        "ccn": 89,
+        "ccnMethodMax": 26,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Stemmer\\Stemmer",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 26,
+        "length": 1650,
+        "vocabulary": 703,
+        "volume": 15604.68,
+        "difficulty": 18.81,
+        "effort": 293587.29,
+        "level": 0.05,
+        "bugs": 5.2,
+        "time": 16310,
+        "intelligentContent": 829.42,
+        "number_operators": 365,
+        "number_operands": 1285,
+        "number_operators_unique": 20,
+        "number_operands_unique": 683,
+        "cloc": 180,
+        "loc": 589,
+        "lloc": 409,
+        "mi": 39.47,
+        "mIwoC": 1.7,
+        "commentWeight": 37.77,
+        "kanDefect": 5.34,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 29.08,
+        "relativeSystemComplexity": 30.08,
+        "totalStructuralComplexity": 26,
+        "totalDataComplexity": 756,
+        "totalSystemComplexity": 782,
+        "package": "TeamTNT\\TNTSearch\\Stemmer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Stemmer\\NoStemmer": {
+        "name": "TeamTNT\\TNTSearch\\Stemmer\\NoStemmer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "stem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Stemmer\\Stemmer"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 3,
+        "vocabulary": 2,
+        "volume": 3,
+        "difficulty": 1,
+        "effort": 3,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 3,
+        "number_operators": 1,
+        "number_operands": 2,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 76.82,
+        "mIwoC": 76.82,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "TeamTNT\\TNTSearch\\Stemmer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Stemmer\\CroatianStemmer": {
+        "name": "TeamTNT\\TNTSearch\\Stemmer\\CroatianStemmer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "stem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "istakniSlogotvornoR",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "imaSamoglasnik",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "transformiraj",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "korjenuj",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "endsWith",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 16,
+        "ccn": 11,
+        "ccnMethodMax": 5,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Stemmer\\Stemmer"
+        ],
+        "parents": [],
+        "lcom": 6,
+        "length": 504,
+        "vocabulary": 396,
+        "volume": 4349.2,
+        "difficulty": 7.34,
+        "effort": 31939.41,
+        "level": 0.14,
+        "bugs": 1.45,
+        "time": 1774,
+        "intelligentContent": 592.23,
+        "number_operators": 34,
+        "number_operands": 470,
+        "number_operators_unique": 12,
+        "number_operands_unique": 384,
+        "cloc": 30,
+        "loc": 158,
+        "lloc": 128,
+        "mi": 58.32,
+        "mIwoC": 27.08,
+        "commentWeight": 31.25,
+        "kanDefect": 0.96,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 5.58,
+        "relativeSystemComplexity": 6.58,
+        "totalStructuralComplexity": 6,
+        "totalDataComplexity": 33.5,
+        "totalSystemComplexity": 39.5,
+        "package": "TeamTNT\\TNTSearch\\Stemmer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Stemmer\\UkrainianStemmer": {
+        "name": "TeamTNT\\TNTSearch\\Stemmer\\UkrainianStemmer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "s",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "m",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 9,
+        "ccnMethodMax": 9,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Stemmer\\Stemmer"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 89,
+        "vocabulary": 32,
+        "volume": 445,
+        "difficulty": 6.48,
+        "effort": 2884.26,
+        "level": 0.15,
+        "bugs": 0.15,
+        "time": 160,
+        "intelligentContent": 68.66,
+        "number_operators": 19,
+        "number_operands": 70,
+        "number_operators_unique": 5,
+        "number_operands_unique": 27,
+        "cloc": 9,
+        "loc": 72,
+        "lloc": 63,
+        "mi": 67.03,
+        "mIwoC": 40.99,
+        "commentWeight": 26.04,
+        "kanDefect": 0.87,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.5,
+        "relativeSystemComplexity": 3.5,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 7.5,
+        "totalSystemComplexity": 10.5,
+        "package": "TeamTNT\\TNTSearch\\Stemmer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Stemmer\\PorterStemmer": {
+        "name": "TeamTNT\\TNTSearch\\Stemmer\\PorterStemmer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "stem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step1ab",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doPartA",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doPartB",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step1c",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step2",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step3",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step4",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step5",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "m",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doubleConsonant",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cvc",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 13,
+        "nbMethodsPrivate": 12,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 97,
+        "ccn": 85,
+        "ccnMethodMax": 22,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Stemmer\\Stemmer"
+        ],
+        "parents": [],
+        "lcom": 13,
+        "length": 595,
+        "vocabulary": 120,
+        "volume": 4109.6,
+        "difficulty": 28.61,
+        "effort": 117584.49,
+        "level": 0.03,
+        "bugs": 1.37,
+        "time": 6532,
+        "intelligentContent": 143.63,
+        "number_operators": 124,
+        "number_operands": 471,
+        "number_operators_unique": 13,
+        "number_operands_unique": 107,
+        "cloc": 111,
+        "loc": 327,
+        "lloc": 216,
+        "mi": 51.59,
+        "mIwoC": 12.34,
+        "commentWeight": 39.25,
+        "kanDefect": 2.07,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 8.12,
+        "relativeSystemComplexity": 9.12,
+        "totalStructuralComplexity": 13,
+        "totalDataComplexity": 105.5,
+        "totalSystemComplexity": 118.5,
+        "package": "TeamTNT\\TNTSearch\\Stemmer\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 3,
+        "efferentCoupling": 1,
+        "instability": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Stemmer\\RussianStemmer": {
+        "name": "TeamTNT\\TNTSearch\\Stemmer\\RussianStemmer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "s",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "m",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 9,
+        "ccnMethodMax": 9,
+        "externals": [
+            "TeamTNT\\TNTSearch\\Stemmer\\Stemmer"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 94,
+        "vocabulary": 34,
+        "volume": 478.22,
+        "difficulty": 6.38,
+        "effort": 3050.72,
+        "level": 0.16,
+        "bugs": 0.16,
+        "time": 169,
+        "intelligentContent": 74.96,
+        "number_operators": 20,
+        "number_operands": 74,
+        "number_operators_unique": 5,
+        "number_operands_unique": 29,
+        "cloc": 7,
+        "loc": 66,
+        "lloc": 59,
+        "mi": 65.57,
+        "mIwoC": 41.4,
+        "commentWeight": 24.17,
+        "kanDefect": 0.87,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.5,
+        "relativeSystemComplexity": 3.5,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 7.5,
+        "totalSystemComplexity": 10.5,
+        "package": "TeamTNT\\TNTSearch\\Stemmer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\FileReaders\\TextFileReader": {
+        "name": "TeamTNT\\TNTSearch\\FileReaders\\TextFileReader",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "TeamTNT\\TNTSearch\\FileReaders\\FileReaderInterface",
+            "SplFileInfo"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 3,
+        "vocabulary": 2,
+        "volume": 3,
+        "difficulty": 1,
+        "effort": 3,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 3,
+        "number_operators": 1,
+        "number_operands": 2,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 0,
+        "loc": 10,
+        "lloc": 10,
+        "mi": 74.71,
+        "mIwoC": 74.71,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "TeamTNT\\TNTSearch\\FileReaders\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\FileReaders\\": {
+        "name": "TeamTNT\\TNTSearch\\FileReaders\\",
+        "classes": [
+            "TeamTNT\\TNTSearch\\FileReaders\\TextFileReader",
+            "TeamTNT\\TNTSearch\\FileReaders\\FileReaderInterface"
+        ],
+        "incoming_class_dependencies": [
+            "TeamTNT\\TNTSearch\\Indexer\\TNTIndexer"
+        ],
+        "incoming_package_dependencies": [
+            "TeamTNT\\TNTSearch\\Indexer\\"
+        ],
+        "outgoing_class_dependencies": [
+            "SplFileInfo"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.5,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "TeamTNT\\TNTSearch\\FileReaders\\FileReaderInterface": {
+        "name": "TeamTNT\\TNTSearch\\FileReaders\\FileReaderInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "SplFileInfo"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "TeamTNT\\TNTSearch\\FileReaders\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "TeamTNT\\TNTSearch\\KeywordExtraction\\Rake": {
+        "name": "TeamTNT\\TNTSearch\\KeywordExtraction\\Rake",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractKeywords",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateCandidateKeywords",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculatePhraseScores",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateWordScores",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wordDegree",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wordFrequency",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "returnFormatedPharaseList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "tokenize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 26,
+        "ccn": 18,
+        "ccnMethodMax": 6,
+        "externals": [],
+        "parents": [],
+        "lcom": 2,
+        "length": 191,
+        "vocabulary": 40,
+        "volume": 1016.49,
+        "difficulty": 22.5,
+        "effort": 22870.99,
+        "level": 0.04,
+        "bugs": 0.34,
+        "time": 1271,
+        "intelligentContent": 45.18,
+        "number_operators": 56,
+        "number_operands": 135,
+        "number_operators_unique": 10,
+        "number_operands_unique": 30,
+        "cloc": 2,
+        "loc": 119,
+        "lloc": 117,
+        "mi": 41.38,
+        "mIwoC": 31.41,
+        "commentWeight": 9.97,
+        "kanDefect": 2.87,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 1.49,
+        "relativeSystemComplexity": 37.49,
+        "totalStructuralComplexity": 324,
+        "totalDataComplexity": 13.43,
+        "totalSystemComplexity": 337.43,
+        "package": "TeamTNT\\TNTSearch\\KeywordExtraction\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\KeywordExtraction\\": {
+        "name": "TeamTNT\\TNTSearch\\KeywordExtraction\\",
+        "classes": [
+            "TeamTNT\\TNTSearch\\KeywordExtraction\\Rake"
+        ],
+        "abstraction": 0,
+        "dependent_instabilities": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "TeamTNT\\TNTSearch\\Spell\\JaroWinklerDistance": {
+        "name": "TeamTNT\\TNTSearch\\Spell\\JaroWinklerDistance",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getDistance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "jaro",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 16,
+        "ccn": 15,
+        "ccnMethodMax": 12,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 194,
+        "vocabulary": 40,
+        "volume": 1032.45,
+        "difficulty": 30.57,
+        "effort": 31566.33,
+        "level": 0.03,
+        "bugs": 0.34,
+        "time": 1754,
+        "intelligentContent": 33.77,
+        "number_operators": 67,
+        "number_operands": 127,
+        "number_operators_unique": 13,
+        "number_operands_unique": 27,
+        "cloc": 19,
+        "loc": 89,
+        "lloc": 70,
+        "mi": 69.44,
+        "mIwoC": 36.63,
+        "commentWeight": 32.81,
+        "kanDefect": 0.94,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 3.5,
+        "relativeSystemComplexity": 4.5,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 9,
+        "package": "TeamTNT\\TNTSearch\\Spell\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "TeamTNT\\TNTSearch\\Spell\\": {
+        "name": "TeamTNT\\TNTSearch\\Spell\\",
+        "classes": [
+            "TeamTNT\\TNTSearch\\Spell\\JaroWinklerDistance"
+        ],
+        "abstraction": 0,
+        "dependent_instabilities": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.15,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "~7.1",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-pdo_sqlite": {
+                "name": "ext-pdo_sqlite",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-sqlite3": {
+                "name": "ext-sqlite3",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-mbstring": {
+                "name": "ext-mbstring",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

@@ -1,0 +1,901 @@
+{
+    "Venturecraft\\Revisionable\\FieldFormatter": {
+        "name": "Venturecraft\\Revisionable\\FieldFormatter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "format",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEmpty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "boolean",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "string",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "datetime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "options",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 17,
+        "ccn": 12,
+        "ccnMethodMax": 5,
+        "externals": [
+            "DateTime"
+        ],
+        "parents": [],
+        "lcom": 6,
+        "length": 112,
+        "vocabulary": 32,
+        "volume": 560,
+        "difficulty": 11.06,
+        "effort": 6193.6,
+        "level": 0.09,
+        "bugs": 0.19,
+        "time": 344,
+        "intelligentContent": 50.63,
+        "number_operators": 33,
+        "number_operands": 79,
+        "number_operators_unique": 7,
+        "number_operands_unique": 25,
+        "cloc": 59,
+        "loc": 123,
+        "lloc": 64,
+        "mi": 83.67,
+        "mIwoC": 39.74,
+        "commentWeight": 43.93,
+        "kanDefect": 1.17,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 3.72,
+        "relativeSystemComplexity": 7.72,
+        "totalStructuralComplexity": 24,
+        "totalDataComplexity": 22.33,
+        "totalSystemComplexity": 46.33,
+        "package": "Venturecraft\\Revisionable\\",
+        "pageRank": 0.18,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Venturecraft\\Revisionable\\": {
+        "name": "Venturecraft\\Revisionable\\",
+        "classes": [
+            "Venturecraft\\Revisionable\\FieldFormatter",
+            "Venturecraft\\Revisionable\\Revisionable",
+            "Venturecraft\\Revisionable\\RevisionableTrait",
+            "Venturecraft\\Revisionable\\RevisionableServiceProvider",
+            "Venturecraft\\Revisionable\\Revision",
+            "CreateRevisionsTable"
+        ],
+        "outgoing_class_dependencies": [
+            "DateTime",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "static",
+            "Config",
+            "model",
+            "Illuminate\\Support\\Arr",
+            "DB",
+            "class",
+            "Auth",
+            "Event",
+            "Illuminate\\Support\\ServiceProvider",
+            "related_model",
+            "main_model",
+            "Illuminate\\Support\\Str",
+            "Exception",
+            "related_class",
+            "user_model",
+            "Illuminate\\Database\\Migrations\\Migration",
+            "Schema"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Illuminate\\Database\\Eloquent\\",
+            "Illuminate\\Support\\",
+            "Illuminate\\Database\\Migrations\\"
+        ],
+        "abstraction": 0.16666666666666666,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0.11785113019775796,
+        "normalized_distance": 0.16666666666666674,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Venturecraft\\Revisionable\\Revisionable": {
+        "name": "Venturecraft\\Revisionable\\Revisionable",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "newModel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "revisionHistory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postCreate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSystemUserId",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "changedRevisionableFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRevisionable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSoftDelete",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRevisionFormattedFields",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRevisionFormattedFieldNames",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "identifiableName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRevisionNullString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRevisionUnknownString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disableRevisionField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 17,
+        "nbMethods": 15,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 11,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 57,
+        "ccn": 41,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Model",
+            "static",
+            "static",
+            "static",
+            "static",
+            "Config",
+            "model",
+            "static",
+            "Illuminate\\Support\\Arr",
+            "DateTime",
+            "DateTime",
+            "static",
+            "DB",
+            "DateTime",
+            "DateTime",
+            "static",
+            "DB",
+            "DateTime",
+            "DateTime",
+            "static",
+            "DB",
+            "class",
+            "class",
+            "Auth",
+            "Auth"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "lcom": 4,
+        "length": 262,
+        "vocabulary": 42,
+        "volume": 1412.79,
+        "difficulty": 25.5,
+        "effort": 36026.07,
+        "level": 0.04,
+        "bugs": 0.47,
+        "time": 2001,
+        "intelligentContent": 55.4,
+        "number_operators": 75,
+        "number_operands": 187,
+        "number_operators_unique": 9,
+        "number_operands_unique": 33,
+        "cloc": 141,
+        "loc": 313,
+        "lloc": 172,
+        "mi": 66.78,
+        "mIwoC": 23.66,
+        "commentWeight": 43.11,
+        "kanDefect": 2.19,
+        "relativeStructuralComplexity": 576,
+        "relativeDataComplexity": 0.76,
+        "relativeSystemComplexity": 576.76,
+        "totalStructuralComplexity": 9792,
+        "totalDataComplexity": 13,
+        "totalSystemComplexity": 9805,
+        "package": "Venturecraft\\Revisionable\\",
+        "pageRank": 0.26,
+        "afferentCoupling": 1,
+        "efferentCoupling": 9,
+        "instability": 0.9,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Venturecraft\\Revisionable\\RevisionableTrait": {
+        "name": "Venturecraft\\Revisionable\\RevisionableTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "bootRevisionableTrait",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "revisionHistory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "classRevisionHistory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postCreate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSystemUserId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "changedRevisionableFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRevisionable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSoftDelete",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRevisionFormattedFields",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRevisionFormattedFieldNames",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "identifiableName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRevisionNullString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRevisionUnknownString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disableRevisionField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sortJsonKeys",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 19,
+        "nbMethods": 17,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 13,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 76,
+        "ccn": 58,
+        "ccnMethodMax": 14,
+        "externals": [
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "Venturecraft\\Revisionable\\Revisionable",
+            "Venturecraft\\Revisionable\\Revisionable",
+            "Illuminate\\Support\\Arr",
+            "DateTime",
+            "DateTime",
+            "Venturecraft\\Revisionable\\Revisionable",
+            "DB",
+            "Event",
+            "DateTime",
+            "DateTime",
+            "Venturecraft\\Revisionable\\Revisionable",
+            "DB",
+            "Event",
+            "DateTime",
+            "DateTime",
+            "Venturecraft\\Revisionable\\Revisionable",
+            "DB",
+            "Event",
+            "class",
+            "class",
+            "Auth",
+            "Auth"
+        ],
+        "parents": [],
+        "lcom": 4,
+        "length": 373,
+        "vocabulary": 59,
+        "volume": 2194.23,
+        "difficulty": 27.45,
+        "effort": 60229.26,
+        "level": 0.04,
+        "bugs": 0.73,
+        "time": 3346,
+        "intelligentContent": 79.94,
+        "number_operators": 104,
+        "number_operands": 269,
+        "number_operators_unique": 10,
+        "number_operands_unique": 49,
+        "cloc": 164,
+        "loc": 384,
+        "lloc": 220,
+        "mi": 60.11,
+        "mIwoC": 17.71,
+        "commentWeight": 42.41,
+        "kanDefect": 3.14,
+        "relativeStructuralComplexity": 1089,
+        "relativeDataComplexity": 0.63,
+        "relativeSystemComplexity": 1089.63,
+        "totalStructuralComplexity": 20691,
+        "totalDataComplexity": 11.88,
+        "totalSystemComplexity": 20702.88,
+        "package": "Venturecraft\\Revisionable\\",
+        "pageRank": 0.14,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Venturecraft\\Revisionable\\RevisionableServiceProvider": {
+        "name": "Venturecraft\\Revisionable\\RevisionableServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 3,
+        "length": 12,
+        "vocabulary": 8,
+        "volume": 36,
+        "difficulty": 0.71,
+        "effort": 25.71,
+        "level": 1.4,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 50.4,
+        "number_operators": 2,
+        "number_operands": 10,
+        "number_operators_unique": 1,
+        "number_operands_unique": 7,
+        "cloc": 15,
+        "loc": 30,
+        "lloc": 15,
+        "mi": 107.77,
+        "mIwoC": 63.31,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 3,
+        "package": "Venturecraft\\Revisionable\\",
+        "pageRank": 0.14,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Venturecraft\\Revisionable\\Revision": {
+        "name": "Venturecraft\\Revisionable\\Revision",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "revisionable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fieldName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatFieldName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "oldValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "newValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRelated",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRelatedModel",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "userResponsible",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "historyOf",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "format",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 36,
+        "ccn": 25,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Model",
+            "related_model",
+            "main_model",
+            "Illuminate\\Support\\Str",
+            "Exception",
+            "related_class",
+            "related_class",
+            "related_class",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "class",
+            "user_model",
+            "class",
+            "related_model",
+            "Venturecraft\\Revisionable\\FieldFormatter"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "lcom": 3,
+        "length": 251,
+        "vocabulary": 48,
+        "volume": 1401.83,
+        "difficulty": 24.08,
+        "effort": 33757.48,
+        "level": 0.04,
+        "bugs": 0.47,
+        "time": 1875,
+        "intelligentContent": 58.21,
+        "number_operators": 89,
+        "number_operands": 162,
+        "number_operators_unique": 11,
+        "number_operands_unique": 37,
+        "cloc": 112,
+        "loc": 250,
+        "lloc": 138,
+        "mi": 70.97,
+        "mIwoC": 27.92,
+        "commentWeight": 43.04,
+        "kanDefect": 1.48,
+        "relativeStructuralComplexity": 484,
+        "relativeDataComplexity": 1.11,
+        "relativeSystemComplexity": 485.11,
+        "totalStructuralComplexity": 5808,
+        "totalDataComplexity": 13.26,
+        "totalSystemComplexity": 5821.26,
+        "package": "Venturecraft\\Revisionable\\",
+        "pageRank": 0.14,
+        "afferentCoupling": 0,
+        "efferentCoupling": 9,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "CreateRevisionsTable": {
+        "name": "CreateRevisionsTable",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "up",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "down",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Database\\Migrations\\Migration",
+            "Schema",
+            "Schema"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Migrations\\Migration"
+        ],
+        "lcom": 2,
+        "length": 21,
+        "vocabulary": 9,
+        "volume": 66.57,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0.86,
+        "bugs": 0.02,
+        "time": 0,
+        "intelligentContent": 57.06,
+        "number_operators": 0,
+        "number_operands": 21,
+        "number_operators_unique": 0,
+        "number_operands_unique": 9,
+        "cloc": 10,
+        "loc": 32,
+        "lloc": 22,
+        "mi": 95.9,
+        "mIwoC": 57.82,
+        "commentWeight": 38.09,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 64,
+        "totalStructuralComplexity": 128,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 128,
+        "package": "Venturecraft\\Revisionable\\",
+        "pageRank": 0.14,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.6,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.4.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "~4.0|~5.0|~5.1|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "laravel\/framework": {
+                "name": "laravel\/framework",
+                "required": "~5.4|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/laravel\/framework\/zipball\/32d1ed55dd46dcd706ff2e45bb7965be7320b87d"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

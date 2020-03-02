@@ -1,0 +1,1437 @@
+{
+    "CreateTranslationsTable": {
+        "name": "CreateTranslationsTable",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "up",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "down",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Database\\Migrations\\Migration",
+            "Schema",
+            "Schema"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Migrations\\Migration"
+        ],
+        "lcom": 2,
+        "length": 20,
+        "vocabulary": 11,
+        "volume": 69.19,
+        "difficulty": 0.95,
+        "effort": 65.73,
+        "level": 1.05,
+        "bugs": 0.02,
+        "time": 4,
+        "intelligentContent": 72.83,
+        "number_operators": 1,
+        "number_operands": 19,
+        "number_operators_unique": 1,
+        "number_operands_unique": 10,
+        "cloc": 10,
+        "loc": 31,
+        "lloc": 21,
+        "mi": 96.67,
+        "mIwoC": 58.14,
+        "commentWeight": 38.53,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 64,
+        "totalStructuralComplexity": 128,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 128,
+        "package": "\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "\\": {
+        "name": "\\",
+        "classes": [
+            "CreateTranslationsTable"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Database\\Migrations\\Migration"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Database\\Migrations\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Manager"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\TranslationManager\\Models\\",
+            "Barryvdh\\TranslationManager\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.3333333333333333,
+        "dependent_instabilities": [],
+        "distance": 0.4714045207910317,
+        "normalized_distance": 0.6666666666666667,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\TranslationManager\\Models\\Translation": {
+        "name": "Barryvdh\\TranslationManager\\Models\\Translation",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "scopeOfTranslatedGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeOrderByGroupKeys",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeSelectDistinctGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Model",
+            "DB",
+            "DB"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "lcom": 3,
+        "length": 37,
+        "vocabulary": 20,
+        "volume": 159.91,
+        "difficulty": 3.63,
+        "effort": 579.68,
+        "level": 0.28,
+        "bugs": 0.05,
+        "time": 32,
+        "intelligentContent": 44.11,
+        "number_operators": 8,
+        "number_operands": 29,
+        "number_operators_unique": 4,
+        "number_operands_unique": 16,
+        "cloc": 12,
+        "loc": 44,
+        "lloc": 32,
+        "mi": 87.51,
+        "mIwoC": 51.33,
+        "commentWeight": 36.18,
+        "kanDefect": 0.44,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.78,
+        "relativeSystemComplexity": 25.78,
+        "totalStructuralComplexity": 75,
+        "totalDataComplexity": 2.33,
+        "totalSystemComplexity": 77.33,
+        "package": "Barryvdh\\TranslationManager\\Models\\",
+        "pageRank": 0.29,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\TranslationManager\\Models\\": {
+        "name": "Barryvdh\\TranslationManager\\Models\\",
+        "classes": [
+            "Barryvdh\\TranslationManager\\Models\\Translation"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Database\\Eloquent\\Model",
+            "DB"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Database\\Eloquent\\",
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\TranslationManager\\Controller",
+            "Barryvdh\\TranslationManager\\Manager"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\TranslationManager\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.5,
+        "dependent_instabilities": {
+            "\\": 0.3333333333333333
+        },
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\TranslationManager\\TranslationServiceProvider": {
+        "name": "Barryvdh\\TranslationManager\\TranslationServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Translation\\TranslationServiceProvider",
+            "Barryvdh\\TranslationManager\\Translator"
+        ],
+        "parents": [
+            "Illuminate\\Translation\\TranslationServiceProvider"
+        ],
+        "lcom": 1,
+        "length": 29,
+        "vocabulary": 14,
+        "volume": 110.41,
+        "difficulty": 3.27,
+        "effort": 361.35,
+        "level": 0.31,
+        "bugs": 0.04,
+        "time": 20,
+        "intelligentContent": 33.74,
+        "number_operators": 5,
+        "number_operands": 24,
+        "number_operators_unique": 3,
+        "number_operands_unique": 11,
+        "cloc": 8,
+        "loc": 26,
+        "lloc": 18,
+        "mi": 95.91,
+        "mIwoC": 58.04,
+        "commentWeight": 37.87,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.17,
+        "relativeSystemComplexity": 25.17,
+        "totalStructuralComplexity": 25,
+        "totalDataComplexity": 0.17,
+        "totalSystemComplexity": 25.17,
+        "package": "Barryvdh\\TranslationManager\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\TranslationManager\\": {
+        "name": "Barryvdh\\TranslationManager\\",
+        "classes": [
+            "Barryvdh\\TranslationManager\\TranslationServiceProvider",
+            "Barryvdh\\TranslationManager\\Controller",
+            "Barryvdh\\TranslationManager\\Manager",
+            "Barryvdh\\TranslationManager\\ManagerServiceProvider",
+            "Barryvdh\\TranslationManager\\Translator"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Translation\\TranslationServiceProvider",
+            "Illuminate\\Routing\\Controller",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Illuminate\\Http\\Request",
+            "Tanmuhittin\\LaravelGoogleTranslate\\Commands\\TranslateFilesCommand",
+            "Illuminate\\Contracts\\Foundation\\Application",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Illuminate\\Contracts\\Events\\Dispatcher",
+            "Lang",
+            "Illuminate\\Support\\Arr",
+            "Symfony\\Component\\Finder\\Finder",
+            "Illuminate\\Support\\Str",
+            "Barryvdh\\TranslationManager\\Events\\TranslationsExportedEvent",
+            "Illuminate\\Support\\ServiceProvider",
+            "Barryvdh\\TranslationManager\\Console\\ResetCommand",
+            "Barryvdh\\TranslationManager\\Console\\ImportCommand",
+            "Barryvdh\\TranslationManager\\Console\\FindCommand",
+            "Barryvdh\\TranslationManager\\Console\\ExportCommand",
+            "Barryvdh\\TranslationManager\\Console\\CleanCommand",
+            "Illuminate\\Translation\\Translator"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Translation\\",
+            "Illuminate\\Routing\\",
+            "Barryvdh\\TranslationManager\\Models\\",
+            "Illuminate\\Http\\",
+            "Tanmuhittin\\LaravelGoogleTranslate\\Commands\\",
+            "Illuminate\\Contracts\\Foundation\\",
+            "Illuminate\\Filesystem\\",
+            "Illuminate\\Contracts\\Events\\",
+            "\\",
+            "Illuminate\\Support\\",
+            "Symfony\\Component\\Finder\\",
+            "Barryvdh\\TranslationManager\\Events\\",
+            "Barryvdh\\TranslationManager\\Console\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\TranslationManager\\Console\\FindCommand",
+            "Barryvdh\\TranslationManager\\Console\\CleanCommand",
+            "Barryvdh\\TranslationManager\\Console\\ImportCommand",
+            "Barryvdh\\TranslationManager\\Console\\ExportCommand",
+            "Barryvdh\\TranslationManager\\Console\\ResetCommand"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\TranslationManager\\Console\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8,
+        "dependent_instabilities": {
+            "Barryvdh\\TranslationManager\\Models\\": 0.5,
+            "\\": 0.3333333333333333,
+            "Barryvdh\\TranslationManager\\Events\\": 0,
+            "Barryvdh\\TranslationManager\\Console\\": 0.6666666666666666
+        },
+        "distance": 0.14142135623730948,
+        "normalized_distance": 0.19999999999999996,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\TranslationManager\\Console\\FindCommand": {
+        "name": "Barryvdh\\TranslationManager\\Console\\FindCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Barryvdh\\TranslationManager\\Manager"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 15,
+        "vocabulary": 9,
+        "volume": 47.55,
+        "difficulty": 1.57,
+        "effort": 74.72,
+        "level": 0.64,
+        "bugs": 0.02,
+        "time": 4,
+        "intelligentContent": 30.26,
+        "number_operators": 4,
+        "number_operands": 11,
+        "number_operators_unique": 2,
+        "number_operands_unique": 7,
+        "cloc": 14,
+        "loc": 31,
+        "lloc": 17,
+        "mi": 104.43,
+        "mIwoC": 61.28,
+        "commentWeight": 43.15,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.13,
+        "relativeSystemComplexity": 9.13,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 0.25,
+        "totalSystemComplexity": 18.25,
+        "package": "Barryvdh\\TranslationManager\\Console\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\TranslationManager\\Console\\": {
+        "name": "Barryvdh\\TranslationManager\\Console\\",
+        "classes": [
+            "Barryvdh\\TranslationManager\\Console\\FindCommand",
+            "Barryvdh\\TranslationManager\\Console\\CleanCommand",
+            "Barryvdh\\TranslationManager\\Console\\ImportCommand",
+            "Barryvdh\\TranslationManager\\Console\\ExportCommand",
+            "Barryvdh\\TranslationManager\\Console\\ResetCommand"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Console\\Command",
+            "Barryvdh\\TranslationManager\\Manager"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Console\\",
+            "Barryvdh\\TranslationManager\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\TranslationManager\\ManagerServiceProvider"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\TranslationManager\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": {
+            "Barryvdh\\TranslationManager\\": 0.8
+        },
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\TranslationManager\\Console\\CleanCommand": {
+        "name": "Barryvdh\\TranslationManager\\Console\\CleanCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Barryvdh\\TranslationManager\\Manager"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 9,
+        "vocabulary": 6,
+        "volume": 23.26,
+        "difficulty": 0.8,
+        "effort": 18.61,
+        "level": 1.25,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 29.08,
+        "number_operators": 1,
+        "number_operands": 8,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 14,
+        "loc": 31,
+        "lloc": 17,
+        "mi": 106.6,
+        "mIwoC": 63.46,
+        "commentWeight": 43.15,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.13,
+        "relativeSystemComplexity": 9.13,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 0.25,
+        "totalSystemComplexity": 18.25,
+        "package": "Barryvdh\\TranslationManager\\Console\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\TranslationManager\\Console\\ImportCommand": {
+        "name": "Barryvdh\\TranslationManager\\Console\\ImportCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Barryvdh\\TranslationManager\\Manager"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 2,
+        "length": 24,
+        "vocabulary": 13,
+        "volume": 88.81,
+        "difficulty": 2.7,
+        "effort": 239.79,
+        "level": 0.37,
+        "bugs": 0.03,
+        "time": 13,
+        "intelligentContent": 32.89,
+        "number_operators": 6,
+        "number_operands": 18,
+        "number_operators_unique": 3,
+        "number_operands_unique": 10,
+        "cloc": 19,
+        "loc": 41,
+        "lloc": 22,
+        "mi": 100.42,
+        "mIwoC": 56.94,
+        "commentWeight": 43.49,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.27,
+        "relativeSystemComplexity": 16.27,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 0.8,
+        "totalSystemComplexity": 48.8,
+        "package": "Barryvdh\\TranslationManager\\Console\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\TranslationManager\\Console\\ExportCommand": {
+        "name": "Barryvdh\\TranslationManager\\Console\\ExportCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 13,
+        "ccn": 10,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Barryvdh\\TranslationManager\\Manager"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 3,
+        "length": 64,
+        "vocabulary": 25,
+        "volume": 297.21,
+        "difficulty": 7.42,
+        "effort": 2205.59,
+        "level": 0.13,
+        "bugs": 0.1,
+        "time": 123,
+        "intelligentContent": 40.05,
+        "number_operators": 17,
+        "number_operands": 47,
+        "number_operators_unique": 6,
+        "number_operands_unique": 19,
+        "cloc": 24,
+        "loc": 67,
+        "lloc": 43,
+        "mi": 85.7,
+        "mIwoC": 45.71,
+        "commentWeight": 40,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.53,
+        "relativeSystemComplexity": 49.53,
+        "totalStructuralComplexity": 196,
+        "totalDataComplexity": 2.13,
+        "totalSystemComplexity": 198.13,
+        "package": "Barryvdh\\TranslationManager\\Console\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\TranslationManager\\Console\\ResetCommand": {
+        "name": "Barryvdh\\TranslationManager\\Console\\ResetCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Barryvdh\\TranslationManager\\Manager"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 9,
+        "vocabulary": 6,
+        "volume": 23.26,
+        "difficulty": 0.8,
+        "effort": 18.61,
+        "level": 1.25,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 29.08,
+        "number_operators": 1,
+        "number_operands": 8,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 14,
+        "loc": 31,
+        "lloc": 17,
+        "mi": 106.6,
+        "mIwoC": 63.46,
+        "commentWeight": 43.15,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.13,
+        "relativeSystemComplexity": 9.13,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 0.25,
+        "totalSystemComplexity": 18.25,
+        "package": "Barryvdh\\TranslationManager\\Console\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\TranslationManager\\Events\\TranslationsExportedEvent": {
+        "name": "Barryvdh\\TranslationManager\\Events\\TranslationsExportedEvent",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 5,
+        "loc": 12,
+        "lloc": 7,
+        "mi": 213.07,
+        "mIwoC": 171,
+        "commentWeight": 42.07,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Barryvdh\\TranslationManager\\Events\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\TranslationManager\\Events\\": {
+        "name": "Barryvdh\\TranslationManager\\Events\\",
+        "classes": [
+            "Barryvdh\\TranslationManager\\Events\\TranslationsExportedEvent"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\TranslationManager\\Manager"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\TranslationManager\\"
+        ],
+        "abstraction": 0,
+        "instability": 0,
+        "dependent_instabilities": [],
+        "distance": 0.7071067811865475,
+        "normalized_distance": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\TranslationManager\\Controller": {
+        "name": "Barryvdh\\TranslationManager\\Controller",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadLocales",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postAdd",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postEdit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postImport",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postFind",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postPublish",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postAddGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postAddLocale",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postRemoveLocale",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postTranslateMissing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 13,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 39,
+        "ccn": 26,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Illuminate\\Routing\\Controller",
+            "Barryvdh\\TranslationManager\\Manager",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Illuminate\\Http\\Request",
+            "Illuminate\\Http\\Request",
+            "Illuminate\\Http\\Request",
+            "Illuminate\\Http\\Request",
+            "Illuminate\\Http\\Request",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Tanmuhittin\\LaravelGoogleTranslate\\Commands\\TranslateFilesCommand"
+        ],
+        "parents": [
+            "Illuminate\\Routing\\Controller"
+        ],
+        "lcom": 3,
+        "length": 321,
+        "vocabulary": 65,
+        "volume": 1933.18,
+        "difficulty": 17.12,
+        "effort": 33101.47,
+        "level": 0.06,
+        "bugs": 0.64,
+        "time": 1839,
+        "intelligentContent": 112.9,
+        "number_operators": 77,
+        "number_operands": 244,
+        "number_operators_unique": 8,
+        "number_operands_unique": 57,
+        "cloc": 3,
+        "loc": 145,
+        "lloc": 142,
+        "mi": 37.59,
+        "mIwoC": 26.54,
+        "commentWeight": 11.05,
+        "kanDefect": 1.84,
+        "relativeStructuralComplexity": 900,
+        "relativeDataComplexity": 0.55,
+        "relativeSystemComplexity": 900.55,
+        "totalStructuralComplexity": 12600,
+        "totalDataComplexity": 7.65,
+        "totalSystemComplexity": 12607.65,
+        "package": "Barryvdh\\TranslationManager\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\TranslationManager\\Manager": {
+        "name": "Barryvdh\\TranslationManager\\Manager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIgnoredLocales",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "importTranslations",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "importTranslation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findTranslations",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "missingKey",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "exportTranslations",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "exportAllTranslations",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeTree",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "jsonSet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cleanTranslations",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "truncateTranslations",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLocales",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addLocale",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "saveIgnoredLocales",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeLocale",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 17,
+        "nbMethods": 17,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 14,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 83,
+        "ccn": 67,
+        "ccnMethodMax": 21,
+        "externals": [
+            "Illuminate\\Contracts\\Foundation\\Application",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Illuminate\\Contracts\\Events\\Dispatcher",
+            "Lang",
+            "Illuminate\\Support\\Arr",
+            "Lang",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Symfony\\Component\\Finder\\Finder",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Illuminate\\Support\\Str",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Str",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Illuminate\\Support\\Arr",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Events\\TranslationsExportedEvent",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Events\\TranslationsExportedEvent",
+            "Illuminate\\Support\\Arr",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Models\\Translation",
+            "Barryvdh\\TranslationManager\\Models\\Translation"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 681,
+        "vocabulary": 114,
+        "volume": 4653.2,
+        "difficulty": 30.83,
+        "effort": 143442.89,
+        "level": 0.03,
+        "bugs": 1.55,
+        "time": 7969,
+        "intelligentContent": 150.95,
+        "number_operators": 202,
+        "number_operands": 479,
+        "number_operators_unique": 13,
+        "number_operands_unique": 101,
+        "cloc": 23,
+        "loc": 323,
+        "lloc": 300,
+        "mi": 31.36,
+        "mIwoC": 11.27,
+        "commentWeight": 20.09,
+        "kanDefect": 6.58,
+        "relativeStructuralComplexity": 1296,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 1296.5,
+        "totalStructuralComplexity": 22032,
+        "totalDataComplexity": 8.49,
+        "totalSystemComplexity": 22040.49,
+        "package": "Barryvdh\\TranslationManager\\",
+        "pageRank": 0.28,
+        "afferentCoupling": 7,
+        "efferentCoupling": 9,
+        "instability": 0.56,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\TranslationManager\\ManagerServiceProvider": {
+        "name": "Barryvdh\\TranslationManager\\ManagerServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Barryvdh\\TranslationManager\\Console\\ResetCommand",
+            "Barryvdh\\TranslationManager\\Console\\ImportCommand",
+            "Barryvdh\\TranslationManager\\Console\\FindCommand",
+            "Barryvdh\\TranslationManager\\Console\\ExportCommand",
+            "Barryvdh\\TranslationManager\\Console\\CleanCommand"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 93,
+        "vocabulary": 27,
+        "volume": 442.2,
+        "difficulty": 4.88,
+        "effort": 2155.75,
+        "level": 0.21,
+        "bugs": 0.15,
+        "time": 120,
+        "intelligentContent": 90.71,
+        "number_operators": 15,
+        "number_operands": 78,
+        "number_operators_unique": 3,
+        "number_operands_unique": 24,
+        "cloc": 21,
+        "loc": 69,
+        "lloc": 48,
+        "mi": 82.38,
+        "mIwoC": 44.67,
+        "commentWeight": 37.72,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.88,
+        "relativeSystemComplexity": 49.88,
+        "totalStructuralComplexity": 147,
+        "totalDataComplexity": 2.63,
+        "totalSystemComplexity": 149.63,
+        "package": "Barryvdh\\TranslationManager\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\TranslationManager\\Translator": {
+        "name": "Barryvdh\\TranslationManager\\Translator",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTranslationManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "notifyMissingKey",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 6,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Illuminate\\Translation\\Translator",
+            "Barryvdh\\TranslationManager\\Manager"
+        ],
+        "parents": [
+            "Illuminate\\Translation\\Translator"
+        ],
+        "lcom": 1,
+        "length": 48,
+        "vocabulary": 16,
+        "volume": 192,
+        "difficulty": 8.18,
+        "effort": 1570.91,
+        "level": 0.12,
+        "bugs": 0.06,
+        "time": 87,
+        "intelligentContent": 23.47,
+        "number_operators": 12,
+        "number_operands": 36,
+        "number_operators_unique": 5,
+        "number_operands_unique": 11,
+        "cloc": 11,
+        "loc": 36,
+        "lloc": 25,
+        "mi": 90.48,
+        "mIwoC": 52.71,
+        "commentWeight": 37.77,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 16.6,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 1.8,
+        "totalSystemComplexity": 49.8,
+        "package": "Barryvdh\\TranslationManager\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.78,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "^5.5|^6|^7",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "illuminate\/translation": {
+                "name": "illuminate\/translation",
+                "required": "^5.5|^6|^7",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/translation\/zipball\/577237df0680ecf9f939d5a88d1e373bb07c0022"
+            },
+            "symfony\/finder": {
+                "name": "symfony\/finder",
+                "required": "^3|^4|^5",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/finder\/zipball\/6251f201187ca9d66f6b099d3de65d279e971138"
+            },
+            "tanmuhittin\/laravel-google-translate": {
+                "name": "tanmuhittin\/laravel-google-translate",
+                "required": "^1.0.2",
+                "installed": null,
+                "latest": "1.0.3",
+                "license": [],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/tanmuhittin\/laravel-google-translate\/zipball\/7b4efd17e509a10fa7e8ae32dd458dd96f97bf27"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

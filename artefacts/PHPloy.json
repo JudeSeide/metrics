@@ -1,0 +1,695 @@
+{
+    "rel_path": {
+        "name": "rel_path",
+        "cloc": 7,
+        "loc": 13,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "dir_tree": {
+        "name": "dir_tree",
+        "cloc": 12,
+        "loc": 45,
+        "lloc": 33,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "input_password": {
+        "name": "input_password",
+        "cloc": 6,
+        "loc": 32,
+        "lloc": 26,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "human_filesize": {
+        "name": "human_filesize",
+        "cloc": 8,
+        "loc": 15,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "pattern_match": {
+        "name": "pattern_match",
+        "cloc": 8,
+        "loc": 13,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Banago\\PHPloy\\Connection": {
+        "name": "Banago\\PHPloy\\Connection",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommonOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "connectToFtp",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "connectToSftp",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 25,
+        "ccn": 22,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Exception",
+            "Exception",
+            "League\\Flysystem\\Adapter\\Ftp",
+            "League\\Flysystem\\Filesystem",
+            "Exception",
+            "League\\Flysystem\\Sftp\\SftpAdapter",
+            "League\\Flysystem\\Filesystem"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 186,
+        "vocabulary": 53,
+        "volume": 1065.39,
+        "difficulty": 12.98,
+        "effort": 13826.44,
+        "level": 0.08,
+        "bugs": 0.36,
+        "time": 768,
+        "intelligentContent": 82.09,
+        "number_operators": 40,
+        "number_operands": 146,
+        "number_operators_unique": 8,
+        "number_operands_unique": 45,
+        "cloc": 33,
+        "loc": 98,
+        "lloc": 65,
+        "mi": 75.43,
+        "mIwoC": 36.3,
+        "commentWeight": 39.13,
+        "kanDefect": 0.71,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.8,
+        "relativeSystemComplexity": 16.8,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 3.2,
+        "totalSystemComplexity": 67.2,
+        "package": "Banago\\PHPloy\\",
+        "pageRank": 0.25,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Banago\\PHPloy\\": {
+        "name": "Banago\\PHPloy\\",
+        "classes": [
+            "Banago\\PHPloy\\Connection",
+            "Banago\\PHPloy\\Options",
+            "Banago\\PHPloy\\Git",
+            "Banago\\PHPloy\\PHPloy"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception",
+            "League\\Flysystem\\Adapter\\Ftp",
+            "League\\Flysystem\\Filesystem",
+            "League\\Flysystem\\Sftp\\SftpAdapter",
+            "League\\CLImate\\CLImate"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "League\\Flysystem\\Adapter\\",
+            "League\\Flysystem\\",
+            "League\\Flysystem\\Sftp\\",
+            "League\\CLImate\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Banago\\PHPloy\\Options": {
+        "name": "Banago\\PHPloy\\Options",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "build",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parse",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 105,
+        "vocabulary": 44,
+        "volume": 573.24,
+        "difficulty": 1.21,
+        "effort": 693.22,
+        "level": 0.83,
+        "bugs": 0.19,
+        "time": 39,
+        "intelligentContent": 474.03,
+        "number_operators": 1,
+        "number_operands": 104,
+        "number_operators_unique": 1,
+        "number_operands_unique": 43,
+        "cloc": 21,
+        "loc": 41,
+        "lloc": 20,
+        "mi": 96.93,
+        "mIwoC": 52.17,
+        "commentWeight": 44.76,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.2,
+        "relativeSystemComplexity": 16.2,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 0.6,
+        "totalSystemComplexity": 48.6,
+        "package": "Banago\\PHPloy\\",
+        "pageRank": 0.31,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Banago\\PHPloy\\Git": {
+        "name": "Banago\\PHPloy\\Git",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "exec",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "command",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "diff",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkout",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 92,
+        "vocabulary": 26,
+        "volume": 432.44,
+        "difficulty": 7.26,
+        "effort": 3140.34,
+        "level": 0.14,
+        "bugs": 0.14,
+        "time": 174,
+        "intelligentContent": 59.55,
+        "number_operators": 31,
+        "number_operands": 61,
+        "number_operators_unique": 5,
+        "number_operands_unique": 21,
+        "cloc": 51,
+        "loc": 94,
+        "lloc": 43,
+        "mi": 90.83,
+        "mIwoC": 45.37,
+        "commentWeight": 45.45,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.93,
+        "relativeSystemComplexity": 5.93,
+        "totalStructuralComplexity": 20,
+        "totalDataComplexity": 9.67,
+        "totalSystemComplexity": 29.67,
+        "package": "Banago\\PHPloy\\",
+        "pageRank": 0.25,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Banago\\PHPloy\\PHPloy": {
+        "name": "Banago\\PHPloy\\PHPloy",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkArguments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseIniFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareDefaults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mergeOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareServers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPasswordFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPasswordFromIniFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUserFromIniFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterIgnoredFiles",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterBasePathFiles",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeBasePath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterIncludedFiles",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "connect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deploy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "listFiles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compare",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "push",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRevision",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "currentRevision",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "currentBranch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkSubmodules",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkSubSubmodules",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "purge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "copy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preDeploy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postDeploy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preDeployRemote",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postDeployRemote",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeOnRemoteServer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasDeletedDirectories",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "debug",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createIniFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "log",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 35,
+        "nbMethods": 35,
+        "nbMethodsPrivate": 10,
+        "nbMethodsPublic": 25,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 248,
+        "ccn": 214,
+        "ccnMethodMax": 33,
+        "externals": [
+            "Banago\\PHPloy\\Options",
+            "League\\CLImate\\CLImate",
+            "Banago\\PHPloy\\Options",
+            "Banago\\PHPloy\\Git",
+            "Exception",
+            "Exception",
+            "Exception",
+            "Exception",
+            "Banago\\PHPloy\\Connection",
+            "Exception",
+            "Exception",
+            "Exception",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 2022,
+        "vocabulary": 299,
+        "volume": 16628.93,
+        "difficulty": 42.04,
+        "effort": 699002.71,
+        "level": 0.02,
+        "bugs": 5.54,
+        "time": 38833,
+        "intelligentContent": 395.59,
+        "number_operators": 535,
+        "number_operands": 1487,
+        "number_operators_unique": 16,
+        "number_operands_unique": 283,
+        "cloc": 465,
+        "loc": 1316,
+        "lloc": 851,
+        "mi": 39.81,
+        "mIwoC": 0,
+        "commentWeight": 39.81,
+        "kanDefect": 15.9,
+        "relativeStructuralComplexity": 4900,
+        "relativeDataComplexity": 0.51,
+        "relativeSystemComplexity": 4900.51,
+        "totalStructuralComplexity": 171500,
+        "totalDataComplexity": 17.73,
+        "totalSystemComplexity": 171517.73,
+        "package": "Banago\\PHPloy\\",
+        "pageRank": 0.19,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.0.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "league\/climate": {
+                "name": "league\/climate",
+                "required": ">=3.0.0",
+                "installed": "3.5.0",
+                "latest": "3.5.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/thephpleague\/climate\/zipball\/6b53a28a58ad9f5f63042e291eb870cf0d02a9c9"
+            },
+            "league\/flysystem": {
+                "name": "league\/flysystem",
+                "required": ">=1.0.0",
+                "installed": "1.0.53",
+                "latest": "1.0.64",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/thephpleague\/flysystem\/zipball\/d13c43dbd4b791f815215959105a008515d1a2e0"
+            },
+            "league\/flysystem-sftp": {
+                "name": "league\/flysystem-sftp",
+                "required": ">=1.0.14",
+                "installed": "1.0.20",
+                "latest": "1.0.22",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/thephpleague\/flysystem-sftp\/zipball\/cab59dd2277e02fe46f5f23195672a02ed49774d"
+            }
+        },
+        "packages-installed": {
+            "league\/climate": "3.5.0",
+            "league\/flysystem": "1.0.53",
+            "league\/flysystem-sftp": "1.0.20"
+        },
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

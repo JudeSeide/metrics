@@ -1,0 +1,1509 @@
+{
+    "ElephantIO\\Client": {
+        "name": "ElephantIO\\Client",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "emit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "of",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "close",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEngine",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 4,
+        "ccnMethodMax": 2,
+        "externals": [
+            "ElephantIO\\EngineInterface",
+            "Psr\\Log\\LoggerInterface",
+            "Psr\\Log\\NullLogger"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 63,
+        "vocabulary": 19,
+        "volume": 267.62,
+        "difficulty": 6.67,
+        "effort": 1784.13,
+        "level": 0.15,
+        "bugs": 0.09,
+        "time": 99,
+        "intelligentContent": 40.14,
+        "number_operators": 13,
+        "number_operands": 50,
+        "number_operators_unique": 4,
+        "number_operands_unique": 15,
+        "cloc": 42,
+        "loc": 102,
+        "lloc": 60,
+        "mi": 85.59,
+        "mIwoC": 43.68,
+        "commentWeight": 41.91,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.95,
+        "relativeSystemComplexity": 49.95,
+        "totalStructuralComplexity": 392,
+        "totalDataComplexity": 7.63,
+        "totalSystemComplexity": 399.63,
+        "package": "ElephantIO\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\": {
+        "name": "ElephantIO\\",
+        "classes": [
+            "ElephantIO\\Client",
+            "ElephantIO\\EngineInterface",
+            "ElephantIO\\AbstractPayload"
+        ],
+        "outgoing_class_dependencies": [
+            "Psr\\Log\\LoggerInterface",
+            "Psr\\Log\\NullLogger"
+        ],
+        "outgoing_package_dependencies": [
+            "Psr\\Log\\"
+        ],
+        "incoming_class_dependencies": [
+            "ElephantIO\\Exception\\UnsupportedActionException",
+            "ElephantIO\\Payload\\Decoder",
+            "ElephantIO\\Payload\\Encoder",
+            "ElephantIO\\Engine\\AbstractSocketIO"
+        ],
+        "incoming_package_dependencies": [
+            "ElephantIO\\Exception\\",
+            "ElephantIO\\Payload\\",
+            "ElephantIO\\Engine\\"
+        ],
+        "abstraction": 0.6666666666666666,
+        "instability": 0.3333333333333333,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "ElephantIO\\Exception\\MalformedUrlException": {
+        "name": "ElephantIO\\Exception\\MalformedUrlException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "InvalidArgumentException",
+            "Exception"
+        ],
+        "parents": [
+            "InvalidArgumentException"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 4,
+        "volume": 12,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.33,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 16,
+        "number_operators": 0,
+        "number_operands": 6,
+        "number_operators_unique": 0,
+        "number_operands_unique": 4,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 72.61,
+        "mIwoC": 72.61,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 2,
+        "package": "ElephantIO\\Exception\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\Exception\\": {
+        "name": "ElephantIO\\Exception\\",
+        "classes": [
+            "ElephantIO\\Exception\\MalformedUrlException",
+            "ElephantIO\\Exception\\ServerConnectionFailureException",
+            "ElephantIO\\Exception\\UnsupportedActionException",
+            "ElephantIO\\Exception\\SocketException",
+            "ElephantIO\\Exception\\UnsupportedTransportException"
+        ],
+        "outgoing_class_dependencies": [
+            "InvalidArgumentException",
+            "Exception",
+            "RuntimeException",
+            "BadMethodCallException",
+            "ElephantIO\\EngineInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "ElephantIO\\"
+        ],
+        "incoming_class_dependencies": [
+            "ElephantIO\\Engine\\SocketIO\\Version1X",
+            "ElephantIO\\Engine\\SocketIO\\Version0X",
+            "ElephantIO\\Engine\\AbstractSocketIO"
+        ],
+        "incoming_package_dependencies": [
+            "ElephantIO\\Engine\\SocketIO\\",
+            "ElephantIO\\Engine\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.625,
+        "dependent_instabilities": {
+            "ElephantIO\\": 0.3333333333333333
+        },
+        "distance": 0.2651650429449553,
+        "normalized_distance": 0.375,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "ElephantIO\\Exception\\ServerConnectionFailureException": {
+        "name": "ElephantIO\\Exception\\ServerConnectionFailureException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getErrorMessage",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "RuntimeException",
+            "Exception"
+        ],
+        "parents": [
+            "RuntimeException"
+        ],
+        "lcom": 1,
+        "length": 10,
+        "vocabulary": 7,
+        "volume": 28.07,
+        "difficulty": 1.6,
+        "effort": 44.92,
+        "level": 0.63,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 17.55,
+        "number_operators": 2,
+        "number_operands": 8,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 1,
+        "loc": 15,
+        "lloc": 14,
+        "mi": 84.19,
+        "mIwoC": 64.72,
+        "commentWeight": 19.47,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 4,
+        "package": "ElephantIO\\Exception\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\Exception\\UnsupportedActionException": {
+        "name": "ElephantIO\\Exception\\UnsupportedActionException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "BadMethodCallException",
+            "ElephantIO\\EngineInterface",
+            "ElephantIO\\Exception\\Exception"
+        ],
+        "parents": [
+            "BadMethodCallException"
+        ],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 5,
+        "volume": 18.58,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.25,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 23.22,
+        "number_operators": 0,
+        "number_operands": 8,
+        "number_operators_unique": 0,
+        "number_operands_unique": 5,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 71.28,
+        "mIwoC": 71.28,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 5,
+        "package": "ElephantIO\\Exception\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\Exception\\SocketException": {
+        "name": "ElephantIO\\Exception\\SocketException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "RuntimeException",
+            "Exception"
+        ],
+        "parents": [
+            "RuntimeException"
+        ],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 4,
+        "volume": 16,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 16,
+        "number_operators": 0,
+        "number_operands": 8,
+        "number_operators_unique": 0,
+        "number_operands_unique": 4,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 71.73,
+        "mIwoC": 71.73,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 2.5,
+        "package": "ElephantIO\\Exception\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\Exception\\UnsupportedTransportException": {
+        "name": "ElephantIO\\Exception\\UnsupportedTransportException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "RuntimeException",
+            "Exception"
+        ],
+        "parents": [
+            "RuntimeException"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 4,
+        "volume": 12,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.33,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 16,
+        "number_operators": 0,
+        "number_operands": 6,
+        "number_operators_unique": 0,
+        "number_operands_unique": 4,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 72.61,
+        "mIwoC": 72.61,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 2,
+        "package": "ElephantIO\\Exception\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\Payload\\Decoder": {
+        "name": "ElephantIO\\Payload\\Decoder",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "decode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "count",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 17,
+        "ccn": 14,
+        "ccnMethodMax": 8,
+        "externals": [
+            "ElephantIO\\AbstractPayload",
+            "Countable"
+        ],
+        "parents": [
+            "ElephantIO\\AbstractPayload"
+        ],
+        "lcom": 1,
+        "length": 154,
+        "vocabulary": 38,
+        "volume": 808.18,
+        "difficulty": 28.29,
+        "effort": 22864.78,
+        "level": 0.04,
+        "bugs": 0.27,
+        "time": 1270,
+        "intelligentContent": 28.57,
+        "number_operators": 57,
+        "number_operands": 97,
+        "number_operators_unique": 14,
+        "number_operands_unique": 24,
+        "cloc": 13,
+        "loc": 77,
+        "lloc": 64,
+        "mi": 68.08,
+        "mIwoC": 38.36,
+        "commentWeight": 29.72,
+        "kanDefect": 0.71,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 2.08,
+        "relativeSystemComplexity": 6.08,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 8.33,
+        "totalSystemComplexity": 24.33,
+        "package": "ElephantIO\\Payload\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\Payload\\": {
+        "name": "ElephantIO\\Payload\\",
+        "classes": [
+            "ElephantIO\\Payload\\Decoder",
+            "ElephantIO\\Payload\\Encoder"
+        ],
+        "outgoing_class_dependencies": [
+            "ElephantIO\\AbstractPayload",
+            "Countable"
+        ],
+        "outgoing_package_dependencies": [
+            "ElephantIO\\",
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "ElephantIO\\Engine\\SocketIO\\Version1X",
+            "ElephantIO\\Engine\\SocketIO\\Version0X",
+            "ElephantIO\\Engine\\AbstractSocketIO"
+        ],
+        "incoming_package_dependencies": [
+            "ElephantIO\\Engine\\SocketIO\\",
+            "ElephantIO\\Engine\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.4,
+        "dependent_instabilities": {
+            "ElephantIO\\": 0.3333333333333333
+        },
+        "distance": 0.42426406871192845,
+        "normalized_distance": 0.6,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "ElephantIO\\Payload\\Encoder": {
+        "name": "ElephantIO\\Payload\\Encoder",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "encode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 6,
+        "ccnMethodMax": 5,
+        "externals": [
+            "ElephantIO\\AbstractPayload"
+        ],
+        "parents": [
+            "ElephantIO\\AbstractPayload"
+        ],
+        "lcom": 1,
+        "length": 129,
+        "vocabulary": 36,
+        "volume": 666.92,
+        "difficulty": 20,
+        "effort": 13338.41,
+        "level": 0.05,
+        "bugs": 0.22,
+        "time": 741,
+        "intelligentContent": 33.35,
+        "number_operators": 49,
+        "number_operands": 80,
+        "number_operators_unique": 12,
+        "number_operands_unique": 24,
+        "cloc": 15,
+        "loc": 63,
+        "lloc": 48,
+        "mi": 77.04,
+        "mIwoC": 42.74,
+        "commentWeight": 34.3,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 15,
+        "package": "ElephantIO\\Payload\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\EngineInterface": {
+        "name": "ElephantIO\\EngineInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "connect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "close",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "emit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "keepAlive",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "of",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "ElephantIO\\",
+        "pageRank": 0.12,
+        "afferentCoupling": 3,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "ElephantIO\\Engine\\SocketIO\\Version1X": {
+        "name": "ElephantIO\\Engine\\SocketIO\\Version1X",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "connect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "close",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "emit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "of",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handshake",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "upgradeTransport",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "keepAlive",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 44,
+        "ccn": 35,
+        "ccnMethodMax": 13,
+        "externals": [
+            "ElephantIO\\Engine\\AbstractSocketIO",
+            "ElephantIO\\Exception\\SocketException",
+            "InvalidArgumentException",
+            "ElephantIO\\Payload\\Encoder",
+            "Exception",
+            "ElephantIO\\Exception\\ServerConnectionFailureException",
+            "ElephantIO\\Exception\\UnsupportedTransportException",
+            "ElephantIO\\Engine\\SocketIO\\Session",
+            "UnexpectedValueException"
+        ],
+        "parents": [
+            "ElephantIO\\Engine\\AbstractSocketIO"
+        ],
+        "lcom": 3,
+        "length": 433,
+        "vocabulary": 103,
+        "volume": 2895.25,
+        "difficulty": 26.68,
+        "effort": 77234.21,
+        "level": 0.04,
+        "bugs": 0.97,
+        "time": 4291,
+        "intelligentContent": 108.53,
+        "number_operators": 120,
+        "number_operands": 313,
+        "number_operators_unique": 15,
+        "number_operands_unique": 88,
+        "cloc": 31,
+        "loc": 202,
+        "lloc": 171,
+        "mi": 50.86,
+        "mIwoC": 22.34,
+        "commentWeight": 28.52,
+        "kanDefect": 2.52,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.94,
+        "relativeSystemComplexity": 64.94,
+        "totalStructuralComplexity": 640,
+        "totalDataComplexity": 9.44,
+        "totalSystemComplexity": 649.44,
+        "package": "ElephantIO\\Engine\\SocketIO\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 1,
+        "efferentCoupling": 9,
+        "instability": 0.9,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\Engine\\SocketIO\\": {
+        "name": "ElephantIO\\Engine\\SocketIO\\",
+        "classes": [
+            "ElephantIO\\Engine\\SocketIO\\Version1X",
+            "ElephantIO\\Engine\\SocketIO\\Version2X",
+            "ElephantIO\\Engine\\SocketIO\\Session",
+            "ElephantIO\\Engine\\SocketIO\\Version0X"
+        ],
+        "outgoing_class_dependencies": [
+            "ElephantIO\\Engine\\AbstractSocketIO",
+            "ElephantIO\\Exception\\SocketException",
+            "InvalidArgumentException",
+            "ElephantIO\\Payload\\Encoder",
+            "Exception",
+            "ElephantIO\\Exception\\ServerConnectionFailureException",
+            "ElephantIO\\Exception\\UnsupportedTransportException",
+            "UnexpectedValueException"
+        ],
+        "outgoing_package_dependencies": [
+            "ElephantIO\\Engine\\",
+            "ElephantIO\\Exception\\",
+            "\\",
+            "ElephantIO\\Payload\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "ElephantIO\\Engine\\": 0.75,
+            "ElephantIO\\Exception\\": 0.625,
+            "ElephantIO\\Payload\\": 0.4
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "ElephantIO\\Engine\\SocketIO\\Version2X": {
+        "name": "ElephantIO\\Engine\\SocketIO\\Version2X",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "ElephantIO\\Engine\\SocketIO\\Version1X"
+        ],
+        "parents": [
+            "ElephantIO\\Engine\\SocketIO\\Version1X"
+        ],
+        "lcom": 2,
+        "length": 10,
+        "vocabulary": 6,
+        "volume": 25.85,
+        "difficulty": 1.5,
+        "effort": 38.77,
+        "level": 0.67,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 17.23,
+        "number_operators": 4,
+        "number_operands": 6,
+        "number_operators_unique": 2,
+        "number_operands_unique": 4,
+        "cloc": 10,
+        "loc": 24,
+        "lloc": 14,
+        "mi": 107.05,
+        "mIwoC": 64.97,
+        "commentWeight": 42.07,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 4,
+        "package": "ElephantIO\\Engine\\SocketIO\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\Engine\\SocketIO\\Session": {
+        "name": "ElephantIO\\Engine\\SocketIO\\Session",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "needsHeartbeat",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 51,
+        "vocabulary": 20,
+        "volume": 220.42,
+        "difficulty": 12,
+        "effort": 2645.02,
+        "level": 0.08,
+        "bugs": 0.07,
+        "time": 147,
+        "intelligentContent": 18.37,
+        "number_operators": 15,
+        "number_operands": 36,
+        "number_operators_unique": 8,
+        "number_operands_unique": 12,
+        "cloc": 20,
+        "loc": 51,
+        "lloc": 31,
+        "mi": 91.77,
+        "mIwoC": 50.52,
+        "commentWeight": 41.25,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 4.67,
+        "relativeSystemComplexity": 4.67,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 14,
+        "totalSystemComplexity": 14,
+        "package": "ElephantIO\\Engine\\SocketIO\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\Engine\\SocketIO\\Version0X": {
+        "name": "ElephantIO\\Engine\\SocketIO\\Version0X",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "connect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "close",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "emit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "of",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handshake",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "upgradeTransport",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 39,
+        "ccn": 31,
+        "ccnMethodMax": 13,
+        "externals": [
+            "ElephantIO\\Engine\\AbstractSocketIO",
+            "ElephantIO\\Exception\\SocketException",
+            "InvalidArgumentException",
+            "ElephantIO\\Payload\\Encoder",
+            "ElephantIO\\Exception\\ServerConnectionFailureException",
+            "ElephantIO\\Exception\\UnsupportedTransportException",
+            "ElephantIO\\Engine\\SocketIO\\Session",
+            "ElephantIO\\Exception\\UnsupportedTransportException",
+            "UnexpectedValueException"
+        ],
+        "parents": [
+            "ElephantIO\\Engine\\AbstractSocketIO"
+        ],
+        "lcom": 3,
+        "length": 399,
+        "vocabulary": 98,
+        "volume": 2639.27,
+        "difficulty": 20.58,
+        "effort": 54319.84,
+        "level": 0.05,
+        "bugs": 0.88,
+        "time": 3018,
+        "intelligentContent": 128.24,
+        "number_operators": 104,
+        "number_operands": 295,
+        "number_operators_unique": 12,
+        "number_operands_unique": 86,
+        "cloc": 21,
+        "loc": 181,
+        "lloc": 160,
+        "mi": 48.97,
+        "mIwoC": 23.79,
+        "commentWeight": 25.18,
+        "kanDefect": 2.24,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 1.43,
+        "relativeSystemComplexity": 26.43,
+        "totalStructuralComplexity": 225,
+        "totalDataComplexity": 12.83,
+        "totalSystemComplexity": 237.83,
+        "package": "ElephantIO\\Engine\\SocketIO\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\Engine\\AbstractSocketIO": {
+        "name": "ElephantIO\\Engine\\AbstractSocketIO",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "connect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "keepAlive",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "close",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "of",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "write",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "emit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "readBytes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "read",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseUrl",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 30,
+        "ccn": 19,
+        "ccnMethodMax": 9,
+        "externals": [
+            "ElephantIO\\EngineInterface",
+            "ElephantIO\\Exception\\UnsupportedActionException",
+            "ElephantIO\\Exception\\UnsupportedActionException",
+            "ElephantIO\\Exception\\UnsupportedActionException",
+            "RuntimeException",
+            "RuntimeException",
+            "DomainException",
+            "ElephantIO\\Payload\\Decoder",
+            "ElephantIO\\Exception\\MalformedUrlException"
+        ],
+        "parents": [],
+        "lcom": 6,
+        "length": 225,
+        "vocabulary": 78,
+        "volume": 1414.22,
+        "difficulty": 22.3,
+        "effort": 31530.05,
+        "level": 0.04,
+        "bugs": 0.47,
+        "time": 1752,
+        "intelligentContent": 63.43,
+        "number_operators": 65,
+        "number_operands": 160,
+        "number_operators_unique": 17,
+        "number_operands_unique": 61,
+        "cloc": 71,
+        "loc": 198,
+        "lloc": 127,
+        "mi": 69.5,
+        "mIwoC": 29.49,
+        "commentWeight": 40.01,
+        "kanDefect": 1.37,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1.55,
+        "relativeSystemComplexity": 17.55,
+        "totalStructuralComplexity": 192,
+        "totalDataComplexity": 18.6,
+        "totalSystemComplexity": 210.6,
+        "package": "ElephantIO\\Engine\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 2,
+        "efferentCoupling": 6,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ElephantIO\\Engine\\": {
+        "name": "ElephantIO\\Engine\\",
+        "classes": [
+            "ElephantIO\\Engine\\AbstractSocketIO"
+        ],
+        "incoming_class_dependencies": [
+            "ElephantIO\\Engine\\SocketIO\\Version1X",
+            "ElephantIO\\Engine\\SocketIO\\Version0X"
+        ],
+        "incoming_package_dependencies": [
+            "ElephantIO\\Engine\\SocketIO\\"
+        ],
+        "outgoing_class_dependencies": [
+            "ElephantIO\\EngineInterface",
+            "ElephantIO\\Exception\\UnsupportedActionException",
+            "RuntimeException",
+            "DomainException",
+            "ElephantIO\\Payload\\Decoder",
+            "ElephantIO\\Exception\\MalformedUrlException"
+        ],
+        "outgoing_package_dependencies": [
+            "ElephantIO\\",
+            "ElephantIO\\Exception\\",
+            "\\",
+            "ElephantIO\\Payload\\"
+        ],
+        "abstraction": 1,
+        "instability": 0.75,
+        "dependent_instabilities": {
+            "ElephantIO\\": 0.3333333333333333,
+            "ElephantIO\\Exception\\": 0.625,
+            "ElephantIO\\Payload\\": 0.4
+        },
+        "distance": 0.5303300858899106,
+        "normalized_distance": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "ElephantIO\\AbstractPayload": {
+        "name": "ElephantIO\\AbstractPayload",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "maskData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 44,
+        "vocabulary": 29,
+        "volume": 213.75,
+        "difficulty": 3.85,
+        "effort": 823.83,
+        "level": 0.26,
+        "bugs": 0.07,
+        "time": 46,
+        "intelligentContent": 55.46,
+        "number_operators": 7,
+        "number_operands": 37,
+        "number_operators_unique": 5,
+        "number_operands_unique": 24,
+        "cloc": 18,
+        "loc": 53,
+        "lloc": 35,
+        "mi": 88.99,
+        "mIwoC": 49.73,
+        "commentWeight": 39.25,
+        "kanDefect": 0.38,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "ElephantIO\\",
+        "pageRank": 0.21,
+        "afferentCoupling": 2,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.1.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "psr\/log": {
+                "name": "psr\/log",
+                "required": "~1.0",
+                "installed": null,
+                "latest": "1.1.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/php-fig\/log",
+                "zip": "https:\/\/api.github.com\/repos\/php-fig\/log\/zipball\/446d54b4cb6bf489fc9d75f55843658e6f25d801"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

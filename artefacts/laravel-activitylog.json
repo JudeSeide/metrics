@@ -1,0 +1,1449 @@
+{
+    "Spatie\\Activitylog\\Models\\Activity": {
+        "name": "Spatie\\Activitylog\\Models\\Activity",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "subject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "causer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExtraProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "changes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getChangesAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeInLog",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeCausedBy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeForSubject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 6,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Spatie\\Activitylog\\Contracts\\Activity",
+            "Illuminate\\Database\\Eloquent\\Relations\\MorphTo",
+            "Illuminate\\Database\\Eloquent\\Relations\\MorphTo",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "lcom": 5,
+        "length": 62,
+        "vocabulary": 22,
+        "volume": 276.48,
+        "difficulty": 3.63,
+        "effort": 1004.08,
+        "level": 0.28,
+        "bugs": 0.09,
+        "time": 56,
+        "intelligentContent": 76.13,
+        "number_operators": 16,
+        "number_operands": 46,
+        "number_operators_unique": 3,
+        "number_operands_unique": 19,
+        "cloc": 0,
+        "loc": 57,
+        "lloc": 57,
+        "mi": 43.79,
+        "mIwoC": 43.79,
+        "commentWeight": 0,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.78,
+        "relativeSystemComplexity": 169.78,
+        "totalStructuralComplexity": 1521,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 1528,
+        "package": "Spatie\\Activitylog\\Models\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Activitylog\\Models\\": {
+        "name": "Spatie\\Activitylog\\Models\\",
+        "classes": [
+            "Spatie\\Activitylog\\Models\\Activity"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Spatie\\Activitylog\\Contracts\\Activity",
+            "Illuminate\\Database\\Eloquent\\Relations\\MorphTo",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Database\\Eloquent\\Builder"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Database\\Eloquent\\",
+            "Spatie\\Activitylog\\Contracts\\",
+            "Illuminate\\Database\\Eloquent\\Relations\\",
+            "Illuminate\\Support\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Spatie\\Activitylog\\Contracts\\": 0.5714285714285714
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Activitylog\\Traits\\LogsActivity": {
+        "name": "Spatie\\Activitylog\\Traits\\LogsActivity",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "bootLogsActivity",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldSubmitEmptyLogs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isLogEmpty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disableLogging",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enableLogging",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "activities",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescriptionForEvent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLogNameToUse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "eventsToBeRecorded",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attributesToBeIgnored",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldLogEvent",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 28,
+        "ccn": 18,
+        "ccnMethodMax": 6,
+        "externals": [
+            "static",
+            "static",
+            "Illuminate\\Database\\Eloquent\\Relations\\MorphMany",
+            "Spatie\\Activitylog\\ActivitylogServiceProvider",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr"
+        ],
+        "parents": [],
+        "lcom": 8,
+        "length": 112,
+        "vocabulary": 27,
+        "volume": 532.55,
+        "difficulty": 11.73,
+        "effort": 6244.12,
+        "level": 0.09,
+        "bugs": 0.18,
+        "time": 347,
+        "intelligentContent": 45.42,
+        "number_operators": 45,
+        "number_operands": 67,
+        "number_operators_unique": 7,
+        "number_operands_unique": 20,
+        "cloc": 4,
+        "loc": 100,
+        "lloc": 96,
+        "mi": 50.49,
+        "mIwoC": 35.25,
+        "commentWeight": 15.25,
+        "kanDefect": 0.99,
+        "relativeStructuralComplexity": 400,
+        "relativeDataComplexity": 0.97,
+        "relativeSystemComplexity": 400.97,
+        "totalStructuralComplexity": 4400,
+        "totalDataComplexity": 10.67,
+        "totalSystemComplexity": 4410.67,
+        "package": "Spatie\\Activitylog\\Traits\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Activitylog\\Traits\\": {
+        "name": "Spatie\\Activitylog\\Traits\\",
+        "classes": [
+            "Spatie\\Activitylog\\Traits\\LogsActivity",
+            "Spatie\\Activitylog\\Traits\\DetectsChanges",
+            "Spatie\\Activitylog\\Traits\\CausesActivity"
+        ],
+        "outgoing_class_dependencies": [
+            "static",
+            "Illuminate\\Database\\Eloquent\\Relations\\MorphMany",
+            "Spatie\\Activitylog\\ActivitylogServiceProvider",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Support\\Str",
+            "Spatie\\Activitylog\\Exceptions\\CouldNotLogChanges"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Illuminate\\Database\\Eloquent\\Relations\\",
+            "Spatie\\Activitylog\\",
+            "Illuminate\\Support\\",
+            "Illuminate\\Database\\Eloquent\\",
+            "Spatie\\Activitylog\\Exceptions\\"
+        ],
+        "abstraction": 1,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Spatie\\Activitylog\\": 0.875,
+            "Spatie\\Activitylog\\Exceptions\\": 0.4
+        },
+        "distance": 0.7071067811865475,
+        "normalized_distance": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Activitylog\\Traits\\DetectsChanges": {
+        "name": "Spatie\\Activitylog\\Traits\\DetectsChanges",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "bootDetectsChanges",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attributesToBeLogged",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldLogOnlyDirty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldLogUnguarded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attributeValuesToBeLogged",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "logChanges",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRelatedModelAttributeValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getModelAttributeJsonValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 41,
+        "ccn": 34,
+        "ccnMethodMax": 13,
+        "externals": [
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "static",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Spatie\\Activitylog\\Exceptions\\CouldNotLogChanges",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "parents": [],
+        "lcom": 5,
+        "length": 214,
+        "vocabulary": 34,
+        "volume": 1088.72,
+        "difficulty": 33.96,
+        "effort": 36969.04,
+        "level": 0.03,
+        "bugs": 0.36,
+        "time": 2054,
+        "intelligentContent": 32.06,
+        "number_operators": 72,
+        "number_operands": 142,
+        "number_operators_unique": 11,
+        "number_operands_unique": 23,
+        "cloc": 2,
+        "loc": 113,
+        "lloc": 111,
+        "mi": 39.78,
+        "mIwoC": 29.55,
+        "commentWeight": 10.23,
+        "kanDefect": 1.57,
+        "relativeStructuralComplexity": 484,
+        "relativeDataComplexity": 0.64,
+        "relativeSystemComplexity": 484.64,
+        "totalStructuralComplexity": 3872,
+        "totalDataComplexity": 5.13,
+        "totalSystemComplexity": 3877.13,
+        "package": "Spatie\\Activitylog\\Traits\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Activitylog\\Traits\\CausesActivity": {
+        "name": "Spatie\\Activitylog\\Traits\\CausesActivity",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "actions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Relations\\MorphMany",
+            "Spatie\\Activitylog\\ActivitylogServiceProvider"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 3,
+        "vocabulary": 3,
+        "volume": 4.75,
+        "difficulty": 0.5,
+        "effort": 2.38,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 9.51,
+        "number_operators": 1,
+        "number_operands": 2,
+        "number_operators_unique": 1,
+        "number_operands_unique": 2,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 75.43,
+        "mIwoC": 75.43,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 4.33,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0.33,
+        "totalSystemComplexity": 4.33,
+        "package": "Spatie\\Activitylog\\Traits\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Activitylog\\Exceptions\\CouldNotLogActivity": {
+        "name": "Spatie\\Activitylog\\Exceptions\\CouldNotLogActivity",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "couldNotDetermineUser",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Exception",
+            "static"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 5,
+        "volume": 13.93,
+        "difficulty": 0.63,
+        "effort": 8.71,
+        "level": 1.6,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 22.29,
+        "number_operators": 1,
+        "number_operands": 5,
+        "number_operators_unique": 1,
+        "number_operands_unique": 4,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 72.16,
+        "mIwoC": 72.16,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Spatie\\Activitylog\\Exceptions\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Activitylog\\Exceptions\\": {
+        "name": "Spatie\\Activitylog\\Exceptions\\",
+        "classes": [
+            "Spatie\\Activitylog\\Exceptions\\CouldNotLogActivity",
+            "Spatie\\Activitylog\\Exceptions\\InvalidConfiguration",
+            "Spatie\\Activitylog\\Exceptions\\CouldNotLogChanges"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\Activitylog\\Traits\\DetectsChanges",
+            "Spatie\\Activitylog\\ActivityLogger",
+            "Spatie\\Activitylog\\ActivitylogServiceProvider"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\Activitylog\\Traits\\",
+            "Spatie\\Activitylog\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.4,
+        "dependent_instabilities": [],
+        "distance": 0.42426406871192845,
+        "normalized_distance": 0.6,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Activitylog\\Exceptions\\InvalidConfiguration": {
+        "name": "Spatie\\Activitylog\\Exceptions\\InvalidConfiguration",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "modelIsNotValid",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Exception",
+            "static"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 1,
+        "length": 12,
+        "vocabulary": 8,
+        "volume": 36,
+        "difficulty": 1.17,
+        "effort": 42,
+        "level": 0.86,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 30.86,
+        "number_operators": 5,
+        "number_operands": 7,
+        "number_operators_unique": 2,
+        "number_operands_unique": 6,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 69.27,
+        "mIwoC": 69.27,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Spatie\\Activitylog\\Exceptions\\",
+        "pageRank": 0.18,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Activitylog\\Exceptions\\CouldNotLogChanges": {
+        "name": "Spatie\\Activitylog\\Exceptions\\CouldNotLogChanges",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "invalidAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Exception",
+            "static"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 5,
+        "volume": 13.93,
+        "difficulty": 0.63,
+        "effort": 8.71,
+        "level": 1.6,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 22.29,
+        "number_operators": 1,
+        "number_operands": 5,
+        "number_operators_unique": 1,
+        "number_operands_unique": 4,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 72.16,
+        "mIwoC": 72.16,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Spatie\\Activitylog\\Exceptions\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Activitylog\\ActivityLogStatus": {
+        "name": "Spatie\\Activitylog\\ActivityLogStatus",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Contracts\\Config\\Repository"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 14,
+        "vocabulary": 6,
+        "volume": 36.19,
+        "difficulty": 3.5,
+        "effort": 126.66,
+        "level": 0.29,
+        "bugs": 0.01,
+        "time": 7,
+        "intelligentContent": 10.34,
+        "number_operators": 7,
+        "number_operands": 7,
+        "number_operators_unique": 3,
+        "number_operands_unique": 3,
+        "cloc": 0,
+        "loc": 21,
+        "lloc": 21,
+        "mi": 60.11,
+        "mIwoC": 60.11,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3.25,
+        "relativeSystemComplexity": 3.25,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 13,
+        "totalSystemComplexity": 13,
+        "package": "Spatie\\Activitylog\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Activitylog\\": {
+        "name": "Spatie\\Activitylog\\",
+        "classes": [
+            "Spatie\\Activitylog\\ActivityLogStatus",
+            "Spatie\\Activitylog\\ActivityLogger",
+            "Spatie\\Activitylog\\ActivitylogServiceProvider",
+            "Spatie\\Activitylog\\CleanActivitylogCommand"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\Activitylog\\Traits\\LogsActivity",
+            "Spatie\\Activitylog\\Traits\\CausesActivity"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\Activitylog\\Traits\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Contracts\\Config\\Repository",
+            "Illuminate\\Auth\\AuthManager",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Support\\Carbon",
+            "Spatie\\Activitylog\\Exceptions\\CouldNotLogActivity",
+            "Spatie\\Activitylog\\Contracts\\Activity",
+            "Spatie\\String\\Str",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\ServiceProvider",
+            "Spatie\\Activitylog\\Exceptions\\InvalidConfiguration",
+            "activityModelClassName",
+            "Illuminate\\Console\\Command",
+            "Carbon\\Carbon",
+            "activity"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Contracts\\Config\\",
+            "Illuminate\\Auth\\",
+            "Illuminate\\Database\\Eloquent\\",
+            "Illuminate\\Support\\",
+            "Spatie\\Activitylog\\Exceptions\\",
+            "Spatie\\Activitylog\\Contracts\\",
+            "Spatie\\String\\",
+            "\\",
+            "Illuminate\\Console\\",
+            "Carbon\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.875,
+        "dependent_instabilities": {
+            "Spatie\\Activitylog\\Exceptions\\": 0.4,
+            "Spatie\\Activitylog\\Contracts\\": 0.5714285714285714
+        },
+        "distance": 0.08838834764831843,
+        "normalized_distance": 0.125,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Activitylog\\ActivityLogger": {
+        "name": "Spatie\\Activitylog\\ActivityLogger",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLogStatus",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "performedOn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "on",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "causedBy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "by",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "causedByAnonymous",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "byAnonymous",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "withProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createdAt",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "useLog",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inLog",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "tap",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enableLogging",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disableLogging",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "log",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "normalizeCauser",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replacePlaceholders",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getActivity",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 20,
+        "nbMethods": 20,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 17,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 31,
+        "ccn": 12,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Illuminate\\Auth\\AuthManager",
+            "Illuminate\\Contracts\\Config\\Repository",
+            "Spatie\\Activitylog\\ActivityLogStatus",
+            "Spatie\\Activitylog\\ActivityLogStatus",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Support\\Carbon",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Spatie\\Activitylog\\Exceptions\\CouldNotLogActivity",
+            "Spatie\\Activitylog\\Contracts\\Activity",
+            "Spatie\\String\\Str",
+            "Illuminate\\Support\\Arr",
+            "Spatie\\Activitylog\\Contracts\\Activity",
+            "Spatie\\Activitylog\\ActivitylogServiceProvider"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 207,
+        "vocabulary": 41,
+        "volume": 1109.01,
+        "difficulty": 12.6,
+        "effort": 13973.57,
+        "level": 0.08,
+        "bugs": 0.37,
+        "time": 776,
+        "intelligentContent": 88.02,
+        "number_operators": 60,
+        "number_operands": 147,
+        "number_operators_unique": 6,
+        "number_operands_unique": 35,
+        "cloc": 4,
+        "loc": 146,
+        "lloc": 142,
+        "mi": 42.8,
+        "mIwoC": 30.12,
+        "commentWeight": 12.68,
+        "kanDefect": 0.64,
+        "relativeStructuralComplexity": 676,
+        "relativeDataComplexity": 0.96,
+        "relativeSystemComplexity": 676.96,
+        "totalStructuralComplexity": 13520,
+        "totalDataComplexity": 19.26,
+        "totalSystemComplexity": 13539.26,
+        "package": "Spatie\\Activitylog\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 10,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Activitylog\\ActivitylogServiceProvider": {
+        "name": "Spatie\\Activitylog\\ActivitylogServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "determineActivityModel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getActivityModelInstance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 5,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Spatie\\Activitylog\\Exceptions\\InvalidConfiguration",
+            "Spatie\\Activitylog\\Contracts\\Activity",
+            "activityModelClassName"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 4,
+        "length": 46,
+        "vocabulary": 24,
+        "volume": 210.91,
+        "difficulty": 5.67,
+        "effort": 1195.15,
+        "level": 0.18,
+        "bugs": 0.07,
+        "time": 66,
+        "intelligentContent": 37.22,
+        "number_operators": 12,
+        "number_operands": 34,
+        "number_operators_unique": 6,
+        "number_operands_unique": 18,
+        "cloc": 0,
+        "loc": 33,
+        "lloc": 33,
+        "mi": 49.93,
+        "mIwoC": 49.93,
+        "commentWeight": 0,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 49.25,
+        "totalStructuralComplexity": 196,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 197,
+        "package": "Spatie\\Activitylog\\",
+        "pageRank": 0.18,
+        "afferentCoupling": 4,
+        "efferentCoupling": 4,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Activitylog\\Contracts\\Activity": {
+        "name": "Spatie\\Activitylog\\Contracts\\Activity",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "subject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "causer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExtraProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "changes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeInLog",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeCausedBy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeForSubject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Relations\\MorphTo",
+            "Illuminate\\Database\\Eloquent\\Relations\\MorphTo",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Spatie\\Activitylog\\Contracts\\",
+        "pageRank": 0.21,
+        "afferentCoupling": 3,
+        "efferentCoupling": 4,
+        "instability": 0.57,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Spatie\\Activitylog\\Contracts\\": {
+        "name": "Spatie\\Activitylog\\Contracts\\",
+        "classes": [
+            "Spatie\\Activitylog\\Contracts\\Activity"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\Activitylog\\Models\\Activity",
+            "Spatie\\Activitylog\\ActivityLogger",
+            "Spatie\\Activitylog\\ActivitylogServiceProvider"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\Activitylog\\Models\\",
+            "Spatie\\Activitylog\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Database\\Eloquent\\Relations\\MorphTo",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Database\\Eloquent\\Relations\\",
+            "Illuminate\\Support\\",
+            "Illuminate\\Database\\Eloquent\\"
+        ],
+        "abstraction": 1,
+        "instability": 0.5714285714285714,
+        "dependent_instabilities": [],
+        "distance": 0.40406101782088427,
+        "normalized_distance": 0.5714285714285714,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Activitylog\\CleanActivitylogCommand": {
+        "name": "Spatie\\Activitylog\\CleanActivitylogCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Carbon\\Carbon",
+            "Spatie\\Activitylog\\ActivitylogServiceProvider",
+            "activity"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 39,
+        "vocabulary": 22,
+        "volume": 173.92,
+        "difficulty": 2.53,
+        "effort": 439.37,
+        "level": 0.4,
+        "bugs": 0.06,
+        "time": 24,
+        "intelligentContent": 68.84,
+        "number_operators": 7,
+        "number_operands": 32,
+        "number_operators_unique": 3,
+        "number_operands_unique": 19,
+        "cloc": 0,
+        "loc": 21,
+        "lloc": 21,
+        "mi": 55.2,
+        "mIwoC": 55.2,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 144,
+        "totalStructuralComplexity": 144,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 144,
+        "package": "Spatie\\Activitylog\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "activity": {
+        "name": "activity",
+        "cloc": 0,
+        "loc": 7,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/config": {
+                "name": "illuminate\/config",
+                "required": "^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/config\/zipball\/918eb93b9328480ec977ebc69ff1761394ae033f"
+            },
+            "illuminate\/database": {
+                "name": "illuminate\/database",
+                "required": "^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/database\/zipball\/2d24be92d25a5adf68ccea30b5682ed2990fa330"
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "spatie\/string": {
+                "name": "spatie\/string",
+                "required": "^2.1",
+                "installed": null,
+                "latest": "2.2.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/spatie\/string",
+                "zip": "https:\/\/api.github.com\/repos\/spatie\/string\/zipball\/28607b9925b4f0499d48570553ca419c6298e26b"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

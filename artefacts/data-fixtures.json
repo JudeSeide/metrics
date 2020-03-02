@@ -1,0 +1,1983 @@
+{
+    "Doctrine\\Common\\DataFixtures\\Exception\\CircularReferenceException": {
+        "name": "Doctrine\\Common\\DataFixtures\\Exception\\CircularReferenceException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Doctrine\\Common\\CommonException"
+        ],
+        "parents": [
+            "Doctrine\\Common\\CommonException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Doctrine\\Common\\DataFixtures\\Exception\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Exception\\": {
+        "name": "Doctrine\\Common\\DataFixtures\\Exception\\",
+        "classes": [
+            "Doctrine\\Common\\DataFixtures\\Exception\\CircularReferenceException"
+        ],
+        "outgoing_class_dependencies": [
+            "Doctrine\\Common\\CommonException"
+        ],
+        "outgoing_package_dependencies": [
+            "Doctrine\\Common\\"
+        ],
+        "incoming_class_dependencies": [
+            "Doctrine\\Common\\DataFixtures\\Sorter\\TopologicalSorter",
+            "Doctrine\\Common\\DataFixtures\\Loader"
+        ],
+        "incoming_package_dependencies": [
+            "Doctrine\\Common\\DataFixtures\\Sorter\\",
+            "Doctrine\\Common\\DataFixtures\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.3333333333333333,
+        "dependent_instabilities": [],
+        "distance": 0.4714045207910317,
+        "normalized_distance": 0.6666666666666667,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\SharedFixtureInterface": {
+        "name": "Doctrine\\Common\\DataFixtures\\SharedFixtureInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "setReferenceRepository",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Doctrine\\Common\\DataFixtures\\FixtureInterface",
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository"
+        ],
+        "parents": [
+            "Doctrine\\Common\\DataFixtures\\FixtureInterface"
+        ],
+        "kanDefect": 0.15,
+        "package": "Doctrine\\Common\\DataFixtures\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\": {
+        "name": "Doctrine\\Common\\DataFixtures\\",
+        "classes": [
+            "Doctrine\\Common\\DataFixtures\\SharedFixtureInterface",
+            "Doctrine\\Common\\DataFixtures\\DependentFixtureInterface",
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository",
+            "Doctrine\\Common\\DataFixtures\\OrderedFixtureInterface",
+            "Doctrine\\Common\\DataFixtures\\Loader",
+            "Doctrine\\Common\\DataFixtures\\FixtureInterface",
+            "Doctrine\\Common\\DataFixtures\\ProxyReferenceRepository",
+            "Doctrine\\Common\\DataFixtures\\AbstractFixture"
+        ],
+        "incoming_class_dependencies": [
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\ORMReferenceListener",
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\MongoDBReferenceListener",
+            "Doctrine\\Common\\DataFixtures\\Executor\\MongoDBExecutor",
+            "Doctrine\\Common\\DataFixtures\\Executor\\ORMExecutor",
+            "Doctrine\\Common\\DataFixtures\\Executor\\AbstractExecutor"
+        ],
+        "incoming_package_dependencies": [
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\",
+            "Doctrine\\Common\\DataFixtures\\Executor\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Doctrine\\Persistence\\ObjectManager",
+            "BadMethodCallException",
+            "OutOfBoundsException",
+            "InvalidArgumentException",
+            "RecursiveDirectoryIterator",
+            "RecursiveIteratorIterator",
+            "SplFileInfo",
+            "ArrayIterator",
+            "ReflectionClass",
+            "class",
+            "Doctrine\\Common\\DataFixtures\\Exception\\CircularReferenceException",
+            "RuntimeException",
+            "Iterator",
+            "Doctrine\\Common\\Version",
+            "Doctrine\\Common\\Util\\ClassUtils"
+        ],
+        "outgoing_package_dependencies": [
+            "Doctrine\\Persistence\\",
+            "\\",
+            "Doctrine\\Common\\DataFixtures\\Exception\\",
+            "Doctrine\\Common\\",
+            "Doctrine\\Common\\Util\\"
+        ],
+        "abstraction": 0.625,
+        "instability": 0.75,
+        "dependent_instabilities": {
+            "Doctrine\\Common\\DataFixtures\\Exception\\": 0.3333333333333333
+        },
+        "distance": 0.2651650429449553,
+        "normalized_distance": 0.375,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\DependentFixtureInterface": {
+        "name": "Doctrine\\Common\\DataFixtures\\DependentFixtureInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Doctrine\\Common\\DataFixtures\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Event\\Listener\\ORMReferenceListener": {
+        "name": "Doctrine\\Common\\DataFixtures\\Event\\Listener\\ORMReferenceListener",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSubscribedEvents",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postPersist",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Doctrine\\Common\\EventSubscriber",
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository",
+            "Doctrine\\ORM\\Event\\LifecycleEventArgs"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 27,
+        "vocabulary": 12,
+        "volume": 96.79,
+        "difficulty": 4.75,
+        "effort": 459.77,
+        "level": 0.21,
+        "bugs": 0.03,
+        "time": 26,
+        "intelligentContent": 20.38,
+        "number_operators": 8,
+        "number_operands": 19,
+        "number_operators_unique": 4,
+        "number_operands_unique": 8,
+        "cloc": 15,
+        "loc": 40,
+        "lloc": 25,
+        "mi": 95.83,
+        "mIwoC": 55.2,
+        "commentWeight": 40.63,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 36.38,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 1.14,
+        "totalSystemComplexity": 109.14,
+        "package": "Doctrine\\Common\\DataFixtures\\Event\\Listener\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Event\\Listener\\": {
+        "name": "Doctrine\\Common\\DataFixtures\\Event\\Listener\\",
+        "classes": [
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\ORMReferenceListener",
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\MongoDBReferenceListener"
+        ],
+        "outgoing_class_dependencies": [
+            "Doctrine\\Common\\EventSubscriber",
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository",
+            "Doctrine\\ORM\\Event\\LifecycleEventArgs",
+            "Doctrine\\ODM\\MongoDB\\Event\\LifecycleEventArgs"
+        ],
+        "outgoing_package_dependencies": [
+            "Doctrine\\Common\\",
+            "Doctrine\\Common\\DataFixtures\\",
+            "Doctrine\\ORM\\Event\\",
+            "Doctrine\\ODM\\MongoDB\\Event\\"
+        ],
+        "incoming_class_dependencies": [
+            "Doctrine\\Common\\DataFixtures\\Executor\\MongoDBExecutor",
+            "Doctrine\\Common\\DataFixtures\\Executor\\ORMExecutor"
+        ],
+        "incoming_package_dependencies": [
+            "Doctrine\\Common\\DataFixtures\\Executor\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": {
+            "Doctrine\\Common\\DataFixtures\\": 0.75
+        },
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Event\\Listener\\MongoDBReferenceListener": {
+        "name": "Doctrine\\Common\\DataFixtures\\Event\\Listener\\MongoDBReferenceListener",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSubscribedEvents",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postPersist",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Doctrine\\Common\\EventSubscriber",
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository",
+            "Doctrine\\ODM\\MongoDB\\Event\\LifecycleEventArgs"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 27,
+        "vocabulary": 12,
+        "volume": 96.79,
+        "difficulty": 4.75,
+        "effort": 459.77,
+        "level": 0.21,
+        "bugs": 0.03,
+        "time": 26,
+        "intelligentContent": 20.38,
+        "number_operators": 8,
+        "number_operands": 19,
+        "number_operators_unique": 4,
+        "number_operands_unique": 8,
+        "cloc": 14,
+        "loc": 39,
+        "lloc": 25,
+        "mi": 95.22,
+        "mIwoC": 55.2,
+        "commentWeight": 40.03,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 36.38,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 1.14,
+        "totalSystemComplexity": 109.14,
+        "package": "Doctrine\\Common\\DataFixtures\\Event\\Listener\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\ReferenceRepository": {
+        "name": "Doctrine\\Common\\DataFixtures\\ReferenceRepository",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIdentifier",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setReference",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setReferenceIdentity",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addReference",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getReference",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasReference",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getReferenceNames",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasIdentity",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIdentities",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getReferences",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getManager",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasIdentifier",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 0,
+        "wmc": 22,
+        "ccn": 10,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Doctrine\\Persistence\\ObjectManager",
+            "BadMethodCallException",
+            "OutOfBoundsException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 127,
+        "vocabulary": 16,
+        "volume": 508,
+        "difficulty": 15.5,
+        "effort": 7874,
+        "level": 0.06,
+        "bugs": 0.17,
+        "time": 437,
+        "intelligentContent": 32.77,
+        "number_operators": 34,
+        "number_operands": 93,
+        "number_operators_unique": 4,
+        "number_operands_unique": 12,
+        "cloc": 121,
+        "loc": 211,
+        "lloc": 90,
+        "mi": 83.18,
+        "mIwoC": 37.08,
+        "commentWeight": 46.1,
+        "kanDefect": 0.71,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 1.08,
+        "relativeSystemComplexity": 170.08,
+        "totalStructuralComplexity": 2197,
+        "totalDataComplexity": 14,
+        "totalSystemComplexity": 2211,
+        "package": "Doctrine\\Common\\DataFixtures\\",
+        "pageRank": 0.26,
+        "afferentCoupling": 8,
+        "efferentCoupling": 3,
+        "instability": 0.27,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Sorter\\Vertex": {
+        "name": "Doctrine\\Common\\DataFixtures\\Sorter\\Vertex",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Doctrine\\ORM\\Mapping\\ClassMetadata"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 7,
+        "vocabulary": 6,
+        "volume": 18.09,
+        "difficulty": 0.6,
+        "effort": 10.86,
+        "level": 1.67,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 30.16,
+        "number_operators": 1,
+        "number_operands": 6,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 9,
+        "loc": 23,
+        "lloc": 14,
+        "mi": 107.28,
+        "mIwoC": 66.06,
+        "commentWeight": 41.22,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Doctrine\\Common\\DataFixtures\\Sorter\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Sorter\\": {
+        "name": "Doctrine\\Common\\DataFixtures\\Sorter\\",
+        "classes": [
+            "Doctrine\\Common\\DataFixtures\\Sorter\\Vertex",
+            "Doctrine\\Common\\DataFixtures\\Sorter\\TopologicalSorter"
+        ],
+        "outgoing_class_dependencies": [
+            "Doctrine\\ORM\\Mapping\\ClassMetadata",
+            "RuntimeException",
+            "Doctrine\\Common\\DataFixtures\\Exception\\CircularReferenceException"
+        ],
+        "outgoing_package_dependencies": [
+            "Doctrine\\ORM\\Mapping\\",
+            "\\",
+            "Doctrine\\Common\\DataFixtures\\Exception\\"
+        ],
+        "incoming_class_dependencies": [
+            "Doctrine\\Common\\DataFixtures\\Purger\\ORMPurger"
+        ],
+        "incoming_package_dependencies": [
+            "Doctrine\\Common\\DataFixtures\\Purger\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.75,
+        "dependent_instabilities": {
+            "Doctrine\\Common\\DataFixtures\\Exception\\": 0.3333333333333333
+        },
+        "distance": 0.17677669529663687,
+        "normalized_distance": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Sorter\\TopologicalSorter": {
+        "name": "Doctrine\\Common\\DataFixtures\\Sorter\\TopologicalSorter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addDependency",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sort",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "visit",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 15,
+        "ccn": 10,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Doctrine\\ORM\\Mapping\\ClassMetadata",
+            "Doctrine\\Common\\DataFixtures\\Sorter\\Vertex",
+            "Doctrine\\Common\\DataFixtures\\Sorter\\Vertex",
+            "RuntimeException",
+            "Doctrine\\Common\\DataFixtures\\Exception\\CircularReferenceException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 78,
+        "vocabulary": 22,
+        "volume": 347.84,
+        "difficulty": 12.83,
+        "effort": 4463.89,
+        "level": 0.08,
+        "bugs": 0.12,
+        "time": 248,
+        "intelligentContent": 27.1,
+        "number_operators": 23,
+        "number_operands": 55,
+        "number_operators_unique": 7,
+        "number_operands_unique": 15,
+        "cloc": 73,
+        "loc": 136,
+        "lloc": 63,
+        "mi": 86.94,
+        "mIwoC": 41.61,
+        "commentWeight": 45.33,
+        "kanDefect": 1.11,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.06,
+        "relativeSystemComplexity": 5.06,
+        "totalStructuralComplexity": 24,
+        "totalDataComplexity": 6.33,
+        "totalSystemComplexity": 30.33,
+        "package": "Doctrine\\Common\\DataFixtures\\Sorter\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\OrderedFixtureInterface": {
+        "name": "Doctrine\\Common\\DataFixtures\\OrderedFixtureInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getOrder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Doctrine\\Common\\DataFixtures\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Purger\\ORMPurger": {
+        "name": "Doctrine\\Common\\DataFixtures\\Purger\\ORMPurger",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPurgeMode",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPurgeMode",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getObjectManager",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "purge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommitOrder",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAssociationTables",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTableName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getJoinTableName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 45,
+        "ccn": 36,
+        "ccnMethodMax": 19,
+        "externals": [
+            "Doctrine\\Common\\DataFixtures\\Purger\\PurgerInterface",
+            "Doctrine\\ORM\\EntityManagerInterface",
+            "Doctrine\\ORM\\EntityManagerInterface",
+            "Doctrine\\Common\\DataFixtures\\Sorter\\TopologicalSorter",
+            "Doctrine\\DBAL\\Platforms\\AbstractPlatform",
+            "Doctrine\\DBAL\\Schema\\Identifier"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 261,
+        "vocabulary": 47,
+        "volume": 1449.75,
+        "difficulty": 29.33,
+        "effort": 42525.93,
+        "level": 0.03,
+        "bugs": 0.48,
+        "time": 2363,
+        "intelligentContent": 49.42,
+        "number_operators": 69,
+        "number_operands": 192,
+        "number_operators_unique": 11,
+        "number_operands_unique": 36,
+        "cloc": 74,
+        "loc": 211,
+        "lloc": 137,
+        "mi": 66.11,
+        "mIwoC": 26.41,
+        "commentWeight": 39.7,
+        "kanDefect": 2.97,
+        "relativeStructuralComplexity": 529,
+        "relativeDataComplexity": 0.35,
+        "relativeSystemComplexity": 529.35,
+        "totalStructuralComplexity": 5290,
+        "totalDataComplexity": 3.46,
+        "totalSystemComplexity": 5293.46,
+        "package": "Doctrine\\Common\\DataFixtures\\Purger\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Purger\\": {
+        "name": "Doctrine\\Common\\DataFixtures\\Purger\\",
+        "classes": [
+            "Doctrine\\Common\\DataFixtures\\Purger\\ORMPurger",
+            "Doctrine\\Common\\DataFixtures\\Purger\\PurgerInterface",
+            "Doctrine\\Common\\DataFixtures\\Purger\\PHPCRPurger",
+            "Doctrine\\Common\\DataFixtures\\Purger\\MongoDBPurger"
+        ],
+        "outgoing_class_dependencies": [
+            "Doctrine\\ORM\\EntityManagerInterface",
+            "Doctrine\\Common\\DataFixtures\\Sorter\\TopologicalSorter",
+            "Doctrine\\DBAL\\Platforms\\AbstractPlatform",
+            "Doctrine\\DBAL\\Schema\\Identifier",
+            "Doctrine\\ODM\\PHPCR\\DocumentManager",
+            "PHPCR\\Util\\NodeHelper",
+            "Doctrine\\ODM\\MongoDB\\DocumentManager"
+        ],
+        "outgoing_package_dependencies": [
+            "Doctrine\\ORM\\",
+            "Doctrine\\Common\\DataFixtures\\Sorter\\",
+            "Doctrine\\DBAL\\Platforms\\",
+            "Doctrine\\DBAL\\Schema\\",
+            "Doctrine\\ODM\\PHPCR\\",
+            "PHPCR\\Util\\",
+            "Doctrine\\ODM\\MongoDB\\"
+        ],
+        "incoming_class_dependencies": [
+            "Doctrine\\Common\\DataFixtures\\Executor\\AbstractExecutor"
+        ],
+        "incoming_package_dependencies": [
+            "Doctrine\\Common\\DataFixtures\\Executor\\"
+        ],
+        "abstraction": 0.25,
+        "instability": 0.875,
+        "dependent_instabilities": {
+            "Doctrine\\Common\\DataFixtures\\Sorter\\": 0.75
+        },
+        "distance": 0.08838834764831843,
+        "normalized_distance": 0.125,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Purger\\PurgerInterface": {
+        "name": "Doctrine\\Common\\DataFixtures\\Purger\\PurgerInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "purge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Doctrine\\Common\\DataFixtures\\Purger\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 4,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Purger\\PHPCRPurger": {
+        "name": "Doctrine\\Common\\DataFixtures\\Purger\\PHPCRPurger",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDocumentManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getObjectManager",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "purge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Doctrine\\Common\\DataFixtures\\Purger\\PurgerInterface",
+            "Doctrine\\ODM\\PHPCR\\DocumentManager",
+            "PHPCR\\Util\\NodeHelper"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 15,
+        "vocabulary": 5,
+        "volume": 34.83,
+        "difficulty": 3.67,
+        "effort": 127.71,
+        "level": 0.27,
+        "bugs": 0.01,
+        "time": 7,
+        "intelligentContent": 9.5,
+        "number_operators": 4,
+        "number_operands": 11,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 7,
+        "loc": 30,
+        "lloc": 23,
+        "mi": 93.38,
+        "mIwoC": 59.36,
+        "commentWeight": 34.02,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 9.38,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 37.5,
+        "package": "Doctrine\\Common\\DataFixtures\\Purger\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Purger\\MongoDBPurger": {
+        "name": "Doctrine\\Common\\DataFixtures\\Purger\\MongoDBPurger",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDocumentManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getObjectManager",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "purge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Doctrine\\Common\\DataFixtures\\Purger\\PurgerInterface",
+            "Doctrine\\ODM\\MongoDB\\DocumentManager"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 20,
+        "vocabulary": 7,
+        "volume": 56.15,
+        "difficulty": 5.63,
+        "effort": 315.83,
+        "level": 0.18,
+        "bugs": 0.02,
+        "time": 18,
+        "intelligentContent": 9.98,
+        "number_operators": 5,
+        "number_operands": 15,
+        "number_operators_unique": 3,
+        "number_operands_unique": 4,
+        "cloc": 18,
+        "loc": 46,
+        "lloc": 28,
+        "mi": 97,
+        "mIwoC": 55.78,
+        "commentWeight": 41.22,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.21,
+        "relativeSystemComplexity": 36.21,
+        "totalStructuralComplexity": 144,
+        "totalDataComplexity": 0.86,
+        "totalSystemComplexity": 144.86,
+        "package": "Doctrine\\Common\\DataFixtures\\Purger\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Loader": {
+        "name": "Doctrine\\Common\\DataFixtures\\Loader",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "loadFromDirectory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadFromFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasFixture",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFixture",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFixture",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFixtures",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isTransient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createFixture",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orderFixturesByNumber",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orderFixturesByDependencies",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateDependencies",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUnsequencedClasses",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadFromIterator",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 13,
+        "nbMethodsPrivate": 6,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 61,
+        "ccn": 49,
+        "ccnMethodMax": 16,
+        "externals": [
+            "InvalidArgumentException",
+            "RecursiveDirectoryIterator",
+            "RecursiveIteratorIterator",
+            "InvalidArgumentException",
+            "SplFileInfo",
+            "ArrayIterator",
+            "InvalidArgumentException",
+            "Doctrine\\Common\\DataFixtures\\FixtureInterface",
+            "InvalidArgumentException",
+            "ReflectionClass",
+            "class",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "Doctrine\\Common\\DataFixtures\\Exception\\CircularReferenceException",
+            "RuntimeException",
+            "Iterator",
+            "ReflectionClass"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 358,
+        "vocabulary": 63,
+        "volume": 2139.87,
+        "difficulty": 28.82,
+        "effort": 61678.5,
+        "level": 0.03,
+        "bugs": 0.71,
+        "time": 3427,
+        "intelligentContent": 74.24,
+        "number_operators": 113,
+        "number_operands": 245,
+        "number_operators_unique": 12,
+        "number_operands_unique": 51,
+        "cloc": 97,
+        "loc": 326,
+        "lloc": 229,
+        "mi": 56.01,
+        "mIwoC": 18.61,
+        "commentWeight": 37.4,
+        "kanDefect": 4.18,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 1.19,
+        "relativeSystemComplexity": 197.19,
+        "totalStructuralComplexity": 2548,
+        "totalDataComplexity": 15.47,
+        "totalSystemComplexity": 2563.47,
+        "package": "Doctrine\\Common\\DataFixtures\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 11,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\FixtureInterface": {
+        "name": "Doctrine\\Common\\DataFixtures\\FixtureInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Doctrine\\Persistence\\ObjectManager"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Doctrine\\Common\\DataFixtures\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 3,
+        "efferentCoupling": 1,
+        "instability": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Executor\\MongoDBExecutor": {
+        "name": "Doctrine\\Common\\DataFixtures\\Executor\\MongoDBExecutor",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getObjectManager",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setReferenceRepository",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "execute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Doctrine\\Common\\DataFixtures\\Executor\\AbstractExecutor",
+            "Doctrine\\ODM\\MongoDB\\DocumentManager",
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\MongoDBReferenceListener",
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository",
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\MongoDBReferenceListener"
+        ],
+        "parents": [
+            "Doctrine\\Common\\DataFixtures\\Executor\\AbstractExecutor"
+        ],
+        "lcom": 1,
+        "length": 44,
+        "vocabulary": 12,
+        "volume": 157.74,
+        "difficulty": 12.14,
+        "effort": 1915.39,
+        "level": 0.08,
+        "bugs": 0.05,
+        "time": 106,
+        "intelligentContent": 12.99,
+        "number_operators": 10,
+        "number_operands": 34,
+        "number_operators_unique": 5,
+        "number_operands_unique": 7,
+        "cloc": 15,
+        "loc": 50,
+        "lloc": 35,
+        "mi": 87.91,
+        "mIwoC": 50.39,
+        "commentWeight": 37.52,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 64.25,
+        "totalStructuralComplexity": 256,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 257,
+        "package": "Doctrine\\Common\\DataFixtures\\Executor\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Executor\\": {
+        "name": "Doctrine\\Common\\DataFixtures\\Executor\\",
+        "classes": [
+            "Doctrine\\Common\\DataFixtures\\Executor\\MongoDBExecutor",
+            "Doctrine\\Common\\DataFixtures\\Executor\\PHPCRExecutor",
+            "Doctrine\\Common\\DataFixtures\\Executor\\ORMExecutor",
+            "Doctrine\\Common\\DataFixtures\\Executor\\AbstractExecutor"
+        ],
+        "outgoing_class_dependencies": [
+            "Doctrine\\ODM\\MongoDB\\DocumentManager",
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\MongoDBReferenceListener",
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository",
+            "Doctrine\\ODM\\PHPCR\\DocumentManagerInterface",
+            "Doctrine\\ORM\\EntityManagerInterface",
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\ORMReferenceListener",
+            "Doctrine\\Persistence\\ObjectManager",
+            "Doctrine\\Common\\DataFixtures\\Purger\\PurgerInterface",
+            "Doctrine\\Common\\DataFixtures\\FixtureInterface",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "Doctrine\\ODM\\MongoDB\\",
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\",
+            "Doctrine\\Common\\DataFixtures\\",
+            "Doctrine\\ODM\\PHPCR\\",
+            "Doctrine\\ORM\\",
+            "Doctrine\\Persistence\\",
+            "Doctrine\\Common\\DataFixtures\\Purger\\",
+            "\\"
+        ],
+        "abstraction": 0.25,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\": 0.6666666666666666,
+            "Doctrine\\Common\\DataFixtures\\": 0.75,
+            "Doctrine\\Common\\DataFixtures\\Purger\\": 0.875
+        },
+        "distance": 0.17677669529663687,
+        "normalized_distance": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Executor\\PHPCRExecutor": {
+        "name": "Doctrine\\Common\\DataFixtures\\Executor\\PHPCRExecutor",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getObjectManager",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "execute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 5,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Doctrine\\Common\\DataFixtures\\Executor\\AbstractExecutor",
+            "Doctrine\\ODM\\PHPCR\\DocumentManagerInterface"
+        ],
+        "parents": [
+            "Doctrine\\Common\\DataFixtures\\Executor\\AbstractExecutor"
+        ],
+        "lcom": 1,
+        "length": 43,
+        "vocabulary": 13,
+        "volume": 159.12,
+        "difficulty": 7.33,
+        "effort": 1166.87,
+        "level": 0.14,
+        "bugs": 0.05,
+        "time": 65,
+        "intelligentContent": 21.7,
+        "number_operators": 10,
+        "number_operands": 33,
+        "number_operators_unique": 4,
+        "number_operands_unique": 9,
+        "cloc": 9,
+        "loc": 45,
+        "lloc": 36,
+        "mi": 81.9,
+        "mIwoC": 49.96,
+        "commentWeight": 31.94,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.48,
+        "relativeSystemComplexity": 36.48,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 1.43,
+        "totalSystemComplexity": 109.43,
+        "package": "Doctrine\\Common\\DataFixtures\\Executor\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Executor\\ORMExecutor": {
+        "name": "Doctrine\\Common\\DataFixtures\\Executor\\ORMExecutor",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getObjectManager",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setReferenceRepository",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "execute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Doctrine\\Common\\DataFixtures\\Executor\\AbstractExecutor",
+            "Doctrine\\ORM\\EntityManagerInterface",
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\ORMReferenceListener",
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository",
+            "Doctrine\\Common\\DataFixtures\\Event\\Listener\\ORMReferenceListener"
+        ],
+        "parents": [
+            "Doctrine\\Common\\DataFixtures\\Executor\\AbstractExecutor"
+        ],
+        "lcom": 1,
+        "length": 52,
+        "vocabulary": 13,
+        "volume": 192.42,
+        "difficulty": 12.81,
+        "effort": 2465.42,
+        "level": 0.08,
+        "bugs": 0.06,
+        "time": 137,
+        "intelligentContent": 15.02,
+        "number_operators": 11,
+        "number_operands": 41,
+        "number_operators_unique": 5,
+        "number_operands_unique": 8,
+        "cloc": 16,
+        "loc": 55,
+        "lloc": 39,
+        "mi": 85.84,
+        "mIwoC": 48.76,
+        "commentWeight": 37.08,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.23,
+        "relativeSystemComplexity": 81.23,
+        "totalStructuralComplexity": 324,
+        "totalDataComplexity": 0.9,
+        "totalSystemComplexity": 324.9,
+        "package": "Doctrine\\Common\\DataFixtures\\Executor\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\Executor\\AbstractExecutor": {
+        "name": "Doctrine\\Common\\DataFixtures\\Executor\\AbstractExecutor",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getReferenceRepository",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setReferenceRepository",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPurger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPurger",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLogger",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "log",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "purge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "execute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 15,
+        "ccn": 6,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Doctrine\\Persistence\\ObjectManager",
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository",
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository",
+            "Doctrine\\Common\\DataFixtures\\Purger\\PurgerInterface",
+            "Doctrine\\Persistence\\ObjectManager",
+            "Doctrine\\Common\\DataFixtures\\FixtureInterface",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 63,
+        "vocabulary": 20,
+        "volume": 272.28,
+        "difficulty": 7.67,
+        "effort": 2087.49,
+        "level": 0.13,
+        "bugs": 0.09,
+        "time": 116,
+        "intelligentContent": 35.51,
+        "number_operators": 17,
+        "number_operands": 46,
+        "number_operators_unique": 5,
+        "number_operands_unique": 15,
+        "cloc": 52,
+        "loc": 114,
+        "lloc": 62,
+        "mi": 86.32,
+        "mIwoC": 43.04,
+        "commentWeight": 43.28,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.41,
+        "relativeSystemComplexity": 36.41,
+        "totalStructuralComplexity": 360,
+        "totalDataComplexity": 4.14,
+        "totalSystemComplexity": 364.14,
+        "package": "Doctrine\\Common\\DataFixtures\\Executor\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 3,
+        "efferentCoupling": 5,
+        "instability": 0.63,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\ProxyReferenceRepository": {
+        "name": "Doctrine\\Common\\DataFixtures\\ProxyReferenceRepository",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRealClass",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "serialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unserialize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 8,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository",
+            "Doctrine\\Common\\Version",
+            "Doctrine\\Common\\Util\\ClassUtils"
+        ],
+        "parents": [
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository"
+        ],
+        "lcom": 1,
+        "length": 97,
+        "vocabulary": 26,
+        "volume": 455.94,
+        "difficulty": 10.65,
+        "effort": 4855.79,
+        "level": 0.09,
+        "bugs": 0.15,
+        "time": 270,
+        "intelligentContent": 42.81,
+        "number_operators": 26,
+        "number_operands": 71,
+        "number_operators_unique": 6,
+        "number_operands_unique": 20,
+        "cloc": 36,
+        "loc": 93,
+        "lloc": 57,
+        "mi": 83.07,
+        "mIwoC": 42,
+        "commentWeight": 41.07,
+        "kanDefect": 1.12,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.56,
+        "relativeSystemComplexity": 169.56,
+        "totalStructuralComplexity": 845,
+        "totalDataComplexity": 2.79,
+        "totalSystemComplexity": 847.79,
+        "package": "Doctrine\\Common\\DataFixtures\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Doctrine\\Common\\DataFixtures\\AbstractFixture": {
+        "name": "Doctrine\\Common\\DataFixtures\\AbstractFixture",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "setReferenceRepository",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setReference",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addReference",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getReference",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasReference",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Doctrine\\Common\\DataFixtures\\SharedFixtureInterface",
+            "Doctrine\\Common\\DataFixtures\\ReferenceRepository"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 22,
+        "vocabulary": 6,
+        "volume": 56.87,
+        "difficulty": 4.75,
+        "effort": 270.13,
+        "level": 0.21,
+        "bugs": 0.02,
+        "time": 15,
+        "intelligentContent": 11.97,
+        "number_operators": 3,
+        "number_operands": 19,
+        "number_operators_unique": 2,
+        "number_operands_unique": 4,
+        "cloc": 60,
+        "loc": 85,
+        "lloc": 25,
+        "mi": 105.28,
+        "mIwoC": 57.08,
+        "commentWeight": 48.2,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.68,
+        "relativeSystemComplexity": 16.68,
+        "totalStructuralComplexity": 80,
+        "totalDataComplexity": 3.4,
+        "totalSystemComplexity": 83.4,
+        "package": "Doctrine\\Common\\DataFixtures\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "doctrine\/common": {
+                "name": "doctrine\/common",
+                "required": "^2.11",
+                "installed": null,
+                "latest": "2.12.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/common.html",
+                "zip": "https:\/\/api.github.com\/repos\/doctrine\/common\/zipball\/2053eafdf60c2172ee1373d1b9289ba1db7f1fc6"
+            },
+            "doctrine\/persistence": {
+                "name": "doctrine\/persistence",
+                "required": "^1.3.3",
+                "installed": null,
+                "latest": "1.3.6",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/doctrine-project.org\/projects\/persistence.html",
+                "zip": "https:\/\/api.github.com\/repos\/doctrine\/persistence\/zipball\/5dd3ac5eebef2d0b074daa4440bb18f93132dee4"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

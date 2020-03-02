@@ -1,0 +1,1723 @@
+{
+    "GeneaLabs\\LaravelModelCaching\\Providers\\Service": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Providers\\Service",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 15,
+        "vocabulary": 10,
+        "volume": 49.83,
+        "difficulty": 1.63,
+        "effort": 80.97,
+        "level": 0.62,
+        "bugs": 0.02,
+        "time": 4,
+        "intelligentContent": 30.66,
+        "number_operators": 2,
+        "number_operands": 13,
+        "number_operators_unique": 2,
+        "number_operands_unique": 8,
+        "cloc": 0,
+        "loc": 16,
+        "lloc": 16,
+        "mi": 61.71,
+        "mIwoC": 61.71,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 16,
+        "totalStructuralComplexity": 32,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 32,
+        "package": "GeneaLabs\\LaravelModelCaching\\Providers\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Providers\\": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Providers\\",
+        "classes": [
+            "GeneaLabs\\LaravelModelCaching\\Providers\\Service"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Traits\\Buildable": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Traits\\Buildable",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "avg",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "count",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "decrement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "find",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "first",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "forceDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "increment",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inRandomOrder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "insert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "max",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "min",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "paginate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "recursiveImplodeWithKey",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "pluck",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sum",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "update",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "value",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cachedValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preventHashCollision",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "retrieveCachedValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 22,
+        "nbMethods": 22,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 19,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 42,
+        "ccn": 21,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Illuminate\\Container\\Container"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 364,
+        "vocabulary": 51,
+        "volume": 2064.76,
+        "difficulty": 18.8,
+        "effort": 38817.54,
+        "level": 0.05,
+        "bugs": 0.69,
+        "time": 2157,
+        "intelligentContent": 109.83,
+        "number_operators": 82,
+        "number_operands": 282,
+        "number_operators_unique": 6,
+        "number_operands_unique": 45,
+        "cloc": 6,
+        "loc": 180,
+        "lloc": 174,
+        "mi": 39.04,
+        "mIwoC": 25.09,
+        "commentWeight": 13.95,
+        "kanDefect": 1.43,
+        "relativeStructuralComplexity": 441,
+        "relativeDataComplexity": 1.67,
+        "relativeSystemComplexity": 442.67,
+        "totalStructuralComplexity": 9702,
+        "totalDataComplexity": 36.82,
+        "totalSystemComplexity": 9738.82,
+        "package": "GeneaLabs\\LaravelModelCaching\\Traits\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Traits\\": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Traits\\",
+        "classes": [
+            "GeneaLabs\\LaravelModelCaching\\Traits\\Buildable",
+            "GeneaLabs\\LaravelModelCaching\\Traits\\BuilderCaching",
+            "GeneaLabs\\LaravelModelCaching\\Traits\\ModelCaching",
+            "GeneaLabs\\LaravelModelCaching\\Traits\\CachePrefixing",
+            "GeneaLabs\\LaravelModelCaching\\Traits\\Caching",
+            "GeneaLabs\\LaravelModelCaching\\Traits\\Cachable"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Database\\Eloquent\\Collection",
+            "class",
+            "static",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "GeneaLabs\\LaravelModelCaching\\CachedBuilder",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "GeneaLabs\\LaravelModelCaching\\CachedBelongsToMany",
+            "Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany",
+            "Illuminate\\Support\\Carbon",
+            "GeneaLabs\\LaravelModelCaching\\CacheKey",
+            "GeneaLabs\\LaravelModelCaching\\CacheTags"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Container\\",
+            "Illuminate\\Database\\Eloquent\\",
+            "\\",
+            "GeneaLabs\\LaravelModelCaching\\",
+            "Illuminate\\Database\\Eloquent\\Relations\\",
+            "Illuminate\\Support\\"
+        ],
+        "abstraction": 1,
+        "instability": 1,
+        "dependent_instabilities": {
+            "GeneaLabs\\LaravelModelCaching\\": 0.8181818181818182
+        },
+        "distance": 0.7071067811865475,
+        "normalized_distance": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Traits\\BuilderCaching": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Traits\\BuilderCaching",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "all",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Collection"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 5,
+        "volume": 18.58,
+        "difficulty": 2,
+        "effort": 37.15,
+        "level": 0.5,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 9.29,
+        "number_operators": 2,
+        "number_operands": 6,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 0,
+        "loc": 11,
+        "lloc": 11,
+        "mi": 68.13,
+        "mIwoC": 68.13,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 9.5,
+        "totalStructuralComplexity": 9,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 9.5,
+        "package": "GeneaLabs\\LaravelModelCaching\\Traits\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Traits\\ModelCaching": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Traits\\ModelCaching",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "all",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "bootCachable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "destroy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "newEloquentBuilder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "newBelongsToMany",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeDisableCache",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "scopeWithCacheCooldownSeconds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 21,
+        "ccn": 13,
+        "ccnMethodMax": 5,
+        "externals": [
+            "class",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "class",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "GeneaLabs\\LaravelModelCaching\\CachedBuilder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "GeneaLabs\\LaravelModelCaching\\CachedBelongsToMany",
+            "Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Support\\Carbon"
+        ],
+        "parents": [],
+        "lcom": 5,
+        "length": 182,
+        "vocabulary": 37,
+        "volume": 948.12,
+        "difficulty": 13.16,
+        "effort": 12478.49,
+        "level": 0.08,
+        "bugs": 0.32,
+        "time": 693,
+        "intelligentContent": 72.04,
+        "number_operators": 46,
+        "number_operands": 136,
+        "number_operators_unique": 6,
+        "number_operands_unique": 31,
+        "cloc": 4,
+        "loc": 108,
+        "lloc": 104,
+        "mi": 48.1,
+        "mIwoC": 33.41,
+        "commentWeight": 14.69,
+        "kanDefect": 0.78,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 1.21,
+        "relativeSystemComplexity": 170.21,
+        "totalStructuralComplexity": 1521,
+        "totalDataComplexity": 10.86,
+        "totalSystemComplexity": 1531.86,
+        "package": "GeneaLabs\\LaravelModelCaching\\Traits\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Traits\\CachePrefixing": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Traits\\CachePrefixing",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "getCachePrefix",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatabaseName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConnectionName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Container\\Container"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 40,
+        "vocabulary": 15,
+        "volume": 156.28,
+        "difficulty": 8.33,
+        "effort": 1302.3,
+        "level": 0.12,
+        "bugs": 0.05,
+        "time": 72,
+        "intelligentContent": 18.75,
+        "number_operators": 15,
+        "number_operands": 25,
+        "number_operators_unique": 6,
+        "number_operands_unique": 9,
+        "cloc": 0,
+        "loc": 26,
+        "lloc": 26,
+        "mi": 53.23,
+        "mIwoC": 53.23,
+        "commentWeight": 0,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 49.38,
+        "totalStructuralComplexity": 147,
+        "totalDataComplexity": 1.13,
+        "totalSystemComplexity": 148.13,
+        "package": "GeneaLabs\\LaravelModelCaching\\Traits\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Traits\\Caching": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Traits\\Caching",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "applyScopesToInstance",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cache",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disableModelCaching",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flushCache",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCachePrefix",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeCacheKey",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeCacheTags",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getModelCacheCooldown",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheCooldownDetails",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkCooldownAndRemoveIfExpired",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkCooldownAndFlushAfterPersisting",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isCachable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCacheCooldownSavedAtTimestamp",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 8,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 58,
+        "ccn": 45,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Support\\Carbon",
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Container\\Container",
+            "GeneaLabs\\LaravelModelCaching\\CacheKey",
+            "Illuminate\\Container\\Container",
+            "GeneaLabs\\LaravelModelCaching\\CacheTags",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Support\\Carbon",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Support\\Carbon",
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Support\\Carbon"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 380,
+        "vocabulary": 60,
+        "volume": 2244.62,
+        "difficulty": 30.64,
+        "effort": 68781.52,
+        "level": 0.03,
+        "bugs": 0.75,
+        "time": 3821,
+        "intelligentContent": 73.25,
+        "number_operators": 107,
+        "number_operands": 273,
+        "number_operators_unique": 11,
+        "number_operands_unique": 49,
+        "cloc": 0,
+        "loc": 183,
+        "lloc": 183,
+        "mi": 21.13,
+        "mIwoC": 21.13,
+        "commentWeight": 0,
+        "kanDefect": 2.13,
+        "relativeStructuralComplexity": 961,
+        "relativeDataComplexity": 0.63,
+        "relativeSystemComplexity": 961.63,
+        "totalStructuralComplexity": 13454,
+        "totalDataComplexity": 8.78,
+        "totalSystemComplexity": 13462.78,
+        "package": "GeneaLabs\\LaravelModelCaching\\Traits\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Traits\\Cachable": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Traits\\Cachable",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 9,
+        "lloc": 9,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "GeneaLabs\\LaravelModelCaching\\Traits\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\CachedBelongsToMany": {
+        "name": "GeneaLabs\\LaravelModelCaching\\CachedBelongsToMany",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "GeneaLabs\\LaravelModelCaching\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\": {
+        "name": "GeneaLabs\\LaravelModelCaching\\",
+        "classes": [
+            "GeneaLabs\\LaravelModelCaching\\CachedBelongsToMany",
+            "GeneaLabs\\LaravelModelCaching\\CacheKey",
+            "GeneaLabs\\LaravelModelCaching\\Helper",
+            "GeneaLabs\\LaravelModelCaching\\CachedBuilder",
+            "GeneaLabs\\LaravelModelCaching\\CachedModel",
+            "GeneaLabs\\LaravelModelCaching\\CacheTags"
+        ],
+        "incoming_class_dependencies": [
+            "GeneaLabs\\LaravelModelCaching\\Traits\\ModelCaching",
+            "GeneaLabs\\LaravelModelCaching\\Traits\\Caching"
+        ],
+        "incoming_package_dependencies": [
+            "GeneaLabs\\LaravelModelCaching\\Traits\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Arr",
+            "Ramsey\\Uuid\\Uuid",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Database\\Eloquent\\Builder",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Relations\\Relation"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Database\\Eloquent\\Relations\\",
+            "Illuminate\\Support\\",
+            "Ramsey\\Uuid\\",
+            "Illuminate\\Container\\",
+            "Illuminate\\Database\\Eloquent\\"
+        ],
+        "abstraction": 0.16666666666666666,
+        "instability": 0.8181818181818182,
+        "dependent_instabilities": [],
+        "distance": 0.010713739108887073,
+        "normalized_distance": 0.015151515151515138,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\CacheKey": {
+        "name": "GeneaLabs\\LaravelModelCaching\\CacheKey",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "make",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIdColumn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLimitClause",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTableSlug",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getModelSlug",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOffsetClause",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOrderByClauses",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQueryColumns",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTypeClause",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValuesClause",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValuesFromWhere",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValuesFromBindings",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWhereClauses",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNestedClauses",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumnClauses",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInAndNotInClauses",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "recursiveImplode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRawClauses",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOtherClauses",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWheres",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWithModels",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 22,
+        "nbMethods": 22,
+        "nbMethodsPrivate": 20,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 70,
+        "ccn": 49,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Arr",
+            "Illuminate\\Support\\Arr",
+            "Ramsey\\Uuid\\Uuid",
+            "Illuminate\\Support\\Collection"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 599,
+        "vocabulary": 89,
+        "volume": 3878.96,
+        "difficulty": 40.04,
+        "effort": 155313.73,
+        "level": 0.02,
+        "bugs": 1.29,
+        "time": 8629,
+        "intelligentContent": 96.88,
+        "number_operators": 170,
+        "number_operands": 429,
+        "number_operators_unique": 14,
+        "number_operands_unique": 75,
+        "cloc": 1,
+        "loc": 240,
+        "lloc": 239,
+        "mi": 21.39,
+        "mIwoC": 16.4,
+        "commentWeight": 4.99,
+        "kanDefect": 2.36,
+        "relativeStructuralComplexity": 1296,
+        "relativeDataComplexity": 1.14,
+        "relativeSystemComplexity": 1297.14,
+        "totalStructuralComplexity": 28512,
+        "totalDataComplexity": 25,
+        "totalSystemComplexity": 28537,
+        "package": "GeneaLabs\\LaravelModelCaching\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Helper": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Helper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "runDisabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Container\\Container"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 15,
+        "vocabulary": 7,
+        "volume": 42.11,
+        "difficulty": 2.4,
+        "effort": 101.06,
+        "level": 0.42,
+        "bugs": 0.01,
+        "time": 6,
+        "intelligentContent": 17.55,
+        "number_operators": 3,
+        "number_operands": 12,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 0,
+        "loc": 12,
+        "lloc": 12,
+        "mi": 64.95,
+        "mIwoC": 64.95,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 16.4,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 0.4,
+        "totalSystemComplexity": 16.4,
+        "package": "GeneaLabs\\LaravelModelCaching\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Console\\Commands\\Publish": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Console\\Commands\\Publish",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Illuminate\\Console\\Command"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 35,
+        "vocabulary": 14,
+        "volume": 133.26,
+        "difficulty": 1.19,
+        "effort": 158.88,
+        "level": 0.84,
+        "bugs": 0.04,
+        "time": 9,
+        "intelligentContent": 111.76,
+        "number_operators": 4,
+        "number_operands": 31,
+        "number_operators_unique": 1,
+        "number_operands_unique": 13,
+        "cloc": 0,
+        "loc": 21,
+        "lloc": 21,
+        "mi": 55.61,
+        "mIwoC": 55.61,
+        "commentWeight": 0,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 4,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 4,
+        "package": "GeneaLabs\\LaravelModelCaching\\Console\\Commands\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Console\\Commands\\": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Console\\Commands\\",
+        "classes": [
+            "GeneaLabs\\LaravelModelCaching\\Console\\Commands\\Publish",
+            "GeneaLabs\\LaravelModelCaching\\Console\\Commands\\Clear"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Console\\Command",
+            "Illuminate\\Container\\Container",
+            "option",
+            "Illuminate\\Support\\Collection"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Console\\",
+            "Illuminate\\Container\\",
+            "\\",
+            "Illuminate\\Support\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\Console\\Commands\\Clear": {
+        "name": "GeneaLabs\\LaravelModelCaching\\Console\\Commands\\Clear",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flushEntireCache",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flushModelCache",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllTraitsUsedByClass",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 5,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Container\\Container",
+            "option",
+            "Illuminate\\Support\\Collection"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 75,
+        "vocabulary": 26,
+        "volume": 352.53,
+        "difficulty": 3.72,
+        "effort": 1310.5,
+        "level": 0.27,
+        "bugs": 0.12,
+        "time": 73,
+        "intelligentContent": 94.83,
+        "number_operators": 18,
+        "number_operands": 57,
+        "number_operators_unique": 3,
+        "number_operands_unique": 23,
+        "cloc": 1,
+        "loc": 47,
+        "lloc": 46,
+        "mi": 56.42,
+        "mIwoC": 45.22,
+        "commentWeight": 11.2,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 0.42,
+        "relativeSystemComplexity": 225.42,
+        "totalStructuralComplexity": 900,
+        "totalDataComplexity": 1.69,
+        "totalSystemComplexity": 901.69,
+        "package": "GeneaLabs\\LaravelModelCaching\\Console\\Commands\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\CachedBuilder": {
+        "name": "GeneaLabs\\LaravelModelCaching\\CachedBuilder",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Builder"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Builder"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 7,
+        "lloc": 7,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "GeneaLabs\\LaravelModelCaching\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\CachedModel": {
+        "name": "GeneaLabs\\LaravelModelCaching\\CachedModel",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 5,
+        "lloc": 5,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "GeneaLabs\\LaravelModelCaching\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "GeneaLabs\\LaravelModelCaching\\CacheTags": {
+        "name": "GeneaLabs\\LaravelModelCaching\\CacheTags",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "make",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRelatedModel",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRelation",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTagName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Relations\\Relation",
+            "Illuminate\\Support\\Str"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 55,
+        "vocabulary": 14,
+        "volume": 209.4,
+        "difficulty": 7.6,
+        "effort": 1591.47,
+        "level": 0.13,
+        "bugs": 0.07,
+        "time": 88,
+        "intelligentContent": 27.55,
+        "number_operators": 17,
+        "number_operands": 38,
+        "number_operators_unique": 4,
+        "number_operands_unique": 10,
+        "cloc": 0,
+        "loc": 41,
+        "lloc": 41,
+        "mi": 48.16,
+        "mIwoC": 48.16,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.53,
+        "relativeSystemComplexity": 196.53,
+        "totalStructuralComplexity": 980,
+        "totalDataComplexity": 2.67,
+        "totalSystemComplexity": 982.67,
+        "package": "GeneaLabs\\LaravelModelCaching\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.36,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.2.5",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "genealabs\/laravel-pivot-events": {
+                "name": "genealabs\/laravel-pivot-events",
+                "required": "^0.3.0",
+                "installed": null,
+                "latest": "0.3.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/fico7489\/laravel-pivot",
+                "zip": "https:\/\/api.github.com\/repos\/GeneaLabs\/laravel-pivot-events\/zipball\/7f35d5af019558474c0afc437bfa49ee161b658b"
+            },
+            "illuminate\/cache": {
+                "name": "illuminate\/cache",
+                "required": "^7.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/cache\/zipball\/a019756db6104d3fab41213f8f7c2a3fd1d8dfae"
+            },
+            "illuminate\/config": {
+                "name": "illuminate\/config",
+                "required": "^7.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/config\/zipball\/918eb93b9328480ec977ebc69ff1761394ae033f"
+            },
+            "illuminate\/console": {
+                "name": "illuminate\/console",
+                "required": "^7.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/console\/zipball\/f78d0bb182611303187346e59bf8ea4ff5de8396"
+            },
+            "illuminate\/container": {
+                "name": "illuminate\/container",
+                "required": "^7.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/container\/zipball\/7af0de3a43acaa78c4418b548fb2a66b0ce851c6"
+            },
+            "illuminate\/database": {
+                "name": "illuminate\/database",
+                "required": "^7.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/database\/zipball\/2d24be92d25a5adf68ccea30b5682ed2990fa330"
+            },
+            "illuminate\/http": {
+                "name": "illuminate\/http",
+                "required": "^7.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/http\/zipball\/68462f731338ce845b69497e135a0f6db6e109cc"
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "^7.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "predis\/predis": {
+                "name": "predis\/predis",
+                "required": "^1.1",
+                "installed": null,
+                "latest": "1.1.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/github.com\/nrk\/predis",
+                "zip": "https:\/\/api.github.com\/repos\/nrk\/predis\/zipball\/f0210e38881631afeafb56ab43405a92cafd9fd1"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

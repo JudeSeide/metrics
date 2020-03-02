@@ -1,0 +1,380 @@
+{
+    "Anhskohbo\\NoCaptcha\\NoCaptchaServiceProvider": {
+        "name": "Anhskohbo\\NoCaptcha\\NoCaptchaServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "bootConfig",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Anhskohbo\\NoCaptcha\\NoCaptcha"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 57,
+        "vocabulary": 22,
+        "volume": 254.19,
+        "difficulty": 5.33,
+        "effort": 1355.67,
+        "level": 0.19,
+        "bugs": 0.08,
+        "time": 75,
+        "intelligentContent": 47.66,
+        "number_operators": 9,
+        "number_operands": 48,
+        "number_operators_unique": 4,
+        "number_operands_unique": 18,
+        "cloc": 19,
+        "loc": 55,
+        "lloc": 36,
+        "mi": 88.3,
+        "mIwoC": 48.81,
+        "commentWeight": 39.49,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 121.33,
+        "totalStructuralComplexity": 484,
+        "totalDataComplexity": 1.33,
+        "totalSystemComplexity": 485.33,
+        "package": "Anhskohbo\\NoCaptcha\\",
+        "pageRank": 0.21,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Anhskohbo\\NoCaptcha\\": {
+        "name": "Anhskohbo\\NoCaptcha\\",
+        "classes": [
+            "Anhskohbo\\NoCaptcha\\NoCaptchaServiceProvider",
+            "Anhskohbo\\NoCaptcha\\NoCaptcha"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider",
+            "GuzzleHttp\\Client",
+            "Symfony\\Component\\HttpFoundation\\Request"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "GuzzleHttp\\",
+            "Symfony\\Component\\HttpFoundation\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Anhskohbo\\NoCaptcha\\NoCaptcha": {
+        "name": "Anhskohbo\\NoCaptcha\\NoCaptcha",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "display",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "displayWidget",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "displaySubmit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "renderJs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "verifyResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "verifyRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getJsLink",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCallBackParams",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendRequestVerify",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareAttributes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildAttributes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 22,
+        "ccn": 11,
+        "ccnMethodMax": 5,
+        "externals": [
+            "GuzzleHttp\\Client",
+            "Symfony\\Component\\HttpFoundation\\Request"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 212,
+        "vocabulary": 65,
+        "volume": 1276.74,
+        "difficulty": 7.88,
+        "effort": 10062.46,
+        "level": 0.13,
+        "bugs": 0.43,
+        "time": 559,
+        "intelligentContent": 162,
+        "number_operators": 57,
+        "number_operands": 155,
+        "number_operators_unique": 6,
+        "number_operands_unique": 59,
+        "cloc": 100,
+        "loc": 199,
+        "lloc": 99,
+        "mi": 77.76,
+        "mIwoC": 33.24,
+        "commentWeight": 44.52,
+        "kanDefect": 0.73,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 1.24,
+        "relativeSystemComplexity": 122.24,
+        "totalStructuralComplexity": 1452,
+        "totalDataComplexity": 14.83,
+        "totalSystemComplexity": 1466.83,
+        "package": "Anhskohbo\\NoCaptcha\\",
+        "pageRank": 0.58,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Anhskohbo\\NoCaptcha\\Facades\\NoCaptcha": {
+        "name": "Anhskohbo\\NoCaptcha\\Facades\\NoCaptcha",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 5,
+        "loc": 13,
+        "lloc": 8,
+        "mi": 119.04,
+        "mIwoC": 78.06,
+        "commentWeight": 40.98,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Anhskohbo\\NoCaptcha\\Facades\\",
+        "pageRank": 0.21,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Anhskohbo\\NoCaptcha\\Facades\\": {
+        "name": "Anhskohbo\\NoCaptcha\\Facades\\",
+        "classes": [
+            "Anhskohbo\\NoCaptcha\\Facades\\NoCaptcha"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.5.5",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "^5.0|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "guzzlehttp\/guzzle": {
+                "name": "guzzlehttp\/guzzle",
+                "required": "^6.2",
+                "installed": null,
+                "latest": "6.5.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/guzzlephp.org\/",
+                "zip": "https:\/\/api.github.com\/repos\/guzzle\/guzzle\/zipball\/43ece0e75098b7ecd8d13918293029e555a50f82"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

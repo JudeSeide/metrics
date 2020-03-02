@@ -1,0 +1,628 @@
+{
+    "Hashids\\Math\\Gmp": {
+        "name": "Hashids\\Math\\Gmp",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "multiply",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "divide",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mod",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "greaterThan",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "intval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "strval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Hashids\\Math\\MathInterface"
+        ],
+        "parents": [],
+        "lcom": 8,
+        "length": 36,
+        "vocabulary": 7,
+        "volume": 101.06,
+        "difficulty": 5.4,
+        "effort": 545.75,
+        "level": 0.19,
+        "bugs": 0.03,
+        "time": 30,
+        "intelligentContent": 18.72,
+        "number_operators": 9,
+        "number_operands": 27,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 61,
+        "loc": 97,
+        "lloc": 36,
+        "mi": 98.98,
+        "mIwoC": 51.88,
+        "commentWeight": 47.1,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 9.63,
+        "relativeSystemComplexity": 9.63,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 77,
+        "totalSystemComplexity": 77,
+        "package": "Hashids\\Math\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Hashids\\Math\\": {
+        "name": "Hashids\\Math\\",
+        "classes": [
+            "Hashids\\Math\\Gmp",
+            "Hashids\\Math\\Bc",
+            "Hashids\\Math\\MathInterface"
+        ],
+        "incoming_class_dependencies": [
+            "Hashids\\Hashids"
+        ],
+        "incoming_package_dependencies": [
+            "Hashids\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0,
+        "dependent_instabilities": [],
+        "distance": 0.4714045207910317,
+        "normalized_distance": 0.6666666666666667,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Hashids\\Math\\Bc": {
+        "name": "Hashids\\Math\\Bc",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "multiply",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "divide",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mod",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "greaterThan",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "intval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "strval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Hashids\\Math\\MathInterface"
+        ],
+        "parents": [],
+        "lcom": 8,
+        "length": 40,
+        "vocabulary": 7,
+        "volume": 112.29,
+        "difficulty": 6.2,
+        "effort": 696.22,
+        "level": 0.16,
+        "bugs": 0.04,
+        "time": 39,
+        "intelligentContent": 18.11,
+        "number_operators": 9,
+        "number_operands": 31,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 61,
+        "loc": 97,
+        "lloc": 36,
+        "mi": 98.66,
+        "mIwoC": 51.56,
+        "commentWeight": 47.1,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 9.63,
+        "relativeSystemComplexity": 9.63,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 77,
+        "totalSystemComplexity": 77,
+        "package": "Hashids\\Math\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Hashids\\Math\\MathInterface": {
+        "name": "Hashids\\Math\\MathInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "multiply",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "divide",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mod",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "greaterThan",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "intval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "strval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Hashids\\Math\\",
+        "pageRank": 0.53,
+        "afferentCoupling": 3,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Hashids\\HashidsException": {
+        "name": "Hashids\\HashidsException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "InvalidArgumentException"
+        ],
+        "parents": [
+            "InvalidArgumentException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 1,
+        "loc": 5,
+        "lloc": 4,
+        "mi": 202.94,
+        "mIwoC": 171,
+        "commentWeight": 31.94,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Hashids\\",
+        "pageRank": 0.12,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Hashids\\": {
+        "name": "Hashids\\",
+        "classes": [
+            "Hashids\\HashidsException",
+            "Hashids\\HashidsInterface",
+            "Hashids\\Hashids"
+        ],
+        "outgoing_class_dependencies": [
+            "InvalidArgumentException",
+            "Hashids\\Math\\MathInterface",
+            "Hashids\\Math\\Gmp",
+            "Hashids\\Math\\Bc",
+            "RuntimeException"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Hashids\\Math\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Hashids\\Math\\": 0
+        },
+        "distance": 0.23570226039551578,
+        "normalized_distance": 0.33333333333333326,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Hashids\\HashidsInterface": {
+        "name": "Hashids\\HashidsInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "encode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "decode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "encodeHex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "decodeHex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Hashids\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Hashids\\Hashids": {
+        "name": "Hashids\\Hashids",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "encode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "decode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "encodeHex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "decodeHex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shuffle",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hash",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unhash",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMathExtension",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "multiByteSplit",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 49,
+        "ccn": 40,
+        "ccnMethodMax": 13,
+        "externals": [
+            "Hashids\\HashidsInterface",
+            "Hashids\\HashidsException",
+            "Hashids\\HashidsException",
+            "Hashids\\Math\\MathInterface",
+            "Hashids\\Math\\Gmp",
+            "Hashids\\Math\\Bc",
+            "RuntimeException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 626,
+        "vocabulary": 85,
+        "volume": 4012.28,
+        "difficulty": 63.33,
+        "effort": 254110.99,
+        "level": 0.02,
+        "bugs": 1.34,
+        "time": 14117,
+        "intelligentContent": 63.35,
+        "number_operators": 186,
+        "number_operands": 440,
+        "number_operators_unique": 19,
+        "number_operands_unique": 66,
+        "cloc": 122,
+        "loc": 338,
+        "lloc": 216,
+        "mi": 58.57,
+        "mIwoC": 18.47,
+        "commentWeight": 40.1,
+        "kanDefect": 3.76,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 1.16,
+        "relativeSystemComplexity": 197.16,
+        "totalStructuralComplexity": 1960,
+        "totalDataComplexity": 11.6,
+        "totalSystemComplexity": 1971.6,
+        "package": "Hashids\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.17,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-mbstring": {
+                "name": "ext-mbstring",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

@@ -1,0 +1,800 @@
+{
+    "ReCaptcha\\RequestMethod\\Curl": {
+        "name": "ReCaptcha\\RequestMethod\\Curl",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "init",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setoptArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "exec",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "close",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 4,
+        "length": 13,
+        "vocabulary": 4,
+        "volume": 26,
+        "difficulty": 1.67,
+        "effort": 43.33,
+        "level": 0.6,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 15.6,
+        "number_operators": 3,
+        "number_operands": 10,
+        "number_operators_unique": 1,
+        "number_operands_unique": 3,
+        "cloc": 23,
+        "loc": 43,
+        "lloc": 20,
+        "mi": 106.86,
+        "mIwoC": 61.58,
+        "commentWeight": 45.28,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 4.25,
+        "relativeSystemComplexity": 4.25,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 17,
+        "totalSystemComplexity": 17,
+        "package": "ReCaptcha\\RequestMethod\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ReCaptcha\\RequestMethod\\": {
+        "name": "ReCaptcha\\RequestMethod\\",
+        "classes": [
+            "ReCaptcha\\RequestMethod\\Curl",
+            "ReCaptcha\\RequestMethod\\CurlPost",
+            "ReCaptcha\\RequestMethod\\SocketPost",
+            "ReCaptcha\\RequestMethod\\Socket",
+            "ReCaptcha\\RequestMethod\\Post"
+        ],
+        "outgoing_class_dependencies": [
+            "ReCaptcha\\RequestMethod",
+            "ReCaptcha\\RequestParameters"
+        ],
+        "outgoing_package_dependencies": [
+            "ReCaptcha\\"
+        ],
+        "incoming_class_dependencies": [
+            "ReCaptcha\\ReCaptcha"
+        ],
+        "incoming_package_dependencies": [
+            "ReCaptcha\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": {
+            "ReCaptcha\\": 0.4
+        },
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "ReCaptcha\\RequestMethod\\CurlPost": {
+        "name": "ReCaptcha\\RequestMethod\\CurlPost",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "ReCaptcha\\RequestMethod",
+            "ReCaptcha\\RequestMethod\\Curl",
+            "ReCaptcha\\RequestMethod\\Curl",
+            "ReCaptcha\\RequestParameters"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 38,
+        "vocabulary": 15,
+        "volume": 148.46,
+        "difficulty": 6.75,
+        "effort": 1002.12,
+        "level": 0.15,
+        "bugs": 0.05,
+        "time": 56,
+        "intelligentContent": 21.99,
+        "number_operators": 11,
+        "number_operands": 27,
+        "number_operators_unique": 5,
+        "number_operands_unique": 10,
+        "cloc": 25,
+        "loc": 48,
+        "lloc": 23,
+        "mi": 99.51,
+        "mIwoC": 54.55,
+        "commentWeight": 44.96,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.58,
+        "relativeSystemComplexity": 25.58,
+        "totalStructuralComplexity": 50,
+        "totalDataComplexity": 1.17,
+        "totalSystemComplexity": 51.17,
+        "package": "ReCaptcha\\RequestMethod\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ReCaptcha\\RequestMethod\\SocketPost": {
+        "name": "ReCaptcha\\RequestMethod\\SocketPost",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 6,
+        "ccnMethodMax": 4,
+        "externals": [
+            "ReCaptcha\\RequestMethod",
+            "ReCaptcha\\RequestMethod\\Socket",
+            "ReCaptcha\\RequestMethod\\Socket",
+            "ReCaptcha\\RequestParameters"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 102,
+        "vocabulary": 40,
+        "volume": 542.84,
+        "difficulty": 8.38,
+        "effort": 4546.26,
+        "level": 0.12,
+        "bugs": 0.18,
+        "time": 253,
+        "intelligentContent": 64.82,
+        "number_operators": 35,
+        "number_operands": 67,
+        "number_operators_unique": 8,
+        "number_operands_unique": 32,
+        "cloc": 21,
+        "loc": 58,
+        "lloc": 37,
+        "mi": 85.98,
+        "mIwoC": 45.84,
+        "commentWeight": 40.15,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.64,
+        "relativeSystemComplexity": 36.64,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 1.29,
+        "totalSystemComplexity": 73.29,
+        "package": "ReCaptcha\\RequestMethod\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ReCaptcha\\RequestMethod\\Socket": {
+        "name": "ReCaptcha\\RequestMethod\\Socket",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "fsockopen",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fwrite",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fgets",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "feof",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fclose",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 6,
+        "ccnMethodMax": 5,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 47,
+        "vocabulary": 18,
+        "volume": 195.99,
+        "difficulty": 8.5,
+        "effort": 1665.89,
+        "level": 0.12,
+        "bugs": 0.07,
+        "time": 93,
+        "intelligentContent": 23.06,
+        "number_operators": 13,
+        "number_operands": 34,
+        "number_operators_unique": 6,
+        "number_operands_unique": 12,
+        "cloc": 42,
+        "loc": 71,
+        "lloc": 29,
+        "mi": 97.69,
+        "mIwoC": 51.24,
+        "commentWeight": 46.45,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 7.6,
+        "relativeSystemComplexity": 7.6,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 38,
+        "totalSystemComplexity": 38,
+        "package": "ReCaptcha\\RequestMethod\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ReCaptcha\\RequestMethod\\Post": {
+        "name": "ReCaptcha\\RequestMethod\\Post",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "ReCaptcha\\RequestMethod",
+            "ReCaptcha\\RequestParameters"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 33,
+        "vocabulary": 20,
+        "volume": 142.62,
+        "difficulty": 3.83,
+        "effort": 546.72,
+        "level": 0.26,
+        "bugs": 0.05,
+        "time": 30,
+        "intelligentContent": 37.21,
+        "number_operators": 10,
+        "number_operands": 23,
+        "number_operators_unique": 5,
+        "number_operands_unique": 15,
+        "cloc": 19,
+        "loc": 43,
+        "lloc": 24,
+        "mi": 97.26,
+        "mIwoC": 54.41,
+        "commentWeight": 42.86,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 5,
+        "package": "ReCaptcha\\RequestMethod\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ReCaptcha\\Response": {
+        "name": "ReCaptcha\\Response",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "fromJson",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSuccess",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getErrorCodes",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHostname",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getChallengeTs",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getApkPackageName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getScore",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAction",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 7,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 11,
+        "ccnMethodMax": 11,
+        "externals": [
+            "ReCaptcha\\Response",
+            "ReCaptcha\\Response",
+            "ReCaptcha\\Response",
+            "ReCaptcha\\Response"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 127,
+        "vocabulary": 18,
+        "volume": 529.58,
+        "difficulty": 18.46,
+        "effort": 9776.87,
+        "level": 0.05,
+        "bugs": 0.18,
+        "time": 543,
+        "intelligentContent": 28.69,
+        "number_operators": 31,
+        "number_operands": 96,
+        "number_operators_unique": 5,
+        "number_operands_unique": 13,
+        "cloc": 83,
+        "loc": 155,
+        "lloc": 72,
+        "mi": 84.23,
+        "mIwoC": 38.93,
+        "commentWeight": 45.3,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 1.6,
+        "relativeSystemComplexity": 50.6,
+        "totalStructuralComplexity": 490,
+        "totalDataComplexity": 16,
+        "totalSystemComplexity": 506,
+        "package": "ReCaptcha\\",
+        "pageRank": 0.75,
+        "afferentCoupling": 3,
+        "efferentCoupling": 2,
+        "instability": 0.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ReCaptcha\\": {
+        "name": "ReCaptcha\\",
+        "classes": [
+            "ReCaptcha\\Response",
+            "ReCaptcha\\ReCaptcha",
+            "ReCaptcha\\RequestParameters",
+            "ReCaptcha\\RequestMethod"
+        ],
+        "incoming_class_dependencies": [
+            "ReCaptcha\\RequestMethod\\CurlPost",
+            "ReCaptcha\\RequestMethod\\SocketPost",
+            "ReCaptcha\\RequestMethod\\Post"
+        ],
+        "incoming_package_dependencies": [
+            "ReCaptcha\\RequestMethod\\"
+        ],
+        "outgoing_class_dependencies": [
+            "RuntimeException",
+            "ReCaptcha\\RequestMethod\\Post"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "ReCaptcha\\RequestMethod\\"
+        ],
+        "abstraction": 0.25,
+        "instability": 0.4,
+        "dependent_instabilities": {
+            "ReCaptcha\\RequestMethod\\": 0.6666666666666666
+        },
+        "distance": 0.2474873734152916,
+        "normalized_distance": 0.35,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "ReCaptcha\\ReCaptcha": {
+        "name": "ReCaptcha\\ReCaptcha",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "verify",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setExpectedHostname",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setExpectedApkPackageName",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setExpectedAction",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setScoreThreshold",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setChallengeTimeout",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 4,
+        "wmc": 23,
+        "ccn": 17,
+        "ccnMethodMax": 14,
+        "externals": [
+            "ReCaptcha\\RequestMethod",
+            "RuntimeException",
+            "RuntimeException",
+            "ReCaptcha\\RequestMethod\\Post",
+            "ReCaptcha\\Response",
+            "ReCaptcha\\RequestParameters",
+            "ReCaptcha\\Response",
+            "ReCaptcha\\Response"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 142,
+        "vocabulary": 38,
+        "volume": 745.21,
+        "difficulty": 10.61,
+        "effort": 7908.8,
+        "level": 0.09,
+        "bugs": 0.25,
+        "time": 439,
+        "intelligentContent": 70.22,
+        "number_operators": 48,
+        "number_operands": 94,
+        "number_operators_unique": 7,
+        "number_operands_unique": 31,
+        "cloc": 108,
+        "loc": 195,
+        "lloc": 87,
+        "mi": 80.99,
+        "mIwoC": 35.29,
+        "commentWeight": 45.7,
+        "kanDefect": 0.85,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 1.03,
+        "relativeSystemComplexity": 65.03,
+        "totalStructuralComplexity": 448,
+        "totalDataComplexity": 7.22,
+        "totalSystemComplexity": 455.22,
+        "package": "ReCaptcha\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ReCaptcha\\RequestParameters": {
+        "name": "ReCaptcha\\RequestParameters",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toQueryString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 40,
+        "vocabulary": 12,
+        "volume": 143.4,
+        "difficulty": 4.83,
+        "effort": 693.09,
+        "level": 0.21,
+        "bugs": 0.05,
+        "time": 39,
+        "intelligentContent": 29.67,
+        "number_operators": 11,
+        "number_operands": 29,
+        "number_operators_unique": 3,
+        "number_operands_unique": 9,
+        "cloc": 37,
+        "loc": 67,
+        "lloc": 30,
+        "mi": 97.94,
+        "mIwoC": 52.27,
+        "commentWeight": 45.66,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.67,
+        "relativeSystemComplexity": 2.67,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 8,
+        "package": "ReCaptcha\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 5,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ReCaptcha\\RequestMethod": {
+        "name": "ReCaptcha\\RequestMethod",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "submit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "ReCaptcha\\RequestParameters"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "ReCaptcha\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 4,
+        "efferentCoupling": 1,
+        "instability": 0.2,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.5",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

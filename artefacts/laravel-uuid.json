@@ -1,0 +1,280 @@
+{
+    "Webpatser\\Uuid\\Uuid": {
+        "name": "Webpatser\\Uuid\\Uuid",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mintTime",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "randomBytes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makeBin",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mintName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mintRand",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "import",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compare",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toUuidOrdered",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 44,
+        "ccn": 32,
+        "ccnMethodMax": 15,
+        "externals": [
+            "Exception",
+            "static",
+            "static",
+            "Exception",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "Exception",
+            "static",
+            "static",
+            "static",
+            "Exception",
+            "static",
+            "Exception",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static"
+        ],
+        "parents": [],
+        "lcom": 10,
+        "length": 422,
+        "vocabulary": 81,
+        "volume": 2675.42,
+        "difficulty": 40.29,
+        "effort": 107781.07,
+        "level": 0.02,
+        "bugs": 0.89,
+        "time": 5988,
+        "intelligentContent": 66.41,
+        "number_operators": 140,
+        "number_operands": 282,
+        "number_operators_unique": 18,
+        "number_operands_unique": 63,
+        "cloc": 188,
+        "loc": 389,
+        "lloc": 201,
+        "mi": 65.48,
+        "mIwoC": 21.46,
+        "commentWeight": 44.03,
+        "kanDefect": 1.65,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 8.56,
+        "relativeSystemComplexity": 17.56,
+        "totalStructuralComplexity": 117,
+        "totalDataComplexity": 111.25,
+        "totalSystemComplexity": 228.25,
+        "package": "Webpatser\\Uuid\\",
+        "pageRank": 0.69,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Webpatser\\Uuid\\": {
+        "name": "Webpatser\\Uuid\\",
+        "classes": [
+            "Webpatser\\Uuid\\Uuid",
+            "Webpatser\\Uuid\\UuidServiceProvider"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception",
+            "static",
+            "Illuminate\\Support\\ServiceProvider",
+            "Illuminate\\Support\\Facades\\Validator"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Illuminate\\Support\\",
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Webpatser\\Uuid\\UuidServiceProvider": {
+        "name": "Webpatser\\Uuid\\UuidServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Webpatser\\Uuid\\Uuid",
+            "Illuminate\\Support\\Facades\\Validator"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 1,
+        "length": 7,
+        "vocabulary": 6,
+        "volume": 18.09,
+        "difficulty": 0.6,
+        "effort": 10.86,
+        "level": 1.67,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 30.16,
+        "number_operators": 1,
+        "number_operands": 6,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 5,
+        "loc": 15,
+        "lloc": 10,
+        "mi": 108.24,
+        "mIwoC": 69.25,
+        "commentWeight": 38.99,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 4.33,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0.33,
+        "totalSystemComplexity": 4.33,
+        "package": "Webpatser\\Uuid\\",
+        "pageRank": 0.31,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

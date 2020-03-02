@@ -1,0 +1,594 @@
+{
+    "Composer\\XdebugHandler\\Status": {
+        "name": "Composer\\XdebugHandler\\Status",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLogger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "report",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "output",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reportCheck",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reportError",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reportInfo",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reportNoRestart",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reportRestart",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reportRestarted",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reportRestarting",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEnvAllow",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLoadedMessage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 13,
+        "nbMethodsPrivate": 10,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 24,
+        "ccn": 12,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Composer\\XdebugHandler\\Process",
+            "Psr\\Log\\LoggerInterface",
+            "Composer\\XdebugHandler\\Process"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 132,
+        "vocabulary": 46,
+        "volume": 729.11,
+        "difficulty": 12.16,
+        "effort": 8867.56,
+        "level": 0.08,
+        "bugs": 0.24,
+        "time": 493,
+        "intelligentContent": 59.95,
+        "number_operators": 32,
+        "number_operands": 100,
+        "number_operators_unique": 9,
+        "number_operands_unique": 37,
+        "cloc": 35,
+        "loc": 131,
+        "lloc": 96,
+        "mi": 70.99,
+        "mIwoC": 35.1,
+        "commentWeight": 35.89,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.47,
+        "relativeSystemComplexity": 25.47,
+        "totalStructuralComplexity": 325,
+        "totalDataComplexity": 6.17,
+        "totalSystemComplexity": 331.17,
+        "package": "Composer\\XdebugHandler\\",
+        "pageRank": 0.12,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Composer\\XdebugHandler\\": {
+        "name": "Composer\\XdebugHandler\\",
+        "classes": [
+            "Composer\\XdebugHandler\\Status",
+            "Composer\\XdebugHandler\\XdebugHandler",
+            "Composer\\XdebugHandler\\PhpConfig",
+            "Composer\\XdebugHandler\\Process"
+        ],
+        "outgoing_class_dependencies": [
+            "Psr\\Log\\LoggerInterface",
+            "RuntimeException",
+            "ReflectionExtension"
+        ],
+        "outgoing_package_dependencies": [
+            "Psr\\Log\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Composer\\XdebugHandler\\XdebugHandler": {
+        "name": "Composer\\XdebugHandler\\XdebugHandler",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLogger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMainScript",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPersistent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "check",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllIniFiles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRestartSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSkippedVersion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "requiresRestart",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "restart",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doRestart",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareRestart",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeTmpIni",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommand",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEnvironment",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "notify",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mergeLoadedConfig",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkMainScript",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEnvRestartSettings",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "syncSettings",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkScanDirConfig",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkConfiguration",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 22,
+        "nbMethods": 21,
+        "nbMethodsPrivate": 14,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 88,
+        "ccn": 67,
+        "ccnMethodMax": 10,
+        "externals": [
+            "RuntimeException",
+            "ReflectionExtension",
+            "Composer\\XdebugHandler\\Status",
+            "Psr\\Log\\LoggerInterface",
+            "Composer\\XdebugHandler\\Process",
+            "Composer\\XdebugHandler\\Process",
+            "Composer\\XdebugHandler\\Process",
+            "Composer\\XdebugHandler\\Process",
+            "Composer\\XdebugHandler\\Process",
+            "Composer\\XdebugHandler\\Process",
+            "Composer\\XdebugHandler\\Process"
+        ],
+        "parents": [],
+        "lcom": 4,
+        "length": 534,
+        "vocabulary": 119,
+        "volume": 3681.83,
+        "difficulty": 19.51,
+        "effort": 71847.35,
+        "level": 0.05,
+        "bugs": 1.23,
+        "time": 3992,
+        "intelligentContent": 188.68,
+        "number_operators": 186,
+        "number_operands": 348,
+        "number_operators_unique": 12,
+        "number_operands_unique": 107,
+        "cloc": 175,
+        "loc": 450,
+        "lloc": 275,
+        "mi": 53.94,
+        "mIwoC": 12.81,
+        "commentWeight": 41.13,
+        "kanDefect": 3.15,
+        "relativeStructuralComplexity": 361,
+        "relativeDataComplexity": 1.44,
+        "relativeSystemComplexity": 362.44,
+        "totalStructuralComplexity": 7942,
+        "totalDataComplexity": 31.75,
+        "totalSystemComplexity": 7973.75,
+        "package": "Composer\\XdebugHandler\\",
+        "pageRank": 0.14,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Composer\\XdebugHandler\\PhpConfig": {
+        "name": "Composer\\XdebugHandler\\PhpConfig",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "useOriginal",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "useStandard",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "usePersistent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataAndReset",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Composer\\XdebugHandler\\Process",
+            "Composer\\XdebugHandler\\Process",
+            "Composer\\XdebugHandler\\XdebugHandler",
+            "Composer\\XdebugHandler\\Process",
+            "Composer\\XdebugHandler\\Process"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 33,
+        "vocabulary": 13,
+        "volume": 122.11,
+        "difficulty": 3.3,
+        "effort": 402.98,
+        "level": 0.3,
+        "bugs": 0.04,
+        "time": 22,
+        "intelligentContent": 37,
+        "number_operators": 11,
+        "number_operands": 22,
+        "number_operators_unique": 3,
+        "number_operands_unique": 10,
+        "cloc": 23,
+        "loc": 55,
+        "lloc": 32,
+        "mi": 94.14,
+        "mIwoC": 52.02,
+        "commentWeight": 42.12,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 10.25,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 41,
+        "package": "Composer\\XdebugHandler\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Composer\\XdebugHandler\\Process": {
+        "name": "Composer\\XdebugHandler\\Process",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "addColorOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "escape",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEnv",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 38,
+        "ccn": 35,
+        "ccnMethodMax": 12,
+        "externals": [],
+        "parents": [],
+        "lcom": 4,
+        "length": 219,
+        "vocabulary": 66,
+        "volume": 1323.72,
+        "difficulty": 10.74,
+        "effort": 14212.6,
+        "level": 0.09,
+        "bugs": 0.44,
+        "time": 790,
+        "intelligentContent": 123.29,
+        "number_operators": 83,
+        "number_operands": 136,
+        "number_operators_unique": 9,
+        "number_operands_unique": 57,
+        "cloc": 52,
+        "loc": 141,
+        "lloc": 89,
+        "mi": 71.31,
+        "mIwoC": 30.91,
+        "commentWeight": 40.4,
+        "kanDefect": 1.41,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 17,
+        "relativeSystemComplexity": 17,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 68,
+        "totalSystemComplexity": 68,
+        "package": "Composer\\XdebugHandler\\",
+        "pageRank": 0.64,
+        "afferentCoupling": 3,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^5.3.2 || ^7.0 || ^8.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "psr\/log": {
+                "name": "psr\/log",
+                "required": "^1.0",
+                "installed": null,
+                "latest": "1.1.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/php-fig\/log",
+                "zip": "https:\/\/api.github.com\/repos\/php-fig\/log\/zipball\/446d54b4cb6bf489fc9d75f55843658e6f25d801"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

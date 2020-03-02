@@ -1,0 +1,1196 @@
+{
+    "Appzcoder\\CrudGenerator\\CrudGeneratorServiceProvider": {
+        "name": "Appzcoder\\CrudGenerator\\CrudGeneratorServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "App"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 32,
+        "vocabulary": 22,
+        "volume": 142.7,
+        "difficulty": 2.05,
+        "effort": 292.91,
+        "level": 0.49,
+        "bugs": 0.05,
+        "time": 16,
+        "intelligentContent": 69.52,
+        "number_operators": 6,
+        "number_operands": 26,
+        "number_operators_unique": 3,
+        "number_operands_unique": 19,
+        "cloc": 15,
+        "loc": 33,
+        "lloc": 18,
+        "mi": 100.5,
+        "mIwoC": 57.26,
+        "commentWeight": 43.23,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 9,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 18,
+        "package": "Appzcoder\\CrudGenerator\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Appzcoder\\CrudGenerator\\": {
+        "name": "Appzcoder\\CrudGenerator\\",
+        "classes": [
+            "Appzcoder\\CrudGenerator\\CrudGeneratorServiceProvider"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider",
+            "App"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Appzcoder\\CrudGenerator\\Commands\\CrudLangCommand": {
+        "name": "Appzcoder\\CrudGenerator\\Commands\\CrudLangCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "templateVars",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 8,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 120,
+        "vocabulary": 47,
+        "volume": 666.55,
+        "difficulty": 3.1,
+        "effort": 2067.82,
+        "level": 0.32,
+        "bugs": 0.22,
+        "time": 115,
+        "intelligentContent": 214.86,
+        "number_operators": 29,
+        "number_operands": 91,
+        "number_operators_unique": 3,
+        "number_operands_unique": 44,
+        "cloc": 43,
+        "loc": 101,
+        "lloc": 58,
+        "mi": 83.05,
+        "mIwoC": 40.68,
+        "commentWeight": 42.36,
+        "kanDefect": 1.05,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.05,
+        "relativeSystemComplexity": 36.05,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 0.14,
+        "totalSystemComplexity": 108.14,
+        "package": "Appzcoder\\CrudGenerator\\Commands\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Appzcoder\\CrudGenerator\\Commands\\": {
+        "name": "Appzcoder\\CrudGenerator\\Commands\\",
+        "classes": [
+            "Appzcoder\\CrudGenerator\\Commands\\CrudLangCommand",
+            "Appzcoder\\CrudGenerator\\Commands\\CrudMigrationCommand",
+            "Appzcoder\\CrudGenerator\\Commands\\CrudApiCommand",
+            "Appzcoder\\CrudGenerator\\Commands\\CrudViewCommand",
+            "Appzcoder\\CrudGenerator\\Commands\\CrudModelCommand",
+            "Appzcoder\\CrudGenerator\\Commands\\CrudCommand",
+            "Appzcoder\\CrudGenerator\\Commands\\CrudControllerCommand",
+            "Appzcoder\\CrudGenerator\\Commands\\CrudApiControllerCommand"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Console\\Command",
+            "File",
+            "Illuminate\\Console\\GeneratorCommand",
+            "Illuminate\\Support\\Str",
+            "App"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Console\\",
+            "\\",
+            "Illuminate\\Support\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Appzcoder\\CrudGenerator\\Commands\\CrudMigrationCommand": {
+        "name": "Appzcoder\\CrudGenerator\\Commands\\CrudMigrationCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getStub",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildClass",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceSchemaUp",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceSchemaDown",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 29,
+        "ccn": 25,
+        "ccnMethodMax": 24,
+        "externals": [
+            "Illuminate\\Console\\GeneratorCommand"
+        ],
+        "parents": [
+            "Illuminate\\Console\\GeneratorCommand"
+        ],
+        "lcom": 2,
+        "length": 555,
+        "vocabulary": 146,
+        "volume": 3990.35,
+        "difficulty": 17.1,
+        "effort": 68252.9,
+        "level": 0.06,
+        "bugs": 1.33,
+        "time": 3792,
+        "intelligentContent": 233.29,
+        "number_operators": 173,
+        "number_operands": 382,
+        "number_operators_unique": 12,
+        "number_operands_unique": 134,
+        "cloc": 65,
+        "loc": 189,
+        "lloc": 124,
+        "mi": 65.19,
+        "mIwoC": 25.76,
+        "commentWeight": 39.43,
+        "kanDefect": 1.77,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.8,
+        "relativeSystemComplexity": 64.8,
+        "totalStructuralComplexity": 320,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 324,
+        "package": "Appzcoder\\CrudGenerator\\Commands\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Appzcoder\\CrudGenerator\\Commands\\CrudApiCommand": {
+        "name": "Appzcoder\\CrudGenerator\\Commands\\CrudApiCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addRoutes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processJSONFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processJSONForeignKeys",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processJSONRelationships",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processJSONValidations",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 32,
+        "ccn": 26,
+        "ccnMethodMax": 16,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "App",
+            "App",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 2,
+        "length": 445,
+        "vocabulary": 105,
+        "volume": 2987.84,
+        "difficulty": 18.31,
+        "effort": 54718.78,
+        "level": 0.05,
+        "bugs": 1,
+        "time": 3040,
+        "intelligentContent": 163.15,
+        "number_operators": 132,
+        "number_operands": 313,
+        "number_operators_unique": 11,
+        "number_operands_unique": 94,
+        "cloc": 58,
+        "loc": 215,
+        "lloc": 157,
+        "mi": 60.3,
+        "mIwoC": 24.27,
+        "commentWeight": 36.03,
+        "kanDefect": 2.28,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.57,
+        "relativeSystemComplexity": 196.57,
+        "totalStructuralComplexity": 1372,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 1376,
+        "package": "Appzcoder\\CrudGenerator\\Commands\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Appzcoder\\CrudGenerator\\Commands\\CrudViewCommand": {
+        "name": "Appzcoder\\CrudGenerator\\Commands\\CrudViewCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultTemplating",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "templateStubs",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "templateVars",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "userDefinedVars",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wrapField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createFormField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createPasswordField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createInputField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createRadioField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createTextareaField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createSelectField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 12,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 52,
+        "ccn": 39,
+        "ccnMethodMax": 17,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 1,
+        "length": 918,
+        "vocabulary": 158,
+        "volume": 6704.87,
+        "difficulty": 25.93,
+        "effort": 173847.72,
+        "level": 0.04,
+        "bugs": 2.23,
+        "time": 9658,
+        "intelligentContent": 258.59,
+        "number_operators": 225,
+        "number_operands": 693,
+        "number_operators_unique": 11,
+        "number_operands_unique": 147,
+        "cloc": 212,
+        "loc": 462,
+        "lloc": 250,
+        "mi": 59.01,
+        "mIwoC": 15.65,
+        "commentWeight": 43.36,
+        "kanDefect": 2.52,
+        "relativeStructuralComplexity": 324,
+        "relativeDataComplexity": 0.79,
+        "relativeSystemComplexity": 324.79,
+        "totalStructuralComplexity": 4536,
+        "totalDataComplexity": 11,
+        "totalSystemComplexity": 4547,
+        "package": "Appzcoder\\CrudGenerator\\Commands\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Appzcoder\\CrudGenerator\\Commands\\CrudModelCommand": {
+        "name": "Appzcoder\\CrudGenerator\\Commands\\CrudModelCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getStub",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultNamespace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildClass",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceFillable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replacePrimaryKey",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceSoftDelete",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createRelationshipFunction",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceRelationshipPlaceholder",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 9,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 10,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Illuminate\\Console\\GeneratorCommand"
+        ],
+        "parents": [
+            "Illuminate\\Console\\GeneratorCommand"
+        ],
+        "lcom": 8,
+        "length": 234,
+        "vocabulary": 70,
+        "volume": 1434.25,
+        "difficulty": 9.5,
+        "effort": 13625.4,
+        "level": 0.11,
+        "bugs": 0.48,
+        "time": 757,
+        "intelligentContent": 150.97,
+        "number_operators": 63,
+        "number_operands": 171,
+        "number_operators_unique": 7,
+        "number_operands_unique": 63,
+        "cloc": 89,
+        "loc": 182,
+        "lloc": 93,
+        "mi": 77.79,
+        "mIwoC": 33.61,
+        "commentWeight": 44.18,
+        "kanDefect": 0.89,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.82,
+        "relativeSystemComplexity": 144.82,
+        "totalStructuralComplexity": 1296,
+        "totalDataComplexity": 7.38,
+        "totalSystemComplexity": 1303.38,
+        "package": "Appzcoder\\CrudGenerator\\Commands\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Appzcoder\\CrudGenerator\\Commands\\CrudCommand": {
+        "name": "Appzcoder\\CrudGenerator\\Commands\\CrudCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addRoutes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processJSONFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processJSONForeignKeys",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processJSONRelationships",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processJSONValidations",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 34,
+        "ccn": 28,
+        "ccnMethodMax": 17,
+        "externals": [
+            "Illuminate\\Console\\Command",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "App",
+            "App",
+            "File",
+            "File",
+            "File",
+            "File",
+            "File"
+        ],
+        "parents": [
+            "Illuminate\\Console\\Command"
+        ],
+        "lcom": 2,
+        "length": 501,
+        "vocabulary": 121,
+        "volume": 3466.35,
+        "difficulty": 19.87,
+        "effort": 68881.79,
+        "level": 0.05,
+        "bugs": 1.16,
+        "time": 3827,
+        "intelligentContent": 174.44,
+        "number_operators": 140,
+        "number_operands": 361,
+        "number_operators_unique": 12,
+        "number_operands_unique": 109,
+        "cloc": 58,
+        "loc": 227,
+        "lloc": 169,
+        "mi": 58.12,
+        "mIwoC": 22.85,
+        "commentWeight": 35.27,
+        "kanDefect": 2.35,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.57,
+        "relativeSystemComplexity": 196.57,
+        "totalStructuralComplexity": 1372,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 1376,
+        "package": "Appzcoder\\CrudGenerator\\Commands\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Appzcoder\\CrudGenerator\\Commands\\CrudControllerCommand": {
+        "name": "Appzcoder\\CrudGenerator\\Commands\\CrudControllerCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getStub",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultNamespace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alreadyExists",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildClass",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceViewName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceViewPath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceCrudName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceCrudNameSingular",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceModelName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceModelNamespace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceModelNamespaceSegments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceRoutePrefix",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceRoutePrefixCap",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceRouteGroup",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceValidationRules",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replacePaginationNumber",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceFileSnippet",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceWhereSnippet",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 18,
+        "nbMethods": 18,
+        "nbMethodsPrivate": 18,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 33,
+        "ccn": 16,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Illuminate\\Console\\GeneratorCommand",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Str",
+            "App"
+        ],
+        "parents": [
+            "Illuminate\\Console\\GeneratorCommand"
+        ],
+        "lcom": 15,
+        "length": 387,
+        "vocabulary": 100,
+        "volume": 2571.17,
+        "difficulty": 12.91,
+        "effort": 33201.66,
+        "level": 0.08,
+        "bugs": 0.86,
+        "time": 1845,
+        "intelligentContent": 199.11,
+        "number_operators": 90,
+        "number_operands": 297,
+        "number_operators_unique": 8,
+        "number_operands_unique": 92,
+        "cloc": 154,
+        "loc": 327,
+        "lloc": 173,
+        "mi": 68.84,
+        "mIwoC": 25.15,
+        "commentWeight": 43.69,
+        "kanDefect": 1.26,
+        "relativeStructuralComplexity": 484,
+        "relativeDataComplexity": 0.9,
+        "relativeSystemComplexity": 484.9,
+        "totalStructuralComplexity": 8712,
+        "totalDataComplexity": 16.22,
+        "totalSystemComplexity": 8728.22,
+        "package": "Appzcoder\\CrudGenerator\\Commands\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Appzcoder\\CrudGenerator\\Commands\\CrudApiControllerCommand": {
+        "name": "Appzcoder\\CrudGenerator\\Commands\\CrudApiControllerCommand",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getStub",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultNamespace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alreadyExists",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildClass",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceCrudName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceCrudNameSingular",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceModelName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceModelNamespace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceModelNamespaceSegments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replaceValidationRules",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replacePaginationNumber",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 11,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 8,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Illuminate\\Console\\GeneratorCommand",
+            "Illuminate\\Support\\Str"
+        ],
+        "parents": [
+            "Illuminate\\Console\\GeneratorCommand"
+        ],
+        "lcom": 8,
+        "length": 205,
+        "vocabulary": 62,
+        "volume": 1220.61,
+        "difficulty": 9.99,
+        "effort": 12195.01,
+        "level": 0.1,
+        "bugs": 0.41,
+        "time": 678,
+        "intelligentContent": 122.17,
+        "number_operators": 48,
+        "number_operands": 157,
+        "number_operators_unique": 7,
+        "number_operands_unique": 55,
+        "cloc": 98,
+        "loc": 194,
+        "lloc": 96,
+        "mi": 78.66,
+        "mIwoC": 34.07,
+        "commentWeight": 44.58,
+        "kanDefect": 0.82,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.9,
+        "relativeSystemComplexity": 196.9,
+        "totalStructuralComplexity": 2156,
+        "totalDataComplexity": 9.93,
+        "totalSystemComplexity": 2165.93,
+        "package": "Appzcoder\\CrudGenerator\\Commands\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 2,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.6.4|>=7.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "^5.3|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "laravelcollective\/html": {
+                "name": "laravelcollective\/html",
+                "required": "^5.3|^6.0",
+                "installed": null,
+                "latest": "6.0.3",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravelcollective.com",
+                "zip": "https:\/\/api.github.com\/repos\/LaravelCollective\/html\/zipball\/bcc317d21a7e04eebcc81c4109fa84feaab63590"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

@@ -1,0 +1,1329 @@
+{
+    "Elasticquent\\ElasticquentCollection": {
+        "name": "Elasticquent\\ElasticquentCollection",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Collection"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Collection"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 5,
+        "lloc": 5,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Elasticquent\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Elasticquent\\": {
+        "name": "Elasticquent\\",
+        "classes": [
+            "Elasticquent\\ElasticquentCollection",
+            "Elasticquent\\ElasticquentConfigTrait",
+            "Elasticquent\\ElasticquentCollectionTrait",
+            "Elasticquent\\ElasticquentInterface",
+            "Elasticquent\\ElasticquentTrait",
+            "Elasticquent\\ElasticquentServiceProvider",
+            "Elasticquent\\ElasticquentElasticsearchFacade",
+            "Elasticquent\\ElasticquentPaginator",
+            "Elasticquent\\ElasticquentResultCollection",
+            "Elasticquent\\ElasticquentClientTrait",
+            "Elasticquent\\ElasticquentSupport"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Database\\Eloquent\\Collection",
+            "Exception",
+            "Illuminate\\Config\\Repository",
+            "stdClass",
+            "static",
+            "this",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Relations\\Relation",
+            "ReflectionMethod",
+            "ReflectionClass",
+            "Illuminate\\Support\\ServiceProvider",
+            "Illuminate\\Support\\Facades\\Facade",
+            "Illuminate\\Pagination\\LengthAwarePaginator",
+            "Illuminate\\Support\\Collection",
+            "instance",
+            "Elasticsearch\\ClientBuilder",
+            "Elasticsearch\\Client"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Database\\Eloquent\\",
+            "\\",
+            "Illuminate\\Config\\",
+            "Illuminate\\Database\\Eloquent\\Relations\\",
+            "Illuminate\\Support\\",
+            "Illuminate\\Support\\Facades\\",
+            "Illuminate\\Pagination\\",
+            "Elasticsearch\\"
+        ],
+        "abstraction": 0.45454545454545453,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0.32141217326661253,
+        "normalized_distance": 0.4545454545454546,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Elasticquent\\ElasticquentConfigTrait": {
+        "name": "Elasticquent\\ElasticquentConfigTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "getIndexName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getElasticConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigHelper",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 6,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Exception",
+            "Illuminate\\Config\\Repository"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 50,
+        "vocabulary": 20,
+        "volume": 216.1,
+        "difficulty": 4.13,
+        "effort": 891.4,
+        "level": 0.24,
+        "bugs": 0.07,
+        "time": 50,
+        "intelligentContent": 52.39,
+        "number_operators": 17,
+        "number_operands": 33,
+        "number_operators_unique": 4,
+        "number_operands_unique": 16,
+        "cloc": 30,
+        "loc": 66,
+        "lloc": 36,
+        "mi": 92.13,
+        "mIwoC": 48.9,
+        "commentWeight": 43.23,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1.1,
+        "relativeSystemComplexity": 17.1,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 4.4,
+        "totalSystemComplexity": 68.4,
+        "package": "Elasticquent\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Elasticquent\\ElasticquentCollectionTrait": {
+        "name": "Elasticquent\\ElasticquentCollectionTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "addToIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteFromIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reindex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 9,
+        "ccnMethodMax": 8,
+        "externals": [
+            "stdClass"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 88,
+        "vocabulary": 28,
+        "volume": 423.05,
+        "difficulty": 17.22,
+        "effort": 7285.81,
+        "level": 0.06,
+        "bugs": 0.14,
+        "time": 405,
+        "intelligentContent": 24.56,
+        "number_operators": 26,
+        "number_operands": 62,
+        "number_operators_unique": 10,
+        "number_operands_unique": 18,
+        "cloc": 34,
+        "loc": 78,
+        "lloc": 44,
+        "mi": 87.23,
+        "mIwoC": 44.55,
+        "commentWeight": 42.68,
+        "kanDefect": 0.98,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.36,
+        "relativeSystemComplexity": 100.36,
+        "totalStructuralComplexity": 300,
+        "totalDataComplexity": 1.09,
+        "totalSystemComplexity": 301.09,
+        "package": "Elasticquent\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Elasticquent\\ElasticquentInterface": {
+        "name": "Elasticquent\\ElasticquentInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getElasticSearchClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "newCollection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTypeName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "usesTimestampsInIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMappingProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMappingProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexDocumentData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addAllToIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "search",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addToIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeFromIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexedDocument",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBasicEsParams",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDocument",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "documentScore",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "putMapping",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteMapping",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rebuildMapping",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMapping",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "typeExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 21,
+        "nbMethods": 21,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 21,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 21,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Elasticquent\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Elasticquent\\ElasticquentTrait": {
+        "name": "Elasticquent\\ElasticquentTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "newCollection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTypeName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "usesTimestampsInIndex",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "useTimestampsInIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "dontUseTimestampsInIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMappingProperties",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMappingProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexSettings",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDocument",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "documentScore",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "documentVersion",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexDocumentData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addAllToIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reindex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "searchByQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "complexSearch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "search",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addToIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeFromIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexedDocument",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBasicEsParams",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildFieldsParameter",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mappingExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMapping",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "putMapping",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteMapping",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rebuildMapping",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "typeExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "newFromHitBuilder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hydrateElasticsearchResult",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hydrateElasticquentResult",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "newFromBuilderRecursive",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hydrateRecursive",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadRelationsAttributesRecursive",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadPivotAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "newElasticquentResultCollection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isMultiLevelArray",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isClassInClass",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 41,
+        "nbMethods": 35,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 32,
+        "nbMethodsGetter": 6,
+        "nbMethodsSetters": 0,
+        "wmc": 77,
+        "ccn": 37,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Elasticquent\\ElasticquentCollection",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "Exception",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "this",
+            "static",
+            "static",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Relations\\Relation",
+            "static",
+            "static",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Relations\\Relation",
+            "static",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "ReflectionMethod",
+            "static",
+            "static",
+            "static",
+            "Illuminate\\Database\\Eloquent\\Model",
+            "Illuminate\\Database\\Eloquent\\Relations\\Relation",
+            "Elasticquent\\ElasticquentResultCollection",
+            "ReflectionClass"
+        ],
+        "parents": [],
+        "lcom": 26,
+        "length": 545,
+        "vocabulary": 82,
+        "volume": 3464.87,
+        "difficulty": 20.86,
+        "effort": 72293.96,
+        "level": 0.05,
+        "bugs": 1.15,
+        "time": 4016,
+        "intelligentContent": 166.06,
+        "number_operators": 159,
+        "number_operands": 386,
+        "number_operators_unique": 8,
+        "number_operands_unique": 74,
+        "cloc": 336,
+        "loc": 664,
+        "lloc": 328,
+        "mi": 59.96,
+        "mIwoC": 15.36,
+        "commentWeight": 44.61,
+        "kanDefect": 3.12,
+        "relativeStructuralComplexity": 1764,
+        "relativeDataComplexity": 0.97,
+        "relativeSystemComplexity": 1764.97,
+        "totalStructuralComplexity": 72324,
+        "totalDataComplexity": 39.95,
+        "totalSystemComplexity": 72363.95,
+        "package": "Elasticquent\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 9,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Elasticquent\\ElasticquentServiceProvider": {
+        "name": "Elasticquent\\ElasticquentServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Elasticquent\\ElasticquentSupport",
+            "Elasticquent\\ElasticquentSupport"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 15,
+        "vocabulary": 10,
+        "volume": 49.83,
+        "difficulty": 2.36,
+        "effort": 117.45,
+        "level": 0.42,
+        "bugs": 0.02,
+        "time": 7,
+        "intelligentContent": 21.14,
+        "number_operators": 4,
+        "number_operands": 11,
+        "number_operators_unique": 3,
+        "number_operands_unique": 7,
+        "cloc": 12,
+        "loc": 31,
+        "lloc": 19,
+        "mi": 101.02,
+        "mIwoC": 59.95,
+        "commentWeight": 41.07,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 25.33,
+        "totalStructuralComplexity": 50,
+        "totalDataComplexity": 0.67,
+        "totalSystemComplexity": 50.67,
+        "package": "Elasticquent\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Elasticquent\\ElasticquentElasticsearchFacade": {
+        "name": "Elasticquent\\ElasticquentElasticsearchFacade",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 8,
+        "loc": 16,
+        "lloc": 8,
+        "mi": 122.51,
+        "mIwoC": 78.06,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Elasticquent\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Elasticquent\\ElasticquentPaginator": {
+        "name": "Elasticquent\\ElasticquentPaginator",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Illuminate\\Pagination\\LengthAwarePaginator",
+            "Illuminate\\Support\\Collection"
+        ],
+        "parents": [
+            "Illuminate\\Pagination\\LengthAwarePaginator"
+        ],
+        "lcom": 1,
+        "length": 69,
+        "vocabulary": 24,
+        "volume": 316.36,
+        "difficulty": 7.5,
+        "effort": 2372.72,
+        "level": 0.13,
+        "bugs": 0.11,
+        "time": 132,
+        "intelligentContent": 42.18,
+        "number_operators": 12,
+        "number_operands": 57,
+        "number_operators_unique": 5,
+        "number_operands_unique": 19,
+        "cloc": 15,
+        "loc": 36,
+        "lloc": 21,
+        "mi": 95.19,
+        "mIwoC": 53.11,
+        "commentWeight": 42.07,
+        "kanDefect": 0.38,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 121.33,
+        "totalStructuralComplexity": 242,
+        "totalDataComplexity": 0.67,
+        "totalSystemComplexity": 242.67,
+        "package": "Elasticquent\\",
+        "pageRank": 0.22,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Elasticquent\\ElasticquentResultCollection": {
+        "name": "Elasticquent\\ElasticquentResultCollection",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMeta",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "totalHits",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "maxScore",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getShards",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "took",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "timedOut",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHits",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAggregations",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "paginate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 5,
+        "nbMethodsSetters": 0,
+        "wmc": 19,
+        "ccn": 10,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Collection",
+            "instance",
+            "Elasticquent\\ElasticquentPaginator",
+            "Elasticquent\\ElasticquentPaginator",
+            "Elasticquent\\ElasticquentPaginator"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Collection"
+        ],
+        "lcom": 1,
+        "length": 84,
+        "vocabulary": 21,
+        "volume": 368.95,
+        "difficulty": 7.41,
+        "effort": 2734.61,
+        "level": 0.13,
+        "bugs": 0.12,
+        "time": 152,
+        "intelligentContent": 49.78,
+        "number_operators": 21,
+        "number_operands": 63,
+        "number_operators_unique": 4,
+        "number_operands_unique": 17,
+        "cloc": 68,
+        "loc": 131,
+        "lloc": 63,
+        "mi": 86.35,
+        "mIwoC": 41.43,
+        "commentWeight": 44.92,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 1.57,
+        "relativeSystemComplexity": 26.57,
+        "totalStructuralComplexity": 250,
+        "totalDataComplexity": 15.67,
+        "totalSystemComplexity": 265.67,
+        "package": "Elasticquent\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Elasticquent\\ElasticquentClientTrait": {
+        "name": "Elasticquent\\ElasticquentClientTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "getElasticSearchClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Elasticsearch\\ClientBuilder",
+            "Elasticsearch\\Client"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 9,
+        "vocabulary": 6,
+        "volume": 23.26,
+        "difficulty": 2.5,
+        "effort": 58.16,
+        "level": 0.4,
+        "bugs": 0.01,
+        "time": 3,
+        "intelligentContent": 9.31,
+        "number_operators": 4,
+        "number_operands": 5,
+        "number_operators_unique": 3,
+        "number_operands_unique": 3,
+        "cloc": 7,
+        "loc": 20,
+        "lloc": 13,
+        "mi": 105.54,
+        "mIwoC": 65.86,
+        "commentWeight": 39.67,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 4.67,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0.67,
+        "totalSystemComplexity": 4.67,
+        "package": "Elasticquent\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Elasticquent\\ElasticquentSupport": {
+        "name": "Elasticquent\\ElasticquentSupport",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "isLaravel5",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 3,
+        "vocabulary": 3,
+        "volume": 4.75,
+        "difficulty": 0.5,
+        "effort": 2.38,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 9.51,
+        "number_operators": 1,
+        "number_operands": 2,
+        "number_operators_unique": 1,
+        "number_operands_unique": 2,
+        "cloc": 0,
+        "loc": 9,
+        "lloc": 9,
+        "mi": 74.31,
+        "mIwoC": 74.31,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Elasticquent\\",
+        "pageRank": 0.22,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.4.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/database": {
+                "name": "illuminate\/database",
+                "required": "~4.2|^5|^6",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/database\/zipball\/2d24be92d25a5adf68ccea30b5682ed2990fa330"
+            },
+            "illuminate\/config": {
+                "name": "illuminate\/config",
+                "required": "~4.2|^5|^6",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/config\/zipball\/918eb93b9328480ec977ebc69ff1761394ae033f"
+            },
+            "nesbot\/carbon": {
+                "name": "nesbot\/carbon",
+                "required": "~1.0|~2",
+                "installed": null,
+                "latest": "2.30.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/carbon.nesbot.com",
+                "zip": "https:\/\/api.github.com\/repos\/briannesbitt\/Carbon\/zipball\/912dff66d2690ca66abddb9b291a1df5f371d3b4"
+            },
+            "elasticsearch\/elasticsearch": {
+                "name": "elasticsearch\/elasticsearch",
+                "required": "~6.1",
+                "installed": null,
+                "latest": "7.6.1",
+                "license": [
+                    "Apache-2.0"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/elastic\/elasticsearch-php\/zipball\/d4f24bc43c2af60aece3df20eb689d322f9c8acf"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

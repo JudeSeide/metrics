@@ -1,0 +1,446 @@
+{
+    "Barryvdh\\DomPDF\\PDF": {
+        "name": "Barryvdh\\DomPDF\\PDF",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDomPDF",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPaper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWarnings",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadHTML",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "output",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "download",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stream",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEncryption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertEntities",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 16,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 26,
+        "ccn": 11,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Dompdf\\Dompdf",
+            "Illuminate\\Contracts\\Config\\Repository",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Illuminate\\Contracts\\View\\Factory",
+            "Dompdf\\Options",
+            "Illuminate\\Http\\Response",
+            "Illuminate\\Http\\Response",
+            "Exception",
+            "Exception",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 184,
+        "vocabulary": 52,
+        "volume": 1048.88,
+        "difficulty": 9.13,
+        "effort": 9576.74,
+        "level": 0.11,
+        "bugs": 0.35,
+        "time": 532,
+        "intelligentContent": 114.88,
+        "number_operators": 44,
+        "number_operands": 140,
+        "number_operators_unique": 6,
+        "number_operands_unique": 46,
+        "cloc": 95,
+        "loc": 217,
+        "lloc": 122,
+        "mi": 74.59,
+        "mIwoC": 31.86,
+        "commentWeight": 42.74,
+        "kanDefect": 1.26,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 0.96,
+        "relativeSystemComplexity": 225.96,
+        "totalStructuralComplexity": 3600,
+        "totalDataComplexity": 15.31,
+        "totalSystemComplexity": 3615.31,
+        "package": "laravel-dompdf\\",
+        "pageRank": 0.51,
+        "afferentCoupling": 1,
+        "efferentCoupling": 7,
+        "instability": 0.88,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "laravel-dompdf\\": {
+        "name": "laravel-dompdf\\",
+        "classes": [
+            "Barryvdh\\DomPDF\\PDF"
+        ],
+        "outgoing_class_dependencies": [
+            "Dompdf\\Dompdf",
+            "Illuminate\\Contracts\\Config\\Repository",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Illuminate\\Contracts\\View\\Factory",
+            "Dompdf\\Options",
+            "Illuminate\\Http\\Response",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "Dompdf\\",
+            "Illuminate\\Contracts\\Config\\",
+            "Illuminate\\Filesystem\\",
+            "Illuminate\\Contracts\\View\\",
+            "Illuminate\\Http\\",
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\DomPDF\\ServiceProvider"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\DomPDF\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.875,
+        "dependent_instabilities": [],
+        "distance": 0.08838834764831843,
+        "normalized_distance": 0.125,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\DomPDF\\ServiceProvider": {
+        "name": "Barryvdh\\DomPDF\\ServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isLumen",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Dompdf\\Dompdf",
+            "Barryvdh\\DomPDF\\PDF",
+            "Illuminate\\Support\\Str"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 84,
+        "vocabulary": 26,
+        "volume": 394.84,
+        "difficulty": 7.74,
+        "effort": 3055.29,
+        "level": 0.13,
+        "bugs": 0.13,
+        "time": 170,
+        "intelligentContent": 51.03,
+        "number_operators": 19,
+        "number_operands": 65,
+        "number_operators_unique": 5,
+        "number_operands_unique": 21,
+        "cloc": 21,
+        "loc": 69,
+        "lloc": 48,
+        "mi": 82.32,
+        "mIwoC": 44.61,
+        "commentWeight": 37.72,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.45,
+        "relativeSystemComplexity": 100.45,
+        "totalStructuralComplexity": 400,
+        "totalDataComplexity": 1.82,
+        "totalSystemComplexity": 401.82,
+        "package": "Barryvdh\\DomPDF\\",
+        "pageRank": 0.25,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\DomPDF\\": {
+        "name": "Barryvdh\\DomPDF\\",
+        "classes": [
+            "Barryvdh\\DomPDF\\ServiceProvider",
+            "Barryvdh\\DomPDF\\Facade"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Dompdf\\Dompdf",
+            "Barryvdh\\DomPDF\\PDF",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Facades\\Facade",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "Dompdf\\",
+            "laravel-dompdf\\",
+            "Illuminate\\Support\\Facades\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "laravel-dompdf\\": 0.875
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\DomPDF\\Facade": {
+        "name": "Barryvdh\\DomPDF\\Facade",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__callStatic",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 6,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade",
+            "static"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 2,
+        "length": 52,
+        "vocabulary": 12,
+        "volume": 186.42,
+        "difficulty": 7.17,
+        "effort": 1336,
+        "level": 0.14,
+        "bugs": 0.06,
+        "time": 74,
+        "intelligentContent": 26.01,
+        "number_operators": 9,
+        "number_operands": 43,
+        "number_operators_unique": 3,
+        "number_operands_unique": 9,
+        "cloc": 8,
+        "loc": 34,
+        "lloc": 26,
+        "mi": 86.56,
+        "mIwoC": 52.43,
+        "commentWeight": 34.14,
+        "kanDefect": 0.37,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 11,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 22,
+        "package": "Barryvdh\\DomPDF\\",
+        "pageRank": 0.25,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "^5.5|^6|^7",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "dompdf\/dompdf": {
+                "name": "dompdf\/dompdf",
+                "required": "^0.8",
+                "installed": null,
+                "latest": "0.8.5",
+                "license": [
+                    "LGPL-2.1"
+                ],
+                "homepage": "https:\/\/github.com\/dompdf\/dompdf",
+                "zip": "https:\/\/api.github.com\/repos\/dompdf\/dompdf\/zipball\/6782abfc090b132134cd6cea0ec6d76f0fce2c56"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

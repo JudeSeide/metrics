@@ -1,0 +1,47 @@
+{
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "wordplate\/framework": {
+                "name": "wordplate\/framework",
+                "required": "^8.0",
+                "installed": null,
+                "latest": "8.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/wordplate\/framework\/zipball\/c188c964db210bd905db3e134762bf3014ef49aa"
+            },
+            "wordplate\/plate": {
+                "name": "wordplate\/plate",
+                "required": "^6.0",
+                "installed": null,
+                "latest": "6.0.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/wordplate\/plate\/zipball\/9e9ff9ba2b08dda1735cfc5d34943a12105153b3"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

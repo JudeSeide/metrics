@@ -1,0 +1,2140 @@
+{
+    "Spatie\\Crawler\\Handlers\\CrawlRequestFulfilled": {
+        "name": "Spatie\\Crawler\\Handlers\\CrawlRequestFulfilled",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__invoke",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBaseUrl",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleCrawled",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertBodyToString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBodyAfterExecutingJavaScript",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 7,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\LinkAdder",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Spatie\\Crawler\\CrawlerRobots",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Spatie\\Crawler\\CrawlUrl",
+            "GuzzleHttp\\Psr7\\Uri",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Psr\\Http\\Message\\StreamInterface",
+            "Psr\\Http\\Message\\UriInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 97,
+        "vocabulary": 22,
+        "volume": 432.56,
+        "difficulty": 10.29,
+        "effort": 4452.87,
+        "level": 0.1,
+        "bugs": 0.14,
+        "time": 247,
+        "intelligentContent": 42.02,
+        "number_operators": 27,
+        "number_operands": 70,
+        "number_operators_unique": 5,
+        "number_operands_unique": 17,
+        "cloc": 2,
+        "loc": 61,
+        "lloc": 59,
+        "mi": 55.81,
+        "mIwoC": 41.97,
+        "commentWeight": 13.84,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 625,
+        "relativeDataComplexity": 0.29,
+        "relativeSystemComplexity": 625.29,
+        "totalStructuralComplexity": 3750,
+        "totalDataComplexity": 1.77,
+        "totalSystemComplexity": 3751.77,
+        "package": "Spatie\\Crawler\\Handlers\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\Handlers\\": {
+        "name": "Spatie\\Crawler\\Handlers\\",
+        "classes": [
+            "Spatie\\Crawler\\Handlers\\CrawlRequestFulfilled",
+            "Spatie\\Crawler\\Handlers\\CrawlRequestFailed"
+        ],
+        "outgoing_class_dependencies": [
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\LinkAdder",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Spatie\\Crawler\\CrawlerRobots",
+            "Spatie\\Crawler\\CrawlUrl",
+            "GuzzleHttp\\Psr7\\Uri",
+            "Psr\\Http\\Message\\StreamInterface",
+            "Psr\\Http\\Message\\UriInterface",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "Spatie\\Crawler\\",
+            "Psr\\Http\\Message\\",
+            "GuzzleHttp\\Psr7\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Spatie\\Crawler\\": 0.8076923076923077
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Crawler\\Handlers\\CrawlRequestFailed": {
+        "name": "Spatie\\Crawler\\Handlers\\CrawlRequestFailed",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__invoke",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Spatie\\Crawler\\Crawler",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 16,
+        "vocabulary": 7,
+        "volume": 44.92,
+        "difficulty": 2.6,
+        "effort": 116.79,
+        "level": 0.38,
+        "bugs": 0.01,
+        "time": 6,
+        "intelligentContent": 17.28,
+        "number_operators": 3,
+        "number_operands": 13,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 1,
+        "loc": 18,
+        "lloc": 17,
+        "mi": 79.17,
+        "mIwoC": 61.32,
+        "commentWeight": 17.85,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 25.25,
+        "totalStructuralComplexity": 50,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 50.5,
+        "package": "Spatie\\Crawler\\Handlers\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\Exception\\InvalidCrawlRequestHandler": {
+        "name": "Spatie\\Crawler\\Exception\\InvalidCrawlRequestHandler",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "doesNotExtendBaseClass",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "RuntimeException",
+            "static"
+        ],
+        "parents": [
+            "RuntimeException"
+        ],
+        "lcom": 1,
+        "length": 9,
+        "vocabulary": 7,
+        "volume": 25.27,
+        "difficulty": 0.67,
+        "effort": 16.84,
+        "level": 1.5,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 37.9,
+        "number_operators": 1,
+        "number_operands": 8,
+        "number_operators_unique": 1,
+        "number_operands_unique": 6,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 70.34,
+        "mIwoC": 70.34,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Spatie\\Crawler\\Exception\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\Exception\\": {
+        "name": "Spatie\\Crawler\\Exception\\",
+        "classes": [
+            "Spatie\\Crawler\\Exception\\InvalidCrawlRequestHandler",
+            "Spatie\\Crawler\\Exception\\InvalidUrl",
+            "Spatie\\Crawler\\Exception\\UrlNotFoundByIndex"
+        ],
+        "outgoing_class_dependencies": [
+            "RuntimeException",
+            "static",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\Crawler\\CrawlQueue\\ArrayCrawlQueue",
+            "Spatie\\Crawler\\CrawlQueue\\CollectionCrawlQueue",
+            "Spatie\\Crawler\\Crawler"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\Crawler\\CrawlQueue\\",
+            "Spatie\\Crawler\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.5,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Crawler\\Exception\\InvalidUrl": {
+        "name": "Spatie\\Crawler\\Exception\\InvalidUrl",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "unexpectedType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Exception",
+            "static"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 1,
+        "length": 19,
+        "vocabulary": 11,
+        "volume": 65.73,
+        "difficulty": 1.67,
+        "effort": 109.55,
+        "level": 0.6,
+        "bugs": 0.02,
+        "time": 6,
+        "intelligentContent": 39.44,
+        "number_operators": 4,
+        "number_operands": 15,
+        "number_operators_unique": 2,
+        "number_operands_unique": 9,
+        "cloc": 0,
+        "loc": 11,
+        "lloc": 11,
+        "mi": 64.29,
+        "mIwoC": 64.29,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Spatie\\Crawler\\Exception\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\Exception\\UrlNotFoundByIndex": {
+        "name": "Spatie\\Crawler\\Exception\\UrlNotFoundByIndex",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "RuntimeException"
+        ],
+        "parents": [
+            "RuntimeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Spatie\\Crawler\\Exception\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\LinkAdder": {
+        "name": "Spatie\\Crawler\\LinkAdder",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFromHtml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractLinksFromHtml",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasCrawlableScheme",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "normalizeUrl",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldCrawl",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 7,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Spatie\\Crawler\\Crawler",
+            "Psr\\Http\\Message\\UriInterface",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Psr\\Http\\Message\\UriInterface",
+            "Symfony\\Component\\DomCrawler\\Crawler",
+            "GuzzleHttp\\Psr7\\Uri",
+            "Psr\\Http\\Message\\UriInterface",
+            "Psr\\Http\\Message\\UriInterface",
+            "Psr\\Http\\Message\\UriInterface",
+            "Tree\\Node\\Node"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 96,
+        "vocabulary": 27,
+        "volume": 456.47,
+        "difficulty": 11.55,
+        "effort": 5272.22,
+        "level": 0.09,
+        "bugs": 0.15,
+        "time": 293,
+        "intelligentContent": 39.52,
+        "number_operators": 30,
+        "number_operands": 66,
+        "number_operators_unique": 7,
+        "number_operands_unique": 20,
+        "cloc": 7,
+        "loc": 70,
+        "lloc": 63,
+        "mi": 64.71,
+        "mIwoC": 41.19,
+        "commentWeight": 23.53,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 729,
+        "relativeDataComplexity": 0.58,
+        "relativeSystemComplexity": 729.58,
+        "totalStructuralComplexity": 4374,
+        "totalDataComplexity": 3.5,
+        "totalSystemComplexity": 4377.5,
+        "package": "Spatie\\Crawler\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\": {
+        "name": "Spatie\\Crawler\\",
+        "classes": [
+            "Spatie\\Crawler\\LinkAdder",
+            "Spatie\\Crawler\\CrawlInternalUrls",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\CrawlProfile",
+            "Spatie\\Crawler\\CrawlerRobots",
+            "Spatie\\Crawler\\CrawlObserver",
+            "Spatie\\Crawler\\CrawlSubdomains",
+            "Spatie\\Crawler\\CrawlObserverCollection",
+            "Spatie\\Crawler\\CrawlAllUrls",
+            "Spatie\\Crawler\\Crawler"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\Crawler\\Handlers\\CrawlRequestFulfilled",
+            "Spatie\\Crawler\\Handlers\\CrawlRequestFailed",
+            "Spatie\\Crawler\\CrawlQueue\\ArrayCrawlQueue",
+            "Spatie\\Crawler\\CrawlQueue\\CollectionCrawlQueue",
+            "Spatie\\Crawler\\CrawlQueue\\CrawlQueue"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\Crawler\\Handlers\\",
+            "Spatie\\Crawler\\CrawlQueue\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Psr\\Http\\Message\\UriInterface",
+            "Symfony\\Component\\DomCrawler\\Crawler",
+            "GuzzleHttp\\Psr7\\Uri",
+            "Tree\\Node\\Node",
+            "static",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Spatie\\Robots\\RobotsHeaders",
+            "Spatie\\Robots\\RobotsMeta",
+            "GuzzleHttp\\Exception\\RequestException",
+            "ArrayAccess",
+            "Iterator",
+            "GuzzleHttp\\Client",
+            "Spatie\\Crawler\\CrawlQueue\\ArrayCrawlQueue",
+            "Spatie\\Robots\\RobotsTxt",
+            "Spatie\\Crawler\\CrawlQueue\\CrawlQueue",
+            "Spatie\\Crawler\\Exception\\InvalidCrawlRequestHandler",
+            "Spatie\\Browsershot\\Browsershot",
+            "this",
+            "GuzzleHttp\\Pool",
+            "Generator",
+            "GuzzleHttp\\Psr7\\Request"
+        ],
+        "outgoing_package_dependencies": [
+            "Psr\\Http\\Message\\",
+            "Symfony\\Component\\DomCrawler\\",
+            "GuzzleHttp\\Psr7\\",
+            "Tree\\Node\\",
+            "\\",
+            "Spatie\\Robots\\",
+            "GuzzleHttp\\Exception\\",
+            "GuzzleHttp\\",
+            "Spatie\\Crawler\\CrawlQueue\\",
+            "Spatie\\Crawler\\Exception\\",
+            "Spatie\\Browsershot\\"
+        ],
+        "abstraction": 0.2,
+        "instability": 0.8076923076923077,
+        "dependent_instabilities": {
+            "Spatie\\Crawler\\CrawlQueue\\": 0.75,
+            "Spatie\\Crawler\\Exception\\": 0.5
+        },
+        "distance": 0.0054392829322041925,
+        "normalized_distance": 0.007692307692307665,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Crawler\\CrawlInternalUrls": {
+        "name": "Spatie\\Crawler\\CrawlInternalUrls",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldCrawl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Spatie\\Crawler\\CrawlProfile",
+            "GuzzleHttp\\Psr7\\Uri",
+            "Psr\\Http\\Message\\UriInterface"
+        ],
+        "parents": [
+            "Spatie\\Crawler\\CrawlProfile"
+        ],
+        "lcom": 1,
+        "length": 14,
+        "vocabulary": 7,
+        "volume": 39.3,
+        "difficulty": 6,
+        "effort": 235.82,
+        "level": 0.17,
+        "bugs": 0.01,
+        "time": 13,
+        "intelligentContent": 6.55,
+        "number_operators": 5,
+        "number_operands": 9,
+        "number_operators_unique": 4,
+        "number_operands_unique": 3,
+        "cloc": 0,
+        "loc": 16,
+        "lloc": 16,
+        "mi": 62.3,
+        "mIwoC": 62.3,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 4,
+        "package": "Spatie\\Crawler\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\CrawlUrl": {
+        "name": "Spatie\\Crawler\\CrawlUrl",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setId",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Psr\\Http\\Message\\UriInterface",
+            "static",
+            "Psr\\Http\\Message\\UriInterface"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 28,
+        "vocabulary": 9,
+        "volume": 88.76,
+        "difficulty": 8,
+        "effort": 710.06,
+        "level": 0.13,
+        "bugs": 0.03,
+        "time": 39,
+        "intelligentContent": 11.09,
+        "number_operators": 8,
+        "number_operands": 20,
+        "number_operators_unique": 4,
+        "number_operands_unique": 5,
+        "cloc": 6,
+        "loc": 34,
+        "lloc": 28,
+        "mi": 84.81,
+        "mIwoC": 54.52,
+        "commentWeight": 30.29,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.75,
+        "relativeSystemComplexity": 2.75,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 11,
+        "package": "Spatie\\Crawler\\",
+        "pageRank": 0.27,
+        "afferentCoupling": 7,
+        "efferentCoupling": 2,
+        "instability": 0.22,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\CrawlProfile": {
+        "name": "Spatie\\Crawler\\CrawlProfile",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "shouldCrawl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Psr\\Http\\Message\\UriInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 1,
+        "vocabulary": 1,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 1,
+        "number_operators_unique": 0,
+        "number_operands_unique": 1,
+        "cloc": 7,
+        "loc": 12,
+        "lloc": 5,
+        "mi": 217.29,
+        "mIwoC": 171,
+        "commentWeight": 46.29,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Spatie\\Crawler\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 4,
+        "efferentCoupling": 1,
+        "instability": 0.2,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\CrawlerRobots": {
+        "name": "Spatie\\Crawler\\CrawlerRobots",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mayIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mayFollow",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 7,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Spatie\\Robots\\RobotsHeaders",
+            "Spatie\\Robots\\RobotsMeta"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 32,
+        "vocabulary": 7,
+        "volume": 89.84,
+        "difficulty": 5.63,
+        "effort": 505.32,
+        "level": 0.18,
+        "bugs": 0.03,
+        "time": 28,
+        "intelligentContent": 15.97,
+        "number_operators": 17,
+        "number_operands": 15,
+        "number_operators_unique": 3,
+        "number_operands_unique": 4,
+        "cloc": 3,
+        "loc": 42,
+        "lloc": 39,
+        "mi": 70.79,
+        "mIwoC": 50.67,
+        "commentWeight": 20.12,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 1.24,
+        "relativeSystemComplexity": 37.24,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 3.71,
+        "totalSystemComplexity": 111.71,
+        "package": "Spatie\\Crawler\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\CrawlObserver": {
+        "name": "Spatie\\Crawler\\CrawlObserver",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "willCrawl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "crawled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "crawlFailed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finishedCrawling",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Psr\\Http\\Message\\UriInterface",
+            "Psr\\Http\\Message\\UriInterface",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Psr\\Http\\Message\\UriInterface",
+            "GuzzleHttp\\Exception\\RequestException"
+        ],
+        "parents": [],
+        "lcom": 4,
+        "length": 7,
+        "vocabulary": 4,
+        "volume": 14,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.14,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 16,
+        "number_operators": 0,
+        "number_operands": 7,
+        "number_operators_unique": 0,
+        "number_operands_unique": 4,
+        "cloc": 22,
+        "loc": 34,
+        "lloc": 12,
+        "mi": 115.69,
+        "mIwoC": 68.3,
+        "commentWeight": 47.39,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.75,
+        "relativeSystemComplexity": 1.75,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 7,
+        "package": "Spatie\\Crawler\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 2,
+        "efferentCoupling": 3,
+        "instability": 0.6,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\CrawlSubdomains": {
+        "name": "Spatie\\Crawler\\CrawlSubdomains",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldCrawl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSubdomainOfHost",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Spatie\\Crawler\\CrawlProfile",
+            "GuzzleHttp\\Psr7\\Uri",
+            "Psr\\Http\\Message\\UriInterface",
+            "Psr\\Http\\Message\\UriInterface"
+        ],
+        "parents": [
+            "Spatie\\Crawler\\CrawlProfile"
+        ],
+        "lcom": 1,
+        "length": 19,
+        "vocabulary": 7,
+        "volume": 53.34,
+        "difficulty": 8.67,
+        "effort": 462.28,
+        "level": 0.12,
+        "bugs": 0.02,
+        "time": 26,
+        "intelligentContent": 6.15,
+        "number_operators": 6,
+        "number_operands": 13,
+        "number_operators_unique": 4,
+        "number_operands_unique": 3,
+        "cloc": 0,
+        "loc": 20,
+        "lloc": 20,
+        "mi": 59.26,
+        "mIwoC": 59.26,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 15,
+        "package": "Spatie\\Crawler\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\CrawlObserverCollection": {
+        "name": "Spatie\\Crawler\\CrawlObserverCollection",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addObserver",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "crawled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "crawlFailed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "current",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetGet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetSet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetUnset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "next",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "key",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "valid",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rewind",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 17,
+        "ccn": 5,
+        "ccnMethodMax": 2,
+        "externals": [
+            "ArrayAccess",
+            "Iterator",
+            "Spatie\\Crawler\\CrawlObserver",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Spatie\\Crawler\\CrawlUrl",
+            "GuzzleHttp\\Exception\\RequestException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 63,
+        "vocabulary": 13,
+        "volume": 233.13,
+        "difficulty": 7.65,
+        "effort": 1783.43,
+        "level": 0.13,
+        "bugs": 0.08,
+        "time": 99,
+        "intelligentContent": 30.47,
+        "number_operators": 12,
+        "number_operands": 51,
+        "number_operators_unique": 3,
+        "number_operands_unique": 10,
+        "cloc": 2,
+        "loc": 69,
+        "lloc": 67,
+        "mi": 55.95,
+        "mIwoC": 42.92,
+        "commentWeight": 13.04,
+        "kanDefect": 0.68,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.95,
+        "relativeSystemComplexity": 5.95,
+        "totalStructuralComplexity": 52,
+        "totalDataComplexity": 25.33,
+        "totalSystemComplexity": 77.33,
+        "package": "Spatie\\Crawler\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\CrawlQueue\\ArrayCrawlQueue": {
+        "name": "Spatie\\Crawler\\CrawlQueue\\ArrayCrawlQueue",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasPendingUrls",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUrlById",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasAlreadyBeenProcessed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "markAsProcessed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFirstPendingUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 8,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Spatie\\Crawler\\CrawlQueue\\CrawlQueue",
+            "Spatie\\Crawler\\CrawlQueue\\CrawlQueue",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\Exception\\UrlNotFoundByIndex",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\Exception\\InvalidUrl"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 76,
+        "vocabulary": 14,
+        "volume": 289.36,
+        "difficulty": 7.5,
+        "effort": 2170.19,
+        "level": 0.13,
+        "bugs": 0.1,
+        "time": 121,
+        "intelligentContent": 38.58,
+        "number_operators": 21,
+        "number_operands": 55,
+        "number_operators_unique": 3,
+        "number_operands_unique": 11,
+        "cloc": 15,
+        "loc": 76,
+        "lloc": 61,
+        "mi": 74.5,
+        "mIwoC": 42.74,
+        "commentWeight": 31.76,
+        "kanDefect": 0.73,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 3.24,
+        "relativeSystemComplexity": 7.24,
+        "totalStructuralComplexity": 28,
+        "totalDataComplexity": 22.67,
+        "totalSystemComplexity": 50.67,
+        "package": "Spatie\\Crawler\\CrawlQueue\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\CrawlQueue\\": {
+        "name": "Spatie\\Crawler\\CrawlQueue\\",
+        "classes": [
+            "Spatie\\Crawler\\CrawlQueue\\ArrayCrawlQueue",
+            "Spatie\\Crawler\\CrawlQueue\\CollectionCrawlQueue",
+            "Spatie\\Crawler\\CrawlQueue\\CrawlQueue"
+        ],
+        "outgoing_class_dependencies": [
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\Exception\\UrlNotFoundByIndex",
+            "Spatie\\Crawler\\Exception\\InvalidUrl"
+        ],
+        "outgoing_package_dependencies": [
+            "Spatie\\Crawler\\",
+            "Spatie\\Crawler\\Exception\\"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\Crawler\\Crawler"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\Crawler\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.75,
+        "dependent_instabilities": {
+            "Spatie\\Crawler\\": 0.8076923076923077,
+            "Spatie\\Crawler\\Exception\\": 0.5
+        },
+        "distance": 0.058925565098878904,
+        "normalized_distance": 0.08333333333333326,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Crawler\\CrawlQueue\\CollectionCrawlQueue": {
+        "name": "Spatie\\Crawler\\CrawlQueue\\CollectionCrawlQueue",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUrls",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPendingUrls",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasPendingUrls",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUrlById",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasAlreadyBeenProcessed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "markAsProcessed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFirstPendingUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "contains",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 8,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Spatie\\Crawler\\CrawlQueue\\CrawlQueue",
+            "Spatie\\Crawler\\CrawlQueue\\CrawlQueue",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\Exception\\UrlNotFoundByIndex",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\CrawlUrl"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 83,
+        "vocabulary": 17,
+        "volume": 339.26,
+        "difficulty": 12.08,
+        "effort": 4099.38,
+        "level": 0.08,
+        "bugs": 0.11,
+        "time": 228,
+        "intelligentContent": 28.08,
+        "number_operators": 25,
+        "number_operands": 58,
+        "number_operators_unique": 5,
+        "number_operands_unique": 12,
+        "cloc": 22,
+        "loc": 95,
+        "lloc": 73,
+        "mi": 74.48,
+        "mIwoC": 40.56,
+        "commentWeight": 33.92,
+        "kanDefect": 0.73,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 1.14,
+        "relativeSystemComplexity": 122.14,
+        "totalStructuralComplexity": 1331,
+        "totalDataComplexity": 12.5,
+        "totalSystemComplexity": 1343.5,
+        "package": "Spatie\\Crawler\\CrawlQueue\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\CrawlQueue\\CrawlQueue": {
+        "name": "Spatie\\Crawler\\CrawlQueue\\CrawlQueue",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasPendingUrls",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUrlById",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFirstPendingUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasAlreadyBeenProcessed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "markAsProcessed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Spatie\\Crawler\\CrawlUrl"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Spatie\\Crawler\\CrawlQueue\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 3,
+        "efferentCoupling": 1,
+        "instability": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Spatie\\Crawler\\CrawlAllUrls": {
+        "name": "Spatie\\Crawler\\CrawlAllUrls",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "shouldCrawl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Spatie\\Crawler\\CrawlProfile",
+            "Psr\\Http\\Message\\UriInterface"
+        ],
+        "parents": [
+            "Spatie\\Crawler\\CrawlProfile"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 78.06,
+        "mIwoC": 78.06,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Spatie\\Crawler\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Crawler\\Crawler": {
+        "name": "Spatie\\Crawler\\Crawler",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConcurrency",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMaximumResponseSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMaximumResponseSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMaximumCrawlCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMaximumCrawlCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCrawlerUrlCount",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMaximumDepth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMaximumDepth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDelayBetweenRequests",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDelayBetweenRequests",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "ignoreRobots",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "respectRobots",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mustRespectRobots",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRobotsTxt",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCrawlQueue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCrawlQueue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeJavaScript",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doNotExecuteJavaScript",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mayExecuteJavascript",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCrawlObserver",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCrawlObservers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCrawlObserver",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCrawlObservers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCrawlProfile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCrawlProfile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCrawlFulfilledHandlerClass",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCrawlFailedHandlerClass",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBrowsershot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUserAgent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUserAgent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBrowsershot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBaseUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "startCrawling",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addToDepthTree",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "startCrawlingQueue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "endsWith",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createRobotsTxt",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCrawlRequests",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addToCrawlQueue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "maximumCrawlCountReached",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 42,
+        "nbMethods": 38,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 35,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 0,
+        "wmc": 68,
+        "ccn": 27,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Spatie\\Crawler\\Crawler",
+            "GuzzleHttp\\Client",
+            "static",
+            "GuzzleHttp\\Client",
+            "Spatie\\Crawler\\CrawlAllUrls",
+            "Spatie\\Crawler\\CrawlQueue\\ArrayCrawlQueue",
+            "Spatie\\Crawler\\CrawlObserverCollection",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Robots\\RobotsTxt",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\CrawlQueue\\CrawlQueue",
+            "Spatie\\Crawler\\CrawlQueue\\CrawlQueue",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\CrawlObserverCollection",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\CrawlObserver",
+            "Spatie\\Crawler\\CrawlObserverCollection",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\CrawlProfile",
+            "Spatie\\Crawler\\CrawlProfile",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\Exception\\InvalidCrawlRequestHandler",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\Exception\\InvalidCrawlRequestHandler",
+            "Spatie\\Browsershot\\Browsershot",
+            "Spatie\\Crawler\\Crawler",
+            "GuzzleHttp\\Client",
+            "Spatie\\Browsershot\\Browsershot",
+            "Spatie\\Browsershot\\Browsershot",
+            "Psr\\Http\\Message\\UriInterface",
+            "GuzzleHttp\\Psr7\\Uri",
+            "Spatie\\Crawler\\CrawlUrl",
+            "Tree\\Node\\Node",
+            "Psr\\Http\\Message\\UriInterface",
+            "Psr\\Http\\Message\\UriInterface",
+            "Tree\\Node\\Node",
+            "Tree\\Node\\Node",
+            "Tree\\Node\\Node",
+            "this",
+            "this",
+            "GuzzleHttp\\Pool",
+            "Spatie\\Robots\\RobotsTxt",
+            "Psr\\Http\\Message\\UriInterface",
+            "Spatie\\Robots\\RobotsTxt",
+            "Generator",
+            "GuzzleHttp\\Psr7\\Request",
+            "Spatie\\Crawler\\Crawler",
+            "Spatie\\Crawler\\CrawlUrl"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 387,
+        "vocabulary": 59,
+        "volume": 2276.58,
+        "difficulty": 26.84,
+        "effort": 61096.05,
+        "level": 0.04,
+        "bugs": 0.76,
+        "time": 3394,
+        "intelligentContent": 84.83,
+        "number_operators": 124,
+        "number_operands": 263,
+        "number_operators_unique": 10,
+        "number_operands_unique": 49,
+        "cloc": 38,
+        "loc": 343,
+        "lloc": 305,
+        "mi": 43.32,
+        "mIwoC": 18.67,
+        "commentWeight": 24.65,
+        "kanDefect": 2.72,
+        "relativeStructuralComplexity": 1296,
+        "relativeDataComplexity": 1.21,
+        "relativeSystemComplexity": 1297.21,
+        "totalStructuralComplexity": 54432,
+        "totalDataComplexity": 50.62,
+        "totalSystemComplexity": 54482.62,
+        "package": "Spatie\\Crawler\\",
+        "pageRank": 0.19,
+        "afferentCoupling": 5,
+        "efferentCoupling": 21,
+        "instability": 0.81,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.21,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.1",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "guzzlehttp\/guzzle": {
+                "name": "guzzlehttp\/guzzle",
+                "required": "^6.3 || ^7.0",
+                "installed": null,
+                "latest": "6.5.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/guzzlephp.org\/",
+                "zip": "https:\/\/api.github.com\/repos\/guzzle\/guzzle\/zipball\/43ece0e75098b7ecd8d13918293029e555a50f82"
+            },
+            "guzzlehttp\/psr7": {
+                "name": "guzzlehttp\/psr7",
+                "required": "^1.4",
+                "installed": null,
+                "latest": "1.6.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/guzzle\/psr7\/zipball\/239400de7a173fe9901b9ac7c06497751f00727a"
+            },
+            "nicmart\/tree": {
+                "name": "nicmart\/tree",
+                "required": "^0.2.7",
+                "installed": null,
+                "latest": "0.2.7",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/nicmart\/Tree\/zipball\/0616b54bb49938e1a816141d7943db48ebf76938"
+            },
+            "spatie\/browsershot": {
+                "name": "spatie\/browsershot",
+                "required": "^3.14",
+                "installed": null,
+                "latest": "3.34.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/spatie\/browsershot",
+                "zip": "https:\/\/api.github.com\/repos\/spatie\/browsershot\/zipball\/483f62d03ea8cfc20091b9c2db1ed3f597d659f1"
+            },
+            "spatie\/robots-txt": {
+                "name": "spatie\/robots-txt",
+                "required": "^1.0.1",
+                "installed": null,
+                "latest": "1.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/spatie\/robots-txt",
+                "zip": "https:\/\/api.github.com\/repos\/spatie\/robots-txt\/zipball\/dbd8d2048114f81813a57d21da594dbde77fdac7"
+            },
+            "symfony\/dom-crawler": {
+                "name": "symfony\/dom-crawler",
+                "required": "^4.0 || ^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/dom-crawler\/zipball\/4368bdd61b83af365b8f23e9616d2a2ed52cbe7c"
+            },
+            "tightenco\/collect": {
+                "name": "tightenco\/collect",
+                "required": "^5.6|^6.0",
+                "installed": null,
+                "latest": "6.17.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/tightenco\/collect\/zipball\/bc554bfb79fc02b4e6e1dd463a7fa8470119e9ab"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

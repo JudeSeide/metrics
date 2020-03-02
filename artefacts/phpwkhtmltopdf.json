@@ -1,0 +1,429 @@
+{
+    "mikehaertl\\wkhtmlto\\Image": {
+        "name": "mikehaertl\\wkhtmlto\\Image",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "saveAs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "send",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getError",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getImageFilename",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMimeType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createImage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 36,
+        "ccn": 26,
+        "ccnMethodMax": 6,
+        "externals": [
+            "mikehaertl\\tmp\\File",
+            "mikehaertl\\wkhtmlto\\Command",
+            "mikehaertl\\tmp\\File",
+            "Exception"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 170,
+        "vocabulary": 37,
+        "volume": 885.61,
+        "difficulty": 12.95,
+        "effort": 11468.61,
+        "level": 0.08,
+        "bugs": 0.3,
+        "time": 637,
+        "intelligentContent": 68.39,
+        "number_operators": 59,
+        "number_operands": 111,
+        "number_operators_unique": 7,
+        "number_operands_unique": 30,
+        "cloc": 106,
+        "loc": 229,
+        "lloc": 123,
+        "mi": 73.75,
+        "mIwoC": 30.28,
+        "commentWeight": 43.47,
+        "kanDefect": 1.29,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 1.32,
+        "relativeSystemComplexity": 170.32,
+        "totalStructuralComplexity": 1859,
+        "totalDataComplexity": 14.57,
+        "totalSystemComplexity": 1873.57,
+        "package": "mikehaertl\\wkhtmlto\\",
+        "pageRank": 0.2,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "mikehaertl\\wkhtmlto\\": {
+        "name": "mikehaertl\\wkhtmlto\\",
+        "classes": [
+            "mikehaertl\\wkhtmlto\\Image",
+            "mikehaertl\\wkhtmlto\\Command",
+            "mikehaertl\\wkhtmlto\\Pdf"
+        ],
+        "outgoing_class_dependencies": [
+            "mikehaertl\\tmp\\File",
+            "Exception",
+            "mikehaertl\\shellcommand\\Command"
+        ],
+        "outgoing_package_dependencies": [
+            "mikehaertl\\tmp\\",
+            "\\",
+            "mikehaertl\\shellcommand\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "mikehaertl\\wkhtmlto\\Command": {
+        "name": "mikehaertl\\wkhtmlto\\Command",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "addArgs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExecCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 9,
+        "ccnMethodMax": 8,
+        "externals": [
+            "mikehaertl\\shellcommand\\Command"
+        ],
+        "parents": [
+            "mikehaertl\\shellcommand\\Command"
+        ],
+        "lcom": 2,
+        "length": 68,
+        "vocabulary": 19,
+        "volume": 288.86,
+        "difficulty": 7.47,
+        "effort": 2156.81,
+        "level": 0.13,
+        "bugs": 0.1,
+        "time": 120,
+        "intelligentContent": 38.69,
+        "number_operators": 12,
+        "number_operands": 56,
+        "number_operators_unique": 4,
+        "number_operands_unique": 15,
+        "cloc": 57,
+        "loc": 98,
+        "lloc": 41,
+        "mi": 92.64,
+        "mIwoC": 46.38,
+        "commentWeight": 46.26,
+        "kanDefect": 0.96,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 4.83,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 1.67,
+        "totalSystemComplexity": 9.67,
+        "package": "mikehaertl\\wkhtmlto\\",
+        "pageRank": 0.6,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "mikehaertl\\wkhtmlto\\Pdf": {
+        "name": "mikehaertl\\wkhtmlto\\Pdf",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addPage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCover",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addToc",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "saveAs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "send",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getError",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPdfFilename",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createPdf",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "ensureUrlOrFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "ensureUrlOrFileOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 13,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 53,
+        "ccn": 40,
+        "ccnMethodMax": 11,
+        "externals": [
+            "mikehaertl\\wkhtmlto\\Command",
+            "mikehaertl\\tmp\\File",
+            "mikehaertl\\tmp\\File"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 285,
+        "vocabulary": 49,
+        "volume": 1600.19,
+        "difficulty": 21.83,
+        "effort": 34924.2,
+        "level": 0.05,
+        "bugs": 0.53,
+        "time": 1940,
+        "intelligentContent": 73.32,
+        "number_operators": 91,
+        "number_operands": 194,
+        "number_operators_unique": 9,
+        "number_operands_unique": 40,
+        "cloc": 152,
+        "loc": 325,
+        "lloc": 173,
+        "mi": 66.97,
+        "mIwoC": 23.36,
+        "commentWeight": 43.6,
+        "kanDefect": 2.1,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 1.54,
+        "relativeSystemComplexity": 197.54,
+        "totalStructuralComplexity": 2744,
+        "totalDataComplexity": 21.53,
+        "totalSystemComplexity": 2765.53,
+        "package": "mikehaertl\\wkhtmlto\\",
+        "pageRank": 0.2,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.0.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "mikehaertl\/php-tmpfile": {
+                "name": "mikehaertl\/php-tmpfile",
+                "required": "^1.1.0",
+                "installed": null,
+                "latest": "1.1.3",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/mikehaertl\/php-tmpfile\/zipball\/e733207ea8ce32f0a40a6a5e1363a98a3bd31d4e"
+            },
+            "mikehaertl\/php-shellcommand": {
+                "name": "mikehaertl\/php-shellcommand",
+                "required": "^1.5.0",
+                "installed": null,
+                "latest": "1.6.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/mikehaertl\/php-shellcommand\/zipball\/8d98d8536e05abafe76a491da87296d824939076"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

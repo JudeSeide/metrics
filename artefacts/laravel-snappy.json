@@ -1,0 +1,1179 @@
+{
+    "Barryvdh\\Snappy\\LumenServiceProvider": {
+        "name": "Barryvdh\\Snappy\\LumenServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Barryvdh\\Snappy\\IlluminateSnappyPdf",
+            "Barryvdh\\Snappy\\PdfWrapper",
+            "Barryvdh\\Snappy\\IlluminateSnappyImage",
+            "Barryvdh\\Snappy\\ImageWrapper"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 117,
+        "vocabulary": 36,
+        "volume": 604.88,
+        "difficulty": 7.58,
+        "effort": 4585.39,
+        "level": 0.13,
+        "bugs": 0.2,
+        "time": 255,
+        "intelligentContent": 79.79,
+        "number_operators": 23,
+        "number_operands": 94,
+        "number_operators_unique": 5,
+        "number_operands_unique": 31,
+        "cloc": 15,
+        "loc": 67,
+        "lloc": 52,
+        "mi": 75.87,
+        "mIwoC": 42.42,
+        "commentWeight": 33.46,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.71,
+        "relativeSystemComplexity": 36.71,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 2.14,
+        "totalSystemComplexity": 110.14,
+        "package": "Barryvdh\\Snappy\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Snappy\\": {
+        "name": "Barryvdh\\Snappy\\",
+        "classes": [
+            "Barryvdh\\Snappy\\LumenServiceProvider",
+            "Barryvdh\\Snappy\\PdfFaker",
+            "Barryvdh\\Snappy\\IlluminateSnappyPdf",
+            "Barryvdh\\Snappy\\ServiceProvider",
+            "Barryvdh\\Snappy\\IlluminateSnappyImage"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Barryvdh\\Snappy\\PdfWrapper",
+            "Barryvdh\\Snappy\\ImageWrapper",
+            "Illuminate\\Support\\Facades\\View",
+            "PHPUnit\\Framework\\Assert",
+            "Knp\\Snappy\\Pdf",
+            "Illuminate\\Filesystem\\Filesystem",
+            "Knp\\Snappy\\Image"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "laravel-snappy\\",
+            "Illuminate\\Support\\Facades\\",
+            "PHPUnit\\Framework\\",
+            "Knp\\Snappy\\",
+            "Illuminate\\Filesystem\\"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\Snappy\\Facades\\SnappyPdf"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\Snappy\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8888888888888888,
+        "dependent_instabilities": {
+            "laravel-snappy\\": 0.6666666666666666
+        },
+        "distance": 0.07856742013183865,
+        "normalized_distance": 0.11111111111111116,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Snappy\\PdfFaker": {
+        "name": "Barryvdh\\Snappy\\PdfFaker",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "loadView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "ensureResponseHasView",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertViewIs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertViewHas",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertViewHasAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertViewMissing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertSee",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertSeeText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertDontSee",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertDontSeeText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertFileNameIs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "output",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 13,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 8,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Barryvdh\\Snappy\\PdfWrapper",
+            "Illuminate\\Support\\Facades\\View",
+            "PHPUnit\\Framework\\Assert",
+            "PHPUnit\\Framework\\Assert",
+            "PHPUnit\\Framework\\Assert",
+            "PHPUnit\\Framework\\Assert",
+            "PHPUnit\\Framework\\Assert",
+            "PHPUnit\\Framework\\Assert",
+            "PHPUnit\\Framework\\Assert",
+            "PHPUnit\\Framework\\Assert",
+            "PHPUnit\\Framework\\Assert",
+            "PHPUnit\\Framework\\Assert",
+            "PHPUnit\\Framework\\Assert"
+        ],
+        "parents": [
+            "Barryvdh\\Snappy\\PdfWrapper"
+        ],
+        "lcom": 2,
+        "length": 99,
+        "vocabulary": 15,
+        "volume": 386.78,
+        "difficulty": 14,
+        "effort": 5414.95,
+        "level": 0.07,
+        "bugs": 0.13,
+        "time": 301,
+        "intelligentContent": 27.63,
+        "number_operators": 22,
+        "number_operands": 77,
+        "number_operators_unique": 4,
+        "number_operands_unique": 11,
+        "cloc": 69,
+        "loc": 264,
+        "lloc": 193,
+        "mi": 66.54,
+        "mIwoC": 30.95,
+        "commentWeight": 35.59,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 1.79,
+        "relativeSystemComplexity": 65.79,
+        "totalStructuralComplexity": 832,
+        "totalDataComplexity": 23.33,
+        "totalSystemComplexity": 855.33,
+        "package": "Barryvdh\\Snappy\\",
+        "pageRank": 0.13,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Snappy\\IlluminateSnappyPdf": {
+        "name": "Barryvdh\\Snappy\\IlluminateSnappyPdf",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFileContents",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fileExists",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filesize",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unlink",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDir",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mkdir",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 7,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Knp\\Snappy\\Pdf",
+            "Illuminate\\Filesystem\\Filesystem"
+        ],
+        "parents": [
+            "Knp\\Snappy\\Pdf"
+        ],
+        "lcom": 1,
+        "length": 42,
+        "vocabulary": 12,
+        "volume": 150.57,
+        "difficulty": 8,
+        "effort": 1204.55,
+        "level": 0.13,
+        "bugs": 0.05,
+        "time": 67,
+        "intelligentContent": 18.82,
+        "number_operators": 10,
+        "number_operands": 32,
+        "number_operators_unique": 4,
+        "number_operands_unique": 8,
+        "cloc": 54,
+        "loc": 91,
+        "lloc": 37,
+        "mi": 96.75,
+        "mIwoC": 50.27,
+        "commentWeight": 46.48,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.93,
+        "relativeSystemComplexity": 64.93,
+        "totalStructuralComplexity": 512,
+        "totalDataComplexity": 7.44,
+        "totalSystemComplexity": 519.44,
+        "package": "Barryvdh\\Snappy\\",
+        "pageRank": 0.15,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Snappy\\ImageWrapper": {
+        "name": "Barryvdh\\Snappy\\ImageWrapper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "snappy",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadHTML",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "output",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "download",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inline",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stream",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 6,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Knp\\Snappy\\Image",
+            "Illuminate\\Support\\Facades\\View",
+            "InvalidArgumentException",
+            "Illuminate\\Http\\Response",
+            "Illuminate\\Http\\Response",
+            "Symfony\\Component\\HttpFoundation\\StreamedResponse"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 134,
+        "vocabulary": 29,
+        "volume": 650.97,
+        "difficulty": 8.08,
+        "effort": 5259.83,
+        "level": 0.12,
+        "bugs": 0.22,
+        "time": 292,
+        "intelligentContent": 80.57,
+        "number_operators": 33,
+        "number_operands": 101,
+        "number_operators_unique": 4,
+        "number_operands_unique": 25,
+        "cloc": 75,
+        "loc": 158,
+        "lloc": 83,
+        "mi": 81.43,
+        "mIwoC": 37.63,
+        "commentWeight": 43.8,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 1.52,
+        "relativeSystemComplexity": 82.52,
+        "totalStructuralComplexity": 1053,
+        "totalDataComplexity": 19.8,
+        "totalSystemComplexity": 1072.8,
+        "package": "laravel-snappy\\",
+        "pageRank": 0.15,
+        "afferentCoupling": 2,
+        "efferentCoupling": 5,
+        "instability": 0.71,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "laravel-snappy\\": {
+        "name": "laravel-snappy\\",
+        "classes": [
+            "Barryvdh\\Snappy\\ImageWrapper",
+            "Barryvdh\\Snappy\\PdfWrapper"
+        ],
+        "incoming_class_dependencies": [
+            "Barryvdh\\Snappy\\LumenServiceProvider",
+            "Barryvdh\\Snappy\\PdfFaker",
+            "Barryvdh\\Snappy\\ServiceProvider"
+        ],
+        "incoming_package_dependencies": [
+            "Barryvdh\\Snappy\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Knp\\Snappy\\Image",
+            "Illuminate\\Support\\Facades\\View",
+            "InvalidArgumentException",
+            "Illuminate\\Http\\Response",
+            "Symfony\\Component\\HttpFoundation\\StreamedResponse",
+            "Knp\\Snappy\\Pdf"
+        ],
+        "outgoing_package_dependencies": [
+            "Knp\\Snappy\\",
+            "Illuminate\\Support\\Facades\\",
+            "\\",
+            "Illuminate\\Http\\",
+            "Symfony\\Component\\HttpFoundation\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": [],
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Snappy\\ServiceProvider": {
+        "name": "Barryvdh\\Snappy\\ServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Barryvdh\\Snappy\\IlluminateSnappyPdf",
+            "Barryvdh\\Snappy\\PdfWrapper",
+            "Barryvdh\\Snappy\\IlluminateSnappyImage",
+            "Barryvdh\\Snappy\\ImageWrapper"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 3,
+        "length": 124,
+        "vocabulary": 37,
+        "volume": 645.97,
+        "difficulty": 7.73,
+        "effort": 4996.19,
+        "level": 0.13,
+        "bugs": 0.22,
+        "time": 278,
+        "intelligentContent": 83.52,
+        "number_operators": 25,
+        "number_operands": 99,
+        "number_operators_unique": 5,
+        "number_operands_unique": 32,
+        "cloc": 15,
+        "loc": 68,
+        "lloc": 53,
+        "mi": 75.29,
+        "mIwoC": 42.04,
+        "commentWeight": 33.25,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.71,
+        "relativeSystemComplexity": 36.71,
+        "totalStructuralComplexity": 108,
+        "totalDataComplexity": 2.14,
+        "totalSystemComplexity": 110.14,
+        "package": "Barryvdh\\Snappy\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Snappy\\PdfWrapper": {
+        "name": "Barryvdh\\Snappy\\PdfWrapper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "snappy",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTemporaryFolder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPaper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOrientation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWarnings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadHTML",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "output",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "download",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inline",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stream",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 17,
+        "nbMethods": 16,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 16,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 25,
+        "ccn": 9,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Knp\\Snappy\\Pdf",
+            "Illuminate\\Support\\Facades\\View",
+            "InvalidArgumentException",
+            "Illuminate\\Http\\Response",
+            "Illuminate\\Http\\Response",
+            "Symfony\\Component\\HttpFoundation\\StreamedResponse"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 168,
+        "vocabulary": 33,
+        "volume": 847.46,
+        "difficulty": 8.76,
+        "effort": 7422.57,
+        "level": 0.11,
+        "bugs": 0.28,
+        "time": 412,
+        "intelligentContent": 96.76,
+        "number_operators": 41,
+        "number_operands": 127,
+        "number_operators_unique": 4,
+        "number_operands_unique": 29,
+        "cloc": 118,
+        "loc": 228,
+        "lloc": 110,
+        "mi": 78.64,
+        "mIwoC": 33.76,
+        "commentWeight": 44.88,
+        "kanDefect": 0.64,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 1.6,
+        "relativeSystemComplexity": 122.6,
+        "totalStructuralComplexity": 2057,
+        "totalDataComplexity": 27.25,
+        "totalSystemComplexity": 2084.25,
+        "package": "laravel-snappy\\",
+        "pageRank": 0.18,
+        "afferentCoupling": 3,
+        "efferentCoupling": 5,
+        "instability": 0.63,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Snappy\\Facades\\SnappyPdf": {
+        "name": "Barryvdh\\Snappy\\Facades\\SnappyPdf",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fake",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade",
+            "Barryvdh\\Snappy\\PdfFaker",
+            "static"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 2,
+        "length": 3,
+        "vocabulary": 3,
+        "volume": 4.75,
+        "difficulty": 0.5,
+        "effort": 2.38,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 9.51,
+        "number_operators": 1,
+        "number_operands": 2,
+        "number_operators_unique": 1,
+        "number_operands_unique": 2,
+        "cloc": 10,
+        "loc": 22,
+        "lloc": 12,
+        "mi": 114.82,
+        "mIwoC": 71.59,
+        "commentWeight": 43.23,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 3,
+        "package": "Barryvdh\\Snappy\\Facades\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Snappy\\Facades\\": {
+        "name": "Barryvdh\\Snappy\\Facades\\",
+        "classes": [
+            "Barryvdh\\Snappy\\Facades\\SnappyPdf",
+            "Barryvdh\\Snappy\\Facades\\SnappyImage"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\Facades\\Facade",
+            "Barryvdh\\Snappy\\PdfFaker",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\Facades\\",
+            "Barryvdh\\Snappy\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Barryvdh\\Snappy\\": 0.8888888888888888
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Barryvdh\\Snappy\\Facades\\SnappyImage": {
+        "name": "Barryvdh\\Snappy\\Facades\\SnappyImage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 5,
+        "loc": 13,
+        "lloc": 8,
+        "mi": 119.04,
+        "mIwoC": 78.06,
+        "commentWeight": 40.98,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Barryvdh\\Snappy\\Facades\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Barryvdh\\Snappy\\IlluminateSnappyImage": {
+        "name": "Barryvdh\\Snappy\\IlluminateSnappyImage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFileContents",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fileExists",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filesize",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unlink",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDir",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mkdir",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 7,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Knp\\Snappy\\Image",
+            "Illuminate\\Filesystem\\Filesystem"
+        ],
+        "parents": [
+            "Knp\\Snappy\\Image"
+        ],
+        "lcom": 1,
+        "length": 39,
+        "vocabulary": 10,
+        "volume": 129.56,
+        "difficulty": 3.88,
+        "effort": 502.03,
+        "level": 0.26,
+        "bugs": 0.04,
+        "time": 28,
+        "intelligentContent": 33.43,
+        "number_operators": 8,
+        "number_operands": 31,
+        "number_operators_unique": 2,
+        "number_operands_unique": 8,
+        "cloc": 54,
+        "loc": 91,
+        "lloc": 37,
+        "mi": 97.35,
+        "mIwoC": 50.87,
+        "commentWeight": 46.48,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.93,
+        "relativeSystemComplexity": 64.93,
+        "totalStructuralComplexity": 512,
+        "totalDataComplexity": 7.44,
+        "totalSystemComplexity": 519.44,
+        "package": "Barryvdh\\Snappy\\",
+        "pageRank": 0.15,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "^5.5|^6|^7",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "illuminate\/filesystem": {
+                "name": "illuminate\/filesystem",
+                "required": "^5.5|^6|^7",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/filesystem\/zipball\/799a3af9435458d56e9f3647e09e11ffc9ace896"
+            },
+            "knplabs\/knp-snappy": {
+                "name": "knplabs\/knp-snappy",
+                "required": "^1",
+                "installed": null,
+                "latest": "1.2.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/github.com\/KnpLabs\/snappy",
+                "zip": "https:\/\/api.github.com\/repos\/KnpLabs\/snappy\/zipball\/7bac60fb729147b7ccd8532c07df3f52a4afa8a4"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

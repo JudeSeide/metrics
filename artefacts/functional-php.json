@@ -1,0 +1,1359 @@
+{
+    "some": {
+        "name": "some",
+        "cloc": 8,
+        "loc": 19,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "drop_first": {
+        "name": "drop_first",
+        "cloc": 7,
+        "loc": 24,
+        "lloc": 17,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "reject": {
+        "name": "reject",
+        "cloc": 8,
+        "loc": 20,
+        "lloc": 12,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "noop": {
+        "name": "noop",
+        "cloc": 3,
+        "loc": 7,
+        "lloc": 4,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "partial_right": {
+        "name": "partial_right",
+        "cloc": 7,
+        "loc": 14,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "tap": {
+        "name": "tap",
+        "cloc": 7,
+        "loc": 13,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "less_than_or_equal": {
+        "name": "less_than_or_equal",
+        "cloc": 6,
+        "loc": 13,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "retry": {
+        "name": "retry",
+        "cloc": 10,
+        "loc": 37,
+        "lloc": 27,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "false": {
+        "name": "false",
+        "cloc": 6,
+        "loc": 17,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "truthy": {
+        "name": "truthy",
+        "cloc": 6,
+        "loc": 17,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "invoker": {
+        "name": "invoker",
+        "cloc": 7,
+        "loc": 15,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "greater_than": {
+        "name": "greater_than",
+        "cloc": 6,
+        "loc": 13,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "sort": {
+        "name": "sort",
+        "cloc": 8,
+        "loc": 24,
+        "lloc": 16,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "true": {
+        "name": "true",
+        "cloc": 6,
+        "loc": 17,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "pick": {
+        "name": "pick",
+        "cloc": 10,
+        "loc": 25,
+        "lloc": 15,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "lexicographic_compare": {
+        "name": "lexicographic_compare",
+        "cloc": 7,
+        "loc": 14,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "zip": {
+        "name": "zip",
+        "cloc": 7,
+        "loc": 30,
+        "lloc": 23,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "repeat": {
+        "name": "repeat",
+        "cloc": 7,
+        "loc": 17,
+        "lloc": 10,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "equal": {
+        "name": "equal",
+        "cloc": 7,
+        "loc": 14,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "contains": {
+        "name": "contains",
+        "cloc": 9,
+        "loc": 20,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "ratio": {
+        "name": "ratio",
+        "cloc": 7,
+        "loc": 19,
+        "lloc": 12,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "match": {
+        "name": "match",
+        "cloc": 7,
+        "loc": 19,
+        "lloc": 12,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Functional\\Functional": {
+        "name": "Functional\\Functional",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__clone",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 2,
+        "length": 93,
+        "vocabulary": 93,
+        "volume": 608.14,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0.2,
+        "time": 0,
+        "intelligentContent": 1216.28,
+        "number_operators": 0,
+        "number_operands": 93,
+        "number_operators_unique": 0,
+        "number_operands_unique": 93,
+        "cloc": 279,
+        "loc": 382,
+        "lloc": 103,
+        "mi": 84.95,
+        "mIwoC": 36.46,
+        "commentWeight": 48.48,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Functional\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Functional\\": {
+        "name": "Functional\\",
+        "classes": [
+            "Functional\\Functional"
+        ],
+        "abstraction": 0,
+        "dependent_instabilities": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "select": {
+        "name": "select",
+        "cloc": 8,
+        "loc": 20,
+        "lloc": 12,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "take_left": {
+        "name": "take_left",
+        "cloc": 9,
+        "loc": 16,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "with": {
+        "name": "with",
+        "cloc": 9,
+        "loc": 22,
+        "lloc": 13,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "reindex": {
+        "name": "reindex",
+        "cloc": 8,
+        "loc": 18,
+        "lloc": 10,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "compare_on": {
+        "name": "compare_on",
+        "cloc": 7,
+        "loc": 19,
+        "lloc": 12,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "pluck": {
+        "name": "pluck",
+        "cloc": 7,
+        "loc": 24,
+        "lloc": 17,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "curry": {
+        "name": "curry",
+        "cloc": 9,
+        "loc": 28,
+        "lloc": 19,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "id": {
+        "name": "id",
+        "cloc": 6,
+        "loc": 11,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "partial_left": {
+        "name": "partial_left",
+        "cloc": 9,
+        "loc": 16,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "omit_keys": {
+        "name": "omit_keys",
+        "cloc": 7,
+        "loc": 18,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "but_last": {
+        "name": "but_last",
+        "cloc": 6,
+        "loc": 14,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "sum": {
+        "name": "sum",
+        "cloc": 7,
+        "loc": 19,
+        "lloc": 12,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "first": {
+        "name": "first",
+        "cloc": 9,
+        "loc": 23,
+        "lloc": 14,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "filter": {
+        "name": "filter",
+        "cloc": 7,
+        "loc": 13,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "compose": {
+        "name": "compose",
+        "cloc": 8,
+        "loc": 17,
+        "lloc": 9,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "invoke_first": {
+        "name": "invoke_first",
+        "cloc": 10,
+        "loc": 23,
+        "lloc": 13,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "each": {
+        "name": "each",
+        "cloc": 8,
+        "loc": 16,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "poll": {
+        "name": "poll",
+        "cloc": 9,
+        "loc": 34,
+        "lloc": 25,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "drop_last": {
+        "name": "drop_last",
+        "cloc": 7,
+        "loc": 21,
+        "lloc": 14,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "identical": {
+        "name": "identical",
+        "cloc": 6,
+        "loc": 13,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "less_than": {
+        "name": "less_than",
+        "cloc": 6,
+        "loc": 13,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "unique": {
+        "name": "unique",
+        "cloc": 8,
+        "loc": 27,
+        "lloc": 19,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "invoke": {
+        "name": "invoke",
+        "cloc": 9,
+        "loc": 25,
+        "lloc": 16,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "error_to_exception": {
+        "name": "error_to_exception",
+        "cloc": 7,
+        "loc": 21,
+        "lloc": 14,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "product": {
+        "name": "product",
+        "cloc": 7,
+        "loc": 19,
+        "lloc": 12,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "select_keys": {
+        "name": "select_keys",
+        "cloc": 7,
+        "loc": 18,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "last": {
+        "name": "last",
+        "cloc": 8,
+        "loc": 20,
+        "lloc": 12,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "head": {
+        "name": "head",
+        "cloc": 7,
+        "loc": 13,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "difference": {
+        "name": "difference",
+        "cloc": 7,
+        "loc": 19,
+        "lloc": 12,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Functional\\Exceptions\\MatchException": {
+        "name": "Functional\\Exceptions\\MatchException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "assert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertArray",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertLength",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertCallables",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 6,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Functional\\Exceptions\\InvalidArgumentException",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static"
+        ],
+        "parents": [
+            "Functional\\Exceptions\\InvalidArgumentException"
+        ],
+        "lcom": 4,
+        "length": 46,
+        "vocabulary": 13,
+        "volume": 170.22,
+        "difficulty": 6.15,
+        "effort": 1046.85,
+        "level": 0.16,
+        "bugs": 0.06,
+        "time": 58,
+        "intelligentContent": 27.68,
+        "number_operators": 5,
+        "number_operands": 41,
+        "number_operators_unique": 3,
+        "number_operands_unique": 10,
+        "cloc": 0,
+        "loc": 30,
+        "lloc": 30,
+        "mi": 51.35,
+        "mIwoC": 51.35,
+        "commentWeight": 0,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.38,
+        "relativeSystemComplexity": 2.38,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 5.5,
+        "totalSystemComplexity": 9.5,
+        "package": "Functional\\Exceptions\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Functional\\Exceptions\\": {
+        "name": "Functional\\Exceptions\\",
+        "classes": [
+            "Functional\\Exceptions\\MatchException",
+            "Functional\\Exceptions\\InvalidArgumentException"
+        ],
+        "outgoing_class_dependencies": [
+            "static",
+            "InvalidArgumentException"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "Functional\\Sequences\\ExponentialSequence",
+            "Functional\\Sequences\\LinearSequence"
+        ],
+        "incoming_package_dependencies": [
+            "Functional\\Sequences\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.5,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Functional\\Exceptions\\InvalidArgumentException": {
+        "name": "Functional\\Exceptions\\InvalidArgumentException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "assertCallback",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertCollection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertArrayAccess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertMethodName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertPropertyName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertPositiveInteger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertValidArrayKey",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertArrayKeyExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertBoolean",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertInteger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertIntegerGreaterThanOrEqual",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertIntegerLessThanOrEqual",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertResolvablePlaceholder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertCollectionAlike",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 15,
+        "nbMethods": 15,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 13,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 40,
+        "ccn": 26,
+        "ccnMethodMax": 6,
+        "externals": [
+            "InvalidArgumentException",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static",
+            "static"
+        ],
+        "parents": [
+            "InvalidArgumentException"
+        ],
+        "lcom": 15,
+        "length": 220,
+        "vocabulary": 56,
+        "volume": 1277.62,
+        "difficulty": 19.35,
+        "effort": 24719.13,
+        "level": 0.05,
+        "bugs": 0.43,
+        "time": 1373,
+        "intelligentContent": 66.03,
+        "number_operators": 42,
+        "number_operands": 178,
+        "number_operators_unique": 10,
+        "number_operands_unique": 46,
+        "cloc": 50,
+        "loc": 161,
+        "lloc": 111,
+        "mi": 68.14,
+        "mIwoC": 30.14,
+        "commentWeight": 38,
+        "kanDefect": 1.35,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.97,
+        "relativeSystemComplexity": 2.97,
+        "totalStructuralComplexity": 15,
+        "totalDataComplexity": 29.5,
+        "totalSystemComplexity": 44.5,
+        "package": "Functional\\Exceptions\\",
+        "pageRank": 0.58,
+        "afferentCoupling": 3,
+        "efferentCoupling": 2,
+        "instability": 0.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tail": {
+        "name": "tail",
+        "cloc": 8,
+        "loc": 25,
+        "lloc": 17,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "group": {
+        "name": "group",
+        "cloc": 7,
+        "loc": 22,
+        "lloc": 15,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "minimum": {
+        "name": "minimum",
+        "cloc": 6,
+        "loc": 21,
+        "lloc": 15,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "sequence_constant": {
+        "name": "sequence_constant",
+        "cloc": 6,
+        "loc": 12,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "compare_object_hash_on": {
+        "name": "compare_object_hash_on",
+        "cloc": 7,
+        "loc": 13,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "flip": {
+        "name": "flip",
+        "cloc": 8,
+        "loc": 15,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "invoke_last": {
+        "name": "invoke_last",
+        "cloc": 9,
+        "loc": 26,
+        "lloc": 17,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "reduce_left": {
+        "name": "reduce_left",
+        "cloc": 6,
+        "loc": 15,
+        "lloc": 9,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "partial_method": {
+        "name": "partial_method",
+        "cloc": 8,
+        "loc": 19,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "greater_than_or_equal": {
+        "name": "greater_than_or_equal",
+        "cloc": 6,
+        "loc": 13,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "map": {
+        "name": "map",
+        "cloc": 8,
+        "loc": 18,
+        "lloc": 10,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "every": {
+        "name": "every",
+        "cloc": 8,
+        "loc": 19,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "none": {
+        "name": "none",
+        "cloc": 8,
+        "loc": 19,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "sequence_exponential": {
+        "name": "sequence_exponential",
+        "cloc": 8,
+        "loc": 16,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "curry_n": {
+        "name": "curry_n",
+        "cloc": 11,
+        "loc": 25,
+        "lloc": 14,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "flat_map": {
+        "name": "flat_map",
+        "cloc": 15,
+        "loc": 32,
+        "lloc": 17,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "partition": {
+        "name": "partition",
+        "cloc": 13,
+        "loc": 31,
+        "lloc": 18,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "maximum": {
+        "name": "maximum",
+        "cloc": 6,
+        "loc": 21,
+        "lloc": 15,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "reduce_right": {
+        "name": "reduce_right",
+        "cloc": 6,
+        "loc": 19,
+        "lloc": 13,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "last_index_of": {
+        "name": "last_index_of",
+        "cloc": 7,
+        "loc": 27,
+        "lloc": 20,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Functional\\Sequences\\ExponentialSequence": {
+        "name": "Functional\\Sequences\\ExponentialSequence",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "current",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "next",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "key",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "valid",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rewind",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Iterator",
+            "Functional\\Exceptions\\InvalidArgumentException",
+            "Functional\\Exceptions\\InvalidArgumentException",
+            "Functional\\Exceptions\\InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 42,
+        "vocabulary": 13,
+        "volume": 155.42,
+        "difficulty": 9.69,
+        "effort": 1505.62,
+        "level": 0.1,
+        "bugs": 0.05,
+        "time": 84,
+        "intelligentContent": 16.04,
+        "number_operators": 11,
+        "number_operands": 31,
+        "number_operators_unique": 5,
+        "number_operands_unique": 8,
+        "cloc": 4,
+        "loc": 42,
+        "lloc": 38,
+        "mi": 73.06,
+        "mIwoC": 50.06,
+        "commentWeight": 23,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.67,
+        "relativeSystemComplexity": 2.67,
+        "totalStructuralComplexity": 6,
+        "totalDataComplexity": 10,
+        "totalSystemComplexity": 16,
+        "package": "Functional\\Sequences\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Functional\\Sequences\\": {
+        "name": "Functional\\Sequences\\",
+        "classes": [
+            "Functional\\Sequences\\ExponentialSequence",
+            "Functional\\Sequences\\LinearSequence"
+        ],
+        "outgoing_class_dependencies": [
+            "Iterator",
+            "Functional\\Exceptions\\InvalidArgumentException"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Functional\\Exceptions\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Functional\\Exceptions\\": 0.5
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Functional\\Sequences\\LinearSequence": {
+        "name": "Functional\\Sequences\\LinearSequence",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "current",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "next",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "key",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "valid",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rewind",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Iterator",
+            "Functional\\Exceptions\\InvalidArgumentException",
+            "Functional\\Exceptions\\InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 26,
+        "vocabulary": 10,
+        "volume": 86.37,
+        "difficulty": 4.07,
+        "effort": 351.65,
+        "level": 0.25,
+        "bugs": 0.03,
+        "time": 20,
+        "intelligentContent": 21.21,
+        "number_operators": 7,
+        "number_operands": 19,
+        "number_operators_unique": 3,
+        "number_operands_unique": 7,
+        "cloc": 3,
+        "loc": 37,
+        "lloc": 34,
+        "mi": 74.25,
+        "mIwoC": 52.9,
+        "commentWeight": 21.35,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.67,
+        "relativeSystemComplexity": 2.67,
+        "totalStructuralComplexity": 6,
+        "totalDataComplexity": 10,
+        "totalSystemComplexity": 16,
+        "package": "Functional\\Sequences\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "memoize": {
+        "name": "memoize",
+        "cloc": 8,
+        "loc": 48,
+        "lloc": 40,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "capture": {
+        "name": "capture",
+        "cloc": 7,
+        "loc": 15,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "indexes_of": {
+        "name": "indexes_of",
+        "cloc": 8,
+        "loc": 28,
+        "lloc": 20,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "if_else": {
+        "name": "if_else",
+        "cloc": 9,
+        "loc": 16,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "flatten": {
+        "name": "flatten",
+        "cloc": 7,
+        "loc": 25,
+        "lloc": 18,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "zip_all": {
+        "name": "zip_all",
+        "cloc": 10,
+        "loc": 42,
+        "lloc": 32,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "converge": {
+        "name": "converge",
+        "cloc": 10,
+        "loc": 21,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "take_right": {
+        "name": "take_right",
+        "cloc": 12,
+        "loc": 19,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "falsy": {
+        "name": "falsy",
+        "cloc": 6,
+        "loc": 17,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "invoke_if": {
+        "name": "invoke_if",
+        "cloc": 10,
+        "loc": 19,
+        "lloc": 9,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "sequence_linear": {
+        "name": "sequence_linear",
+        "cloc": 7,
+        "loc": 14,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "first_index_of": {
+        "name": "first_index_of",
+        "cloc": 7,
+        "loc": 26,
+        "lloc": 19,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "suppress_error": {
+        "name": "suppress_error",
+        "cloc": 7,
+        "loc": 19,
+        "lloc": 12,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "intersperse": {
+        "name": "intersperse",
+        "cloc": 8,
+        "loc": 20,
+        "lloc": 12,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "average": {
+        "name": "average",
+        "cloc": 6,
+        "loc": 23,
+        "lloc": 17,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "const_function": {
+        "name": "const_function",
+        "cloc": 6,
+        "loc": 13,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "partial_any": {
+        "name": "partial_any",
+        "cloc": 9,
+        "loc": 23,
+        "lloc": 14,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "\u2026": {
+        "name": "\u2026",
+        "cloc": 1,
+        "loc": 10,
+        "lloc": 9,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "placeholder": {
+        "name": "placeholder",
+        "cloc": 1,
+        "loc": 6,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "tail_recursion": {
+        "name": "tail_recursion",
+        "cloc": 9,
+        "loc": 27,
+        "lloc": 18,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "concat": {
+        "name": "concat",
+        "cloc": 6,
+        "loc": 11,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "not": {
+        "name": "not",
+        "cloc": 6,
+        "loc": 13,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "~7",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

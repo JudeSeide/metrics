@@ -1,0 +1,874 @@
+{
+    "qoraiche\\mailEclipse\\mailEclipse": {
+        "name": "qoraiche\\mailEclipse\\mailEclipse",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getMailables",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteTemplate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTemplatesFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "saveTemplates",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateTemplate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTemplate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTemplates",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createTemplate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTemplateSkeletons",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTemplateSkeleton",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "templateComponentReplace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "markdownedTemplate",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "markdownedTemplateToView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "previewMarkdownViewContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "previewMarkdownHtml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMailableTemplateData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateMailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mailablesList",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleMailableViewDataArgs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMissingParams",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMailableViewData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewDataInspect",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mailable_exists",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMarkdownViewName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildMailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "renderPreview",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 27,
+        "nbMethods": 27,
+        "nbMethodsPrivate": 8,
+        "nbMethodsPublic": 19,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 119,
+        "ccn": 93,
+        "ccnMethodMax": 20,
+        "externals": [
+            "Illuminate\\Support\\Facades\\View",
+            "Illuminate\\Support\\Facades\\View",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Facades\\View",
+            "Illuminate\\Support\\Facades\\View",
+            "Illuminate\\Support\\Facades\\View",
+            "Illuminate\\Support\\Facades\\View",
+            "Illuminate\\Support\\Str",
+            "File",
+            "File",
+            "Illuminate\\Support\\Facades\\View",
+            "namespace",
+            "Illuminate\\Support\\Str",
+            "Illuminate\\Support\\Facades\\Artisan",
+            "RecursiveDirectoryIterator",
+            "RecursiveIteratorIterator",
+            "RegexIterator",
+            "mailableClass",
+            "Illuminate\\Support\\Facades\\View",
+            "Illuminate\\Support\\Facades\\View",
+            "Illuminate\\Support\\Facades\\View",
+            "ReflectionClass",
+            "Illuminate\\Support\\Facades\\DB",
+            "ReflectionClass",
+            "Illuminate\\Support\\Facades\\DB",
+            "ReeceM\\Mocker\\Utils\\VarStore",
+            "ReeceM\\Mocker\\Mocked",
+            "ReflectionClass",
+            "ReflectionClass",
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Container\\Container",
+            "instance",
+            "Illuminate\\Container\\Container",
+            "Illuminate\\Support\\Facades\\View"
+        ],
+        "parents": [],
+        "lcom": 27,
+        "length": 1114,
+        "vocabulary": 232,
+        "volume": 8753.79,
+        "difficulty": 30.11,
+        "effort": 263586.37,
+        "level": 0.03,
+        "bugs": 2.92,
+        "time": 14644,
+        "intelligentContent": 290.72,
+        "number_operators": 301,
+        "number_operands": 813,
+        "number_operators_unique": 16,
+        "number_operands_unique": 216,
+        "cloc": 50,
+        "loc": 505,
+        "lloc": 455,
+        "mi": 25.33,
+        "mIwoC": 1.91,
+        "commentWeight": 23.42,
+        "kanDefect": 5.82,
+        "relativeStructuralComplexity": 2704,
+        "relativeDataComplexity": 1.1,
+        "relativeSystemComplexity": 2705.1,
+        "totalStructuralComplexity": 73008,
+        "totalDataComplexity": 29.79,
+        "totalSystemComplexity": 73037.79,
+        "package": "qoraiche\\mailEclipse\\",
+        "pageRank": 0.56,
+        "afferentCoupling": 3,
+        "efferentCoupling": 16,
+        "instability": 0.84,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "qoraiche\\mailEclipse\\": {
+        "name": "qoraiche\\mailEclipse\\",
+        "classes": [
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "qoraiche\\mailEclipse\\mailEclipseServiceProvider"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\Facades\\View",
+            "Illuminate\\Support\\Collection",
+            "Illuminate\\Support\\Str",
+            "File",
+            "namespace",
+            "Illuminate\\Support\\Facades\\Artisan",
+            "RecursiveDirectoryIterator",
+            "RecursiveIteratorIterator",
+            "RegexIterator",
+            "mailableClass",
+            "ReflectionClass",
+            "Illuminate\\Support\\Facades\\DB",
+            "ReeceM\\Mocker\\Utils\\VarStore",
+            "ReeceM\\Mocker\\Mocked",
+            "Illuminate\\Container\\Container",
+            "instance",
+            "Illuminate\\Support\\ServiceProvider",
+            "Illuminate\\Support\\Facades\\Route"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\Facades\\",
+            "Illuminate\\Support\\",
+            "\\",
+            "ReeceM\\Mocker\\Utils\\",
+            "ReeceM\\Mocker\\",
+            "Illuminate\\Container\\"
+        ],
+        "incoming_class_dependencies": [
+            "qoraiche\\mailEclipse\\Http\\Controllers\\MailablesController",
+            "qoraiche\\mailEclipse\\Http\\Controllers\\TemplatesController"
+        ],
+        "incoming_package_dependencies": [
+            "qoraiche\\mailEclipse\\Http\\Controllers\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.9,
+        "dependent_instabilities": [],
+        "distance": 0.07071067811865474,
+        "normalized_distance": 0.09999999999999998,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "qoraiche\\mailEclipse\\Http\\Controllers\\MailablesController": {
+        "name": "qoraiche\\mailEclipse\\Http\\Controllers\\MailablesController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toMailablesList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "index",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createMailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateMailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewMailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "editMailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "templatePreviewError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseTemplate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "previewMarkdownView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "previewMailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 25,
+        "ccn": 14,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Illuminate\\Routing\\Controller",
+            "Illuminate\\Support\\Facades\\App",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "Illuminate\\Http\\Request",
+            "Illuminate\\Http\\Request",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "Illuminate\\Http\\Request",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "Illuminate\\Http\\Request",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "resource",
+            "Illuminate\\Http\\Request"
+        ],
+        "parents": [
+            "Illuminate\\Routing\\Controller"
+        ],
+        "lcom": 12,
+        "length": 162,
+        "vocabulary": 43,
+        "volume": 879.05,
+        "difficulty": 8.84,
+        "effort": 7768.94,
+        "level": 0.11,
+        "bugs": 0.29,
+        "time": 432,
+        "intelligentContent": 99.46,
+        "number_operators": 53,
+        "number_operands": 109,
+        "number_operators_unique": 6,
+        "number_operands_unique": 37,
+        "cloc": 3,
+        "loc": 99,
+        "lloc": 96,
+        "mi": 47.58,
+        "mIwoC": 34.26,
+        "commentWeight": 13.32,
+        "kanDefect": 0.71,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 1.51,
+        "relativeSystemComplexity": 145.51,
+        "totalStructuralComplexity": 1728,
+        "totalDataComplexity": 18.15,
+        "totalSystemComplexity": 1746.15,
+        "package": "qoraiche\\mailEclipse\\Http\\Controllers\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "qoraiche\\mailEclipse\\Http\\Controllers\\": {
+        "name": "qoraiche\\mailEclipse\\Http\\Controllers\\",
+        "classes": [
+            "qoraiche\\mailEclipse\\Http\\Controllers\\MailablesController",
+            "qoraiche\\mailEclipse\\Http\\Controllers\\TemplatesController"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Routing\\Controller",
+            "Illuminate\\Support\\Facades\\App",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "Illuminate\\Http\\Request",
+            "resource"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Routing\\",
+            "Illuminate\\Support\\Facades\\",
+            "qoraiche\\mailEclipse\\",
+            "Illuminate\\Http\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "qoraiche\\mailEclipse\\": 0.9
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "qoraiche\\mailEclipse\\Http\\Controllers\\TemplatesController": {
+        "name": "qoraiche\\mailEclipse\\Http\\Controllers\\TemplatesController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "index",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "new",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "view",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "select",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "previewTemplateMarkdownView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "update",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 4,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Routing\\Controller",
+            "Illuminate\\Support\\Facades\\App",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "Illuminate\\Http\\Request",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "Illuminate\\Http\\Request",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "Illuminate\\Http\\Request",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "Illuminate\\Http\\Request",
+            "qoraiche\\mailEclipse\\mailEclipse",
+            "Illuminate\\Http\\Request",
+            "qoraiche\\mailEclipse\\mailEclipse"
+        ],
+        "parents": [
+            "Illuminate\\Routing\\Controller"
+        ],
+        "lcom": 9,
+        "length": 69,
+        "vocabulary": 26,
+        "volume": 324.33,
+        "difficulty": 5.48,
+        "effort": 1776.09,
+        "level": 0.18,
+        "bugs": 0.11,
+        "time": 99,
+        "intelligentContent": 59.23,
+        "number_operators": 23,
+        "number_operands": 46,
+        "number_operators_unique": 5,
+        "number_operands_unique": 21,
+        "cloc": 0,
+        "loc": 53,
+        "lloc": 53,
+        "mi": 44.27,
+        "mIwoC": 44.27,
+        "commentWeight": 0,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 2.2,
+        "relativeSystemComplexity": 18.2,
+        "totalStructuralComplexity": 144,
+        "totalDataComplexity": 19.8,
+        "totalSystemComplexity": 163.8,
+        "package": "qoraiche\\mailEclipse\\Http\\Controllers\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "qoraiche\\mailEclipse\\mailEclipseServiceProvider": {
+        "name": "qoraiche\\mailEclipse\\mailEclipseServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerRoutes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "routeConfiguration",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "bootForConsole",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Illuminate\\Support\\Facades\\Route",
+            "Illuminate\\Support\\Facades\\Route",
+            "qoraiche\\mailEclipse\\mailEclipse"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 58,
+        "vocabulary": 25,
+        "volume": 269.34,
+        "difficulty": 3.2,
+        "effort": 863.12,
+        "level": 0.31,
+        "bugs": 0.09,
+        "time": 48,
+        "intelligentContent": 84.05,
+        "number_operators": 11,
+        "number_operands": 47,
+        "number_operators_unique": 3,
+        "number_operands_unique": 22,
+        "cloc": 33,
+        "loc": 74,
+        "lloc": 41,
+        "mi": 90.51,
+        "mIwoC": 47.53,
+        "commentWeight": 42.98,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.23,
+        "relativeSystemComplexity": 144.23,
+        "totalStructuralComplexity": 864,
+        "totalDataComplexity": 1.38,
+        "totalSystemComplexity": 865.38,
+        "package": "qoraiche\\mailEclipse\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "qoraiche\\mailEclipse\\Facades\\mailEclipse": {
+        "name": "qoraiche\\mailEclipse\\Facades\\mailEclipse",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 5,
+        "loc": 13,
+        "lloc": 8,
+        "mi": 119.04,
+        "mIwoC": 78.06,
+        "commentWeight": 40.98,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "qoraiche\\mailEclipse\\Facades\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "qoraiche\\mailEclipse\\Facades\\": {
+        "name": "qoraiche\\mailEclipse\\Facades\\",
+        "classes": [
+            "qoraiche\\mailEclipse\\Facades\\mailEclipse"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "~5|~6",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "reecem\/mocker": {
+                "name": "reecem\/mocker",
+                "required": "1.1.*",
+                "installed": "1.1.2",
+                "latest": "1.1.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/reecem\/mocker",
+                "zip": "https:\/\/api.github.com\/repos\/ReeceM\/mocker\/zipball\/3e7356c69742cb841bdcc4675574bd07d5927101"
+            }
+        },
+        "packages-installed": {
+            "reecem\/mocker": "1.1.2"
+        },
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

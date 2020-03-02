@@ -1,0 +1,3678 @@
+{
+    "Symfony\\Component\\Panther\\ExceptionThrower": {
+        "name": "Symfony\\Component\\Panther\\ExceptionThrower",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "throwNotSupported",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 3,
+        "vocabulary": 2,
+        "volume": 3,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.33,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 0,
+        "number_operands": 3,
+        "number_operators_unique": 0,
+        "number_operands_unique": 2,
+        "cloc": 8,
+        "loc": 16,
+        "lloc": 8,
+        "mi": 121.28,
+        "mIwoC": 76.82,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Symfony\\Component\\Panther\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\": {
+        "name": "Symfony\\Component\\Panther\\",
+        "classes": [
+            "Symfony\\Component\\Panther\\ExceptionThrower",
+            "Symfony\\Component\\Panther\\Client",
+            "Symfony\\Component\\Panther\\ServerTrait",
+            "Symfony\\Component\\Panther\\ServerExtension",
+            "Symfony\\Component\\Panther\\ServerListener"
+        ],
+        "outgoing_class_dependencies": [
+            "InvalidArgumentException",
+            "Symfony\\Component\\BrowserKit\\AbstractBrowser",
+            "Facebook\\WebDriver\\WebDriver",
+            "Facebook\\WebDriver\\JavaScriptExecutor",
+            "Facebook\\WebDriver\\WebDriverHasInputDevices",
+            "Symfony\\Component\\Panther\\ProcessManager\\ChromeManager",
+            "Symfony\\Component\\Panther\\ProcessManager\\FirefoxManager",
+            "Symfony\\Component\\Panther\\ProcessManager\\SeleniumManager",
+            "Symfony\\Component\\Panther\\ProcessManager\\BrowserManagerInterface",
+            "LogicException",
+            "Symfony\\Component\\DomCrawler\\Link",
+            "Symfony\\Component\\DomCrawler\\Form",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Symfony\\Component\\Panther\\DomCrawler\\Crawler",
+            "Symfony\\Component\\Panther\\Cookie\\CookieJar",
+            "Facebook\\WebDriver\\WebDriverExpectedCondition",
+            "Symfony\\Component\\BrowserKit\\Request",
+            "Symfony\\Component\\BrowserKit\\Response",
+            "RuntimeException",
+            "Symfony\\Component\\Panther\\WebDriver\\WebDriverMouse",
+            "PHPUnit\\Runner\\BeforeFirstTestHook",
+            "PHPUnit\\Runner\\AfterLastTestHook",
+            "PHPUnit\\Runner\\AfterTestErrorHook",
+            "PHPUnit\\Runner\\AfterTestFailureHook",
+            "PHPUnit\\Framework\\TestListener",
+            "PHPUnit\\Framework\\TestSuite",
+            "PHPUnit\\Framework\\Test",
+            "Throwable",
+            "PHPUnit\\Framework\\AssertionFailedError"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Symfony\\Component\\BrowserKit\\",
+            "Facebook\\WebDriver\\",
+            "Symfony\\Component\\Panther\\ProcessManager\\",
+            "Symfony\\Component\\DomCrawler\\",
+            "Symfony\\Component\\Panther\\DomCrawler\\",
+            "Symfony\\Component\\Panther\\Cookie\\",
+            "Symfony\\Component\\Panther\\WebDriver\\",
+            "PHPUnit\\Runner\\",
+            "PHPUnit\\Framework\\"
+        ],
+        "incoming_class_dependencies": [
+            "Symfony\\Component\\Panther\\WebDriver\\WebDriverMouse"
+        ],
+        "incoming_package_dependencies": [
+            "Symfony\\Component\\Panther\\WebDriver\\"
+        ],
+        "abstraction": 0.4,
+        "instability": 0.9666666666666667,
+        "dependent_instabilities": {
+            "Symfony\\Component\\Panther\\ProcessManager\\": 0.8888888888888888,
+            "Symfony\\Component\\Panther\\DomCrawler\\": 0.9629629629629629,
+            "Symfony\\Component\\Panther\\Cookie\\": 0.8333333333333334,
+            "Symfony\\Component\\Panther\\WebDriver\\": 0.8
+        },
+        "distance": 0.25927248643506745,
+        "normalized_distance": 0.3666666666666667,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Symfony\\Component\\Panther\\Client": {
+        "name": "Symfony\\Component\\Panther\\Client",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "createChromeClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createFirefoxClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createSeleniumClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBrowserManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "followRedirects",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isFollowingRedirects",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMaxRedirects",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMaxRedirects",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "insulate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setServerParameters",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setServerParameter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServerParameter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "click",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "refreshCrawler",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "request",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createCrawler",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doRequest",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "back",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "forward",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reload",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "followRedirect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "restart",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCookieJar",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "waitFor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWebDriver",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "close",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentURL",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPageSource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWindowHandle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWindowHandles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "quit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "takeScreenshot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wait",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "manage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "navigate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "switchTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "execute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findElements",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeScript",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeAsyncScript",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getKeyboard",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMouse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 51,
+        "nbMethods": 51,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 49,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 83,
+        "ccn": 33,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Symfony\\Component\\BrowserKit\\AbstractBrowser",
+            "Facebook\\WebDriver\\WebDriver",
+            "Facebook\\WebDriver\\JavaScriptExecutor",
+            "Facebook\\WebDriver\\WebDriverHasInputDevices",
+            "Symfony\\Component\\Panther\\ProcessManager\\ChromeManager",
+            "Symfony\\Component\\Panther\\ProcessManager\\FirefoxManager",
+            "Symfony\\Component\\Panther\\ProcessManager\\SeleniumManager",
+            "Symfony\\Component\\Panther\\ProcessManager\\BrowserManagerInterface",
+            "Symfony\\Component\\Panther\\ProcessManager\\BrowserManagerInterface",
+            "LogicException",
+            "LogicException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "Symfony\\Component\\DomCrawler\\Link",
+            "Symfony\\Component\\DomCrawler\\Form",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Symfony\\Component\\Panther\\DomCrawler\\Crawler",
+            "Symfony\\Component\\Panther\\DomCrawler\\Crawler",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "Symfony\\Component\\Panther\\DomCrawler\\Crawler",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Symfony\\Component\\Panther\\DomCrawler\\Crawler",
+            "LogicException",
+            "LogicException",
+            "Symfony\\Component\\Panther\\Cookie\\CookieJar",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverExpectedCondition",
+            "Facebook\\WebDriver\\WebDriver",
+            "Symfony\\Component\\BrowserKit\\Request",
+            "Symfony\\Component\\BrowserKit\\Response",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "RuntimeException",
+            "RuntimeException",
+            "RuntimeException",
+            "Symfony\\Component\\Panther\\WebDriver\\WebDriverMouse",
+            "RuntimeException",
+            "Symfony\\Component\\Panther\\WebDriver\\WebDriverMouse"
+        ],
+        "parents": [
+            "Symfony\\Component\\BrowserKit\\AbstractBrowser"
+        ],
+        "lcom": 16,
+        "length": 398,
+        "vocabulary": 79,
+        "volume": 2508.9,
+        "difficulty": 18.32,
+        "effort": 45966.72,
+        "level": 0.05,
+        "bugs": 0.84,
+        "time": 2554,
+        "intelligentContent": 136.94,
+        "number_operators": 113,
+        "number_operands": 285,
+        "number_operators_unique": 9,
+        "number_operands_unique": 70,
+        "cloc": 25,
+        "loc": 361,
+        "lloc": 336,
+        "mi": 36.47,
+        "mIwoC": 16.65,
+        "commentWeight": 19.82,
+        "kanDefect": 2.15,
+        "relativeStructuralComplexity": 1444,
+        "relativeDataComplexity": 1.15,
+        "relativeSystemComplexity": 1445.15,
+        "totalStructuralComplexity": 73644,
+        "totalDataComplexity": 58.82,
+        "totalSystemComplexity": 73702.82,
+        "package": "Symfony\\Component\\Panther\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 20,
+        "instability": 0.95,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\Cookie\\CookieJar": {
+        "name": "Symfony\\Component\\Panther\\Cookie\\CookieJar",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expire",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateFromSetCookie",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateFromResponse",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "all",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "allValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "allRawValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flushExpiredCookies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "symfonyToWebDriver",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "webDriverToSymfony",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWebDriverCookie",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 11,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 30,
+        "ccn": 17,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Symfony\\Component\\BrowserKit\\CookieJar",
+            "Facebook\\WebDriver\\WebDriver",
+            "Symfony\\Component\\BrowserKit\\Cookie",
+            "Symfony\\Component\\BrowserKit\\Response",
+            "Facebook\\WebDriver\\Cookie",
+            "Symfony\\Component\\BrowserKit\\Cookie",
+            "Facebook\\WebDriver\\Cookie",
+            "Symfony\\Component\\BrowserKit\\Cookie",
+            "Facebook\\WebDriver\\Cookie",
+            "Symfony\\Component\\BrowserKit\\Cookie"
+        ],
+        "parents": [
+            "Symfony\\Component\\BrowserKit\\CookieJar"
+        ],
+        "lcom": 2,
+        "length": 176,
+        "vocabulary": 34,
+        "volume": 895.39,
+        "difficulty": 22.14,
+        "effort": 19824.01,
+        "level": 0.05,
+        "bugs": 0.3,
+        "time": 1101,
+        "intelligentContent": 40.44,
+        "number_operators": 53,
+        "number_operands": 123,
+        "number_operators_unique": 9,
+        "number_operands_unique": 25,
+        "cloc": 3,
+        "loc": 114,
+        "lloc": 111,
+        "mi": 44.86,
+        "mIwoC": 32.43,
+        "commentWeight": 12.43,
+        "kanDefect": 1.22,
+        "relativeStructuralComplexity": 529,
+        "relativeDataComplexity": 0.52,
+        "relativeSystemComplexity": 529.52,
+        "totalStructuralComplexity": 7406,
+        "totalDataComplexity": 7.25,
+        "totalSystemComplexity": 7413.25,
+        "package": "Symfony\\Component\\Panther\\Cookie\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\Cookie\\": {
+        "name": "Symfony\\Component\\Panther\\Cookie\\",
+        "classes": [
+            "Symfony\\Component\\Panther\\Cookie\\CookieJar"
+        ],
+        "incoming_class_dependencies": [
+            "Symfony\\Component\\Panther\\Client"
+        ],
+        "incoming_package_dependencies": [
+            "Symfony\\Component\\Panther\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\BrowserKit\\CookieJar",
+            "Facebook\\WebDriver\\WebDriver",
+            "Symfony\\Component\\BrowserKit\\Cookie",
+            "Symfony\\Component\\BrowserKit\\Response",
+            "Facebook\\WebDriver\\Cookie"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\BrowserKit\\",
+            "Facebook\\WebDriver\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8333333333333334,
+        "dependent_instabilities": [],
+        "distance": 0.11785113019775789,
+        "normalized_distance": 0.16666666666666663,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Symfony\\Component\\Panther\\DomCrawler\\Image": {
+        "name": "Symfony\\Component\\Panther\\DomCrawler\\Image",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setNode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRawUri",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Symfony\\Component\\DomCrawler\\Image",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "LogicException",
+            "DOMElement"
+        ],
+        "parents": [
+            "Symfony\\Component\\DomCrawler\\Image"
+        ],
+        "lcom": 2,
+        "length": 23,
+        "vocabulary": 13,
+        "volume": 85.11,
+        "difficulty": 3.78,
+        "effort": 321.53,
+        "level": 0.26,
+        "bugs": 0.03,
+        "time": 18,
+        "intelligentContent": 22.53,
+        "number_operators": 6,
+        "number_operands": 17,
+        "number_operators_unique": 4,
+        "number_operands_unique": 9,
+        "cloc": 3,
+        "loc": 29,
+        "lloc": 26,
+        "mi": 79.25,
+        "mIwoC": 55.35,
+        "commentWeight": 23.9,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 9.38,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 37.5,
+        "package": "Symfony\\Component\\Panther\\DomCrawler\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\DomCrawler\\": {
+        "name": "Symfony\\Component\\Panther\\DomCrawler\\",
+        "classes": [
+            "Symfony\\Component\\Panther\\DomCrawler\\Image",
+            "Symfony\\Component\\Panther\\DomCrawler\\Form",
+            "Symfony\\Component\\Panther\\DomCrawler\\Link",
+            "Symfony\\Component\\Panther\\DomCrawler\\Crawler"
+        ],
+        "incoming_class_dependencies": [
+            "Symfony\\Component\\Panther\\Client"
+        ],
+        "incoming_package_dependencies": [
+            "Symfony\\Component\\Panther\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\DomCrawler\\Image",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "LogicException",
+            "DOMElement",
+            "Symfony\\Component\\DomCrawler\\Form",
+            "Facebook\\WebDriver\\WebDriver",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Symfony\\Component\\DomCrawler\\Field\\FormField",
+            "Facebook\\WebDriver\\Support\\XPathEscaper",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\TextareaFormField",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\ChoiceFormField",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\FileFormField",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\InputFormField",
+            "Facebook\\WebDriver\\WebDriverSelect",
+            "Symfony\\Component\\Panther\\WebDriver\\WebDriverCheckbox",
+            "RuntimeException",
+            "Symfony\\Component\\DomCrawler\\Link",
+            "Symfony\\Component\\DomCrawler\\Crawler",
+            "DOMDocument",
+            "DOMNodeList",
+            "DOMNode",
+            "Closure",
+            "InvalidArgumentException",
+            "static",
+            "ArrayIterator",
+            "Symfony\\Component\\CssSelector\\CssSelectorConverter"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\DomCrawler\\",
+            "Facebook\\WebDriver\\",
+            "\\",
+            "Symfony\\Component\\DomCrawler\\Field\\",
+            "Facebook\\WebDriver\\Support\\",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\",
+            "Symfony\\Component\\Panther\\WebDriver\\",
+            "Symfony\\Component\\CssSelector\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.9629629629629629,
+        "dependent_instabilities": {
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\": 0.9090909090909091,
+            "Symfony\\Component\\Panther\\WebDriver\\": 0.8
+        },
+        "distance": 0.026189140043946242,
+        "normalized_distance": 0.03703703703703709,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Symfony\\Component\\Panther\\DomCrawler\\Form": {
+        "name": "Symfony\\Component\\Panther\\DomCrawler\\Form",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setElement",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getButton",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFiles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMethod",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "remove",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "all",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetGet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetSet",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "offsetUnset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRawUri",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormElement",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllElements",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWebDriverSelect",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 25,
+        "nbMethods": 25,
+        "nbMethodsPrivate": 8,
+        "nbMethodsPublic": 17,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 79,
+        "ccn": 55,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Symfony\\Component\\DomCrawler\\Form",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "Facebook\\WebDriver\\WebDriver",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "LogicException",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "LogicException",
+            "LogicException",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Symfony\\Component\\DomCrawler\\Field\\FormField",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "Facebook\\WebDriver\\Support\\XPathEscaper",
+            "Facebook\\WebDriver\\Support\\XPathEscaper",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Symfony\\Component\\DomCrawler\\Field\\FormField",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\TextareaFormField",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\ChoiceFormField",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\FileFormField",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\InputFormField",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "Facebook\\WebDriver\\WebDriverSelect",
+            "Symfony\\Component\\Panther\\WebDriver\\WebDriverCheckbox",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "RuntimeException",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverBy"
+        ],
+        "parents": [
+            "Symfony\\Component\\DomCrawler\\Form"
+        ],
+        "lcom": 2,
+        "length": 409,
+        "vocabulary": 60,
+        "volume": 2415.92,
+        "difficulty": 27.2,
+        "effort": 65712.98,
+        "level": 0.04,
+        "bugs": 0.81,
+        "time": 3651,
+        "intelligentContent": 88.82,
+        "number_operators": 137,
+        "number_operands": 272,
+        "number_operators_unique": 10,
+        "number_operands_unique": 50,
+        "cloc": 36,
+        "loc": 272,
+        "lloc": 236,
+        "mi": 43.86,
+        "mIwoC": 17.15,
+        "commentWeight": 26.71,
+        "kanDefect": 3.37,
+        "relativeStructuralComplexity": 841,
+        "relativeDataComplexity": 1.03,
+        "relativeSystemComplexity": 842.03,
+        "totalStructuralComplexity": 21025,
+        "totalDataComplexity": 25.63,
+        "totalSystemComplexity": 21050.63,
+        "package": "Symfony\\Component\\Panther\\DomCrawler\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 14,
+        "instability": 0.93,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\DomCrawler\\Link": {
+        "name": "Symfony\\Component\\Panther\\DomCrawler\\Link",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setNode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRawUri",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Symfony\\Component\\DomCrawler\\Link",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "LogicException",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "DOMElement"
+        ],
+        "parents": [
+            "Symfony\\Component\\DomCrawler\\Link"
+        ],
+        "lcom": 2,
+        "length": 39,
+        "vocabulary": 18,
+        "volume": 162.63,
+        "difficulty": 5.19,
+        "effort": 844.41,
+        "level": 0.19,
+        "bugs": 0.05,
+        "time": 47,
+        "intelligentContent": 31.32,
+        "number_operators": 12,
+        "number_operands": 27,
+        "number_operators_unique": 5,
+        "number_operands_unique": 13,
+        "cloc": 3,
+        "loc": 35,
+        "lloc": 32,
+        "mi": 73.05,
+        "mIwoC": 51.15,
+        "commentWeight": 21.91,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.65,
+        "relativeSystemComplexity": 9.65,
+        "totalStructuralComplexity": 45,
+        "totalDataComplexity": 3.25,
+        "totalSystemComplexity": 48.25,
+        "package": "Symfony\\Component\\Panther\\DomCrawler\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\DomCrawler\\Field\\TextareaFormField": {
+        "name": "Symfony\\Component\\Panther\\DomCrawler\\Field\\TextareaFormField",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initialize",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Symfony\\Component\\DomCrawler\\Field\\TextareaFormField",
+            "LogicException"
+        ],
+        "parents": [
+            "Symfony\\Component\\DomCrawler\\Field\\TextareaFormField"
+        ],
+        "lcom": 2,
+        "length": 12,
+        "vocabulary": 8,
+        "volume": 36,
+        "difficulty": 2.7,
+        "effort": 97.2,
+        "level": 0.37,
+        "bugs": 0.01,
+        "time": 5,
+        "intelligentContent": 13.33,
+        "number_operators": 3,
+        "number_operands": 9,
+        "number_operators_unique": 3,
+        "number_operands_unique": 5,
+        "cloc": 8,
+        "loc": 24,
+        "lloc": 16,
+        "mi": 101.56,
+        "mIwoC": 62.57,
+        "commentWeight": 38.99,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.17,
+        "relativeSystemComplexity": 4.17,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 0.33,
+        "totalSystemComplexity": 8.33,
+        "package": "Symfony\\Component\\Panther\\DomCrawler\\Field\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\DomCrawler\\Field\\": {
+        "name": "Symfony\\Component\\Panther\\DomCrawler\\Field\\",
+        "classes": [
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\TextareaFormField",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\ChoiceFormField",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\FormFieldTrait",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\InputFormField",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\FileFormField"
+        ],
+        "incoming_class_dependencies": [
+            "Symfony\\Component\\Panther\\DomCrawler\\Form"
+        ],
+        "incoming_package_dependencies": [
+            "Symfony\\Component\\Panther\\DomCrawler\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\DomCrawler\\Field\\TextareaFormField",
+            "LogicException",
+            "Symfony\\Component\\DomCrawler\\Field\\ChoiceFormField",
+            "InvalidArgumentException",
+            "DOMElement",
+            "Facebook\\WebDriver\\WebDriverSelect",
+            "Symfony\\Component\\Panther\\WebDriver\\WebDriverCheckbox",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "Symfony\\Component\\DomCrawler\\Field\\InputFormField",
+            "Symfony\\Component\\DomCrawler\\Field\\FileFormField"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\DomCrawler\\Field\\",
+            "\\",
+            "Facebook\\WebDriver\\",
+            "Symfony\\Component\\Panther\\WebDriver\\"
+        ],
+        "abstraction": 0.2,
+        "instability": 0.9090909090909091,
+        "dependent_instabilities": {
+            "Symfony\\Component\\Panther\\WebDriver\\": 0.8
+        },
+        "distance": 0.07713892158398702,
+        "normalized_distance": 0.10909090909090913,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Symfony\\Component\\Panther\\DomCrawler\\Field\\ChoiceFormField": {
+        "name": "Symfony\\Component\\Panther\\DomCrawler\\Field\\ChoiceFormField",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "hasValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "select",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "tick",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "untick",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addChoice",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getType",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isMultiple",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "availableOptionValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disableValidation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initialize",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 39,
+        "ccn": 28,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Symfony\\Component\\DomCrawler\\Field\\ChoiceFormField",
+            "LogicException",
+            "LogicException",
+            "InvalidArgumentException",
+            "DOMElement",
+            "LogicException",
+            "LogicException",
+            "Facebook\\WebDriver\\WebDriverSelect",
+            "Symfony\\Component\\Panther\\WebDriver\\WebDriverCheckbox"
+        ],
+        "parents": [
+            "Symfony\\Component\\DomCrawler\\Field\\ChoiceFormField"
+        ],
+        "lcom": 2,
+        "length": 168,
+        "vocabulary": 29,
+        "volume": 816.14,
+        "difficulty": 14.87,
+        "effort": 12135.66,
+        "level": 0.07,
+        "bugs": 0.27,
+        "time": 674,
+        "intelligentContent": 54.89,
+        "number_operators": 54,
+        "number_operands": 114,
+        "number_operators_unique": 6,
+        "number_operands_unique": 23,
+        "cloc": 51,
+        "loc": 164,
+        "lloc": 113,
+        "mi": 69.08,
+        "mIwoC": 31.06,
+        "commentWeight": 38.02,
+        "kanDefect": 1.98,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.87,
+        "relativeSystemComplexity": 144.87,
+        "totalStructuralComplexity": 1728,
+        "totalDataComplexity": 10.38,
+        "totalSystemComplexity": 1738.38,
+        "package": "Symfony\\Component\\Panther\\DomCrawler\\Field\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\DomCrawler\\Field\\FormFieldTrait": {
+        "name": "Symfony\\Component\\Panther\\DomCrawler\\Field\\FormFieldTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDisabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTextValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Facebook\\WebDriver\\WebDriverElement",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 35,
+        "vocabulary": 15,
+        "volume": 136.74,
+        "difficulty": 6,
+        "effort": 820.45,
+        "level": 0.17,
+        "bugs": 0.05,
+        "time": 46,
+        "intelligentContent": 22.79,
+        "number_operators": 11,
+        "number_operands": 24,
+        "number_operators_unique": 5,
+        "number_operands_unique": 10,
+        "cloc": 7,
+        "loc": 44,
+        "lloc": 37,
+        "mi": 79.4,
+        "mIwoC": 50.43,
+        "commentWeight": 28.97,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.56,
+        "relativeSystemComplexity": 25.56,
+        "totalStructuralComplexity": 150,
+        "totalDataComplexity": 3.33,
+        "totalSystemComplexity": 153.33,
+        "package": "Symfony\\Component\\Panther\\DomCrawler\\Field\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\DomCrawler\\Field\\InputFormField": {
+        "name": "Symfony\\Component\\Panther\\DomCrawler\\Field\\InputFormField",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initialize",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 7,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Symfony\\Component\\DomCrawler\\Field\\InputFormField",
+            "LogicException",
+            "LogicException",
+            "LogicException"
+        ],
+        "parents": [
+            "Symfony\\Component\\DomCrawler\\Field\\InputFormField"
+        ],
+        "lcom": 1,
+        "length": 39,
+        "vocabulary": 18,
+        "volume": 162.63,
+        "difficulty": 5.38,
+        "effort": 875.68,
+        "level": 0.19,
+        "bugs": 0.05,
+        "time": 49,
+        "intelligentContent": 30.2,
+        "number_operators": 11,
+        "number_operands": 28,
+        "number_operators_unique": 5,
+        "number_operands_unique": 13,
+        "cloc": 8,
+        "loc": 37,
+        "lloc": 29,
+        "mi": 84.66,
+        "mIwoC": 51.67,
+        "commentWeight": 32.98,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.08,
+        "relativeSystemComplexity": 25.08,
+        "totalStructuralComplexity": 50,
+        "totalDataComplexity": 0.17,
+        "totalSystemComplexity": 50.17,
+        "package": "Symfony\\Component\\Panther\\DomCrawler\\Field\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\DomCrawler\\Field\\FileFormField": {
+        "name": "Symfony\\Component\\Panther\\DomCrawler\\Field\\FileFormField",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "getValue",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFilePath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "initialize",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValueFromTmp",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sanitizeValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 9,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Symfony\\Component\\DomCrawler\\Field\\FileFormField",
+            "LogicException",
+            "LogicException"
+        ],
+        "parents": [
+            "Symfony\\Component\\DomCrawler\\Field\\FileFormField"
+        ],
+        "lcom": 1,
+        "length": 126,
+        "vocabulary": 25,
+        "volume": 585.13,
+        "difficulty": 11.5,
+        "effort": 6728.95,
+        "level": 0.09,
+        "bugs": 0.2,
+        "time": 374,
+        "intelligentContent": 50.88,
+        "number_operators": 34,
+        "number_operands": 92,
+        "number_operators_unique": 5,
+        "number_operands_unique": 20,
+        "cloc": 18,
+        "loc": 84,
+        "lloc": 66,
+        "mi": 72.58,
+        "mIwoC": 39.72,
+        "commentWeight": 32.86,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 49.33,
+        "totalStructuralComplexity": 294,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 296,
+        "package": "Symfony\\Component\\Panther\\DomCrawler\\Field\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\DomCrawler\\Crawler": {
+        "name": "Symfony\\Component\\Panther\\DomCrawler\\Crawler",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addHtmlContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addXmlContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addDocument",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addNodeList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addNodes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "eq",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "each",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "slice",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reduce",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "first",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "last",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "siblings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "nextAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "previousAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parents",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "children",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attr",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "nodeName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "text",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "html",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "evaluate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extract",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterXPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectLink",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectImage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectButton",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "link",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "links",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "image",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "images",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "form",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDefaultNamespacePrefix",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerNamespace",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "count",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIterator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sibling",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectFromXpath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createSubCrawler",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createSubCrawlerFromXpath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterWebDriverBy",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getElementOrThrow",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "click",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCSSValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLocation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLocationOnScreenOnceScrolledIntoView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTagName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDisplayed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEnabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSelected",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendKeys",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getID",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findElements",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createCssSelectorConverter",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 66,
+        "nbMethods": 66,
+        "nbMethodsPrivate": 7,
+        "nbMethodsPublic": 59,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 95,
+        "ccn": 30,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Symfony\\Component\\DomCrawler\\Crawler",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "Facebook\\WebDriver\\WebDriver",
+            "DOMDocument",
+            "DOMNodeList",
+            "DOMNode",
+            "Closure",
+            "Closure",
+            "InvalidArgumentException",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "static",
+            "static",
+            "static",
+            "static",
+            "InvalidArgumentException",
+            "Symfony\\Component\\Panther\\DomCrawler\\Link",
+            "Symfony\\Component\\Panther\\DomCrawler\\Link",
+            "Symfony\\Component\\Panther\\DomCrawler\\Image",
+            "Symfony\\Component\\Panther\\DomCrawler\\Image",
+            "Symfony\\Component\\Panther\\DomCrawler\\Form",
+            "InvalidArgumentException",
+            "ArrayIterator",
+            "ArrayIterator",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "static",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "InvalidArgumentException",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Symfony\\Component\\CssSelector\\CssSelectorConverter",
+            "LogicException",
+            "Symfony\\Component\\CssSelector\\CssSelectorConverter"
+        ],
+        "parents": [
+            "Symfony\\Component\\DomCrawler\\Crawler"
+        ],
+        "lcom": 3,
+        "length": 431,
+        "vocabulary": 77,
+        "volume": 2700.98,
+        "difficulty": 20.51,
+        "effort": 55409.91,
+        "level": 0.05,
+        "bugs": 0.9,
+        "time": 3078,
+        "intelligentContent": 131.66,
+        "number_operators": 121,
+        "number_operands": 310,
+        "number_operators_unique": 9,
+        "number_operands_unique": 68,
+        "cloc": 15,
+        "loc": 378,
+        "lloc": 363,
+        "mi": 31.28,
+        "mIwoC": 16.1,
+        "commentWeight": 15.19,
+        "kanDefect": 2.83,
+        "relativeStructuralComplexity": 1089,
+        "relativeDataComplexity": 1.7,
+        "relativeSystemComplexity": 1090.7,
+        "totalStructuralComplexity": 71874,
+        "totalDataComplexity": 112.18,
+        "totalSystemComplexity": 71986.18,
+        "package": "Symfony\\Component\\Panther\\DomCrawler\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 16,
+        "instability": 0.94,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\ProcessManager\\WebServerReadinessProbeTrait": {
+        "name": "Symfony\\Component\\Panther\\ProcessManager\\WebServerReadinessProbeTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "checkPortAvailable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "waitUntilReady",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 11,
+        "ccnMethodMax": 9,
+        "externals": [
+            "RuntimeException",
+            "Symfony\\Component\\Process\\Process",
+            "Symfony\\Component\\HttpClient\\HttpClient",
+            "RuntimeException",
+            "RuntimeException"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 90,
+        "vocabulary": 40,
+        "volume": 478.97,
+        "difficulty": 10.5,
+        "effort": 5029.22,
+        "level": 0.1,
+        "bugs": 0.16,
+        "time": 279,
+        "intelligentContent": 45.62,
+        "number_operators": 27,
+        "number_operands": 63,
+        "number_operators_unique": 10,
+        "number_operands_unique": 30,
+        "cloc": 8,
+        "loc": 55,
+        "lloc": 47,
+        "mi": 71.13,
+        "mIwoC": 43.28,
+        "commentWeight": 27.85,
+        "kanDefect": 0.87,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 25.83,
+        "totalStructuralComplexity": 50,
+        "totalDataComplexity": 1.67,
+        "totalSystemComplexity": 51.67,
+        "package": "Symfony\\Component\\Panther\\ProcessManager\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\ProcessManager\\": {
+        "name": "Symfony\\Component\\Panther\\ProcessManager\\",
+        "classes": [
+            "Symfony\\Component\\Panther\\ProcessManager\\WebServerReadinessProbeTrait",
+            "Symfony\\Component\\Panther\\ProcessManager\\ChromeManager",
+            "Symfony\\Component\\Panther\\ProcessManager\\SeleniumManager",
+            "Symfony\\Component\\Panther\\ProcessManager\\BrowserManagerInterface",
+            "Symfony\\Component\\Panther\\ProcessManager\\WebServerManager",
+            "Symfony\\Component\\Panther\\ProcessManager\\FirefoxManager"
+        ],
+        "incoming_class_dependencies": [
+            "Symfony\\Component\\Panther\\Client"
+        ],
+        "incoming_package_dependencies": [
+            "Symfony\\Component\\Panther\\"
+        ],
+        "outgoing_class_dependencies": [
+            "RuntimeException",
+            "Symfony\\Component\\Process\\Process",
+            "Symfony\\Component\\HttpClient\\HttpClient",
+            "Facebook\\WebDriver\\WebDriver",
+            "Facebook\\WebDriver\\Remote\\DesiredCapabilities",
+            "Facebook\\WebDriver\\Chrome\\ChromeOptions",
+            "Facebook\\WebDriver\\Remote\\RemoteWebDriver",
+            "Symfony\\Component\\Process\\PhpExecutableFinder"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Symfony\\Component\\Process\\",
+            "Symfony\\Component\\HttpClient\\",
+            "Facebook\\WebDriver\\",
+            "Facebook\\WebDriver\\Remote\\",
+            "Facebook\\WebDriver\\Chrome\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.8888888888888888,
+        "dependent_instabilities": [],
+        "distance": 0.15713484026367713,
+        "normalized_distance": 0.2222222222222221,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Symfony\\Component\\Panther\\ProcessManager\\ChromeManager": {
+        "name": "Symfony\\Component\\Panther\\ProcessManager\\ChromeManager",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "quit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findChromeDriverBinary",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 24,
+        "ccn": 19,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Symfony\\Component\\Panther\\ProcessManager\\BrowserManagerInterface",
+            "Symfony\\Component\\Process\\Process",
+            "Facebook\\WebDriver\\WebDriver",
+            "Facebook\\WebDriver\\Remote\\DesiredCapabilities",
+            "Facebook\\WebDriver\\Chrome\\ChromeOptions",
+            "Facebook\\WebDriver\\Remote\\RemoteWebDriver"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 141,
+        "vocabulary": 48,
+        "volume": 787.48,
+        "difficulty": 7.07,
+        "effort": 5568.61,
+        "level": 0.14,
+        "bugs": 0.26,
+        "time": 309,
+        "intelligentContent": 111.36,
+        "number_operators": 42,
+        "number_operands": 99,
+        "number_operators_unique": 6,
+        "number_operands_unique": 42,
+        "cloc": 10,
+        "loc": 77,
+        "lloc": 67,
+        "mi": 63.82,
+        "mIwoC": 37.33,
+        "commentWeight": 26.49,
+        "kanDefect": 0.79,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.54,
+        "relativeSystemComplexity": 169.54,
+        "totalStructuralComplexity": 1014,
+        "totalDataComplexity": 3.21,
+        "totalSystemComplexity": 1017.21,
+        "package": "Symfony\\Component\\Panther\\ProcessManager\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\ProcessManager\\SeleniumManager": {
+        "name": "Symfony\\Component\\Panther\\ProcessManager\\SeleniumManager",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "quit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Symfony\\Component\\Panther\\ProcessManager\\BrowserManagerInterface",
+            "Facebook\\WebDriver\\Remote\\DesiredCapabilities",
+            "Facebook\\WebDriver\\WebDriver",
+            "Facebook\\WebDriver\\Remote\\RemoteWebDriver"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 23,
+        "vocabulary": 10,
+        "volume": 76.4,
+        "difficulty": 3.43,
+        "effort": 261.96,
+        "level": 0.29,
+        "bugs": 0.03,
+        "time": 15,
+        "intelligentContent": 22.28,
+        "number_operators": 7,
+        "number_operands": 16,
+        "number_operators_unique": 3,
+        "number_operands_unique": 7,
+        "cloc": 4,
+        "loc": 24,
+        "lloc": 20,
+        "mi": 87.45,
+        "mIwoC": 57.9,
+        "commentWeight": 29.56,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 4.67,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 14,
+        "package": "Symfony\\Component\\Panther\\ProcessManager\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\ProcessManager\\BrowserManagerInterface": {
+        "name": "Symfony\\Component\\Panther\\ProcessManager\\BrowserManagerInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "quit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Facebook\\WebDriver\\WebDriver"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Symfony\\Component\\Panther\\ProcessManager\\",
+        "pageRank": 0.14,
+        "afferentCoupling": 4,
+        "efferentCoupling": 1,
+        "instability": 0.2,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Symfony\\Component\\Panther\\ProcessManager\\WebServerManager": {
+        "name": "Symfony\\Component\\Panther\\ProcessManager\\WebServerManager",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "quit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isStarted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 7,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Symfony\\Component\\Process\\PhpExecutableFinder",
+            "RuntimeException",
+            "Symfony\\Component\\Process\\Process"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 82,
+        "vocabulary": 31,
+        "volume": 406.24,
+        "difficulty": 7.56,
+        "effort": 3071.21,
+        "level": 0.13,
+        "bugs": 0.14,
+        "time": 171,
+        "intelligentContent": 53.74,
+        "number_operators": 19,
+        "number_operands": 63,
+        "number_operators_unique": 6,
+        "number_operands_unique": 25,
+        "cloc": 14,
+        "loc": 61,
+        "lloc": 47,
+        "mi": 78.11,
+        "mIwoC": 44.32,
+        "commentWeight": 33.79,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.28,
+        "relativeSystemComplexity": 64.28,
+        "totalStructuralComplexity": 256,
+        "totalDataComplexity": 1.11,
+        "totalSystemComplexity": 257.11,
+        "package": "Symfony\\Component\\Panther\\ProcessManager\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\ProcessManager\\FirefoxManager": {
+        "name": "Symfony\\Component\\Panther\\ProcessManager\\FirefoxManager",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "start",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "quit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findGeckodriverBinary",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultArguments",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 21,
+        "ccn": 16,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Symfony\\Component\\Panther\\ProcessManager\\BrowserManagerInterface",
+            "Symfony\\Component\\Process\\Process",
+            "Facebook\\WebDriver\\WebDriver",
+            "Facebook\\WebDriver\\Remote\\DesiredCapabilities",
+            "Facebook\\WebDriver\\Remote\\RemoteWebDriver"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 135,
+        "vocabulary": 45,
+        "volume": 741.4,
+        "difficulty": 7.31,
+        "effort": 5417.92,
+        "level": 0.14,
+        "bugs": 0.25,
+        "time": 301,
+        "intelligentContent": 101.45,
+        "number_operators": 40,
+        "number_operands": 95,
+        "number_operators_unique": 6,
+        "number_operands_unique": 39,
+        "cloc": 8,
+        "loc": 72,
+        "lloc": 64,
+        "mi": 63.04,
+        "mIwoC": 38.35,
+        "commentWeight": 24.69,
+        "kanDefect": 0.72,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 0.63,
+        "relativeSystemComplexity": 121.63,
+        "totalStructuralComplexity": 726,
+        "totalDataComplexity": 3.75,
+        "totalSystemComplexity": 729.75,
+        "package": "Symfony\\Component\\Panther\\ProcessManager\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\WebDriver\\WebDriverCheckbox": {
+        "name": "Symfony\\Component\\Panther\\WebDriver\\WebDriverCheckbox",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isMultiple",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllSelectedOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFirstSelectedOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectByIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectByValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectByVisibleText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectByVisiblePartialText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deselectAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deselectByIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deselectByValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deselectByVisibleText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deselectByVisiblePartialText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "byValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "byIndex",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "byVisibleText",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRelatedElements",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "selectOption",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deselectOption",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 20,
+        "nbMethods": 20,
+        "nbMethodsPrivate": 6,
+        "nbMethodsPublic": 14,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 55,
+        "ccn": 36,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Facebook\\WebDriver\\WebDriverSelectInterface",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "Facebook\\WebDriver\\Exception\\UnexpectedTagNameException",
+            "Facebook\\WebDriver\\Exception\\WebDriverException",
+            "Facebook\\WebDriver\\Exception\\WebDriverException",
+            "Facebook\\WebDriver\\Exception\\NoSuchElementException",
+            "Facebook\\WebDriver\\Exception\\UnsupportedOperationException",
+            "Facebook\\WebDriver\\Exception\\UnsupportedOperationException",
+            "Facebook\\WebDriver\\Exception\\UnsupportedOperationException",
+            "Facebook\\WebDriver\\Exception\\UnsupportedOperationException",
+            "Facebook\\WebDriver\\Exception\\UnsupportedOperationException",
+            "Facebook\\WebDriver\\Exception\\NoSuchElementException",
+            "Facebook\\WebDriver\\Exception\\NoSuchElementException",
+            "Facebook\\WebDriver\\Support\\XPathEscaper",
+            "Facebook\\WebDriver\\Support\\XPathEscaper",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\Support\\XPathEscaper",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\Support\\XPathEscaper",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\Support\\XPathEscaper",
+            "Facebook\\WebDriver\\Support\\XPathEscaper",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "Facebook\\WebDriver\\WebDriverElement"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 250,
+        "vocabulary": 54,
+        "volume": 1438.72,
+        "difficulty": 16.09,
+        "effort": 23144.66,
+        "level": 0.06,
+        "bugs": 0.48,
+        "time": 1286,
+        "intelligentContent": 89.43,
+        "number_operators": 65,
+        "number_operands": 185,
+        "number_operators_unique": 8,
+        "number_operands_unique": 46,
+        "cloc": 13,
+        "loc": 195,
+        "lloc": 182,
+        "mi": 43.22,
+        "mIwoC": 23.74,
+        "commentWeight": 19.47,
+        "kanDefect": 2.84,
+        "relativeStructuralComplexity": 256,
+        "relativeDataComplexity": 0.59,
+        "relativeSystemComplexity": 256.59,
+        "totalStructuralComplexity": 5120,
+        "totalDataComplexity": 11.71,
+        "totalSystemComplexity": 5131.71,
+        "package": "Symfony\\Component\\Panther\\WebDriver\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 2,
+        "efferentCoupling": 8,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\WebDriver\\": {
+        "name": "Symfony\\Component\\Panther\\WebDriver\\",
+        "classes": [
+            "Symfony\\Component\\Panther\\WebDriver\\WebDriverCheckbox",
+            "Symfony\\Component\\Panther\\WebDriver\\WebDriverMouse"
+        ],
+        "incoming_class_dependencies": [
+            "Symfony\\Component\\Panther\\Client",
+            "Symfony\\Component\\Panther\\DomCrawler\\Form",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\ChoiceFormField"
+        ],
+        "incoming_package_dependencies": [
+            "Symfony\\Component\\Panther\\",
+            "Symfony\\Component\\Panther\\DomCrawler\\",
+            "Symfony\\Component\\Panther\\DomCrawler\\Field\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Facebook\\WebDriver\\WebDriverSelectInterface",
+            "Facebook\\WebDriver\\WebDriverElement",
+            "Facebook\\WebDriver\\Exception\\UnexpectedTagNameException",
+            "Facebook\\WebDriver\\Exception\\WebDriverException",
+            "Facebook\\WebDriver\\Exception\\NoSuchElementException",
+            "Facebook\\WebDriver\\Exception\\UnsupportedOperationException",
+            "Facebook\\WebDriver\\Support\\XPathEscaper",
+            "Facebook\\WebDriver\\WebDriverBy",
+            "Facebook\\WebDriver\\WebDriverMouse",
+            "Symfony\\Component\\Panther\\Client",
+            "Facebook\\WebDriver\\Interactions\\Internal\\WebDriverCoordinates",
+            "RuntimeException"
+        ],
+        "outgoing_package_dependencies": [
+            "Facebook\\WebDriver\\",
+            "Facebook\\WebDriver\\Exception\\",
+            "Facebook\\WebDriver\\Support\\",
+            "Symfony\\Component\\Panther\\",
+            "Facebook\\WebDriver\\Interactions\\Internal\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8,
+        "dependent_instabilities": {
+            "Symfony\\Component\\Panther\\": 0.9666666666666667
+        },
+        "distance": 0.14142135623730948,
+        "normalized_distance": 0.19999999999999996,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Symfony\\Component\\Panther\\WebDriver\\WebDriverMouse": {
+        "name": "Symfony\\Component\\Panther\\WebDriver\\WebDriverMouse",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "click",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clickTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "contextClick",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "contextClickTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doubleClick",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doubleClickTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mouseDown",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mouseDownTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mouseMove",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mouseMoveTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mouseUp",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mouseUpTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toCoordinates",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 13,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 15,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Facebook\\WebDriver\\WebDriverMouse",
+            "Facebook\\WebDriver\\WebDriverMouse",
+            "Symfony\\Component\\Panther\\Client",
+            "Facebook\\WebDriver\\Interactions\\Internal\\WebDriverCoordinates",
+            "Facebook\\WebDriver\\Interactions\\Internal\\WebDriverCoordinates",
+            "Facebook\\WebDriver\\Interactions\\Internal\\WebDriverCoordinates",
+            "Facebook\\WebDriver\\Interactions\\Internal\\WebDriverCoordinates",
+            "Facebook\\WebDriver\\Interactions\\Internal\\WebDriverCoordinates",
+            "Facebook\\WebDriver\\Interactions\\Internal\\WebDriverCoordinates",
+            "Facebook\\WebDriver\\Interactions\\Internal\\WebDriverCoordinates",
+            "RuntimeException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 88,
+        "vocabulary": 13,
+        "volume": 325.64,
+        "difficulty": 10.65,
+        "effort": 3468.05,
+        "level": 0.09,
+        "bugs": 0.11,
+        "time": 193,
+        "intelligentContent": 30.58,
+        "number_operators": 17,
+        "number_operands": 71,
+        "number_operators_unique": 3,
+        "number_operands_unique": 10,
+        "cloc": 3,
+        "loc": 76,
+        "lloc": 73,
+        "mi": 56.64,
+        "mIwoC": 41.49,
+        "commentWeight": 15.15,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 1.2,
+        "relativeSystemComplexity": 122.2,
+        "totalStructuralComplexity": 1694,
+        "totalDataComplexity": 16.75,
+        "totalSystemComplexity": 1710.75,
+        "package": "Symfony\\Component\\Panther\\WebDriver\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\ServerTrait": {
+        "name": "Symfony\\Component\\Panther\\ServerTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "keepServerOnTeardown",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stopWebServer",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "pause",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 6,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Symfony\\Component\\Panther\\PantherTestCase",
+            "Symfony\\Component\\Panther\\PantherTestCase"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 16,
+        "vocabulary": 12,
+        "volume": 57.36,
+        "difficulty": 2.5,
+        "effort": 143.4,
+        "level": 0.4,
+        "bugs": 0.02,
+        "time": 8,
+        "intelligentContent": 22.94,
+        "number_operators": 6,
+        "number_operands": 10,
+        "number_operators_unique": 4,
+        "number_operands_unique": 8,
+        "cloc": 5,
+        "loc": 27,
+        "lloc": 22,
+        "mi": 88.51,
+        "mIwoC": 57.6,
+        "commentWeight": 30.92,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 0.17,
+        "relativeSystemComplexity": 1.17,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 3.5,
+        "package": "Symfony\\Component\\Panther\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\ServerExtension": {
+        "name": "Symfony\\Component\\Panther\\ServerExtension",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "executeBeforeFirstTest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeAfterLastTest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeAfterTestError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeAfterTestFailure",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "PHPUnit\\Runner\\BeforeFirstTestHook",
+            "PHPUnit\\Runner\\AfterLastTestHook",
+            "PHPUnit\\Runner\\AfterTestErrorHook",
+            "PHPUnit\\Runner\\AfterTestFailureHook"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 14,
+        "vocabulary": 6,
+        "volume": 36.19,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0.86,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 31.02,
+        "number_operators": 0,
+        "number_operands": 14,
+        "number_operators_unique": 0,
+        "number_operands_unique": 6,
+        "cloc": 3,
+        "loc": 24,
+        "lloc": 21,
+        "mi": 86.15,
+        "mIwoC": 60.11,
+        "commentWeight": 26.04,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 9.38,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 37.5,
+        "package": "Symfony\\Component\\Panther\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Symfony\\Component\\Panther\\ServerListener": {
+        "name": "Symfony\\Component\\Panther\\ServerListener",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "startTestSuite",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "endTestSuite",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFailure",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "PHPUnit\\Framework\\TestListener",
+            "PHPUnit\\Framework\\TestSuite",
+            "PHPUnit\\Framework\\TestSuite",
+            "PHPUnit\\Framework\\Test",
+            "Throwable",
+            "PHPUnit\\Framework\\Test",
+            "PHPUnit\\Framework\\AssertionFailedError"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 16,
+        "vocabulary": 8,
+        "volume": 48,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1,
+        "bugs": 0.02,
+        "time": 0,
+        "intelligentContent": 48,
+        "number_operators": 0,
+        "number_operands": 16,
+        "number_operators_unique": 0,
+        "number_operands_unique": 8,
+        "cloc": 3,
+        "loc": 25,
+        "lloc": 22,
+        "mi": 84.37,
+        "mIwoC": 58.81,
+        "commentWeight": 25.56,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 16.4,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 1.6,
+        "totalSystemComplexity": 65.6,
+        "package": "Symfony\\Component\\Panther\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.43,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.1",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "php-webdriver\/webdriver": {
+                "name": "php-webdriver\/webdriver",
+                "required": "^1.8.1",
+                "installed": null,
+                "latest": "1.8.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/php-webdriver\/php-webdriver",
+                "zip": "https:\/\/api.github.com\/repos\/php-webdriver\/php-webdriver\/zipball\/262ea0d209c292e0330be1041424887bbbffef04"
+            },
+            "symfony\/browser-kit": {
+                "name": "symfony\/browser-kit",
+                "required": "^4.3 || ^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/browser-kit\/zipball\/6b2a9590a5868f0ce5cbf7af6abe563d1a3930a3"
+            },
+            "symfony\/dom-crawler": {
+                "name": "symfony\/dom-crawler",
+                "required": "^4.3 || ^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/dom-crawler\/zipball\/4368bdd61b83af365b8f23e9616d2a2ed52cbe7c"
+            },
+            "symfony\/http-client": {
+                "name": "symfony\/http-client",
+                "required": "^4.3 || ^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/http-client\/zipball\/2edd40250649944775aad5d6b4cc8e164c1e9d72"
+            },
+            "symfony\/polyfill-php72": {
+                "name": "symfony\/polyfill-php72",
+                "required": "^1.9",
+                "installed": null,
+                "latest": "1.14.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/polyfill-php72\/zipball\/46ecacf4751dd0dc81e4f6bf01dbf9da1dc1dadf"
+            },
+            "symfony\/process": {
+                "name": "symfony\/process",
+                "required": "^3.4 || ^4.0 || ^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/process\/zipball\/fd4a86dd7e36437f2fc080d8c42c7415d828a0a8"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

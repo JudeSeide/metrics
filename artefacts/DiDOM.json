@@ -1,0 +1,1654 @@
+{
+    "DiDom\\Errors": {
+        "name": "DiDom\\Errors",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "disable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "restore",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [],
+        "parents": [],
+        "lcom": 2,
+        "length": 5,
+        "vocabulary": 3,
+        "volume": 7.92,
+        "difficulty": 2,
+        "effort": 15.85,
+        "level": 0.5,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 3.96,
+        "number_operators": 3,
+        "number_operands": 2,
+        "number_operators_unique": 2,
+        "number_operands_unique": 1,
+        "cloc": 14,
+        "loc": 33,
+        "lloc": 19,
+        "mi": 107.86,
+        "mIwoC": 65.54,
+        "commentWeight": 42.32,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 0.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "DiDom\\",
+        "pageRank": 0.13,
+        "afferentCoupling": 2,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "DiDom\\": {
+        "name": "DiDom\\",
+        "classes": [
+            "DiDom\\Errors",
+            "DiDom\\ClassAttribute",
+            "DiDom\\Element",
+            "DiDom\\StyleAttribute",
+            "DiDom\\Query",
+            "DiDom\\Document",
+            "DiDom\\Encoder"
+        ],
+        "outgoing_class_dependencies": [
+            "InvalidArgumentException",
+            "DOMDocument",
+            "LogicException",
+            "RuntimeException",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "static",
+            "DOMText",
+            "DOMComment",
+            "DOMCdataSection",
+            "DOMXPath"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "DiDom\\Exceptions\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "DiDom\\Exceptions\\": 0.5
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "DiDom\\ClassAttribute": {
+        "name": "DiDom\\ClassAttribute",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseClassAttribute",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateClassAttribute",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "add",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addMultiple",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "contains",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "remove",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeMultiple",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getElement",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 36,
+        "ccn": 26,
+        "ccnMethodMax": 5,
+        "externals": [
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 191,
+        "vocabulary": 22,
+        "volume": 851.75,
+        "difficulty": 20.29,
+        "effort": 17285.54,
+        "level": 0.05,
+        "bugs": 0.28,
+        "time": 960,
+        "intelligentContent": 41.97,
+        "number_operators": 53,
+        "number_operands": 138,
+        "number_operators_unique": 5,
+        "number_operands_unique": 17,
+        "cloc": 71,
+        "loc": 207,
+        "lloc": 136,
+        "mi": 68.84,
+        "mIwoC": 29.44,
+        "commentWeight": 39.39,
+        "kanDefect": 1.96,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 1.95,
+        "relativeSystemComplexity": 37.95,
+        "totalStructuralComplexity": 396,
+        "totalDataComplexity": 21.43,
+        "totalSystemComplexity": 417.43,
+        "package": "DiDom\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "DiDom\\Element": {
+        "name": "DiDom\\Element",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createBySelector",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prependChild",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "appendChild",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "insertBefore",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "insertAfter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "find",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findInDocument",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "first",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "firstInDocument",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "xpath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "count",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "matches",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeAttribute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeAllAttributes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attr",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "attributes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "classes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "style",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "html",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "outerHtml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "innerHtml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "innerXml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setInnerHtml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "xml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "text",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isElementNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isTextNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isCommentNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isCdataSectionNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "is",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "closest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "previousSibling",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "previousSiblings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "nextSibling",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "nextSiblings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "child",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "firstChild",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "lastChild",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasChildren",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "children",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeChild",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeChildren",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "remove",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "replace",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLineNo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cloneNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setNode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNode",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDocument",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toDocument",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__isset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__unset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__invoke",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 64,
+        "nbMethods": 63,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 62,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 219,
+        "ccn": 156,
+        "ccnMethodMax": 17,
+        "externals": [
+            "DOMDocument",
+            "DiDom\\Element",
+            "DiDom\\Document",
+            "LogicException",
+            "LogicException",
+            "DiDom\\Errors",
+            "InvalidArgumentException",
+            "DiDom\\Errors",
+            "DiDom\\Element",
+            "LogicException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "DiDom\\Errors",
+            "DiDom\\Errors",
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "LogicException",
+            "LogicException",
+            "InvalidArgumentException",
+            "DiDom\\Document",
+            "DiDom\\Query",
+            "RuntimeException",
+            "InvalidArgumentException",
+            "LogicException",
+            "DiDom\\ClassAttribute",
+            "LogicException",
+            "DiDom\\StyleAttribute",
+            "DOMDocument",
+            "InvalidArgumentException",
+            "DiDom\\Errors",
+            "DiDom\\Document",
+            "DiDom\\Errors",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "DiDom\\Document",
+            "DiDom\\Element",
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "RuntimeException",
+            "LogicException",
+            "DiDom\\Element",
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "RuntimeException",
+            "LogicException",
+            "DiDom\\Element",
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "RuntimeException",
+            "LogicException",
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "RuntimeException",
+            "LogicException",
+            "DiDom\\Element",
+            "DiDom\\Element",
+            "DiDom\\Element",
+            "DiDom\\Element",
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "DiDom\\Element",
+            "DiDom\\Element",
+            "LogicException",
+            "DiDom\\Element",
+            "LogicException",
+            "InvalidArgumentException",
+            "DiDom\\Element",
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "DiDom\\Document",
+            "DiDom\\Document"
+        ],
+        "parents": [],
+        "lcom": 4,
+        "length": 1245,
+        "vocabulary": 107,
+        "volume": 8393.13,
+        "difficulty": 47.67,
+        "effort": 400072.36,
+        "level": 0.02,
+        "bugs": 2.8,
+        "time": 22226,
+        "intelligentContent": 176.08,
+        "number_operators": 413,
+        "number_operands": 832,
+        "number_operators_unique": 11,
+        "number_operands_unique": 96,
+        "cloc": 480,
+        "loc": 1194,
+        "lloc": 714,
+        "mi": 41.59,
+        "mIwoC": 0,
+        "commentWeight": 41.59,
+        "kanDefect": 11.2,
+        "relativeStructuralComplexity": 1521,
+        "relativeDataComplexity": 2.4,
+        "relativeSystemComplexity": 1523.4,
+        "totalStructuralComplexity": 97344,
+        "totalDataComplexity": 153.9,
+        "totalSystemComplexity": 97497.9,
+        "package": "DiDom\\",
+        "pageRank": 0.33,
+        "afferentCoupling": 5,
+        "efferentCoupling": 11,
+        "instability": 0.69,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "DiDom\\Exceptions\\InvalidSelectorException": {
+        "name": "DiDom\\Exceptions\\InvalidSelectorException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Exception"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 1,
+        "loc": 5,
+        "lloc": 4,
+        "mi": 202.94,
+        "mIwoC": 171,
+        "commentWeight": 31.94,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "DiDom\\Exceptions\\",
+        "pageRank": 0.17,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "DiDom\\Exceptions\\": {
+        "name": "DiDom\\Exceptions\\",
+        "classes": [
+            "DiDom\\Exceptions\\InvalidSelectorException"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "incoming_class_dependencies": [
+            "DiDom\\Query"
+        ],
+        "incoming_package_dependencies": [
+            "DiDom\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.5,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "DiDom\\StyleAttribute": {
+        "name": "DiDom\\StyleAttribute",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseStyleAttribute",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateStyleAttribute",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildStyleString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMultipleProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMultipleProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeMultipleProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeAllProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getElement",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 13,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 48,
+        "ccn": 35,
+        "ccnMethodMax": 6,
+        "externals": [
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 245,
+        "vocabulary": 32,
+        "volume": 1225,
+        "difficulty": 21.46,
+        "effort": 26290.38,
+        "level": 0.05,
+        "bugs": 0.41,
+        "time": 1461,
+        "intelligentContent": 57.08,
+        "number_operators": 59,
+        "number_operands": 186,
+        "number_operators_unique": 6,
+        "number_operands_unique": 26,
+        "cloc": 90,
+        "loc": 253,
+        "lloc": 163,
+        "mi": 65.31,
+        "mIwoC": 25.41,
+        "commentWeight": 39.9,
+        "kanDefect": 2.79,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 1.97,
+        "relativeSystemComplexity": 50.97,
+        "totalStructuralComplexity": 686,
+        "totalDataComplexity": 27.63,
+        "totalSystemComplexity": 713.63,
+        "package": "DiDom\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "DiDom\\Query": {
+        "name": "DiDom\\Query",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "compile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cssToXpath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseAndConvertSelector",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseProperty",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertProperty",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertPseudo",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildXpath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertAttribute",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertNthExpression",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertContains",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSegments",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCompiled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCompiled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 13,
+        "nbMethodsPrivate": 7,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 110,
+        "ccn": 98,
+        "ccnMethodMax": 21,
+        "externals": [
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "RuntimeException",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "static",
+            "static",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "InvalidArgumentException",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "DiDom\\Exceptions\\InvalidSelectorException",
+            "DiDom\\Exceptions\\InvalidSelectorException"
+        ],
+        "parents": [],
+        "lcom": 13,
+        "length": 870,
+        "vocabulary": 167,
+        "volume": 6423.82,
+        "difficulty": 24.08,
+        "effort": 154669.07,
+        "level": 0.04,
+        "bugs": 2.14,
+        "time": 8593,
+        "intelligentContent": 266.8,
+        "number_operators": 248,
+        "number_operands": 622,
+        "number_operators_unique": 12,
+        "number_operands_unique": 155,
+        "cloc": 107,
+        "loc": 449,
+        "lloc": 342,
+        "mi": 39.19,
+        "mIwoC": 4.88,
+        "commentWeight": 34.31,
+        "kanDefect": 5.63,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 11.9,
+        "relativeSystemComplexity": 15.9,
+        "totalStructuralComplexity": 52,
+        "totalDataComplexity": 154.67,
+        "totalSystemComplexity": 206.67,
+        "package": "DiDom\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 2,
+        "efferentCoupling": 4,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "DiDom\\Document": {
+        "name": "DiDom\\Document",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createElementBySelector",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createTextNode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createComment",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createCdataSection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "appendChild",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preserveWhiteSpace",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadHtml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadHtmlFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadXml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadXmlFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadFile",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "has",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "find",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "first",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wrapNode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "xpath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "count",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createXpath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "html",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "xml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "format",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "text",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "is",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getType",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEncoding",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDocument",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__invoke",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 34,
+        "nbMethods": 31,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 29,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 0,
+        "wmc": 86,
+        "ccn": 53,
+        "ccnMethodMax": 12,
+        "externals": [
+            "InvalidArgumentException",
+            "DOMDocument",
+            "DiDom\\Document",
+            "DiDom\\Element",
+            "DiDom\\Query",
+            "DOMText",
+            "DiDom\\Element",
+            "DOMComment",
+            "DiDom\\Element",
+            "DOMCdataSection",
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "DiDom\\Errors",
+            "DiDom\\Errors",
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "RuntimeException",
+            "InvalidArgumentException",
+            "DiDom\\Encoder",
+            "DiDom\\Errors",
+            "DiDom\\Errors",
+            "InvalidArgumentException",
+            "RuntimeException",
+            "RuntimeException",
+            "DiDom\\Query",
+            "DiDom\\Query",
+            "InvalidArgumentException",
+            "DiDom\\Query",
+            "DiDom\\Element",
+            "DiDom\\Element",
+            "DiDom\\Element",
+            "InvalidArgumentException",
+            "DiDom\\Query",
+            "DOMXPath",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "RuntimeException",
+            "DiDom\\Element"
+        ],
+        "parents": [],
+        "lcom": 5,
+        "length": 507,
+        "vocabulary": 75,
+        "volume": 3158.01,
+        "difficulty": 25.36,
+        "effort": 80098.64,
+        "level": 0.04,
+        "bugs": 1.05,
+        "time": 4450,
+        "intelligentContent": 124.51,
+        "number_operators": 135,
+        "number_operands": 372,
+        "number_operators_unique": 9,
+        "number_operands_unique": 66,
+        "cloc": 278,
+        "loc": 583,
+        "lloc": 305,
+        "mi": 58.03,
+        "mIwoC": 14.18,
+        "commentWeight": 43.85,
+        "kanDefect": 3.3,
+        "relativeStructuralComplexity": 676,
+        "relativeDataComplexity": 1.58,
+        "relativeSystemComplexity": 677.58,
+        "totalStructuralComplexity": 22984,
+        "totalDataComplexity": 53.67,
+        "totalSystemComplexity": 23037.67,
+        "package": "DiDom\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 3,
+        "efferentCoupling": 13,
+        "instability": 0.81,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "DiDom\\Encoder": {
+        "name": "DiDom\\Encoder",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "convertToHtmlEntities",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "htmlEncodingCallback",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 7,
+        "ccnMethodMax": 5,
+        "externals": [],
+        "parents": [],
+        "lcom": 2,
+        "length": 125,
+        "vocabulary": 39,
+        "volume": 660.68,
+        "difficulty": 18,
+        "effort": 11892.15,
+        "level": 0.06,
+        "bugs": 0.22,
+        "time": 661,
+        "intelligentContent": 36.7,
+        "number_operators": 44,
+        "number_operands": 81,
+        "number_operators_unique": 12,
+        "number_operands_unique": 27,
+        "cloc": 11,
+        "loc": 46,
+        "lloc": 35,
+        "mi": 79.99,
+        "mIwoC": 45.63,
+        "commentWeight": 34.36,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 4.5,
+        "relativeSystemComplexity": 4.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 9,
+        "totalSystemComplexity": 9,
+        "package": "DiDom\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.13,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.4",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-dom": {
+                "name": "ext-dom",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-iconv": {
+                "name": "ext-iconv",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

@@ -1,0 +1,2613 @@
+{
+    "Endroid\\QrCode\\Response\\QrCodeResponse": {
+        "name": "Endroid\\QrCode\\Response\\QrCodeResponse",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Endroid\\QrCode\\QrCodeInterface"
+        ],
+        "parents": [
+            "Symfony\\Component\\HttpFoundation\\Response"
+        ],
+        "lcom": 1,
+        "length": 4,
+        "vocabulary": 2,
+        "volume": 4,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 0,
+        "number_operands": 4,
+        "number_operators_unique": 0,
+        "number_operands_unique": 2,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 75.95,
+        "mIwoC": 75.95,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 9.25,
+        "totalStructuralComplexity": 9,
+        "totalDataComplexity": 0.25,
+        "totalSystemComplexity": 9.25,
+        "package": "Endroid\\QrCode\\Response\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Response\\": {
+        "name": "Endroid\\QrCode\\Response\\",
+        "classes": [
+            "Endroid\\QrCode\\Response\\QrCodeResponse"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\HttpFoundation\\Response",
+            "Endroid\\QrCode\\QrCodeInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\HttpFoundation\\",
+            "Endroid\\QrCode\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Endroid\\QrCode\\": 0.5454545454545454
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Endroid\\QrCode\\WriterRegistryInterface": {
+        "name": "Endroid\\QrCode\\WriterRegistryInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "addWriters",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addWriter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWriter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultWriter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWriters",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Endroid\\QrCode\\Writer\\WriterInterface",
+            "Endroid\\QrCode\\Writer\\WriterInterface",
+            "Endroid\\QrCode\\Writer\\WriterInterface"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Endroid\\QrCode\\",
+        "pageRank": 0.14,
+        "afferentCoupling": 4,
+        "efferentCoupling": 1,
+        "instability": 0.2,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Endroid\\QrCode\\": {
+        "name": "Endroid\\QrCode\\",
+        "classes": [
+            "Endroid\\QrCode\\WriterRegistryInterface",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Endroid\\QrCode\\LabelAlignment",
+            "Endroid\\QrCode\\QrCode",
+            "Endroid\\QrCode\\WriterRegistry",
+            "Endroid\\QrCode\\ErrorCorrectionLevel"
+        ],
+        "incoming_class_dependencies": [
+            "Endroid\\QrCode\\Response\\QrCodeResponse",
+            "Endroid\\QrCode\\Factory\\QrCodeFactoryInterface",
+            "Endroid\\QrCode\\Factory\\QrCodeFactory",
+            "Endroid\\QrCode\\Writer\\AbstractWriter",
+            "Endroid\\QrCode\\Writer\\WriterInterface",
+            "Endroid\\QrCode\\Writer\\DebugWriter",
+            "Endroid\\QrCode\\Writer\\EpsWriter",
+            "Endroid\\QrCode\\Writer\\BinaryWriter",
+            "Endroid\\QrCode\\Writer\\SvgWriter",
+            "Endroid\\QrCode\\Writer\\PngWriter"
+        ],
+        "incoming_package_dependencies": [
+            "Endroid\\QrCode\\Response\\",
+            "Endroid\\QrCode\\Factory\\",
+            "Endroid\\QrCode\\Writer\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Endroid\\QrCode\\Writer\\WriterInterface",
+            "MyCLabs\\Enum\\Enum",
+            "Endroid\\QrCode\\Exception\\InvalidPathException",
+            "Endroid\\QrCode\\Exception\\UnsupportedExtensionException",
+            "BaconQrCode\\Encoder\\Encoder",
+            "Endroid\\QrCode\\Writer\\BinaryWriter",
+            "Endroid\\QrCode\\Writer\\DebugWriter",
+            "Endroid\\QrCode\\Writer\\EpsWriter",
+            "Endroid\\QrCode\\Writer\\PngWriter",
+            "Endroid\\QrCode\\Writer\\SvgWriter",
+            "Endroid\\QrCode\\Exception\\InvalidWriterException",
+            "BaconQrCode\\Common\\ErrorCorrectionLevel"
+        ],
+        "outgoing_package_dependencies": [
+            "Endroid\\QrCode\\Writer\\",
+            "MyCLabs\\Enum\\",
+            "Endroid\\QrCode\\Exception\\",
+            "BaconQrCode\\Encoder\\",
+            "BaconQrCode\\Common\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 0.5454545454545454,
+        "dependent_instabilities": {
+            "Endroid\\QrCode\\Writer\\": 0.7857142857142857,
+            "Endroid\\QrCode\\Exception\\": 0.14285714285714285
+        },
+        "distance": 0.08570991287109675,
+        "normalized_distance": 0.12121212121212133,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Endroid\\QrCode\\Factory\\QrCodeFactoryInterface": {
+        "name": "Endroid\\QrCode\\Factory\\QrCodeFactoryInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Endroid\\QrCode\\QrCodeInterface"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Endroid\\QrCode\\Factory\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Endroid\\QrCode\\Factory\\": {
+        "name": "Endroid\\QrCode\\Factory\\",
+        "classes": [
+            "Endroid\\QrCode\\Factory\\QrCodeFactoryInterface",
+            "Endroid\\QrCode\\Factory\\QrCodeFactory"
+        ],
+        "outgoing_class_dependencies": [
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Endroid\\QrCode\\WriterRegistryInterface",
+            "Symfony\\Component\\PropertyAccess\\PropertyAccess",
+            "Endroid\\QrCode\\QrCode",
+            "Endroid\\QrCode\\ErrorCorrectionLevel",
+            "Endroid\\QrCode\\Exception\\ValidationException",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver"
+        ],
+        "outgoing_package_dependencies": [
+            "Endroid\\QrCode\\",
+            "Symfony\\Component\\PropertyAccess\\",
+            "Endroid\\QrCode\\Exception\\",
+            "Symfony\\Component\\OptionsResolver\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Endroid\\QrCode\\": 0.5454545454545454,
+            "Endroid\\QrCode\\Exception\\": 0.14285714285714285
+        },
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Endroid\\QrCode\\Factory\\QrCodeFactory": {
+        "name": "Endroid\\QrCode\\Factory\\QrCodeFactory",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptionsResolver",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createOptionsResolver",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 8,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Endroid\\QrCode\\Factory\\QrCodeFactoryInterface",
+            "Endroid\\QrCode\\WriterRegistryInterface",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Symfony\\Component\\PropertyAccess\\PropertyAccess",
+            "Endroid\\QrCode\\QrCode",
+            "Endroid\\QrCode\\ErrorCorrectionLevel",
+            "Endroid\\QrCode\\Exception\\ValidationException",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+            "Symfony\\Component\\OptionsResolver\\OptionsResolver"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 92,
+        "vocabulary": 34,
+        "volume": 468.05,
+        "difficulty": 4.73,
+        "effort": 2215.42,
+        "level": 0.21,
+        "bugs": 0.16,
+        "time": 123,
+        "intelligentContent": 98.88,
+        "number_operators": 21,
+        "number_operands": 71,
+        "number_operators_unique": 4,
+        "number_operands_unique": 30,
+        "cloc": 2,
+        "loc": 53,
+        "lloc": 51,
+        "mi": 57.8,
+        "mIwoC": 42.98,
+        "commentWeight": 14.82,
+        "kanDefect": 0.8,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.44,
+        "relativeSystemComplexity": 64.44,
+        "totalStructuralComplexity": 256,
+        "totalDataComplexity": 1.78,
+        "totalSystemComplexity": 257.78,
+        "package": "Endroid\\QrCode\\Factory\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Exception\\GenerateImageException": {
+        "name": "Endroid\\QrCode\\Exception\\GenerateImageException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Endroid\\QrCode\\Exception\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 3,
+        "efferentCoupling": 1,
+        "instability": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Exception\\": {
+        "name": "Endroid\\QrCode\\Exception\\",
+        "classes": [
+            "Endroid\\QrCode\\Exception\\GenerateImageException",
+            "Endroid\\QrCode\\Exception\\MissingLogoHeightException",
+            "Endroid\\QrCode\\Exception\\InvalidLogoException",
+            "Endroid\\QrCode\\Exception\\MissingExtensionException",
+            "Endroid\\QrCode\\Exception\\InvalidPathException",
+            "Endroid\\QrCode\\Exception\\UnsupportedExtensionException",
+            "Endroid\\QrCode\\Exception\\InvalidWriterException",
+            "Endroid\\QrCode\\Exception\\MissingFunctionException",
+            "Endroid\\QrCode\\Exception\\QrCodeException",
+            "Endroid\\QrCode\\Exception\\ValidationException"
+        ],
+        "incoming_class_dependencies": [
+            "Endroid\\QrCode\\Factory\\QrCodeFactory",
+            "Endroid\\QrCode\\QrCode",
+            "Endroid\\QrCode\\Writer\\AbstractWriter",
+            "Endroid\\QrCode\\Writer\\SvgWriter",
+            "Endroid\\QrCode\\Writer\\PngWriter",
+            "Endroid\\QrCode\\WriterRegistry"
+        ],
+        "incoming_package_dependencies": [
+            "Endroid\\QrCode\\Factory\\",
+            "Endroid\\QrCode\\",
+            "Endroid\\QrCode\\Writer\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0.1,
+        "instability": 0.14285714285714285,
+        "dependent_instabilities": [],
+        "distance": 0.5353808486126717,
+        "normalized_distance": 0.7571428571428571,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Endroid\\QrCode\\Exception\\MissingLogoHeightException": {
+        "name": "Endroid\\QrCode\\Exception\\MissingLogoHeightException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Endroid\\QrCode\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Exception\\InvalidLogoException": {
+        "name": "Endroid\\QrCode\\Exception\\InvalidLogoException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Endroid\\QrCode\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Exception\\MissingExtensionException": {
+        "name": "Endroid\\QrCode\\Exception\\MissingExtensionException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Endroid\\QrCode\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Exception\\InvalidPathException": {
+        "name": "Endroid\\QrCode\\Exception\\InvalidPathException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Endroid\\QrCode\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Exception\\UnsupportedExtensionException": {
+        "name": "Endroid\\QrCode\\Exception\\UnsupportedExtensionException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Endroid\\QrCode\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Exception\\InvalidWriterException": {
+        "name": "Endroid\\QrCode\\Exception\\InvalidWriterException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Endroid\\QrCode\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Exception\\MissingFunctionException": {
+        "name": "Endroid\\QrCode\\Exception\\MissingFunctionException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Endroid\\QrCode\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Exception\\QrCodeException": {
+        "name": "Endroid\\QrCode\\Exception\\QrCodeException",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Exception"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Endroid\\QrCode\\Exception\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 9,
+        "efferentCoupling": 1,
+        "instability": 0.1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Exception\\ValidationException": {
+        "name": "Endroid\\QrCode\\Exception\\ValidationException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Exception\\QrCodeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 0,
+        "loc": 4,
+        "lloc": 4,
+        "mi": 171,
+        "mIwoC": 171,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Endroid\\QrCode\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 3,
+        "efferentCoupling": 1,
+        "instability": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\QrCodeInterface": {
+        "name": "Endroid\\QrCode\\QrCodeInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMargin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getForegroundColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBackgroundColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEncoding",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRoundBlockSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getErrorCorrectionLevel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLogoPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLogoWidth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLogoHeight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabelFontPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabelFontSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabelAlignment",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabelMargin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValidateResult",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWriterOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getContentType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWriterRegistry",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeDataUri",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 24,
+        "nbMethods": 24,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 24,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 24,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Endroid\\QrCode\\ErrorCorrectionLevel",
+            "Endroid\\QrCode\\WriterRegistryInterface"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Endroid\\QrCode\\",
+        "pageRank": 0.23,
+        "afferentCoupling": 11,
+        "efferentCoupling": 2,
+        "instability": 0.15,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Endroid\\QrCode\\LabelAlignment": {
+        "name": "Endroid\\QrCode\\LabelAlignment",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "MyCLabs\\Enum\\Enum"
+        ],
+        "parents": [
+            "MyCLabs\\Enum\\Enum"
+        ],
+        "lcom": 0,
+        "length": 3,
+        "vocabulary": 3,
+        "volume": 4.75,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 9.51,
+        "number_operators": 0,
+        "number_operands": 3,
+        "number_operators_unique": 0,
+        "number_operands_unique": 3,
+        "cloc": 5,
+        "loc": 12,
+        "lloc": 7,
+        "mi": 118.77,
+        "mIwoC": 76.69,
+        "commentWeight": 42.07,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Endroid\\QrCode\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\QrCode": {
+        "name": "Endroid\\QrCode\\QrCode",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setText",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getText",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setSize",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSize",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMargin",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMargin",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setForegroundColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getForegroundColor",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBackgroundColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBackgroundColor",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEncoding",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEncoding",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRoundBlockSize",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRoundBlockSize",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setErrorCorrectionLevel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getErrorCorrectionLevel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLogoPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLogoPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLogoSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLogoWidth",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLogoWidth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLogoHeight",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLogoHeight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLabel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLabelFontSize",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabelFontSize",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLabelFontPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabelFontPath",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLabelAlignment",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabelAlignment",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLabelMargin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabelMargin",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWriterRegistry",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWriter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWriter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWriterOptions",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWriterOptions",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createWriterRegistry",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWriterByName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWriterByPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWriterByExtension",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeDataUri",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getContentType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValidateResult",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValidateResult",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 50,
+        "nbMethods": 28,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 27,
+        "nbMethodsGetter": 12,
+        "nbMethodsSetters": 10,
+        "wmc": 69,
+        "ccn": 20,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Endroid\\QrCode\\ErrorCorrectionLevel",
+            "Endroid\\QrCode\\LabelAlignment",
+            "Endroid\\QrCode\\ErrorCorrectionLevel",
+            "Endroid\\QrCode\\ErrorCorrectionLevel",
+            "Endroid\\QrCode\\Exception\\InvalidPathException",
+            "Endroid\\QrCode\\Exception\\InvalidPathException",
+            "Endroid\\QrCode\\LabelAlignment",
+            "Endroid\\QrCode\\WriterRegistryInterface",
+            "Endroid\\QrCode\\Writer\\WriterInterface",
+            "Endroid\\QrCode\\Writer\\WriterInterface",
+            "Endroid\\QrCode\\WriterRegistry",
+            "Endroid\\QrCode\\Exception\\UnsupportedExtensionException",
+            "BaconQrCode\\Encoder\\Encoder"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 417,
+        "vocabulary": 77,
+        "volume": 2613.25,
+        "difficulty": 30.06,
+        "effort": 78560.83,
+        "level": 0.03,
+        "bugs": 0.87,
+        "time": 4364,
+        "intelligentContent": 86.93,
+        "number_operators": 121,
+        "number_operands": 296,
+        "number_operators_unique": 13,
+        "number_operands_unique": 64,
+        "cloc": 17,
+        "loc": 319,
+        "lloc": 302,
+        "mi": 36.79,
+        "mIwoC": 19.28,
+        "commentWeight": 17.5,
+        "kanDefect": 1.75,
+        "relativeStructuralComplexity": 576,
+        "relativeDataComplexity": 1.07,
+        "relativeSystemComplexity": 577.07,
+        "totalStructuralComplexity": 28800,
+        "totalDataComplexity": 53.28,
+        "totalSystemComplexity": 28853.28,
+        "package": "Endroid\\QrCode\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 9,
+        "instability": 0.9,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Writer\\AbstractWriter": {
+        "name": "Endroid\\QrCode\\Writer\\AbstractWriter",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "getMimeType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeDataUri",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsExtension",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportedExtensions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Endroid\\QrCode\\Writer\\WriterInterface",
+            "Endroid\\QrCode\\Exception\\MissingExtensionException",
+            "Endroid\\QrCode\\Exception\\InvalidLogoException",
+            "Endroid\\QrCode\\Exception\\GenerateImageException",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "static"
+        ],
+        "parents": [],
+        "lcom": 5,
+        "length": 47,
+        "vocabulary": 21,
+        "volume": 206.44,
+        "difficulty": 4.84,
+        "effort": 999.94,
+        "level": 0.21,
+        "bugs": 0.07,
+        "time": 56,
+        "intelligentContent": 42.62,
+        "number_operators": 16,
+        "number_operands": 31,
+        "number_operators_unique": 5,
+        "number_operands_unique": 16,
+        "cloc": 1,
+        "loc": 41,
+        "lloc": 40,
+        "mi": 60.15,
+        "mIwoC": 48.17,
+        "commentWeight": 11.98,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.46,
+        "relativeSystemComplexity": 10.46,
+        "totalStructuralComplexity": 54,
+        "totalDataComplexity": 8.75,
+        "totalSystemComplexity": 62.75,
+        "package": "Endroid\\QrCode\\Writer\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 5,
+        "efferentCoupling": 6,
+        "instability": 0.55,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Writer\\": {
+        "name": "Endroid\\QrCode\\Writer\\",
+        "classes": [
+            "Endroid\\QrCode\\Writer\\AbstractWriter",
+            "Endroid\\QrCode\\Writer\\WriterInterface",
+            "Endroid\\QrCode\\Writer\\DebugWriter",
+            "Endroid\\QrCode\\Writer\\EpsWriter",
+            "Endroid\\QrCode\\Writer\\BinaryWriter",
+            "Endroid\\QrCode\\Writer\\SvgWriter",
+            "Endroid\\QrCode\\Writer\\PngWriter"
+        ],
+        "incoming_class_dependencies": [
+            "Endroid\\QrCode\\WriterRegistryInterface",
+            "Endroid\\QrCode\\QrCode",
+            "Endroid\\QrCode\\WriterRegistry"
+        ],
+        "incoming_package_dependencies": [
+            "Endroid\\QrCode\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Endroid\\QrCode\\Exception\\MissingExtensionException",
+            "Endroid\\QrCode\\Exception\\InvalidLogoException",
+            "Endroid\\QrCode\\Exception\\GenerateImageException",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "static",
+            "ReflectionClass",
+            "Endroid\\QrCode\\Exception\\ValidationException",
+            "SimpleXMLElement",
+            "Endroid\\QrCode\\Exception\\MissingLogoHeightException",
+            "Zxing\\QrReader",
+            "Endroid\\QrCode\\Exception\\MissingFunctionException"
+        ],
+        "outgoing_package_dependencies": [
+            "Endroid\\QrCode\\Exception\\",
+            "Endroid\\QrCode\\",
+            "\\",
+            "Zxing\\"
+        ],
+        "abstraction": 0.2857142857142857,
+        "instability": 0.7857142857142857,
+        "dependent_instabilities": {
+            "Endroid\\QrCode\\Exception\\": 0.14285714285714285,
+            "Endroid\\QrCode\\": 0.5454545454545454
+        },
+        "distance": 0.05050762722761051,
+        "normalized_distance": 0.0714285714285714,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Endroid\\QrCode\\Writer\\WriterInterface": {
+        "name": "Endroid\\QrCode\\Writer\\WriterInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "writeString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeDataUri",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getContentType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsExtension",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportedExtensions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Endroid\\QrCode\\QrCodeInterface"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Endroid\\QrCode\\Writer\\",
+        "pageRank": 0.17,
+        "afferentCoupling": 4,
+        "efferentCoupling": 1,
+        "instability": 0.2,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Endroid\\QrCode\\Writer\\DebugWriter": {
+        "name": "Endroid\\QrCode\\Writer\\DebugWriter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "writeString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getContentType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 12,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Endroid\\QrCode\\Writer\\AbstractWriter",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "ReflectionClass"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Writer\\AbstractWriter"
+        ],
+        "lcom": 3,
+        "length": 79,
+        "vocabulary": 31,
+        "volume": 391.38,
+        "difficulty": 8.87,
+        "effort": 3471.38,
+        "level": 0.11,
+        "bugs": 0.13,
+        "time": 193,
+        "intelligentContent": 44.13,
+        "number_operators": 28,
+        "number_operands": 51,
+        "number_operators_unique": 8,
+        "number_operands_unique": 23,
+        "cloc": 0,
+        "loc": 39,
+        "lloc": 39,
+        "mi": 45.53,
+        "mIwoC": 45.53,
+        "commentWeight": 0,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 16.67,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 50,
+        "package": "Endroid\\QrCode\\Writer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Writer\\EpsWriter": {
+        "name": "Endroid\\QrCode\\Writer\\EpsWriter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "writeString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getContentType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportedExtensions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Endroid\\QrCode\\Writer\\AbstractWriter",
+            "Endroid\\QrCode\\QrCodeInterface"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Writer\\AbstractWriter"
+        ],
+        "lcom": 4,
+        "length": 155,
+        "vocabulary": 40,
+        "volume": 824.9,
+        "difficulty": 13,
+        "effort": 10723.69,
+        "level": 0.08,
+        "bugs": 0.27,
+        "time": 596,
+        "intelligentContent": 63.45,
+        "number_operators": 51,
+        "number_operands": 104,
+        "number_operators_unique": 8,
+        "number_operands_unique": 32,
+        "cloc": 0,
+        "loc": 37,
+        "lloc": 37,
+        "mi": 44.83,
+        "mIwoC": 44.83,
+        "commentWeight": 0,
+        "kanDefect": 0.68,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.06,
+        "relativeSystemComplexity": 10.06,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 4.25,
+        "totalSystemComplexity": 40.25,
+        "package": "Endroid\\QrCode\\Writer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Writer\\BinaryWriter": {
+        "name": "Endroid\\QrCode\\Writer\\BinaryWriter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "writeString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getContentType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportedExtensions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Endroid\\QrCode\\Writer\\AbstractWriter",
+            "Endroid\\QrCode\\QrCodeInterface"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Writer\\AbstractWriter"
+        ],
+        "lcom": 4,
+        "length": 30,
+        "vocabulary": 16,
+        "volume": 120,
+        "difficulty": 2.42,
+        "effort": 290.77,
+        "level": 0.41,
+        "bugs": 0.04,
+        "time": 16,
+        "intelligentContent": 49.52,
+        "number_operators": 9,
+        "number_operands": 21,
+        "number_operators_unique": 3,
+        "number_operands_unique": 13,
+        "cloc": 0,
+        "loc": 29,
+        "lloc": 29,
+        "mi": 53.14,
+        "mIwoC": 53.14,
+        "commentWeight": 0,
+        "kanDefect": 0.61,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.13,
+        "relativeSystemComplexity": 3.13,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 8.5,
+        "totalSystemComplexity": 12.5,
+        "package": "Endroid\\QrCode\\Writer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Writer\\SvgWriter": {
+        "name": "Endroid\\QrCode\\Writer\\SvgWriter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "writeString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addLogo",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOpacity",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getContentType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportedExtensions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 23,
+        "ccn": 18,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Endroid\\QrCode\\Writer\\AbstractWriter",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Endroid\\QrCode\\Exception\\ValidationException",
+            "SimpleXMLElement",
+            "Endroid\\QrCode\\Exception\\GenerateImageException",
+            "SimpleXMLElement",
+            "Endroid\\QrCode\\Exception\\GenerateImageException",
+            "Endroid\\QrCode\\Exception\\MissingLogoHeightException",
+            "Endroid\\QrCode\\Exception\\GenerateImageException"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Writer\\AbstractWriter"
+        ],
+        "lcom": 4,
+        "length": 302,
+        "vocabulary": 89,
+        "volume": 1955.67,
+        "difficulty": 16.15,
+        "effort": 31579.08,
+        "level": 0.06,
+        "bugs": 0.65,
+        "time": 1754,
+        "intelligentContent": 121.11,
+        "number_operators": 73,
+        "number_operands": 229,
+        "number_operators_unique": 11,
+        "number_operands_unique": 78,
+        "cloc": 2,
+        "loc": 107,
+        "lloc": 105,
+        "mi": 40.95,
+        "mIwoC": 30.44,
+        "commentWeight": 10.51,
+        "kanDefect": 1.38,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.42,
+        "relativeSystemComplexity": 196.42,
+        "totalStructuralComplexity": 1176,
+        "totalDataComplexity": 2.53,
+        "totalSystemComplexity": 1178.53,
+        "package": "Endroid\\QrCode\\Writer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\Writer\\PngWriter": {
+        "name": "Endroid\\QrCode\\Writer\\PngWriter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "writeString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createImage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createBaseImage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createInterpolatedImage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addLogo",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addLabel",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "imageToString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getContentType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportedExtensions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 6,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 30,
+        "ccn": 21,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Endroid\\QrCode\\Writer\\AbstractWriter",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Zxing\\QrReader",
+            "Endroid\\QrCode\\Exception\\ValidationException",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Endroid\\QrCode\\Exception\\GenerateImageException",
+            "Endroid\\QrCode\\QrCodeInterface",
+            "Endroid\\QrCode\\Exception\\GenerateImageException",
+            "Endroid\\QrCode\\Exception\\MissingLogoHeightException",
+            "Endroid\\QrCode\\Exception\\GenerateImageException",
+            "Endroid\\QrCode\\Exception\\MissingFunctionException",
+            "Endroid\\QrCode\\Exception\\GenerateImageException"
+        ],
+        "parents": [
+            "Endroid\\QrCode\\Writer\\AbstractWriter"
+        ],
+        "lcom": 4,
+        "length": 422,
+        "vocabulary": 86,
+        "volume": 2711.88,
+        "difficulty": 28.32,
+        "effort": 76787.17,
+        "level": 0.04,
+        "bugs": 0.9,
+        "time": 4266,
+        "intelligentContent": 95.78,
+        "number_operators": 104,
+        "number_operands": 318,
+        "number_operators_unique": 13,
+        "number_operands_unique": 73,
+        "cloc": 22,
+        "loc": 161,
+        "lloc": 139,
+        "mi": 53.48,
+        "mIwoC": 26.39,
+        "commentWeight": 27.09,
+        "kanDefect": 1.74,
+        "relativeStructuralComplexity": 484,
+        "relativeDataComplexity": 0.53,
+        "relativeSystemComplexity": 484.53,
+        "totalStructuralComplexity": 4840,
+        "totalDataComplexity": 5.3,
+        "totalSystemComplexity": 4845.3,
+        "package": "Endroid\\QrCode\\Writer\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 7,
+        "instability": 0.88,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\WriterRegistry": {
+        "name": "Endroid\\QrCode\\WriterRegistry",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "loadDefaultWriters",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addWriters",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addWriter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWriter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultWriter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDefaultWriter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWriters",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "assertValidWriter",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 5,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Endroid\\QrCode\\WriterRegistryInterface",
+            "Endroid\\QrCode\\Writer\\BinaryWriter",
+            "Endroid\\QrCode\\Writer\\DebugWriter",
+            "Endroid\\QrCode\\Writer\\EpsWriter",
+            "Endroid\\QrCode\\Writer\\PngWriter",
+            "Endroid\\QrCode\\Writer\\SvgWriter",
+            "Endroid\\QrCode\\Writer\\WriterInterface",
+            "Endroid\\QrCode\\Writer\\WriterInterface",
+            "Endroid\\QrCode\\Writer\\WriterInterface",
+            "Endroid\\QrCode\\Exception\\InvalidWriterException",
+            "Endroid\\QrCode\\Exception\\InvalidWriterException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 45,
+        "vocabulary": 14,
+        "volume": 171.33,
+        "difficulty": 9.17,
+        "effort": 1570.53,
+        "level": 0.11,
+        "bugs": 0.06,
+        "time": 87,
+        "intelligentContent": 18.69,
+        "number_operators": 12,
+        "number_operands": 33,
+        "number_operators_unique": 5,
+        "number_operands_unique": 9,
+        "cloc": 2,
+        "loc": 52,
+        "lloc": 50,
+        "mi": 61.58,
+        "mIwoC": 46.62,
+        "commentWeight": 14.96,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.77,
+        "relativeSystemComplexity": 25.77,
+        "totalStructuralComplexity": 200,
+        "totalDataComplexity": 6.17,
+        "totalSystemComplexity": 206.17,
+        "package": "Endroid\\QrCode\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 8,
+        "instability": 0.89,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Endroid\\QrCode\\ErrorCorrectionLevel": {
+        "name": "Endroid\\QrCode\\ErrorCorrectionLevel",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "toBaconErrorCorrectionLevel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "MyCLabs\\Enum\\Enum",
+            "BaconQrCode\\Common\\ErrorCorrectionLevel",
+            "BaconQrCode\\Common\\ErrorCorrectionLevel"
+        ],
+        "parents": [
+            "MyCLabs\\Enum\\Enum"
+        ],
+        "lcom": 1,
+        "length": 11,
+        "vocabulary": 10,
+        "volume": 36.54,
+        "difficulty": 1.13,
+        "effort": 41.11,
+        "level": 0.89,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 32.48,
+        "number_operators": 2,
+        "number_operands": 9,
+        "number_operators_unique": 2,
+        "number_operands_unique": 8,
+        "cloc": 6,
+        "loc": 19,
+        "lloc": 13,
+        "mi": 102.86,
+        "mIwoC": 64.62,
+        "commentWeight": 38.23,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 4.33,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0.33,
+        "totalSystemComplexity": 4.33,
+        "package": "Endroid\\QrCode\\",
+        "pageRank": 0.14,
+        "afferentCoupling": 3,
+        "efferentCoupling": 2,
+        "instability": 0.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.45,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "ext-gd": {
+                "name": "ext-gd",
+                "required": "*",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "bacon\/bacon-qr-code": {
+                "name": "bacon\/bacon-qr-code",
+                "required": "^2.0",
+                "installed": null,
+                "latest": "2.0.0",
+                "license": [
+                    "BSD-2-Clause"
+                ],
+                "homepage": "https:\/\/github.com\/Bacon\/BaconQrCode",
+                "zip": "https:\/\/api.github.com\/repos\/Bacon\/BaconQrCode\/zipball\/eaac909da3ccc32b748a65b127acd8918f58d9b0"
+            },
+            "khanamiryan\/qrcode-detector-decoder": {
+                "name": "khanamiryan\/qrcode-detector-decoder",
+                "required": "^1.0.2",
+                "installed": null,
+                "latest": "1.0.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/khanamiryan\/php-qrcode-detector-decoder\/",
+                "zip": "https:\/\/api.github.com\/repos\/khanamiryan\/php-qrcode-detector-decoder\/zipball\/a75482d3bc804e3f6702332bfda6cccbb0dfaa76"
+            },
+            "symfony\/http-foundation": {
+                "name": "symfony\/http-foundation",
+                "required": "^3.4||^4.2.12||^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/http-foundation\/zipball\/6f9c2ba72f4295d7ce6cf9f79dbb18036291d335"
+            },
+            "symfony\/options-resolver": {
+                "name": "symfony\/options-resolver",
+                "required": "^3.4||^4.0||^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/options-resolver\/zipball\/b1ab86ce52b0c0abe031367a173005a025e30e04"
+            },
+            "symfony\/property-access": {
+                "name": "symfony\/property-access",
+                "required": "^3.4||^4.0||^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/property-access\/zipball\/18617a8c26b97a262f816c78765eb3cd91630e19"
+            },
+            "myclabs\/php-enum": {
+                "name": "myclabs\/php-enum",
+                "required": "^1.5",
+                "installed": null,
+                "latest": "1.7.6",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/github.com\/myclabs\/php-enum",
+                "zip": "https:\/\/api.github.com\/repos\/myclabs\/php-enum\/zipball\/5f36467c7a87e20fbdc51e524fd8f9d1de80187c"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

@@ -1,0 +1,844 @@
+{
+    "Composer\\Semver\\Comparator": {
+        "name": "Composer\\Semver\\Comparator",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "greaterThan",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "greaterThanOrEqualTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "lessThan",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "lessThanOrEqualTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "equalTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "notEqualTo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compare",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint"
+        ],
+        "parents": [],
+        "lcom": 7,
+        "length": 47,
+        "vocabulary": 12,
+        "volume": 168.49,
+        "difficulty": 3.9,
+        "effort": 657.12,
+        "level": 0.26,
+        "bugs": 0.06,
+        "time": 37,
+        "intelligentContent": 43.2,
+        "number_operators": 8,
+        "number_operands": 39,
+        "number_operators_unique": 2,
+        "number_operands_unique": 10,
+        "cloc": 57,
+        "loc": 90,
+        "lloc": 33,
+        "mi": 98.32,
+        "mIwoC": 51.15,
+        "commentWeight": 47.17,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 3.05,
+        "relativeSystemComplexity": 7.05,
+        "totalStructuralComplexity": 28,
+        "totalDataComplexity": 21.33,
+        "totalSystemComplexity": 49.33,
+        "package": "Composer\\Semver\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Composer\\Semver\\": {
+        "name": "Composer\\Semver\\",
+        "classes": [
+            "Composer\\Semver\\Comparator",
+            "Composer\\Semver\\Semver",
+            "Composer\\Semver\\VersionParser"
+        ],
+        "outgoing_class_dependencies": [
+            "Composer\\Semver\\Constraint\\Constraint",
+            "UnexpectedValueException",
+            "Composer\\Semver\\Constraint\\MultiConstraint",
+            "Composer\\Semver\\Constraint\\EmptyConstraint"
+        ],
+        "outgoing_package_dependencies": [
+            "Composer\\Semver\\Constraint\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Composer\\Semver\\Constraint\\": 0.25
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Composer\\Semver\\Constraint\\ConstraintInterface": {
+        "name": "Composer\\Semver\\Constraint\\ConstraintInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "matches",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrettyString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Composer\\Semver\\Constraint\\ConstraintInterface"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Composer\\Semver\\Constraint\\",
+        "pageRank": 0.79,
+        "afferentCoupling": 6,
+        "efferentCoupling": 2,
+        "instability": 0.25,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Composer\\Semver\\Constraint\\": {
+        "name": "Composer\\Semver\\Constraint\\",
+        "classes": [
+            "Composer\\Semver\\Constraint\\ConstraintInterface",
+            "Composer\\Semver\\Constraint\\MultiConstraint",
+            "Composer\\Semver\\Constraint\\EmptyConstraint",
+            "Composer\\Semver\\Constraint\\AbstractConstraint",
+            "Composer\\Semver\\Constraint\\Constraint"
+        ],
+        "incoming_class_dependencies": [
+            "Composer\\Semver\\Comparator",
+            "Composer\\Semver\\Semver",
+            "Composer\\Semver\\VersionParser"
+        ],
+        "incoming_package_dependencies": [
+            "Composer\\Semver\\"
+        ],
+        "outgoing_class_dependencies": [
+            "InvalidArgumentException"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0.4,
+        "instability": 0.25,
+        "dependent_instabilities": [],
+        "distance": 0.2474873734152916,
+        "normalized_distance": 0.35,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Composer\\Semver\\Constraint\\MultiConstraint": {
+        "name": "Composer\\Semver\\Constraint\\MultiConstraint",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConstraints",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isConjunctive",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDisjunctive",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "matches",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrettyString",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrettyString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 16,
+        "ccn": 9,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Composer\\Semver\\Constraint\\ConstraintInterface",
+            "Composer\\Semver\\Constraint\\ConstraintInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 60,
+        "vocabulary": 16,
+        "volume": 240,
+        "difficulty": 8.64,
+        "effort": 2072.73,
+        "level": 0.12,
+        "bugs": 0.08,
+        "time": 115,
+        "intelligentContent": 27.79,
+        "number_operators": 22,
+        "number_operands": 38,
+        "number_operators_unique": 5,
+        "number_operands_unique": 11,
+        "cloc": 33,
+        "loc": 93,
+        "lloc": 60,
+        "mi": 83.2,
+        "mIwoC": 43.33,
+        "commentWeight": 39.87,
+        "kanDefect": 1.12,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 5.25,
+        "relativeSystemComplexity": 6.25,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 42,
+        "totalSystemComplexity": 50,
+        "package": "Composer\\Semver\\Constraint\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Composer\\Semver\\Constraint\\EmptyConstraint": {
+        "name": "Composer\\Semver\\Constraint\\EmptyConstraint",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "matches",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrettyString",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrettyString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Composer\\Semver\\Constraint\\ConstraintInterface",
+            "Composer\\Semver\\Constraint\\ConstraintInterface"
+        ],
+        "parents": [],
+        "lcom": 3,
+        "length": 15,
+        "vocabulary": 8,
+        "volume": 45,
+        "difficulty": 2.7,
+        "effort": 121.5,
+        "level": 0.37,
+        "bugs": 0.02,
+        "time": 7,
+        "intelligentContent": 16.67,
+        "number_operators": 6,
+        "number_operands": 9,
+        "number_operators_unique": 3,
+        "number_operands_unique": 5,
+        "cloc": 18,
+        "loc": 42,
+        "lloc": 24,
+        "mi": 100.5,
+        "mIwoC": 58.05,
+        "commentWeight": 42.45,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 4.5,
+        "relativeSystemComplexity": 4.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 18,
+        "totalSystemComplexity": 18,
+        "package": "Composer\\Semver\\Constraint\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Composer\\Semver\\Constraint\\AbstractConstraint": {
+        "name": "Composer\\Semver\\Constraint\\AbstractConstraint",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "matches",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrettyString",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrettyString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 5,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Composer\\Semver\\Constraint\\ConstraintInterface",
+            "Composer\\Semver\\Constraint\\ConstraintInterface"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 20,
+        "vocabulary": 6,
+        "volume": 51.7,
+        "difficulty": 6.5,
+        "effort": 336.05,
+        "level": 0.15,
+        "bugs": 0.02,
+        "time": 19,
+        "intelligentContent": 7.95,
+        "number_operators": 7,
+        "number_operands": 13,
+        "number_operators_unique": 3,
+        "number_operands_unique": 3,
+        "cloc": 20,
+        "loc": 43,
+        "lloc": 23,
+        "mi": 101.43,
+        "mIwoC": 57.89,
+        "commentWeight": 43.53,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.17,
+        "relativeSystemComplexity": 10.17,
+        "totalStructuralComplexity": 27,
+        "totalDataComplexity": 3.5,
+        "totalSystemComplexity": 30.5,
+        "package": "Composer\\Semver\\Constraint\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Composer\\Semver\\Constraint\\Constraint": {
+        "name": "Composer\\Semver\\Constraint\\Constraint",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "matches",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPrettyString",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrettyString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportedOperators",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "versionCompare",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "matchSpecific",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 27,
+        "ccn": 20,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Composer\\Semver\\Constraint\\ConstraintInterface",
+            "Composer\\Semver\\Constraint\\ConstraintInterface",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "Composer\\Semver\\Constraint\\Constraint"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 175,
+        "vocabulary": 43,
+        "volume": 949.6,
+        "difficulty": 13.37,
+        "effort": 12697.46,
+        "level": 0.07,
+        "bugs": 0.32,
+        "time": 705,
+        "intelligentContent": 71.02,
+        "number_operators": 58,
+        "number_operands": 117,
+        "number_operators_unique": 8,
+        "number_operands_unique": 35,
+        "cloc": 68,
+        "loc": 151,
+        "lloc": 83,
+        "mi": 77.71,
+        "mIwoC": 34.6,
+        "commentWeight": 43.11,
+        "kanDefect": 0.78,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 2.38,
+        "relativeSystemComplexity": 27.38,
+        "totalStructuralComplexity": 200,
+        "totalDataComplexity": 19,
+        "totalSystemComplexity": 219,
+        "package": "Composer\\Semver\\Constraint\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 5,
+        "efferentCoupling": 4,
+        "instability": 0.44,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Composer\\Semver\\Semver": {
+        "name": "Composer\\Semver\\Semver",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "satisfies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "satisfiedBy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sort",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rsort",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "usort",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 7,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Composer\\Semver\\VersionParser",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Semver",
+            "Composer\\Semver\\VersionParser",
+            "Composer\\Semver\\Comparator"
+        ],
+        "parents": [],
+        "lcom": 5,
+        "length": 88,
+        "vocabulary": 20,
+        "volume": 380.33,
+        "difficulty": 7.63,
+        "effort": 2900.01,
+        "level": 0.13,
+        "bugs": 0.13,
+        "time": 161,
+        "intelligentContent": 49.88,
+        "number_operators": 27,
+        "number_operands": 61,
+        "number_operators_unique": 4,
+        "number_operands_unique": 16,
+        "cloc": 40,
+        "loc": 97,
+        "lloc": 57,
+        "mi": 84.62,
+        "mIwoC": 42.69,
+        "commentWeight": 41.93,
+        "kanDefect": 0.89,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 1.51,
+        "relativeSystemComplexity": 37.51,
+        "totalStructuralComplexity": 180,
+        "totalDataComplexity": 7.57,
+        "totalSystemComplexity": 187.57,
+        "package": "Composer\\Semver\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 2,
+        "efferentCoupling": 5,
+        "instability": 0.71,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Composer\\Semver\\VersionParser": {
+        "name": "Composer\\Semver\\VersionParser",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "parseStability",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "normalizeStability",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "normalize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseNumericAliasPrefix",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "normalizeBranch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseConstraints",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseConstraint",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "manipulateVersionString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expandStability",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 128,
+        "ccn": 120,
+        "ccnMethodMax": 54,
+        "externals": [
+            "UnexpectedValueException",
+            "Composer\\Semver\\Constraint\\MultiConstraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\MultiConstraint",
+            "Composer\\Semver\\Constraint\\MultiConstraint",
+            "Composer\\Semver\\Constraint\\EmptyConstraint",
+            "UnexpectedValueException",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "Composer\\Semver\\Constraint\\Constraint",
+            "UnexpectedValueException"
+        ],
+        "parents": [],
+        "lcom": 4,
+        "length": 1023,
+        "vocabulary": 153,
+        "volume": 7424.31,
+        "difficulty": 43,
+        "effort": 319245.23,
+        "level": 0.02,
+        "bugs": 2.47,
+        "time": 17736,
+        "intelligentContent": 172.66,
+        "number_operators": 335,
+        "number_operands": 688,
+        "number_operators_unique": 17,
+        "number_operands_unique": 136,
+        "cloc": 129,
+        "loc": 423,
+        "lloc": 294,
+        "mi": 40.66,
+        "mIwoC": 2.91,
+        "commentWeight": 37.75,
+        "kanDefect": 4.56,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 3.44,
+        "relativeSystemComplexity": 84.44,
+        "totalStructuralComplexity": 729,
+        "totalDataComplexity": 31,
+        "totalSystemComplexity": 760,
+        "package": "Composer\\Semver\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^5.3.2 || ^7.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

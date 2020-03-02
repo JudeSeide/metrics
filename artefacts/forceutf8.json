@@ -1,0 +1,178 @@
+{
+    "ForceUTF8\\Encoding": {
+        "name": "ForceUTF8\\Encoding",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "toUTF8",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toWin1252",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toISO8859",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toLatin1",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fixUTF8",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "UTF8FixWin1252Chars",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeBOM",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "strlen",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "normalizeEncoding",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "encode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "utf8_decode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 52,
+        "ccn": 42,
+        "ccnMethodMax": 26,
+        "externals": [
+            "static",
+            "static",
+            "static"
+        ],
+        "parents": [],
+        "lcom": 11,
+        "length": 625,
+        "vocabulary": 187,
+        "volume": 4716.81,
+        "difficulty": 26.01,
+        "effort": 122693.19,
+        "level": 0.04,
+        "bugs": 1.57,
+        "time": 6816,
+        "intelligentContent": 181.33,
+        "number_operators": 165,
+        "number_operands": 460,
+        "number_operators_unique": 19,
+        "number_operands_unique": 168,
+        "cloc": 41,
+        "loc": 198,
+        "lloc": 157,
+        "mi": 53.13,
+        "mIwoC": 20.73,
+        "commentWeight": 32.4,
+        "kanDefect": 2.12,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 6.85,
+        "relativeSystemComplexity": 10.85,
+        "totalStructuralComplexity": 44,
+        "totalDataComplexity": 75.33,
+        "totalSystemComplexity": 119.33,
+        "package": "ForceUTF8\\",
+        "pageRank": 1,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "ForceUTF8\\": {
+        "name": "ForceUTF8\\",
+        "classes": [
+            "ForceUTF8\\Encoding"
+        ],
+        "outgoing_class_dependencies": [
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.3.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

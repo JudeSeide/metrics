@@ -1,0 +1,493 @@
+{
+    "EasyCorp\\EasyLog\\EasyLogHandler": {
+        "name": "EasyCorp\\EasyLog\\EasyLogHandler",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleBatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Monolog\\Handler\\StreamHandler",
+            "EasyCorp\\EasyLog\\EasyLogFormatter",
+            "RuntimeException"
+        ],
+        "parents": [
+            "Monolog\\Handler\\StreamHandler"
+        ],
+        "lcom": 3,
+        "length": 15,
+        "vocabulary": 7,
+        "volume": 42.11,
+        "difficulty": 2.4,
+        "effort": 101.06,
+        "level": 0.42,
+        "bugs": 0.01,
+        "time": 6,
+        "intelligentContent": 17.55,
+        "number_operators": 3,
+        "number_operands": 12,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 12,
+        "loc": 32,
+        "lloc": 20,
+        "mi": 100.61,
+        "mIwoC": 59.98,
+        "commentWeight": 40.63,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.2,
+        "relativeSystemComplexity": 16.2,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 0.6,
+        "totalSystemComplexity": 48.6,
+        "package": "EasyCorp\\EasyLog\\",
+        "pageRank": 0.31,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "EasyCorp\\EasyLog\\": {
+        "name": "EasyCorp\\EasyLog\\",
+        "classes": [
+            "EasyCorp\\EasyLog\\EasyLogHandler",
+            "EasyCorp\\EasyLog\\EasyLogFormatter"
+        ],
+        "outgoing_class_dependencies": [
+            "Monolog\\Handler\\StreamHandler",
+            "RuntimeException",
+            "Monolog\\Formatter\\FormatterInterface",
+            "Symfony\\Component\\Yaml\\Yaml",
+            "Throwable"
+        ],
+        "outgoing_package_dependencies": [
+            "Monolog\\Handler\\",
+            "\\",
+            "Monolog\\Formatter\\",
+            "Symfony\\Component\\Yaml\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "EasyCorp\\EasyLog\\EasyLogFormatter": {
+        "name": "EasyCorp\\EasyLog\\EasyLogFormatter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "format",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatBatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isAsseticLog",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDeprecationLog",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDoctrineLog",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEventStopLog",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEventNotificationLog",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRouteMatchLog",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isTranslationLog",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isWebDebugToolbarLog",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processDeprecationLogRecord",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processDoctrineLogRecord",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processEventNotificationLogRecord",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processEventStopLogRecord",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processRouteMatchLogRecord",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processStringPlaceholders",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processTranslationLogRecord",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatLogChannel",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatContext",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatThrowableObjects",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatThrowable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatSerializedObject",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatExtra",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatLogInfo",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatLogLevel",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatMessage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatRecord",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatStackTrace",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatLogBatchHeader",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatAsTitle",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatAsSubtitle",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatAsSection",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatStringAsTextBlock",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatTextBlock",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatDateTimeObjects",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterVariablesUsedAsPlaceholders",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInlineLevel",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isLogInfoDisplayed",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "arrayContainsOnlyNumericKeys",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "makePathRelative",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 40,
+        "nbMethods": 40,
+        "nbMethodsPrivate": 38,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 123,
+        "ccn": 84,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Monolog\\Formatter\\FormatterInterface",
+            "RuntimeException",
+            "Symfony\\Component\\Yaml\\Yaml",
+            "Throwable",
+            "Symfony\\Component\\Yaml\\Yaml"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 990,
+        "vocabulary": 143,
+        "volume": 7088.27,
+        "difficulty": 32.34,
+        "effort": 229205.52,
+        "level": 0.03,
+        "bugs": 2.36,
+        "time": 12734,
+        "intelligentContent": 219.21,
+        "number_operators": 284,
+        "number_operands": 706,
+        "number_operators_unique": 12,
+        "number_operands_unique": 131,
+        "cloc": 252,
+        "loc": 650,
+        "lloc": 398,
+        "mi": 46.12,
+        "mIwoC": 5.03,
+        "commentWeight": 41.09,
+        "kanDefect": 4.63,
+        "relativeStructuralComplexity": 2116,
+        "relativeDataComplexity": 1.17,
+        "relativeSystemComplexity": 2117.17,
+        "totalStructuralComplexity": 84640,
+        "totalDataComplexity": 46.98,
+        "totalSystemComplexity": 84686.98,
+        "package": "EasyCorp\\EasyLog\\",
+        "pageRank": 0.69,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=7.1",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "monolog\/monolog": {
+                "name": "monolog\/monolog",
+                "required": "~1.6|~2.0",
+                "installed": null,
+                "latest": "2.0.2",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/github.com\/Seldaek\/monolog",
+                "zip": "https:\/\/api.github.com\/repos\/Seldaek\/monolog\/zipball\/c861fcba2ca29404dc9e617eedd9eff4616986b8"
+            },
+            "symfony\/yaml": {
+                "name": "symfony\/yaml",
+                "required": "^3.4|^4.0|^5.0",
+                "installed": null,
+                "latest": "5.0.5",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/symfony.com",
+                "zip": "https:\/\/api.github.com\/repos\/symfony\/yaml\/zipball\/a4b613d7e44f62941adff5a802cff70adee57d3f"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

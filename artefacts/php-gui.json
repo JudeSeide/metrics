@@ -1,0 +1,4062 @@
+{
+    "Gui\\Ipc\\EventMessage": {
+        "name": "Gui\\Ipc\\EventMessage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Ipc\\MessageInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 4,
+        "volume": 16,
+        "difficulty": 1,
+        "effort": 16,
+        "level": 1,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 16,
+        "number_operators": 2,
+        "number_operands": 6,
+        "number_operators_unique": 1,
+        "number_operands_unique": 3,
+        "cloc": 26,
+        "loc": 37,
+        "lloc": 11,
+        "mi": 116.88,
+        "mIwoC": 68.72,
+        "commentWeight": 48.16,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Gui\\Ipc\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Ipc\\": {
+        "name": "Gui\\Ipc\\",
+        "classes": [
+            "Gui\\Ipc\\EventMessage",
+            "Gui\\Ipc\\Receiver",
+            "Gui\\Ipc\\Sender",
+            "Gui\\Ipc\\MessageInterface",
+            "Gui\\Ipc\\CommandMessage"
+        ],
+        "outgoing_class_dependencies": [
+            "Gui\\Application",
+            "Gui\\Output",
+            "Gui\\Exception\\ComponentException",
+            "Gui\\OsDetector",
+            "Exception",
+            "React\\Stream\\Stream"
+        ],
+        "outgoing_package_dependencies": [
+            "Gui\\",
+            "Gui\\Exception\\",
+            "\\",
+            "React\\Stream\\"
+        ],
+        "incoming_class_dependencies": [
+            "Gui\\Application"
+        ],
+        "incoming_package_dependencies": [
+            "Gui\\"
+        ],
+        "abstraction": 0.2,
+        "instability": 0.8571428571428571,
+        "dependent_instabilities": {
+            "Gui\\": 0.6111111111111112,
+            "Gui\\Exception\\": 0.5
+        },
+        "distance": 0.04040610178208844,
+        "normalized_distance": 0.05714285714285716,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Gui\\Ipc\\Receiver": {
+        "name": "Gui\\Ipc\\Receiver",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addMessageCallback",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "callObjectEventListener",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "callMessageCallback",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "jsonDecode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "jsonSplit",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseDebug",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseNormal",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareOutput",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "tick",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "waitMessage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 61,
+        "ccn": 50,
+        "ccnMethodMax": 19,
+        "externals": [
+            "Gui\\Application",
+            "Gui\\Output",
+            "Gui\\Exception\\ComponentException",
+            "Gui\\OsDetector",
+            "Gui\\Output",
+            "Gui\\Output",
+            "Exception",
+            "Gui\\OsDetector",
+            "React\\Stream\\Stream",
+            "Gui\\Ipc\\MessageInterface",
+            "Gui\\Application"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 450,
+        "vocabulary": 71,
+        "volume": 2767.39,
+        "difficulty": 40.18,
+        "effort": 111189.62,
+        "level": 0.02,
+        "bugs": 0.92,
+        "time": 6177,
+        "intelligentContent": 68.88,
+        "number_operators": 150,
+        "number_operands": 300,
+        "number_operators_unique": 15,
+        "number_operands_unique": 56,
+        "cloc": 144,
+        "loc": 366,
+        "lloc": 222,
+        "mi": 59.28,
+        "mIwoC": 17.99,
+        "commentWeight": 41.29,
+        "kanDefect": 3.1,
+        "relativeStructuralComplexity": 256,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 256.67,
+        "totalStructuralComplexity": 3072,
+        "totalDataComplexity": 8.06,
+        "totalSystemComplexity": 3080.06,
+        "package": "Gui\\Ipc\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 7,
+        "instability": 0.78,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Ipc\\Sender": {
+        "name": "Gui\\Ipc\\Sender",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLazarusJson",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "out",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processMessage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "send",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "tick",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "waitReturn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeOnStream",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 23,
+        "ccn": 16,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Gui\\Application",
+            "Gui\\Ipc\\Receiver",
+            "Gui\\Ipc\\MessageInterface",
+            "Gui\\Output",
+            "Gui\\Output",
+            "Gui\\Output",
+            "Gui\\Output",
+            "Gui\\Ipc\\MessageInterface",
+            "Gui\\Ipc\\MessageInterface",
+            "Gui\\Ipc\\MessageInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 144,
+        "vocabulary": 33,
+        "volume": 726.39,
+        "difficulty": 25,
+        "effort": 18159.82,
+        "level": 0.04,
+        "bugs": 0.24,
+        "time": 1009,
+        "intelligentContent": 29.06,
+        "number_operators": 44,
+        "number_operands": 100,
+        "number_operators_unique": 11,
+        "number_operands_unique": 22,
+        "cloc": 88,
+        "loc": 168,
+        "lloc": 80,
+        "mi": 81.33,
+        "mIwoC": 36.3,
+        "commentWeight": 45.03,
+        "kanDefect": 0.94,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.43,
+        "relativeSystemComplexity": 64.43,
+        "totalStructuralComplexity": 512,
+        "totalDataComplexity": 3.44,
+        "totalSystemComplexity": 515.44,
+        "package": "Gui\\Ipc\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Ipc\\MessageInterface": {
+        "name": "Gui\\Ipc\\MessageInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Gui\\Ipc\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 4,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Gui\\Ipc\\CommandMessage": {
+        "name": "Gui\\Ipc\\CommandMessage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Ipc\\MessageInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 12,
+        "vocabulary": 5,
+        "volume": 27.86,
+        "difficulty": 1.13,
+        "effort": 31.35,
+        "level": 0.89,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 24.77,
+        "number_operators": 3,
+        "number_operands": 9,
+        "number_operators_unique": 1,
+        "number_operands_unique": 4,
+        "cloc": 37,
+        "loc": 51,
+        "lloc": 14,
+        "mi": 113.18,
+        "mIwoC": 64.75,
+        "commentWeight": 48.43,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Gui\\Ipc\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\OsDetector": {
+        "name": "Gui\\OsDetector",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "isMacOS",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isUnix",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isFreeBSD",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isWindows",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "systemArchitecture",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 5,
+        "length": 16,
+        "vocabulary": 9,
+        "volume": 50.72,
+        "difficulty": 1.75,
+        "effort": 88.76,
+        "level": 0.57,
+        "bugs": 0.02,
+        "time": 5,
+        "intelligentContent": 28.98,
+        "number_operators": 9,
+        "number_operands": 7,
+        "number_operators_unique": 3,
+        "number_operands_unique": 6,
+        "cloc": 33,
+        "loc": 57,
+        "lloc": 24,
+        "mi": 104.02,
+        "mIwoC": 57.82,
+        "commentWeight": 46.21,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 5,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 25,
+        "totalSystemComplexity": 25,
+        "package": "Gui\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\": {
+        "name": "Gui\\",
+        "classes": [
+            "Gui\\OsDetector",
+            "Gui\\Color",
+            "Gui\\Application",
+            "Gui\\Output"
+        ],
+        "incoming_class_dependencies": [
+            "Gui\\Ipc\\Receiver",
+            "Gui\\Ipc\\Sender",
+            "Gui\\Components\\VisualObject",
+            "Gui\\Components\\Shape",
+            "Gui\\Components\\Label",
+            "Gui\\Components\\Table",
+            "Gui\\Components\\Canvas"
+        ],
+        "incoming_package_dependencies": [
+            "Gui\\Ipc\\",
+            "Gui\\Components\\"
+        ],
+        "outgoing_class_dependencies": [
+            "InvalidArgumentException",
+            "React\\EventLoop\\LoopInterface",
+            "Gui\\Components\\Window",
+            "React\\EventLoop\\Factory",
+            "Gui\\Components\\AbstractObject",
+            "RuntimeException",
+            "React\\ChildProcess\\Process",
+            "Gui\\Ipc\\Receiver",
+            "Gui\\Ipc\\Sender",
+            "Gui\\Ipc\\CommandMessage",
+            "Gui\\Ipc\\EventMessage"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "React\\EventLoop\\",
+            "Gui\\Components\\",
+            "React\\ChildProcess\\",
+            "Gui\\Ipc\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6111111111111112,
+        "dependent_instabilities": {
+            "Gui\\Components\\": 0.8333333333333334,
+            "Gui\\Ipc\\": 0.8571428571428571
+        },
+        "distance": 0.2749859704614351,
+        "normalized_distance": 0.38888888888888884,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Gui\\Exception\\ComponentException": {
+        "name": "Gui\\Exception\\ComponentException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "RuntimeException",
+            "Exception"
+        ],
+        "parents": [
+            "RuntimeException"
+        ],
+        "lcom": 2,
+        "length": 16,
+        "vocabulary": 12,
+        "volume": 57.36,
+        "difficulty": 1.4,
+        "effort": 80.3,
+        "level": 0.71,
+        "bugs": 0.02,
+        "time": 4,
+        "intelligentContent": 40.97,
+        "number_operators": 2,
+        "number_operands": 14,
+        "number_operators_unique": 2,
+        "number_operands_unique": 10,
+        "cloc": 17,
+        "loc": 29,
+        "lloc": 12,
+        "mi": 110.36,
+        "mIwoC": 64.01,
+        "commentWeight": 46.35,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 2.25,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 2.5,
+        "totalSystemComplexity": 4.5,
+        "package": "Gui\\Exception\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Exception\\": {
+        "name": "Gui\\Exception\\",
+        "classes": [
+            "Gui\\Exception\\ComponentException"
+        ],
+        "incoming_class_dependencies": [
+            "Gui\\Ipc\\Receiver",
+            "Gui\\Components\\InputNumber"
+        ],
+        "incoming_package_dependencies": [
+            "Gui\\Ipc\\",
+            "Gui\\Components\\"
+        ],
+        "outgoing_class_dependencies": [
+            "RuntimeException",
+            "Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.5,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Gui\\Components\\Button": {
+        "name": "Gui\\Components\\Button",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 10,
+        "vocabulary": 5,
+        "volume": 23.22,
+        "difficulty": 1,
+        "effort": 23.22,
+        "level": 1,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 23.22,
+        "number_operators": 2,
+        "number_operands": 8,
+        "number_operators_unique": 1,
+        "number_operands_unique": 4,
+        "cloc": 25,
+        "loc": 39,
+        "lloc": 14,
+        "mi": 112.59,
+        "mIwoC": 65.3,
+        "commentWeight": 47.29,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 4.83,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 1.67,
+        "totalSystemComplexity": 9.67,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\": {
+        "name": "Gui\\Components\\",
+        "classes": [
+            "Gui\\Components\\Button",
+            "Gui\\Components\\InputText",
+            "Gui\\Components\\Image",
+            "Gui\\Components\\TextArea",
+            "Gui\\Components\\ContainerObjectInterface",
+            "Gui\\Components\\Window",
+            "Gui\\Components\\InputPassword",
+            "Gui\\Components\\Checkbox",
+            "Gui\\Components\\OptionAware",
+            "Gui\\Components\\Select",
+            "Gui\\Components\\VisualObject",
+            "Gui\\Components\\Shape",
+            "Gui\\Components\\VisualObjectInterface",
+            "Gui\\Components\\AbstractObject",
+            "Gui\\Components\\ProgressBar",
+            "Gui\\Components\\InputDate",
+            "Gui\\Components\\Label",
+            "Gui\\Components\\Radio",
+            "Gui\\Components\\InputFile",
+            "Gui\\Components\\Option",
+            "Gui\\Components\\Table",
+            "Gui\\Components\\ContainerObject",
+            "Gui\\Components\\InputNumber",
+            "Gui\\Components\\Calendar",
+            "Gui\\Components\\InputTime",
+            "Gui\\Components\\Div",
+            "Gui\\Components\\InputDirectory",
+            "Gui\\Components\\LazarusObjectInterface",
+            "Gui\\Components\\Canvas"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception",
+            "Imagick",
+            "InvalidArgumentException",
+            "Gui\\Color",
+            "Gui\\Exception\\ComponentException"
+        ],
+        "outgoing_package_dependencies": [
+            "\\",
+            "Gui\\",
+            "Gui\\Exception\\"
+        ],
+        "incoming_class_dependencies": [
+            "Gui\\Application"
+        ],
+        "incoming_package_dependencies": [
+            "Gui\\"
+        ],
+        "abstraction": 0.2413793103448276,
+        "instability": 0.8333333333333334,
+        "dependent_instabilities": {
+            "Gui\\": 0.6111111111111112,
+            "Gui\\Exception\\": 0.5
+        },
+        "distance": 0.0528298169852018,
+        "normalized_distance": 0.07471264367816088,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Gui\\Components\\InputText": {
+        "name": "Gui\\Components\\InputText",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 10,
+        "vocabulary": 5,
+        "volume": 23.22,
+        "difficulty": 1,
+        "effort": 23.22,
+        "level": 1,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 23.22,
+        "number_operators": 2,
+        "number_operands": 8,
+        "number_operators_unique": 1,
+        "number_operands_unique": 4,
+        "cloc": 25,
+        "loc": 39,
+        "lloc": 14,
+        "mi": 112.59,
+        "mIwoC": 65.3,
+        "commentWeight": 47.29,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 4.83,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 1.67,
+        "totalSystemComplexity": 9.67,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\Image": {
+        "name": "Gui\\Components\\Image",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setFile",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFile",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setResizeFilter",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getResizeFilter",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkExtensions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "drawImage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeTempFiles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 30,
+        "ccn": 21,
+        "ccnMethodMax": 13,
+        "externals": [
+            "Gui\\Components\\AbstractObject",
+            "Exception",
+            "Exception",
+            "Imagick",
+            "Exception"
+        ],
+        "parents": [
+            "Gui\\Components\\AbstractObject"
+        ],
+        "lcom": 1,
+        "length": 186,
+        "vocabulary": 38,
+        "volume": 976.11,
+        "difficulty": 14.9,
+        "effort": 14547.26,
+        "level": 0.07,
+        "bugs": 0.33,
+        "time": 808,
+        "intelligentContent": 65.5,
+        "number_operators": 54,
+        "number_operands": 132,
+        "number_operators_unique": 7,
+        "number_operands_unique": 31,
+        "cloc": 120,
+        "loc": 258,
+        "lloc": 138,
+        "mi": 73.1,
+        "mIwoC": 29.56,
+        "commentWeight": 43.53,
+        "kanDefect": 1.16,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 169.6,
+        "totalStructuralComplexity": 1690,
+        "totalDataComplexity": 6,
+        "totalSystemComplexity": 1696,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\TextArea": {
+        "name": "Gui\\Components\\TextArea",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 17,
+        "vocabulary": 9,
+        "volume": 53.89,
+        "difficulty": 0.94,
+        "effort": 50.52,
+        "level": 1.07,
+        "bugs": 0.02,
+        "time": 3,
+        "intelligentContent": 57.48,
+        "number_operators": 2,
+        "number_operands": 15,
+        "number_operators_unique": 1,
+        "number_operands_unique": 8,
+        "cloc": 25,
+        "loc": 42,
+        "lloc": 17,
+        "mi": 107.28,
+        "mIwoC": 60.77,
+        "commentWeight": 46.51,
+        "kanDefect": 0.38,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 4.83,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 1.67,
+        "totalSystemComplexity": 9.67,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\ContainerObjectInterface": {
+        "name": "Gui\\Components\\ContainerObjectInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "appendChild",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getChild",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getChildren",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\LazarusObjectInterface",
+            "Gui\\Components\\VisualObjectInterface"
+        ],
+        "parents": [
+            "Gui\\Components\\LazarusObjectInterface"
+        ],
+        "kanDefect": 0.15,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.09,
+        "afferentCoupling": 5,
+        "efferentCoupling": 2,
+        "instability": 0.29,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Gui\\Components\\Window": {
+        "name": "Gui\\Components\\Window",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIcon",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWindowState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Gui\\Components\\ContainerObject",
+            "InvalidArgumentException"
+        ],
+        "parents": [
+            "Gui\\Components\\ContainerObject"
+        ],
+        "lcom": 3,
+        "length": 42,
+        "vocabulary": 21,
+        "volume": 184.48,
+        "difficulty": 5,
+        "effort": 922.39,
+        "level": 0.2,
+        "bugs": 0.06,
+        "time": 51,
+        "intelligentContent": 36.9,
+        "number_operators": 10,
+        "number_operands": 32,
+        "number_operators_unique": 5,
+        "number_operands_unique": 16,
+        "cloc": 39,
+        "loc": 69,
+        "lloc": 30,
+        "mi": 97.31,
+        "mIwoC": 51.37,
+        "commentWeight": 45.93,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.19,
+        "relativeSystemComplexity": 10.19,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 4.75,
+        "totalSystemComplexity": 40.75,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\InputPassword": {
+        "name": "Gui\\Components\\InputPassword",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEchoMode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\VisualObject",
+            "Gui\\Components\\ContainerObjectInterface"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 22,
+        "vocabulary": 10,
+        "volume": 73.08,
+        "difficulty": 1.06,
+        "effort": 77.14,
+        "level": 0.95,
+        "bugs": 0.02,
+        "time": 4,
+        "intelligentContent": 69.24,
+        "number_operators": 3,
+        "number_operands": 19,
+        "number_operators_unique": 1,
+        "number_operands_unique": 9,
+        "cloc": 40,
+        "loc": 64,
+        "lloc": 24,
+        "mi": 103.74,
+        "mIwoC": 56.71,
+        "commentWeight": 47.04,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.8,
+        "relativeSystemComplexity": 16.8,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 3.2,
+        "totalSystemComplexity": 67.2,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\Checkbox": {
+        "name": "Gui\\Components\\Checkbox",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getChecked",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setChecked",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 10,
+        "vocabulary": 4,
+        "volume": 20,
+        "difficulty": 1.33,
+        "effort": 26.67,
+        "level": 0.75,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 15,
+        "number_operators": 2,
+        "number_operands": 8,
+        "number_operators_unique": 1,
+        "number_operands_unique": 3,
+        "cloc": 25,
+        "loc": 39,
+        "lloc": 14,
+        "mi": 113.05,
+        "mIwoC": 65.75,
+        "commentWeight": 47.29,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 4.83,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 1.67,
+        "totalSystemComplexity": 9.67,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\OptionAware": {
+        "name": "Gui\\Components\\OptionAware",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "parseOptionString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptionString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [],
+        "parents": [],
+        "lcom": 2,
+        "length": 20,
+        "vocabulary": 13,
+        "volume": 74.01,
+        "difficulty": 3.11,
+        "effort": 230.25,
+        "level": 0.32,
+        "bugs": 0.02,
+        "time": 13,
+        "intelligentContent": 23.79,
+        "number_operators": 6,
+        "number_operands": 14,
+        "number_operators_unique": 4,
+        "number_operands_unique": 9,
+        "cloc": 12,
+        "loc": 28,
+        "lloc": 16,
+        "mi": 102.83,
+        "mIwoC": 60.38,
+        "commentWeight": 42.45,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 4,
+        "relativeSystemComplexity": 4,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 8,
+        "totalSystemComplexity": 8,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\Select": {
+        "name": "Gui\\Components\\Select",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getChecked",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setReadOnly",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 3,
+        "length": 24,
+        "vocabulary": 11,
+        "volume": 83.03,
+        "difficulty": 2.22,
+        "effort": 184.5,
+        "level": 0.45,
+        "bugs": 0.03,
+        "time": 10,
+        "intelligentContent": 37.36,
+        "number_operators": 4,
+        "number_operands": 20,
+        "number_operators_unique": 2,
+        "number_operands_unique": 9,
+        "cloc": 33,
+        "loc": 58,
+        "lloc": 25,
+        "mi": 101.67,
+        "mIwoC": 55.66,
+        "commentWeight": 46.01,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.61,
+        "relativeSystemComplexity": 25.61,
+        "totalStructuralComplexity": 75,
+        "totalDataComplexity": 1.83,
+        "totalSystemComplexity": 76.83,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\VisualObject": {
+        "name": "Gui\\Components\\VisualObject",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "getAutoSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAutoSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBackgroundColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBackgroundColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBottom",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBottom",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHeight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHeight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLeft",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLeft",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWidth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getVisible",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setVisible",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 18,
+        "nbMethods": 18,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 18,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\AbstractObject",
+            "Gui\\Components\\VisualObjectInterface",
+            "Gui\\Color"
+        ],
+        "parents": [
+            "Gui\\Components\\AbstractObject"
+        ],
+        "lcom": 2,
+        "length": 81,
+        "vocabulary": 12,
+        "volume": 290.38,
+        "difficulty": 2.86,
+        "effort": 831.55,
+        "level": 0.35,
+        "bugs": 0.1,
+        "time": 46,
+        "intelligentContent": 101.4,
+        "number_operators": 18,
+        "number_operands": 63,
+        "number_operators_unique": 1,
+        "number_operands_unique": 11,
+        "cloc": 60,
+        "loc": 145,
+        "lloc": 85,
+        "mi": 82.51,
+        "mIwoC": 40.53,
+        "commentWeight": 41.98,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 4.63,
+        "relativeSystemComplexity": 13.63,
+        "totalStructuralComplexity": 162,
+        "totalDataComplexity": 83.25,
+        "totalSystemComplexity": 245.25,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.15,
+        "afferentCoupling": 19,
+        "efferentCoupling": 3,
+        "instability": 0.14,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\Shape": {
+        "name": "Gui\\Components\\Shape",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getBackgroundColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBackgroundColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBorderColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBorderColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\VisualObject",
+            "Gui\\Color",
+            "Gui\\Color"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 19,
+        "vocabulary": 6,
+        "volume": 49.11,
+        "difficulty": 1.5,
+        "effort": 73.67,
+        "level": 0.67,
+        "bugs": 0.02,
+        "time": 4,
+        "intelligentContent": 32.74,
+        "number_operators": 4,
+        "number_operands": 15,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 37,
+        "loc": 60,
+        "lloc": 23,
+        "mi": 105.21,
+        "mIwoC": 58.32,
+        "commentWeight": 46.9,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.13,
+        "relativeSystemComplexity": 10.13,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 4.5,
+        "totalSystemComplexity": 40.5,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\VisualObjectInterface": {
+        "name": "Gui\\Components\\VisualObjectInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getAutoSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAutoSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBackgroundColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBackgroundColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBottom",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBottom",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHeight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHeight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLeft",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLeft",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTop",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWidth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWidth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getVisible",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setVisible",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 18,
+        "nbMethods": 18,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 18,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.15,
+        "afferentCoupling": 3,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Gui\\Components\\AbstractObject": {
+        "name": "Gui\\Components\\AbstractObject",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "call",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "set",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLazarusObjectId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLazarusClass",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fire",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "on",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 22,
+        "ccn": 14,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Gui\\Components\\LazarusObjectInterface",
+            "Gui\\Components\\ContainerObjectInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 152,
+        "vocabulary": 36,
+        "volume": 785.83,
+        "difficulty": 14.36,
+        "effort": 11286.12,
+        "level": 0.07,
+        "bugs": 0.26,
+        "time": 627,
+        "intelligentContent": 54.72,
+        "number_operators": 33,
+        "number_operands": 119,
+        "number_operators_unique": 7,
+        "number_operands_unique": 29,
+        "cloc": 96,
+        "loc": 194,
+        "lloc": 98,
+        "mi": 78.73,
+        "mIwoC": 34.41,
+        "commentWeight": 44.33,
+        "kanDefect": 1.46,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.76,
+        "relativeSystemComplexity": 81.76,
+        "totalStructuralComplexity": 729,
+        "totalDataComplexity": 6.8,
+        "totalSystemComplexity": 735.8,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 3,
+        "efferentCoupling": 2,
+        "instability": 0.4,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\ProgressBar": {
+        "name": "Gui\\Components\\ProgressBar",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setStep",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStep",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPosition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPosition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMax",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMax",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 37,
+        "vocabulary": 7,
+        "volume": 103.87,
+        "difficulty": 2.42,
+        "effort": 251.02,
+        "level": 0.41,
+        "bugs": 0.03,
+        "time": 14,
+        "intelligentContent": 42.98,
+        "number_operators": 8,
+        "number_operands": 29,
+        "number_operators_unique": 1,
+        "number_operands_unique": 6,
+        "cloc": 13,
+        "loc": 54,
+        "lloc": 41,
+        "mi": 85.02,
+        "mIwoC": 50.56,
+        "commentWeight": 34.45,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 2.83,
+        "relativeSystemComplexity": 6.83,
+        "totalStructuralComplexity": 32,
+        "totalDataComplexity": 22.67,
+        "totalSystemComplexity": 54.67,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\InputDate": {
+        "name": "Gui\\Components\\InputDate",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setButtonOnlyWhenFocused",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isButtonOnlyWhenFocused",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAcceptInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAcceptInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDialogOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDialogOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 51,
+        "vocabulary": 19,
+        "volume": 216.64,
+        "difficulty": 2.41,
+        "effort": 522.5,
+        "level": 0.41,
+        "bugs": 0.07,
+        "time": 29,
+        "intelligentContent": 89.83,
+        "number_operators": 10,
+        "number_operands": 41,
+        "number_operators_unique": 2,
+        "number_operands_unique": 17,
+        "cloc": 76,
+        "loc": 125,
+        "lloc": 49,
+        "mi": 93.39,
+        "mIwoC": 46.64,
+        "commentWeight": 46.74,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1.7,
+        "relativeSystemComplexity": 17.7,
+        "totalStructuralComplexity": 128,
+        "totalDataComplexity": 13.6,
+        "totalSystemComplexity": 141.6,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\Label": {
+        "name": "Gui\\Components\\Label",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFontColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFontColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFontFamily",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFontFamily",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFontSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFontSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\VisualObject",
+            "Gui\\Color"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 37,
+        "vocabulary": 11,
+        "volume": 128,
+        "difficulty": 1.45,
+        "effort": 185.6,
+        "level": 0.69,
+        "bugs": 0.04,
+        "time": 10,
+        "intelligentContent": 88.28,
+        "number_operators": 8,
+        "number_operands": 29,
+        "number_operators_unique": 1,
+        "number_operands_unique": 10,
+        "cloc": 61,
+        "loc": 102,
+        "lloc": 41,
+        "mi": 96.5,
+        "mIwoC": 49.93,
+        "commentWeight": 46.57,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 2.13,
+        "relativeSystemComplexity": 11.13,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 17,
+        "totalSystemComplexity": 89,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\Radio": {
+        "name": "Gui\\Components\\Radio",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getChecked",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Gui\\Components\\VisualObject",
+            "InvalidArgumentException"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 17,
+        "vocabulary": 10,
+        "volume": 56.47,
+        "difficulty": 1.75,
+        "effort": 98.83,
+        "level": 0.57,
+        "bugs": 0.02,
+        "time": 5,
+        "intelligentContent": 32.27,
+        "number_operators": 3,
+        "number_operands": 14,
+        "number_operators_unique": 2,
+        "number_operands_unique": 8,
+        "cloc": 25,
+        "loc": 45,
+        "lloc": 20,
+        "mi": 104.68,
+        "mIwoC": 58.95,
+        "commentWeight": 45.73,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 16.5,
+        "totalStructuralComplexity": 32,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 33,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\InputFile": {
+        "name": "Gui\\Components\\InputFile",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDialogOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDialogOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBaseDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBaseDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setExtensionFilter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExtensionFilter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHideDirectory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isHidedirectory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAcceptInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAcceptInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setButtonOnlyWhenFocused",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isButtonOnlyWhenFocused",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAutoSelect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isAutoSelect",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "countFiles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 18,
+        "nbMethods": 18,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 18,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 22,
+        "ccn": 5,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 164,
+        "vocabulary": 64,
+        "volume": 984,
+        "difficulty": 4.4,
+        "effort": 4329.6,
+        "level": 0.23,
+        "bugs": 0.33,
+        "time": 241,
+        "intelligentContent": 223.64,
+        "number_operators": 32,
+        "number_operands": 132,
+        "number_operators_unique": 4,
+        "number_operands_unique": 60,
+        "cloc": 189,
+        "loc": 321,
+        "lloc": 132,
+        "mi": 78.51,
+        "mIwoC": 32.11,
+        "commentWeight": 46.39,
+        "kanDefect": 0.91,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 3.07,
+        "relativeSystemComplexity": 28.07,
+        "totalStructuralComplexity": 450,
+        "totalDataComplexity": 55.33,
+        "totalSystemComplexity": 505.33,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\Option": {
+        "name": "Gui\\Components\\Option",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLabel",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabel",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 2,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 22,
+        "vocabulary": 7,
+        "volume": 61.76,
+        "difficulty": 3.2,
+        "effort": 197.64,
+        "level": 0.31,
+        "bugs": 0.02,
+        "time": 11,
+        "intelligentContent": 19.3,
+        "number_operators": 6,
+        "number_operands": 16,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 36,
+        "loc": 63,
+        "lloc": 27,
+        "mi": 102.16,
+        "mIwoC": 56.1,
+        "commentWeight": 46.06,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2.8,
+        "relativeSystemComplexity": 2.8,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 14,
+        "totalSystemComplexity": 14,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\Table": {
+        "name": "Gui\\Components\\Table",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAlternateColor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAlternateColor",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBorder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBorder",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBorderStyle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRowCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRowCount",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setColumnCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getColumnCount",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDefaultColumnWidth",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addColumn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addRow",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteColumn",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteRow",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEnabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 17,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 14,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 0,
+        "wmc": 28,
+        "ccn": 12,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Gui\\Components\\VisualObject",
+            "Gui\\Components\\ContainerObjectInterface",
+            "Gui\\Color",
+            "Exception"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 189,
+        "vocabulary": 42,
+        "volume": 1019.15,
+        "difficulty": 12.08,
+        "effort": 12314.7,
+        "level": 0.08,
+        "bugs": 0.34,
+        "time": 684,
+        "intelligentContent": 84.34,
+        "number_operators": 44,
+        "number_operands": 145,
+        "number_operators_unique": 6,
+        "number_operands_unique": 36,
+        "cloc": 148,
+        "loc": 265,
+        "lloc": 117,
+        "mi": 78,
+        "mIwoC": 32.21,
+        "commentWeight": 45.8,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 1.66,
+        "relativeSystemComplexity": 101.66,
+        "totalStructuralComplexity": 1700,
+        "totalDataComplexity": 28.18,
+        "totalSystemComplexity": 1728.18,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\ContainerObject": {
+        "name": "Gui\\Components\\ContainerObject",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "appendChild",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getChild",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getChildren",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Gui\\Components\\VisualObject",
+            "Gui\\Components\\ContainerObjectInterface",
+            "Gui\\Components\\VisualObjectInterface",
+            "Exception"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 1,
+        "length": 15,
+        "vocabulary": 7,
+        "volume": 42.11,
+        "difficulty": 4.13,
+        "effort": 173.71,
+        "level": 0.24,
+        "bugs": 0.01,
+        "time": 10,
+        "intelligentContent": 10.21,
+        "number_operators": 4,
+        "number_operands": 11,
+        "number_operators_unique": 3,
+        "number_operands_unique": 4,
+        "cloc": 20,
+        "loc": 40,
+        "lloc": 20,
+        "mi": 104.43,
+        "mIwoC": 59.98,
+        "commentWeight": 44.46,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.33,
+        "relativeSystemComplexity": 2.33,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 7,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 2,
+        "efferentCoupling": 4,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\InputNumber": {
+        "name": "Gui\\Components\\InputNumber",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIncrement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIncrement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMax",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMax",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDecimals",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDecimals",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 11,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 4,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Gui\\Components\\VisualObject",
+            "Gui\\Components\\ContainerObjectInterface",
+            "Gui\\Exception\\ComponentException",
+            "Gui\\Exception\\ComponentException"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 1,
+        "length": 74,
+        "vocabulary": 23,
+        "volume": 334.74,
+        "difficulty": 6,
+        "effort": 2008.46,
+        "level": 0.17,
+        "bugs": 0.11,
+        "time": 112,
+        "intelligentContent": 55.79,
+        "number_operators": 17,
+        "number_operands": 57,
+        "number_operators_unique": 4,
+        "number_operands_unique": 19,
+        "cloc": 90,
+        "loc": 159,
+        "lloc": 69,
+        "mi": 87.62,
+        "mIwoC": 41.67,
+        "commentWeight": 45.95,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 2.73,
+        "relativeSystemComplexity": 11.73,
+        "totalStructuralComplexity": 99,
+        "totalDataComplexity": 30,
+        "totalSystemComplexity": 129,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\Calendar": {
+        "name": "Gui\\Components\\Calendar",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 37,
+        "vocabulary": 19,
+        "volume": 157.17,
+        "difficulty": 4.82,
+        "effort": 757.8,
+        "level": 0.21,
+        "bugs": 0.05,
+        "time": 42,
+        "intelligentContent": 32.6,
+        "number_operators": 10,
+        "number_operands": 27,
+        "number_operators_unique": 5,
+        "number_operands_unique": 14,
+        "cloc": 41,
+        "loc": 61,
+        "lloc": 20,
+        "mi": 103.86,
+        "mIwoC": 56.11,
+        "commentWeight": 47.76,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.63,
+        "relativeSystemComplexity": 9.63,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 1.25,
+        "totalSystemComplexity": 19.25,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\InputTime": {
+        "name": "Gui\\Components\\InputTime",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setButtonOnlyWhenFocused",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isButtonOnlyWhenFocused",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAcceptInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAcceptInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 29,
+        "vocabulary": 10,
+        "volume": 96.34,
+        "difficulty": 1.28,
+        "effort": 123.1,
+        "level": 0.78,
+        "bugs": 0.03,
+        "time": 7,
+        "intelligentContent": 75.39,
+        "number_operators": 6,
+        "number_operands": 23,
+        "number_operators_unique": 1,
+        "number_operands_unique": 9,
+        "cloc": 50,
+        "loc": 82,
+        "lloc": 32,
+        "mi": 99.92,
+        "mIwoC": 53.14,
+        "commentWeight": 46.78,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 2.17,
+        "relativeSystemComplexity": 6.17,
+        "totalStructuralComplexity": 24,
+        "totalDataComplexity": 13,
+        "totalSystemComplexity": 37,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\Div": {
+        "name": "Gui\\Components\\Div",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Gui\\Components\\ContainerObject"
+        ],
+        "parents": [
+            "Gui\\Components\\ContainerObject"
+        ],
+        "lcom": 0,
+        "length": 1,
+        "vocabulary": 1,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 1,
+        "number_operators_unique": 0,
+        "number_operands_unique": 1,
+        "cloc": 13,
+        "loc": 18,
+        "lloc": 5,
+        "mi": 219.39,
+        "mIwoC": 171,
+        "commentWeight": 48.39,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\InputDirectory": {
+        "name": "Gui\\Components\\InputDirectory",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBaseDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBaseDir",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAcceptInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAcceptInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 2,
+        "length": 31,
+        "vocabulary": 10,
+        "volume": 102.98,
+        "difficulty": 1.33,
+        "effort": 137.31,
+        "level": 0.75,
+        "bugs": 0.03,
+        "time": 8,
+        "intelligentContent": 77.23,
+        "number_operators": 7,
+        "number_operands": 24,
+        "number_operators_unique": 1,
+        "number_operands_unique": 9,
+        "cloc": 58,
+        "loc": 94,
+        "lloc": 36,
+        "mi": 98.72,
+        "mIwoC": 51.82,
+        "commentWeight": 46.9,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 2.48,
+        "relativeSystemComplexity": 6.48,
+        "totalStructuralComplexity": 28,
+        "totalDataComplexity": 17.33,
+        "totalSystemComplexity": 45.33,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Components\\LazarusObjectInterface": {
+        "name": "Gui\\Components\\LazarusObjectInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getLazarusObjectId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLazarusClass",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fire",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "on",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.13,
+        "afferentCoupling": 2,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Gui\\Components\\Canvas": {
+        "name": "Gui\\Components\\Canvas",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "putImageData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPixel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setSize",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Gui\\Components\\VisualObject",
+            "Gui\\Color",
+            "Gui\\Color"
+        ],
+        "parents": [
+            "Gui\\Components\\VisualObject"
+        ],
+        "lcom": 1,
+        "length": 36,
+        "vocabulary": 16,
+        "volume": 144,
+        "difficulty": 2.14,
+        "effort": 308.57,
+        "level": 0.47,
+        "bugs": 0.05,
+        "time": 17,
+        "intelligentContent": 67.2,
+        "number_operators": 6,
+        "number_operands": 30,
+        "number_operators_unique": 2,
+        "number_operands_unique": 14,
+        "cloc": 30,
+        "loc": 53,
+        "lloc": 23,
+        "mi": 100.86,
+        "mIwoC": 54.91,
+        "commentWeight": 45.95,
+        "kanDefect": 0.38,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.67,
+        "relativeSystemComplexity": 5.67,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 17,
+        "package": "Gui\\Components\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Color": {
+        "name": "Gui\\Color",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "toLazarus",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "InvalidArgumentException",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 49,
+        "vocabulary": 16,
+        "volume": 196,
+        "difficulty": 7.5,
+        "effort": 1470,
+        "level": 0.13,
+        "bugs": 0.07,
+        "time": 82,
+        "intelligentContent": 26.13,
+        "number_operators": 16,
+        "number_operands": 33,
+        "number_operators_unique": 5,
+        "number_operands_unique": 11,
+        "cloc": 16,
+        "loc": 38,
+        "lloc": 22,
+        "mi": 96.34,
+        "mIwoC": 54.13,
+        "commentWeight": 42.21,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Gui\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 5,
+        "efferentCoupling": 1,
+        "instability": 0.17,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Application": {
+        "name": "Gui\\Application",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWindow",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "ping",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addObject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "destroyObject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fire",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNextObjectId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getObject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getVerboseLevel",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "on",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "run",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "terminate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sendEvent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setVerboseLevel",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "waitCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLoop",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__unset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRunning",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 20,
+        "nbMethods": 16,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 16,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 1,
+        "wmc": 47,
+        "ccn": 28,
+        "ccnMethodMax": 13,
+        "externals": [
+            "React\\EventLoop\\LoopInterface",
+            "Gui\\Components\\Window",
+            "React\\EventLoop\\Factory",
+            "Gui\\Components\\AbstractObject",
+            "Gui\\Components\\AbstractObject",
+            "Gui\\OsDetector",
+            "Gui\\OsDetector",
+            "Gui\\OsDetector",
+            "Gui\\OsDetector",
+            "RuntimeException",
+            "Gui\\OsDetector",
+            "RuntimeException",
+            "React\\ChildProcess\\Process",
+            "Gui\\Ipc\\Receiver",
+            "Gui\\Ipc\\Sender",
+            "Gui\\Output",
+            "Gui\\Ipc\\CommandMessage",
+            "Gui\\Ipc\\EventMessage",
+            "Gui\\Ipc\\CommandMessage"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 282,
+        "vocabulary": 63,
+        "volume": 1685.59,
+        "difficulty": 17.83,
+        "effort": 30059.74,
+        "level": 0.06,
+        "bugs": 0.56,
+        "time": 1670,
+        "intelligentContent": 94.52,
+        "number_operators": 68,
+        "number_operands": 214,
+        "number_operators_unique": 9,
+        "number_operands_unique": 54,
+        "cloc": 204,
+        "loc": 407,
+        "lloc": 203,
+        "mi": 67.79,
+        "mIwoC": 23.3,
+        "commentWeight": 44.49,
+        "kanDefect": 1.81,
+        "relativeStructuralComplexity": 576,
+        "relativeDataComplexity": 0.44,
+        "relativeSystemComplexity": 576.44,
+        "totalStructuralComplexity": 11520,
+        "totalDataComplexity": 8.76,
+        "totalSystemComplexity": 11528.76,
+        "package": "Gui\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 2,
+        "efferentCoupling": 12,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Gui\\Output": {
+        "name": "Gui\\Output",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "out",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "err",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "colorize",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [],
+        "parents": [],
+        "lcom": 3,
+        "length": 42,
+        "vocabulary": 24,
+        "volume": 192.57,
+        "difficulty": 2.36,
+        "effort": 453.91,
+        "level": 0.42,
+        "bugs": 0.06,
+        "time": 25,
+        "intelligentContent": 81.7,
+        "number_operators": 9,
+        "number_operands": 33,
+        "number_operators_unique": 3,
+        "number_operands_unique": 21,
+        "cloc": 44,
+        "loc": 66,
+        "lloc": 22,
+        "mi": 102.13,
+        "mIwoC": 54.45,
+        "commentWeight": 47.68,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.83,
+        "relativeSystemComplexity": 2.83,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 5.5,
+        "totalSystemComplexity": 8.5,
+        "package": "Gui\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 3,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Example\\Rss": {
+        "name": "Example\\Rss",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getLastest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSingle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 8,
+        "ccnMethodMax": 6,
+        "externals": [],
+        "parents": [],
+        "lcom": 2,
+        "length": 121,
+        "vocabulary": 27,
+        "volume": 575.34,
+        "difficulty": 7.65,
+        "effort": 4402.61,
+        "level": 0.13,
+        "bugs": 0.19,
+        "time": 245,
+        "intelligentContent": 75.19,
+        "number_operators": 33,
+        "number_operands": 88,
+        "number_operators_unique": 4,
+        "number_operands_unique": 23,
+        "cloc": 0,
+        "loc": 55,
+        "lloc": 55,
+        "mi": 41.63,
+        "mIwoC": 41.63,
+        "commentWeight": 0,
+        "kanDefect": 0.8,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 4.5,
+        "relativeSystemComplexity": 4.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 9,
+        "totalSystemComplexity": 9,
+        "package": "Example\\",
+        "pageRank": 0.01,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Example\\": {
+        "name": "Example\\",
+        "classes": [
+            "Example\\Rss"
+        ],
+        "abstraction": 0,
+        "dependent_instabilities": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.31,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": ">=5.6",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "react\/child-process": {
+                "name": "react\/child-process",
+                "required": "^0.4.0",
+                "installed": null,
+                "latest": "0.6.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "",
+                "zip": "https:\/\/api.github.com\/repos\/reactphp\/child-process\/zipball\/6895afa583d51dc10a4b9e93cd3bce17b3b77ac3"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

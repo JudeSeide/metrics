@@ -1,0 +1,758 @@
+{
+    "Http\\Client\\Exception\\NetworkException": {
+        "name": "Http\\Client\\Exception\\NetworkException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Http\\Client\\Exception\\TransferException",
+            "Psr\\Http\\Client\\NetworkExceptionInterface",
+            "Psr\\Http\\Message\\RequestInterface",
+            "Exception"
+        ],
+        "parents": [
+            "Http\\Client\\Exception\\TransferException"
+        ],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 5,
+        "volume": 18.58,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.25,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 23.22,
+        "number_operators": 0,
+        "number_operands": 8,
+        "number_operators_unique": 0,
+        "number_operands_unique": 5,
+        "cloc": 12,
+        "loc": 22,
+        "lloc": 10,
+        "mi": 114.68,
+        "mIwoC": 69.17,
+        "commentWeight": 45.52,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 5,
+        "package": "Http\\Client\\Exception\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Http\\Client\\Exception\\": {
+        "name": "Http\\Client\\Exception\\",
+        "classes": [
+            "Http\\Client\\Exception\\NetworkException",
+            "Http\\Client\\Exception\\RequestAwareTrait",
+            "Http\\Client\\Exception\\HttpException",
+            "Http\\Client\\Exception\\RequestException",
+            "Http\\Client\\Exception\\TransferException"
+        ],
+        "outgoing_class_dependencies": [
+            "Psr\\Http\\Client\\NetworkExceptionInterface",
+            "Psr\\Http\\Message\\RequestInterface",
+            "Exception",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "static",
+            "Psr\\Http\\Client\\RequestExceptionInterface",
+            "RuntimeException",
+            "Http\\Client\\Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "Psr\\Http\\Client\\",
+            "Psr\\Http\\Message\\",
+            "\\",
+            "Http\\Client\\"
+        ],
+        "abstraction": 0.2,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Http\\Client\\": 0.6
+        },
+        "distance": 0.14142135623730948,
+        "normalized_distance": 0.19999999999999996,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Http\\Client\\Exception\\RequestAwareTrait": {
+        "name": "Http\\Client\\Exception\\RequestAwareTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "setRequest",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Psr\\Http\\Message\\RequestInterface",
+            "Psr\\Http\\Message\\RequestInterface"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 4,
+        "volume": 12,
+        "difficulty": 2,
+        "effort": 24,
+        "level": 0.5,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 6,
+        "number_operators": 2,
+        "number_operands": 4,
+        "number_operators_unique": 2,
+        "number_operands_unique": 2,
+        "cloc": 6,
+        "loc": 19,
+        "lloc": 13,
+        "mi": 106.24,
+        "mIwoC": 68.01,
+        "commentWeight": 38.23,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Http\\Client\\Exception\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Http\\Client\\Exception\\HttpException": {
+        "name": "Http\\Client\\Exception\\HttpException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getResponse",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Http\\Client\\Exception\\RequestException",
+            "Psr\\Http\\Message\\RequestInterface",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Exception",
+            "Psr\\Http\\Message\\RequestInterface",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Exception",
+            "static"
+        ],
+        "parents": [
+            "Http\\Client\\Exception\\RequestException"
+        ],
+        "lcom": 2,
+        "length": 30,
+        "vocabulary": 8,
+        "volume": 90,
+        "difficulty": 4.17,
+        "effort": 375,
+        "level": 0.24,
+        "bugs": 0.03,
+        "time": 21,
+        "intelligentContent": 21.6,
+        "number_operators": 5,
+        "number_operands": 25,
+        "number_operators_unique": 2,
+        "number_operands_unique": 6,
+        "cloc": 24,
+        "loc": 44,
+        "lloc": 20,
+        "mi": 103.32,
+        "mIwoC": 57.8,
+        "commentWeight": 45.52,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.72,
+        "relativeSystemComplexity": 25.72,
+        "totalStructuralComplexity": 75,
+        "totalDataComplexity": 2.17,
+        "totalSystemComplexity": 77.17,
+        "package": "Http\\Client\\Exception\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Http\\Client\\Exception\\RequestException": {
+        "name": "Http\\Client\\Exception\\RequestException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Http\\Client\\Exception\\TransferException",
+            "Psr\\Http\\Client\\RequestExceptionInterface",
+            "Psr\\Http\\Message\\RequestInterface",
+            "Exception"
+        ],
+        "parents": [
+            "Http\\Client\\Exception\\TransferException"
+        ],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 5,
+        "volume": 18.58,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.25,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 23.22,
+        "number_operators": 0,
+        "number_operands": 8,
+        "number_operators_unique": 0,
+        "number_operands_unique": 5,
+        "cloc": 13,
+        "loc": 23,
+        "lloc": 10,
+        "mi": 115.1,
+        "mIwoC": 69.17,
+        "commentWeight": 45.93,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 5,
+        "package": "Http\\Client\\Exception\\",
+        "pageRank": 0.05,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Http\\Client\\Exception\\TransferException": {
+        "name": "Http\\Client\\Exception\\TransferException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "RuntimeException",
+            "Http\\Client\\Exception"
+        ],
+        "parents": [
+            "RuntimeException"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 5,
+        "loc": 9,
+        "lloc": 4,
+        "mi": 216.73,
+        "mIwoC": 171,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Http\\Client\\Exception\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Http\\Client\\HttpClient": {
+        "name": "Http\\Client\\HttpClient",
+        "interface": true,
+        "abstract": true,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Psr\\Http\\Client\\ClientInterface"
+        ],
+        "parents": [
+            "Psr\\Http\\Client\\ClientInterface"
+        ],
+        "kanDefect": 0.15,
+        "package": "Http\\Client\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Http\\Client\\": {
+        "name": "Http\\Client\\",
+        "classes": [
+            "Http\\Client\\HttpClient",
+            "Http\\Client\\Exception",
+            "Http\\Client\\HttpAsyncClient"
+        ],
+        "incoming_class_dependencies": [
+            "Http\\Client\\Exception\\TransferException",
+            "Http\\Client\\Promise\\HttpRejectedPromise"
+        ],
+        "incoming_package_dependencies": [
+            "Http\\Client\\Exception\\",
+            "Http\\Client\\Promise\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Psr\\Http\\Client\\ClientInterface",
+            "Psr\\Http\\Client\\ClientExceptionInterface",
+            "Psr\\Http\\Message\\RequestInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Psr\\Http\\Client\\",
+            "Psr\\Http\\Message\\"
+        ],
+        "abstraction": 1,
+        "instability": 0.6,
+        "dependent_instabilities": [],
+        "distance": 0.42426406871192857,
+        "normalized_distance": 0.6000000000000001,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Http\\Client\\Exception": {
+        "name": "Http\\Client\\Exception",
+        "interface": true,
+        "abstract": true,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Psr\\Http\\Client\\ClientExceptionInterface"
+        ],
+        "parents": [
+            "Psr\\Http\\Client\\ClientExceptionInterface"
+        ],
+        "kanDefect": 0.15,
+        "package": "Http\\Client\\",
+        "pageRank": 0.29,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Http\\Client\\Promise\\HttpFulfilledPromise": {
+        "name": "Http\\Client\\Promise\\HttpFulfilledPromise",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "then",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wait",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Http\\Promise\\Promise",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Http\\Client\\Promise\\HttpRejectedPromise"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 24,
+        "vocabulary": 11,
+        "volume": 83.03,
+        "difficulty": 5.83,
+        "effort": 484.32,
+        "level": 0.17,
+        "bugs": 0.03,
+        "time": 27,
+        "intelligentContent": 14.23,
+        "number_operators": 10,
+        "number_operands": 14,
+        "number_operators_unique": 5,
+        "number_operands_unique": 6,
+        "cloc": 15,
+        "loc": 45,
+        "lloc": 30,
+        "mi": 92.79,
+        "mIwoC": 53.8,
+        "commentWeight": 38.99,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 6,
+        "relativeSystemComplexity": 6,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 24,
+        "totalSystemComplexity": 24,
+        "package": "Http\\Client\\Promise\\",
+        "pageRank": 0.18,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Http\\Client\\Promise\\": {
+        "name": "Http\\Client\\Promise\\",
+        "classes": [
+            "Http\\Client\\Promise\\HttpFulfilledPromise",
+            "Http\\Client\\Promise\\HttpRejectedPromise"
+        ],
+        "outgoing_class_dependencies": [
+            "Http\\Promise\\Promise",
+            "Psr\\Http\\Message\\ResponseInterface",
+            "Http\\Client\\Exception"
+        ],
+        "outgoing_package_dependencies": [
+            "Http\\Promise\\",
+            "Psr\\Http\\Message\\",
+            "Http\\Client\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Http\\Client\\": 0.6
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Http\\Client\\Promise\\HttpRejectedPromise": {
+        "name": "Http\\Client\\Promise\\HttpRejectedPromise",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "then",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wait",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Http\\Promise\\Promise",
+            "Http\\Client\\Exception",
+            "Http\\Client\\Promise\\HttpFulfilledPromise"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 23,
+        "vocabulary": 11,
+        "volume": 79.57,
+        "difficulty": 5.83,
+        "effort": 464.14,
+        "level": 0.17,
+        "bugs": 0.03,
+        "time": 26,
+        "intelligentContent": 13.64,
+        "number_operators": 9,
+        "number_operands": 14,
+        "number_operators_unique": 5,
+        "number_operands_unique": 6,
+        "cloc": 15,
+        "loc": 45,
+        "lloc": 30,
+        "mi": 92.92,
+        "mIwoC": 53.93,
+        "commentWeight": 38.99,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 5,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 20,
+        "totalSystemComplexity": 20,
+        "package": "Http\\Client\\Promise\\",
+        "pageRank": 0.18,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Http\\Client\\HttpAsyncClient": {
+        "name": "Http\\Client\\HttpAsyncClient",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "sendAsyncRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Psr\\Http\\Message\\RequestInterface"
+        ],
+        "parents": [],
+        "kanDefect": 0.15,
+        "package": "Http\\Client\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.71,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "^7.0",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "psr\/http-message": {
+                "name": "psr\/http-message",
+                "required": "^1.0",
+                "installed": null,
+                "latest": "1.0.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/php-fig\/http-message",
+                "zip": "https:\/\/api.github.com\/repos\/php-fig\/http-message\/zipball\/f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "psr\/http-client": {
+                "name": "psr\/http-client",
+                "required": "^1.0",
+                "installed": null,
+                "latest": "1.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/php-fig\/http-client",
+                "zip": "https:\/\/api.github.com\/repos\/php-fig\/http-client\/zipball\/496a823ef742b632934724bf769560c2a5c7c44e"
+            },
+            "php-http\/promise": {
+                "name": "php-http\/promise",
+                "required": "^1.0",
+                "installed": null,
+                "latest": "1.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "http:\/\/httplug.io",
+                "zip": "https:\/\/api.github.com\/repos\/php-http\/promise\/zipball\/dc494cdc9d7160b9a09bd5573272195242ce7980"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}

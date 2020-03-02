@@ -1,0 +1,772 @@
+{
+    "Spatie\\Newsletter\\NewsletterServiceProvider": {
+        "name": "Spatie\\Newsletter\\NewsletterServiceProvider",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "register",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Spatie\\Newsletter\\NullDriver",
+            "DrewM\\MailChimp\\MailChimp",
+            "Spatie\\Newsletter\\NewsletterListCollection",
+            "Spatie\\Newsletter\\Newsletter"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 2,
+        "length": 39,
+        "vocabulary": 19,
+        "volume": 165.67,
+        "difficulty": 6.23,
+        "effort": 1032.25,
+        "level": 0.16,
+        "bugs": 0.06,
+        "time": 57,
+        "intelligentContent": 26.59,
+        "number_operators": 12,
+        "number_operands": 27,
+        "number_operators_unique": 6,
+        "number_operands_unique": 13,
+        "cloc": 0,
+        "loc": 24,
+        "lloc": 24,
+        "mi": 53.95,
+        "mIwoC": 53.95,
+        "commentWeight": 0,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 25.33,
+        "totalStructuralComplexity": 50,
+        "totalDataComplexity": 0.67,
+        "totalSystemComplexity": 50.67,
+        "package": "Spatie\\Newsletter\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Newsletter\\": {
+        "name": "Spatie\\Newsletter\\",
+        "classes": [
+            "Spatie\\Newsletter\\NewsletterServiceProvider",
+            "Spatie\\Newsletter\\NewsletterListCollection",
+            "Spatie\\Newsletter\\NewsletterList",
+            "Spatie\\Newsletter\\NullDriver",
+            "Spatie\\Newsletter\\NewsletterFacade",
+            "Spatie\\Newsletter\\Newsletter"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider",
+            "DrewM\\MailChimp\\MailChimp",
+            "Illuminate\\Support\\Collection",
+            "static",
+            "Spatie\\Newsletter\\Exceptions\\InvalidNewsletterList",
+            "Illuminate\\Support\\Facades\\Log",
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "DrewM\\MailChimp\\",
+            "\\",
+            "Spatie\\Newsletter\\Exceptions\\",
+            "Illuminate\\Support\\Facades\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Spatie\\Newsletter\\Exceptions\\": 0.6666666666666666
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Newsletter\\NewsletterListCollection": {
+        "name": "Spatie\\Newsletter\\NewsletterListCollection",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "createFromConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findByName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefault",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 7,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Illuminate\\Support\\Collection",
+            "static",
+            "Spatie\\Newsletter\\NewsletterList",
+            "Spatie\\Newsletter\\NewsletterList",
+            "Spatie\\Newsletter\\Exceptions\\InvalidNewsletterList",
+            "Spatie\\Newsletter\\NewsletterList",
+            "Spatie\\Newsletter\\Exceptions\\InvalidNewsletterList"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Collection"
+        ],
+        "lcom": 2,
+        "length": 42,
+        "vocabulary": 13,
+        "volume": 155.42,
+        "difficulty": 6.67,
+        "effort": 1036.12,
+        "level": 0.15,
+        "bugs": 0.05,
+        "time": 58,
+        "intelligentContent": 23.31,
+        "number_operators": 12,
+        "number_operands": 30,
+        "number_operators_unique": 4,
+        "number_operands_unique": 9,
+        "cloc": 1,
+        "loc": 36,
+        "lloc": 35,
+        "mi": 62.8,
+        "mIwoC": 50.03,
+        "commentWeight": 12.77,
+        "kanDefect": 1.05,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.93,
+        "relativeSystemComplexity": 16.93,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 2.8,
+        "totalSystemComplexity": 50.8,
+        "package": "Spatie\\Newsletter\\",
+        "pageRank": 0.19,
+        "afferentCoupling": 2,
+        "efferentCoupling": 4,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Newsletter\\NewsletterList": {
+        "name": "Spatie\\Newsletter\\NewsletterList",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getName",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "lcom": 1,
+        "length": 13,
+        "vocabulary": 6,
+        "volume": 33.6,
+        "difficulty": 2.25,
+        "effort": 75.61,
+        "level": 0.44,
+        "bugs": 0.01,
+        "time": 4,
+        "intelligentContent": 14.94,
+        "number_operators": 4,
+        "number_operands": 9,
+        "number_operators_unique": 2,
+        "number_operands_unique": 4,
+        "cloc": 2,
+        "loc": 21,
+        "lloc": 19,
+        "mi": 84.29,
+        "mIwoC": 61.28,
+        "commentWeight": 23,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2.67,
+        "relativeSystemComplexity": 2.67,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 8,
+        "totalSystemComplexity": 8,
+        "package": "Spatie\\Newsletter\\",
+        "pageRank": 0.28,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Newsletter\\Exceptions\\InvalidNewsletterList": {
+        "name": "Spatie\\Newsletter\\Exceptions\\InvalidNewsletterList",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "noListsDefined",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "noListWithName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultListDoesNotExist",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Exception",
+            "static",
+            "static",
+            "static"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "lcom": 3,
+        "length": 14,
+        "vocabulary": 8,
+        "volume": 42,
+        "difficulty": 0.79,
+        "effort": 33,
+        "level": 1.27,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 53.45,
+        "number_operators": 3,
+        "number_operands": 11,
+        "number_operators_unique": 1,
+        "number_operands_unique": 7,
+        "cloc": 13,
+        "loc": 29,
+        "lloc": 16,
+        "mi": 105.28,
+        "mIwoC": 62.23,
+        "commentWeight": 43.05,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3.67,
+        "relativeSystemComplexity": 3.67,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 11,
+        "totalSystemComplexity": 11,
+        "package": "Spatie\\Newsletter\\Exceptions\\",
+        "pageRank": 0.21,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Newsletter\\Exceptions\\": {
+        "name": "Spatie\\Newsletter\\Exceptions\\",
+        "classes": [
+            "Spatie\\Newsletter\\Exceptions\\InvalidNewsletterList"
+        ],
+        "incoming_class_dependencies": [
+            "Spatie\\Newsletter\\NewsletterListCollection"
+        ],
+        "incoming_package_dependencies": [
+            "Spatie\\Newsletter\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Exception",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": [],
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Spatie\\Newsletter\\NullDriver": {
+        "name": "Spatie\\Newsletter\\NullDriver",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__call",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Log"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 14,
+        "vocabulary": 9,
+        "volume": 44.38,
+        "difficulty": 2.5,
+        "effort": 110.95,
+        "level": 0.4,
+        "bugs": 0.01,
+        "time": 6,
+        "intelligentContent": 17.75,
+        "number_operators": 4,
+        "number_operands": 10,
+        "number_operators_unique": 3,
+        "number_operands_unique": 6,
+        "cloc": 3,
+        "loc": 18,
+        "lloc": 15,
+        "mi": 92.1,
+        "mIwoC": 62.54,
+        "commentWeight": 29.56,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 0.75,
+        "relativeSystemComplexity": 1.75,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 3.5,
+        "package": "Spatie\\Newsletter\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Newsletter\\NewsletterFacade": {
+        "name": "Spatie\\Newsletter\\NewsletterFacade",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFacadeAccessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "parents": [
+            "Illuminate\\Support\\Facades\\Facade"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 0,
+        "loc": 8,
+        "lloc": 8,
+        "mi": 78.06,
+        "mIwoC": 78.06,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Spatie\\Newsletter\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Spatie\\Newsletter\\Newsletter": {
+        "name": "Spatie\\Newsletter\\Newsletter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "subscribe",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "subscribePending",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "subscribeOrUpdate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMembers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMember",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMemberActivity",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasMember",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSubscribed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unsubscribe",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateEmailAddress",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deletePermanently",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTags",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addTags",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeTags",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createCampaign",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateContent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getApi",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLastError",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "lastActionSucceeded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSubscriberHash",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSubscriptionOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 23,
+        "nbMethods": 23,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 21,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 35,
+        "ccn": 13,
+        "ccnMethodMax": 4,
+        "externals": [
+            "DrewM\\MailChimp\\MailChimp",
+            "Spatie\\Newsletter\\NewsletterListCollection",
+            "DrewM\\MailChimp\\MailChimp"
+        ],
+        "parents": [],
+        "lcom": 1,
+        "length": 427,
+        "vocabulary": 57,
+        "volume": 2490.64,
+        "difficulty": 16.35,
+        "effort": 40712.45,
+        "level": 0.06,
+        "bugs": 0.83,
+        "time": 2262,
+        "intelligentContent": 152.37,
+        "number_operators": 87,
+        "number_operands": 340,
+        "number_operators_unique": 5,
+        "number_operands_unique": 52,
+        "cloc": 5,
+        "loc": 178,
+        "lloc": 173,
+        "mi": 38.49,
+        "mIwoC": 25.65,
+        "commentWeight": 12.84,
+        "kanDefect": 0.99,
+        "relativeStructuralComplexity": 324,
+        "relativeDataComplexity": 1.97,
+        "relativeSystemComplexity": 325.97,
+        "totalStructuralComplexity": 7452,
+        "totalDataComplexity": 45.26,
+        "totalSystemComplexity": 7497.26,
+        "package": "Spatie\\Newsletter\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.57,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "php": {
+                "name": "php",
+                "required": "~7.2",
+                "installed": null,
+                "latest": null,
+                "license": [],
+                "homepage": null,
+                "zip": null
+            },
+            "illuminate\/support": {
+                "name": "illuminate\/support",
+                "required": "~5.8.0|^6.0",
+                "installed": null,
+                "latest": "6.17.1",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/laravel.com",
+                "zip": "https:\/\/api.github.com\/repos\/illuminate\/support\/zipball\/468b76701a1caf8859b2af7c770a3f293c4f065b"
+            },
+            "drewm\/mailchimp-api": {
+                "name": "drewm\/mailchimp-api",
+                "required": "^2.4",
+                "installed": null,
+                "latest": "2.5.4",
+                "license": [
+                    "MIT"
+                ],
+                "homepage": "https:\/\/github.com\/drewm\/mailchimp-api",
+                "zip": "https:\/\/api.github.com\/repos\/drewm\/mailchimp-api\/zipball\/c6cdfab4ca6ddbc3b260913470bd0a4a5cb84c7a"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}
