@@ -2,6 +2,7 @@
 
 namespace App\Commands\Library;
 
+use Exception;
 use Illuminate\Support\Collection;
 use LaravelZero\Framework\Commands\Command;
 use Symfony\Component\Console\Helper\ProgressBar;
@@ -19,9 +20,8 @@ class DownloadCommand extends Command
         $libraries = $this->getSelectedLibraries();
         $this->line("\n<info>Downloading {$libraries->count()} php libraries.</info>\n");
 
-        $this->process($libraries,  function (array $library) {
-            exec('cd '.config('filesystems.resources.directory').' && git clone '.$library['clone_url']);
-            $this->line("\n<info>{$library['name']} downloaded...</info>\n");
+        $this->process($libraries, static function (array $library) {
+            exec('cd '.config('filesystems.resources.directory').' && git clone -q '.$library['clone_url'].' >> /dev/null 2>&1 ');
         });
 
         $this->line("\n<info>Done</info>\n");
@@ -40,8 +40,12 @@ class DownloadCommand extends Command
         $bar->start();
 
         foreach ($collection as $item) {
-            $callback($item);
-            $bar->advance();
+            try {
+                $callback($item);
+                $bar->advance();
+            } catch (Exception $exception) {
+                $bar->advance(); // ignore failure to clone libraries already downloaded
+            }
         }
 
         $bar->finish();
