@@ -62,7 +62,6 @@ class SearchCommand extends Command
             });
 
             $this->line("\n<info>Selected {$this->selected->count()} repositories</info>\n");
-
             return $this->selected->isNotEmpty();
         });
     }

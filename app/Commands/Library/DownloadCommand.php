@@ -26,6 +26,7 @@ class DownloadCommand extends Command
         });
 
         $this->line("\n<info>Done</info>\n");
+        $this->notify('Metrics', $libraries->count().' php libraries downloaded.', 'icon.png');
     }
 
     protected function getSelectedLibraries(): Collection

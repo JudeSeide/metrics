@@ -28,6 +28,7 @@ class MakeCommand extends Command
         });
 
         $this->line("\n<info>Done</info>\n");
+        $this->notify('Metrics', $libraries->count().' php libraries analysed.', 'icon.png');
     }
 
     protected function getDownloadedLibraries(Finder $finder): Collection
