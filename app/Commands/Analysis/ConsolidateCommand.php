@@ -2,6 +2,7 @@
 
 namespace App\Commands\Analysis;
 
+use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Support\Collection;
 use LaravelZero\Framework\Commands\Command;
 use Symfony\Component\Finder\Finder;
@@ -24,12 +25,13 @@ class ConsolidateCommand extends Command
     /** @var Collection */
     protected $consolidated;
 
-    public function handle(Finder $finder): void
+    public function handle(Finder $finder, Filesystem $filesystem): void
     {
         $this->getGitHubMetadata();
         $this->getReportedMetrics($finder);
-        // consolidate data
-        // calculate linear regression ?
+
+        $this->consolidate();
+        $this->saveAnalysisResults($filesystem);
     }
 
     protected function getGitHubMetadata(): void
@@ -42,6 +44,7 @@ class ConsolidateCommand extends Command
                 $this->metadata->push($this->parseRepository($metadata));
             }
 
+            $this->metadata = $this->metadata->groupBy('name');
             return $this->metadata->isNotEmpty();
         });
     }
@@ -52,28 +55,82 @@ class ConsolidateCommand extends Command
             $this->metrics = collect();
             $artefacts = $finder->files()->name('*.json')->in(config('filesystems.resources.artefacts'));
 
-            foreach ($artefacts as $metrics) {
-                $this->metrics->push($this->parseArtefact($metrics));
+            foreach ($artefacts as $file) {
+                if (!empty($parsed = $this->parseAnalysis($file))) {
+                    $this->metrics->push($parsed);
+                }
             }
 
             return $this->metrics->isNotEmpty();
         });
     }
 
-//    protected function consolidate(): void
-
-    protected function parseArtefact(SplFileInfo $metrics): array
+    protected function consolidate(): void
     {
-        // todo - cleanup - average - only return metrics we need here
-        // $name = str_replace('.json', '', $metrics->getFilename());
-        // return [$name => json_decode($metrics->getContents(), true)];
+        $this->task('consolidate analysis results', function () {
+            $analysis = collect();
+            $regression = [];
 
-        return [];
+            foreach ($this->metrics as $metric) {
+                $metadata = $this->metadata->get($metric['name'])->first();
+                $analysis->push(array_merge($metadata, $metric));
+                $regression[] = [$metadata['stargazers_count'], $metric['relative_system_complexity']];
+            }
+
+            $this->consolidated = collect([
+                'analysis' => array_values($analysis->sortByDesc('stargazers_count')->all()),
+                'regression' => $regression
+            ]);
+
+            return $this->consolidated->isNotEmpty();
+        });
+    }
+
+    public function saveAnalysisResults(Filesystem $filesystem): void
+    {
+        $this->task('save analysis results', function () use ($filesystem) {
+            $filesystem->put(config('filesystems.resources.results'), json_encode($this->consolidated->all()));
+            return true;
+        });
+    }
+
+    protected function parseAnalysis(SplFileInfo $file): array
+    {
+        $metrics = json_decode($file->getContents(), true);
+        $data = [
+            'name' => str_replace('.json', '', $file->getFilename()),
+            'relative_system_complexity' => 0,
+            'afferent_coupling' => 0,
+            'efferent_coupling' => 0,
+            'bugs' => 0,
+            'wmc' => 0
+        ];
+
+        $counter = 0;
+        foreach ($metrics as $metric) {
+            if (array_has($metric, 'relativeSystemComplexity')) {
+                $data['relative_system_complexity'] += (float) array_get($metric, 'relativeSystemComplexity');
+                $data['afferent_coupling'] += (float) array_get($metric, 'afferentCoupling');
+                $data['efferent_coupling'] += (float) array_get($metric, 'efferentCoupling');
+                $data['bugs'] += (float) array_get($metric, 'bugs');
+                $data['wmc'] += (float) array_get($metric, 'wmc');
+                $counter++;
+            }
+        }
+
+        return $counter === 0 ? [] : array_map(static function ($value) use ($counter) {
+            return is_string($value) ? $value : $value / $counter;
+        }, $data);
     }
 
     protected function parseRepository(array $metadata): array
     {
-        // todo - parse github metadata - only return what is necessary for visualization
-        return [];
+        return [
+            'id' => (int) array_get($metadata, 'id'),
+            'name' => (string) array_get($metadata, 'name'),
+            'full_name' => (string) array_get($metadata, 'full_name'),
+            'description' => (string) array_get($metadata, 'description'),
+            'stargazers_count' => (int) array_get($metadata, 'stargazers_count')
+        ];
     }
 }

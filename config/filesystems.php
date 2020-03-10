@@ -12,5 +12,6 @@ return [
         'directory' => getcwd().DIRECTORY_SEPARATOR.'resources',
         'artefacts' => getcwd().DIRECTORY_SEPARATOR.'artefacts',
         'metadata' => 'resources'.DIRECTORY_SEPARATOR.'libraries.json',
+        'results' => 'analysis'.DIRECTORY_SEPARATOR.'results.json',
     ]
 ];
