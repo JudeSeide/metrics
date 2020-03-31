@@ -24,7 +24,9 @@ class MainCommand extends Command
             'Visualize results',
         ])->open();
 
-        $this->{$options[$selected]}();
+        if ($selected !== null) {
+            $this->{$options[$selected]}();
+        }
     }
 
     protected function automate(): void
