@@ -10,9 +10,11 @@ class PackagistClient extends AbstractHttpClient implements PackagistClientContr
     public function fetchLibraryList(): Collection
     {
         $response = $this->get('list.json', ['type' => 'library']);
-        $libraries = array_get($response, 'packageNames', []);
 
-        return collect($libraries);
+        $libraries = collect(array_get($response, 'packageNames', []));
+        $fallback = collect(array_get(config('resources.libraries'), 'packageNames', [])); // bypass packagist throttle
+
+        return $libraries->isNotEmpty() ? $libraries : $fallback;
     }
 
     protected function options(array $data = []): array

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => NunoMaduro\LaravelConsoleSummary\SummaryCommand::class, // todo - replace with menu command
+    'default' => App\Commands\MainCommand::class,
 
     /*
     |--------------------------------------------------------------------------
