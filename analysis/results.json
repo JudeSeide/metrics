@@ -7,6 +7,7 @@
             "description": "Guzzle, an extensible PHP HTTP client",
             "stargazers_count": 18863,
             "relative_system_complexity": 124.73218749999998,
+            "maintainability_index": 94.26781249999998,
             "afferent_coupling": 1.625,
             "efferent_coupling": 4.8125,
             "bugs": 0.37750000000000006,
@@ -19,6 +20,7 @@
             "description": "The classic email sending library for PHP",
             "stargazers_count": 14550,
             "relative_system_complexity": 1337.218,
+            "maintainability_index": 75.18800000000002,
             "afferent_coupling": 0.6,
             "efferent_coupling": 1.2,
             "bugs": 4.12,
@@ -31,6 +33,7 @@
             "description": "A PHP parser written in PHP",
             "stargazers_count": 12676,
             "relative_system_complexity": 30.78528037383178,
+            "maintainability_index": 88.63817757009332,
             "afferent_coupling": 3.8738317757009346,
             "efferent_coupling": 4.271028037383178,
             "bugs": 0.632056074766355,
@@ -43,6 +46,7 @@
             "description": "Laravel Debugbar (Integrates PHP Debug Bar)",
             "stargazers_count": 10569,
             "relative_system_complexity": 268.2094736842105,
+            "maintainability_index": 83.87499999999999,
             "afferent_coupling": 0.868421052631579,
             "efferent_coupling": 3.9210526315789473,
             "bugs": 0.24578947368421042,
@@ -55,6 +59,7 @@
             "description": "A PHP library for generating RFC 4122 version 1, 2, 3, 4, and 5 universally unique identifiers (UUID).",
             "stargazers_count": 10113,
             "relative_system_complexity": 32.17777777777778,
+            "maintainability_index": 129.17234567901235,
             "afferent_coupling": 1.9382716049382716,
             "efferent_coupling": 3.9876543209876543,
             "bugs": 0.059012345679012326,
@@ -67,6 +72,7 @@
             "description": "Laravel IDE Helper",
             "stargazers_count": 9627,
             "relative_system_complexity": 959.6881818181818,
+            "maintainability_index": 71.74727272727272,
             "afferent_coupling": 1.1818181818181819,
             "efferent_coupling": 6.545454545454546,
             "bugs": 0.5981818181818181,
@@ -79,6 +85,7 @@
             "description": "",
             "stargazers_count": 8798,
             "relative_system_complexity": 99.01333333333334,
+            "maintainability_index": 85.89666666666669,
             "afferent_coupling": 0.6666666666666666,
             "efferent_coupling": 3.6666666666666665,
             "bugs": 0.08,
@@ -91,6 +98,7 @@
             "description": ":package: It is probably the best SDK in the world for developing WeChat App.",
             "stargazers_count": 8726,
             "relative_system_complexity": 17.768319088319092,
+            "maintainability_index": 109.83700854700838,
             "afferent_coupling": 1.4216524216524216,
             "efferent_coupling": 2.3076923076923075,
             "bugs": 0.05849002849002846,
@@ -103,6 +111,7 @@
             "description": "PHP-ML - Machine Learning library for PHP",
             "stargazers_count": 7768,
             "relative_system_complexity": 30.893124999999994,
+            "maintainability_index": 87.21742187500001,
             "afferent_coupling": 1.390625,
             "efferent_coupling": 2.1484375,
             "bugs": 0.21867187500000004,
@@ -115,6 +124,7 @@
             "description": "Associate users with roles and permissions",
             "stargazers_count": 7637,
             "relative_system_complexity": 213.72916666666666,
+            "maintainability_index": 70.09333333333333,
             "afferent_coupling": 0.7916666666666666,
             "efferent_coupling": 3.625,
             "bugs": 0.11708333333333332,
@@ -127,6 +137,7 @@
             "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
             "stargazers_count": 7423,
             "relative_system_complexity": 54.37528619528616,
+            "maintainability_index": 78.60710437710433,
             "afferent_coupling": 1.4511784511784511,
             "efferent_coupling": 2.346801346801347,
             "bugs": 0.6467676767676771,
@@ -139,6 +150,7 @@
             "description": "The Debug component provides tools to ease debugging PHP code.",
             "stargazers_count": 7008,
             "relative_system_complexity": 136.40187500000002,
+            "maintainability_index": 85.47187499999998,
             "afferent_coupling": 1.625,
             "efferent_coupling": 3.4375,
             "bugs": 0.51,
@@ -151,6 +163,7 @@
             "description": "HTML to PDF converter (PHP5)",
             "stargazers_count": 6732,
             "relative_system_complexity": 831.1784210526315,
+            "maintainability_index": 73.22934210526317,
             "afferent_coupling": 3.25,
             "efferent_coupling": 3.8289473684210527,
             "bugs": 1.7468421052631584,
@@ -163,6 +176,7 @@
             "description": "Assertions to validate method input\/output with nice error messages.",
             "stargazers_count": 6276,
             "relative_system_complexity": 14.6,
+            "maintainability_index": 46.63,
             "afferent_coupling": 0,
             "efferent_coupling": 4,
             "bugs": 2.95,
@@ -175,6 +189,7 @@
             "description": "Role-based Permissions for Laravel 5",
             "stargazers_count": 6184,
             "relative_system_complexity": 109.16750000000002,
+            "maintainability_index": 93.48416666666668,
             "afferent_coupling": 0.16666666666666666,
             "efferent_coupling": 2.4166666666666665,
             "bugs": 0.12250000000000001,
@@ -187,6 +202,7 @@
             "description": "A simple template engine.",
             "stargazers_count": 6155,
             "relative_system_complexity": 1.5999999999999999,
+            "maintainability_index": 141.72333333333333,
             "afferent_coupling": 0.6666666666666666,
             "efferent_coupling": 2,
             "bugs": 0.03333333333333333,
@@ -199,6 +215,7 @@
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
             "stargazers_count": 6086,
             "relative_system_complexity": 44.28812499999999,
+            "maintainability_index": 94.51354166666664,
             "afferent_coupling": 1.9791666666666667,
             "efferent_coupling": 3.0208333333333335,
             "bugs": 0.021875000000000006,
@@ -211,6 +228,7 @@
             "description": "Library for handling version information and constraints",
             "stargazers_count": 6073,
             "relative_system_complexity": 16.41,
+            "maintainability_index": 112.13000000000002,
             "afferent_coupling": 2.0625,
             "efferent_coupling": 2.5,
             "bugs": 0.037500000000000006,
@@ -223,6 +241,7 @@
             "description": "",
             "stargazers_count": 5758,
             "relative_system_complexity": 18.23,
+            "maintainability_index": 72.39,
             "afferent_coupling": 0,
             "efferent_coupling": 1,
             "bugs": 0.24,
@@ -235,6 +254,7 @@
             "description": "The Translation component provides tools to internationalize your application.",
             "stargazers_count": 5740,
             "relative_system_complexity": 66.33132075471698,
+            "maintainability_index": 96.46773584905661,
             "afferent_coupling": 1.679245283018868,
             "efferent_coupling": 3.5283018867924527,
             "bugs": 0.18188679245283013,
@@ -247,6 +267,7 @@
             "description": "A simple library to work with JSON Web Token and JSON Web Signature",
             "stargazers_count": 5234,
             "relative_system_complexity": 16.4065625,
+            "maintainability_index": 100.2378125,
             "afferent_coupling": 1.46875,
             "efferent_coupling": 2.9375,
             "bugs": 0.04750000000000001,
@@ -259,6 +280,7 @@
             "description": "Adds CORS (Cross-Origin Resource Sharing) headers support in your Laravel application",
             "stargazers_count": 4839,
             "relative_system_complexity": 104.59,
+            "maintainability_index": 87.11,
             "afferent_coupling": 0,
             "efferent_coupling": 3.5,
             "bugs": 0.125,
@@ -271,6 +293,7 @@
             "description": "A pure PHP library for reading and writing word processing documents",
             "stargazers_count": 4832,
             "relative_system_complexity": 157.18214285714285,
+            "maintainability_index": 100.28949999999996,
             "afferent_coupling": 1.9071428571428573,
             "efferent_coupling": 2.382142857142857,
             "bugs": 0.32035714285714295,
@@ -283,6 +306,7 @@
             "description": "World countries in JSON, CSV, XML and Yaml. Any help is welcome!",
             "stargazers_count": 4715,
             "relative_system_complexity": 25.515,
+            "maintainability_index": 97.68875,
             "afferent_coupling": 0.75,
             "efferent_coupling": 1.75,
             "bugs": 0.07750000000000001,
@@ -295,6 +319,7 @@
             "description": "CRON for PHP: Calculate the next or previous run date and determine if a CRON expression is due",
             "stargazers_count": 4628,
             "relative_system_complexity": 76.97124999999998,
+            "maintainability_index": 70.5675,
             "afferent_coupling": 1.375,
             "efferent_coupling": 3.25,
             "bugs": 0.36125,
@@ -307,6 +332,7 @@
             "description": "A fully RESTful server implementation for CodeIgniter using one library, one config file and one controller.",
             "stargazers_count": 4517,
             "relative_system_complexity": 2239.91,
+            "maintainability_index": 53.175,
             "afferent_coupling": 0.5,
             "efferent_coupling": 2.5,
             "bugs": 3.3600000000000003,
@@ -319,6 +345,7 @@
             "description": "A small library for converting tokenized PHP source code into XML (and potentially other formats)",
             "stargazers_count": 4496,
             "relative_system_complexity": 34.1175,
+            "maintainability_index": 118.18999999999998,
             "afferent_coupling": 1.25,
             "efferent_coupling": 2,
             "bugs": 0.06,
@@ -331,6 +358,7 @@
             "description": "Collections Abstraction Library",
             "stargazers_count": 4358,
             "relative_system_complexity": 150.13888888888889,
+            "maintainability_index": 83.57333333333335,
             "afferent_coupling": 2.4444444444444446,
             "efferent_coupling": 4.444444444444445,
             "bugs": 0.1511111111111111,
@@ -343,6 +371,7 @@
             "description": "\u2699\ufe0f WP-CLI framework",
             "stargazers_count": 4113,
             "relative_system_complexity": 101.01952380952382,
+            "maintainability_index": 92.14857142857143,
             "afferent_coupling": 1.5714285714285714,
             "efferent_coupling": 2.3968253968253967,
             "bugs": 0.4171428571428572,
@@ -355,6 +384,7 @@
             "description": "A package to backup your Laravel app",
             "stargazers_count": 3818,
             "relative_system_complexity": 141.98055555555553,
+            "maintainability_index": 71.25148148148149,
             "afferent_coupling": 1.5740740740740742,
             "efferent_coupling": 3.2037037037037037,
             "bugs": 0.06092592592592591,
@@ -367,6 +397,7 @@
             "description": "PHP Secure Communications Library",
             "stargazers_count": 3808,
             "relative_system_complexity": 98.53219512195123,
+            "maintainability_index": 116.13975609756095,
             "afferent_coupling": 1.6097560975609757,
             "efferent_coupling": 2.3048780487804876,
             "bugs": 0.534817073170732,
@@ -379,6 +410,7 @@
             "description": "A small PHP library to generate YouTube-like ids from numbers. Use it when you don't want to expose your database ids to the user.",
             "stargazers_count": 3762,
             "relative_system_complexity": 54.105,
+            "maintainability_index": 114.7875,
             "afferent_coupling": 0.75,
             "efferent_coupling": 2.25,
             "bugs": 0.35250000000000004,
@@ -391,6 +423,7 @@
             "description": "A DOMPDF Wrapper for Laravel",
             "stargazers_count": 3694,
             "relative_system_complexity": 112.47000000000001,
+            "maintainability_index": 81.15666666666667,
             "afferent_coupling": 0.3333333333333333,
             "efferent_coupling": 4.333333333333333,
             "bugs": 0.18000000000000002,
@@ -403,6 +436,7 @@
             "description": "Associate files with Eloquent models",
             "stargazers_count": 3597,
             "relative_system_complexity": 237.2763636363637,
+            "maintainability_index": 69.7819696969697,
             "afferent_coupling": 1.9393939393939394,
             "efferent_coupling": 3.9393939393939394,
             "bugs": 0.10666666666666666,
@@ -415,6 +449,7 @@
             "description": "A PHP port of GraphQL reference implementation",
             "stargazers_count": 3579,
             "relative_system_complexity": 128.74890052356025,
+            "maintainability_index": 106.35277486910988,
             "afferent_coupling": 3.968586387434555,
             "efferent_coupling": 5.0732984293193715,
             "bugs": 0.25361256544502614,
@@ -427,6 +462,7 @@
             "description": "PHP port of resque (Workers and Queueing)",
             "stargazers_count": 3433,
             "relative_system_complexity": 74.49761904761905,
+            "maintainability_index": 128.03523809523807,
             "afferent_coupling": 1.2380952380952381,
             "efferent_coupling": 2.142857142857143,
             "bugs": 0.14714285714285716,
@@ -439,6 +475,7 @@
             "description": "\ud83d\udd30 Instant PHP quality checks from your console",
             "stargazers_count": 3410,
             "relative_system_complexity": 100.56686868686866,
+            "maintainability_index": 101.46080808080805,
             "afferent_coupling": 1.6161616161616161,
             "efferent_coupling": 3.5353535353535355,
             "bugs": 0.0837373737373737,
@@ -451,6 +488,7 @@
             "description": "A php swagger annotation and parsing library",
             "stargazers_count": 3353,
             "relative_system_complexity": 15.71662337662338,
+            "maintainability_index": 140.78402597402604,
             "afferent_coupling": 1.3246753246753247,
             "efferent_coupling": 1.5714285714285714,
             "bugs": 0.11519480519480514,
@@ -463,6 +501,7 @@
             "description": "The most widely used PHP client for RabbitMQ",
             "stargazers_count": 3330,
             "relative_system_complexity": 177.54492063492063,
+            "maintainability_index": 116.85349206349207,
             "afferent_coupling": 1.9841269841269842,
             "efferent_coupling": 2.5873015873015874,
             "bugs": 0.3095238095238095,
@@ -475,6 +514,7 @@
             "description": "jQuery DataTables API for Laravel 4|5|6",
             "stargazers_count": 3287,
             "relative_system_complexity": 678.3728571428572,
+            "maintainability_index": 87.31500000000001,
             "afferent_coupling": 1.2857142857142858,
             "efferent_coupling": 3.2142857142857144,
             "bugs": 0.39428571428571424,
@@ -487,6 +527,7 @@
             "description": "Requests for PHP is a humble HTTP request library. It simplifies how you interact with other sites and takes away all your worries.",
             "stargazers_count": 3224,
             "relative_system_complexity": 13.365925925925923,
+            "maintainability_index": 111.87351851851848,
             "afferent_coupling": 1.5555555555555556,
             "efferent_coupling": 1.8518518518518519,
             "bugs": 0.2475925925925926,
@@ -499,6 +540,7 @@
             "description": ":cn: \u57fa\u4e8e\u8bcd\u5e93\u7684\u4e2d\u6587\u8f6c\u62fc\u97f3\u4f18\u8d28\u89e3\u51b3\u65b9\u6848",
             "stargazers_count": 3217,
             "relative_system_complexity": 34.9925,
+            "maintainability_index": 87.53999999999999,
             "afferent_coupling": 0,
             "efferent_coupling": 2.75,
             "bugs": 0.30000000000000004,
@@ -511,6 +553,7 @@
             "description": "Pico is a stupidly simple, blazing fast, flat file CMS.",
             "stargazers_count": 3208,
             "relative_system_complexity": 907.5400000000001,
+            "maintainability_index": 66.78999999999999,
             "afferent_coupling": 1,
             "efferent_coupling": 6.25,
             "bugs": 2.6525000000000003,
@@ -523,6 +566,7 @@
             "description": "An object oriented PHP driver for FFMpeg binary",
             "stargazers_count": 3180,
             "relative_system_complexity": 29.96898550724638,
+            "maintainability_index": 95.2411594202899,
             "afferent_coupling": 2.4927536231884058,
             "efferent_coupling": 3.753623188405797,
             "bugs": 0.0879710144927536,
@@ -535,6 +579,7 @@
             "description": "\u53ef\u80fd\u662f\u6211\u7528\u8fc7\u7684\u6700\u4f18\u96c5\u7684 Alipay \u548c WeChat \u7684\u652f\u4ed8 SDK \u6269\u5c55\u5305\u4e86",
             "stargazers_count": 3120,
             "relative_system_complexity": 27.020930232558143,
+            "maintainability_index": 103.49627906976744,
             "afferent_coupling": 2.9302325581395348,
             "efferent_coupling": 4.27906976744186,
             "bugs": 0.10302325581395348,
@@ -547,6 +592,7 @@
             "description": "\ud83d\udc6e A PHP desktop\/mobile user agent parser with support for Laravel, based on Mobiledetect",
             "stargazers_count": 3094,
             "relative_system_complexity": 89.46,
+            "maintainability_index": 95.75333333333333,
             "afferent_coupling": 0.3333333333333333,
             "efferent_coupling": 2.3333333333333335,
             "bugs": 0.25,
@@ -559,6 +605,7 @@
             "description": "Parser for Markdown and Markdown Extra derived from the original Markdown.pl by John Gruber.",
             "stargazers_count": 3075,
             "relative_system_complexity": 495.51,
+            "maintainability_index": 38.905,
             "afferent_coupling": 0.5,
             "efferent_coupling": 1.5,
             "bugs": 6.255,
@@ -571,6 +618,7 @@
             "description": "Open source social sign on PHP Library. HybridAuth goal is to act as an abstract api between your application and various social apis and identities providers such as Facebook, Twitter and Google.",
             "stargazers_count": 3035,
             "relative_system_complexity": 59.696626506024096,
+            "maintainability_index": 116.13108433734936,
             "afferent_coupling": 2.8313253012048194,
             "efferent_coupling": 3.3493975903614457,
             "bugs": 0.21638554216867467,
@@ -583,6 +631,7 @@
             "description": "PHP implementation of Fowler's Money pattern.",
             "stargazers_count": 2979,
             "relative_system_complexity": 53.236764705882344,
+            "maintainability_index": 99.08882352941177,
             "afferent_coupling": 2.1470588235294117,
             "efferent_coupling": 4.529411764705882,
             "bugs": 0.15823529411764703,
@@ -595,6 +644,7 @@
             "description": "Simple Encryption in PHP.",
             "stargazers_count": 2958,
             "relative_system_complexity": 12.494615384615384,
+            "maintainability_index": 116.48076923076927,
             "afferent_coupling": 2.8461538461538463,
             "efferent_coupling": 3.1538461538461537,
             "bugs": 0.29692307692307696,
@@ -607,6 +657,7 @@
             "description": "Log activity inside your Laravel app",
             "stargazers_count": 2929,
             "relative_system_complexity": 176.2890909090909,
+            "maintainability_index": 57.37454545454545,
             "afferent_coupling": 0.7272727272727273,
             "efferent_coupling": 3.909090909090909,
             "bugs": 0.10454545454545455,
@@ -619,6 +670,7 @@
             "description": "Easy creation of slugs for your Eloquent models in Laravel",
             "stargazers_count": 2799,
             "relative_system_complexity": 316.42400000000004,
+            "maintainability_index": 89.35600000000001,
             "afferent_coupling": 0.8,
             "efferent_coupling": 3.8,
             "bugs": 0.25600000000000006,
@@ -631,6 +683,7 @@
             "description": "Combines. minifies, and serves CSS or Javascript files",
             "stargazers_count": 2754,
             "relative_system_complexity": 46.896086956521735,
+            "maintainability_index": 90.36326086956522,
             "afferent_coupling": 1.1521739130434783,
             "efferent_coupling": 2.130434782608696,
             "bugs": 0.2991304347826087,
@@ -643,6 +696,7 @@
             "description": "PHP client library for reCAPTCHA, a free service to protect your website from spam and abuse.",
             "stargazers_count": 2718,
             "relative_system_complexity": 24.358749999999997,
+            "maintainability_index": 93.8075,
             "afferent_coupling": 1.375,
             "efferent_coupling": 1.875,
             "bugs": 0.10500000000000001,
@@ -655,6 +709,7 @@
             "description": "PHP implementation of JSON schema. Fork of the http:\/\/jsonschemaphpv.sourceforge.net\/ project ",
             "stargazers_count": 2715,
             "relative_system_complexity": 74.6597435897436,
+            "maintainability_index": 113.77000000000001,
             "afferent_coupling": 2.128205128205128,
             "efferent_coupling": 2.8974358974358974,
             "bugs": 0.1753846153846154,
@@ -667,6 +722,7 @@
             "description": "\ud83d\ude80LaravelS is like a glue that is used to quickly integrate Swoole into Laravel or Lumen, and then give them better performance and more possibilities.",
             "stargazers_count": 2646,
             "relative_system_complexity": 158.1912820512821,
+            "maintainability_index": 67.32307692307693,
             "afferent_coupling": 0.5384615384615384,
             "efferent_coupling": 3.41025641025641,
             "bugs": 0.18615384615384611,
@@ -679,6 +735,7 @@
             "description": "QR Code Generator",
             "stargazers_count": 2536,
             "relative_system_complexity": 63.733181818181805,
+            "maintainability_index": 111.90136363636363,
             "afferent_coupling": 1.7727272727272727,
             "efferent_coupling": 3,
             "bugs": 0.14363636363636362,
@@ -691,6 +748,7 @@
             "description": "PHP library generating PDF files from UTF-8 encoded HTML",
             "stargazers_count": 2503,
             "relative_system_complexity": 539.5085853658536,
+            "maintainability_index": 96.596243902439,
             "afferent_coupling": 1.8731707317073172,
             "efferent_coupling": 2.1414634146341465,
             "bugs": 3.8076585365853655,
@@ -703,6 +761,7 @@
             "description": "Laravel API Documentation Generator",
             "stargazers_count": 2484,
             "relative_system_complexity": 224.63148148148144,
+            "maintainability_index": 82.71000000000001,
             "afferent_coupling": 1.2592592592592593,
             "efferent_coupling": 5.037037037037037,
             "bugs": 0.22777777777777775,
@@ -715,6 +774,7 @@
             "description": "PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs",
             "stargazers_count": 2476,
             "relative_system_complexity": 264.5566666666666,
+            "maintainability_index": 71.38444444444445,
             "afferent_coupling": 0.8888888888888888,
             "efferent_coupling": 1.8888888888888888,
             "bugs": 0.8366666666666668,
@@ -727,6 +787,7 @@
             "description": "Convert html to an image, pdf or string",
             "stargazers_count": 2456,
             "relative_system_complexity": 562.5,
+            "maintainability_index": 53.65,
             "afferent_coupling": 0.6666666666666666,
             "efferent_coupling": 3.6666666666666665,
             "bugs": 0.7266666666666666,
@@ -739,6 +800,7 @@
             "description": "PHP library for the Stripe API.    ",
             "stargazers_count": 2451,
             "relative_system_complexity": 20.84373015873016,
+            "maintainability_index": 142.70595238095245,
             "afferent_coupling": 1.7936507936507937,
             "efferent_coupling": 2.142857142857143,
             "bugs": 0.08285714285714285,
@@ -751,6 +813,7 @@
             "description": "\u5fae\u4fe1 SDK for Laravel, \u57fa\u4e8e overtrue\/wechat",
             "stargazers_count": 2408,
             "relative_system_complexity": 21.950000000000003,
+            "maintainability_index": 145.18727272727276,
             "afferent_coupling": 0.9090909090909091,
             "efferent_coupling": 1.5454545454545454,
             "bugs": 0.049090909090909095,
@@ -763,6 +826,7 @@
             "description": "A PHP string manipulation library with multibyte support",
             "stargazers_count": 2399,
             "relative_system_complexity": 457.285,
+            "maintainability_index": 69.375,
             "afferent_coupling": 1.5,
             "efferent_coupling": 7,
             "bugs": 4.58,
@@ -775,6 +839,7 @@
             "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
             "stargazers_count": 2393,
             "relative_system_complexity": 51.98,
+            "maintainability_index": 65.74,
             "afferent_coupling": 0,
             "efferent_coupling": 3,
             "bugs": 0.64,
@@ -787,6 +852,7 @@
             "description": "Kint - a powerful and modern PHP debugging tool.",
             "stargazers_count": 2380,
             "relative_system_complexity": 63.011578947368434,
+            "maintainability_index": 56.063026315789486,
             "afferent_coupling": 2.6973684210526314,
             "efferent_coupling": 3.236842105263158,
             "bugs": 0.2881578947368421,
@@ -799,6 +865,7 @@
             "description": "Easy localization for Laravel",
             "stargazers_count": 2363,
             "relative_system_complexity": 147.30235294117648,
+            "maintainability_index": 100.1070588235294,
             "afferent_coupling": 0.6470588235294118,
             "efferent_coupling": 2,
             "bugs": 0.20823529411764705,
@@ -811,6 +878,7 @@
             "description": "Modern task runner for PHP",
             "stargazers_count": 2339,
             "relative_system_complexity": 188.3731756756757,
+            "maintainability_index": 97.46101351351349,
             "afferent_coupling": 1.2972972972972974,
             "efferent_coupling": 2.5945945945945947,
             "bugs": 0.160945945945946,
@@ -823,6 +891,7 @@
             "description": "Easy flash notifications",
             "stargazers_count": 2337,
             "relative_system_complexity": 11.473333333333334,
+            "maintainability_index": 123.18833333333333,
             "afferent_coupling": 0.5,
             "efferent_coupling": 1.5,
             "bugs": 0.026666666666666672,
@@ -835,6 +904,7 @@
             "description": "Simple static Composer repository generator - For a full private Composer repo use Private Packagist",
             "stargazers_count": 2318,
             "relative_system_complexity": 662.6866666666666,
+            "maintainability_index": 65.21083333333333,
             "afferent_coupling": 1.0833333333333333,
             "efferent_coupling": 8,
             "bugs": 0.57,
@@ -847,6 +917,7 @@
             "description": "Laravel Breadcrumbs - A simple Laravel-style way to create breadcrumbs.",
             "stargazers_count": 2228,
             "relative_system_complexity": 44.39777777777778,
+            "maintainability_index": 114.82777777777781,
             "afferent_coupling": 1,
             "efferent_coupling": 4.111111111111111,
             "bugs": 0.08444444444444445,
@@ -859,6 +930,7 @@
             "description": "A Laravel publishing platform",
             "stargazers_count": 2167,
             "relative_system_complexity": 145.1976923076923,
+            "maintainability_index": 100.6194871794872,
             "afferent_coupling": 0.5384615384615384,
             "efferent_coupling": 2.8974358974358974,
             "bugs": 0.07025641025641026,
@@ -871,6 +943,7 @@
             "description": "Semantic versioning utilities with the addition of version constraints parsing and checking.",
             "stargazers_count": 2148,
             "relative_system_complexity": 25.328571428571426,
+            "maintainability_index": 83.77714285714285,
             "afferent_coupling": 1.5714285714285714,
             "efferent_coupling": 2.4285714285714284,
             "bugs": 0.4428571428571429,
@@ -883,6 +956,7 @@
             "description": "Extensionless PHP Graphic User Interface library",
             "stargazers_count": 2140,
             "relative_system_complexity": 41.57944444444445,
+            "maintainability_index": 98.23916666666668,
             "afferent_coupling": 1.2222222222222223,
             "efferent_coupling": 1.9722222222222223,
             "bugs": 0.11444444444444442,
@@ -895,6 +969,7 @@
             "description": "Easily build Eloquent queries from API requests",
             "stargazers_count": 2131,
             "relative_system_complexity": 75.94666666666667,
+            "maintainability_index": 76.18366666666665,
             "afferent_coupling": 1.0666666666666667,
             "efferent_coupling": 3.033333333333333,
             "bugs": 0.05566666666666667,
@@ -907,6 +982,7 @@
             "description": "A Laravel package to retrieve pageviews and other data from Google Analytics",
             "stargazers_count": 2088,
             "relative_system_complexity": 43.0175,
+            "maintainability_index": 75.25874999999999,
             "afferent_coupling": 0.875,
             "efferent_coupling": 3.375,
             "bugs": 0.09375,
@@ -919,6 +995,7 @@
             "description": "ORM layer that creates models, config and database on the fly",
             "stargazers_count": 2051,
             "relative_system_complexity": 353.37255319148943,
+            "maintainability_index": 95.90170212765962,
             "afferent_coupling": 2.2127659574468086,
             "efferent_coupling": 3.3191489361702127,
             "bugs": 0.5817021276595744,
@@ -931,6 +1008,7 @@
             "description": ":calling: \u4e00\u6b3e\u6ee1\u8db3\u4f60\u7684\u591a\u79cd\u53d1\u9001\u9700\u6c42\u7684\u77ed\u4fe1\u53d1\u9001\u7ec4\u4ef6",
             "stargazers_count": 2012,
             "relative_system_complexity": 43.5562162162162,
+            "maintainability_index": 100.13756756756759,
             "afferent_coupling": 2.2972972972972974,
             "efferent_coupling": 4.027027027027027,
             "bugs": 0.12594594594594594,
@@ -943,6 +1021,7 @@
             "description": "Human-friendly log files that make you more productive",
             "stargazers_count": 1992,
             "relative_system_complexity": 1066.685,
+            "maintainability_index": 73.365,
             "afferent_coupling": 0.5,
             "efferent_coupling": 3.5,
             "bugs": 1.1849999999999998,
@@ -955,6 +1034,7 @@
             "description": "PHP 7.1 ready Smart and Simple Documentation for your PHP project",
             "stargazers_count": 1987,
             "relative_system_complexity": 80.97140495867765,
+            "maintainability_index": 90.3949586776859,
             "afferent_coupling": 1.43801652892562,
             "efferent_coupling": 3.5702479338842976,
             "bugs": 0.054049586776859476,
@@ -967,6 +1047,7 @@
             "description": "A lightweight nearly-zero-configuration object-relational mapper and fluent query builder for PHP5.",
             "stargazers_count": 1980,
             "relative_system_complexity": 1069.868,
+            "maintainability_index": 120.66199999999999,
             "afferent_coupling": 1,
             "efferent_coupling": 3.2,
             "bugs": 1.1520000000000001,
@@ -979,6 +1060,7 @@
             "description": "A fully featured full text search engine written in PHP",
             "stargazers_count": 1977,
             "relative_system_complexity": 130.37999999999997,
+            "maintainability_index": 71.972,
             "afferent_coupling": 0.9333333333333333,
             "efferent_coupling": 2.3333333333333335,
             "bugs": 0.6469999999999999,
@@ -991,6 +1073,7 @@
             "description": "Easily create a revision history for any laravel model",
             "stargazers_count": 1976,
             "relative_system_complexity": 370.7033333333334,
+            "maintainability_index": 80.86666666666666,
             "afferent_coupling": 0.3333333333333333,
             "efferent_coupling": 5,
             "bugs": 0.315,
@@ -1003,6 +1086,7 @@
             "description": "A browser testing and web crawling library for PHP and Symfony",
             "stargazers_count": 1974,
             "relative_system_complexity": 225.82409090909087,
+            "maintainability_index": 70.89863636363636,
             "afferent_coupling": 0.7272727272727273,
             "efferent_coupling": 5.5,
             "bugs": 0.22681818181818178,
@@ -1015,6 +1099,7 @@
             "description": "Static analysis tool for PHP",
             "stargazers_count": 1936,
             "relative_system_complexity": 25.650273972602744,
+            "maintainability_index": 91.82109589041093,
             "afferent_coupling": 1.8082191780821917,
             "efferent_coupling": 3.136986301369863,
             "bugs": 0.11520547945205473,
@@ -1027,6 +1112,7 @@
             "description": "HTTPlug, the HTTP client abstraction for PHP",
             "stargazers_count": 1931,
             "relative_system_complexity": 6.888571428571429,
+            "maintainability_index": 120.25428571428571,
             "afferent_coupling": 0.7142857142857143,
             "efferent_coupling": 3.142857142857143,
             "bugs": 0.015714285714285715,
@@ -1039,6 +1125,7 @@
             "description": "Doctrine2 ORM Data Fixtures Extensions",
             "stargazers_count": 1878,
             "relative_system_complexity": 89.1025,
+            "maintainability_index": 92.641875,
             "afferent_coupling": 1.0625,
             "efferent_coupling": 3.5,
             "bugs": 0.125,
@@ -1051,6 +1138,7 @@
             "description": "PHP frontend for security.symfony.com",
             "stargazers_count": 1864,
             "relative_system_complexity": 73.34500000000001,
+            "maintainability_index": 104.43166666666667,
             "afferent_coupling": 1.1666666666666667,
             "efferent_coupling": 3.1666666666666665,
             "bugs": 0.10333333333333333,
@@ -1063,6 +1151,7 @@
             "description": "Easy AdminLTE integration with Laravel 5 or 6",
             "stargazers_count": 1857,
             "relative_system_complexity": 61.736666666666665,
+            "maintainability_index": 60.06055555555555,
             "afferent_coupling": 1.0555555555555556,
             "efferent_coupling": 2.388888888888889,
             "bugs": 0.2761111111111111,
@@ -1075,6 +1164,7 @@
             "description": "Super-simple, minimum abstraction MailChimp API v3 wrapper, in PHP",
             "stargazers_count": 1814,
             "relative_system_complexity": 32.61,
+            "maintainability_index": 79.14,
             "afferent_coupling": 0.6666666666666666,
             "efferent_coupling": 1,
             "bugs": 0.4166666666666667,
@@ -1087,6 +1177,7 @@
             "description": "Standards compliant HTML filter written in PHP",
             "stargazers_count": 1806,
             "relative_system_complexity": 35.86443983402488,
+            "maintainability_index": 94.33153526970955,
             "afferent_coupling": 1.950207468879668,
             "efferent_coupling": 2.074688796680498,
             "bugs": 0.24273858921161837,
@@ -1099,6 +1190,7 @@
             "description": "Simple Regex Language",
             "stargazers_count": 1804,
             "relative_system_complexity": 23.83793103448276,
+            "maintainability_index": 132.4989655172414,
             "afferent_coupling": 1.7586206896551724,
             "efferent_coupling": 2,
             "bugs": 0.09482758620689655,
@@ -1111,6 +1203,7 @@
             "description": "PHP's lightweight HTTP client",
             "stargazers_count": 1782,
             "relative_system_complexity": 138.75666666666666,
+            "maintainability_index": 88.68966666666667,
             "afferent_coupling": 1.0666666666666667,
             "efferent_coupling": 3.8666666666666667,
             "bugs": 0.18366666666666667,
@@ -1123,6 +1216,7 @@
             "description": "A php trait to search laravel models",
             "stargazers_count": 1735,
             "relative_system_complexity": 1369.48,
+            "maintainability_index": 62.25,
             "afferent_coupling": 0,
             "efferent_coupling": 5,
             "bugs": 1.08,
@@ -1135,6 +1229,7 @@
             "description": "The simplest PHP Wrapper for Twitter API v1.1 calls",
             "stargazers_count": 1732,
             "relative_system_complexity": 65.26,
+            "maintainability_index": 66.8,
             "afferent_coupling": 0,
             "efferent_coupling": 3,
             "bugs": 0.77,
@@ -1147,6 +1242,7 @@
             "description": "Laravel Inverse Seed Generator",
             "stargazers_count": 1726,
             "relative_system_complexity": 192.86599999999999,
+            "maintainability_index": 102.852,
             "afferent_coupling": 0.8,
             "efferent_coupling": 3.2,
             "bugs": 0.356,
@@ -1159,6 +1255,7 @@
             "description": "SEO Tools for Laravel",
             "stargazers_count": 1721,
             "relative_system_complexity": 63.37583333333333,
+            "maintainability_index": 99.38583333333334,
             "afferent_coupling": 0.4166666666666667,
             "efferent_coupling": 1.8333333333333333,
             "bugs": 0.22416666666666665,
@@ -1171,6 +1268,7 @@
             "description": "Package to optimize your site automatically which results in a 35%+ optimization",
             "stargazers_count": 1704,
             "relative_system_complexity": 4.586904761904762,
+            "maintainability_index": 112.81928571428573,
             "afferent_coupling": 0.19047619047619047,
             "efferent_coupling": 1.0238095238095237,
             "bugs": 0.010714285714285716,
@@ -1183,6 +1281,7 @@
             "description": "Restart a CLI process without loading the xdebug extension.",
             "stargazers_count": 1688,
             "relative_system_complexity": 103.78999999999999,
+            "maintainability_index": 72.595,
             "afferent_coupling": 1.25,
             "efferent_coupling": 2.25,
             "bugs": 0.4875,
@@ -1195,6 +1294,7 @@
             "description": "SpecBDD Framework for PHP",
             "stargazers_count": 1679,
             "relative_system_complexity": 63.21665158371038,
+            "maintainability_index": 97.24004524886878,
             "afferent_coupling": 2.253393665158371,
             "efferent_coupling": 3.8959276018099547,
             "bugs": 0.1072850678733032,
@@ -1207,6 +1307,7 @@
             "description": "PHP class to generate and verify Google Authenticator 2-factor authentication",
             "stargazers_count": 1673,
             "relative_system_complexity": 19.58,
+            "maintainability_index": 61.27,
             "afferent_coupling": 0,
             "efferent_coupling": 1,
             "bugs": 1.04,
@@ -1219,6 +1320,7 @@
             "description": "A Chainable, REST Friendly, PHP HTTP Client.  A sane alternative to cURL.",
             "stargazers_count": 1664,
             "relative_system_complexity": 157.60882352941175,
+            "maintainability_index": 107.1270588235294,
             "afferent_coupling": 1.411764705882353,
             "efferent_coupling": 2.176470588235294,
             "bugs": 0.2017647058823529,
@@ -1231,6 +1333,7 @@
             "description": "Serialize closures (anonymous functions)",
             "stargazers_count": 1655,
             "relative_system_complexity": 118.40333333333335,
+            "maintainability_index": 108.39666666666666,
             "afferent_coupling": 1,
             "efferent_coupling": 2.4444444444444446,
             "bugs": 0.6355555555555555,
@@ -1243,6 +1346,7 @@
             "description": "Laravel Snappy PDF",
             "stargazers_count": 1652,
             "relative_system_complexity": 52.965555555555554,
+            "maintainability_index": 89.52555555555556,
             "afferent_coupling": 1.1111111111111112,
             "efferent_coupling": 3.4444444444444446,
             "bugs": 0.12666666666666668,
@@ -1255,6 +1359,7 @@
             "description": "Simple and fast HTML parser",
             "stargazers_count": 1634,
             "relative_system_complexity": 288.85,
+            "maintainability_index": 82.96875,
             "afferent_coupling": 2,
             "efferent_coupling": 4.125,
             "bugs": 0.8625,
@@ -1267,6 +1372,7 @@
             "description": "\ud83d\udda5  Build beautiful PHP CLI menus. Simple yet Powerful. Expressive DSL.",
             "stargazers_count": 1615,
             "relative_system_complexity": 305.57487804878053,
+            "maintainability_index": 94.67756097560977,
             "afferent_coupling": 2.658536585365854,
             "efferent_coupling": 4.414634146341464,
             "bugs": 0.20292682926829264,
@@ -1279,6 +1385,7 @@
             "description": "GraphQL Server for Laravel",
             "stargazers_count": 1612,
             "relative_system_complexity": 70.17251184834122,
+            "maintainability_index": 95.30909952606636,
             "afferent_coupling": 1.853080568720379,
             "efferent_coupling": 4.758293838862559,
             "bugs": 0.0633175355450236,
@@ -1291,6 +1398,7 @@
             "description": "Primitives for functional programming in PHP",
             "stargazers_count": 1612,
             "relative_system_complexity": 2.138,
+            "maintainability_index": 70.35,
             "afferent_coupling": 0.6,
             "efferent_coupling": 1.6,
             "bugs": 0.154,
@@ -1303,6 +1411,7 @@
             "description": "An HTML DOM parser. It allows you to manipulate HTML. Find tags on an HTML page with selectors just like jQuery.",
             "stargazers_count": 1602,
             "relative_system_complexity": 120.8876,
+            "maintainability_index": 134.0764,
             "afferent_coupling": 1.96,
             "efferent_coupling": 2.96,
             "bugs": 0.23600000000000002,
@@ -1315,6 +1424,7 @@
             "description": "TGM Plugin Activation is a PHP library that allows you to easily require or recommend plugins for your WordPress themes (and plugins). It allows your users to install, update and even automatically activate plugins in singular or bulk fashion using native WordPress classes, functions and interfaces. You can reference bundled plugins, plugins from the WordPress Plugin Repository or even plugins hosted elsewhere on the internet.",
             "stargazers_count": 1574,
             "relative_system_complexity": 482.20714285714286,
+            "maintainability_index": 110.78571428571429,
             "afferent_coupling": 0.5714285714285714,
             "efferent_coupling": 1.7142857142857142,
             "bugs": 1.3128571428571427,
@@ -1327,6 +1437,7 @@
             "description": "A developer-experience focused HTTP client, optimized for most common use cases.",
             "stargazers_count": 1571,
             "relative_system_complexity": 87.856,
+            "maintainability_index": 74.482,
             "afferent_coupling": 0.8,
             "efferent_coupling": 1.6,
             "bugs": 0.11400000000000002,
@@ -1339,6 +1450,7 @@
             "description": "An easy to use Fractal wrapper built for Laravel and Lumen applications",
             "stargazers_count": 1552,
             "relative_system_complexity": 54.926,
+            "maintainability_index": 100.942,
             "afferent_coupling": 0,
             "efferent_coupling": 2.2,
             "bugs": 0.052000000000000005,
@@ -1351,6 +1463,7 @@
             "description": "PHP Server Monitor",
             "stargazers_count": 1533,
             "relative_system_complexity": 150.6059649122807,
+            "maintainability_index": 76.68859649122808,
             "afferent_coupling": 1.3157894736842106,
             "efferent_coupling": 2.4210526315789473,
             "bugs": 0.44105263157894736,
@@ -1363,6 +1476,7 @@
             "description": "Easily optimize images using PHP",
             "stargazers_count": 1524,
             "relative_system_complexity": 25.75727272727273,
+            "maintainability_index": 61.445454545454545,
             "afferent_coupling": 2,
             "efferent_coupling": 2.4545454545454546,
             "bugs": 0.03636363636363637,
@@ -1375,6 +1489,7 @@
             "description": "Laravel package to generate and to validate a UUID according to the RFC 4122 standard. Only support for version 1, 3, 4 and 5 UUID are built-in.",
             "stargazers_count": 1520,
             "relative_system_complexity": 10.945,
+            "maintainability_index": 86.86,
             "afferent_coupling": 0.5,
             "efferent_coupling": 2.5,
             "bugs": 0.45,
@@ -1387,6 +1502,7 @@
             "description": "All PHP functions, rewritten to throw exceptions instead of returning false",
             "stargazers_count": 1506,
             "relative_system_complexity": 20.938529411764705,
+            "maintainability_index": 70.9301960784314,
             "afferent_coupling": 0.24509803921568626,
             "efferent_coupling": 2.176470588235294,
             "bugs": 0.05166666666666667,
@@ -1399,6 +1515,7 @@
             "description": "\ud83c\udf04 Perceptual image hashing for PHP",
             "stargazers_count": 1468,
             "relative_system_complexity": 26.593333333333334,
+            "maintainability_index": 74.19000000000001,
             "afferent_coupling": 1.5,
             "efferent_coupling": 4,
             "bugs": 0.32833333333333337,
@@ -1411,6 +1528,7 @@
             "description": "A set of Doctrine 2 extensions",
             "stargazers_count": 1459,
             "relative_system_complexity": 15.83921568627451,
+            "maintainability_index": 82.14509803921571,
             "afferent_coupling": 0.0718954248366013,
             "efferent_coupling": 2.895424836601307,
             "bugs": 0.031437908496731976,
@@ -1423,6 +1541,7 @@
             "description": "Behat Transliterator library inherited from Doctrine1 and used in Behat for snippet generation",
             "stargazers_count": 1454,
             "relative_system_complexity": 424.96,
+            "maintainability_index": 44.364999999999995,
             "afferent_coupling": 0,
             "efferent_coupling": 4.5,
             "bugs": 2.52,
@@ -1435,6 +1554,7 @@
             "description": "JSON Object Signing and Encryption library for PHP.",
             "stargazers_count": 1449,
             "relative_system_complexity": 18.44875,
+            "maintainability_index": 96.69374999999998,
             "afferent_coupling": 0.8333333333333334,
             "efferent_coupling": 1.5833333333333333,
             "bugs": 0.03291666666666667,
@@ -1447,6 +1567,7 @@
             "description": "An easy to use,  powerful crawler implemented in PHP. Can execute Javascript.",
             "stargazers_count": 1444,
             "relative_system_complexity": 168.78823529411764,
+            "maintainability_index": 84.81,
             "afferent_coupling": 1.588235294117647,
             "efferent_coupling": 4.235294117647059,
             "bugs": 0.08647058823529412,
@@ -1459,6 +1580,7 @@
             "description": "PHP Enum implementation inspired from SplEnum",
             "stargazers_count": 1443,
             "relative_system_complexity": 14.59,
+            "maintainability_index": 90.53999999999999,
             "afferent_coupling": 0.5,
             "efferent_coupling": 4,
             "bugs": 0.1,
@@ -1471,6 +1593,7 @@
             "description": "A php.ini scanner for best security practices",
             "stargazers_count": 1435,
             "relative_system_complexity": 46.373870967741944,
+            "maintainability_index": 90.02419354838706,
             "afferent_coupling": 0.9354838709677419,
             "efferent_coupling": 2.129032258064516,
             "bugs": 0.10870967741935483,
@@ -1483,6 +1606,7 @@
             "description": "Humanize values that are readable only for developers.",
             "stargazers_count": 1429,
             "relative_system_complexity": 7.844473684210527,
+            "maintainability_index": 95.8386842105263,
             "afferent_coupling": 1.105263157894737,
             "efferent_coupling": 2.3421052631578947,
             "bugs": 0.04500000000000001,
@@ -1495,6 +1619,7 @@
             "description": "Powerful modern math library for PHP: Features descriptive statistics and regressions; Continuous and discrete probability distributions; Linear algebra with matrices and vectors, Numerical analysis; special mathematical functions; Algebra",
             "stargazers_count": 1415,
             "relative_system_complexity": 96.88573333333332,
+            "maintainability_index": 94.81313333333335,
             "afferent_coupling": 2.8133333333333335,
             "efferent_coupling": 2.92,
             "bugs": 0.6467333333333334,
@@ -1507,6 +1632,7 @@
             "description": "GUI for PHP's OpCache",
             "stargazers_count": 1411,
             "relative_system_complexity": 8.90076923076923,
+            "maintainability_index": 109.02538461538462,
             "afferent_coupling": 0.34615384615384615,
             "efferent_coupling": 1.3846153846153846,
             "bugs": 0.05846153846153848,
@@ -1519,6 +1645,7 @@
             "description": "A PHP Terminal GameBoy Emulator",
             "stargazers_count": 1400,
             "relative_system_complexity": 207.9377777777778,
+            "maintainability_index": 60.609999999999985,
             "afferent_coupling": 1.1111111111111112,
             "efferent_coupling": 1.7777777777777777,
             "bugs": 4.46,
@@ -1531,6 +1658,7 @@
             "description": "PHP Class Encoding featuring popular Encoding::toUTF8() function --formerly known as forceUTF8()-- that fixes mixed encoded strings.",
             "stargazers_count": 1370,
             "relative_system_complexity": 10.85,
+            "maintainability_index": 53.13,
             "afferent_coupling": 0,
             "efferent_coupling": 1,
             "bugs": 1.57,
@@ -1543,6 +1671,7 @@
             "description": "Speed up a Laravel app by caching the entire response",
             "stargazers_count": 1366,
             "relative_system_complexity": 52.461764705882345,
+            "maintainability_index": 75.43117647058824,
             "afferent_coupling": 0.5294117647058824,
             "efferent_coupling": 2.7058823529411766,
             "bugs": 0.03588235294117647,
@@ -1555,6 +1684,7 @@
             "description": "PHP library for printing to ESC\/POS-compatible thermal and impact printers",
             "stargazers_count": 1361,
             "relative_system_complexity": 137.6004347826087,
+            "maintainability_index": 75.20695652173912,
             "afferent_coupling": 1.5217391304347827,
             "efferent_coupling": 3.5217391304347827,
             "bugs": 0.48521739130434777,
@@ -1567,6 +1697,7 @@
             "description": "PHPloy - Incremental Git (S)FTP deployment tool that supports multiple servers, submodules and rollbacks.",
             "stargazers_count": 1338,
             "relative_system_complexity": 1234.8600000000001,
+            "maintainability_index": 75.75,
             "afferent_coupling": 0.75,
             "efferent_coupling": 2.25,
             "bugs": 1.5575,
@@ -1579,6 +1710,7 @@
             "description": "Promise used for asynchronous HTTP requests",
             "stargazers_count": 1308,
             "relative_system_complexity": 5.5,
+            "maintainability_index": 95.38499999999999,
             "afferent_coupling": 1,
             "efferent_coupling": 2.5,
             "bugs": 0.03,
@@ -1591,6 +1723,7 @@
             "description": "MailEclipse :zap: Play with your Laravel Mailables easily!",
             "stargazers_count": 1290,
             "relative_system_complexity": 602.8079999999999,
+            "maintainability_index": 65.346,
             "afferent_coupling": 0.6,
             "efferent_coupling": 5.8,
             "bugs": 0.6819999999999999,
@@ -1603,6 +1736,7 @@
             "description": "Phone number functionality for Laravel",
             "stargazers_count": 1271,
             "relative_system_complexity": 107.31545454545457,
+            "maintainability_index": 97.98,
             "afferent_coupling": 0.5454545454545454,
             "efferent_coupling": 3.909090909090909,
             "bugs": 0.06272727272727273,
@@ -1615,6 +1749,7 @@
             "description": "Talk is a Laravel 5 based realtime users messaging and chatting system",
             "stargazers_count": 1269,
             "relative_system_complexity": 98.94571428571429,
+            "maintainability_index": 92.55214285714287,
             "afferent_coupling": 0.8571428571428571,
             "efferent_coupling": 2.4285714285714284,
             "bugs": 0.12214285714285714,
@@ -1627,6 +1762,7 @@
             "description": "Easily run code asynchronously",
             "stargazers_count": 1267,
             "relative_system_complexity": 76.65000000000002,
+            "maintainability_index": 59.70333333333334,
             "afferent_coupling": 0.7777777777777778,
             "efferent_coupling": 2.6666666666666665,
             "bugs": 0.08666666666666667,
@@ -1639,6 +1775,7 @@
             "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless. ",
             "stargazers_count": 1266,
             "relative_system_complexity": 261.94,
+            "maintainability_index": 72.86833333333333,
             "afferent_coupling": 0.5,
             "efferent_coupling": 2.8333333333333335,
             "bugs": 0.32666666666666666,
@@ -1651,6 +1788,7 @@
             "description": "A slim PHP wrapper around wkhtmltopdf with an easy to use and clean OOP interface",
             "stargazers_count": 1265,
             "relative_system_complexity": 124.23,
+            "maintainability_index": 77.78666666666666,
             "afferent_coupling": 0.6666666666666666,
             "efferent_coupling": 2,
             "bugs": 0.31,
@@ -1663,6 +1801,7 @@
             "description": "Eloquent model-caching made easy.",
             "stargazers_count": 1264,
             "relative_system_complexity": 225.92533333333333,
+            "maintainability_index": 81.45800000000001,
             "afferent_coupling": 0.26666666666666666,
             "efferent_coupling": 2.2,
             "bugs": 0.22466666666666665,
@@ -1675,6 +1814,7 @@
             "description": "Confide is a authentication solution for Laravel 4",
             "stargazers_count": 1235,
             "relative_system_complexity": 122.22384615384614,
+            "maintainability_index": 90.98615384615384,
             "afferent_coupling": 0.9230769230769231,
             "efferent_coupling": 2.3846153846153846,
             "bugs": 0.14153846153846156,
@@ -1687,6 +1827,7 @@
             "description": "A Parser for CSS Files written in PHP. Allows extraction of CSS files into a data structure, manipulation of said structure and output as (optimized) CSS",
             "stargazers_count": 1217,
             "relative_system_complexity": 142.3452777777778,
+            "maintainability_index": 69.45166666666665,
             "afferent_coupling": 3.6944444444444446,
             "efferent_coupling": 4.111111111111111,
             "bugs": 0.2722222222222222,
@@ -1699,6 +1840,7 @@
             "description": "Simple Yet Powerful Geo Library for PHP",
             "stargazers_count": 1208,
             "relative_system_complexity": 32.523225806451606,
+            "maintainability_index": 103.83290322580648,
             "afferent_coupling": 2.193548387096774,
             "efferent_coupling": 3.3225806451612905,
             "bugs": 0.19741935483870968,
@@ -1711,6 +1853,7 @@
             "description": "No CAPTCHA reCAPTCHA For Laravel.",
             "stargazers_count": 1196,
             "relative_system_complexity": 81.52333333333333,
+            "maintainability_index": 95.03333333333335,
             "afferent_coupling": 0.3333333333333333,
             "efferent_coupling": 1.6666666666666667,
             "bugs": 0.17,
@@ -1723,6 +1866,7 @@
             "description": "Laravel package to enable sending push notifications to devices",
             "stargazers_count": 1188,
             "relative_system_complexity": 5.595,
+            "maintainability_index": 81.5575,
             "afferent_coupling": 0.5,
             "efferent_coupling": 2.75,
             "bugs": 0.035,
@@ -1735,6 +1879,7 @@
             "description": "Generate entity relation diagrams from your Laravel model files.",
             "stargazers_count": 1185,
             "relative_system_complexity": 384.60375000000005,
+            "maintainability_index": 81.10875000000001,
             "afferent_coupling": 1,
             "efferent_coupling": 4.25,
             "bugs": 0.13999999999999999,
@@ -1747,6 +1892,7 @@
             "description": "Manage Laravel translation files",
             "stargazers_count": 1182,
             "relative_system_complexity": 190.12846153846155,
+            "maintainability_index": 95.28615384615384,
             "afferent_coupling": 1.2307692307692308,
             "efferent_coupling": 2.923076923076923,
             "bugs": 0.20615384615384616,
@@ -1759,6 +1905,7 @@
             "description": "Bring Symfony's Var-Dump Server to Laravel ",
             "stargazers_count": 1175,
             "relative_system_complexity": 63.93,
+            "maintainability_index": 95.53,
             "afferent_coupling": 0.5,
             "efferent_coupling": 5.25,
             "bugs": 0.0475,
@@ -1771,6 +1918,7 @@
             "description": "Guzzle 6 HTTP adapter",
             "stargazers_count": 1159,
             "relative_system_complexity": 33.95666666666667,
+            "maintainability_index": 115.89,
             "afferent_coupling": 1.3333333333333333,
             "efferent_coupling": 7.333333333333333,
             "bugs": 0.05333333333333334,
@@ -1783,22 +1931,11 @@
             "description": "Icicle is a PHP library for writing asynchronous code using synchronous coding techniques",
             "stargazers_count": 1156,
             "relative_system_complexity": 40.50984848484849,
+            "maintainability_index": 101.62939393939392,
             "afferent_coupling": 1.893939393939394,
             "efferent_coupling": 3.4545454545454546,
             "bugs": 0.07515151515151515,
             "wmc": 11.181818181818182
-        },
-        {
-            "id": 19448330,
-            "name": "slack",
-            "full_name": "maknz\/slack",
-            "description": "A simple PHP package for sending messages to Slack, with a focus on ease of use and elegant syntax.",
-            "stargazers_count": 1139,
-            "relative_system_complexity": 492.8283333333333,
-            "afferent_coupling": 1,
-            "efferent_coupling": 1.8333333333333333,
-            "bugs": 0.23333333333333336,
-            "wmc": 30.666666666666668
         },
         {
             "id": 19611718,
@@ -1807,10 +1944,24 @@
             "description": ":currency_exchange: Currency exchange rates library",
             "stargazers_count": 1139,
             "relative_system_complexity": 16.3325,
+            "maintainability_index": 95.81,
             "afferent_coupling": 0.75,
             "efferent_coupling": 4.75,
             "bugs": 0.057499999999999996,
             "wmc": 8.75
+        },
+        {
+            "id": 19448330,
+            "name": "slack",
+            "full_name": "maknz\/slack",
+            "description": "A simple PHP package for sending messages to Slack, with a focus on ease of use and elegant syntax.",
+            "stargazers_count": 1139,
+            "relative_system_complexity": 492.8283333333333,
+            "maintainability_index": 79.62666666666667,
+            "afferent_coupling": 1,
+            "efferent_coupling": 1.8333333333333333,
+            "bugs": 0.23333333333333336,
+            "wmc": 30.666666666666668
         },
         {
             "id": 5988969,
@@ -1819,6 +1970,7 @@
             "description": "A Simple PHP Finite State Machine",
             "stargazers_count": 1134,
             "relative_system_complexity": 58.7109375,
+            "maintainability_index": 123.80999999999999,
             "afferent_coupling": 1.21875,
             "efferent_coupling": 2.84375,
             "bugs": 0.07125000000000001,
@@ -1831,6 +1983,7 @@
             "description": "Manage newsletters in Laravel",
             "stargazers_count": 1132,
             "relative_system_complexity": 53.90285714285715,
+            "maintainability_index": 73.56714285714285,
             "afferent_coupling": 0.8571428571428571,
             "efferent_coupling": 2.142857142857143,
             "bugs": 0.13857142857142857,
@@ -1843,6 +1996,7 @@
             "description": "Swagger integration to Laravel 5",
             "stargazers_count": 1125,
             "relative_system_complexity": 38.97,
+            "maintainability_index": 109.85,
             "afferent_coupling": 0.75,
             "efferent_coupling": 2.875,
             "bugs": 0.08375000000000002,
@@ -1855,6 +2009,7 @@
             "description": "Laravel CRUD Generator",
             "stargazers_count": 1124,
             "relative_system_complexity": 183.82222222222222,
+            "maintainability_index": 72.38444444444445,
             "afferent_coupling": 0,
             "efferent_coupling": 2.4444444444444446,
             "bugs": 0.8600000000000001,
@@ -1867,6 +2022,7 @@
             "description": "\u00c7a trompe \u00e9norm\u00e9ment",
             "stargazers_count": 1094,
             "relative_system_complexity": 13.722857142857142,
+            "maintainability_index": 75.73357142857142,
             "afferent_coupling": 1.2857142857142858,
             "efferent_coupling": 3,
             "bugs": 0.21999999999999997,
@@ -1879,6 +2035,7 @@
             "description": "A PHP class that makes working with images as simple as possible.",
             "stargazers_count": 1082,
             "relative_system_complexity": 579,
+            "maintainability_index": 42.98,
             "afferent_coupling": 2,
             "efferent_coupling": 6,
             "bugs": 8.34,
@@ -1891,6 +2048,7 @@
             "description": "\u5fae\u4fe1\u8c03\u8bd5\u3001API\u8c03\u8bd5\u548cAJAX\u7684\u8c03\u8bd5\u7684\u5de5\u5177\uff0c\u80fd\u5c06\u65e5\u5fd7\u901a\u8fc7WebSocket\u8f93\u51fa\u5230Chrome\u6d4f\u89c8\u5668\u7684console\u4e2d",
             "stargazers_count": 1077,
             "relative_system_complexity": 15.41,
+            "maintainability_index": 34.73,
             "afferent_coupling": 0,
             "efferent_coupling": 1,
             "bugs": 1.63,
@@ -1903,6 +2061,7 @@
             "description": "Tools for working with the SPDX license list and validating licenses.",
             "stargazers_count": 1074,
             "relative_system_complexity": 24.26,
+            "maintainability_index": 75.22999999999999,
             "afferent_coupling": 0.5,
             "efferent_coupling": 1.5,
             "bugs": 0.29,
@@ -1915,6 +2074,7 @@
             "description": "Perform Self-Diagnosis Tests On Your Laravel Application",
             "stargazers_count": 1064,
             "relative_system_complexity": 29.314,
+            "maintainability_index": 100.14966666666666,
             "afferent_coupling": 0.2,
             "efferent_coupling": 2.3333333333333335,
             "bugs": 0.044000000000000004,
@@ -1927,6 +2087,7 @@
             "description": "Dispatcher is a Laravel artisan command scheduling tool used to schedule artisan commands within your project so you don't need to touch your crontab when deploying.",
             "stargazers_count": 1062,
             "relative_system_complexity": 70.25541666666666,
+            "maintainability_index": 109.53000000000002,
             "afferent_coupling": 0.6666666666666666,
             "efferent_coupling": 1.7916666666666667,
             "bugs": 0.07125000000000001,
@@ -1939,6 +2100,7 @@
             "description": "util.php is a collection of useful functions and snippets that you need or could use every day, designed to avoid conflicts with existing projects",
             "stargazers_count": 1060,
             "relative_system_complexity": 29.065,
+            "maintainability_index": 127.44,
             "afferent_coupling": 0.5,
             "efferent_coupling": 4,
             "bugs": 7.435,
@@ -1951,22 +2113,11 @@
             "description": "Maps Laravel Eloquent models to Elasticsearch types",
             "stargazers_count": 1053,
             "relative_system_complexity": 206.233,
+            "maintainability_index": 99.524,
             "afferent_coupling": 0.4,
             "efferent_coupling": 2.3,
             "bugs": 0.16199999999999998,
             "wmc": 12.8
-        },
-        {
-            "id": 7905923,
-            "name": "http-server",
-            "full_name": "amphp\/http-server",
-            "description": "A non-blocking HTTP application server for PHP based on Amp.",
-            "stargazers_count": 1046,
-            "relative_system_complexity": 381.14185185185175,
-            "afferent_coupling": 2.2962962962962963,
-            "efferent_coupling": 7.518518518518518,
-            "bugs": 0.44962962962962955,
-            "wmc": 29.48148148148148
         },
         {
             "id": 42588972,
@@ -1975,10 +2126,24 @@
             "description": "A standalone DateTime library originally based off of Carbon",
             "stargazers_count": 1046,
             "relative_system_complexity": 148.92294117647057,
+            "maintainability_index": 84.9305882352941,
             "afferent_coupling": 0.5882352941176471,
             "efferent_coupling": 3.1176470588235294,
             "bugs": 0.3347058823529412,
             "wmc": 28.294117647058822
+        },
+        {
+            "id": 7905923,
+            "name": "http-server",
+            "full_name": "amphp\/http-server",
+            "description": "A non-blocking HTTP application server for PHP based on Amp.",
+            "stargazers_count": 1046,
+            "relative_system_complexity": 381.14185185185175,
+            "maintainability_index": 81.45518518518519,
+            "afferent_coupling": 2.2962962962962963,
+            "efferent_coupling": 7.518518518518518,
+            "bugs": 0.44962962962962955,
+            "wmc": 29.48148148148148
         },
         {
             "id": 948190,
@@ -1987,6 +2152,7 @@
             "description": "A lightweight Active Record implementation for PHP5, built on top of Idiorm.",
             "stargazers_count": 1021,
             "relative_system_complexity": 153.30666666666667,
+            "maintainability_index": 112.07000000000001,
             "afferent_coupling": 0.6666666666666666,
             "efferent_coupling": 1.6666666666666667,
             "bugs": 0.2866666666666667,
@@ -1999,6 +2165,7 @@
             "description": ":computer: Send notifications to your desktop directly from your PHP script",
             "stargazers_count": 1018,
             "relative_system_complexity": 22.037857142857142,
+            "maintainability_index": 87.85142857142857,
             "afferent_coupling": 2.4285714285714284,
             "efferent_coupling": 3.2857142857142856,
             "bugs": 0.047857142857142855,
@@ -2011,684 +2178,1361 @@
             "description": ":earth_asia: 68 languages support for Laravel application.",
             "stargazers_count": 1008,
             "relative_system_complexity": 32.056666666666665,
+            "maintainability_index": 83.90333333333334,
             "afferent_coupling": 0.3333333333333333,
             "efferent_coupling": 2.3333333333333335,
             "bugs": 0.13666666666666666,
             "wmc": 9.666666666666666
         }
     ],
-    "regression": [
-        [
-            2718,
-            24.358749999999997
-        ],
-        [
-            2484,
-            224.63148148148144
-        ],
-        [
-            1612,
-            2.138
-        ],
-        [
-            1552,
-            54.926
-        ],
-        [
-            7423,
-            54.37528619528616
-        ],
-        [
-            7768,
-            30.893124999999994
-        ],
-        [
-            1188,
-            5.595
-        ],
-        [
-            18863,
-            124.73218749999998
-        ],
-        [
-            2337,
-            11.473333333333334
-        ],
-        [
-            1435,
-            46.373870967741944
-        ],
-        [
-            6073,
-            16.41
-        ],
-        [
-            2451,
-            20.84373015873016
-        ],
-        [
-            4496,
-            34.1175
-        ],
-        [
-            3120,
-            27.020930232558143
-        ],
-        [
-            1520,
-            10.945
-        ],
-        [
-            1196,
-            81.52333333333333
-        ],
-        [
-            2799,
-            316.42400000000004
-        ],
-        [
-            1878,
-            89.1025
-        ],
-        [
-            2012,
-            43.5562162162162
-        ],
-        [
-            1936,
-            25.650273972602744
-        ],
-        [
-            1064,
-            29.314
-        ],
-        [
-            1060,
-            29.065
-        ],
-        [
-            1533,
-            150.6059649122807
-        ],
-        [
-            1602,
-            120.8876
-        ],
-        [
-            1266,
-            261.94
-        ],
-        [
-            1443,
-            14.59
-        ],
-        [
-            3217,
-            34.9925
-        ],
-        [
-            1008,
-            32.056666666666665
-        ],
-        [
-            2148,
-            25.328571428571426
-        ],
-        [
-            1074,
-            24.26
-        ],
-        [
-            1208,
-            32.523225806451606
-        ],
-        [
-            1021,
-            153.30666666666667
-        ],
-        [
-            1980,
-            1069.868
-        ],
-        [
-            1974,
-            225.82409090909087
-        ],
-        [
-            3579,
-            128.74890052356025
-        ],
-        [
-            1652,
-            52.965555555555554
-        ],
-        [
-            1235,
-            122.22384615384614
-        ],
-        [
-            6155,
-            1.5999999999999999
-        ],
-        [
-            1673,
-            19.58
-        ],
-        [
-            1574,
-            482.20714285714286
-        ],
-        [
-            2393,
-            51.98
-        ],
-        [
-            2051,
-            353.37255319148943
-        ],
-        [
-            3433,
-            74.49761904761905
-        ],
-        [
-            2399,
-            457.285
-        ],
-        [
-            1094,
-            13.722857142857142
-        ],
-        [
-            5740,
-            66.33132075471698
-        ],
-        [
-            2380,
-            63.011578947368434
-        ],
-        [
-            12676,
-            30.78528037383178
-        ],
-        [
-            1571,
-            87.856
-        ],
-        [
-            1977,
-            130.37999999999997
-        ],
-        [
-            1615,
-            305.57487804878053
-        ],
-        [
-            1271,
-            107.31545454545457
-        ],
-        [
-            3808,
-            98.53219512195123
-        ],
-        [
-            3094,
-            89.46
-        ],
-        [
-            5234,
-            16.4065625
-        ],
-        [
-            1429,
-            7.844473684210527
-        ],
-        [
-            2131,
-            75.94666666666667
-        ],
-        [
-            1077,
-            15.41
-        ],
-        [
-            4832,
-            157.18214285714285
-        ],
-        [
-            4113,
-            101.01952380952382
-        ],
-        [
-            3762,
-            54.105
-        ],
-        [
-            1018,
-            22.037857142857142
-        ],
-        [
-            1992,
-            1066.685
-        ],
-        [
-            14550,
-            1337.218
-        ],
-        [
-            3208,
-            907.5400000000001
-        ],
-        [
-            2228,
-            44.39777777777778
-        ],
-        [
-            1987,
-            80.97140495867765
-        ],
-        [
-            1366,
-            52.461764705882345
-        ],
-        [
-            1814,
-            32.61
-        ],
-        [
-            2958,
-            12.494615384615384
-        ],
-        [
-            1454,
-            424.96
-        ],
-        [
-            2318,
-            662.6866666666666
-        ],
-        [
-            2140,
-            41.57944444444445
-        ],
-        [
-            3075,
-            495.51
-        ],
-        [
-            1468,
-            26.593333333333334
-        ],
-        [
-            1082,
-            579
-        ],
-        [
-            1612,
-            70.17251184834122
-        ],
-        [
-            2646,
-            158.1912820512821
-        ],
-        [
-            4715,
-            25.515
-        ],
-        [
-            1857,
-            61.736666666666665
-        ],
-        [
-            1806,
-            35.86443983402488
-        ],
-        [
-            3180,
-            29.96898550724638
-        ],
-        [
-            1976,
-            370.7033333333334
-        ],
-        [
-            1046,
-            381.14185185185175
-        ],
-        [
-            1721,
-            63.37583333333333
-        ],
-        [
-            3410,
-            100.56686868686866
-        ],
-        [
-            2363,
-            147.30235294117648
-        ],
-        [
-            1444,
-            168.78823529411764
-        ],
-        [
-            1185,
-            384.60375000000005
-        ],
-        [
-            1459,
-            15.83921568627451
-        ],
-        [
-            1931,
-            6.888571428571429
-        ],
-        [
-            1139,
-            16.3325
-        ],
-        [
-            1732,
-            65.26
-        ],
-        [
-            2408,
-            21.950000000000003
-        ],
-        [
-            8798,
-            99.01333333333334
-        ],
-        [
-            1688,
-            103.78999999999999
-        ],
-        [
-            1267,
-            76.65000000000002
-        ],
-        [
-            4839,
-            104.59
-        ],
-        [
-            4628,
-            76.97124999999998
-        ],
-        [
-            1062,
-            70.25541666666666
-        ],
-        [
-            1156,
-            40.50984848484849
-        ],
-        [
-            1506,
-            20.938529411764705
-        ],
-        [
-            1182,
-            190.12846153846155
-        ],
-        [
-            1308,
-            5.5
-        ],
-        [
-            2088,
-            43.0175
-        ],
-        [
-            1411,
-            8.90076923076923
-        ],
-        [
-            1679,
-            63.21665158371038
-        ],
-        [
-            1124,
-            183.82222222222222
-        ],
-        [
-            3224,
-            13.365925925925923
-        ],
-        [
-            1125,
-            38.97
-        ],
-        [
-            1269,
-            98.94571428571429
-        ],
-        [
-            9627,
-            959.6881818181818
-        ],
-        [
-            1175,
-            63.93
-        ],
-        [
-            1735,
-            1369.48
-        ],
-        [
-            3035,
-            59.696626506024096
-        ],
-        [
-            3353,
-            15.71662337662338
-        ],
-        [
-            6184,
-            109.16750000000002
-        ],
-        [
-            2979,
-            53.236764705882344
-        ],
-        [
-            2339,
-            188.3731756756757
-        ],
-        [
-            1053,
-            206.233
-        ],
-        [
-            1290,
-            602.8079999999999
-        ],
-        [
-            1139,
-            492.8283333333333
-        ],
-        [
-            1370,
-            10.85
-        ],
-        [
-            7637,
-            213.72916666666666
-        ],
-        [
-            1664,
-            157.60882352941175
-        ],
-        [
-            6276,
-            14.6
-        ],
-        [
-            1634,
-            288.85
-        ],
-        [
-            1264,
-            225.92533333333333
-        ],
-        [
-            1655,
-            118.40333333333335
-        ],
-        [
-            7008,
-            136.40187500000002
-        ],
-        [
-            5758,
-            18.23
-        ],
-        [
-            2929,
-            176.2890909090909
-        ],
-        [
-            1265,
-            124.23
-        ],
-        [
-            1704,
-            4.586904761904762
-        ],
-        [
-            3597,
-            237.2763636363637
-        ],
-        [
-            1159,
-            33.95666666666667
-        ],
-        [
-            3818,
-            141.98055555555553
-        ],
-        [
-            2167,
-            145.1976923076923
-        ],
-        [
-            1415,
-            96.88573333333332
-        ],
-        [
-            1217,
-            142.3452777777778
-        ],
-        [
-            1782,
-            138.75666666666666
-        ],
-        [
-            2536,
-            63.733181818181805
-        ],
-        [
-            2754,
-            46.896086956521735
-        ],
-        [
-            4358,
-            150.13888888888889
-        ],
-        [
-            2715,
-            74.6597435897436
-        ],
-        [
-            1726,
-            192.86599999999999
-        ],
-        [
-            3694,
-            112.47000000000001
-        ],
-        [
-            3330,
-            177.54492063492063
-        ],
-        [
-            1046,
-            148.92294117647057
-        ],
-        [
-            2503,
-            539.5085853658536
-        ],
-        [
-            1132,
-            53.90285714285715
-        ],
-        [
-            4517,
-            2239.91
-        ],
-        [
-            10113,
-            32.17777777777778
-        ],
-        [
-            6086,
-            44.28812499999999
-        ],
-        [
-            3287,
-            678.3728571428572
-        ],
-        [
-            10569,
-            268.2094736842105
-        ],
-        [
-            1338,
-            1234.8600000000001
-        ],
-        [
-            1864,
-            73.34500000000001
-        ],
-        [
-            1361,
-            137.6004347826087
-        ],
-        [
-            1449,
-            18.44875
-        ],
-        [
-            2476,
-            264.5566666666666
-        ],
-        [
-            1400,
-            207.9377777777778
-        ],
-        [
-            8726,
-            17.768319088319092
-        ],
-        [
-            2456,
-            562.5
-        ],
-        [
-            1134,
-            58.7109375
-        ],
-        [
-            6732,
-            831.1784210526315
-        ],
-        [
-            1804,
-            23.83793103448276
-        ],
-        [
-            1524,
-            25.75727272727273
+    "regression": {
+        "rsysc": [
+            [
+                1574,
+                482.20714285714286
+            ],
+            [
+                3287,
+                678.3728571428572
+            ],
+            [
+                1931,
+                6.888571428571429
+            ],
+            [
+                1726,
+                192.86599999999999
+            ],
+            [
+                2228,
+                44.39777777777778
+            ],
+            [
+                1046,
+                381.14185185185175
+            ],
+            [
+                2799,
+                316.42400000000004
+            ],
+            [
+                1664,
+                157.60882352941175
+            ],
+            [
+                1721,
+                63.37583333333333
+            ],
+            [
+                6073,
+                16.41
+            ],
+            [
+                6732,
+                831.1784210526315
+            ],
+            [
+                12676,
+                30.78528037383178
+            ],
+            [
+                2754,
+                46.896086956521735
+            ],
+            [
+                4358,
+                150.13888888888889
+            ],
+            [
+                2536,
+                63.733181818181805
+            ],
+            [
+                2339,
+                188.3731756756757
+            ],
+            [
+                2131,
+                75.94666666666667
+            ],
+            [
+                1156,
+                40.50984848484849
+            ],
+            [
+                2380,
+                63.011578947368434
+            ],
+            [
+                1435,
+                46.373870967741944
+            ],
+            [
+                4517,
+                2239.91
+            ],
+            [
+                2484,
+                224.63148148148144
+            ],
+            [
+                1454,
+                424.96
+            ],
+            [
+                7008,
+                136.40187500000002
+            ],
+            [
+                2476,
+                264.5566666666666
+            ],
+            [
+                2140,
+                41.57944444444445
+            ],
+            [
+                8726,
+                17.768319088319092
+            ],
+            [
+                1814,
+                32.61
+            ],
+            [
+                1064,
+                29.314
+            ],
+            [
+                1444,
+                168.78823529411764
+            ],
+            [
+                2715,
+                74.6597435897436
+            ],
+            [
+                2167,
+                145.1976923076923
+            ],
+            [
+                18863,
+                124.73218749999998
+            ],
+            [
+                2088,
+                43.0175
+            ],
+            [
+                3120,
+                27.020930232558143
+            ],
+            [
+                1704,
+                4.586904761904762
+            ],
+            [
+                1571,
+                87.856
+            ],
+            [
+                1634,
+                288.85
+            ],
+            [
+                7423,
+                54.37528619528616
+            ],
+            [
+                4628,
+                76.97124999999998
+            ],
+            [
+                2363,
+                147.30235294117648
+            ],
+            [
+                4839,
+                104.59
+            ],
+            [
+                3217,
+                34.9925
+            ],
+            [
+                4715,
+                25.515
+            ],
+            [
+                1524,
+                25.75727272727273
+            ],
+            [
+                1652,
+                52.965555555555554
+            ],
+            [
+                1655,
+                118.40333333333335
+            ],
+            [
+                2456,
+                562.5
+            ],
+            [
+                1936,
+                25.650273972602744
+            ],
+            [
+                1411,
+                8.90076923076923
+            ],
+            [
+                3694,
+                112.47000000000001
+            ],
+            [
+                1338,
+                1234.8600000000001
+            ],
+            [
+                2929,
+                176.2890909090909
+            ],
+            [
+                1074,
+                24.26
+            ],
+            [
+                1185,
+                384.60375000000005
+            ],
+            [
+                3224,
+                13.365925925925923
+            ],
+            [
+                7768,
+                30.893124999999994
+            ],
+            [
+                1264,
+                225.92533333333333
+            ],
+            [
+                1400,
+                207.9377777777778
+            ],
+            [
+                7637,
+                213.72916666666666
+            ],
+            [
+                1602,
+                120.8876
+            ],
+            [
+                1366,
+                52.461764705882345
+            ],
+            [
+                1370,
+                10.85
+            ],
+            [
+                1265,
+                124.23
+            ],
+            [
+                2393,
+                51.98
+            ],
+            [
+                1046,
+                148.92294117647057
+            ],
+            [
+                1506,
+                20.938529411764705
+            ],
+            [
+                3818,
+                141.98055555555553
+            ],
+            [
+                1533,
+                150.6059649122807
+            ],
+            [
+                3330,
+                177.54492063492063
+            ],
+            [
+                4832,
+                157.18214285714285
+            ],
+            [
+                1974,
+                225.82409090909087
+            ],
+            [
+                1980,
+                1069.868
+            ],
+            [
+                1857,
+                61.736666666666665
+            ],
+            [
+                2408,
+                21.950000000000003
+            ],
+            [
+                1053,
+                206.233
+            ],
+            [
+                1806,
+                35.86443983402488
+            ],
+            [
+                1060,
+                29.065
+            ],
+            [
+                9627,
+                959.6881818181818
+            ],
+            [
+                3075,
+                495.51
+            ],
+            [
+                1267,
+                76.65000000000002
+            ],
+            [
+                3035,
+                59.696626506024096
+            ],
+            [
+                1976,
+                370.7033333333334
+            ],
+            [
+                1977,
+                130.37999999999997
+            ],
+            [
+                1082,
+                579
+            ],
+            [
+                2337,
+                11.473333333333334
+            ],
+            [
+                14550,
+                1337.218
+            ],
+            [
+                1021,
+                153.30666666666667
+            ],
+            [
+                3208,
+                907.5400000000001
+            ],
+            [
+                1196,
+                81.52333333333333
+            ],
+            [
+                1804,
+                23.83793103448276
+            ],
+            [
+                1132,
+                53.90285714285715
+            ],
+            [
+                1732,
+                65.26
+            ],
+            [
+                1987,
+                80.97140495867765
+            ],
+            [
+                6184,
+                109.16750000000002
+            ],
+            [
+                1679,
+                63.21665158371038
+            ],
+            [
+                1688,
+                103.78999999999999
+            ],
+            [
+                1992,
+                1066.685
+            ],
+            [
+                1235,
+                122.22384615384614
+            ],
+            [
+                3808,
+                98.53219512195123
+            ],
+            [
+                2451,
+                20.84373015873016
+            ],
+            [
+                1290,
+                602.8079999999999
+            ],
+            [
+                2979,
+                53.236764705882344
+            ],
+            [
+                8798,
+                99.01333333333334
+            ],
+            [
+                1782,
+                138.75666666666666
+            ],
+            [
+                4496,
+                34.1175
+            ],
+            [
+                1308,
+                5.5
+            ],
+            [
+                1159,
+                33.95666666666667
+            ],
+            [
+                1077,
+                15.41
+            ],
+            [
+                1735,
+                1369.48
+            ],
+            [
+                1125,
+                38.97
+            ],
+            [
+                1361,
+                137.6004347826087
+            ],
+            [
+                5234,
+                16.4065625
+            ],
+            [
+                2148,
+                25.328571428571426
+            ],
+            [
+                1520,
+                10.945
+            ],
+            [
+                1612,
+                2.138
+            ],
+            [
+                1612,
+                70.17251184834122
+            ],
+            [
+                2958,
+                12.494615384615384
+            ],
+            [
+                1208,
+                32.523225806451606
+            ],
+            [
+                3410,
+                100.56686868686866
+            ],
+            [
+                2051,
+                353.37255319148943
+            ],
+            [
+                2646,
+                158.1912820512821
+            ],
+            [
+                1217,
+                142.3452777777778
+            ],
+            [
+                3579,
+                128.74890052356025
+            ],
+            [
+                6155,
+                1.5999999999999999
+            ],
+            [
+                1552,
+                54.926
+            ],
+            [
+                6276,
+                14.6
+            ],
+            [
+                2718,
+                24.358749999999997
+            ],
+            [
+                5758,
+                18.23
+            ],
+            [
+                1175,
+                63.93
+            ],
+            [
+                2012,
+                43.5562162162162
+            ],
+            [
+                3597,
+                237.2763636363637
+            ],
+            [
+                1673,
+                19.58
+            ],
+            [
+                1182,
+                190.12846153846155
+            ],
+            [
+                1062,
+                70.25541666666666
+            ],
+            [
+                1124,
+                183.82222222222222
+            ],
+            [
+                1094,
+                13.722857142857142
+            ],
+            [
+                1134,
+                58.7109375
+            ],
+            [
+                6086,
+                44.28812499999999
+            ],
+            [
+                1271,
+                107.31545454545457
+            ],
+            [
+                2503,
+                539.5085853658536
+            ],
+            [
+                1468,
+                26.593333333333334
+            ],
+            [
+                1188,
+                5.595
+            ],
+            [
+                1449,
+                18.44875
+            ],
+            [
+                1018,
+                22.037857142857142
+            ],
+            [
+                1139,
+                16.3325
+            ],
+            [
+                3094,
+                89.46
+            ],
+            [
+                4113,
+                101.01952380952382
+            ],
+            [
+                1139,
+                492.8283333333333
+            ],
+            [
+                1008,
+                32.056666666666665
+            ],
+            [
+                1429,
+                7.844473684210527
+            ],
+            [
+                2399,
+                457.285
+            ],
+            [
+                10569,
+                268.2094736842105
+            ],
+            [
+                1266,
+                261.94
+            ],
+            [
+                1459,
+                15.83921568627451
+            ],
+            [
+                2318,
+                662.6866666666666
+            ],
+            [
+                10113,
+                32.17777777777778
+            ],
+            [
+                5740,
+                66.33132075471698
+            ],
+            [
+                3762,
+                54.105
+            ],
+            [
+                1864,
+                73.34500000000001
+            ],
+            [
+                3180,
+                29.96898550724638
+            ],
+            [
+                3353,
+                15.71662337662338
+            ],
+            [
+                1443,
+                14.59
+            ],
+            [
+                3433,
+                74.49761904761905
+            ],
+            [
+                1269,
+                98.94571428571429
+            ],
+            [
+                1615,
+                305.57487804878053
+            ],
+            [
+                1415,
+                96.88573333333332
+            ],
+            [
+                1878,
+                89.1025
+            ]
+        ],
+        "mi": [
+            [
+                1574,
+                110.78571428571429
+            ],
+            [
+                3287,
+                87.31500000000001
+            ],
+            [
+                1931,
+                120.25428571428571
+            ],
+            [
+                1726,
+                102.852
+            ],
+            [
+                2228,
+                114.82777777777781
+            ],
+            [
+                1046,
+                81.45518518518519
+            ],
+            [
+                2799,
+                89.35600000000001
+            ],
+            [
+                1664,
+                107.1270588235294
+            ],
+            [
+                1721,
+                99.38583333333334
+            ],
+            [
+                6073,
+                112.13000000000002
+            ],
+            [
+                6732,
+                73.22934210526317
+            ],
+            [
+                12676,
+                88.63817757009332
+            ],
+            [
+                2754,
+                90.36326086956522
+            ],
+            [
+                4358,
+                83.57333333333335
+            ],
+            [
+                2536,
+                111.90136363636363
+            ],
+            [
+                2339,
+                97.46101351351349
+            ],
+            [
+                2131,
+                76.18366666666665
+            ],
+            [
+                1156,
+                101.62939393939392
+            ],
+            [
+                2380,
+                56.063026315789486
+            ],
+            [
+                1435,
+                90.02419354838706
+            ],
+            [
+                4517,
+                53.175
+            ],
+            [
+                2484,
+                82.71000000000001
+            ],
+            [
+                1454,
+                44.364999999999995
+            ],
+            [
+                7008,
+                85.47187499999998
+            ],
+            [
+                2476,
+                71.38444444444445
+            ],
+            [
+                2140,
+                98.23916666666668
+            ],
+            [
+                8726,
+                109.83700854700838
+            ],
+            [
+                1814,
+                79.14
+            ],
+            [
+                1064,
+                100.14966666666666
+            ],
+            [
+                1444,
+                84.81
+            ],
+            [
+                2715,
+                113.77000000000001
+            ],
+            [
+                2167,
+                100.6194871794872
+            ],
+            [
+                18863,
+                94.26781249999998
+            ],
+            [
+                2088,
+                75.25874999999999
+            ],
+            [
+                3120,
+                103.49627906976744
+            ],
+            [
+                1704,
+                112.81928571428573
+            ],
+            [
+                1571,
+                74.482
+            ],
+            [
+                1634,
+                82.96875
+            ],
+            [
+                7423,
+                78.60710437710433
+            ],
+            [
+                4628,
+                70.5675
+            ],
+            [
+                2363,
+                100.1070588235294
+            ],
+            [
+                4839,
+                87.11
+            ],
+            [
+                3217,
+                87.53999999999999
+            ],
+            [
+                4715,
+                97.68875
+            ],
+            [
+                1524,
+                61.445454545454545
+            ],
+            [
+                1652,
+                89.52555555555556
+            ],
+            [
+                1655,
+                108.39666666666666
+            ],
+            [
+                2456,
+                53.65
+            ],
+            [
+                1936,
+                91.82109589041093
+            ],
+            [
+                1411,
+                109.02538461538462
+            ],
+            [
+                3694,
+                81.15666666666667
+            ],
+            [
+                1338,
+                75.75
+            ],
+            [
+                2929,
+                57.37454545454545
+            ],
+            [
+                1074,
+                75.22999999999999
+            ],
+            [
+                1185,
+                81.10875000000001
+            ],
+            [
+                3224,
+                111.87351851851848
+            ],
+            [
+                7768,
+                87.21742187500001
+            ],
+            [
+                1264,
+                81.45800000000001
+            ],
+            [
+                1400,
+                60.609999999999985
+            ],
+            [
+                7637,
+                70.09333333333333
+            ],
+            [
+                1602,
+                134.0764
+            ],
+            [
+                1366,
+                75.43117647058824
+            ],
+            [
+                1370,
+                53.13
+            ],
+            [
+                1265,
+                77.78666666666666
+            ],
+            [
+                2393,
+                65.74
+            ],
+            [
+                1046,
+                84.9305882352941
+            ],
+            [
+                1506,
+                70.9301960784314
+            ],
+            [
+                3818,
+                71.25148148148149
+            ],
+            [
+                1533,
+                76.68859649122808
+            ],
+            [
+                3330,
+                116.85349206349207
+            ],
+            [
+                4832,
+                100.28949999999996
+            ],
+            [
+                1974,
+                70.89863636363636
+            ],
+            [
+                1980,
+                120.66199999999999
+            ],
+            [
+                1857,
+                60.06055555555555
+            ],
+            [
+                2408,
+                145.18727272727276
+            ],
+            [
+                1053,
+                99.524
+            ],
+            [
+                1806,
+                94.33153526970955
+            ],
+            [
+                1060,
+                127.44
+            ],
+            [
+                9627,
+                71.74727272727272
+            ],
+            [
+                3075,
+                38.905
+            ],
+            [
+                1267,
+                59.70333333333334
+            ],
+            [
+                3035,
+                116.13108433734936
+            ],
+            [
+                1976,
+                80.86666666666666
+            ],
+            [
+                1977,
+                71.972
+            ],
+            [
+                1082,
+                42.98
+            ],
+            [
+                2337,
+                123.18833333333333
+            ],
+            [
+                14550,
+                75.18800000000002
+            ],
+            [
+                1021,
+                112.07000000000001
+            ],
+            [
+                3208,
+                66.78999999999999
+            ],
+            [
+                1196,
+                95.03333333333335
+            ],
+            [
+                1804,
+                132.4989655172414
+            ],
+            [
+                1132,
+                73.56714285714285
+            ],
+            [
+                1732,
+                66.8
+            ],
+            [
+                1987,
+                90.3949586776859
+            ],
+            [
+                6184,
+                93.48416666666668
+            ],
+            [
+                1679,
+                97.24004524886878
+            ],
+            [
+                1688,
+                72.595
+            ],
+            [
+                1992,
+                73.365
+            ],
+            [
+                1235,
+                90.98615384615384
+            ],
+            [
+                3808,
+                116.13975609756095
+            ],
+            [
+                2451,
+                142.70595238095245
+            ],
+            [
+                1290,
+                65.346
+            ],
+            [
+                2979,
+                99.08882352941177
+            ],
+            [
+                8798,
+                85.89666666666669
+            ],
+            [
+                1782,
+                88.68966666666667
+            ],
+            [
+                4496,
+                118.18999999999998
+            ],
+            [
+                1308,
+                95.38499999999999
+            ],
+            [
+                1159,
+                115.89
+            ],
+            [
+                1077,
+                34.73
+            ],
+            [
+                1735,
+                62.25
+            ],
+            [
+                1125,
+                109.85
+            ],
+            [
+                1361,
+                75.20695652173912
+            ],
+            [
+                5234,
+                100.2378125
+            ],
+            [
+                2148,
+                83.77714285714285
+            ],
+            [
+                1520,
+                86.86
+            ],
+            [
+                1612,
+                70.35
+            ],
+            [
+                1612,
+                95.30909952606636
+            ],
+            [
+                2958,
+                116.48076923076927
+            ],
+            [
+                1208,
+                103.83290322580648
+            ],
+            [
+                3410,
+                101.46080808080805
+            ],
+            [
+                2051,
+                95.90170212765962
+            ],
+            [
+                2646,
+                67.32307692307693
+            ],
+            [
+                1217,
+                69.45166666666665
+            ],
+            [
+                3579,
+                106.35277486910988
+            ],
+            [
+                6155,
+                141.72333333333333
+            ],
+            [
+                1552,
+                100.942
+            ],
+            [
+                6276,
+                46.63
+            ],
+            [
+                2718,
+                93.8075
+            ],
+            [
+                5758,
+                72.39
+            ],
+            [
+                1175,
+                95.53
+            ],
+            [
+                2012,
+                100.13756756756759
+            ],
+            [
+                3597,
+                69.7819696969697
+            ],
+            [
+                1673,
+                61.27
+            ],
+            [
+                1182,
+                95.28615384615384
+            ],
+            [
+                1062,
+                109.53000000000002
+            ],
+            [
+                1124,
+                72.38444444444445
+            ],
+            [
+                1094,
+                75.73357142857142
+            ],
+            [
+                1134,
+                123.80999999999999
+            ],
+            [
+                6086,
+                94.51354166666664
+            ],
+            [
+                1271,
+                97.98
+            ],
+            [
+                2503,
+                96.596243902439
+            ],
+            [
+                1468,
+                74.19000000000001
+            ],
+            [
+                1188,
+                81.5575
+            ],
+            [
+                1449,
+                96.69374999999998
+            ],
+            [
+                1018,
+                87.85142857142857
+            ],
+            [
+                1139,
+                95.81
+            ],
+            [
+                3094,
+                95.75333333333333
+            ],
+            [
+                4113,
+                92.14857142857143
+            ],
+            [
+                1139,
+                79.62666666666667
+            ],
+            [
+                1008,
+                83.90333333333334
+            ],
+            [
+                1429,
+                95.8386842105263
+            ],
+            [
+                2399,
+                69.375
+            ],
+            [
+                10569,
+                83.87499999999999
+            ],
+            [
+                1266,
+                72.86833333333333
+            ],
+            [
+                1459,
+                82.14509803921571
+            ],
+            [
+                2318,
+                65.21083333333333
+            ],
+            [
+                10113,
+                129.17234567901235
+            ],
+            [
+                5740,
+                96.46773584905661
+            ],
+            [
+                3762,
+                114.7875
+            ],
+            [
+                1864,
+                104.43166666666667
+            ],
+            [
+                3180,
+                95.2411594202899
+            ],
+            [
+                3353,
+                140.78402597402604
+            ],
+            [
+                1443,
+                90.53999999999999
+            ],
+            [
+                3433,
+                128.03523809523807
+            ],
+            [
+                1269,
+                92.55214285714287
+            ],
+            [
+                1615,
+                94.67756097560977
+            ],
+            [
+                1415,
+                94.81313333333335
+            ],
+            [
+                1878,
+                92.641875
+            ]
         ]
-    ]
+    }
 }

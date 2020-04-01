@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MGL843 - Hiver 2020 - Projet individuel de Jude Séïde</title>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/anychart-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/anychart-font.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="hero">
+        <h1 class="name"><strong>Jude</strong> Séïde</h1>
+        <span class="subtitle">MGL843 Sujets avancés en conception de logiciels - Hiver 2020</span>
+
+        <h2 class="title">Analyser la qualité de conception et la popularité des librairies web en php.</h2>
+    </div>
+</div>
+
+<!-- Introduction et objectifs -->
+<div class="container">
+
+    <div class="sections-full">
+        <h2 class="section-title">Introduction</h2>
+
+        <p>
+            La demande accrue d'applications web, accélère le processus de développement et conduit à une culture
+            d'écosystème, caractérisée par la réutilisation de code, notamment grâce aux frameworks, aux gestionnaires
+            de librairies et aux communautés qui les supportent.
+        </p>
+
+        <p>
+            Par conséquent, les développeurs tendent à choisir les librairies, dont leurs applications dépendent, en
+            fonction de leur popularité sans nécessairement considérer leur efficacité, fiabilité, maintenabilité et
+            évolutivité.
+        </p>
+
+        <p>
+            Ce projet consiste en une étude empirique sur différentes librairies web provenant de différents domaines
+            d'applications, pour analyser la relation entre leur popularité et la qualité de conception logicielle.
+        </p>
+    </div>
+
+</div>
+
+<div class="container">
+
+    <div class="sections-full">
+        <h2 class="section-title">Objectifs</h2>
+
+        <p>
+            Une réelle compréhension de la relation entre la popularité et la qualité de conception logicielle des
+            librairies web est importante puisqu'elle permettra aux développeurs de saisir l'impact de ces dernières sur
+            leurs applications.
+        </p>
+
+        <p>
+            Notre but est d'étudier cette relation, plus précisément, nous cherchons à répondre aux questions de
+            recherche suivantes:
+        </p>
+
+        <br/><br/>
+
+        <p>
+            1 - Les librairies les plus populaires ont-elles de meilleures métriques de qualité que les moins
+            populaires?
+        </p>
+        <p>
+            2 - Est-ce qu'il y a une corrélation entre la popularité et ces attributs de qualité d'une librairie?
+        </p>
+    </div>
+
+</div>
+
+<!-- Travaux reliés -->
+<div class="container">
+
+    <div class="sections-full">
+        <h2 class="section-title">Travaux reliés</h2>
+        <p>
+            Le rapport entre popularité et qualité logicielle est encore du domaine de la recherche. Plusieurs
+            publications examinent la relation entre la popularité des applications mobiles et les attributs de
+            qualité de leur code. D'autres examinent le code source dans le but de comprendre ce qui rend un
+            logiciel populaire.
+        </p>
+        <p>
+            Plusieurs études analysent la relation entre la popularité et la qualité de librairies, constatant dans
+            la plupart des cas qu'il n'y a pas de corrélation. Enfin d'autres étudient les facteurs de popularité
+            des répertoires github, concluant que le langage de programmation, le domaine d'application ainsi que la
+            publication par une entreprise plutôt qu'un individu, sont des facteurs déterminants de la popularité.
+        </p>
+        <p>
+            Pour autant que nous puissions en juger, la relation entre la popularité et la qualité de conception
+            logicielle des librairies dont dépendent les applications web, est peu ou pas étudiée. Nous espérons
+            contribuer à combler cette lacune.
+        </p>
+    </div>
+</div>
+
+<!-- Travaux connexes -->
+<div class="container">
+    <div class="sections">
+        <div class="list-card">
+            <span class="exp">Frakes & Kang</span>
+            <div>
+                <span>Souligne les contributions majeurs de la recherche sur la réutilisabilité.</span><br/><br/>
+                <span>Souligne l’importance de la réutilisabilité pour la productivité.</span><br/><br/>
+                <span>Souligne les impacts économiques et sur la qualité  de la réutilisabilité.</span>
+            </div>
+        </div>
+
+        <div class="list-card">
+            <span class="exp">Borges et al.</span>
+            <div>
+                <span>Montre les facteurs de la popularité des projets sur GitHub.</span><br/><br/>
+                <span>Met en évidence des similarités entre les projets populaires.</span><br/><br/>
+                <span>Jette la base pour prédire la popularité d’un projet sur GitHub.</span>
+            </div>
+        </div>
+
+        <div class="list-card">
+            <span class="exp">Alsmadi & Alazzam</span>
+            <div>
+                <span>Recherche de corrélation entre la popularité et 65 métriques de qualité.</span><br/><br/>
+                <span>Montre un lien entre la complexité et la popularité: plus un logiciel est complexe plus il est populaire.</span>
+            </div>
+        </div>
+
+        <div class="list-card">
+            <span class="exp">Sajnani et al</span>
+            <div>
+                <span>Étude sur 2,496 librairies populaires réutilisées par 55,191 projets.</span><br/><br/>
+                <span>Montre qu’il n’y a pas de corrélation entre la qualité des librairies et leur popularité.</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sections">
+        <div class="list-card">
+            <div>
+                <span>Présente seulement les aspects positifs de la réutilisation de code.</span><br/><br/>
+                <span>Ne tient pas compte des impacts de la réutilisabilité dans un contexte d'écosystème.</span><br/><br/>
+                <span></span><br/><br/>
+            </div>
+        </div>
+
+        <div class="list-card">
+            <div>
+                <span>Détection manuelle des domaines d’applications.</span><br/><br/>
+                <span>Étude portant seulement sur les répertoires populaires.</span><br/><br/>
+                <span></span><br/><br/>
+            </div>
+        </div>
+
+        <div class="list-card">
+            <div>
+                <br/><span>Seulement 10 projets en Java ont été étudiés donc difficilement généralisable.</span><br/><br/>
+                <span>Conclusion ambiguë, la complexité est due au nombre de fonctionnalités ou à la complexité essentielle du logiciel?</span>
+            </div>
+        </div>
+
+        <div class="list-card">
+            <div>
+                <span>Étude axée sur l'écosystème Java, la conclusion peut ne pas être vraie pour d’autres langages.</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Approche -->
+<div class="container">
+    <div class="sections-full">
+        <h2 class="section-title">Approche</h2>
+
+        <p>
+            Une librairie est un ensemble de fonctionnalités implémentées et organisées afin d'être réutilisées pour le
+            développement de divers logiciels.
+        </p>
+        <p>
+            L'écosystème php dispose d’un gestionnaire de dépendances, composer, lequel utilise packagist. Ce
+            dernier est le répertoire principal qui regroupe les composants php publics installables, il offre une api
+            publique permettant de les trier par catégorie.
+        </p>
+        <p>
+            Nous avons utilisé les api de packagist et de github pour identifier les librairies php à considérer par
+            notre
+            étude et le nombre d'étoiles github comme métrique pour mesurer la qualité.
+        </p>
+        <p>
+            Pour ce projet, la qualité d’un logiciel est définie par rapport à sa complexité relative.
+
+            La complexité relative du système, RSYSC, mesure la complexité moyenne des procédures. Il s'agit d'une
+            métrique normalisée pour l'ensemble du système qui ne dépend pas de sa taille.
+        </p>
+        <p>
+            Elle permet ainsi d'évaluer et de comparer [11] la complexité de la conception entre différents logiciels,
+            l'une des rares métriques à donner une échelle indépendante.
+
+            De plus, elle est utile pour prédire le taux d'erreur dans un logiciel, un RSYSC élevé prédit beaucoup
+            d'erreurs par ligne de code. Donc, un RSYSC relativement bas, indique une conception de meilleure qualité.
+        </p>
+        <p>
+            L'indice de maintenabilité est une métrique qui permet d’évaluer la difficulté ou la facilité de maintenir
+            une application. Elle est utilisée ici comme proxy de qualité comparative.
+
+        </p>
+        <p>
+            Elle est calculée à partir des résultats de mesures de lignes de code, des métriques de Mc Cabe et des
+            métriques de Halstead. Une valeur de 85 ou plus indique que la maintenabilité est bonne tandis qu’une
+            inférieure à 65 indique une maintenance difficile.
+        </p>
+    </div>
+
+    <ol class="timeline">
+        <li>
+            <p class="line">Identification des librairies</p>
+            <span class="point"></span>
+            <p class="description">
+                Packagist API
+            </p>
+            <span class="highlight">Filtrer les librairies parmi les composant réutilisables.</span>
+        </li>
+
+        <li>
+            <span class="point"></span>
+            <p class="description">
+                Github API
+            </p>
+            <span class="highlight">Sélectionner les projets ayant plus de 1000 étoiles.</span>
+        </li>
+
+        <li>
+            <p class="line">Analyse</p>
+            <span class="point"></span>
+            <p class="description">
+                Téléchargement des librairies sélectionnées
+            </p>
+            <span class="highlight">Projets github identifiés comme librairie par packagist.</span>
+        </li>
+
+        <li>
+            <span class="point"></span>
+            <p class="description">
+                Analyse statique et consolidation
+            </p>
+            <span class="highlight">Analyse statique des librairies avec l'outil phpmetrics et consolidation des résultats.</span>
+        </li>
+    </ol>
+
+</div>
+
+<!-- Projets -->
+<div class="container cards">
+
+    <div class="card">
+        <div class="counter">
+            <span>+</span>
+            <h2>180K</h2>
+        </div>
+
+        <div class="meta">
+            <h3>Librairies</h3>
+            <span>php identifiées sur packagist.</span>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="counter">
+            <span>+</span>
+            <h2>330</h2>
+        </div>
+
+        <div class="meta">
+            <h3>Projets</h3>
+            <span>php ayant plus de 1000 étoiles trouvés sur github.</span>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="counter">
+            <span>+</span>
+            <h2>170</h2>
+        </div>
+
+        <div class="meta">
+            <h3>Librairies</h3>
+            <span>php analysées avec l'outil phpmetrics.</span>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="counter">
+            <h2>100</h2>
+            <span>%</span>
+        </div>
+
+        <div class="meta">
+            <h3>Automatique</h3>
+            <span>intervention humaine requise pour la visualisation et le lancement.</span>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+<!-- Résultats/Discussion -->
+
+<!--1 - Les librairies les plus populaires ont-elles de meilleures métriques de qualité que les moins populaires?-->
+<div class="container full">
+    <div class="sections-full">
+        <h2 class="section-title">Comparaison de la complexité relative du système</h2>
+    </div>
+    <canvas id="mixed-chart-rsysc" width="800" height="450"></canvas>
+    <canvas id="mixed-chart-mi" width="800" height="450"></canvas>
+</div>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<!--2 - Est-ce qu'il y a une corrélation entre la popularité et ces attributs de qualité d'une librairie?-->
+<div class="container full">
+    <div class="sections-full">
+        <h2 class="section-title">Complexité relative du système</h2>
+    </div>
+    <div id="rsysc"></div>
+</div>
+<div class="container full">
+    <div class="sections-full">
+        <h2 class="section-title">Indice de maintenabilité</h2>
+    </div>
+    <div id="mi"></div>
+</div>
+
+<!-- Conclusion -->
+<div class="container cards">
+    <h2 class="section-title">Conclusion</h2>
+
+    <div class="card">
+        <div class="counter">
+            <span></span>
+            <h2>-</h2>
+        </div>
+        <div class="meta" style="max-width: 300px">
+            <h3>Qualité</h3>
+            <span>Les librairies les plus populaires ne sont pas nécessairement de meilleurs qualité que les moins populaires.</span>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="counter">
+            <span></span>
+            <h2>-</h2>
+        </div>
+
+        <div class="meta" style="max-width: 300px">
+            <h3>Corrélation</h3>
+            <span>Nous n'avons pas trouvé de corrélation entre la popularité et les attributs de qualité des librairies web en php.</span>
+        </div>
+    </div>
+
+</div>
+
+<footer class="container">
+    <span style="font-size: 16px; margin-top: ">MGL843 - Hiver 2020 - Projet individuel de Jude Séïde</span>
+</footer>
+
+
+<script src="js/anychart-base.min.js"></script>
+<script src="js/anychart-ui.min.js"></script>
+<script src="js/anychart-exports.min.js"></script>
+<script src="js/regression.min.js"></script>
+<script src="js/rsysc-regression.js"></script>
+<script src="js/mi-regression.js"></script>
+<script src="js/rsysc-compare.js"></script>
+<script src="js/mi-compare.js"></script>
+
+</body>
+</html>

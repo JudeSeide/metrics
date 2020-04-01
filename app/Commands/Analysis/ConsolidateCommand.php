@@ -69,12 +69,16 @@ class ConsolidateCommand extends Command
     {
         $this->task('consolidate analysis results', function () {
             $analysis = collect();
-            $regression = [];
+            $regression = [
+                'rsysc' => [],
+                'mi' => [],
+            ];
 
             foreach ($this->metrics as $metric) {
                 $metadata = $this->metadata->get($metric['name'])->first();
                 $analysis->push(array_merge($metadata, $metric));
-                $regression[] = [$metadata['stargazers_count'], $metric['relative_system_complexity']];
+                $regression['rsysc'][] = [$metadata['stargazers_count'], $metric['relative_system_complexity']];
+                $regression['mi'][] = [$metadata['stargazers_count'], $metric['maintainability_index']];
             }
 
             $this->consolidated = collect([
@@ -100,6 +104,7 @@ class ConsolidateCommand extends Command
         $data = [
             'name' => str_replace('.json', '', $file->getFilename()),
             'relative_system_complexity' => 0,
+            'maintainability_index' => 0,
             'afferent_coupling' => 0,
             'efferent_coupling' => 0,
             'bugs' => 0,
@@ -110,6 +115,7 @@ class ConsolidateCommand extends Command
         foreach ($metrics as $metric) {
             if (array_has($metric, 'relativeSystemComplexity')) {
                 $data['relative_system_complexity'] += (float) array_get($metric, 'relativeSystemComplexity');
+                $data['maintainability_index'] += (float) array_get($metric, 'mi');
                 $data['afferent_coupling'] += (float) array_get($metric, 'afferentCoupling');
                 $data['efferent_coupling'] += (float) array_get($metric, 'efferentCoupling');
                 $data['bugs'] += (float) array_get($metric, 'bugs');
