@@ -1,20 +1,46 @@
 # Metrics
-## todo 
-    - documentation
-    - code
+Analyse the design quality and the popularity of web libraries in php.
 
-## plan
-    - select libraries
-        - get available php libraries - https://packagist.org/packages/list.json?type=library
-        - get associated repositories on github - stars:>1000 language:PHP NOT framework composer in:readme archived:false {name} in:name
-        - select libraries to download {number a parameter - default 100}
-        - download librairies
+### Requirements
+
+1. [Docker](https://docs.docker.com/engine/installation/)
+2. [Docker Compose](https://docs.docker.com/compose/install/)
+
+### Installation
+
+1. Build the containers
+
+    ***Tip**: you may omit the `--no-cache` option if it's the first run.*
+    ***Tip**: windows only - open the terminal as administrator.*
     
-    - perform static analysis
-        - run analysis
-        - save generated reports
-        
-    - visualization
-        - parse reports
-        - generate linear regression
-        - develop view
+    ```bash
+    docker-compose build --no-cache
+    ```
+   
+2. Bring up the environment
+
+    ***Tip**: if you don't want to daemonize the containers, you may omit the `-d` option.*
+    
+    ```bash
+    docker-compose up -d
+    ```
+
+3. Setup the application
+
+    ```bash
+    docker-compose exec metrics ./script/setup
+    ```
+
+And you're done!
+
+### Usage
+
+1. Launch the application
+
+    ```bash
+    docker-compose exec metrics ./metrics
+    ```
+   
+ 2. Visualize results
+ 
+    If your browser do not open automatically, please open `analysis/index.html` with your favorite browser.

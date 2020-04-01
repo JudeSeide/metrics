@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+
+# script/setup: Set up local dependencies and database
+set -e
+
+cd "$(dirname "$0")/.."
+
+RED="\e[0;31m"
+BLUE="\e[0;34m"
+
+print_color() {
+    test -t 1 && /bin/echo -e "$1$2\e[m" || echo $2
+}
+
+if [ ! -f .env ]; then
+    print_color $BLUE "==> Initializing environment variables"
+    cp .env.example .env
+fi
+
+print_color $BLUE "==> Installing composer dependencies"
+php $(which composer) install --optimize-autoloader --no-dev
+
+print_color $BLUE "==> App is now ready to go!"

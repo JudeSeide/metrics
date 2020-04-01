@@ -1,0 +1,6 @@
+version: '2'
+services:
+  metrics:
+    build: ./
+    volumes:
+      - ./:/var/www/metrics/
